@@ -1,4 +1,17 @@
 <?php
+/**
+ * This file is a tool used for adapting the CIDRAM default IPv4 signature files to work with ZB Block 0.5+.
+ *
+ * Homepage for CIDRAM: https://cidram.github.io/
+ * CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).
+ *
+ * Homepage for ZB Block 0.4.20 and above: http://zb-block.net
+ * Homepage for ZB Block 0.4.10a4 and below: http://www.spambotsecurity.com/zbblock.php
+ *
+ * License: GNU/GPLv2
+ * @see LICENSE.txt
+ */
+
 function getLine(&$Data) {
     if (strpos($Data, "\r")) {
         $Data = (
@@ -55,7 +68,7 @@ function fetch($File) {
     return $Data ?: false;
 };
 
-$Files = [__DIR__ . '/../vault/ipv4.dat', __DIR__ . '/../vault/ipv4.dat_isps', __DIR__ . '/../vault/ipv4_other.dat'];
+$Files = [__DIR__ . '/../vault/ipv4.dat', __DIR__ . '/../vault/ipv4_isps.dat', __DIR__ . '/../vault/ipv4_other.dat'];
 $Output = fetch(__DIR__ . '/zbip4head.php');
 
 foreach ($Files as $File) {
