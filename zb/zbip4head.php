@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is adapted from the CIDRAM default IPv4 signature files to work with ZB Block 0.5.x
+ * This file is adapted from the CIDRAM default IPv4 signature files to work with ZB Block 0.5+.
  *
  * Homepage for CIDRAM: https://cidram.github.io/
  * CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).
@@ -15,9 +15,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2018.01.30
+ * This file last updated: 2018.02.04
  */
-$zbbversion .= ' / IP4-78a';
+$zbbversion .= ' / IP4-78b';
 
 // *php 5 fix
 global $whyblockout, $ax;

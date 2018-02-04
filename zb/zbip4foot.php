@@ -1,5 +1,5 @@
 // SoftLayer bypasses.
-if (inmatch($whyblockout, '(CIDR-SOFTLAYER-', '') && $ax > 0) {
+if (inmatch($whyblockout, '(IP4-SOFTLAYER-', '') && $ax > 0) {
     $zbamz = 0;
     $zbamz += inmatch($lcuseragent, 'showyoubot', 'ShowyouBot bypass. '); //72b
     $zbamz += inmatch($lcuseragent, 'disqus', 'Disqus bypass. '); //74a
@@ -12,9 +12,9 @@ if (inmatch($whyblockout, '(CIDR-SOFTLAYER-', '') && $ax > 0) {
 }
 
 // Hurricane Electric bypasses.
-if (inmatch($whyblockout, '(CIDR-HURRICANEELECTRIC-', '') && $ax > 0) {
+if (inmatch($whyblockout, '(IP4-HURRICANEELECTRIC-', '') && $ax > 0) {
     $zbamz = 0;
-    $zbamz += cidrblock($address, '65.49.67.0/24', 'Access provider block bypass (BYP-CIDR-HURRICANEELECTRIC-0). '); //78a
+    $zbamz += cidrblock($address, '65.49.67.0/24', 'Access provider block bypass (BYP-IP4-HURRICANEELECTRIC-0). '); //78a
     $zbamz += rmatch($lcuseragent, '.getpebble.com', 'Nice enough to ask bypass. '); //74e
     $zbamz += inmatch($useragent, 'Feedspot http://www.feedspot.com', ' Feedspot bypass. ' ); //74c
     $zbamz += inmatch($useragent, 'Feedly', ' Feedly bypass. ' ); //74c
@@ -24,7 +24,7 @@ if (inmatch($whyblockout, '(CIDR-HURRICANEELECTRIC-', '') && $ax > 0) {
 }
 
 // Rackspace Hosting bypasses.
-if (inmatch($whyblockout, '(CIDR-RACKSPACEHOSTING-', '') && $ax > 0) {
+if (inmatch($whyblockout, '(IP4-RACKSPACEHOSTING-', '') && $ax > 0) {
     $ax -= ($address === '162.13.83.46' && (
         $whyblockout = $whyblockout . 'Google Alert bypass. '
     )); //78a

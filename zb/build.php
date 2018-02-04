@@ -34,7 +34,7 @@ function getLine(&$Data) {
 }
 
 function writeSig($CIDR, $Tag, &$ID) {
-    $ThisTag = '{TAG}; Access Denied (CIDR-{CAPS}-';
+    $ThisTag = '{TAG} (IP4-{CAPS}-';
     return "\n" . '$ax += cidrblock($address, \'' . $CIDR . '\', \'' . $ThisTag . ($ID++) . '). \');';
 }
 
@@ -45,7 +45,7 @@ function updateTags(&$SectionData, $Tag, $ID) {
     for ($Place = 0; $Place <= $IDLen; $Place++) {
         $SectionData = preg_replace('~-([0-9]{0,' . $Less . '})\)~', '-0\1)', $SectionData);
     }
-    $SectionData = str_replace(['{TAG}; ', '{CAPS}'], [($Tag ? $Tag . '; ' : ''), $Caps], $SectionData);
+    $SectionData = str_replace(['{TAG} (', '{CAPS}'], [($Tag ? $Tag . ' (' : 'Access denied ('), $Caps], $SectionData);
 }
 
 function fetch($File) {
@@ -93,7 +93,7 @@ foreach ($Files as $File) {
                 $Breaker = 0;
                 $Tag = '';
                 $ID = 0;
-                $Output .= str_replace('{TAG}; ', '', $Section);
+                $Output .= str_replace('{TAG}', 'Access denied', $Section);
                 $Section = '';
             } else {
                 $Breaker++;
@@ -101,6 +101,9 @@ foreach ($Files as $File) {
             $Section .= "\n";
         } elseif ($Switch) {
             if (substr($Line, 0, 2) === '# ') {
+                if (substr($Line, 0, 9) === '# %Listed' || substr($Line, 0, 6) === '# Stop') {
+                    continue;
+                }
                 $Section .= "\n" . '// ' . substr($Line, 2);
             } elseif (($PosX = strpos($Line, ' Deny ')) !== false || ($PosX = strpos($Line, ' Run ')) !== false) {
                 $Section .= writeSig(substr($Line, 0, $PosX), $Tag, $ID);
@@ -111,13 +114,13 @@ foreach ($Files as $File) {
         }
     }
     updateTags($Section, $Tag, $ID);
-    $Output .= str_replace('{TAG}; ', '', $Section) . "\n";
+    $Output .= str_replace('{TAG}', 'Access denied', $Section) . "\n";
 }
 unset($Switch, $Section, $ID, $Tag, $Breaker, $Line, $Data, $File, $Files);
 
 $Output .= fetch(__DIR__ . '/zbip4foot.php');
 
-$Handle = fopen('X:/ipv4_zb.dat', 'wb');
+$Handle = fopen('X:/ip4.sig', 'wb');
 fwrite($Handle, $Output);
 fclose($Handle);
 unset($Handle, $Output);
