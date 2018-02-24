@@ -17,7 +17,7 @@
  * See: http://zb-block.net/zbf/showthread.php?t=20
  * This file last updated: 2018.02.24
  */
-$zbbversion .= ' / IP4-78f';
+$zbbversion .= ' / IP4-78g';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -2080,13 +2080,13 @@ $ax += cidrblock($address, '193.106.172.0/22', 'IQHost Ltd (IP4-IQHOSTLTD-0). ')
 
 
 // ASN 54444 ("Avesta Networks LLC").
-// Updated: 2016.09.27 / Checked: 2017.10.26
+// Updated: 2016.09.27 / Checked: 2018.02.24
 
-$ax += cidrblock($address, '104.237.234.0/24', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-0). ');
-$ax += cidrblock($address, '142.0.64.0/21', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-1). ');
-$ax += cidrblock($address, '142.0.72.0/24', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-2). ');
-$ax += cidrblock($address, '142.0.79.0/24', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-3). ');
-$ax += cidrblock($address, '199.127.96.0/21', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-4). ');
+$ax += cidrblock($address, '142.0.64.0/21', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-0). ');
+$ax += cidrblock($address, '142.0.72.0/24', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-1). ');
+$ax += cidrblock($address, '142.0.79.0/24', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-2). ');
+$ax += cidrblock($address, '199.127.96.0/21', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-3). ');
+$ax += cidrblock($address, '104.237.234.0/24', 'Avesta Networks LLC (IP4-AVESTANETWORKSLLC-4). ');
 
 
 // ASN 42244 ("Hosting Operator eServer.ru Ltd").
@@ -2226,7 +2226,7 @@ $ax += cidrblock($address, '213.159.28.0/22', 'AS42807 (IP4-AS42807-09). ');
 
 // ASNs 34360, 41079, 48760, 198414 ("H88 S.A").
 // Webhosting company based in Poland.
-// Updated: 2017.10.26
+// Updated: 2018.02.24
 
 $ax += cidrblock($address, '91.189.32.0/21', 'H88 S.A (IP4-H88SA-00). ');
 $ax += cidrblock($address, '91.196.48.0/22', 'H88 S.A (IP4-H88SA-01). ');
@@ -2245,15 +2245,20 @@ $ax += cidrblock($address, '185.25.148.0/22', 'H88 S.A (IP4-H88SA-13). ');
 $ax += cidrblock($address, '185.49.12.0/22', 'H88 S.A (IP4-H88SA-14). ');
 $ax += cidrblock($address, '185.84.136.0/22', 'H88 S.A (IP4-H88SA-15). ');
 $ax += cidrblock($address, '185.140.120.0/22', 'H88 S.A (IP4-H88SA-16). ');
-$ax += cidrblock($address, '193.17.184.0/24', 'H88 S.A (IP4-H88SA-17). ');
-$ax += cidrblock($address, '193.218.152.0/22', 'H88 S.A (IP4-H88SA-18). ');
-$ax += cidrblock($address, '194.169.227.0/24', 'H88 S.A (IP4-H88SA-19). ');
-$ax += cidrblock($address, '195.2.254.0/23', 'H88 S.A (IP4-H88SA-20). ');
-$ax += cidrblock($address, '195.62.12.0/23', 'H88 S.A (IP4-H88SA-21). ');
-$ax += cidrblock($address, '195.64.158.0/23', 'H88 S.A (IP4-H88SA-22). ');
-$ax += cidrblock($address, '195.114.0.0/23', 'H88 S.A (IP4-H88SA-23). ');
-$ax += cidrblock($address, '195.242.116.0/23', 'H88 S.A (IP4-H88SA-24). ');
-$ax += cidrblock($address, '213.108.56.0/21', 'H88 S.A (IP4-H88SA-25). ');
+$ax += cidrblock($address, '185.180.204.0/22', 'H88 S.A (IP4-H88SA-17). ');
+$ax += cidrblock($address, '185.193.112.0/22', 'H88 S.A (IP4-H88SA-18). ');
+$ax += cidrblock($address, '185.201.112.0/22', 'H88 S.A (IP4-H88SA-19). ');
+$ax += cidrblock($address, '185.204.216.0/22', 'H88 S.A (IP4-H88SA-20). ');
+$ax += cidrblock($address, '185.208.164.0/24', 'H88 S.A (IP4-H88SA-21). ');
+$ax += cidrblock($address, '193.17.184.0/24', 'H88 S.A (IP4-H88SA-22). ');
+$ax += cidrblock($address, '193.218.152.0/22', 'H88 S.A (IP4-H88SA-23). ');
+$ax += cidrblock($address, '194.169.227.0/24', 'H88 S.A (IP4-H88SA-24). ');
+$ax += cidrblock($address, '195.2.254.0/23', 'H88 S.A (IP4-H88SA-25). ');
+$ax += cidrblock($address, '195.62.12.0/23', 'H88 S.A (IP4-H88SA-26). ');
+$ax += cidrblock($address, '195.64.158.0/23', 'H88 S.A (IP4-H88SA-27). ');
+$ax += cidrblock($address, '195.114.0.0/23', 'H88 S.A (IP4-H88SA-28). ');
+$ax += cidrblock($address, '195.242.116.0/23', 'H88 S.A (IP4-H88SA-29). ');
+$ax += cidrblock($address, '213.108.56.0/21', 'H88 S.A (IP4-H88SA-30). ');
 
 
 // ASNs 25875, 1429 ("FriendFinder Networks Inc").
@@ -2266,7 +2271,7 @@ $ax += cidrblock($address, '208.88.180.0/22', 'FriendFinder (IP4-FRIENDFINDER-3)
 
 
 // ASN 47846 ("Sedo Domain Parking").
-// Updated: 2016.01.18 / Checked: 2017.12.04
+// Updated: 2016.01.18 / Checked: 2018.02.24
 
 $ax += cidrblock($address, '82.98.86.0/24', 'Sedo Domain Parking (IP4-SEDODOMAINPARKING-0). ');
 $ax += cidrblock($address, '82.98.99.0/24', 'Sedo Domain Parking (IP4-SEDODOMAINPARKING-1). ');
@@ -2346,7 +2351,7 @@ $ax += cidrblock($address, '185.140.53.0/24', 'myLoc (IP4-MYLOC-41). ');
 
 // ASN 15003 ("Nobis Technology Group, LLC").
 // Ranges change frequently / Should update often.
-// Updated: 2018.01.05
+// Updated: 2018.01.05 / Checked: 2018.02.24
 
 $ax += cidrblock($address, '181.214.53.0/24', 'Nobis/Ubiquity (IP4-NOBISUBIQUITY-000). ');
 $ax += cidrblock($address, '191.96.100.0/24', 'Nobis/Ubiquity (IP4-NOBISUBIQUITY-001). ');
@@ -4882,203 +4887,214 @@ $ax += cidrblock($address, '31.44.189.0/24', 'Private Layer INC (IP4-PRIVATELAYE
 
 // ASN 40676 ("Psychz Networks").
 // Ranges change frequently / Should update often.
-// Updated: 2018.01.05
+// Updated: 2018.02.24
 
-$ax += cidrblock($address, '103.59.108.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-000). ');
-$ax += cidrblock($address, '103.249.71.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-001). ');
-$ax += cidrblock($address, '78.142.18.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-002). ');
-$ax += cidrblock($address, '138.122.225.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-003). ');
-$ax += cidrblock($address, '138.122.227.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-004). ');
-$ax += cidrblock($address, '181.41.215.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-005). ');
-$ax += cidrblock($address, '181.214.94.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-006). ');
-$ax += cidrblock($address, '181.215.25.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-007). ');
-$ax += cidrblock($address, '181.215.47.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-008). ');
-$ax += cidrblock($address, '181.215.49.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-009). ');
-$ax += cidrblock($address, '191.96.25.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-010). ');
-$ax += cidrblock($address, '191.96.131.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-011). ');
-$ax += cidrblock($address, '191.96.148.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-012). ');
-$ax += cidrblock($address, '191.96.157.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-013). ');
-$ax += cidrblock($address, '191.96.159.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-014). ');
-$ax += cidrblock($address, '191.96.166.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-015). ');
-$ax += cidrblock($address, '191.96.189.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-016). ');
-$ax += cidrblock($address, '191.101.40.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-017). ');
-$ax += cidrblock($address, '191.101.166.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-018). ');
-$ax += cidrblock($address, '43.246.114.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-019). ');
-$ax += cidrblock($address, '43.250.72.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-020). ');
-$ax += cidrblock($address, '49.246.226.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-021). ');
-$ax += cidrblock($address, '49.246.234.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-022). ');
-$ax += cidrblock($address, '103.80.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-023). ');
-$ax += cidrblock($address, '103.231.184.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-024). ');
-$ax += cidrblock($address, '123.108.128.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-025). ');
-$ax += cidrblock($address, '183.182.10.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-026). ');
-$ax += cidrblock($address, '183.182.18.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-027). ');
-$ax += cidrblock($address, '183.182.20.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-028). ');
-$ax += cidrblock($address, '183.182.22.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-029). ');
-$ax += cidrblock($address, '211.155.64.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-030). ');
-$ax += cidrblock($address, '218.246.140.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-031). ');
-$ax += cidrblock($address, '31.170.111.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-032). ');
-$ax += cidrblock($address, '85.190.229.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-033). ');
-$ax += cidrblock($address, '176.126.77.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-034). ');
-$ax += cidrblock($address, '185.168.9.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-035). ');
-$ax += cidrblock($address, '185.173.225.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-036). ');
-$ax += cidrblock($address, '185.183.84.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-037). ');
-$ax += cidrblock($address, '185.198.220.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-038). ');
-$ax += cidrblock($address, '185.200.32.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-039). ');
-$ax += cidrblock($address, '185.203.123.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-040). ');
-$ax += cidrblock($address, '185.205.12.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-041). ');
-$ax += cidrblock($address, '185.205.195.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-042). ');
-$ax += cidrblock($address, '185.212.68.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-043). ');
-$ax += cidrblock($address, '185.216.231.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-044). ');
-$ax += cidrblock($address, '185.221.134.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-045). ');
-$ax += cidrblock($address, '185.221.136.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-046). ');
-$ax += cidrblock($address, '185.223.254.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-047). ');
-$ax += cidrblock($address, '185.225.136.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-048). ');
-$ax += cidrblock($address, '185.226.144.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-049). ');
-$ax += cidrblock($address, '185.226.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-050). ');
-$ax += cidrblock($address, '185.232.15.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-051). ');
-$ax += cidrblock($address, '141.95.4.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-052). ');
-$ax += cidrblock($address, '185.144.101.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-053). ');
-$ax += cidrblock($address, '185.169.196.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-054). ');
-$ax += cidrblock($address, '185.169.198.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-055). ');
-$ax += cidrblock($address, '185.207.177.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-056). ');
-$ax += cidrblock($address, '185.207.178.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-057). ');
-$ax += cidrblock($address, '185.211.49.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-058). ');
-$ax += cidrblock($address, '185.215.224.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-059). ');
-$ax += cidrblock($address, '45.113.80.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-060). ');
-$ax += cidrblock($address, '185.53.209.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-061). ');
-$ax += cidrblock($address, '185.101.218.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-062). ');
-$ax += cidrblock($address, '103.207.40.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-063). ');
-$ax += cidrblock($address, '103.208.246.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-064). ');
-$ax += cidrblock($address, '210.16.100.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-065). ');
-$ax += cidrblock($address, '154.127.53.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-066). ');
-$ax += cidrblock($address, '185.212.200.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-067). ');
-$ax += cidrblock($address, '185.222.80.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-068). ');
-$ax += cidrblock($address, '107.181.134.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-069). ');
-$ax += cidrblock($address, '45.199.152.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-070). ');
-$ax += cidrblock($address, '45.199.155.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-071). ');
-$ax += cidrblock($address, '103.210.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-072). ');
-$ax += cidrblock($address, '160.20.12.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-073). ');
-$ax += cidrblock($address, '23.91.0.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-074). ');
-$ax += cidrblock($address, '23.228.192.0/18', 'Psychz Networks (IP4-PSYCHZNETWORKS-075). ');
-$ax += cidrblock($address, '23.238.128.0/17', 'Psychz Networks (IP4-PSYCHZNETWORKS-076). ');
-$ax += cidrblock($address, '23.251.32.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-077). ');
-$ax += cidrblock($address, '45.34.0.0/15', 'Psychz Networks (IP4-PSYCHZNETWORKS-078). ');
-$ax += cidrblock($address, '45.43.4.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-079). ');
-$ax += cidrblock($address, '45.43.25.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-080). ');
-$ax += cidrblock($address, '45.74.1.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-081). ');
-$ax += cidrblock($address, '52.119.1.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-082). ');
-$ax += cidrblock($address, '64.64.113.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-083). ');
-$ax += cidrblock($address, '66.11.119.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-084). ');
-$ax += cidrblock($address, '66.11.122.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-085). ');
-$ax += cidrblock($address, '67.209.159.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-086). ');
-$ax += cidrblock($address, '69.165.64.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-087). ');
-$ax += cidrblock($address, '69.165.72.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-088). ');
-$ax += cidrblock($address, '71.19.139.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-089). ');
-$ax += cidrblock($address, '71.19.140.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-090). ');
-$ax += cidrblock($address, '74.117.56.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-091). ');
-$ax += cidrblock($address, '98.159.226.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-092). ');
-$ax += cidrblock($address, '103.78.120.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-093). ');
-$ax += cidrblock($address, '104.143.128.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-094). ');
-$ax += cidrblock($address, '104.149.0.0/16', 'Psychz Networks (IP4-PSYCHZNETWORKS-095). ');
-$ax += cidrblock($address, '104.216.0.0/15', 'Psychz Networks (IP4-PSYCHZNETWORKS-096). ');
-$ax += cidrblock($address, '104.225.208.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-097). ');
-$ax += cidrblock($address, '104.244.152.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-098). ');
-$ax += cidrblock($address, '104.244.157.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-099). ');
-$ax += cidrblock($address, '104.250.116.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-100). ');
-$ax += cidrblock($address, '104.250.127.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-101). ');
-$ax += cidrblock($address, '104.250.166.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-102). ');
-$ax += cidrblock($address, '104.250.168.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-103). ');
-$ax += cidrblock($address, '104.250.170.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-104). ');
-$ax += cidrblock($address, '104.250.181.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-105). ');
-$ax += cidrblock($address, '104.250.184.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-106). ');
-$ax += cidrblock($address, '104.254.56.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-107). ');
-$ax += cidrblock($address, '104.254.62.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-108). ');
-$ax += cidrblock($address, '104.254.188.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-109). ');
-$ax += cidrblock($address, '104.254.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-110). ');
-$ax += cidrblock($address, '104.255.227.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-111). ');
-$ax += cidrblock($address, '104.255.229.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-112). ');
-$ax += cidrblock($address, '104.255.231.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-113). ');
-$ax += cidrblock($address, '107.151.192.0/18', 'Psychz Networks (IP4-PSYCHZNETWORKS-114). ');
-$ax += cidrblock($address, '107.160.0.0/16', 'Psychz Networks (IP4-PSYCHZNETWORKS-115). ');
-$ax += cidrblock($address, '107.190.226.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-116). ');
-$ax += cidrblock($address, '107.190.228.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-117). ');
-$ax += cidrblock($address, '108.171.240.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-118). ');
-$ax += cidrblock($address, '116.206.72.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-119). ');
-$ax += cidrblock($address, '136.0.111.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-120). ');
-$ax += cidrblock($address, '144.172.68.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-121). ');
-$ax += cidrblock($address, '146.148.176.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-122). ');
-$ax += cidrblock($address, '146.148.192.0/18', 'Psychz Networks (IP4-PSYCHZNETWORKS-123). ');
-$ax += cidrblock($address, '160.238.44.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-124). ');
-$ax += cidrblock($address, '162.244.8.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-125). ');
-$ax += cidrblock($address, '162.250.140.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-126). ');
-$ax += cidrblock($address, '162.253.64.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-127). ');
-$ax += cidrblock($address, '162.253.209.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-128). ');
-$ax += cidrblock($address, '162.253.210.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-129). ');
-$ax += cidrblock($address, '162.253.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-130). ');
-$ax += cidrblock($address, '172.81.101.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-131). ');
-$ax += cidrblock($address, '172.81.102.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-132). ');
-$ax += cidrblock($address, '172.86.148.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-133). ');
-$ax += cidrblock($address, '172.93.236.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-134). ');
-$ax += cidrblock($address, '172.94.35.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-135). ');
-$ax += cidrblock($address, '172.94.36.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-136). ');
-$ax += cidrblock($address, '172.94.38.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-137). ');
-$ax += cidrblock($address, '172.94.44.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-138). ');
-$ax += cidrblock($address, '172.94.117.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-139). ');
-$ax += cidrblock($address, '172.97.64.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-140). ');
-$ax += cidrblock($address, '172.97.66.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-141). ');
-$ax += cidrblock($address, '172.106.0.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-142). ');
-$ax += cidrblock($address, '172.106.34.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-143). ');
-$ax += cidrblock($address, '172.106.36.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-144). ');
-$ax += cidrblock($address, '172.106.40.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-145). ');
-$ax += cidrblock($address, '172.106.48.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-146). ');
-$ax += cidrblock($address, '172.106.64.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-147). ');
-$ax += cidrblock($address, '172.106.80.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-148). ');
-$ax += cidrblock($address, '172.106.90.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-149). ');
-$ax += cidrblock($address, '172.106.92.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-150). ');
-$ax += cidrblock($address, '172.106.96.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-151). ');
-$ax += cidrblock($address, '172.106.128.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-152). ');
-$ax += cidrblock($address, '172.106.160.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-153). ');
-$ax += cidrblock($address, '172.106.168.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-154). ');
-$ax += cidrblock($address, '172.106.172.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-155). ');
-$ax += cidrblock($address, '172.106.174.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-156). ');
-$ax += cidrblock($address, '172.106.176.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-157). ');
-$ax += cidrblock($address, '172.106.192.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-158). ');
-$ax += cidrblock($address, '172.106.196.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-159). ');
-$ax += cidrblock($address, '172.106.200.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-160). ');
-$ax += cidrblock($address, '172.106.208.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-161). ');
-$ax += cidrblock($address, '172.106.224.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-162). ');
-$ax += cidrblock($address, '172.107.0.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-163). ');
-$ax += cidrblock($address, '172.107.24.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-164). ');
-$ax += cidrblock($address, '172.107.32.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-165). ');
-$ax += cidrblock($address, '172.107.64.0/18', 'Psychz Networks (IP4-PSYCHZNETWORKS-166). ');
-$ax += cidrblock($address, '172.107.128.0/17', 'Psychz Networks (IP4-PSYCHZNETWORKS-167). ');
-$ax += cidrblock($address, '173.46.94.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-168). ');
-$ax += cidrblock($address, '173.224.208.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-169). ');
-$ax += cidrblock($address, '174.128.166.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-170). ');
-$ax += cidrblock($address, '192.69.242.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-171). ');
-$ax += cidrblock($address, '192.81.248.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-172). ');
-$ax += cidrblock($address, '192.81.250.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-173). ');
-$ax += cidrblock($address, '192.154.224.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-174). ');
-$ax += cidrblock($address, '192.158.229.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-175). ');
-$ax += cidrblock($address, '192.175.22.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-176). ');
-$ax += cidrblock($address, '192.184.32.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-177). ');
-$ax += cidrblock($address, '192.210.48.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-178). ');
-$ax += cidrblock($address, '198.13.96.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-179). ');
-$ax += cidrblock($address, '198.44.160.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-180). ');
-$ax += cidrblock($address, '199.15.112.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-181). ');
-$ax += cidrblock($address, '199.43.207.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-182). ');
-$ax += cidrblock($address, '199.47.39.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-183). ');
-$ax += cidrblock($address, '199.71.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-184). ');
-$ax += cidrblock($address, '199.83.88.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-185). ');
-$ax += cidrblock($address, '199.119.200.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-186). ');
-$ax += cidrblock($address, '199.212.86.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-187). ');
-$ax += cidrblock($address, '199.245.100.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-188). ');
-$ax += cidrblock($address, '208.87.240.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-189). ');
-$ax += cidrblock($address, '216.24.192.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-190). ');
-$ax += cidrblock($address, '216.99.144.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-191). ');
-$ax += cidrblock($address, '154.16.1.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-192). ');
-$ax += cidrblock($address, '154.16.21.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-193). ');
-$ax += cidrblock($address, '165.73.240.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-194). ');
+$ax += cidrblock($address, '185.133.193.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-000). ');
+$ax += cidrblock($address, '185.133.195.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-001). ');
+$ax += cidrblock($address, '185.214.70.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-002). ');
+$ax += cidrblock($address, '103.59.108.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-003). ');
+$ax += cidrblock($address, '103.249.71.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-004). ');
+$ax += cidrblock($address, '139.5.184.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-005). ');
+$ax += cidrblock($address, '78.142.18.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-006). ');
+$ax += cidrblock($address, '138.122.225.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-007). ');
+$ax += cidrblock($address, '138.122.227.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-008). ');
+$ax += cidrblock($address, '181.41.215.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-009). ');
+$ax += cidrblock($address, '181.214.88.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-010). ');
+$ax += cidrblock($address, '181.214.94.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-011). ');
+$ax += cidrblock($address, '181.215.25.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-012). ');
+$ax += cidrblock($address, '181.215.47.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-013). ');
+$ax += cidrblock($address, '181.215.49.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-014). ');
+$ax += cidrblock($address, '191.96.25.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-015). ');
+$ax += cidrblock($address, '191.96.131.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-016). ');
+$ax += cidrblock($address, '191.96.157.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-017). ');
+$ax += cidrblock($address, '191.96.159.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-018). ');
+$ax += cidrblock($address, '191.96.166.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-019). ');
+$ax += cidrblock($address, '191.96.189.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-020). ');
+$ax += cidrblock($address, '191.101.40.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-021). ');
+$ax += cidrblock($address, '191.101.166.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-022). ');
+$ax += cidrblock($address, '43.246.114.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-023). ');
+$ax += cidrblock($address, '43.250.72.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-024). ');
+$ax += cidrblock($address, '49.246.226.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-025). ');
+$ax += cidrblock($address, '49.246.234.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-026). ');
+$ax += cidrblock($address, '103.80.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-027). ');
+$ax += cidrblock($address, '103.231.184.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-028). ');
+$ax += cidrblock($address, '123.108.128.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-029). ');
+$ax += cidrblock($address, '183.182.10.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-030). ');
+$ax += cidrblock($address, '183.182.18.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-031). ');
+$ax += cidrblock($address, '183.182.20.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-032). ');
+$ax += cidrblock($address, '183.182.22.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-033). ');
+$ax += cidrblock($address, '211.155.64.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-034). ');
+$ax += cidrblock($address, '218.246.140.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-035). ');
+$ax += cidrblock($address, '31.170.111.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-036). ');
+$ax += cidrblock($address, '85.190.229.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-037). ');
+$ax += cidrblock($address, '176.126.77.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-038). ');
+$ax += cidrblock($address, '185.135.136.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-039). ');
+$ax += cidrblock($address, '185.142.25.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-040). ');
+$ax += cidrblock($address, '185.168.9.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-041). ');
+$ax += cidrblock($address, '185.183.84.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-042). ');
+$ax += cidrblock($address, '185.198.220.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-043). ');
+$ax += cidrblock($address, '185.200.32.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-044). ');
+$ax += cidrblock($address, '185.203.123.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-045). ');
+$ax += cidrblock($address, '185.205.12.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-046). ');
+$ax += cidrblock($address, '185.205.195.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-047). ');
+$ax += cidrblock($address, '185.212.68.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-048). ');
+$ax += cidrblock($address, '185.216.231.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-049). ');
+$ax += cidrblock($address, '185.221.134.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-050). ');
+$ax += cidrblock($address, '185.221.136.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-051). ');
+$ax += cidrblock($address, '185.223.254.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-052). ');
+$ax += cidrblock($address, '185.224.144.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-053). ');
+$ax += cidrblock($address, '185.225.136.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-054). ');
+$ax += cidrblock($address, '185.226.144.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-055). ');
+$ax += cidrblock($address, '185.226.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-056). ');
+$ax += cidrblock($address, '185.232.15.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-057). ');
+$ax += cidrblock($address, '185.238.240.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-058). ');
+$ax += cidrblock($address, '185.238.242.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-059). ');
+$ax += cidrblock($address, '107.181.134.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-060). ');
+$ax += cidrblock($address, '185.119.254.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-061). ');
+$ax += cidrblock($address, '141.95.4.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-062). ');
+$ax += cidrblock($address, '185.144.101.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-063). ');
+$ax += cidrblock($address, '185.169.196.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-064). ');
+$ax += cidrblock($address, '185.169.198.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-065). ');
+$ax += cidrblock($address, '185.207.177.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-066). ');
+$ax += cidrblock($address, '185.207.178.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-067). ');
+$ax += cidrblock($address, '185.211.49.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-068). ');
+$ax += cidrblock($address, '185.215.224.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-069). ');
+$ax += cidrblock($address, '45.113.80.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-070). ');
+$ax += cidrblock($address, '185.53.209.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-071). ');
+$ax += cidrblock($address, '185.101.218.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-072). ');
+$ax += cidrblock($address, '103.207.40.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-073). ');
+$ax += cidrblock($address, '103.208.246.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-074). ');
+$ax += cidrblock($address, '210.16.100.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-075). ');
+$ax += cidrblock($address, '154.127.53.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-076). ');
+$ax += cidrblock($address, '185.166.236.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-077). ');
+$ax += cidrblock($address, '185.172.166.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-078). ');
+$ax += cidrblock($address, '185.185.40.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-079). ');
+$ax += cidrblock($address, '185.212.200.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-080). ');
+$ax += cidrblock($address, '185.222.80.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-081). ');
+$ax += cidrblock($address, '45.199.152.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-082). ');
+$ax += cidrblock($address, '45.199.155.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-083). ');
+$ax += cidrblock($address, '45.199.192.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-084). ');
+$ax += cidrblock($address, '103.210.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-085). ');
+$ax += cidrblock($address, '160.20.12.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-086). ');
+$ax += cidrblock($address, '23.91.0.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-087). ');
+$ax += cidrblock($address, '23.228.192.0/18', 'Psychz Networks (IP4-PSYCHZNETWORKS-088). ');
+$ax += cidrblock($address, '23.238.128.0/17', 'Psychz Networks (IP4-PSYCHZNETWORKS-089). ');
+$ax += cidrblock($address, '23.251.32.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-090). ');
+$ax += cidrblock($address, '45.34.0.0/15', 'Psychz Networks (IP4-PSYCHZNETWORKS-091). ');
+$ax += cidrblock($address, '45.43.4.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-092). ');
+$ax += cidrblock($address, '45.43.25.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-093). ');
+$ax += cidrblock($address, '45.43.26.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-094). ');
+$ax += cidrblock($address, '45.74.60.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-095). ');
+$ax += cidrblock($address, '52.119.1.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-096). ');
+$ax += cidrblock($address, '64.64.113.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-097). ');
+$ax += cidrblock($address, '66.11.119.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-098). ');
+$ax += cidrblock($address, '66.11.122.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-099). ');
+$ax += cidrblock($address, '67.209.159.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-100). ');
+$ax += cidrblock($address, '69.165.64.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-101). ');
+$ax += cidrblock($address, '69.165.72.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-102). ');
+$ax += cidrblock($address, '71.19.139.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-103). ');
+$ax += cidrblock($address, '71.19.140.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-104). ');
+$ax += cidrblock($address, '74.117.56.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-105). ');
+$ax += cidrblock($address, '74.118.135.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-106). ');
+$ax += cidrblock($address, '98.159.226.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-107). ');
+$ax += cidrblock($address, '103.78.120.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-108). ');
+$ax += cidrblock($address, '104.143.128.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-109). ');
+$ax += cidrblock($address, '104.149.0.0/16', 'Psychz Networks (IP4-PSYCHZNETWORKS-110). ');
+$ax += cidrblock($address, '104.216.0.0/15', 'Psychz Networks (IP4-PSYCHZNETWORKS-111). ');
+$ax += cidrblock($address, '104.225.208.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-112). ');
+$ax += cidrblock($address, '104.244.152.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-113). ');
+$ax += cidrblock($address, '104.244.157.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-114). ');
+$ax += cidrblock($address, '104.250.116.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-115). ');
+$ax += cidrblock($address, '104.250.127.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-116). ');
+$ax += cidrblock($address, '104.254.56.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-117). ');
+$ax += cidrblock($address, '104.254.62.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-118). ');
+$ax += cidrblock($address, '104.254.128.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-119). ');
+$ax += cidrblock($address, '104.254.188.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-120). ');
+$ax += cidrblock($address, '104.254.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-121). ');
+$ax += cidrblock($address, '104.255.227.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-122). ');
+$ax += cidrblock($address, '104.255.229.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-123). ');
+$ax += cidrblock($address, '104.255.231.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-124). ');
+$ax += cidrblock($address, '107.151.192.0/18', 'Psychz Networks (IP4-PSYCHZNETWORKS-125). ');
+$ax += cidrblock($address, '107.160.0.0/16', 'Psychz Networks (IP4-PSYCHZNETWORKS-126). ');
+$ax += cidrblock($address, '107.190.226.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-127). ');
+$ax += cidrblock($address, '107.190.228.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-128). ');
+$ax += cidrblock($address, '108.171.240.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-129). ');
+$ax += cidrblock($address, '116.206.72.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-130). ');
+$ax += cidrblock($address, '136.0.111.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-131). ');
+$ax += cidrblock($address, '144.172.68.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-132). ');
+$ax += cidrblock($address, '146.148.176.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-133). ');
+$ax += cidrblock($address, '146.148.192.0/18', 'Psychz Networks (IP4-PSYCHZNETWORKS-134). ');
+$ax += cidrblock($address, '160.238.44.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-135). ');
+$ax += cidrblock($address, '162.244.8.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-136). ');
+$ax += cidrblock($address, '162.250.141.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-137). ');
+$ax += cidrblock($address, '162.250.143.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-138). ');
+$ax += cidrblock($address, '162.253.64.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-139). ');
+$ax += cidrblock($address, '162.253.209.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-140). ');
+$ax += cidrblock($address, '162.253.210.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-141). ');
+$ax += cidrblock($address, '162.253.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-142). ');
+$ax += cidrblock($address, '172.81.101.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-143). ');
+$ax += cidrblock($address, '172.81.102.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-144). ');
+$ax += cidrblock($address, '172.86.148.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-145). ');
+$ax += cidrblock($address, '172.93.236.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-146). ');
+$ax += cidrblock($address, '172.94.36.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-147). ');
+$ax += cidrblock($address, '172.94.44.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-148). ');
+$ax += cidrblock($address, '172.94.117.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-149). ');
+$ax += cidrblock($address, '172.97.64.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-150). ');
+$ax += cidrblock($address, '172.97.66.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-151). ');
+$ax += cidrblock($address, '172.106.0.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-152). ');
+$ax += cidrblock($address, '172.106.34.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-153). ');
+$ax += cidrblock($address, '172.106.36.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-154). ');
+$ax += cidrblock($address, '172.106.40.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-155). ');
+$ax += cidrblock($address, '172.106.48.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-156). ');
+$ax += cidrblock($address, '172.106.64.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-157). ');
+$ax += cidrblock($address, '172.106.80.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-158). ');
+$ax += cidrblock($address, '172.106.90.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-159). ');
+$ax += cidrblock($address, '172.106.92.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-160). ');
+$ax += cidrblock($address, '172.106.96.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-161). ');
+$ax += cidrblock($address, '172.106.128.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-162). ');
+$ax += cidrblock($address, '172.106.160.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-163). ');
+$ax += cidrblock($address, '172.106.168.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-164). ');
+$ax += cidrblock($address, '172.106.172.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-165). ');
+$ax += cidrblock($address, '172.106.174.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-166). ');
+$ax += cidrblock($address, '172.106.176.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-167). ');
+$ax += cidrblock($address, '172.106.192.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-168). ');
+$ax += cidrblock($address, '172.106.196.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-169). ');
+$ax += cidrblock($address, '172.106.200.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-170). ');
+$ax += cidrblock($address, '172.106.208.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-171). ');
+$ax += cidrblock($address, '172.106.224.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-172). ');
+$ax += cidrblock($address, '172.107.0.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-173). ');
+$ax += cidrblock($address, '172.107.24.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-174). ');
+$ax += cidrblock($address, '172.107.32.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-175). ');
+$ax += cidrblock($address, '172.107.64.0/18', 'Psychz Networks (IP4-PSYCHZNETWORKS-176). ');
+$ax += cidrblock($address, '172.107.128.0/17', 'Psychz Networks (IP4-PSYCHZNETWORKS-177). ');
+$ax += cidrblock($address, '172.111.165.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-178). ');
+$ax += cidrblock($address, '173.46.94.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-179). ');
+$ax += cidrblock($address, '173.224.208.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-180). ');
+$ax += cidrblock($address, '174.128.166.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-181). ');
+$ax += cidrblock($address, '192.81.248.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-182). ');
+$ax += cidrblock($address, '192.81.250.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-183). ');
+$ax += cidrblock($address, '192.154.213.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-184). ');
+$ax += cidrblock($address, '192.154.214.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-185). ');
+$ax += cidrblock($address, '192.154.224.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-186). ');
+$ax += cidrblock($address, '192.158.229.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-187). ');
+$ax += cidrblock($address, '192.175.22.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-188). ');
+$ax += cidrblock($address, '192.184.32.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-189). ');
+$ax += cidrblock($address, '192.210.48.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-190). ');
+$ax += cidrblock($address, '198.13.96.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-191). ');
+$ax += cidrblock($address, '198.44.160.0/19', 'Psychz Networks (IP4-PSYCHZNETWORKS-192). ');
+$ax += cidrblock($address, '199.15.112.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-193). ');
+$ax += cidrblock($address, '199.43.207.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-194). ');
+$ax += cidrblock($address, '199.47.39.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-195). ');
+$ax += cidrblock($address, '199.71.212.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-196). ');
+$ax += cidrblock($address, '199.83.88.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-197). ');
+$ax += cidrblock($address, '199.119.200.0/21', 'Psychz Networks (IP4-PSYCHZNETWORKS-198). ');
+$ax += cidrblock($address, '199.212.86.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-199). ');
+$ax += cidrblock($address, '199.245.100.0/23', 'Psychz Networks (IP4-PSYCHZNETWORKS-200). ');
+$ax += cidrblock($address, '208.87.240.0/22', 'Psychz Networks (IP4-PSYCHZNETWORKS-201). ');
+$ax += cidrblock($address, '216.24.192.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-202). ');
+$ax += cidrblock($address, '216.99.144.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-203). ');
+$ax += cidrblock($address, '154.16.1.0/24', 'Psychz Networks (IP4-PSYCHZNETWORKS-204). ');
+$ax += cidrblock($address, '165.73.240.0/20', 'Psychz Networks (IP4-PSYCHZNETWORKS-205). ');
 
 
 // ASN 36114 ("Versaweb, LLC").
@@ -15067,20 +15083,20 @@ $ax += cidrblock($address, '91.235.88.0/22', 'Inforoom Ltd (IP4-INFOROOMLTD-3). 
 
 
 // ASN 51765 ("Oy Creanova Hosting Solutions Ltd").
-// Updated: 2017.10.29
+// Updated: 2017.10.29 / Checked: 2018.02.24
 
-$ax += cidrblock($address, '37.228.129.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-00). ');
-$ax += cidrblock($address, '81.92.216.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-01). ');
-$ax += cidrblock($address, '91.221.66.0/23', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-02). ');
-$ax += cidrblock($address, '91.233.116.0/23', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-03). ');
-$ax += cidrblock($address, '149.36.64.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-04). ');
-$ax += cidrblock($address, '185.100.86.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-05). ');
-$ax += cidrblock($address, '185.103.110.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-06). ');
-$ax += cidrblock($address, '185.112.82.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-07). ');
-$ax += cidrblock($address, '185.117.118.0/23', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-08). ');
-$ax += cidrblock($address, '185.200.191.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-09). ');
-$ax += cidrblock($address, '185.204.1.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-10). ');
-$ax += cidrblock($address, '185.212.149.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-11). ');
+$ax += cidrblock($address, '91.221.66.0/23', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-00). ');
+$ax += cidrblock($address, '91.233.116.0/23', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-01). ');
+$ax += cidrblock($address, '81.92.216.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-02). ');
+$ax += cidrblock($address, '185.100.86.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-03). ');
+$ax += cidrblock($address, '185.103.110.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-04). ');
+$ax += cidrblock($address, '185.112.82.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-05). ');
+$ax += cidrblock($address, '185.117.118.0/23', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-06). ');
+$ax += cidrblock($address, '185.200.191.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-07). ');
+$ax += cidrblock($address, '185.204.1.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-08). ');
+$ax += cidrblock($address, '185.212.149.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-09). ');
+$ax += cidrblock($address, '37.228.129.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-10). ');
+$ax += cidrblock($address, '149.36.64.0/24', 'Oy Creanova Hosting (IP4-OYCREANOVAHOSTING-11). ');
 
 
 // ASN 25092 ("PE Tetyana Mysyk").
@@ -16127,7 +16143,8 @@ $ax += cidrblock($address, '193.106.28.0/22', 'Infium, UAB (IP4-INFIUMUAB-4). ')
 
 
 // ASNs 30548, 31034, 199653, 200185 ("Aruba S.p.A" / "Aruba SAS").
-// Updated: 2018.01.10
+// Ranges change frequently / Should update often.
+// Updated: 2018.02.24
 
 $ax += cidrblock($address, '185.35.64.0/22', 'Aruba S.p.A (IP4-ARUBASPA-00). ');
 $ax += cidrblock($address, '185.8.48.0/22', 'Aruba S.p.A (IP4-ARUBASPA-01). ');
@@ -16176,26 +16193,24 @@ $ax += cidrblock($address, '188.213.160.0/20', 'Aruba S.p.A (IP4-ARUBASPA-43). '
 $ax += cidrblock($address, '193.58.239.0/24', 'Aruba S.p.A (IP4-ARUBASPA-44). ');
 $ax += cidrblock($address, '193.254.240.0/23', 'Aruba S.p.A (IP4-ARUBASPA-45). ');
 $ax += cidrblock($address, '194.126.148.0/23', 'Aruba S.p.A (IP4-ARUBASPA-46). ');
-$ax += cidrblock($address, '194.182.64.0/19', 'Aruba S.p.A (IP4-ARUBASPA-47). ');
-$ax += cidrblock($address, '194.182.104.0/22', 'Aruba S.p.A (IP4-ARUBASPA-48). ');
-$ax += cidrblock($address, '194.182.110.0/23', 'Aruba S.p.A (IP4-ARUBASPA-49). ');
-$ax += cidrblock($address, '195.128.234.0/23', 'Aruba S.p.A (IP4-ARUBASPA-50). ');
-$ax += cidrblock($address, '195.225.168.0/22', 'Aruba S.p.A (IP4-ARUBASPA-51). ');
-$ax += cidrblock($address, '195.231.0.0/17', 'Aruba S.p.A (IP4-ARUBASPA-52). ');
-$ax += cidrblock($address, '195.234.171.0/24', 'Aruba S.p.A (IP4-ARUBASPA-53). ');
-$ax += cidrblock($address, '195.250.34.0/24', 'Aruba S.p.A (IP4-ARUBASPA-54). ');
-$ax += cidrblock($address, '212.237.0.0/18', 'Aruba S.p.A (IP4-ARUBASPA-55). ');
-$ax += cidrblock($address, '217.61.0.0/20', 'Aruba S.p.A (IP4-ARUBASPA-56). ');
-$ax += cidrblock($address, '217.61.24.0/21', 'Aruba S.p.A (IP4-ARUBASPA-57). ');
-$ax += cidrblock($address, '217.61.32.0/19', 'Aruba S.p.A (IP4-ARUBASPA-58). ');
-$ax += cidrblock($address, '217.61.96.0/20', 'Aruba S.p.A (IP4-ARUBASPA-59). ');
-$ax += cidrblock($address, '217.61.120.0/21', 'Aruba S.p.A (IP4-ARUBASPA-60). ');
-$ax += cidrblock($address, '217.73.224.0/20', 'Aruba S.p.A (IP4-ARUBASPA-61). ');
-$ax += cidrblock($address, '82.102.4.0/24', 'Aruba S.p.A (IP4-ARUBASPA-62). ');
-$ax += cidrblock($address, '63.80.98.0/24', 'Aruba S.p.A (IP4-ARUBASPA-63). ');
-$ax += cidrblock($address, '66.71.128.0/18', 'Aruba S.p.A (IP4-ARUBASPA-64). ');
-$ax += cidrblock($address, '104.36.248.0/22', 'Aruba S.p.A (IP4-ARUBASPA-65). ');
-$ax += cidrblock($address, '209.227.192.0/18', 'Aruba S.p.A (IP4-ARUBASPA-66). ');
+$ax += cidrblock($address, '194.182.104.0/22', 'Aruba S.p.A (IP4-ARUBASPA-47). ');
+$ax += cidrblock($address, '194.182.110.0/23', 'Aruba S.p.A (IP4-ARUBASPA-48). ');
+$ax += cidrblock($address, '195.128.234.0/23', 'Aruba S.p.A (IP4-ARUBASPA-49). ');
+$ax += cidrblock($address, '195.225.168.0/22', 'Aruba S.p.A (IP4-ARUBASPA-50). ');
+$ax += cidrblock($address, '195.231.0.0/17', 'Aruba S.p.A (IP4-ARUBASPA-51). ');
+$ax += cidrblock($address, '195.234.171.0/24', 'Aruba S.p.A (IP4-ARUBASPA-52). ');
+$ax += cidrblock($address, '195.250.34.0/24', 'Aruba S.p.A (IP4-ARUBASPA-53). ');
+$ax += cidrblock($address, '212.237.0.0/18', 'Aruba S.p.A (IP4-ARUBASPA-54). ');
+$ax += cidrblock($address, '217.61.0.0/20', 'Aruba S.p.A (IP4-ARUBASPA-55). ');
+$ax += cidrblock($address, '217.61.24.0/21', 'Aruba S.p.A (IP4-ARUBASPA-56). ');
+$ax += cidrblock($address, '217.61.32.0/19', 'Aruba S.p.A (IP4-ARUBASPA-57). ');
+$ax += cidrblock($address, '217.61.96.0/20', 'Aruba S.p.A (IP4-ARUBASPA-58). ');
+$ax += cidrblock($address, '217.61.120.0/21', 'Aruba S.p.A (IP4-ARUBASPA-59). ');
+$ax += cidrblock($address, '217.73.224.0/20', 'Aruba S.p.A (IP4-ARUBASPA-60). ');
+$ax += cidrblock($address, '63.80.98.0/24', 'Aruba S.p.A (IP4-ARUBASPA-61). ');
+$ax += cidrblock($address, '66.71.128.0/18', 'Aruba S.p.A (IP4-ARUBASPA-62). ');
+$ax += cidrblock($address, '104.36.248.0/22', 'Aruba S.p.A (IP4-ARUBASPA-63). ');
+$ax += cidrblock($address, '209.227.192.0/18', 'Aruba S.p.A (IP4-ARUBASPA-64). ');
 
 
 // ASN 64435 ("Green Bei LImited").

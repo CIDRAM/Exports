@@ -17,7 +17,7 @@
  * See: http://zb-block.net/zbf/showthread.php?t=20
  * This file last updated: 2018.02.24
  */
-$zbbversion .= ' / IP4-78f';
+$zbbversion .= ' / IP4-78g';
 
 // *php 5 fix
 global $whyblockout, $ax;
