@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is a tool used for adapting the CIDRAM default IPv4 signature files to work with ZB Block 0.5+.
+ * This file is a tool used for adapting the CIDRAM default IPv4 signature files to work with ZB Block 0.6+.
  *
  * Homepage for CIDRAM: https://cidram.github.io/
  * CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).
@@ -33,8 +33,8 @@ function getLine(&$Data) {
     }
 }
 
-function writeSig($CIDR, $Tag, &$ID) {
-    $ThisTag = '{TAG} (IP4-{CAPS}-';
+function writeSig($Ident, $CIDR, $Tag, &$ID) {
+    $ThisTag = '{TAG} (' . $Ident . '-{CAPS}-';
     return "\n" . '$ax += cidrblock($address, \'' . $CIDR . '\', \'' . $ThisTag . ($ID++) . '). \');';
 }
 
@@ -66,63 +66,68 @@ function fetch($File) {
         fclose($Handle);
     }
     return $Data ?: false;
-};
-
-$Files = [__DIR__ . '/../vault/ipv4.dat', __DIR__ . '/../vault/ipv4_isps.dat', __DIR__ . '/../vault/ipv4_other.dat'];
-$Output = fetch(__DIR__ . '/zbip4head.php');
-
-foreach ($Files as $File) {
-    if (!$Data = fetch($File)) {
-        continue;
-    }
-    $Switch = false;
-    $Breaker = 0;
-    $Tag = '';
-    $Lines = getLine($Data);
-    $ID = 0;
-    $Section = '';
-    foreach ($Lines as $Line) {
-        if ($Line === '# ---') {
-            if ($Switch) {
-                break;
-            }
-            $Switch = true;
-        }
-        if (!$Line) {
-            if ($Breaker > 1) {
-                $Breaker = 0;
-                $Tag = '';
-                $ID = 0;
-                $Output .= str_replace('{TAG}', 'Access denied', $Section);
-                $Section = '';
-            } else {
-                $Breaker++;
-            }
-            $Section .= "\n";
-        } elseif ($Switch) {
-            if (substr($Line, 0, 2) === '# ') {
-                if (substr($Line, 0, 9) === '# %Listed' || substr($Line, 0, 6) === '# Stop') {
-                    continue;
-                }
-                $Section .= "\n" . '// ' . substr($Line, 2);
-            } elseif (($PosX = strpos($Line, ' Deny ')) !== false || ($PosX = strpos($Line, ' Run ')) !== false) {
-                $Section .= writeSig(substr($Line, 0, $PosX), $Tag, $ID);
-            } elseif (substr($Line, 0, 5) === 'Tag: ') {
-                $Tag = substr($Line, 5);
-                updateTags($Section, $Tag, $ID);
-            }
-        }
-    }
-    updateTags($Section, $Tag, $ID);
-    $Output .= str_replace('{TAG}', 'Access denied', $Section) . "\n";
 }
-unset($Switch, $Section, $ID, $Tag, $Breaker, $Line, $Data, $File, $Files);
 
-$Output .= fetch(__DIR__ . '/zbip4foot.php');
+function build($Files, $Ident, $HeadFile, $FootFile, $OutFile) {
+    if (!is_array($Files)) {
+        $Files = [$Files];
+    }
+    $Output = fetch(__DIR__ . '/' . $HeadFile);
 
-$Handle = fopen('X:/ip4.sig', 'wb');
-fwrite($Handle, $Output);
-fclose($Handle);
-unset($Handle, $Output);
+    foreach ($Files as $File) {
+        if (!$Data = fetch($File)) {
+            continue;
+        }
+        $Switch = false;
+        $Breaker = 0;
+        $Tag = '';
+        $Lines = getLine($Data);
+        $ID = 0;
+        $Section = '';
+        foreach ($Lines as $Line) {
+            if ($Line === '# ---') {
+                if ($Switch) {
+                    break;
+                }
+                $Switch = true;
+            }
+            if (!$Line) {
+                if ($Breaker > 1) {
+                    $Breaker = 0;
+                    $Tag = '';
+                    $ID = 0;
+                    $Output .= str_replace('{TAG}', 'Access denied', $Section);
+                    $Section = '';
+                } else {
+                    $Breaker++;
+                }
+                $Section .= "\n";
+            } elseif ($Switch) {
+                if (substr($Line, 0, 2) === '# ') {
+                    if (substr($Line, 0, 9) === '# %Listed' || substr($Line, 0, 6) === '# Stop') {
+                        continue;
+                    }
+                    $Section .= "\n" . '// ' . substr($Line, 2);
+                } elseif (($PosX = strpos($Line, ' Deny ')) !== false || ($PosX = strpos($Line, ' Run ')) !== false) {
+                    $Section .= writeSig($Ident, substr($Line, 0, $PosX), $Tag, $ID);
+                } elseif (substr($Line, 0, 5) === 'Tag: ') {
+                    $Tag = substr($Line, 5);
+                    updateTags($Section, $Tag, $ID);
+                }
+            }
+        }
+        updateTags($Section, $Tag, $ID);
+        $Output .= str_replace('{TAG}', 'Access denied', $Section) . "\n";
+    }
+
+    $Output .= fetch(__DIR__ . '/' . $FootFile);
+    $Handle = fopen(__DIR__ . '/' . $OutFile, 'wb');
+    fwrite($Handle, $Output);
+    fclose($Handle);
+}
+
+build([__DIR__ . '/../vault/ipv4.dat'], 'IP4H', 'ip4h_head.php', 'ip4h_foot.php', 'ip4_hosts.sig');
+build([__DIR__ . '/../vault/ipv4_isps.dat'], 'IP4S', 'ip4s_head.php', 'ip4s_foot.php', 'ip4_isps.sig');
+build([__DIR__ . '/../vault/ipv4_bogons', __DIR__ . '/../vault/ipv4_other.dat'], 'IP4X', 'ip4x_head.php', 'ip4x_foot.php', 'ip4_other.sig');
 
 echo 'Done.';
