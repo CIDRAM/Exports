@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is adapted from the CIDRAM default IPv4 signature files to work with ZB Block 0.5+.
+ * This file is adapted from the CIDRAM default IPv4 signature files to work with ZB Block 0.6+.
  *
  * Homepage for CIDRAM: https://cidram.github.io/
  * CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).

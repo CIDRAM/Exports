@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is adapted from the CIDRAM default IPv4 signature files to work with ZB Block 0.5+.
+ * This file is adapted from the CIDRAM default IPv4 signature files to work with ZB Block 0.6+.
  *
  * Homepage for CIDRAM: https://cidram.github.io/
  * CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).
@@ -21,6 +21,18 @@ $zbbversion .= ' / IP4X-80a';
 
 // *php 5 fix
 global $whyblockout, $ax;
+
+
+
+// ---
+// IPv4 Bogons List.
+// Updated: 2018.03.29
+// Refer https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
+// Updated: 2018.02.21
+
+$ax += cidrblock($address, '0.0.0.0/8', 'IPv4 Bogons (IP4X-IPV4BOGONS-0). ');
+$ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
+
 
 
 

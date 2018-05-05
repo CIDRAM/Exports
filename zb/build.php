@@ -128,6 +128,6 @@ function build($Files, $Ident, $HeadFile, $FootFile, $OutFile) {
 
 build([__DIR__ . '/../vault/ipv4.dat'], 'IP4H', 'ip4h_head.php', 'ip4h_foot.php', 'ip4_hosts.sig');
 build([__DIR__ . '/../vault/ipv4_isps.dat'], 'IP4S', 'ip4s_head.php', 'ip4s_foot.php', 'ip4_isps.sig');
-build([__DIR__ . '/../vault/ipv4_bogons', __DIR__ . '/../vault/ipv4_other.dat'], 'IP4X', 'ip4x_head.php', 'ip4x_foot.php', 'ip4_other.sig');
+build([__DIR__ . '/../vault/ipv4_bogons.dat', __DIR__ . '/../vault/ipv4_other.dat'], 'IP4X', 'ip4x_head.php', 'ip4x_foot.php', 'ip4_other.sig');
 
 echo 'Done.';
