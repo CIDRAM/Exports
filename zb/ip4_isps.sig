@@ -15,9 +15,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2018.05.07
+ * This file last updated: 2018.05.11
  */
-$zbbversion .= ' / IP4S-80b';
+$zbbversion .= ' / IP4S-80c';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -6819,7 +6819,7 @@ $ax += cidrblock($address, '217.116.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTEL
 // ASN 8402 ("OJSC Vimpelcom").
 // Similarly to with the Rostelecom CIDRs, blocking the entirety of all "Vimpelcom" ASNs could be problematic. Instead,
 // we'll try to limit listings to those CIDRs known to be problematic (hacking events, spamming events, etc).
-// Updated: 2018.02.04
+// Updated: 2018.02.04 / Checked: 2018.05.11
 
 $ax += cidrblock($address, '2.92.0.0/14', 'OJSC Vimpelcom (IP4S-OJSCVIMPELCOM-00). ');
 $ax += cidrblock($address, '37.144.0.0/14', 'OJSC Vimpelcom (IP4S-OJSCVIMPELCOM-01). ');
@@ -6840,7 +6840,7 @@ $ax += cidrblock($address, '213.234.192.0/18', 'OJSC Vimpelcom (IP4S-OJSCVIMPELC
 // ASN 3216 ("PJSC Vimpelcom").
 // Similarly to with the Rostelecom CIDRs, blocking the entirety of all "Vimpelcom" ASNs could be problematic. Instead,
 // we'll try to limit listings to those CIDRs known to be problematic (hacking events, spamming events, etc).
-// Updated: 2018.02.04
+// Updated: 2018.05.11
 
 $ax += cidrblock($address, '2.21.7.0/24', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-00). ');
 $ax += cidrblock($address, '2.21.8.0/24', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-01). ');
@@ -6856,7 +6856,7 @@ $ax += cidrblock($address, '37.146.208.0/20', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCO
 $ax += cidrblock($address, '37.146.224.0/20', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-11). ');
 $ax += cidrblock($address, '37.147.32.0/19', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-12). ');
 $ax += cidrblock($address, '37.147.64.0/19', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-13). ');
-$ax += cidrblock($address, '37.147.176.0/22', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-14). ');
+$ax += cidrblock($address, '37.147.176.0/21', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-14). ');
 $ax += cidrblock($address, '62.105.128.0/19', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-15). ');
 $ax += cidrblock($address, '62.141.64.0/18', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-16). ');
 $ax += cidrblock($address, '62.231.0.0/19', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-17). ');
@@ -7792,6 +7792,6 @@ $ax += cidrblock($address, '173.14.173.227/32', 'Comcast Spam IPs (IP4S-COMCASTS
 $ax += cidrblock($address, '223.71.0.0/16', 'China Mobile (IP4S-CHINAMOBILE-0). ');
 
 // IP4S Test Trigger
-$ax += inmatch($query, 'xip4sx', 'IP4H Test Trigger. ');
+$ax += inmatch($query, 'xip4sx', 'IP4S Test Trigger. ');
 
 // EoF
