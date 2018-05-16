@@ -1,3 +1,11 @@
+# Refer to:
+# https://help.github.com/articles/dealing-with-line-endings/
+
 * text eol=lf
 *.dat binary
 *.sig binary
+
+# Refer to:
+# https://github.com/github/linguist
+
+zb/*.sig linguist-language=PHP
