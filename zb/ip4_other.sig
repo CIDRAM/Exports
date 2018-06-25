@@ -15,9 +15,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2018.06.14
+ * This file last updated: 2018.06.25
  */
-$zbbversion .= ' / IP4X-81c';
+$zbbversion .= ' / IP4X-81d';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -68,6 +68,72 @@ $ax += cidrblock($address, '204.56.122.0/23', 'Cogent VPNs+Proxies (IP4X-COGENTV
 $ax += cidrblock($address, '204.56.124.0/22', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-8). ');
 
 
+// ASN 36351 ("SoftLayer Technologies").
+// Ranges change frequently / Should update often.
+// Careful when updating; Signatures reflect varying block reasons, separated by different tags in different files.
+// Section is split across multiple files.
+
+// SoftLayer VPNs and proxies.
+// Includes: Anything citing "TEFINCOM", "VPN", "proxy", "Privat Kommunikation", "Secure Internet".
+// ^(.*(TEFINCOM|VPN|Proxy|Privat Kommunikation|Secure Internet).*)$
+// Excludes: Everything else.
+// Updated: 2018.06.24
+
+$ax += cidrblock($address, '185.99.135.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-00). ');
+$ax += cidrblock($address, '185.153.176.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-01). ');
+$ax += cidrblock($address, '185.153.178.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-02). ');
+$ax += cidrblock($address, '185.161.200.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-03). ');
+$ax += cidrblock($address, '185.203.122.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-04). ');
+$ax += cidrblock($address, '85.203.23.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-05). ');
+$ax += cidrblock($address, '103.86.96.0/22', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-06). ');
+$ax += cidrblock($address, '192.121.245.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-07). ');
+$ax += cidrblock($address, '192.121.247.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-08). ');
+$ax += cidrblock($address, '193.183.216.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-09). ');
+$ax += cidrblock($address, '45.56.146.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-10). ');
+$ax += cidrblock($address, '45.56.151.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-11). ');
+$ax += cidrblock($address, '45.56.152.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-12). ');
+$ax += cidrblock($address, '45.56.154.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-13). ');
+$ax += cidrblock($address, '45.56.156.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-14). ');
+$ax += cidrblock($address, '45.56.158.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-15). ');
+$ax += cidrblock($address, '45.74.39.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-16). ');
+$ax += cidrblock($address, '45.74.41.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-17). ');
+$ax += cidrblock($address, '45.74.43.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-18). ');
+$ax += cidrblock($address, '64.64.108.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-19). ');
+$ax += cidrblock($address, '104.37.1.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-20). ');
+$ax += cidrblock($address, '104.37.3.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-21). ');
+$ax += cidrblock($address, '104.37.5.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-22). ');
+$ax += cidrblock($address, '104.143.92.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-23). ');
+$ax += cidrblock($address, '104.194.203.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-24). ');
+$ax += cidrblock($address, '104.238.45.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-25). ');
+$ax += cidrblock($address, '104.238.51.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-26). ');
+$ax += cidrblock($address, '104.243.245.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-27). ');
+$ax += cidrblock($address, '104.243.253.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-28). ');
+$ax += cidrblock($address, '104.243.254.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-29). ');
+$ax += cidrblock($address, '104.250.160.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-30). ');
+$ax += cidrblock($address, '104.250.172.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-31). ');
+$ax += cidrblock($address, '104.250.179.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-32). ');
+$ax += cidrblock($address, '104.250.183.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-33). ');
+$ax += cidrblock($address, '162.246.184.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-34). ');
+$ax += cidrblock($address, '172.94.47.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-35). ');
+$ax += cidrblock($address, '172.94.98.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-36). ');
+$ax += cidrblock($address, '172.94.100.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-37). ');
+$ax += cidrblock($address, '172.94.103.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-38). ');
+$ax += cidrblock($address, '172.111.169.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-39). ');
+$ax += cidrblock($address, '172.111.173.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-40). ');
+$ax += cidrblock($address, '172.111.175.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-41). ');
+$ax += cidrblock($address, '172.111.186.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-42). ');
+$ax += cidrblock($address, '172.111.192.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-43). ');
+$ax += cidrblock($address, '172.111.199.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-44). ');
+$ax += cidrblock($address, '172.111.236.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-45). ');
+$ax += cidrblock($address, '172.111.254.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-46). ');
+$ax += cidrblock($address, '173.239.195.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-47). ');
+$ax += cidrblock($address, '173.239.197.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-48). ');
+$ax += cidrblock($address, '173.239.198.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-49). ');
+$ax += cidrblock($address, '173.239.207.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-50). ');
+$ax += cidrblock($address, '173.244.55.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-51). ');
+$ax += cidrblock($address, '192.253.242.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-52). ');
+
+
 // ASN 59898 ("AllSafe Sarl").
 // Related to "ProtonVPN", "ProtonMail", and "Proton Technologies". Provides VPNs and proxies, both public and private.
 // No listings on any BLs yet, but we've been seeing some strange, bot-like activity from them via access logs and
@@ -81,7 +147,7 @@ $ax += cidrblock($address, '185.167.5.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-2).
 // Additional ProtonVPN CIDRs that aren't included in the above-blocked ASNs.
 // Updated: 2018.04.17
 
-$ax += cidrblock($address, '185.161.200.0/23', 'ProtonVPN (IP4X-PROTONVPN-3). ');
+$ax += cidrblock($address, '185.161.200.0/23', 'ProtonVPN (IP4X-PROTONVPN-0). ');
 
 
 // proXPN Direct LLC (1 CIDR; no ASN).
@@ -100,7 +166,7 @@ $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0).
 
 // Announcing as: "Reverse-Proxy".
 // Various ASNs; Sourced from HE.
-// Updated: 2018.04.17
+// Updated: 2018.04.17 / Checked: 2018.06.24
 
 $ax += cidrblock($address, '5.34.240.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-00). ');
 $ax += cidrblock($address, '5.157.4.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-01). ');
