@@ -15,9 +15,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2018.06.25
+ * This file last updated: 2018.06.30
  */
-$zbbversion .= ' / IP4S-81d';
+$zbbversion .= ' / IP4S-82a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1376,38 +1376,38 @@ $ax += cidrblock($address, '216.104.16.0/20', 'Trend Micro (IP4S-TRENDMICRO-11).
 // hacktools, scrapers, etc). Those whose websites anticipate human internet traffic from Israel should include this
 // section in their "ignore.dat" file, or else risk false positives by way of blocking innocents connecting from Israel.
 // Those whose don't anticipate any human internet traffic from Israel to their websites can safely block this ASN.
-// Updated: 2018.03.08
+// Updated: 2018.06.28
 
-$ax += cidrblock($address, '2.20.152.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-00). ');
-$ax += cidrblock($address, '92.122.128.0/20', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-01). ');
-$ax += cidrblock($address, '95.101.4.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-02). ');
-$ax += cidrblock($address, '31.168.0.0/16', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-03). ');
-$ax += cidrblock($address, '62.219.0.0/16', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-04). ');
-$ax += cidrblock($address, '79.176.0.0/13', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-05). ');
-$ax += cidrblock($address, '81.218.0.0/16', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-06). ');
-$ax += cidrblock($address, '82.80.0.0/15', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-07). ');
-$ax += cidrblock($address, '84.108.0.0/14', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-08). ');
-$ax += cidrblock($address, '85.130.128.0/17', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-09). ');
-$ax += cidrblock($address, '89.38.28.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-10). ');
-$ax += cidrblock($address, '109.64.0.0/14', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-11). ');
-$ax += cidrblock($address, '128.139.194.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-12). ');
-$ax += cidrblock($address, '192.114.11.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-13). ');
-$ax += cidrblock($address, '192.114.40.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-14). ');
-$ax += cidrblock($address, '192.114.64.0/20', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-15). ');
-$ax += cidrblock($address, '192.114.80.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-16). ');
-$ax += cidrblock($address, '192.114.144.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-17). ');
-$ax += cidrblock($address, '192.115.16.0/20', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-18). ');
-$ax += cidrblock($address, '192.115.56.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-19). ');
-$ax += cidrblock($address, '192.115.104.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-20). ');
-$ax += cidrblock($address, '192.115.128.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-21). ');
-$ax += cidrblock($address, '192.115.184.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-22). ');
-$ax += cidrblock($address, '192.117.96.0/19', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-23). ');
-$ax += cidrblock($address, '192.117.232.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-24). ');
-$ax += cidrblock($address, '212.25.64.0/18', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-25). ');
-$ax += cidrblock($address, '212.179.0.0/16', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-26). ');
-$ax += cidrblock($address, '217.194.200.0/23', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-27). ');
-$ax += cidrblock($address, '8.253.255.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-28). ');
-$ax += cidrblock($address, '23.34.224.0/20', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-29). ');
+$ax += cidrblock($address, '92.122.128.0/20', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-00). ');
+$ax += cidrblock($address, '95.101.4.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-01). ');
+$ax += cidrblock($address, '31.168.0.0/16', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-02). ');
+$ax += cidrblock($address, '62.219.0.0/16', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-03). ');
+$ax += cidrblock($address, '79.176.0.0/13', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-04). ');
+$ax += cidrblock($address, '81.218.0.0/16', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-05). ');
+$ax += cidrblock($address, '82.80.0.0/15', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-06). ');
+$ax += cidrblock($address, '84.108.0.0/14', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-07). ');
+$ax += cidrblock($address, '85.130.128.0/17', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-08). ');
+$ax += cidrblock($address, '89.38.28.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-09). ');
+$ax += cidrblock($address, '109.64.0.0/14', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-10). ');
+$ax += cidrblock($address, '128.139.194.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-11). ');
+$ax += cidrblock($address, '192.114.11.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-12). ');
+$ax += cidrblock($address, '192.114.40.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-13). ');
+$ax += cidrblock($address, '192.114.64.0/20', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-14). ');
+$ax += cidrblock($address, '192.114.80.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-15). ');
+$ax += cidrblock($address, '192.114.144.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-16). ');
+$ax += cidrblock($address, '192.115.16.0/20', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-17). ');
+$ax += cidrblock($address, '192.115.56.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-18). ');
+$ax += cidrblock($address, '192.115.104.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-19). ');
+$ax += cidrblock($address, '192.115.128.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-20). ');
+$ax += cidrblock($address, '192.115.184.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-21). ');
+$ax += cidrblock($address, '192.117.96.0/19', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-22). ');
+$ax += cidrblock($address, '192.117.232.0/21', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-23). ');
+$ax += cidrblock($address, '212.25.64.0/18', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-24). ');
+$ax += cidrblock($address, '212.179.0.0/16', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-25). ');
+$ax += cidrblock($address, '217.194.200.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-26). ');
+$ax += cidrblock($address, '8.253.255.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-27). ');
+$ax += cidrblock($address, '23.34.224.0/20', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-28). ');
+$ax += cidrblock($address, '23.45.121.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-29). ');
 $ax += cidrblock($address, '23.195.8.0/22', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-30). ');
 $ax += cidrblock($address, '72.246.151.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-31). ');
 $ax += cidrblock($address, '104.70.127.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-32). ');
@@ -1727,53 +1727,52 @@ $ax += cidrblock($address, '185.42.104.0/22', '10dencehispahard (IP4S-10DENCEHIS
 
 
 // ASN 45753 ("Unit 1205-1207").
-// Updated: 2018.03.15
+// Confirmed data hosters: "Simcentric", "DATAPLUGS.COM", "Ethr.Net", "CLOUD LIMITED", "NETSEC".
+// ^.*(Simcentric|DATAPLUGS\.COM|Ethr\.Net|CLOUD LIMITED|NETSEC).*$\n
+// Confirmed data hosters split to the cloud services signature files.
+// Everything else remains in the ISPs signature files.
+// Updated: 2018.06.30
 
 $ax += cidrblock($address, '103.42.104.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-00). ');
 $ax += cidrblock($address, '103.71.144.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-01). ');
-$ax += cidrblock($address, '103.100.140.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-02). ');
-$ax += cidrblock($address, '106.3.86.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-03). ');
-$ax += cidrblock($address, '118.91.240.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-04). ');
-$ax += cidrblock($address, '183.182.12.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-05). ');
-$ax += cidrblock($address, '43.225.196.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-06). ');
+$ax += cidrblock($address, '103.100.140.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-02). ');
+$ax += cidrblock($address, '103.106.246.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-03). ');
+$ax += cidrblock($address, '106.3.86.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-04). ');
+$ax += cidrblock($address, '118.91.240.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-05). ');
+$ax += cidrblock($address, '183.182.12.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-06). ');
 $ax += cidrblock($address, '45.121.140.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-07). ');
-$ax += cidrblock($address, '52.128.224.0/19', 'Unit 1205-1207 (IP4S-UNIT12051207-08). ');
-$ax += cidrblock($address, '103.1.224.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-09). ');
-$ax += cidrblock($address, '103.30.24.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-10). ');
-$ax += cidrblock($address, '103.44.160.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-11). ');
-$ax += cidrblock($address, '103.61.240.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-12). ');
-$ax += cidrblock($address, '103.70.76.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-13). ');
-$ax += cidrblock($address, '103.71.252.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-14). ');
-$ax += cidrblock($address, '103.80.168.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-15). ');
-$ax += cidrblock($address, '103.84.84.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-16). ');
-$ax += cidrblock($address, '103.91.8.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-17). ');
-$ax += cidrblock($address, '103.194.184.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-18). ');
-$ax += cidrblock($address, '103.199.104.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-19). ');
-$ax += cidrblock($address, '103.203.48.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-20). ');
-$ax += cidrblock($address, '103.212.96.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-21). ');
-$ax += cidrblock($address, '103.240.40.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-22). ');
-$ax += cidrblock($address, '110.173.48.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-23). ');
-$ax += cidrblock($address, '111.68.0.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-24). ');
-$ax += cidrblock($address, '112.121.160.0/19', 'Unit 1205-1207 (IP4S-UNIT12051207-25). ');
-$ax += cidrblock($address, '116.213.36.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-26). ');
-$ax += cidrblock($address, '119.42.144.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-27). ');
-$ax += cidrblock($address, '137.59.20.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-28). ');
-$ax += cidrblock($address, '139.5.200.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-29). ');
-$ax += cidrblock($address, '148.66.0.0/19', 'Unit 1205-1207 (IP4S-UNIT12051207-30). ');
-$ax += cidrblock($address, '148.66.48.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-31). ');
-$ax += cidrblock($address, '175.41.16.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-32). ');
-$ax += cidrblock($address, '180.178.32.0/19', 'Unit 1205-1207 (IP4S-UNIT12051207-33). ');
-$ax += cidrblock($address, '182.16.0.0/17', 'Unit 1205-1207 (IP4S-UNIT12051207-34). ');
-$ax += cidrblock($address, '216.118.224.0/19', 'Unit 1205-1207 (IP4S-UNIT12051207-35). ');
-$ax += cidrblock($address, '63.216.57.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-36). ');
-$ax += cidrblock($address, '63.220.4.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-37). ');
-$ax += cidrblock($address, '63.220.7.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-38). ');
-$ax += cidrblock($address, '63.221.138.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-39). ');
-$ax += cidrblock($address, '69.176.88.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-40). ');
-$ax += cidrblock($address, '96.43.96.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-41). ');
-$ax += cidrblock($address, '103.72.82.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-42). ');
-$ax += cidrblock($address, '216.83.40.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-43). ');
-$ax += cidrblock($address, '216.83.56.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-44). ');
+$ax += cidrblock($address, '52.128.253.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-08). ');
+$ax += cidrblock($address, '103.30.24.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-09). ');
+$ax += cidrblock($address, '103.61.240.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-10). ');
+$ax += cidrblock($address, '103.70.76.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-11). ');
+$ax += cidrblock($address, '103.80.168.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-12). ');
+$ax += cidrblock($address, '103.84.84.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-13). ');
+$ax += cidrblock($address, '103.91.8.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-14). ');
+$ax += cidrblock($address, '103.199.104.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-15). ');
+$ax += cidrblock($address, '103.203.48.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-16). ');
+$ax += cidrblock($address, '103.212.96.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-17). ');
+$ax += cidrblock($address, '103.240.40.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-18). ');
+$ax += cidrblock($address, '110.173.48.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-19). ');
+$ax += cidrblock($address, '111.68.0.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-20). ');
+$ax += cidrblock($address, '116.213.36.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-21). ');
+$ax += cidrblock($address, '119.42.144.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-22). ');
+$ax += cidrblock($address, '137.59.20.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-23). ');
+$ax += cidrblock($address, '139.5.200.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-24). ');
+$ax += cidrblock($address, '175.41.16.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-25). ');
+$ax += cidrblock($address, '202.61.97.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-26). ');
+$ax += cidrblock($address, '202.61.111.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-27). ');
+$ax += cidrblock($address, '203.33.189.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-28). ');
+$ax += cidrblock($address, '216.118.240.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-29). ');
+$ax += cidrblock($address, '63.216.57.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-30). ');
+$ax += cidrblock($address, '63.220.4.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-31). ');
+$ax += cidrblock($address, '63.220.7.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-32). ');
+$ax += cidrblock($address, '63.221.138.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-33). ');
+$ax += cidrblock($address, '69.176.88.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-34). ');
+$ax += cidrblock($address, '103.72.82.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-35). ');
+$ax += cidrblock($address, '141.193.152.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-36). ');
+$ax += cidrblock($address, '192.252.176.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-37). ');
+$ax += cidrblock($address, '192.253.224.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-38). ');
+$ax += cidrblock($address, '216.83.58.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-39). ');
 
 
 // ASN 43260 ("DGN TEKNOLOJI BILISIM YAYINCILIK SANAYI VE LIMITED SIRKETI").
@@ -8052,6 +8051,32 @@ $ax += cidrblock($address, '213.36.0.0/16', 'ONLINE S.A.S (IP4S-ONLINESAS-20). '
 $ax += cidrblock($address, '213.228.0.0/18', 'ONLINE S.A.S (IP4S-ONLINESAS-21). ');
 $ax += cidrblock($address, '151.115.0.0/16', 'ONLINE S.A.S (IP4S-ONLINESAS-22). ');
 $ax += cidrblock($address, '163.172.0.0/16', 'ONLINE S.A.S (IP4S-ONLINESAS-23). ');
+
+
+// Detected spammy ranges belonging to otherwise benign and clean networks.
+
+// Belongs to ASN 24532 ("PT. Inet Global Indo").
+// Updated: 2018.06.30
+
+$ax += cidrblock($address, '27.111.32.0/20', 'Misc. Spam (IP4S-MISCSPAM-0). ');
+
+
+// ASN 9123 ("OOO TimeWeb").
+// Split to ISPs signature files:
+// - "residential ethernet networks".
+// - "trade center public wi-fi & campus connectivity".
+// - "bank campus network & e-commerce cluster".
+// - "corporate internet gate".
+// ^.*(residential|trade center|campus connectivity|bank campus|corporate internet gate).*$
+// Everything else in the cloud services signature files.
+// Updated: 2018.06.30
+
+$ax += cidrblock($address, '188.225.8.0/21', 'OOO TimeWeb (IP4S-OOOTIMEWEB-0). ');
+$ax += cidrblock($address, '188.225.40.0/21', 'OOO TimeWeb (IP4S-OOOTIMEWEB-1). ');
+$ax += cidrblock($address, '188.225.56.0/23', 'OOO TimeWeb (IP4S-OOOTIMEWEB-2). ');
+$ax += cidrblock($address, '188.225.59.0/24', 'OOO TimeWeb (IP4S-OOOTIMEWEB-3). ');
+$ax += cidrblock($address, '188.225.60.0/22', 'OOO TimeWeb (IP4S-OOOTIMEWEB-4). ');
+$ax += cidrblock($address, '188.225.80.0/21', 'OOO TimeWeb (IP4S-OOOTIMEWEB-5). ');
 
 // IP4S Test Trigger
 $ax += inmatch($query, 'xip4sx', 'IP4S Test Trigger. ');
