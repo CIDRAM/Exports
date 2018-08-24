@@ -15,9 +15,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2018.08.22
+ * This file last updated: 2018.08.25
  */
-$zbbversion .= ' / IP4X-83a';
+$zbbversion .= ' / IP4X-83b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -56,7 +56,7 @@ $ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
 
 // Cogent VPNs+Proxies (Proxy Technologies Inc, proXPN Direct LLC, AzireVPN, OVPN, PRIVAX LTD, Proxicom, BeeVPN ApS,
 // IT Proximus, etc). I.e., "^.*(?:Prox[ipy]|PRIVAX|VPN).*$"
-// Updated: 2018.01.08 / Checked: 2018.04.29
+// Updated: 2018.01.08 / Checked: 2018.08.25
 $ax += cidrblock($address, '5.158.83.0/24', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-0). ');
 $ax += cidrblock($address, '62.73.7.0/24', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-1). ');
 $ax += cidrblock($address, '62.73.8.0/23', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-2). ');
