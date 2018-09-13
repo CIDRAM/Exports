@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2018.09.01
+ * This file last updated: 2018.09.14
  */
-$zbbversion .= ' / IP4X-84';
+$zbbversion .= ' / IP4X-84a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -25,9 +25,8 @@ global $whyblockout, $ax;
 
 // ---
 // IPv4 Bogons List.
-// Updated: 2018.03.29
+// Updated: 2018.03.29 / Checked: 2018.09.07
 // Refer https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
-// Updated: 2018.02.21
 
 $ax += cidrblock($address, '0.0.0.0/8', 'IPv4 Bogons (IP4X-IPV4BOGONS-0). ');
 $ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
@@ -165,7 +164,7 @@ $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0).
 
 // Announcing as: "Reverse-Proxy".
 // Various ASNs; Sourced from HE.
-// Updated: 2018.04.17 / Checked: 2018.06.24
+// Updated: 2018.09.07
 
 $ax += cidrblock($address, '5.34.240.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-00). ');
 $ax += cidrblock($address, '5.157.4.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-01). ');
@@ -184,7 +183,7 @@ $ax += cidrblock($address, '91.108.176.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-
 $ax += cidrblock($address, '185.3.132.0/23', 'Reverse-Proxy (IP4X-REVERSEPROXY-14). ');
 $ax += cidrblock($address, '185.3.134.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-15). ');
 $ax += cidrblock($address, '46.29.248.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-16). ');
-$ax += cidrblock($address, '151.237.177.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-17). ');
+$ax += cidrblock($address, '151.237.176.0/23', 'Reverse-Proxy (IP4X-REVERSEPROXY-17). ');
 $ax += cidrblock($address, '151.237.179.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-18). ');
 $ax += cidrblock($address, '176.61.136.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-19). ');
 $ax += cidrblock($address, '176.61.141.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-20). ');
