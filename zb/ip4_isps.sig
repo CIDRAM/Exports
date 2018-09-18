@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2018.09.14
+ * This file last updated: 2018.09.18
  */
-$zbbversion .= ' / IP4S-84a';
+$zbbversion .= ' / IP4S-84b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -8076,7 +8076,7 @@ $ax += cidrblock($address, '122.128.96.0/23', 'SoftLayer Spam ISPs (IP4S-SOFTLAY
 // Spamming getting significantly worse!
 // Moved from cloud services to spammy ISPs signature files due to being a multi-play network.
 // Also provides internet connectivity in some parts of France.
-// Updated: 2018.06.24
+// Updated: 2018.06.24 / Checked: 2018.09.18
 
 $ax += cidrblock($address, '51.15.0.0/16', 'ONLINE S.A.S (IP4S-ONLINESAS-00). ');
 $ax += cidrblock($address, '51.158.0.0/15', 'ONLINE S.A.S (IP4S-ONLINESAS-01). ');
@@ -8167,6 +8167,42 @@ $ax += cidrblock($address, '81.198.86.45/32', 'XRumer/Temp (IP4S-XRUMERTEMP-4). 
 $ax += cidrblock($address, '118.148.68.127/32', 'XRumer/Temp (IP4S-XRUMERTEMP-5). ');
 $ax += cidrblock($address, '190.104.175.114/32', 'XRumer/Temp (IP4S-XRUMERTEMP-6). ');
 $ax += cidrblock($address, '203.95.222.206/32', 'XRumer/Temp (IP4S-XRUMERTEMP-7). ');
+
+
+// ASN 31343 ("JSC Kazakhtelecom").
+// Legit ISP in Kazakhstan carrying human endpoints, but also a significant source of spam and other unwanted requests.
+// Updated: 2018.09.15
+
+$ax += cidrblock($address, '2.132.0.0/14', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-00). ');
+$ax += cidrblock($address, '5.63.64.0/18', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-01). ');
+$ax += cidrblock($address, '5.76.0.0/16', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-02). ');
+$ax += cidrblock($address, '5.104.232.0/21', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-03). ');
+$ax += cidrblock($address, '5.250.128.0/19', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-04). ');
+$ax += cidrblock($address, '5.251.0.0/16', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-05). ');
+$ax += cidrblock($address, '31.169.0.0/19', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-06). ');
+$ax += cidrblock($address, '37.150.0.0/15', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-07). ');
+$ax += cidrblock($address, '78.109.144.0/20', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-08). ');
+$ax += cidrblock($address, '82.200.128.0/17', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-09). ');
+$ax += cidrblock($address, '84.240.192.0/18', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-10). ');
+$ax += cidrblock($address, '88.204.128.0/17', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-11). ');
+$ax += cidrblock($address, '89.106.232.0/21', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-12). ');
+$ax += cidrblock($address, '89.218.0.0/16', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-13). ');
+$ax += cidrblock($address, '92.46.0.0/15', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-14). ');
+$ax += cidrblock($address, '93.95.240.0/21', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-15). ');
+$ax += cidrblock($address, '95.56.0.0/14', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-16). ');
+$ax += cidrblock($address, '145.255.160.0/19', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-17). ');
+$ax += cidrblock($address, '147.30.0.0/16', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-18). ');
+$ax += cidrblock($address, '178.88.0.0/14', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-19). ');
+$ax += cidrblock($address, '185.35.16.0/22', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-20). ');
+$ax += cidrblock($address, '185.125.88.0/24', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-21). ');
+$ax += cidrblock($address, '195.12.97.0/24', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-22). ');
+$ax += cidrblock($address, '195.12.100.0/24', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-23). ');
+$ax += cidrblock($address, '195.12.111.0/24', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-24). ');
+$ax += cidrblock($address, '195.82.0.0/19', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-25). ');
+$ax += cidrblock($address, '212.13.128.0/18', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-26). ');
+$ax += cidrblock($address, '212.19.128.0/19', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-27). ');
+$ax += cidrblock($address, '212.154.128.0/17', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-28). ');
+$ax += cidrblock($address, '213.211.64.0/18', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-29). ');
 
 // IP4S Test Trigger
 $ax += inmatch($query, 'xip4sx', 'IP4S Test Trigger. ');
