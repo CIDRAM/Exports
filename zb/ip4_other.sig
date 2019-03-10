@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.02.27
+ * This file last updated: 2019.03.10
  */
-$zbbversion .= ' / IP4X-89a';
+$zbbversion .= ' / IP4X-90';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -349,33 +349,6 @@ $ax += cidrblock($address, '173.0.0.0/20', 'proXPN Direct LLC (IP4X-PROXPNDIRECT
 // Updated: 2018.04.23 / Checked: 2018.09.01
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
-
-
-// Announcing as: "Reverse-Proxy".
-// Various ASNs; Sourced from HE.
-// Updated: 2018.09.07
-
-$ax += cidrblock($address, '5.34.240.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-00). ');
-$ax += cidrblock($address, '5.157.4.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-01). ');
-$ax += cidrblock($address, '5.157.6.0/23', 'Reverse-Proxy (IP4X-REVERSEPROXY-02). ');
-$ax += cidrblock($address, '5.157.11.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-03). ');
-$ax += cidrblock($address, '5.157.18.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-04). ');
-$ax += cidrblock($address, '5.157.21.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-05). ');
-$ax += cidrblock($address, '5.157.22.0/23', 'Reverse-Proxy (IP4X-REVERSEPROXY-06). ');
-$ax += cidrblock($address, '5.157.24.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-07). ');
-$ax += cidrblock($address, '5.157.29.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-08). ');
-$ax += cidrblock($address, '5.157.31.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-09). ');
-$ax += cidrblock($address, '5.157.32.0/23', 'Reverse-Proxy (IP4X-REVERSEPROXY-10). ');
-$ax += cidrblock($address, '5.157.36.0/23', 'Reverse-Proxy (IP4X-REVERSEPROXY-11). ');
-$ax += cidrblock($address, '5.157.50.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-12). ');
-$ax += cidrblock($address, '91.108.176.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-13). ');
-$ax += cidrblock($address, '185.3.132.0/23', 'Reverse-Proxy (IP4X-REVERSEPROXY-14). ');
-$ax += cidrblock($address, '185.3.134.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-15). ');
-$ax += cidrblock($address, '46.29.248.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-16). ');
-$ax += cidrblock($address, '151.237.176.0/23', 'Reverse-Proxy (IP4X-REVERSEPROXY-17). ');
-$ax += cidrblock($address, '151.237.179.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-18). ');
-$ax += cidrblock($address, '176.61.136.0/22', 'Reverse-Proxy (IP4X-REVERSEPROXY-19). ');
-$ax += cidrblock($address, '176.61.141.0/24', 'Reverse-Proxy (IP4X-REVERSEPROXY-20). ');
 
 
 // "Packet Flip, LLC" (various non-specific ASNs).
