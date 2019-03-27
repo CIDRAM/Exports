@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.03.20
+ * This file last updated: 2019.03.27
  */
-$zbbversion .= ' / IP4X-90a';
+$zbbversion .= ' / IP4X-90b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -323,30 +323,29 @@ $ax += cidrblock($address, '192.253.242.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVP
 
 // ASN 59898 ("AllSafe Sarl").
 // Related to "ProtonVPN", "ProtonMail", and "Proton Technologies". Provides VPNs and proxies, both public and private.
-// No listings on any BLs yet, but we've been seeing some strange, bot-like activity from them via access logs and
-// honeypots. Added as a precaution.
-// Updated: 2018.04.17 / Checked: 2018.09.01
+// Updated: 2019.03.26
 
 $ax += cidrblock($address, '185.159.157.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-0). ');
-$ax += cidrblock($address, '185.196.136.0/23', 'AllSafe Sarl (IP4X-ALLSAFESARL-1). ');
-$ax += cidrblock($address, '185.167.5.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-2). ');
+$ax += cidrblock($address, '185.167.4.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-1). ');
+$ax += cidrblock($address, '185.167.6.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-2). ');
+$ax += cidrblock($address, '185.196.136.0/23', 'AllSafe Sarl (IP4X-ALLSAFESARL-3). ');
 
 // Additional ProtonVPN CIDRs that aren't included in the above-blocked ASNs.
-// Updated: 2018.04.17 / Checked: 2018.09.01
+// Updated: 2018.04.17 / Checked: 2019.03.26
 
 $ax += cidrblock($address, '185.161.200.0/23', 'ProtonVPN (IP4X-PROTONVPN-0). ');
 
 
 // proXPN Direct LLC (1 CIDR; no ASN).
 // Anonymous proxy service; Potential source of SPAM and hacking attacks.
-// Updated: 2016.05.26 / Checked: 2018.09.01
+// Updated: 2016.05.26 / Checked: 2019.03.26
 
 $ax += cidrblock($address, '173.0.0.0/20', 'proXPN Direct LLC (IP4X-PROXPNDIRECTLLC-0). ');
 
 
 // ASN 205100 ("F3 Netze e.V").
 // Provides TOR exit nodes.
-// Updated: 2018.04.23 / Checked: 2018.09.01
+// Updated: 2018.04.23 / Checked: 2019.03.26
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
 
