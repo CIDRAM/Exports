@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.03.27
+ * This file last updated: 2019.03.30
  */
-$zbbversion .= ' / IP4H-90b';
+$zbbversion .= ' / IP4H-90c';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -891,7 +891,7 @@ $ax += cidrblock($address, '217.16.16.0/20', 'Masterhost (IP4H-MASTERHOST-4). ')
 
 
 // ASN 26496 ("GoDaddy.com, LLC").
-// Updated: 2018.10.07
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '37.148.200.0/21', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-00). ');
 $ax += cidrblock($address, '46.252.192.0/20', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-01). ');
@@ -916,17 +916,19 @@ $ax += cidrblock($address, '107.180.0.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOML
 $ax += cidrblock($address, '132.148.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-20). ');
 $ax += cidrblock($address, '148.72.0.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-21). ');
 $ax += cidrblock($address, '148.72.192.0/20', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-22). ');
-$ax += cidrblock($address, '148.72.224.0/19', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-23). ');
-$ax += cidrblock($address, '160.153.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-24). ');
-$ax += cidrblock($address, '166.62.0.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-25). ');
-$ax += cidrblock($address, '173.201.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-26). ');
-$ax += cidrblock($address, '184.168.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-27). ');
-$ax += cidrblock($address, '192.169.128.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-28). ');
-$ax += cidrblock($address, '192.186.192.0/18', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-29). ');
-$ax += cidrblock($address, '198.12.128.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-30). ');
-$ax += cidrblock($address, '198.71.128.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-31). ');
-$ax += cidrblock($address, '208.109.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-32). ');
-$ax += cidrblock($address, '216.69.128.0/18', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-33). ');
+$ax += cidrblock($address, '148.72.208.0/21', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-23). ');
+$ax += cidrblock($address, '148.72.216.0/22', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-24). ');
+$ax += cidrblock($address, '148.72.224.0/19', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-25). ');
+$ax += cidrblock($address, '160.153.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-26). ');
+$ax += cidrblock($address, '166.62.0.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-27). ');
+$ax += cidrblock($address, '173.201.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-28). ');
+$ax += cidrblock($address, '184.168.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-29). ');
+$ax += cidrblock($address, '192.169.128.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-30). ');
+$ax += cidrblock($address, '192.186.192.0/18', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-31). ');
+$ax += cidrblock($address, '198.12.128.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-32). ');
+$ax += cidrblock($address, '198.71.128.0/17', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-33). ');
+$ax += cidrblock($address, '208.109.0.0/16', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-34). ');
+$ax += cidrblock($address, '216.69.128.0/18', 'GoDaddy.com, LLC (IP4H-GODADDYCOMLLC-35). ');
 
 
 // ASN 8560 ("1&1 Internet SE").
@@ -3292,7 +3294,7 @@ $ax += cidrblock($address, '208.89.216.0/21', 'Eonix Corporation (IP4H-EONIXCORP
 
 
 // ASNs 32748, 46440 ("Steadfast Networks").
-// Updated: 2018.10.05
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '23.29.128.0/19', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-00). ');
 $ax += cidrblock($address, '50.31.0.0/17', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-01). ');
@@ -3302,17 +3304,16 @@ $ax += cidrblock($address, '69.162.128.0/18', 'Steadfast Networks (IP4H-STEADFAS
 $ax += cidrblock($address, '104.36.56.0/21', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-05). ');
 $ax += cidrblock($address, '104.171.128.0/21', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-06). ');
 $ax += cidrblock($address, '107.191.176.0/23', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-07). ');
-$ax += cidrblock($address, '162.208.54.0/23', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-08). ');
-$ax += cidrblock($address, '162.210.96.0/21', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-09). ');
-$ax += cidrblock($address, '162.249.124.0/22', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-10). ');
-$ax += cidrblock($address, '170.10.160.0/20', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-11). ');
-$ax += cidrblock($address, '198.23.48.0/20', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-12). ');
-$ax += cidrblock($address, '199.195.156.0/22', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-13). ');
-$ax += cidrblock($address, '204.238.229.0/24', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-14). ');
-$ax += cidrblock($address, '208.66.168.0/21', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-15). ');
-$ax += cidrblock($address, '208.100.0.0/18', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-16). ');
-$ax += cidrblock($address, '208.117.0.0/18', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-17). ');
-$ax += cidrblock($address, '216.86.144.0/20', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-18). ');
+$ax += cidrblock($address, '162.210.96.0/21', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-08). ');
+$ax += cidrblock($address, '162.249.124.0/22', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-09). ');
+$ax += cidrblock($address, '170.10.160.0/20', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-10). ');
+$ax += cidrblock($address, '198.23.48.0/20', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-11). ');
+$ax += cidrblock($address, '199.195.156.0/22', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-12). ');
+$ax += cidrblock($address, '204.238.229.0/24', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-13). ');
+$ax += cidrblock($address, '208.66.168.0/21', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-14). ');
+$ax += cidrblock($address, '208.100.0.0/18', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-15). ');
+$ax += cidrblock($address, '208.117.0.0/18', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-16). ');
+$ax += cidrblock($address, '216.86.144.0/20', 'Steadfast Networks (IP4H-STEADFASTNETWORKS-17). ');
 
 
 // ASN 51088 ("A2B IP B.V").
@@ -3548,94 +3549,105 @@ $ax += cidrblock($address, '212.110.160.0/19', 'Bytemark Limited (IP4H-BYTEMARKL
 $ax += cidrblock($address, '213.138.96.0/19', 'Bytemark Limited (IP4H-BYTEMARKLIMITED-13). ');
 
 
-// ASNs 14061, 46652 ("DigitalOcean, LLC", "ServerStack, Inc").
+// ASNs 14061, 39690, 46652 ("DigitalOcean, LLC", "Digital Ocean SRL", "ServerStack, Inc").
 // Ranges change frequently / Should update often.
 // Remove unassigned prior to aggregating (e.g., 10.0.0.0/8).
-// Updated: 2019.01.20
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '163.47.8.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-00). ');
-$ax += cidrblock($address, '80.240.128.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-01). ');
-$ax += cidrblock($address, '95.85.0.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-02). ');
-$ax += cidrblock($address, '178.62.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-03). ');
-$ax += cidrblock($address, '188.226.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-04). ');
-$ax += cidrblock($address, '128.199.32.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-05). ');
-$ax += cidrblock($address, '128.199.64.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-06). ');
-$ax += cidrblock($address, '128.199.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-07). ');
-$ax += cidrblock($address, '5.101.96.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-08). ');
-$ax += cidrblock($address, '37.139.0.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-09). ');
-$ax += cidrblock($address, '46.101.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-10). ');
-$ax += cidrblock($address, '82.196.0.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-11). ');
-$ax += cidrblock($address, '141.0.168.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-12). ');
-$ax += cidrblock($address, '146.185.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-13). ');
-$ax += cidrblock($address, '178.128.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-14). ');
-$ax += cidrblock($address, '185.14.184.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-15). ');
-$ax += cidrblock($address, '185.88.180.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-16). ');
-$ax += cidrblock($address, '188.166.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-17). ');
-$ax += cidrblock($address, '103.253.144.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-18). ');
-$ax += cidrblock($address, '139.59.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-19). ');
-$ax += cidrblock($address, '45.55.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-20). ');
-$ax += cidrblock($address, '67.205.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-21). ');
-$ax += cidrblock($address, '67.207.66.0/23', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-22). ');
-$ax += cidrblock($address, '67.207.68.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-23). ');
-$ax += cidrblock($address, '67.207.72.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-24). ');
-$ax += cidrblock($address, '67.207.80.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-25). ');
-$ax += cidrblock($address, '68.183.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-26). ');
-$ax += cidrblock($address, '69.55.48.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-27). ');
-$ax += cidrblock($address, '104.131.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-28). ');
-$ax += cidrblock($address, '104.236.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-29). ');
-$ax += cidrblock($address, '104.248.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-30). ');
-$ax += cidrblock($address, '107.170.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-31). ');
-$ax += cidrblock($address, '138.68.0.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-32). ');
-$ax += cidrblock($address, '138.68.32.0/23', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-33). ');
-$ax += cidrblock($address, '138.68.36.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-34). ');
-$ax += cidrblock($address, '138.68.40.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-35). ');
-$ax += cidrblock($address, '138.68.48.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-36). ');
-$ax += cidrblock($address, '138.68.64.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-37). ');
-$ax += cidrblock($address, '138.68.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-38). ');
-$ax += cidrblock($address, '138.197.0.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-39). ');
-$ax += cidrblock($address, '138.197.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-40). ');
-$ax += cidrblock($address, '138.197.192.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-41). ');
-$ax += cidrblock($address, '138.197.224.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-42). ');
-$ax += cidrblock($address, '138.197.240.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-43). ');
-$ax += cidrblock($address, '138.197.252.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-44). ');
-$ax += cidrblock($address, '142.93.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-45). ');
-$ax += cidrblock($address, '157.230.0.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-46). ');
-$ax += cidrblock($address, '157.230.128.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-47). ');
-$ax += cidrblock($address, '157.230.160.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-48). ');
-$ax += cidrblock($address, '159.65.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-49). ');
-$ax += cidrblock($address, '159.89.0.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-50). ');
-$ax += cidrblock($address, '159.89.32.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-51). ');
-$ax += cidrblock($address, '159.89.48.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-52). ');
-$ax += cidrblock($address, '159.89.58.0/23', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-53). ');
-$ax += cidrblock($address, '159.89.60.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-54). ');
-$ax += cidrblock($address, '159.89.64.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-55). ');
-$ax += cidrblock($address, '159.89.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-56). ');
-$ax += cidrblock($address, '159.203.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-57). ');
-$ax += cidrblock($address, '162.243.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-58). ');
-$ax += cidrblock($address, '165.227.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-59). ');
-$ax += cidrblock($address, '167.99.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-60). ');
-$ax += cidrblock($address, '174.138.0.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-61). ');
-$ax += cidrblock($address, '174.138.64.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-62). ');
-$ax += cidrblock($address, '174.138.96.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-63). ');
-$ax += cidrblock($address, '174.138.104.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-64). ');
-$ax += cidrblock($address, '174.138.112.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-65). ');
-$ax += cidrblock($address, '192.34.56.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-66). ');
-$ax += cidrblock($address, '192.81.208.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-67). ');
-$ax += cidrblock($address, '192.241.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-68). ');
-$ax += cidrblock($address, '198.199.64.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-69). ');
-$ax += cidrblock($address, '198.211.96.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-70). ');
-$ax += cidrblock($address, '198.232.147.0/24', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-71). ');
-$ax += cidrblock($address, '199.4.223.0/24', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-72). ');
-$ax += cidrblock($address, '204.48.16.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-73). ');
-$ax += cidrblock($address, '206.81.0.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-74). ');
-$ax += cidrblock($address, '206.189.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-75). ');
-$ax += cidrblock($address, '207.154.192.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-76). ');
-$ax += cidrblock($address, '208.68.36.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-77). ');
-$ax += cidrblock($address, '209.97.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-78). ');
+$ax += cidrblock($address, '2.56.220.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-01). ');
+$ax += cidrblock($address, '80.240.128.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-02). ');
+$ax += cidrblock($address, '95.85.0.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-03). ');
+$ax += cidrblock($address, '178.62.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-04). ');
+$ax += cidrblock($address, '188.226.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-05). ');
+$ax += cidrblock($address, '128.199.32.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-06). ');
+$ax += cidrblock($address, '128.199.64.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-07). ');
+$ax += cidrblock($address, '128.199.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-08). ');
+$ax += cidrblock($address, '5.101.96.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-09). ');
+$ax += cidrblock($address, '37.139.0.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-10). ');
+$ax += cidrblock($address, '46.101.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-11). ');
+$ax += cidrblock($address, '82.196.0.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-12). ');
+$ax += cidrblock($address, '141.0.168.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-13). ');
+$ax += cidrblock($address, '146.185.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-14). ');
+$ax += cidrblock($address, '178.128.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-15). ');
+$ax += cidrblock($address, '185.14.184.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-16). ');
+$ax += cidrblock($address, '185.88.180.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-17). ');
+$ax += cidrblock($address, '188.166.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-18). ');
+$ax += cidrblock($address, '103.253.144.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-19). ');
+$ax += cidrblock($address, '139.59.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-20). ');
+$ax += cidrblock($address, '45.55.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-21). ');
+$ax += cidrblock($address, '67.205.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-22). ');
+$ax += cidrblock($address, '67.207.66.0/23', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-23). ');
+$ax += cidrblock($address, '67.207.68.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-24). ');
+$ax += cidrblock($address, '67.207.72.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-25). ');
+$ax += cidrblock($address, '67.207.80.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-26). ');
+$ax += cidrblock($address, '68.183.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-27). ');
+$ax += cidrblock($address, '69.55.48.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-28). ');
+$ax += cidrblock($address, '104.131.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-29). ');
+$ax += cidrblock($address, '104.236.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-30). ');
+$ax += cidrblock($address, '104.248.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-31). ');
+$ax += cidrblock($address, '107.170.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-32). ');
+$ax += cidrblock($address, '134.209.0.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-33). ');
+$ax += cidrblock($address, '134.209.128.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-34). ');
+$ax += cidrblock($address, '134.209.144.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-35). ');
+$ax += cidrblock($address, '134.209.160.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-36). ');
+$ax += cidrblock($address, '134.209.192.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-37). ');
+$ax += cidrblock($address, '138.68.0.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-38). ');
+$ax += cidrblock($address, '138.68.32.0/23', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-39). ');
+$ax += cidrblock($address, '138.68.36.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-40). ');
+$ax += cidrblock($address, '138.68.40.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-41). ');
+$ax += cidrblock($address, '138.68.48.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-42). ');
+$ax += cidrblock($address, '138.68.64.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-43). ');
+$ax += cidrblock($address, '138.68.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-44). ');
+$ax += cidrblock($address, '138.197.0.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-45). ');
+$ax += cidrblock($address, '138.197.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-46). ');
+$ax += cidrblock($address, '138.197.192.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-47). ');
+$ax += cidrblock($address, '138.197.224.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-48). ');
+$ax += cidrblock($address, '138.197.240.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-49). ');
+$ax += cidrblock($address, '138.197.252.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-50). ');
+$ax += cidrblock($address, '142.93.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-51). ');
+$ax += cidrblock($address, '157.230.0.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-52). ');
+$ax += cidrblock($address, '157.230.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-53). ');
+$ax += cidrblock($address, '157.230.192.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-54). ');
+$ax += cidrblock($address, '157.230.208.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-55). ');
+$ax += cidrblock($address, '157.230.224.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-56). ');
+$ax += cidrblock($address, '159.65.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-57). ');
+$ax += cidrblock($address, '159.89.0.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-58). ');
+$ax += cidrblock($address, '159.89.32.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-59). ');
+$ax += cidrblock($address, '159.89.48.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-60). ');
+$ax += cidrblock($address, '159.89.58.0/23', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-61). ');
+$ax += cidrblock($address, '159.89.60.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-62). ');
+$ax += cidrblock($address, '159.89.64.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-63). ');
+$ax += cidrblock($address, '159.89.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-64). ');
+$ax += cidrblock($address, '159.203.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-65). ');
+$ax += cidrblock($address, '162.243.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-66). ');
+$ax += cidrblock($address, '165.22.0.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-67). ');
+$ax += cidrblock($address, '165.22.64.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-68). ');
+$ax += cidrblock($address, '165.22.128.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-69). ');
+$ax += cidrblock($address, '165.227.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-70). ');
+$ax += cidrblock($address, '167.99.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-71). ');
+$ax += cidrblock($address, '174.138.0.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-72). ');
+$ax += cidrblock($address, '174.138.64.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-73). ');
+$ax += cidrblock($address, '174.138.96.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-74). ');
+$ax += cidrblock($address, '174.138.104.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-75). ');
+$ax += cidrblock($address, '174.138.112.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-76). ');
+$ax += cidrblock($address, '192.34.56.0/21', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-77). ');
+$ax += cidrblock($address, '192.81.208.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-78). ');
+$ax += cidrblock($address, '192.241.128.0/17', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-79). ');
+$ax += cidrblock($address, '198.199.64.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-80). ');
+$ax += cidrblock($address, '198.211.96.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-81). ');
+$ax += cidrblock($address, '198.232.147.0/24', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-82). ');
+$ax += cidrblock($address, '199.4.223.0/24', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-83). ');
+$ax += cidrblock($address, '204.48.16.0/20', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-84). ');
+$ax += cidrblock($address, '206.81.0.0/19', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-85). ');
+$ax += cidrblock($address, '206.189.0.0/16', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-86). ');
+$ax += cidrblock($address, '207.154.192.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-87). ');
+$ax += cidrblock($address, '208.68.36.0/22', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-88). ');
+$ax += cidrblock($address, '209.97.128.0/18', 'Digital Ocean, Inc (IP4H-DIGITALOCEANINC-89). ');
 
 
 // ASN 5577 ("Root SA").
-// Updated: 2018.10.05
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '185.153.151.0/24', 'Root SA (IP4H-ROOTSA-00). ');
 $ax += cidrblock($address, '83.243.8.0/21', 'Root SA (IP4H-ROOTSA-01). ');
@@ -3647,15 +3659,15 @@ $ax += cidrblock($address, '212.117.160.0/19', 'Root SA (IP4H-ROOTSA-06). ');
 $ax += cidrblock($address, '31.131.7.0/24', 'Root SA (IP4H-ROOTSA-07). ');
 $ax += cidrblock($address, '185.103.172.0/24', 'Root SA (IP4H-ROOTSA-08). ');
 $ax += cidrblock($address, '185.103.174.0/24', 'Root SA (IP4H-ROOTSA-09). ');
-$ax += cidrblock($address, '185.124.96.0/22', 'Root SA (IP4H-ROOTSA-10). ');
-$ax += cidrblock($address, '185.166.180.0/22', 'Root SA (IP4H-ROOTSA-11). ');
-$ax += cidrblock($address, '5.44.40.0/24', 'Root SA (IP4H-ROOTSA-12). ');
-$ax += cidrblock($address, '5.44.47.0/24', 'Root SA (IP4H-ROOTSA-13). ');
-$ax += cidrblock($address, '46.16.12.0/24', 'Root SA (IP4H-ROOTSA-14). ');
-$ax += cidrblock($address, '46.16.15.0/24', 'Root SA (IP4H-ROOTSA-15). ');
-$ax += cidrblock($address, '77.91.112.0/24', 'Root SA (IP4H-ROOTSA-16). ');
-$ax += cidrblock($address, '146.185.239.0/24', 'Root SA (IP4H-ROOTSA-17). ');
-$ax += cidrblock($address, '185.143.222.0/24', 'Root SA (IP4H-ROOTSA-18). ');
+$ax += cidrblock($address, '194.61.27.0/24', 'Root SA (IP4H-ROOTSA-10). ');
+$ax += cidrblock($address, '185.124.96.0/22', 'Root SA (IP4H-ROOTSA-11). ');
+$ax += cidrblock($address, '185.166.180.0/22', 'Root SA (IP4H-ROOTSA-12). ');
+$ax += cidrblock($address, '5.44.40.0/24', 'Root SA (IP4H-ROOTSA-13). ');
+$ax += cidrblock($address, '5.44.47.0/24', 'Root SA (IP4H-ROOTSA-14). ');
+$ax += cidrblock($address, '46.16.12.0/24', 'Root SA (IP4H-ROOTSA-15). ');
+$ax += cidrblock($address, '46.16.15.0/24', 'Root SA (IP4H-ROOTSA-16). ');
+$ax += cidrblock($address, '77.91.112.0/24', 'Root SA (IP4H-ROOTSA-17). ');
+$ax += cidrblock($address, '146.185.239.0/24', 'Root SA (IP4H-ROOTSA-18). ');
 $ax += cidrblock($address, '185.149.146.0/24', 'Root SA (IP4H-ROOTSA-19). ');
 $ax += cidrblock($address, '66.207.176.0/21', 'Root SA (IP4H-ROOTSA-20). ');
 $ax += cidrblock($address, '66.207.184.0/22', 'Root SA (IP4H-ROOTSA-21). ');
@@ -5579,33 +5591,32 @@ $ax += cidrblock($address, '196.53.164.0/22', 'Psychz Networks (IP4H-PSYCHZNETWO
 
 
 // ASN 36114 ("Versaweb, LLC").
-// Updated: 2018.10.07
+// Updated: 2019.03.30
 
-$ax += cidrblock($address, '72.46.128.0/20', 'Versaweb, LLC (IP4H-VERSAWEBLLC-00). ');
-$ax += cidrblock($address, '72.46.152.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-01). ');
-$ax += cidrblock($address, '76.164.192.0/19', 'Versaweb, LLC (IP4H-VERSAWEBLLC-02). ');
-$ax += cidrblock($address, '76.164.224.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-03). ');
-$ax += cidrblock($address, '76.164.232.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-04). ');
-$ax += cidrblock($address, '76.164.236.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-05). ');
-$ax += cidrblock($address, '104.143.0.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-06). ');
-$ax += cidrblock($address, '104.143.8.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-07). ');
-$ax += cidrblock($address, '104.194.0.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-08). ');
-$ax += cidrblock($address, '104.194.8.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-09). ');
+$ax += cidrblock($address, '72.46.128.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-00). ');
+$ax += cidrblock($address, '72.46.136.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-01). ');
+$ax += cidrblock($address, '72.46.152.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-02). ');
+$ax += cidrblock($address, '76.164.192.0/19', 'Versaweb, LLC (IP4H-VERSAWEBLLC-03). ');
+$ax += cidrblock($address, '76.164.224.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-04). ');
+$ax += cidrblock($address, '76.164.232.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-05). ');
+$ax += cidrblock($address, '76.164.236.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-06). ');
+$ax += cidrblock($address, '104.143.0.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-07). ');
+$ax += cidrblock($address, '104.143.8.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-08). ');
+$ax += cidrblock($address, '104.194.0.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-09). ');
 $ax += cidrblock($address, '104.194.26.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-10). ');
 $ax += cidrblock($address, '104.238.192.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-11). ');
 $ax += cidrblock($address, '104.238.200.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-12). ');
-$ax += cidrblock($address, '104.238.208.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-13). ');
+$ax += cidrblock($address, '104.238.210.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-13). ');
 $ax += cidrblock($address, '104.238.216.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-14). ');
-$ax += cidrblock($address, '104.238.220.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-15). ');
-$ax += cidrblock($address, '104.238.226.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-16). ');
-$ax += cidrblock($address, '104.238.228.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-17). ');
-$ax += cidrblock($address, '104.238.234.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-18). ');
-$ax += cidrblock($address, '104.238.248.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-19). ');
-$ax += cidrblock($address, '162.216.176.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-20). ');
-$ax += cidrblock($address, '162.222.128.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-21). ');
-$ax += cidrblock($address, '172.96.128.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-22). ');
-$ax += cidrblock($address, '208.64.24.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-23). ');
-$ax += cidrblock($address, '208.66.72.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-24). ');
+$ax += cidrblock($address, '104.238.226.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-15). ');
+$ax += cidrblock($address, '104.238.228.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-16). ');
+$ax += cidrblock($address, '104.238.234.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-17). ');
+$ax += cidrblock($address, '104.238.248.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-18). ');
+$ax += cidrblock($address, '162.216.176.0/22', 'Versaweb, LLC (IP4H-VERSAWEBLLC-19). ');
+$ax += cidrblock($address, '162.222.128.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-20). ');
+$ax += cidrblock($address, '172.96.128.0/23', 'Versaweb, LLC (IP4H-VERSAWEBLLC-21). ');
+$ax += cidrblock($address, '208.64.24.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-22). ');
+$ax += cidrblock($address, '208.66.72.0/21', 'Versaweb, LLC (IP4H-VERSAWEBLLC-23). ');
 
 
 // ASN 27176 ("DataWagon LLC").
@@ -8225,22 +8236,24 @@ $ax += cidrblock($address, '216.162.192.0/19', 'Datacenter IP, LLC (IP4H-DATACEN
 
 
 // ASN 43578 ("MBA DATACENTERS S.L").
-// Updated: 2018.10.09
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '191.96.102.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-00). ');
 $ax += cidrblock($address, '5.226.168.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-01). ');
 $ax += cidrblock($address, '5.226.172.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-02). ');
-$ax += cidrblock($address, '77.246.176.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-03). ');
-$ax += cidrblock($address, '77.246.179.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-04). ');
-$ax += cidrblock($address, '77.246.181.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-05). ');
-$ax += cidrblock($address, '77.246.182.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-06). ');
-$ax += cidrblock($address, '77.246.186.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-07). ');
-$ax += cidrblock($address, '77.246.188.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-08). ');
-$ax += cidrblock($address, '77.246.190.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-09). ');
-$ax += cidrblock($address, '185.74.80.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-10). ');
-$ax += cidrblock($address, '185.206.60.0/22', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-11). ');
-$ax += cidrblock($address, '188.241.60.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-12). ');
-$ax += cidrblock($address, '154.16.158.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-13). ');
+$ax += cidrblock($address, '5.253.88.0/22', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-03). ');
+$ax += cidrblock($address, '77.81.141.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-04). ');
+$ax += cidrblock($address, '77.246.176.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-05). ');
+$ax += cidrblock($address, '77.246.179.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-06). ');
+$ax += cidrblock($address, '77.246.181.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-07). ');
+$ax += cidrblock($address, '77.246.182.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-08). ');
+$ax += cidrblock($address, '77.246.186.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-09). ');
+$ax += cidrblock($address, '77.246.188.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-10). ');
+$ax += cidrblock($address, '77.246.190.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-11). ');
+$ax += cidrblock($address, '185.74.80.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-12). ');
+$ax += cidrblock($address, '185.206.60.0/22', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-13). ');
+$ax += cidrblock($address, '188.241.60.0/23', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-14). ');
+$ax += cidrblock($address, '154.16.158.0/24', 'MBA DATACENTERS S.L (IP4H-MBADATACENTERSSL-15). ');
 
 
 // ASNs 46805, 47536 ("CachedNet LLC").
@@ -11073,20 +11086,25 @@ $ax += cidrblock($address, '63.217.87.0/24', 'ShenZhen Sunrise (IP4H-SHENZHENSUN
 
 // ASN 39572 ("DataWeb Global Group B.V").
 // All the ranges from South Africa in this network seem to be proxies. Should mark accordingly.
-// Updated: 2018.11.21
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '192.243.48.0/20', 'DataWeb Global (IP4H-DATAWEBGLOBAL-00). ');
-$ax += cidrblock($address, '31.220.24.0/22', 'DataWeb Global (IP4H-DATAWEBGLOBAL-01). ');
-$ax += cidrblock($address, '46.229.160.0/20', 'DataWeb Global (IP4H-DATAWEBGLOBAL-02). ');
-$ax += cidrblock($address, '78.40.110.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-03). ');
-$ax += cidrblock($address, '86.104.127.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-04). ');
-$ax += cidrblock($address, '88.208.0.0/18', 'DataWeb Global (IP4H-DATAWEBGLOBAL-05). ');
-$ax += cidrblock($address, '89.32.42.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-06). ');
-$ax += cidrblock($address, '89.40.211.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-07). ');
-$ax += cidrblock($address, '185.98.52.0/23', 'DataWeb Global (IP4H-DATAWEBGLOBAL-08). ');
-$ax += cidrblock($address, '213.174.128.0/19', 'DataWeb Global (IP4H-DATAWEBGLOBAL-09). ');
-$ax += cidrblock($address, '185.56.232.0/22', 'DataWeb Global (IP4H-DATAWEBGLOBAL-10). ');
-$ax += cidrblock($address, '196.53.204.0/22', 'DataWeb Global (IP4H-DATAWEBGLOBAL-11). ');
+$ax += cidrblock($address, '31.14.234.0/23', 'DataWeb Global (IP4H-DATAWEBGLOBAL-01). ');
+$ax += cidrblock($address, '31.220.24.0/22', 'DataWeb Global (IP4H-DATAWEBGLOBAL-02). ');
+$ax += cidrblock($address, '46.229.160.0/20', 'DataWeb Global (IP4H-DATAWEBGLOBAL-03). ');
+$ax += cidrblock($address, '78.40.110.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-04). ');
+$ax += cidrblock($address, '86.104.127.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-05). ');
+$ax += cidrblock($address, '88.208.0.0/18', 'DataWeb Global (IP4H-DATAWEBGLOBAL-06). ');
+$ax += cidrblock($address, '89.32.42.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-07). ');
+$ax += cidrblock($address, '89.40.211.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-08). ');
+$ax += cidrblock($address, '93.119.155.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-09). ');
+$ax += cidrblock($address, '94.176.210.0/23', 'DataWeb Global (IP4H-DATAWEBGLOBAL-10). ');
+$ax += cidrblock($address, '185.98.52.0/23', 'DataWeb Global (IP4H-DATAWEBGLOBAL-11). ');
+$ax += cidrblock($address, '188.209.213.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-12). ');
+$ax += cidrblock($address, '188.241.87.0/24', 'DataWeb Global (IP4H-DATAWEBGLOBAL-13). ');
+$ax += cidrblock($address, '213.174.128.0/19', 'DataWeb Global (IP4H-DATAWEBGLOBAL-14). ');
+$ax += cidrblock($address, '185.56.232.0/22', 'DataWeb Global (IP4H-DATAWEBGLOBAL-15). ');
+$ax += cidrblock($address, '196.53.204.0/22', 'DataWeb Global (IP4H-DATAWEBGLOBAL-16). ');
 
 
 // ASN 44112 ("SpaceWeb Ltd").
@@ -11861,62 +11879,60 @@ $ax += cidrblock($address, '139.159.128.0/22', 'Huawei Cloud Service (IP4H-HUAWE
 
 // ASN 38001 ("NewMedia Express Pte Ltd. Singapore Web Hosting Service Provider").
 // Caught trying to DDoS SFS.
-// Updated: 2018.10.05
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '103.53.197.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-00). ');
 $ax += cidrblock($address, '103.53.198.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-01). ');
-$ax += cidrblock($address, '182.54.239.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-02). ');
+$ax += cidrblock($address, '103.135.13.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-02). ');
 $ax += cidrblock($address, '103.214.0.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-03). ');
-$ax += cidrblock($address, '179.61.193.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-04). ');
-$ax += cidrblock($address, '181.214.237.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-05). ');
-$ax += cidrblock($address, '181.214.238.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-06). ');
-$ax += cidrblock($address, '181.215.177.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-07). ');
-$ax += cidrblock($address, '43.226.231.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-08). ');
-$ax += cidrblock($address, '45.115.27.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-09). ');
-$ax += cidrblock($address, '103.25.62.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-10). ');
-$ax += cidrblock($address, '103.46.140.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-11). ');
-$ax += cidrblock($address, '103.46.142.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-12). ');
-$ax += cidrblock($address, '103.55.11.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-13). ');
-$ax += cidrblock($address, '45.114.117.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-14). ');
-$ax += cidrblock($address, '45.249.223.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-15). ');
-$ax += cidrblock($address, '103.219.20.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-16). ');
-$ax += cidrblock($address, '185.92.24.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-17). ');
-$ax += cidrblock($address, '43.228.158.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-18). ');
-$ax += cidrblock($address, '103.47.147.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-19). ');
-$ax += cidrblock($address, '168.80.40.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-20). ');
-$ax += cidrblock($address, '196.18.229.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-21). ');
-$ax += cidrblock($address, '196.19.106.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-22). ');
-$ax += cidrblock($address, '196.19.224.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-23). ');
-$ax += cidrblock($address, '196.19.249.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-24). ');
-$ax += cidrblock($address, '43.245.60.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-25). ');
-$ax += cidrblock($address, '45.119.200.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-26). ');
-$ax += cidrblock($address, '103.14.76.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-27). ');
-$ax += cidrblock($address, '103.14.79.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-28). ');
-$ax += cidrblock($address, '103.25.52.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-29). ');
-$ax += cidrblock($address, '103.60.8.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-30). ');
-$ax += cidrblock($address, '103.60.11.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-31). ');
-$ax += cidrblock($address, '103.104.196.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-32). ');
-$ax += cidrblock($address, '103.200.4.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-33). ');
-$ax += cidrblock($address, '103.200.6.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-34). ');
-$ax += cidrblock($address, '103.200.217.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-35). ');
-$ax += cidrblock($address, '103.200.218.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-36). ');
-$ax += cidrblock($address, '103.253.24.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-37). ');
-$ax += cidrblock($address, '111.221.44.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-38). ');
-$ax += cidrblock($address, '113.29.226.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-39). ');
-$ax += cidrblock($address, '113.29.228.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-40). ');
-$ax += cidrblock($address, '113.29.232.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-41). ');
-$ax += cidrblock($address, '119.161.100.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-42). ');
-$ax += cidrblock($address, '202.150.208.0/20', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-43). ');
-$ax += cidrblock($address, '203.114.75.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-44). ');
-$ax += cidrblock($address, '203.174.80.0/21', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-45). ');
+$ax += cidrblock($address, '45.67.136.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-04). ');
+$ax += cidrblock($address, '103.102.46.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-05). ');
+$ax += cidrblock($address, '43.226.231.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-06). ');
+$ax += cidrblock($address, '45.115.27.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-07). ');
+$ax += cidrblock($address, '103.25.62.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-08). ');
+$ax += cidrblock($address, '103.46.140.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-09). ');
+$ax += cidrblock($address, '103.46.142.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-10). ');
+$ax += cidrblock($address, '103.55.11.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-11). ');
+$ax += cidrblock($address, '45.114.117.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-12). ');
+$ax += cidrblock($address, '45.249.223.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-13). ');
+$ax += cidrblock($address, '103.219.20.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-14). ');
+$ax += cidrblock($address, '103.125.216.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-15). ');
+$ax += cidrblock($address, '185.92.24.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-16). ');
+$ax += cidrblock($address, '43.228.158.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-17). ');
+$ax += cidrblock($address, '103.47.147.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-18). ');
+$ax += cidrblock($address, '196.18.229.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-19). ');
+$ax += cidrblock($address, '196.19.106.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-20). ');
+$ax += cidrblock($address, '196.19.249.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-21). ');
+$ax += cidrblock($address, '43.245.60.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-22). ');
+$ax += cidrblock($address, '45.119.200.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-23). ');
+$ax += cidrblock($address, '45.119.202.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-24). ');
+$ax += cidrblock($address, '103.14.76.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-25). ');
+$ax += cidrblock($address, '103.14.79.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-26). ');
+$ax += cidrblock($address, '103.25.52.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-27). ');
+$ax += cidrblock($address, '103.60.8.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-28). ');
+$ax += cidrblock($address, '103.60.11.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-29). ');
+$ax += cidrblock($address, '103.200.4.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-30). ');
+$ax += cidrblock($address, '103.200.6.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-31). ');
+$ax += cidrblock($address, '103.200.216.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-32). ');
+$ax += cidrblock($address, '103.253.24.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-33). ');
+$ax += cidrblock($address, '111.221.44.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-34). ');
+$ax += cidrblock($address, '113.29.226.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-35). ');
+$ax += cidrblock($address, '113.29.228.0/22', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-36). ');
+$ax += cidrblock($address, '113.29.232.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-37). ');
+$ax += cidrblock($address, '119.161.101.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-38). ');
+$ax += cidrblock($address, '119.161.102.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-39). ');
+$ax += cidrblock($address, '202.150.208.0/20', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-40). ');
+$ax += cidrblock($address, '203.114.75.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-41). ');
+$ax += cidrblock($address, '203.174.80.0/21', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-42). ');
+$ax += cidrblock($address, '45.74.32.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-43). ');
+$ax += cidrblock($address, '45.74.53.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-44). ');
+$ax += cidrblock($address, '96.9.210.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-45). ');
 $ax += cidrblock($address, '104.250.106.0/23', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-46). ');
 $ax += cidrblock($address, '172.111.193.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-47). ');
 $ax += cidrblock($address, '172.111.218.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-48). ');
-$ax += cidrblock($address, '192.230.37.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-49). ');
-$ax += cidrblock($address, '192.253.249.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-50). ');
-$ax += cidrblock($address, '192.253.251.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-51). ');
-$ax += cidrblock($address, '192.253.254.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-52). ');
-$ax += cidrblock($address, '154.16.19.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-53). ');
+$ax += cidrblock($address, '192.253.249.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-49). ');
+$ax += cidrblock($address, '192.253.254.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-50). ');
+$ax += cidrblock($address, '154.16.19.0/24', 'NewMedia Express (IP4H-NEWMEDIAEXPRESS-51). ');
 
 
 // ASN 49467 ("Inetmar internet Hizmetleri San. Tic. Ltd. Sti").
@@ -18019,96 +18035,128 @@ $ax += cidrblock($address, '208.94.224.0/21', 'Dino Solutions, Inc (IP4H-DINOSOL
 
 
 // ASN 132839 ("POWER LINE (HK) CO., LIMITED").
-// Updated: 2018.10.07
+// Updated: 2019.03.30
 
-$ax += cidrblock($address, '43.225.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-00). ');
-$ax += cidrblock($address, '43.230.168.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-01). ');
-$ax += cidrblock($address, '43.240.48.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-02). ');
-$ax += cidrblock($address, '43.249.24.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-03). ');
-$ax += cidrblock($address, '45.114.104.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-04). ');
-$ax += cidrblock($address, '45.114.107.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-05). ');
-$ax += cidrblock($address, '45.127.125.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-06). ');
-$ax += cidrblock($address, '103.12.92.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-07). ');
-$ax += cidrblock($address, '103.36.20.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-08). ');
-$ax += cidrblock($address, '103.40.112.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-09). ');
-$ax += cidrblock($address, '103.49.248.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-10). ');
-$ax += cidrblock($address, '103.54.63.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-11). ');
-$ax += cidrblock($address, '103.195.192.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-12). ');
-$ax += cidrblock($address, '103.196.60.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-13). ');
-$ax += cidrblock($address, '43.225.28.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-14). ');
-$ax += cidrblock($address, '43.229.212.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-15). ');
-$ax += cidrblock($address, '43.241.47.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-16). ');
-$ax += cidrblock($address, '43.242.200.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-17). ');
-$ax += cidrblock($address, '43.251.104.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-18). ');
-$ax += cidrblock($address, '43.251.224.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-19). ');
-$ax += cidrblock($address, '45.64.108.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-20). ');
-$ax += cidrblock($address, '45.113.0.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-21). ');
-$ax += cidrblock($address, '45.114.168.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-22). ');
-$ax += cidrblock($address, '45.115.42.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-23). ');
-$ax += cidrblock($address, '45.115.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-24). ');
-$ax += cidrblock($address, '45.117.192.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-25). ');
-$ax += cidrblock($address, '45.120.80.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-26). ');
-$ax += cidrblock($address, '45.250.196.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-27). ');
-$ax += cidrblock($address, '103.37.40.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-28). ');
-$ax += cidrblock($address, '103.38.80.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-29). ');
-$ax += cidrblock($address, '103.42.176.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-30). ');
-$ax += cidrblock($address, '103.42.179.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-31). ');
-$ax += cidrblock($address, '103.43.8.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-32). ');
-$ax += cidrblock($address, '103.44.20.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-33). ');
-$ax += cidrblock($address, '103.44.22.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-34). ');
-$ax += cidrblock($address, '103.49.8.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-35). ');
-$ax += cidrblock($address, '103.52.152.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-36). ');
-$ax += cidrblock($address, '103.54.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-37). ');
-$ax += cidrblock($address, '103.55.28.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-38). ');
-$ax += cidrblock($address, '103.55.128.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-39). ');
-$ax += cidrblock($address, '103.57.228.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-40). ');
-$ax += cidrblock($address, '103.60.148.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-41). ');
-$ax += cidrblock($address, '103.75.12.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-42). ');
-$ax += cidrblock($address, '103.75.44.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-43). ');
-$ax += cidrblock($address, '103.80.16.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-44). ');
-$ax += cidrblock($address, '103.85.188.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-45). ');
-$ax += cidrblock($address, '103.200.114.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-46). ');
-$ax += cidrblock($address, '103.200.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-47). ');
-$ax += cidrblock($address, '103.204.76.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-48). ');
-$ax += cidrblock($address, '103.209.232.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-49). ');
-$ax += cidrblock($address, '103.211.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-50). ');
-$ax += cidrblock($address, '103.214.164.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-51). ');
-$ax += cidrblock($address, '103.215.212.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-52). ');
-$ax += cidrblock($address, '103.219.104.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-53). ');
-$ax += cidrblock($address, '103.233.248.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-54). ');
-$ax += cidrblock($address, '103.234.52.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-55). ');
-$ax += cidrblock($address, '116.193.170.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-56). ');
-$ax += cidrblock($address, '117.120.60.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-57). ');
-$ax += cidrblock($address, '121.54.160.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-58). ');
-$ax += cidrblock($address, '124.108.21.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-59). ');
-$ax += cidrblock($address, '144.48.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-60). ');
-$ax += cidrblock($address, '157.119.92.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-61). ');
-$ax += cidrblock($address, '160.238.84.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-62). ');
-$ax += cidrblock($address, '182.161.68.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-63). ');
-$ax += cidrblock($address, '202.165.120.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-64). ');
-$ax += cidrblock($address, '45.195.199.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-65). ');
-$ax += cidrblock($address, '23.225.128.0/21', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-66). ');
-$ax += cidrblock($address, '23.235.128.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-67). ');
-$ax += cidrblock($address, '107.151.64.0/18', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-68). ');
-$ax += cidrblock($address, '162.209.240.0/20', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-69). ');
-$ax += cidrblock($address, '172.247.134.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-70). ');
-$ax += cidrblock($address, '172.247.136.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-71). ');
-$ax += cidrblock($address, '172.247.140.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-72). ');
-$ax += cidrblock($address, '172.247.150.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-73). ');
-$ax += cidrblock($address, '172.247.152.0/21', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-74). ');
-$ax += cidrblock($address, '172.247.160.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-75). ');
-$ax += cidrblock($address, '172.247.164.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-76). ');
-$ax += cidrblock($address, '192.151.226.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-77). ');
-$ax += cidrblock($address, '192.151.228.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-78). ');
-$ax += cidrblock($address, '192.151.232.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-79). ');
-$ax += cidrblock($address, '192.151.236.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-80). ');
-$ax += cidrblock($address, '192.151.238.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-81). ');
-$ax += cidrblock($address, '192.151.248.0/21', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-82). ');
-$ax += cidrblock($address, '160.124.0.0/16', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-83). ');
+$ax += cidrblock($address, '43.225.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-000). ');
+$ax += cidrblock($address, '43.230.168.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-001). ');
+$ax += cidrblock($address, '43.240.48.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-002). ');
+$ax += cidrblock($address, '43.249.24.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-003). ');
+$ax += cidrblock($address, '45.114.104.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-004). ');
+$ax += cidrblock($address, '45.114.107.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-005). ');
+$ax += cidrblock($address, '45.127.125.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-006). ');
+$ax += cidrblock($address, '45.127.126.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-007). ');
+$ax += cidrblock($address, '103.12.92.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-008). ');
+$ax += cidrblock($address, '103.36.20.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-009). ');
+$ax += cidrblock($address, '103.40.112.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-010). ');
+$ax += cidrblock($address, '103.49.248.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-011). ');
+$ax += cidrblock($address, '103.54.63.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-012). ');
+$ax += cidrblock($address, '103.97.227.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-013). ');
+$ax += cidrblock($address, '103.195.192.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-014). ');
+$ax += cidrblock($address, '103.196.60.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-015). ');
+$ax += cidrblock($address, '182.255.32.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-016). ');
+$ax += cidrblock($address, '43.229.212.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-017). ');
+$ax += cidrblock($address, '43.241.44.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-018). ');
+$ax += cidrblock($address, '43.241.47.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-019). ');
+$ax += cidrblock($address, '43.251.104.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-020). ');
+$ax += cidrblock($address, '45.64.108.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-021). ');
+$ax += cidrblock($address, '45.114.168.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-022). ');
+$ax += cidrblock($address, '45.115.42.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-023). ');
+$ax += cidrblock($address, '45.115.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-024). ');
+$ax += cidrblock($address, '45.117.192.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-025). ');
+$ax += cidrblock($address, '45.120.80.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-026). ');
+$ax += cidrblock($address, '45.127.36.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-027). ');
+$ax += cidrblock($address, '45.250.196.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-028). ');
+$ax += cidrblock($address, '83.150.224.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-029). ');
+$ax += cidrblock($address, '103.37.40.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-030). ');
+$ax += cidrblock($address, '103.40.112.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-031). ');
+$ax += cidrblock($address, '103.42.176.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-032). ');
+$ax += cidrblock($address, '103.42.179.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-033). ');
+$ax += cidrblock($address, '103.49.8.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-034). ');
+$ax += cidrblock($address, '103.54.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-035). ');
+$ax += cidrblock($address, '103.55.28.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-036). ');
+$ax += cidrblock($address, '103.55.128.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-037). ');
+$ax += cidrblock($address, '103.57.228.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-038). ');
+$ax += cidrblock($address, '103.60.148.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-039). ');
+$ax += cidrblock($address, '103.75.12.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-040). ');
+$ax += cidrblock($address, '103.75.44.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-041). ');
+$ax += cidrblock($address, '103.80.16.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-042). ');
+$ax += cidrblock($address, '103.85.188.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-043). ');
+$ax += cidrblock($address, '103.200.114.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-044). ');
+$ax += cidrblock($address, '103.200.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-045). ');
+$ax += cidrblock($address, '103.204.76.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-046). ');
+$ax += cidrblock($address, '103.209.232.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-047). ');
+$ax += cidrblock($address, '103.211.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-048). ');
+$ax += cidrblock($address, '103.214.164.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-049). ');
+$ax += cidrblock($address, '103.215.212.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-050). ');
+$ax += cidrblock($address, '103.219.104.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-051). ');
+$ax += cidrblock($address, '103.233.248.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-052). ');
+$ax += cidrblock($address, '103.234.52.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-053). ');
+$ax += cidrblock($address, '116.193.170.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-054). ');
+$ax += cidrblock($address, '117.120.60.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-055). ');
+$ax += cidrblock($address, '121.54.160.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-056). ');
+$ax += cidrblock($address, '144.48.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-057). ');
+$ax += cidrblock($address, '157.119.92.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-058). ');
+$ax += cidrblock($address, '160.238.84.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-059). ');
+$ax += cidrblock($address, '182.161.68.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-060). ');
+$ax += cidrblock($address, '193.36.112.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-061). ');
+$ax += cidrblock($address, '202.165.120.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-062). ');
+$ax += cidrblock($address, '14.192.50.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-063). ');
+$ax += cidrblock($address, '2.57.124.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-064). ');
+$ax += cidrblock($address, '2.59.100.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-065). ');
+$ax += cidrblock($address, '45.66.188.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-066). ');
+$ax += cidrblock($address, '62.192.188.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-067). ');
+$ax += cidrblock($address, '85.208.56.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-068). ');
+$ax += cidrblock($address, '92.118.144.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-069). ');
+$ax += cidrblock($address, '147.78.152.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-070). ');
+$ax += cidrblock($address, '185.51.164.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-071). ');
+$ax += cidrblock($address, '192.145.20.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-072). ');
+$ax += cidrblock($address, '45.195.160.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-073). ');
+$ax += cidrblock($address, '45.195.199.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-074). ');
+$ax += cidrblock($address, '154.85.6.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-075). ');
+$ax += cidrblock($address, '154.86.32.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-076). ');
+$ax += cidrblock($address, '154.86.64.0/18', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-077). ');
+$ax += cidrblock($address, '154.92.32.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-078). ');
+$ax += cidrblock($address, '154.92.64.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-079). ');
+$ax += cidrblock($address, '154.208.180.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-080). ');
+$ax += cidrblock($address, '154.208.184.0/21', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-081). ');
+$ax += cidrblock($address, '154.209.32.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-082). ');
+$ax += cidrblock($address, '154.209.96.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-083). ');
+$ax += cidrblock($address, '154.211.2.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-084). ');
+$ax += cidrblock($address, '154.213.32.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-085). ');
+$ax += cidrblock($address, '154.213.96.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-086). ');
+$ax += cidrblock($address, '154.213.128.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-087). ');
+$ax += cidrblock($address, '154.213.192.0/18', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-088). ');
+$ax += cidrblock($address, '154.214.192.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-089). ');
+$ax += cidrblock($address, '154.215.96.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-090). ');
+$ax += cidrblock($address, '154.216.32.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-091). ');
+$ax += cidrblock($address, '154.216.64.0/18', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-092). ');
+$ax += cidrblock($address, '154.216.224.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-093). ');
+$ax += cidrblock($address, '154.220.32.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-094). ');
+$ax += cidrblock($address, '154.220.128.0/18', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-095). ');
+$ax += cidrblock($address, '154.220.192.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-096). ');
+$ax += cidrblock($address, '154.221.32.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-097). ');
+$ax += cidrblock($address, '23.225.128.0/21', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-098). ');
+$ax += cidrblock($address, '23.235.128.0/19', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-099). ');
+$ax += cidrblock($address, '107.151.64.0/18', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-100). ');
+$ax += cidrblock($address, '161.129.47.0/24', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-101). ');
+$ax += cidrblock($address, '162.209.240.0/20', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-102). ');
+$ax += cidrblock($address, '172.247.134.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-103). ');
+$ax += cidrblock($address, '172.247.136.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-104). ');
+$ax += cidrblock($address, '172.247.140.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-105). ');
+$ax += cidrblock($address, '172.247.150.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-106). ');
+$ax += cidrblock($address, '172.247.152.0/21', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-107). ');
+$ax += cidrblock($address, '172.247.160.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-108). ');
+$ax += cidrblock($address, '172.247.164.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-109). ');
+$ax += cidrblock($address, '192.151.226.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-110). ');
+$ax += cidrblock($address, '192.151.228.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-111). ');
+$ax += cidrblock($address, '192.151.232.0/22', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-112). ');
+$ax += cidrblock($address, '192.151.238.0/23', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-113). ');
+$ax += cidrblock($address, '192.151.248.0/21', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-114). ');
+$ax += cidrblock($address, '160.124.0.0/16', 'POWER LINE (HK) CO (IP4H-POWERLINEHKCO-115). ');
 
 
 // ASN 133115 ("hongkong kwaifong information service limited").
-// Updated: 2018.10.07
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '45.249.92.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-00). ');
 $ax += cidrblock($address, '103.80.24.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-01). ');
@@ -18117,38 +18165,51 @@ $ax += cidrblock($address, '103.211.99.0/24', 'hongkong kwaifong (IP4H-HONGKONGK
 $ax += cidrblock($address, '103.218.0.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-04). ');
 $ax += cidrblock($address, '118.193.48.0/21', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-05). ');
 $ax += cidrblock($address, '160.202.63.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-06). ');
-$ax += cidrblock($address, '39.109.104.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-07). ');
-$ax += cidrblock($address, '39.109.112.0/21', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-08). ');
-$ax += cidrblock($address, '39.109.122.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-09). ');
-$ax += cidrblock($address, '39.109.126.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-10). ');
-$ax += cidrblock($address, '43.225.156.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-11). ');
-$ax += cidrblock($address, '43.249.28.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-12). ');
-$ax += cidrblock($address, '45.112.204.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-13). ');
-$ax += cidrblock($address, '45.120.152.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-14). ');
-$ax += cidrblock($address, '103.60.220.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-15). ');
-$ax += cidrblock($address, '103.68.180.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-16). ');
-$ax += cidrblock($address, '103.68.182.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-17). ');
-$ax += cidrblock($address, '103.97.1.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-18). ');
-$ax += cidrblock($address, '103.97.2.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-19). ');
-$ax += cidrblock($address, '103.100.208.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-20). ');
-$ax += cidrblock($address, '103.108.142.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-21). ');
-$ax += cidrblock($address, '103.122.92.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-22). ');
-$ax += cidrblock($address, '103.201.24.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-23). ');
-$ax += cidrblock($address, '103.204.180.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-24). ');
-$ax += cidrblock($address, '103.204.183.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-25). ');
-$ax += cidrblock($address, '103.210.236.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-26). ');
-$ax += cidrblock($address, '103.230.216.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-27). ');
-$ax += cidrblock($address, '103.243.180.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-28). ');
-$ax += cidrblock($address, '110.92.64.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-29). ');
-$ax += cidrblock($address, '160.20.56.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-30). ');
-$ax += cidrblock($address, '202.181.0.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-31). ');
-$ax += cidrblock($address, '202.181.3.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-32). ');
-$ax += cidrblock($address, '156.236.70.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-33). ');
-$ax += cidrblock($address, '156.236.72.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-34). ');
+$ax += cidrblock($address, '202.3.134.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-07). ');
+$ax += cidrblock($address, '202.52.144.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-08). ');
+$ax += cidrblock($address, '202.58.101.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-09). ');
+$ax += cidrblock($address, '202.94.68.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-10). ');
+$ax += cidrblock($address, '39.109.104.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-11). ');
+$ax += cidrblock($address, '39.109.112.0/21', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-12). ');
+$ax += cidrblock($address, '39.109.122.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-13). ');
+$ax += cidrblock($address, '39.109.126.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-14). ');
+$ax += cidrblock($address, '43.225.156.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-15). ');
+$ax += cidrblock($address, '43.249.28.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-16). ');
+$ax += cidrblock($address, '45.112.204.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-17). ');
+$ax += cidrblock($address, '45.120.152.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-18). ');
+$ax += cidrblock($address, '103.60.220.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-19). ');
+$ax += cidrblock($address, '103.68.180.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-20). ');
+$ax += cidrblock($address, '103.68.182.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-21). ');
+$ax += cidrblock($address, '103.97.1.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-22). ');
+$ax += cidrblock($address, '103.97.2.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-23). ');
+$ax += cidrblock($address, '103.100.208.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-24). ');
+$ax += cidrblock($address, '103.108.142.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-25). ');
+$ax += cidrblock($address, '103.122.92.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-26). ');
+$ax += cidrblock($address, '103.122.94.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-27). ');
+$ax += cidrblock($address, '103.201.24.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-28). ');
+$ax += cidrblock($address, '103.204.180.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-29). ');
+$ax += cidrblock($address, '103.204.183.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-30). ');
+$ax += cidrblock($address, '103.210.236.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-31). ');
+$ax += cidrblock($address, '103.230.216.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-32). ');
+$ax += cidrblock($address, '103.243.180.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-33). ');
+$ax += cidrblock($address, '110.92.64.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-34). ');
+$ax += cidrblock($address, '160.20.56.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-35). ');
+$ax += cidrblock($address, '202.181.0.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-36). ');
+$ax += cidrblock($address, '202.181.3.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-37). ');
+$ax += cidrblock($address, '88.218.144.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-38). ');
+$ax += cidrblock($address, '193.8.80.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-39). ');
+$ax += cidrblock($address, '154.83.12.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-40). ');
+$ax += cidrblock($address, '154.83.16.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-41). ');
+$ax += cidrblock($address, '154.92.14.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-42). ');
+$ax += cidrblock($address, '154.92.16.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-43). ');
+$ax += cidrblock($address, '154.209.4.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-44). ');
+$ax += cidrblock($address, '154.211.12.0/22', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-45). ');
+$ax += cidrblock($address, '156.236.70.0/23', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-46). ');
+$ax += cidrblock($address, '156.236.72.0/24', 'hongkong kwaifong (IP4H-HONGKONGKWAIFONG-47). ');
 
 
 // ASN 136800 ("ICIDC NETWORK").
-// Updated: 2018.10.07
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '43.229.16.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-00). ');
 $ax += cidrblock($address, '43.240.236.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-01). ');
@@ -18161,41 +18222,44 @@ $ax += cidrblock($address, '103.44.88.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-0
 $ax += cidrblock($address, '103.48.20.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-08). ');
 $ax += cidrblock($address, '103.54.60.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-09). ');
 $ax += cidrblock($address, '103.96.80.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-10). ');
-$ax += cidrblock($address, '146.196.72.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-11). ');
-$ax += cidrblock($address, '43.226.16.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-12). ');
-$ax += cidrblock($address, '43.229.112.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-13). ');
-$ax += cidrblock($address, '43.241.45.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-14). ');
-$ax += cidrblock($address, '43.241.46.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-15). ');
-$ax += cidrblock($address, '43.248.174.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-16). ');
-$ax += cidrblock($address, '43.249.172.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-17). ');
-$ax += cidrblock($address, '43.251.106.0/23', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-18). ');
-$ax += cidrblock($address, '43.251.228.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-19). ');
-$ax += cidrblock($address, '103.37.42.0/23', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-20). ');
-$ax += cidrblock($address, '103.40.10.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-21). ');
-$ax += cidrblock($address, '103.41.4.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-22). ');
-$ax += cidrblock($address, '103.42.177.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-23). ');
-$ax += cidrblock($address, '103.42.178.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-24). ');
-$ax += cidrblock($address, '103.43.12.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-25). ');
-$ax += cidrblock($address, '103.48.132.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-26). ');
-$ax += cidrblock($address, '103.82.16.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-27). ');
-$ax += cidrblock($address, '103.107.12.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-28). ');
-$ax += cidrblock($address, '103.116.212.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-29). ');
-$ax += cidrblock($address, '103.120.24.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-30). ');
-$ax += cidrblock($address, '103.199.100.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-31). ');
-$ax += cidrblock($address, '137.59.16.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-32). ');
-$ax += cidrblock($address, '185.213.60.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-33). ');
-$ax += cidrblock($address, '203.114.252.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-34). ');
-$ax += cidrblock($address, '154.210.128.0/18', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-35). ');
-$ax += cidrblock($address, '154.222.32.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-36). ');
-$ax += cidrblock($address, '154.222.64.0/18', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-37). ');
-$ax += cidrblock($address, '156.234.0.0/16', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-38). ');
-$ax += cidrblock($address, '23.226.48.0/20', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-39). ');
-$ax += cidrblock($address, '23.235.160.0/19', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-40). ');
-$ax += cidrblock($address, '23.248.192.0/18', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-41). ');
+$ax += cidrblock($address, '114.112.12.0/23', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-11). ');
+$ax += cidrblock($address, '116.204.168.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-12). ');
+$ax += cidrblock($address, '146.196.72.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-13). ');
+$ax += cidrblock($address, '43.229.112.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-14). ');
+$ax += cidrblock($address, '43.241.45.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-15). ');
+$ax += cidrblock($address, '43.241.46.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-16). ');
+$ax += cidrblock($address, '43.248.172.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-17). ');
+$ax += cidrblock($address, '43.249.172.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-18). ');
+$ax += cidrblock($address, '43.251.106.0/23', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-19). ');
+$ax += cidrblock($address, '43.251.228.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-20). ');
+$ax += cidrblock($address, '103.37.42.0/23', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-21). ');
+$ax += cidrblock($address, '103.40.8.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-22). ');
+$ax += cidrblock($address, '103.41.4.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-23). ');
+$ax += cidrblock($address, '103.42.177.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-24). ');
+$ax += cidrblock($address, '103.42.178.0/24', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-25). ');
+$ax += cidrblock($address, '103.43.12.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-26). ');
+$ax += cidrblock($address, '103.48.132.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-27). ');
+$ax += cidrblock($address, '103.82.16.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-28). ');
+$ax += cidrblock($address, '103.107.12.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-29). ');
+$ax += cidrblock($address, '103.116.212.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-30). ');
+$ax += cidrblock($address, '103.120.24.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-31). ');
+$ax += cidrblock($address, '103.199.100.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-32). ');
+$ax += cidrblock($address, '137.59.16.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-33). ');
+$ax += cidrblock($address, '185.213.60.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-34). ');
+$ax += cidrblock($address, '203.114.252.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-35). ');
+$ax += cidrblock($address, '102.164.48.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-36). ');
+$ax += cidrblock($address, '154.83.128.0/17', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-37). ');
+$ax += cidrblock($address, '154.210.128.0/17', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-38). ');
+$ax += cidrblock($address, '154.222.32.0/22', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-39). ');
+$ax += cidrblock($address, '154.222.64.0/18', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-40). ');
+$ax += cidrblock($address, '156.234.0.0/16', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-41). ');
+$ax += cidrblock($address, '23.226.48.0/20', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-42). ');
+$ax += cidrblock($address, '23.235.160.0/19', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-43). ');
+$ax += cidrblock($address, '23.248.192.0/18', 'ICIDC NETWORK (IP4H-ICIDCNETWORK-44). ');
 
 
 // ASN 55720 ("Gigabit Hosting Sdn Bhd").
-// Updated: 2018.10.07
+// Updated: 2019.03.30
 
 $ax += cidrblock($address, '103.248.20.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-00). ');
 $ax += cidrblock($address, '43.239.176.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-01). ');
@@ -18224,56 +18288,60 @@ $ax += cidrblock($address, '103.228.64.0/22', 'Gigabit Hosting (IP4H-GIGABITHOST
 $ax += cidrblock($address, '103.229.144.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-24). ');
 $ax += cidrblock($address, '103.232.84.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-25). ');
 $ax += cidrblock($address, '103.244.0.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-26). ');
-$ax += cidrblock($address, '103.255.118.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-27). ');
-$ax += cidrblock($address, '14.192.67.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-28). ');
-$ax += cidrblock($address, '14.192.68.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-29). ');
-$ax += cidrblock($address, '43.225.36.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-30). ');
-$ax += cidrblock($address, '43.231.4.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-31). ');
-$ax += cidrblock($address, '45.116.172.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-32). ');
-$ax += cidrblock($address, '45.116.176.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-33). ');
-$ax += cidrblock($address, '45.117.230.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-34). ');
-$ax += cidrblock($address, '45.120.53.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-35). ');
-$ax += cidrblock($address, '45.120.54.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-36). ');
-$ax += cidrblock($address, '45.121.144.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-37). ');
-$ax += cidrblock($address, '45.123.100.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-38). ');
-$ax += cidrblock($address, '103.9.148.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-39). ');
-$ax += cidrblock($address, '103.15.104.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-40). ');
-$ax += cidrblock($address, '103.21.88.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-41). ');
-$ax += cidrblock($address, '103.23.46.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-42). ');
-$ax += cidrblock($address, '103.27.74.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-43). ');
-$ax += cidrblock($address, '103.75.188.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-44). ');
-$ax += cidrblock($address, '103.82.228.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-45). ');
-$ax += cidrblock($address, '103.85.108.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-46). ');
-$ax += cidrblock($address, '103.91.64.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-47). ');
-$ax += cidrblock($address, '103.106.249.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-48). ');
-$ax += cidrblock($address, '103.106.250.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-49). ');
-$ax += cidrblock($address, '103.113.8.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-50). ');
-$ax += cidrblock($address, '103.116.45.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-51). ');
-$ax += cidrblock($address, '103.117.141.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-52). ');
-$ax += cidrblock($address, '103.204.4.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-53). ');
-$ax += cidrblock($address, '103.212.68.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-54). ');
-$ax += cidrblock($address, '103.228.52.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-55). ');
-$ax += cidrblock($address, '103.243.212.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-56). ');
-$ax += cidrblock($address, '103.243.214.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-57). ');
-$ax += cidrblock($address, '103.246.112.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-58). ');
-$ax += cidrblock($address, '103.249.84.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-59). ');
-$ax += cidrblock($address, '103.253.12.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-60). ');
-$ax += cidrblock($address, '103.253.108.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-61). ');
-$ax += cidrblock($address, '114.29.255.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-62). ');
-$ax += cidrblock($address, '119.160.232.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-63). ');
-$ax += cidrblock($address, '139.5.177.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-64). ');
-$ax += cidrblock($address, '139.5.178.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-65). ');
-$ax += cidrblock($address, '150.107.76.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-66). ');
-$ax += cidrblock($address, '202.9.36.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-67). ');
-$ax += cidrblock($address, '202.176.4.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-68). ');
-$ax += cidrblock($address, '220.158.200.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-69). ');
-$ax += cidrblock($address, '223.25.240.0/21', 'Gigabit Hosting (IP4H-GIGABITHOSTING-70). ');
-$ax += cidrblock($address, '98.159.96.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-71). ');
-$ax += cidrblock($address, '98.159.103.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-72). ');
-$ax += cidrblock($address, '98.159.104.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-73). ');
-$ax += cidrblock($address, '98.159.106.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-74). ');
-$ax += cidrblock($address, '98.159.109.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-75). ');
-$ax += cidrblock($address, '172.93.188.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-76). ');
+$ax += cidrblock($address, '114.29.253.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-27). ');
+$ax += cidrblock($address, '114.29.254.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-28). ');
+$ax += cidrblock($address, '103.255.118.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-29). ');
+$ax += cidrblock($address, '14.192.67.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-30). ');
+$ax += cidrblock($address, '14.192.68.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-31). ');
+$ax += cidrblock($address, '43.225.36.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-32). ');
+$ax += cidrblock($address, '43.231.4.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-33). ');
+$ax += cidrblock($address, '45.116.160.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-34). ');
+$ax += cidrblock($address, '45.116.172.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-35). ');
+$ax += cidrblock($address, '45.116.176.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-36). ');
+$ax += cidrblock($address, '45.117.230.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-37). ');
+$ax += cidrblock($address, '45.120.52.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-38). ');
+$ax += cidrblock($address, '45.121.144.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-39). ');
+$ax += cidrblock($address, '45.123.100.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-40). ');
+$ax += cidrblock($address, '103.9.148.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-41). ');
+$ax += cidrblock($address, '103.15.104.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-42). ');
+$ax += cidrblock($address, '103.21.88.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-43). ');
+$ax += cidrblock($address, '103.23.46.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-44). ');
+$ax += cidrblock($address, '103.27.74.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-45). ');
+$ax += cidrblock($address, '103.75.188.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-46). ');
+$ax += cidrblock($address, '103.82.228.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-47). ');
+$ax += cidrblock($address, '103.85.108.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-48). ');
+$ax += cidrblock($address, '103.91.64.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-49). ');
+$ax += cidrblock($address, '103.106.249.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-50). ');
+$ax += cidrblock($address, '103.106.250.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-51). ');
+$ax += cidrblock($address, '103.113.8.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-52). ');
+$ax += cidrblock($address, '103.116.45.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-53). ');
+$ax += cidrblock($address, '103.117.141.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-54). ');
+$ax += cidrblock($address, '103.204.4.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-55). ');
+$ax += cidrblock($address, '103.212.68.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-56). ');
+$ax += cidrblock($address, '103.228.52.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-57). ');
+$ax += cidrblock($address, '103.243.212.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-58). ');
+$ax += cidrblock($address, '103.243.214.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-59). ');
+$ax += cidrblock($address, '103.246.112.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-60). ');
+$ax += cidrblock($address, '103.249.84.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-61). ');
+$ax += cidrblock($address, '103.253.12.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-62). ');
+$ax += cidrblock($address, '103.253.108.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-63). ');
+$ax += cidrblock($address, '119.160.232.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-64). ');
+$ax += cidrblock($address, '139.5.177.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-65). ');
+$ax += cidrblock($address, '139.5.178.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-66). ');
+$ax += cidrblock($address, '150.107.76.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-67). ');
+$ax += cidrblock($address, '202.9.36.0/22', 'Gigabit Hosting (IP4H-GIGABITHOSTING-68). ');
+$ax += cidrblock($address, '202.176.4.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-69). ');
+$ax += cidrblock($address, '220.158.200.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-70). ');
+$ax += cidrblock($address, '223.25.240.0/21', 'Gigabit Hosting (IP4H-GIGABITHOSTING-71). ');
+$ax += cidrblock($address, '154.216.2.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-72). ');
+$ax += cidrblock($address, '154.220.2.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-73). ');
+$ax += cidrblock($address, '98.159.96.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-74). ');
+$ax += cidrblock($address, '98.159.103.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-75). ');
+$ax += cidrblock($address, '98.159.104.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-76). ');
+$ax += cidrblock($address, '98.159.106.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-77). ');
+$ax += cidrblock($address, '98.159.109.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-78). ');
+$ax += cidrblock($address, '104.193.182.0/24', 'Gigabit Hosting (IP4H-GIGABITHOSTING-79). ');
+$ax += cidrblock($address, '172.93.188.0/23', 'Gigabit Hosting (IP4H-GIGABITHOSTING-80). ');
 
 
 // ASN 27435 ("Dimension Data Cloud Solutions, Inc").
@@ -18896,7 +18964,7 @@ $ax += cidrblock($address, '93.89.23.0/24', 'Hostio Solutions B.V (IP4H-HOSTIOSO
 
 
 // ASN 52485 ("networksdelmanana.com").
-// Updated: 2018.10.07
+// Updated: 2018.10.07 / Checked: 2019.03.30
 
 $ax += cidrblock($address, '132.255.132.0/22', 'networksdelmanana.com (IP4H-NETWORKSDELMANANACOM-0). ');
 $ax += cidrblock($address, '138.122.192.0/22', 'networksdelmanana.com (IP4H-NETWORKSDELMANANACOM-1). ');
@@ -18904,17 +18972,34 @@ $ax += cidrblock($address, '168.90.96.0/22', 'networksdelmanana.com (IP4H-NETWOR
 
 
 // ASN 23338 ("DCS Pacific Star, LLC").
-// Updated: 2018.10.07
+// Updated: 2019.03.30
 
-$ax += cidrblock($address, '8.14.84.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-0). ');
-$ax += cidrblock($address, '65.162.192.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-1). ');
-$ax += cidrblock($address, '66.79.160.0/19', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-2). ');
-$ax += cidrblock($address, '74.122.100.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-3). ');
-$ax += cidrblock($address, '104.171.170.0/24', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-4). ');
-$ax += cidrblock($address, '204.13.64.0/21', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-5). ');
-$ax += cidrblock($address, '204.16.192.0/21', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-6). ');
-$ax += cidrblock($address, '205.209.128.0/18', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-7). ');
-$ax += cidrblock($address, '208.77.40.0/21', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-8). ');
+$ax += cidrblock($address, '46.249.97.0/24', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-00). ');
+$ax += cidrblock($address, '46.249.98.0/23', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-01). ');
+$ax += cidrblock($address, '46.249.100.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-02). ');
+$ax += cidrblock($address, '46.249.104.0/21', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-03). ');
+$ax += cidrblock($address, '46.249.112.0/21', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-04). ');
+$ax += cidrblock($address, '185.206.92.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-05). ');
+$ax += cidrblock($address, '185.215.236.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-06). ');
+$ax += cidrblock($address, '185.228.236.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-07). ');
+$ax += cidrblock($address, '185.231.180.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-08). ');
+$ax += cidrblock($address, '185.232.32.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-09). ');
+$ax += cidrblock($address, '185.23.202.0/23', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-10). ');
+$ax += cidrblock($address, '185.247.229.0/24', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-11). ');
+$ax += cidrblock($address, '185.251.46.0/23', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-12). ');
+$ax += cidrblock($address, '185.251.250.0/23', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-13). ');
+$ax += cidrblock($address, '194.156.112.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-14). ');
+$ax += cidrblock($address, '156.237.7.0/24', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-15). ');
+$ax += cidrblock($address, '8.14.84.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-16). ');
+$ax += cidrblock($address, '65.162.192.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-17). ');
+$ax += cidrblock($address, '66.79.160.0/19', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-18). ');
+$ax += cidrblock($address, '74.122.100.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-19). ');
+$ax += cidrblock($address, '85.209.40.0/22', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-20). ');
+$ax += cidrblock($address, '198.44.228.0/24', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-21). ');
+$ax += cidrblock($address, '204.13.64.0/21', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-22). ');
+$ax += cidrblock($address, '204.16.192.0/21', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-23). ');
+$ax += cidrblock($address, '205.209.128.0/18', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-24). ');
+$ax += cidrblock($address, '208.77.40.0/21', 'DCS Pacific Star (IP4H-DCSPACIFICSTAR-25). ');
 
 
 // ASN 5602 ("KPNQWest Italia S.p.a").
@@ -20687,6 +20772,28 @@ $ax += cidrblock($address, '23.151.160.0/24', 'Nexril (IP4H-NEXRIL-0). ');
 $ax += cidrblock($address, '38.107.226.0/24', 'Nexril (IP4H-NEXRIL-1). ');
 $ax += cidrblock($address, '45.59.117.0/24', 'Nexril (IP4H-NEXRIL-2). ');
 $ax += cidrblock($address, '161.129.152.0/22', 'Nexril (IP4H-NEXRIL-3). ');
+
+
+// ASN 209299 ("CLOUD STAR HOSTING SERVICES").
+// Dedicated hosting provider and server leasing. SQLi and spam attempts caught.
+// Updated: 2019.03.30
+
+$ax += cidrblock($address, '37.49.224.0/23', 'CLOUD STAR (IP4H-CLOUDSTAR-0). ');
+$ax += cidrblock($address, '37.49.227.0/24', 'CLOUD STAR (IP4H-CLOUDSTAR-1). ');
+$ax += cidrblock($address, '37.49.228.0/22', 'CLOUD STAR (IP4H-CLOUDSTAR-2). ');
+$ax += cidrblock($address, '77.247.108.0/22', 'CLOUD STAR (IP4H-CLOUDSTAR-3). ');
+$ax += cidrblock($address, '185.53.88.0/23', 'CLOUD STAR (IP4H-CLOUDSTAR-4). ');
+$ax += cidrblock($address, '185.53.91.0/24', 'CLOUD STAR (IP4H-CLOUDSTAR-5). ');
+
+
+// ASN 14987 ("Rethem Hosting LLC").
+// Caught spamming.
+// Updated: 2019.03.30
+
+$ax += cidrblock($address, '91.236.182.0/24', 'Rethem Hosting LLC (IP4H-RETHEMHOSTINGLLC-0). ');
+$ax += cidrblock($address, '104.152.52.0/22', 'Rethem Hosting LLC (IP4H-RETHEMHOSTINGLLC-1). ');
+$ax += cidrblock($address, '149.9.0.0/16', 'Rethem Hosting LLC (IP4H-RETHEMHOSTINGLLC-2). ');
+$ax += cidrblock($address, '154.35.0.0/16', 'Rethem Hosting LLC (IP4H-RETHEMHOSTINGLLC-3). ');
 
 
 // SoftLayer bypasses.

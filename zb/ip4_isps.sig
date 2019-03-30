@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.03.27
+ * This file last updated: 2019.03.30
  */
-$zbbversion .= ' / IP4S-90b';
+$zbbversion .= ' / IP4S-90c';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -194,7 +194,7 @@ $ax += cidrblock($address, '216.12.160.0/20', 'HT (IP4S-HT-88). ');
 
 
 // ASN 133618 ("Trellian Pty. Limited").
-// Updated: 2016.03.16 / Checked: 2018.09.09
+// Updated: 2016.03.16 / Checked: 2019.03.30
 
 $ax += cidrblock($address, '103.224.182.0/23', 'Trellian Pty. Ltd (IP4S-TRELLIANPTYLTD-0). ');
 $ax += cidrblock($address, '103.224.212.0/23', 'Trellian Pty. Ltd (IP4S-TRELLIANPTYLTD-1). ');
@@ -1002,7 +1002,7 @@ $ax += cidrblock($address, '213.155.0.0/19', 'Tehnologii Budushego (IP4S-TEHNOLO
 
 
 // ASN 30968 ("INFOBOX").
-// Updated: 2016.01.18 / Checked: 2018.09.07
+// Updated: 2016.01.18 / Checked: 2019.03.30
 
 $ax += cidrblock($address, '77.221.128.0/19', 'INFOBOX (IP4S-INFOBOX-0). ');
 $ax += cidrblock($address, '92.243.64.0/19', 'INFOBOX (IP4S-INFOBOX-1). ');
@@ -7456,7 +7456,7 @@ $ax += cidrblock($address, '193.105.156.0/24', 'is74.ru (IP4S-IS74RU-20). ');
 
 
 // ASNs 49775, 59665 ("Ultra-Telecom LLC").
-// Updated: 2017.07.12 / Checked: 2018.09.09
+// Updated: 2017.07.12 / Checked: 2019.03.30
 
 $ax += cidrblock($address, '176.124.144.0/22', 'Ultra-Telecom LLC (IP4S-ULTRATELECOMLLC-0). ');
 $ax += cidrblock($address, '195.160.164.0/23', 'Ultra-Telecom LLC (IP4S-ULTRATELECOMLLC-1). ');
@@ -7624,7 +7624,7 @@ $ax += cidrblock($address, '195.177.120.0/22', 'WEST CALL SPb LLC (IP4S-WESTCALL
 
 // ASN 198093 ("Foreningen for digitala fri- och rattigheter").
 // Dead homepage and high levels of automated spam from this ASN.
-// Updated: 2017.12.11 / Checked: 2018.09.09
+// Updated: 2017.12.11 / Checked: 2019.03.30
 
 $ax += cidrblock($address, '171.25.193.0/24', 'Foreningen (IP4S-FORENINGEN-0). ');
 $ax += cidrblock($address, '194.0.61.0/24', 'Foreningen (IP4S-FORENINGEN-1). ');
