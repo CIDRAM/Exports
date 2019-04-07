@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.03.30
+ * This file last updated: 2019.04.07
  */
-$zbbversion .= ' / IP4S-90c';
+$zbbversion .= ' / IP4S-91';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -886,110 +886,120 @@ $ax += cidrblock($address, '212.2.224.0/19', 'City Telecom (IP4S-CITYTELECOM-1).
 
 
 // ASN 3223 ("Voxility LLC").
-// Updated: 2018.10.25
+// Updated: 2019.04.07
 
 $ax += cidrblock($address, '185.133.194.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-000). ');
-$ax += cidrblock($address, '185.231.6.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-001). ');
-$ax += cidrblock($address, '185.246.120.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-002). ');
-$ax += cidrblock($address, '5.254.0.0/18', 'Voxility LLC (IP4S-VOXILITYLLC-003). ');
-$ax += cidrblock($address, '5.254.64.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-004). ');
-$ax += cidrblock($address, '5.254.68.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-005). ');
-$ax += cidrblock($address, '5.254.70.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-006). ');
-$ax += cidrblock($address, '5.254.72.0/21', 'Voxility LLC (IP4S-VOXILITYLLC-007). ');
-$ax += cidrblock($address, '5.254.80.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-008). ');
-$ax += cidrblock($address, '5.254.96.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-009). ');
-$ax += cidrblock($address, '5.254.112.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-010). ');
-$ax += cidrblock($address, '5.254.116.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-011). ');
-$ax += cidrblock($address, '5.254.118.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-012). ');
-$ax += cidrblock($address, '5.254.120.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-013). ');
-$ax += cidrblock($address, '5.254.124.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-014). ');
-$ax += cidrblock($address, '5.254.126.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-015). ');
-$ax += cidrblock($address, '93.114.40.0/21', 'Voxility LLC (IP4S-VOXILITYLLC-016). ');
-$ax += cidrblock($address, '93.115.80.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-017). ');
-$ax += cidrblock($address, '185.124.160.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-018). ');
-$ax += cidrblock($address, '185.242.204.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-019). ');
-$ax += cidrblock($address, '43.255.190.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-020). ');
-$ax += cidrblock($address, '45.115.26.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-021). ');
-$ax += cidrblock($address, '103.31.184.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-022). ');
-$ax += cidrblock($address, '37.61.224.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-023). ');
-$ax += cidrblock($address, '185.87.171.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-024). ');
-$ax += cidrblock($address, '185.23.16.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-025). ');
-$ax += cidrblock($address, '37.230.130.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-026). ');
-$ax += cidrblock($address, '37.230.171.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-027). ');
-$ax += cidrblock($address, '37.230.175.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-028). ');
-$ax += cidrblock($address, '46.243.204.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-029). ');
-$ax += cidrblock($address, '46.243.206.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-030). ');
-$ax += cidrblock($address, '141.101.144.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-031). ');
-$ax += cidrblock($address, '141.101.152.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-032). ');
-$ax += cidrblock($address, '141.101.161.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-033). ');
-$ax += cidrblock($address, '141.101.169.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-034). ');
-$ax += cidrblock($address, '141.101.170.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-035). ');
-$ax += cidrblock($address, '188.72.80.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-036). ');
-$ax += cidrblock($address, '188.72.84.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-037). ');
-$ax += cidrblock($address, '188.72.95.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-038). ');
-$ax += cidrblock($address, '103.209.79.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-039). ');
-$ax += cidrblock($address, '37.156.32.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-040). ');
-$ax += cidrblock($address, '37.221.160.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-041). ');
-$ax += cidrblock($address, '77.81.164.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-042). ');
-$ax += cidrblock($address, '86.105.187.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-043). ');
-$ax += cidrblock($address, '86.105.215.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-044). ');
-$ax += cidrblock($address, '89.32.130.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-045). ');
-$ax += cidrblock($address, '89.40.104.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-046). ');
-$ax += cidrblock($address, '89.40.233.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-047). ');
-$ax += cidrblock($address, '89.45.89.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-048). ');
-$ax += cidrblock($address, '103.249.70.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-049). ');
-$ax += cidrblock($address, '109.163.224.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-050). ');
-$ax += cidrblock($address, '128.0.46.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-051). ');
-$ax += cidrblock($address, '185.5.172.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-052). ');
-$ax += cidrblock($address, '185.96.160.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-053). ');
-$ax += cidrblock($address, '185.171.184.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-054). ');
-$ax += cidrblock($address, '185.171.187.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-055). ');
-$ax += cidrblock($address, '185.247.61.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-056). ');
-$ax += cidrblock($address, '188.213.19.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-057). ');
-$ax += cidrblock($address, '188.213.22.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-058). ');
-$ax += cidrblock($address, '188.215.36.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-059). ');
-$ax += cidrblock($address, '195.60.76.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-060). ');
-$ax += cidrblock($address, '46.8.37.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-061). ');
-$ax += cidrblock($address, '103.118.80.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-062). ');
-$ax += cidrblock($address, '45.43.7.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-063). ');
-$ax += cidrblock($address, '45.74.1.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-064). ');
-$ax += cidrblock($address, '45.74.48.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-065). ');
-$ax += cidrblock($address, '45.74.58.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-066). ');
-$ax += cidrblock($address, '45.74.63.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-067). ');
-$ax += cidrblock($address, '66.11.125.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-068). ');
-$ax += cidrblock($address, '104.37.2.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-069). ');
-$ax += cidrblock($address, '104.152.44.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-070). ');
-$ax += cidrblock($address, '104.243.242.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-071). ');
-$ax += cidrblock($address, '104.243.244.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-072). ');
-$ax += cidrblock($address, '104.243.246.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-073). ');
-$ax += cidrblock($address, '104.243.249.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-074). ');
-$ax += cidrblock($address, '104.250.163.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-075). ');
-$ax += cidrblock($address, '104.250.168.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-076). ');
-$ax += cidrblock($address, '104.250.171.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-077). ');
-$ax += cidrblock($address, '104.250.174.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-078). ');
-$ax += cidrblock($address, '104.250.178.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-079). ');
-$ax += cidrblock($address, '104.250.181.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-080). ');
-$ax += cidrblock($address, '104.250.184.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-081). ');
-$ax += cidrblock($address, '104.250.187.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-082). ');
-$ax += cidrblock($address, '104.250.189.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-083). ');
-$ax += cidrblock($address, '172.94.14.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-084). ');
-$ax += cidrblock($address, '172.94.21.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-085). ');
-$ax += cidrblock($address, '172.94.28.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-086). ');
-$ax += cidrblock($address, '172.94.35.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-087). ');
-$ax += cidrblock($address, '172.94.39.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-088). ');
-$ax += cidrblock($address, '172.94.58.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-089). ');
-$ax += cidrblock($address, '172.94.63.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-090). ');
-$ax += cidrblock($address, '172.94.64.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-091). ');
-$ax += cidrblock($address, '172.94.75.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-092). ');
-$ax += cidrblock($address, '172.94.76.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-093). ');
-$ax += cidrblock($address, '172.94.97.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-094). ');
-$ax += cidrblock($address, '172.94.111.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-095). ');
-$ax += cidrblock($address, '172.94.113.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-096). ');
-$ax += cidrblock($address, '172.111.136.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-097). ');
-$ax += cidrblock($address, '172.111.201.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-098). ');
-$ax += cidrblock($address, '172.111.208.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-099). ');
-$ax += cidrblock($address, '172.111.254.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-100). ');
-$ax += cidrblock($address, '199.192.18.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-101). ');
+$ax += cidrblock($address, '185.246.120.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-001). ');
+$ax += cidrblock($address, '5.254.2.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-002). ');
+$ax += cidrblock($address, '5.254.8.0/21', 'Voxility LLC (IP4S-VOXILITYLLC-003). ');
+$ax += cidrblock($address, '5.254.16.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-004). ');
+$ax += cidrblock($address, '5.254.32.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-005). ');
+$ax += cidrblock($address, '5.254.48.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-006). ');
+$ax += cidrblock($address, '5.254.56.0/21', 'Voxility LLC (IP4S-VOXILITYLLC-007). ');
+$ax += cidrblock($address, '5.254.64.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-008). ');
+$ax += cidrblock($address, '5.254.66.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-009). ');
+$ax += cidrblock($address, '5.254.68.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-010). ');
+$ax += cidrblock($address, '5.254.72.0/21', 'Voxility LLC (IP4S-VOXILITYLLC-011). ');
+$ax += cidrblock($address, '5.254.80.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-012). ');
+$ax += cidrblock($address, '5.254.96.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-013). ');
+$ax += cidrblock($address, '5.254.112.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-014). ');
+$ax += cidrblock($address, '5.254.116.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-015). ');
+$ax += cidrblock($address, '5.254.118.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-016). ');
+$ax += cidrblock($address, '5.254.120.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-017). ');
+$ax += cidrblock($address, '5.254.124.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-018). ');
+$ax += cidrblock($address, '5.254.126.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-019). ');
+$ax += cidrblock($address, '93.114.40.0/21', 'Voxility LLC (IP4S-VOXILITYLLC-020). ');
+$ax += cidrblock($address, '93.115.80.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-021). ');
+$ax += cidrblock($address, '185.124.160.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-022). ');
+$ax += cidrblock($address, '185.242.204.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-023). ');
+$ax += cidrblock($address, '45.115.26.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-024). ');
+$ax += cidrblock($address, '103.31.184.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-025). ');
+$ax += cidrblock($address, '173.248.229.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-026). ');
+$ax += cidrblock($address, '173.248.230.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-027). ');
+$ax += cidrblock($address, '202.64.13.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-028). ');
+$ax += cidrblock($address, '37.61.224.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-029). ');
+$ax += cidrblock($address, '185.87.171.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-030). ');
+$ax += cidrblock($address, '37.230.171.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-031). ');
+$ax += cidrblock($address, '37.230.175.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-032). ');
+$ax += cidrblock($address, '46.243.204.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-033). ');
+$ax += cidrblock($address, '46.243.206.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-034). ');
+$ax += cidrblock($address, '46.243.249.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-035). ');
+$ax += cidrblock($address, '141.101.144.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-036). ');
+$ax += cidrblock($address, '141.101.152.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-037). ');
+$ax += cidrblock($address, '141.101.161.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-038). ');
+$ax += cidrblock($address, '141.101.169.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-039). ');
+$ax += cidrblock($address, '141.101.170.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-040). ');
+$ax += cidrblock($address, '188.72.80.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-041). ');
+$ax += cidrblock($address, '188.72.84.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-042). ');
+$ax += cidrblock($address, '188.72.95.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-043). ');
+$ax += cidrblock($address, '103.209.79.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-044). ');
+$ax += cidrblock($address, '37.156.32.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-045). ');
+$ax += cidrblock($address, '37.221.160.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-046). ');
+$ax += cidrblock($address, '77.81.164.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-047). ');
+$ax += cidrblock($address, '86.105.187.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-048). ');
+$ax += cidrblock($address, '86.105.215.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-049). ');
+$ax += cidrblock($address, '89.32.130.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-050). ');
+$ax += cidrblock($address, '89.40.104.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-051). ');
+$ax += cidrblock($address, '89.40.233.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-052). ');
+$ax += cidrblock($address, '89.45.89.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-053). ');
+$ax += cidrblock($address, '103.249.70.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-054). ');
+$ax += cidrblock($address, '109.163.224.0/20', 'Voxility LLC (IP4S-VOXILITYLLC-055). ');
+$ax += cidrblock($address, '128.0.46.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-056). ');
+$ax += cidrblock($address, '185.5.172.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-057). ');
+$ax += cidrblock($address, '185.96.160.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-058). ');
+$ax += cidrblock($address, '185.171.184.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-059). ');
+$ax += cidrblock($address, '185.171.187.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-060). ');
+$ax += cidrblock($address, '185.247.61.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-061). ');
+$ax += cidrblock($address, '188.213.19.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-062). ');
+$ax += cidrblock($address, '188.213.22.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-063). ');
+$ax += cidrblock($address, '188.215.36.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-064). ');
+$ax += cidrblock($address, '195.60.76.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-065). ');
+$ax += cidrblock($address, '103.118.80.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-066). ');
+$ax += cidrblock($address, '45.43.7.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-067). ');
+$ax += cidrblock($address, '45.74.1.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-068). ');
+$ax += cidrblock($address, '45.74.7.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-069). ');
+$ax += cidrblock($address, '45.74.8.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-070). ');
+$ax += cidrblock($address, '45.74.48.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-071). ');
+$ax += cidrblock($address, '45.74.58.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-072). ');
+$ax += cidrblock($address, '45.74.63.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-073). ');
+$ax += cidrblock($address, '66.11.125.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-074). ');
+$ax += cidrblock($address, '104.37.0.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-075). ');
+$ax += cidrblock($address, '104.37.2.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-076). ');
+$ax += cidrblock($address, '104.152.44.0/22', 'Voxility LLC (IP4S-VOXILITYLLC-077). ');
+$ax += cidrblock($address, '104.243.242.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-078). ');
+$ax += cidrblock($address, '104.243.244.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-079). ');
+$ax += cidrblock($address, '104.243.246.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-080). ');
+$ax += cidrblock($address, '104.243.249.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-081). ');
+$ax += cidrblock($address, '104.250.163.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-082). ');
+$ax += cidrblock($address, '104.250.168.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-083). ');
+$ax += cidrblock($address, '104.250.171.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-084). ');
+$ax += cidrblock($address, '104.250.178.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-085). ');
+$ax += cidrblock($address, '104.250.181.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-086). ');
+$ax += cidrblock($address, '104.250.184.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-087). ');
+$ax += cidrblock($address, '104.250.187.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-088). ');
+$ax += cidrblock($address, '104.250.189.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-089). ');
+$ax += cidrblock($address, '172.94.14.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-090). ');
+$ax += cidrblock($address, '172.94.21.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-091). ');
+$ax += cidrblock($address, '172.94.28.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-092). ');
+$ax += cidrblock($address, '172.94.35.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-093). ');
+$ax += cidrblock($address, '172.94.39.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-094). ');
+$ax += cidrblock($address, '172.94.40.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-095). ');
+$ax += cidrblock($address, '172.94.58.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-096). ');
+$ax += cidrblock($address, '172.94.63.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-097). ');
+$ax += cidrblock($address, '172.94.64.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-098). ');
+$ax += cidrblock($address, '172.94.76.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-099). ');
+$ax += cidrblock($address, '172.94.97.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-100). ');
+$ax += cidrblock($address, '172.94.111.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-101). ');
+$ax += cidrblock($address, '172.94.113.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-102). ');
+$ax += cidrblock($address, '172.94.115.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-103). ');
+$ax += cidrblock($address, '172.111.136.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-104). ');
+$ax += cidrblock($address, '172.111.201.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-105). ');
+$ax += cidrblock($address, '172.111.208.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-106). ');
+$ax += cidrblock($address, '172.111.254.0/23', 'Voxility LLC (IP4S-VOXILITYLLC-107). ');
+$ax += cidrblock($address, '192.253.245.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-108). ');
+$ax += cidrblock($address, '199.192.18.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-109). ');
+$ax += cidrblock($address, '206.123.129.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-110). ');
+$ax += cidrblock($address, '206.123.143.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-111). ');
 
 
 // ASN 41665 ("Tehnologii Budushego LLC").
@@ -2856,10 +2866,11 @@ $ax += cidrblock($address, '220.231.64.0/18', 'Viettel Corporation (IP4S-VIETTEL
 
 
 // ASN 200019 ("ALEXHOST SRL").
-// Updated: 2018.10.14
+// Updated: 2019.04.07
 
-$ax += cidrblock($address, '176.123.0.0/19', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-0). ');
-$ax += cidrblock($address, '91.243.83.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-1). ');
+$ax += cidrblock($address, '45.67.229.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-0). ');
+$ax += cidrblock($address, '176.123.0.0/19', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-1). ');
+$ax += cidrblock($address, '91.243.83.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-2). ');
 
 
 // ASNs 29656, 57872, 60558, 207134 ("PHOENIX NAP, LLC").
@@ -8972,6 +8983,22 @@ $ax += cidrblock($address, '46.8.208.0/22', 'Business Consulting LLC (IP4S-BUSIN
 $ax += cidrblock($address, '185.127.24.0/22', 'Business Consulting LLC (IP4S-BUSINESSCONSULTINGLLC-1). ');
 $ax += cidrblock($address, '185.154.20.0/22', 'Business Consulting LLC (IP4S-BUSINESSCONSULTINGLLC-2). ');
 $ax += cidrblock($address, '185.186.140.0/22', 'Business Consulting LLC (IP4S-BUSINESSCONSULTINGLLC-3). ');
+
+
+// ASN 137432 ("BKB Network").
+// Caught using automated hacktools to try hacking into honeypots.
+// Updated: 2019.04.03
+
+$ax += cidrblock($address, '103.108.88.0/24', 'BKB Network (IP4S-BKBNETWORK-0). ');
+$ax += cidrblock($address, '103.108.90.0/23', 'BKB Network (IP4S-BKBNETWORK-1). ');
+
+
+// ASN 16010 ("Magticom Ltd").
+// A ridiculously huge amount spam originating from some very specific IPs within this network, without which the
+// network otherwise appears reasonably clean and safe. Blocking the affected ranges until the situation improves.
+// Updated: 2019.04.03
+
+$ax += cidrblock($address, '109.172.128.0/17', 'Magticom Ltd (IP4S-MAGTICOMLTD-0). ');
 
 // IP4S Test Trigger
 $ax += inmatch($query, 'xip4sx', 'IP4S Test Trigger. ');
