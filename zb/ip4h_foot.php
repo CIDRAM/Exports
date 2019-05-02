@@ -16,8 +16,9 @@ if (inmatch($whyblockout, '(IP4H-HURRICANEELECTRIC-', '') && $ax > 0) {
     $zbamz = 0;
     $zbamz += cidrblock($address, '65.49.67.0/24', 'Access provider block bypass (BYP-IP4H-HURRICANEELECTRIC-0). '); //78a mod 80a
     $zbamz += rmatch($lcuseragent, '.getpebble.com', 'Nice enough to ask bypass. '); //74e
-    $zbamz += inmatch($useragent, 'Feedspot http://www.feedspot.com', ' Feedspot bypass. ' ); //74c
-    $zbamz += inmatch($useragent, 'Feedly', ' Feedly bypass. ' ); //74c
+    $zbamz += inmatch($useragent, 'Feedspot http://www.feedspot.com', 'Feedspot bypass. '); //74c
+    $zbamz += inmatch($useragent, 'Feedly', 'Feedly bypass. '); //74c
+    $zbamz += cidrblock($address, '45.33.128.0/20', '') && inmatch($useragent, 'Puffin', 'Puffin browser bypass. '); // 2019.04.30
     if ($zbamz > 0) {
         $ax -= 1;
     }

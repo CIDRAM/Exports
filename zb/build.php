@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is a tool used for adapting the CIDRAM default IPv4 signature files to work with ZB Block 0.6+.
+ * This file is a tool used for adapting the CIDRAM default IPv4 signature files to work with ZB Block 0.5+.
  *
  * Homepage for CIDRAM: https://cidram.github.io/
  * CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).
@@ -126,8 +126,10 @@ function build($Files, $Ident, $HeadFile, $FootFile, $OutFile) {
     fclose($Handle);
 }
 
-build([__DIR__ . '/../vault/ipv4.dat'], 'IP4H', 'ip4h_head.php', 'ip4h_foot.php', 'ip4_hosts.sig');
-build([__DIR__ . '/../vault/ipv4_isps.dat'], 'IP4S', 'ip4s_head.php', 'ip4s_foot.php', 'ip4_isps.sig');
-build([__DIR__ . '/../vault/ipv4_bogons.dat', __DIR__ . '/../vault/ipv4_other.dat'], 'IP4X', 'ip4x_head.php', 'ip4x_foot.php', 'ip4_other.sig');
+$Path = __DIR__ . '/../CIDRAM-v1/vault/';
+
+build([$Path . 'ipv4.dat'], 'IP4H', 'ip4h_head.php', 'ip4h_foot.php', 'ip4_hosts.sig');
+build([$Path . 'ipv4_isps.dat'], 'IP4S', 'ip4s_head.php', 'ip4s_foot.php', 'ip4_isps.sig');
+build([$Path . 'ipv4_bogons.dat', $Path . 'ipv4_other.dat'], 'IP4X', 'ip4x_head.php', 'ip4x_foot.php', 'ip4_other.sig');
 
 echo 'Done.';
