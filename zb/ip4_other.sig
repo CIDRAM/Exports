@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.05.02
+ * This file last updated: 2019.05.04
  */
-$zbbversion .= ' / IP4X-92';
+$zbbversion .= ' / IP4X-92a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -438,6 +438,13 @@ $ax += cidrblock($address, '46.21.106.0/24', 'Portlane Networks AB (IP4X-PORTLAN
 $ax += cidrblock($address, '79.99.0.0/23', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-09). ');
 $ax += cidrblock($address, '185.5.44.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-10). ');
 $ax += cidrblock($address, '194.76.224.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-11). ');
+
+
+// ASN 396507 ("Emerald Onion").
+// Anonymous tor endpoint; Significant source of spam.
+// Updated: 2019.05.03
+
+$ax += cidrblock($address, '23.129.64.0/24', 'Emerald Onion (IP4X-EMERALDONION-0). ');
 
 
 // Adapted from ZeuS tracker IPs.
