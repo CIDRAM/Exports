@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.07.07
+ * This file last updated: 2019.07.13
  */
-$zbbversion .= ' / IP4S-94';
+$zbbversion .= ' / IP4S-94a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1448,7 +1448,7 @@ $ax += cidrblock($address, '208.33.13.0/24', 'CoS International (IP4S-COSINTERNA
 
 
 // ASN 36923 ("Swift Networks Limited").
-// Updated: 2016.01.21 / Checked: 2019.01.16
+// Updated: 2016.01.21 / Checked: 2019.07.12
 
 $ax += cidrblock($address, '41.58.0.0/16', 'Swift Networks (IP4S-SWIFTNETWORKS-0). ');
 $ax += cidrblock($address, '41.189.0.0/19', 'Swift Networks (IP4S-SWIFTNETWORKS-1). ');
@@ -2295,7 +2295,7 @@ $ax += cidrblock($address, '217.219.254.0/24', 'Iran TCPJS (IP4S-IRANTCPJS-330).
 
 
 // ASN 37340 ("SPECTRANET LIMITED").
-// Updated: 2019.06.12
+// Updated: 2019.07.12
 
 $ax += cidrblock($address, '41.217.0.0/19', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-00). ');
 $ax += cidrblock($address, '41.217.32.0/21', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-01). ');
@@ -2304,13 +2304,9 @@ $ax += cidrblock($address, '41.217.90.0/23', 'SPECTRANET LIMITED (IP4S-SPECTRANE
 $ax += cidrblock($address, '41.217.92.0/22', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-04). ');
 $ax += cidrblock($address, '41.217.96.0/19', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-05). ');
 $ax += cidrblock($address, '154.118.0.0/17', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-06). ');
-$ax += cidrblock($address, '154.120.64.0/19', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-07). ');
-$ax += cidrblock($address, '154.120.96.0/20', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-08). ');
-$ax += cidrblock($address, '154.120.112.0/22', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-09). ');
-$ax += cidrblock($address, '154.120.118.0/23', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-10). ');
-$ax += cidrblock($address, '154.120.120.0/21', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-11). ');
-$ax += cidrblock($address, '197.242.96.0/19', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-12). ');
-$ax += cidrblock($address, '197.255.160.0/20', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-13). ');
+$ax += cidrblock($address, '154.120.64.0/18', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-07). ');
+$ax += cidrblock($address, '197.242.96.0/19', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-08). ');
+$ax += cidrblock($address, '197.255.160.0/20', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-09). ');
 
 
 // ASN 23860 ("Alliance Broadband Services Pvt. Ltd").
@@ -2882,7 +2878,7 @@ $ax += cidrblock($address, '185.113.108.0/22', 'JSC Internet-Cosmos (IP4S-JSCINT
 
 // ASNs 24955, 41704 ("Orenburgskaya Gorodskaya Set, ZAO").
 // Caught spamming while pretending to be Google.
-// Updated: 2019.03.10
+// Updated: 2019.03.10 / Checked: 2019.07.09
 
 $ax += cidrblock($address, '46.191.128.0/18', 'Ufanet (IP4S-UFANET-00). ');
 $ax += cidrblock($address, '46.191.192.0/19', 'Ufanet (IP4S-UFANET-01). ');
@@ -7327,7 +7323,7 @@ $ax += cidrblock($address, '185.203.236.0/22', 'Chelyabinsk-Signal (IP4S-CHELYAB
 
 
 // ASN 15774 ("Closed Joint Stock Company TransTeleCom").
-// Updated: 2019.03.10
+// Updated: 2019.07.09
 
 $ax += cidrblock($address, '5.8.198.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-00). ');
 $ax += cidrblock($address, '5.8.200.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-01). ');
@@ -7345,37 +7341,45 @@ $ax += cidrblock($address, '46.20.64.0/20', 'TransTeleCom (IP4S-TRANSTELECOM-12)
 $ax += cidrblock($address, '46.50.207.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-13). ');
 $ax += cidrblock($address, '62.33.122.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-14). ');
 $ax += cidrblock($address, '79.140.96.0/20', 'TransTeleCom (IP4S-TRANSTELECOM-15). ');
-$ax += cidrblock($address, '86.110.168.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-16). ');
-$ax += cidrblock($address, '86.110.173.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-17). ');
-$ax += cidrblock($address, '86.110.174.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-18). ');
-$ax += cidrblock($address, '86.110.178.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-19). ');
-$ax += cidrblock($address, '86.110.180.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-20). ');
-$ax += cidrblock($address, '86.110.184.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-21). ');
-$ax += cidrblock($address, '89.186.234.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-22). ');
-$ax += cidrblock($address, '91.105.130.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-23). ');
-$ax += cidrblock($address, '93.189.12.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-24). ');
-$ax += cidrblock($address, '176.104.128.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-25). ');
-$ax += cidrblock($address, '176.104.144.0/20', 'TransTeleCom (IP4S-TRANSTELECOM-26). ');
-$ax += cidrblock($address, '176.104.160.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-27). ');
-$ax += cidrblock($address, '176.125.64.0/18', 'TransTeleCom (IP4S-TRANSTELECOM-28). ');
-$ax += cidrblock($address, '178.76.194.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-29). ');
-$ax += cidrblock($address, '178.76.205.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-30). ');
-$ax += cidrblock($address, '178.76.207.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-31). ');
-$ax += cidrblock($address, '178.76.208.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-32). ');
-$ax += cidrblock($address, '178.76.212.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-33). ');
-$ax += cidrblock($address, '178.76.214.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-34). ');
-$ax += cidrblock($address, '178.76.216.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-35). ');
-$ax += cidrblock($address, '178.76.224.0/19', 'TransTeleCom (IP4S-TRANSTELECOM-36). ');
-$ax += cidrblock($address, '185.6.236.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-37). ');
-$ax += cidrblock($address, '185.13.24.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-38). ');
-$ax += cidrblock($address, '185.52.132.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-39). ');
-$ax += cidrblock($address, '185.131.172.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-40). ');
-$ax += cidrblock($address, '188.68.128.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-41). ');
-$ax += cidrblock($address, '188.68.136.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-42). ');
-$ax += cidrblock($address, '188.168.0.0/16', 'TransTeleCom (IP4S-TRANSTELECOM-43). ');
-$ax += cidrblock($address, '188.244.128.0/17', 'TransTeleCom (IP4S-TRANSTELECOM-44). ');
-$ax += cidrblock($address, '213.129.96.0/19', 'TransTeleCom (IP4S-TRANSTELECOM-45). ');
-$ax += cidrblock($address, '213.138.64.0/19', 'TransTeleCom (IP4S-TRANSTELECOM-46). ');
+$ax += cidrblock($address, '80.89.139.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-16). ');
+$ax += cidrblock($address, '82.200.51.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-17). ');
+$ax += cidrblock($address, '82.200.58.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-18). ');
+$ax += cidrblock($address, '86.110.168.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-19). ');
+$ax += cidrblock($address, '86.110.173.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-20). ');
+$ax += cidrblock($address, '86.110.174.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-21). ');
+$ax += cidrblock($address, '86.110.178.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-22). ');
+$ax += cidrblock($address, '86.110.180.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-23). ');
+$ax += cidrblock($address, '86.110.184.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-24). ');
+$ax += cidrblock($address, '89.186.234.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-25). ');
+$ax += cidrblock($address, '91.105.180.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-26). ');
+$ax += cidrblock($address, '93.189.12.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-27). ');
+$ax += cidrblock($address, '94.251.0.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-28). ');
+$ax += cidrblock($address, '94.251.16.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-29). ');
+$ax += cidrblock($address, '94.251.88.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-30). ');
+$ax += cidrblock($address, '176.104.128.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-31). ');
+$ax += cidrblock($address, '176.104.144.0/20', 'TransTeleCom (IP4S-TRANSTELECOM-32). ');
+$ax += cidrblock($address, '176.104.160.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-33). ');
+$ax += cidrblock($address, '176.125.64.0/18', 'TransTeleCom (IP4S-TRANSTELECOM-34). ');
+$ax += cidrblock($address, '178.76.194.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-35). ');
+$ax += cidrblock($address, '178.76.205.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-36). ');
+$ax += cidrblock($address, '178.76.207.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-37). ');
+$ax += cidrblock($address, '178.76.208.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-38). ');
+$ax += cidrblock($address, '178.76.212.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-39). ');
+$ax += cidrblock($address, '178.76.214.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-40). ');
+$ax += cidrblock($address, '178.76.216.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-41). ');
+$ax += cidrblock($address, '178.76.224.0/19', 'TransTeleCom (IP4S-TRANSTELECOM-42). ');
+$ax += cidrblock($address, '185.6.236.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-43). ');
+$ax += cidrblock($address, '185.13.24.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-44). ');
+$ax += cidrblock($address, '185.43.86.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-45). ');
+$ax += cidrblock($address, '185.52.132.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-46). ');
+$ax += cidrblock($address, '185.61.24.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-47). ');
+$ax += cidrblock($address, '185.131.172.0/23', 'TransTeleCom (IP4S-TRANSTELECOM-48). ');
+$ax += cidrblock($address, '188.68.128.0/21', 'TransTeleCom (IP4S-TRANSTELECOM-49). ');
+$ax += cidrblock($address, '188.68.136.0/22', 'TransTeleCom (IP4S-TRANSTELECOM-50). ');
+$ax += cidrblock($address, '188.168.0.0/16', 'TransTeleCom (IP4S-TRANSTELECOM-51). ');
+$ax += cidrblock($address, '188.244.128.0/17', 'TransTeleCom (IP4S-TRANSTELECOM-52). ');
+$ax += cidrblock($address, '213.129.96.0/19', 'TransTeleCom (IP4S-TRANSTELECOM-53). ');
+$ax += cidrblock($address, '213.138.64.0/19', 'TransTeleCom (IP4S-TRANSTELECOM-54). ');
 
 
 // ASNs 12768, 34533, 41661, 41668, 41727, 41754, 42145, 42682, 50542, 51570 ('JSC "ER-Telecom Holding"').
