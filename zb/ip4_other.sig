@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.07.13
+ * This file last updated: 2019.08.01
  */
-$zbbversion .= ' / IP4X-94a';
+$zbbversion .= ' / IP4X-95';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -288,7 +288,7 @@ $ax += cidrblock($address, '192.253.242.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVP
 
 // ASN 59898 ("AllSafe Sarl").
 // Related to "ProtonVPN", "ProtonMail", and "Proton Technologies". Provides VPNs and proxies, both public and private.
-// Updated: 2019.03.26
+// Updated: 2019.03.26 / Checked: 2019.07.23
 
 $ax += cidrblock($address, '185.159.157.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-0). ');
 $ax += cidrblock($address, '185.167.4.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-1). ');
