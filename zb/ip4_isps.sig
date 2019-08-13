@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.08.01
+ * This file last updated: 2019.08.13
  */
-$zbbversion .= ' / IP4S-95';
+$zbbversion .= ' / IP4S-96';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -7693,11 +7693,14 @@ $ax += cidrblock($address, '194.0.61.0/24', 'Foreningen (IP4S-FORENINGEN-1). ');
 
 
 // ASN 31148 ("Freenet Ltd").
-// Legit human endpoint/ISP based in Ukraine, but have been encountering numerous hack attempts from their ASN in recent
-// months. Marking this section for use with reCAPTCHA, because we don't want to accidentally block human users if we
-// can avoid it at all. HUGE numbers of nefarious listings at MegaRBL.net and AbuseIPDB.com! Can't really afford to just
-// ignore it. Ukrainian CIDRAM users should probably add the name of this section to their ignore.dat file.
-// Updated: 2019.03.24
+// Ukrainian ISP with human endpoints, but also a frequent source of spam and
+// hack attempts. Numerous listings at MegaRBL.net and AbuseIPDB.com! Marked for
+// use with reCAPTCHA to reduce the false positive risk, and CIDRAM users from
+// the Ukraine, or targeting traffic from the Ukraine, should list this section
+// in their ignore.dat file to reduce the false positive risk (but the ISP could
+// be considered high risk for others elsewhere, so would best continue to be
+// blocked).
+// Updated: 2019.08.03
 
 $ax += cidrblock($address, '46.219.1.0/24', 'Freenet Ltd (IP4S-FREENETLTD-000). ');
 $ax += cidrblock($address, '46.219.2.0/23', 'Freenet Ltd (IP4S-FREENETLTD-001). ');
@@ -7734,148 +7737,158 @@ $ax += cidrblock($address, '46.219.108.0/24', 'Freenet Ltd (IP4S-FREENETLTD-031)
 $ax += cidrblock($address, '46.219.110.0/23', 'Freenet Ltd (IP4S-FREENETLTD-032). ');
 $ax += cidrblock($address, '46.219.112.0/20', 'Freenet Ltd (IP4S-FREENETLTD-033). ');
 $ax += cidrblock($address, '46.219.128.0/24', 'Freenet Ltd (IP4S-FREENETLTD-034). ');
-$ax += cidrblock($address, '46.219.200.0/24', 'Freenet Ltd (IP4S-FREENETLTD-035). ');
-$ax += cidrblock($address, '46.219.204.0/22', 'Freenet Ltd (IP4S-FREENETLTD-036). ');
-$ax += cidrblock($address, '46.219.208.0/20', 'Freenet Ltd (IP4S-FREENETLTD-037). ');
-$ax += cidrblock($address, '46.219.224.0/19', 'Freenet Ltd (IP4S-FREENETLTD-038). ');
-$ax += cidrblock($address, '78.159.32.0/19', 'Freenet Ltd (IP4S-FREENETLTD-039). ');
-$ax += cidrblock($address, '81.95.176.0/20', 'Freenet Ltd (IP4S-FREENETLTD-040). ');
-$ax += cidrblock($address, '89.252.0.0/24', 'Freenet Ltd (IP4S-FREENETLTD-041). ');
-$ax += cidrblock($address, '89.252.2.0/23', 'Freenet Ltd (IP4S-FREENETLTD-042). ');
-$ax += cidrblock($address, '89.252.4.0/22', 'Freenet Ltd (IP4S-FREENETLTD-043). ');
-$ax += cidrblock($address, '89.252.8.0/23', 'Freenet Ltd (IP4S-FREENETLTD-044). ');
-$ax += cidrblock($address, '89.252.11.0/24', 'Freenet Ltd (IP4S-FREENETLTD-045). ');
-$ax += cidrblock($address, '89.252.12.0/22', 'Freenet Ltd (IP4S-FREENETLTD-046). ');
-$ax += cidrblock($address, '89.252.16.0/23', 'Freenet Ltd (IP4S-FREENETLTD-047). ');
-$ax += cidrblock($address, '89.252.19.0/24', 'Freenet Ltd (IP4S-FREENETLTD-048). ');
-$ax += cidrblock($address, '89.252.20.0/22', 'Freenet Ltd (IP4S-FREENETLTD-049). ');
-$ax += cidrblock($address, '89.252.24.0/23', 'Freenet Ltd (IP4S-FREENETLTD-050). ');
-$ax += cidrblock($address, '89.252.27.0/24', 'Freenet Ltd (IP4S-FREENETLTD-051). ');
-$ax += cidrblock($address, '89.252.29.0/24', 'Freenet Ltd (IP4S-FREENETLTD-052). ');
+$ax += cidrblock($address, '46.219.130.0/24', 'Freenet Ltd (IP4S-FREENETLTD-035). ');
+$ax += cidrblock($address, '46.219.200.0/24', 'Freenet Ltd (IP4S-FREENETLTD-036). ');
+$ax += cidrblock($address, '46.219.204.0/22', 'Freenet Ltd (IP4S-FREENETLTD-037). ');
+$ax += cidrblock($address, '46.219.208.0/20', 'Freenet Ltd (IP4S-FREENETLTD-038). ');
+$ax += cidrblock($address, '46.219.224.0/19', 'Freenet Ltd (IP4S-FREENETLTD-039). ');
+$ax += cidrblock($address, '78.159.32.0/19', 'Freenet Ltd (IP4S-FREENETLTD-040). ');
+$ax += cidrblock($address, '81.95.176.0/20', 'Freenet Ltd (IP4S-FREENETLTD-041). ');
+$ax += cidrblock($address, '89.252.0.0/24', 'Freenet Ltd (IP4S-FREENETLTD-042). ');
+$ax += cidrblock($address, '89.252.3.0/24', 'Freenet Ltd (IP4S-FREENETLTD-043). ');
+$ax += cidrblock($address, '89.252.4.0/22', 'Freenet Ltd (IP4S-FREENETLTD-044). ');
+$ax += cidrblock($address, '89.252.8.0/23', 'Freenet Ltd (IP4S-FREENETLTD-045). ');
+$ax += cidrblock($address, '89.252.11.0/24', 'Freenet Ltd (IP4S-FREENETLTD-046). ');
+$ax += cidrblock($address, '89.252.12.0/23', 'Freenet Ltd (IP4S-FREENETLTD-047). ');
+$ax += cidrblock($address, '89.252.16.0/23', 'Freenet Ltd (IP4S-FREENETLTD-048). ');
+$ax += cidrblock($address, '89.252.19.0/24', 'Freenet Ltd (IP4S-FREENETLTD-049). ');
+$ax += cidrblock($address, '89.252.20.0/22', 'Freenet Ltd (IP4S-FREENETLTD-050). ');
+$ax += cidrblock($address, '89.252.24.0/23', 'Freenet Ltd (IP4S-FREENETLTD-051). ');
+$ax += cidrblock($address, '89.252.27.0/24', 'Freenet Ltd (IP4S-FREENETLTD-052). ');
 $ax += cidrblock($address, '89.252.30.0/23', 'Freenet Ltd (IP4S-FREENETLTD-053). ');
-$ax += cidrblock($address, '89.252.32.0/21', 'Freenet Ltd (IP4S-FREENETLTD-054). ');
-$ax += cidrblock($address, '89.252.40.0/22', 'Freenet Ltd (IP4S-FREENETLTD-055). ');
-$ax += cidrblock($address, '89.252.45.0/24', 'Freenet Ltd (IP4S-FREENETLTD-056). ');
-$ax += cidrblock($address, '89.252.46.0/23', 'Freenet Ltd (IP4S-FREENETLTD-057). ');
-$ax += cidrblock($address, '89.252.48.0/24', 'Freenet Ltd (IP4S-FREENETLTD-058). ');
-$ax += cidrblock($address, '89.252.50.0/23', 'Freenet Ltd (IP4S-FREENETLTD-059). ');
-$ax += cidrblock($address, '89.252.52.0/23', 'Freenet Ltd (IP4S-FREENETLTD-060). ');
-$ax += cidrblock($address, '89.252.55.0/24', 'Freenet Ltd (IP4S-FREENETLTD-061). ');
-$ax += cidrblock($address, '89.252.56.0/21', 'Freenet Ltd (IP4S-FREENETLTD-062). ');
-$ax += cidrblock($address, '94.76.66.0/23', 'Freenet Ltd (IP4S-FREENETLTD-063). ');
-$ax += cidrblock($address, '94.76.72.0/22', 'Freenet Ltd (IP4S-FREENETLTD-064). ');
-$ax += cidrblock($address, '94.76.76.0/23', 'Freenet Ltd (IP4S-FREENETLTD-065). ');
-$ax += cidrblock($address, '94.76.78.0/24', 'Freenet Ltd (IP4S-FREENETLTD-066). ');
-$ax += cidrblock($address, '94.76.80.0/22', 'Freenet Ltd (IP4S-FREENETLTD-067). ');
-$ax += cidrblock($address, '94.76.88.0/21', 'Freenet Ltd (IP4S-FREENETLTD-068). ');
-$ax += cidrblock($address, '94.76.96.0/23', 'Freenet Ltd (IP4S-FREENETLTD-069). ');
-$ax += cidrblock($address, '94.76.104.0/22', 'Freenet Ltd (IP4S-FREENETLTD-070). ');
-$ax += cidrblock($address, '94.76.108.0/23', 'Freenet Ltd (IP4S-FREENETLTD-071). ');
-$ax += cidrblock($address, '94.76.111.0/24', 'Freenet Ltd (IP4S-FREENETLTD-072). ');
-$ax += cidrblock($address, '94.76.113.0/24', 'Freenet Ltd (IP4S-FREENETLTD-073). ');
-$ax += cidrblock($address, '94.76.114.0/23', 'Freenet Ltd (IP4S-FREENETLTD-074). ');
-$ax += cidrblock($address, '94.76.117.0/24', 'Freenet Ltd (IP4S-FREENETLTD-075). ');
-$ax += cidrblock($address, '94.76.118.0/24', 'Freenet Ltd (IP4S-FREENETLTD-076). ');
-$ax += cidrblock($address, '94.76.120.0/23', 'Freenet Ltd (IP4S-FREENETLTD-077). ');
-$ax += cidrblock($address, '94.76.122.0/24', 'Freenet Ltd (IP4S-FREENETLTD-078). ');
-$ax += cidrblock($address, '94.76.124.0/23', 'Freenet Ltd (IP4S-FREENETLTD-079). ');
-$ax += cidrblock($address, '94.76.127.0/24', 'Freenet Ltd (IP4S-FREENETLTD-080). ');
-$ax += cidrblock($address, '109.251.0.0/19', 'Freenet Ltd (IP4S-FREENETLTD-081). ');
-$ax += cidrblock($address, '109.251.33.0/24', 'Freenet Ltd (IP4S-FREENETLTD-082). ');
-$ax += cidrblock($address, '109.251.34.0/23', 'Freenet Ltd (IP4S-FREENETLTD-083). ');
-$ax += cidrblock($address, '109.251.36.0/22', 'Freenet Ltd (IP4S-FREENETLTD-084). ');
-$ax += cidrblock($address, '109.251.40.0/23', 'Freenet Ltd (IP4S-FREENETLTD-085). ');
-$ax += cidrblock($address, '109.251.42.0/24', 'Freenet Ltd (IP4S-FREENETLTD-086). ');
-$ax += cidrblock($address, '109.251.44.0/22', 'Freenet Ltd (IP4S-FREENETLTD-087). ');
-$ax += cidrblock($address, '109.251.48.0/20', 'Freenet Ltd (IP4S-FREENETLTD-088). ');
-$ax += cidrblock($address, '109.251.64.0/19', 'Freenet Ltd (IP4S-FREENETLTD-089). ');
-$ax += cidrblock($address, '109.251.96.0/24', 'Freenet Ltd (IP4S-FREENETLTD-090). ');
-$ax += cidrblock($address, '109.251.98.0/23', 'Freenet Ltd (IP4S-FREENETLTD-091). ');
-$ax += cidrblock($address, '109.251.100.0/22', 'Freenet Ltd (IP4S-FREENETLTD-092). ');
-$ax += cidrblock($address, '109.251.104.0/21', 'Freenet Ltd (IP4S-FREENETLTD-093). ');
-$ax += cidrblock($address, '109.251.112.0/24', 'Freenet Ltd (IP4S-FREENETLTD-094). ');
-$ax += cidrblock($address, '109.251.114.0/24', 'Freenet Ltd (IP4S-FREENETLTD-095). ');
-$ax += cidrblock($address, '109.251.116.0/23', 'Freenet Ltd (IP4S-FREENETLTD-096). ');
-$ax += cidrblock($address, '109.251.118.0/24', 'Freenet Ltd (IP4S-FREENETLTD-097). ');
-$ax += cidrblock($address, '109.251.120.0/22', 'Freenet Ltd (IP4S-FREENETLTD-098). ');
-$ax += cidrblock($address, '109.251.124.0/24', 'Freenet Ltd (IP4S-FREENETLTD-099). ');
-$ax += cidrblock($address, '109.251.126.0/24', 'Freenet Ltd (IP4S-FREENETLTD-100). ');
-$ax += cidrblock($address, '109.251.128.0/21', 'Freenet Ltd (IP4S-FREENETLTD-101). ');
-$ax += cidrblock($address, '109.251.136.0/23', 'Freenet Ltd (IP4S-FREENETLTD-102). ');
-$ax += cidrblock($address, '109.251.138.0/24', 'Freenet Ltd (IP4S-FREENETLTD-103). ');
-$ax += cidrblock($address, '109.251.140.0/22', 'Freenet Ltd (IP4S-FREENETLTD-104). ');
-$ax += cidrblock($address, '109.251.144.0/24', 'Freenet Ltd (IP4S-FREENETLTD-105). ');
-$ax += cidrblock($address, '109.251.146.0/23', 'Freenet Ltd (IP4S-FREENETLTD-106). ');
-$ax += cidrblock($address, '109.251.148.0/24', 'Freenet Ltd (IP4S-FREENETLTD-107). ');
-$ax += cidrblock($address, '109.251.150.0/23', 'Freenet Ltd (IP4S-FREENETLTD-108). ');
-$ax += cidrblock($address, '109.251.152.0/21', 'Freenet Ltd (IP4S-FREENETLTD-109). ');
-$ax += cidrblock($address, '109.251.160.0/23', 'Freenet Ltd (IP4S-FREENETLTD-110). ');
-$ax += cidrblock($address, '109.251.162.0/24', 'Freenet Ltd (IP4S-FREENETLTD-111). ');
-$ax += cidrblock($address, '109.251.164.0/23', 'Freenet Ltd (IP4S-FREENETLTD-112). ');
-$ax += cidrblock($address, '109.251.168.0/24', 'Freenet Ltd (IP4S-FREENETLTD-113). ');
-$ax += cidrblock($address, '109.251.170.0/24', 'Freenet Ltd (IP4S-FREENETLTD-114). ');
-$ax += cidrblock($address, '109.251.173.0/24', 'Freenet Ltd (IP4S-FREENETLTD-115). ');
-$ax += cidrblock($address, '109.251.174.0/23', 'Freenet Ltd (IP4S-FREENETLTD-116). ');
-$ax += cidrblock($address, '109.251.179.0/24', 'Freenet Ltd (IP4S-FREENETLTD-117). ');
-$ax += cidrblock($address, '109.251.180.0/22', 'Freenet Ltd (IP4S-FREENETLTD-118). ');
-$ax += cidrblock($address, '109.251.184.0/21', 'Freenet Ltd (IP4S-FREENETLTD-119). ');
-$ax += cidrblock($address, '109.251.192.0/20', 'Freenet Ltd (IP4S-FREENETLTD-120). ');
-$ax += cidrblock($address, '109.251.209.0/24', 'Freenet Ltd (IP4S-FREENETLTD-121). ');
-$ax += cidrblock($address, '109.251.210.0/23', 'Freenet Ltd (IP4S-FREENETLTD-122). ');
-$ax += cidrblock($address, '109.251.212.0/22', 'Freenet Ltd (IP4S-FREENETLTD-123). ');
-$ax += cidrblock($address, '109.251.216.0/21', 'Freenet Ltd (IP4S-FREENETLTD-124). ');
-$ax += cidrblock($address, '109.251.224.0/20', 'Freenet Ltd (IP4S-FREENETLTD-125). ');
-$ax += cidrblock($address, '109.251.240.0/21', 'Freenet Ltd (IP4S-FREENETLTD-126). ');
-$ax += cidrblock($address, '109.251.248.0/22', 'Freenet Ltd (IP4S-FREENETLTD-127). ');
-$ax += cidrblock($address, '109.251.252.0/23', 'Freenet Ltd (IP4S-FREENETLTD-128). ');
-$ax += cidrblock($address, '109.251.255.0/24', 'Freenet Ltd (IP4S-FREENETLTD-129). ');
-$ax += cidrblock($address, '185.124.168.0/22', 'Freenet Ltd (IP4S-FREENETLTD-130). ');
-$ax += cidrblock($address, '188.231.129.0/24', 'Freenet Ltd (IP4S-FREENETLTD-131). ');
-$ax += cidrblock($address, '188.231.130.0/24', 'Freenet Ltd (IP4S-FREENETLTD-132). ');
-$ax += cidrblock($address, '188.231.132.0/22', 'Freenet Ltd (IP4S-FREENETLTD-133). ');
-$ax += cidrblock($address, '188.231.136.0/24', 'Freenet Ltd (IP4S-FREENETLTD-134). ');
-$ax += cidrblock($address, '188.231.138.0/23', 'Freenet Ltd (IP4S-FREENETLTD-135). ');
-$ax += cidrblock($address, '188.231.140.0/22', 'Freenet Ltd (IP4S-FREENETLTD-136). ');
-$ax += cidrblock($address, '188.231.144.0/23', 'Freenet Ltd (IP4S-FREENETLTD-137). ');
-$ax += cidrblock($address, '188.231.147.0/24', 'Freenet Ltd (IP4S-FREENETLTD-138). ');
-$ax += cidrblock($address, '188.231.148.0/22', 'Freenet Ltd (IP4S-FREENETLTD-139). ');
-$ax += cidrblock($address, '188.231.152.0/21', 'Freenet Ltd (IP4S-FREENETLTD-140). ');
-$ax += cidrblock($address, '188.231.160.0/23', 'Freenet Ltd (IP4S-FREENETLTD-141). ');
-$ax += cidrblock($address, '188.231.162.0/24', 'Freenet Ltd (IP4S-FREENETLTD-142). ');
-$ax += cidrblock($address, '188.231.165.0/24', 'Freenet Ltd (IP4S-FREENETLTD-143). ');
-$ax += cidrblock($address, '188.231.166.0/23', 'Freenet Ltd (IP4S-FREENETLTD-144). ');
-$ax += cidrblock($address, '188.231.168.0/22', 'Freenet Ltd (IP4S-FREENETLTD-145). ');
-$ax += cidrblock($address, '188.231.173.0/24', 'Freenet Ltd (IP4S-FREENETLTD-146). ');
-$ax += cidrblock($address, '188.231.174.0/24', 'Freenet Ltd (IP4S-FREENETLTD-147). ');
-$ax += cidrblock($address, '188.231.177.0/24', 'Freenet Ltd (IP4S-FREENETLTD-148). ');
-$ax += cidrblock($address, '188.231.178.0/23', 'Freenet Ltd (IP4S-FREENETLTD-149). ');
-$ax += cidrblock($address, '188.231.180.0/23', 'Freenet Ltd (IP4S-FREENETLTD-150). ');
-$ax += cidrblock($address, '188.231.182.0/24', 'Freenet Ltd (IP4S-FREENETLTD-151). ');
-$ax += cidrblock($address, '188.231.184.0/23', 'Freenet Ltd (IP4S-FREENETLTD-152). ');
-$ax += cidrblock($address, '188.231.186.0/24', 'Freenet Ltd (IP4S-FREENETLTD-153). ');
-$ax += cidrblock($address, '188.231.188.0/22', 'Freenet Ltd (IP4S-FREENETLTD-154). ');
-$ax += cidrblock($address, '188.231.192.0/23', 'Freenet Ltd (IP4S-FREENETLTD-155). ');
-$ax += cidrblock($address, '188.231.212.0/23', 'Freenet Ltd (IP4S-FREENETLTD-156). ');
-$ax += cidrblock($address, '188.231.214.0/24', 'Freenet Ltd (IP4S-FREENETLTD-157). ');
-$ax += cidrblock($address, '188.231.220.0/23', 'Freenet Ltd (IP4S-FREENETLTD-158). ');
-$ax += cidrblock($address, '188.231.223.0/24', 'Freenet Ltd (IP4S-FREENETLTD-159). ');
-$ax += cidrblock($address, '188.231.224.0/23', 'Freenet Ltd (IP4S-FREENETLTD-160). ');
-$ax += cidrblock($address, '188.231.226.0/24', 'Freenet Ltd (IP4S-FREENETLTD-161). ');
-$ax += cidrblock($address, '188.231.228.0/23', 'Freenet Ltd (IP4S-FREENETLTD-162). ');
-$ax += cidrblock($address, '188.231.232.0/21', 'Freenet Ltd (IP4S-FREENETLTD-163). ');
-$ax += cidrblock($address, '188.231.240.0/23', 'Freenet Ltd (IP4S-FREENETLTD-164). ');
-$ax += cidrblock($address, '188.231.244.0/22', 'Freenet Ltd (IP4S-FREENETLTD-165). ');
-$ax += cidrblock($address, '188.231.248.0/21', 'Freenet Ltd (IP4S-FREENETLTD-166). ');
-$ax += cidrblock($address, '193.24.25.0/24', 'Freenet Ltd (IP4S-FREENETLTD-167). ');
-$ax += cidrblock($address, '195.160.220.0/22', 'Freenet Ltd (IP4S-FREENETLTD-168). ');
-$ax += cidrblock($address, '195.245.200.0/24', 'Freenet Ltd (IP4S-FREENETLTD-169). ');
-$ax += cidrblock($address, '212.22.192.0/21', 'Freenet Ltd (IP4S-FREENETLTD-170). ');
-$ax += cidrblock($address, '212.22.201.0/24', 'Freenet Ltd (IP4S-FREENETLTD-171). ');
-$ax += cidrblock($address, '212.22.202.0/23', 'Freenet Ltd (IP4S-FREENETLTD-172). ');
-$ax += cidrblock($address, '212.22.204.0/22', 'Freenet Ltd (IP4S-FREENETLTD-173). ');
-$ax += cidrblock($address, '212.22.208.0/21', 'Freenet Ltd (IP4S-FREENETLTD-174). ');
-$ax += cidrblock($address, '212.22.218.0/23', 'Freenet Ltd (IP4S-FREENETLTD-175). ');
-$ax += cidrblock($address, '212.22.220.0/22', 'Freenet Ltd (IP4S-FREENETLTD-176). ');
+$ax += cidrblock($address, '89.252.33.0/24', 'Freenet Ltd (IP4S-FREENETLTD-054). ');
+$ax += cidrblock($address, '89.252.34.0/23', 'Freenet Ltd (IP4S-FREENETLTD-055). ');
+$ax += cidrblock($address, '89.252.36.0/22', 'Freenet Ltd (IP4S-FREENETLTD-056). ');
+$ax += cidrblock($address, '89.252.40.0/22', 'Freenet Ltd (IP4S-FREENETLTD-057). ');
+$ax += cidrblock($address, '89.252.46.0/23', 'Freenet Ltd (IP4S-FREENETLTD-058). ');
+$ax += cidrblock($address, '89.252.48.0/24', 'Freenet Ltd (IP4S-FREENETLTD-059). ');
+$ax += cidrblock($address, '89.252.50.0/23', 'Freenet Ltd (IP4S-FREENETLTD-060). ');
+$ax += cidrblock($address, '89.252.53.0/24', 'Freenet Ltd (IP4S-FREENETLTD-061). ');
+$ax += cidrblock($address, '89.252.55.0/24', 'Freenet Ltd (IP4S-FREENETLTD-062). ');
+$ax += cidrblock($address, '89.252.56.0/21', 'Freenet Ltd (IP4S-FREENETLTD-063). ');
+$ax += cidrblock($address, '94.76.66.0/23', 'Freenet Ltd (IP4S-FREENETLTD-064). ');
+$ax += cidrblock($address, '94.76.68.0/24', 'Freenet Ltd (IP4S-FREENETLTD-065). ');
+$ax += cidrblock($address, '94.76.72.0/22', 'Freenet Ltd (IP4S-FREENETLTD-066). ');
+$ax += cidrblock($address, '94.76.76.0/23', 'Freenet Ltd (IP4S-FREENETLTD-067). ');
+$ax += cidrblock($address, '94.76.78.0/24', 'Freenet Ltd (IP4S-FREENETLTD-068). ');
+$ax += cidrblock($address, '94.76.81.0/24', 'Freenet Ltd (IP4S-FREENETLTD-069). ');
+$ax += cidrblock($address, '94.76.82.0/23', 'Freenet Ltd (IP4S-FREENETLTD-070). ');
+$ax += cidrblock($address, '94.76.89.0/24', 'Freenet Ltd (IP4S-FREENETLTD-071). ');
+$ax += cidrblock($address, '94.76.90.0/23', 'Freenet Ltd (IP4S-FREENETLTD-072). ');
+$ax += cidrblock($address, '94.76.92.0/22', 'Freenet Ltd (IP4S-FREENETLTD-073). ');
+$ax += cidrblock($address, '94.76.96.0/23', 'Freenet Ltd (IP4S-FREENETLTD-074). ');
+$ax += cidrblock($address, '94.76.104.0/22', 'Freenet Ltd (IP4S-FREENETLTD-075). ');
+$ax += cidrblock($address, '94.76.108.0/23', 'Freenet Ltd (IP4S-FREENETLTD-076). ');
+$ax += cidrblock($address, '94.76.111.0/24', 'Freenet Ltd (IP4S-FREENETLTD-077). ');
+$ax += cidrblock($address, '94.76.113.0/24', 'Freenet Ltd (IP4S-FREENETLTD-078). ');
+$ax += cidrblock($address, '94.76.115.0/24', 'Freenet Ltd (IP4S-FREENETLTD-079). ');
+$ax += cidrblock($address, '94.76.117.0/24', 'Freenet Ltd (IP4S-FREENETLTD-080). ');
+$ax += cidrblock($address, '94.76.118.0/24', 'Freenet Ltd (IP4S-FREENETLTD-081). ');
+$ax += cidrblock($address, '94.76.121.0/24', 'Freenet Ltd (IP4S-FREENETLTD-082). ');
+$ax += cidrblock($address, '94.76.122.0/24', 'Freenet Ltd (IP4S-FREENETLTD-083). ');
+$ax += cidrblock($address, '94.76.124.0/23', 'Freenet Ltd (IP4S-FREENETLTD-084). ');
+$ax += cidrblock($address, '94.76.127.0/24', 'Freenet Ltd (IP4S-FREENETLTD-085). ');
+$ax += cidrblock($address, '109.251.0.0/19', 'Freenet Ltd (IP4S-FREENETLTD-086). ');
+$ax += cidrblock($address, '109.251.33.0/24', 'Freenet Ltd (IP4S-FREENETLTD-087). ');
+$ax += cidrblock($address, '109.251.34.0/23', 'Freenet Ltd (IP4S-FREENETLTD-088). ');
+$ax += cidrblock($address, '109.251.36.0/22', 'Freenet Ltd (IP4S-FREENETLTD-089). ');
+$ax += cidrblock($address, '109.251.40.0/23', 'Freenet Ltd (IP4S-FREENETLTD-090). ');
+$ax += cidrblock($address, '109.251.42.0/24', 'Freenet Ltd (IP4S-FREENETLTD-091). ');
+$ax += cidrblock($address, '109.251.44.0/22', 'Freenet Ltd (IP4S-FREENETLTD-092). ');
+$ax += cidrblock($address, '109.251.48.0/20', 'Freenet Ltd (IP4S-FREENETLTD-093). ');
+$ax += cidrblock($address, '109.251.64.0/19', 'Freenet Ltd (IP4S-FREENETLTD-094). ');
+$ax += cidrblock($address, '109.251.96.0/20', 'Freenet Ltd (IP4S-FREENETLTD-095). ');
+$ax += cidrblock($address, '109.251.112.0/24', 'Freenet Ltd (IP4S-FREENETLTD-096). ');
+$ax += cidrblock($address, '109.251.114.0/23', 'Freenet Ltd (IP4S-FREENETLTD-097). ');
+$ax += cidrblock($address, '109.251.116.0/23', 'Freenet Ltd (IP4S-FREENETLTD-098). ');
+$ax += cidrblock($address, '109.251.118.0/24', 'Freenet Ltd (IP4S-FREENETLTD-099). ');
+$ax += cidrblock($address, '109.251.120.0/22', 'Freenet Ltd (IP4S-FREENETLTD-100). ');
+$ax += cidrblock($address, '109.251.124.0/24', 'Freenet Ltd (IP4S-FREENETLTD-101). ');
+$ax += cidrblock($address, '109.251.126.0/24', 'Freenet Ltd (IP4S-FREENETLTD-102). ');
+$ax += cidrblock($address, '109.251.128.0/23', 'Freenet Ltd (IP4S-FREENETLTD-103). ');
+$ax += cidrblock($address, '109.251.131.0/24', 'Freenet Ltd (IP4S-FREENETLTD-104). ');
+$ax += cidrblock($address, '109.251.132.0/22', 'Freenet Ltd (IP4S-FREENETLTD-105). ');
+$ax += cidrblock($address, '109.251.136.0/23', 'Freenet Ltd (IP4S-FREENETLTD-106). ');
+$ax += cidrblock($address, '109.251.138.0/24', 'Freenet Ltd (IP4S-FREENETLTD-107). ');
+$ax += cidrblock($address, '109.251.140.0/22', 'Freenet Ltd (IP4S-FREENETLTD-108). ');
+$ax += cidrblock($address, '109.251.144.0/24', 'Freenet Ltd (IP4S-FREENETLTD-109). ');
+$ax += cidrblock($address, '109.251.146.0/23', 'Freenet Ltd (IP4S-FREENETLTD-110). ');
+$ax += cidrblock($address, '109.251.148.0/24', 'Freenet Ltd (IP4S-FREENETLTD-111). ');
+$ax += cidrblock($address, '109.251.150.0/23', 'Freenet Ltd (IP4S-FREENETLTD-112). ');
+$ax += cidrblock($address, '109.251.152.0/21', 'Freenet Ltd (IP4S-FREENETLTD-113). ');
+$ax += cidrblock($address, '109.251.160.0/23', 'Freenet Ltd (IP4S-FREENETLTD-114). ');
+$ax += cidrblock($address, '109.251.162.0/24', 'Freenet Ltd (IP4S-FREENETLTD-115). ');
+$ax += cidrblock($address, '109.251.164.0/23', 'Freenet Ltd (IP4S-FREENETLTD-116). ');
+$ax += cidrblock($address, '109.251.168.0/24', 'Freenet Ltd (IP4S-FREENETLTD-117). ');
+$ax += cidrblock($address, '109.251.170.0/24', 'Freenet Ltd (IP4S-FREENETLTD-118). ');
+$ax += cidrblock($address, '109.251.173.0/24', 'Freenet Ltd (IP4S-FREENETLTD-119). ');
+$ax += cidrblock($address, '109.251.174.0/23', 'Freenet Ltd (IP4S-FREENETLTD-120). ');
+$ax += cidrblock($address, '109.251.179.0/24', 'Freenet Ltd (IP4S-FREENETLTD-121). ');
+$ax += cidrblock($address, '109.251.180.0/22', 'Freenet Ltd (IP4S-FREENETLTD-122). ');
+$ax += cidrblock($address, '109.251.184.0/22', 'Freenet Ltd (IP4S-FREENETLTD-123). ');
+$ax += cidrblock($address, '109.251.188.0/24', 'Freenet Ltd (IP4S-FREENETLTD-124). ');
+$ax += cidrblock($address, '109.251.190.0/23', 'Freenet Ltd (IP4S-FREENETLTD-125). ');
+$ax += cidrblock($address, '109.251.192.0/20', 'Freenet Ltd (IP4S-FREENETLTD-126). ');
+$ax += cidrblock($address, '109.251.209.0/24', 'Freenet Ltd (IP4S-FREENETLTD-127). ');
+$ax += cidrblock($address, '109.251.210.0/23', 'Freenet Ltd (IP4S-FREENETLTD-128). ');
+$ax += cidrblock($address, '109.251.212.0/22', 'Freenet Ltd (IP4S-FREENETLTD-129). ');
+$ax += cidrblock($address, '109.251.216.0/21', 'Freenet Ltd (IP4S-FREENETLTD-130). ');
+$ax += cidrblock($address, '109.251.224.0/20', 'Freenet Ltd (IP4S-FREENETLTD-131). ');
+$ax += cidrblock($address, '109.251.240.0/21', 'Freenet Ltd (IP4S-FREENETLTD-132). ');
+$ax += cidrblock($address, '109.251.248.0/22', 'Freenet Ltd (IP4S-FREENETLTD-133). ');
+$ax += cidrblock($address, '109.251.252.0/23', 'Freenet Ltd (IP4S-FREENETLTD-134). ');
+$ax += cidrblock($address, '109.251.255.0/24', 'Freenet Ltd (IP4S-FREENETLTD-135). ');
+$ax += cidrblock($address, '185.124.168.0/22', 'Freenet Ltd (IP4S-FREENETLTD-136). ');
+$ax += cidrblock($address, '188.231.129.0/24', 'Freenet Ltd (IP4S-FREENETLTD-137). ');
+$ax += cidrblock($address, '188.231.130.0/24', 'Freenet Ltd (IP4S-FREENETLTD-138). ');
+$ax += cidrblock($address, '188.231.132.0/22', 'Freenet Ltd (IP4S-FREENETLTD-139). ');
+$ax += cidrblock($address, '188.231.136.0/24', 'Freenet Ltd (IP4S-FREENETLTD-140). ');
+$ax += cidrblock($address, '188.231.138.0/23', 'Freenet Ltd (IP4S-FREENETLTD-141). ');
+$ax += cidrblock($address, '188.231.140.0/22', 'Freenet Ltd (IP4S-FREENETLTD-142). ');
+$ax += cidrblock($address, '188.231.144.0/23', 'Freenet Ltd (IP4S-FREENETLTD-143). ');
+$ax += cidrblock($address, '188.231.147.0/24', 'Freenet Ltd (IP4S-FREENETLTD-144). ');
+$ax += cidrblock($address, '188.231.148.0/22', 'Freenet Ltd (IP4S-FREENETLTD-145). ');
+$ax += cidrblock($address, '188.231.152.0/22', 'Freenet Ltd (IP4S-FREENETLTD-146). ');
+$ax += cidrblock($address, '188.231.157.0/24', 'Freenet Ltd (IP4S-FREENETLTD-147). ');
+$ax += cidrblock($address, '188.231.158.0/23', 'Freenet Ltd (IP4S-FREENETLTD-148). ');
+$ax += cidrblock($address, '188.231.160.0/23', 'Freenet Ltd (IP4S-FREENETLTD-149). ');
+$ax += cidrblock($address, '188.231.162.0/24', 'Freenet Ltd (IP4S-FREENETLTD-150). ');
+$ax += cidrblock($address, '188.231.165.0/24', 'Freenet Ltd (IP4S-FREENETLTD-151). ');
+$ax += cidrblock($address, '188.231.166.0/23', 'Freenet Ltd (IP4S-FREENETLTD-152). ');
+$ax += cidrblock($address, '188.231.168.0/22', 'Freenet Ltd (IP4S-FREENETLTD-153). ');
+$ax += cidrblock($address, '188.231.173.0/24', 'Freenet Ltd (IP4S-FREENETLTD-154). ');
+$ax += cidrblock($address, '188.231.174.0/24', 'Freenet Ltd (IP4S-FREENETLTD-155). ');
+$ax += cidrblock($address, '188.231.177.0/24', 'Freenet Ltd (IP4S-FREENETLTD-156). ');
+$ax += cidrblock($address, '188.231.178.0/24', 'Freenet Ltd (IP4S-FREENETLTD-157). ');
+$ax += cidrblock($address, '188.231.180.0/23', 'Freenet Ltd (IP4S-FREENETLTD-158). ');
+$ax += cidrblock($address, '188.231.182.0/24', 'Freenet Ltd (IP4S-FREENETLTD-159). ');
+$ax += cidrblock($address, '188.231.184.0/23', 'Freenet Ltd (IP4S-FREENETLTD-160). ');
+$ax += cidrblock($address, '188.231.186.0/24', 'Freenet Ltd (IP4S-FREENETLTD-161). ');
+$ax += cidrblock($address, '188.231.188.0/22', 'Freenet Ltd (IP4S-FREENETLTD-162). ');
+$ax += cidrblock($address, '188.231.192.0/23', 'Freenet Ltd (IP4S-FREENETLTD-163). ');
+$ax += cidrblock($address, '188.231.204.0/23', 'Freenet Ltd (IP4S-FREENETLTD-164). ');
+$ax += cidrblock($address, '188.231.212.0/23', 'Freenet Ltd (IP4S-FREENETLTD-165). ');
+$ax += cidrblock($address, '188.231.214.0/24', 'Freenet Ltd (IP4S-FREENETLTD-166). ');
+$ax += cidrblock($address, '188.231.220.0/23', 'Freenet Ltd (IP4S-FREENETLTD-167). ');
+$ax += cidrblock($address, '188.231.223.0/24', 'Freenet Ltd (IP4S-FREENETLTD-168). ');
+$ax += cidrblock($address, '188.231.224.0/23', 'Freenet Ltd (IP4S-FREENETLTD-169). ');
+$ax += cidrblock($address, '188.231.226.0/24', 'Freenet Ltd (IP4S-FREENETLTD-170). ');
+$ax += cidrblock($address, '188.231.228.0/23', 'Freenet Ltd (IP4S-FREENETLTD-171). ');
+$ax += cidrblock($address, '188.231.232.0/21', 'Freenet Ltd (IP4S-FREENETLTD-172). ');
+$ax += cidrblock($address, '188.231.240.0/23', 'Freenet Ltd (IP4S-FREENETLTD-173). ');
+$ax += cidrblock($address, '188.231.244.0/22', 'Freenet Ltd (IP4S-FREENETLTD-174). ');
+$ax += cidrblock($address, '188.231.248.0/21', 'Freenet Ltd (IP4S-FREENETLTD-175). ');
+$ax += cidrblock($address, '193.24.25.0/24', 'Freenet Ltd (IP4S-FREENETLTD-176). ');
+$ax += cidrblock($address, '195.160.220.0/22', 'Freenet Ltd (IP4S-FREENETLTD-177). ');
+$ax += cidrblock($address, '195.245.200.0/24', 'Freenet Ltd (IP4S-FREENETLTD-178). ');
+$ax += cidrblock($address, '212.22.192.0/21', 'Freenet Ltd (IP4S-FREENETLTD-179). ');
+$ax += cidrblock($address, '212.22.201.0/24', 'Freenet Ltd (IP4S-FREENETLTD-180). ');
+$ax += cidrblock($address, '212.22.202.0/23', 'Freenet Ltd (IP4S-FREENETLTD-181). ');
+$ax += cidrblock($address, '212.22.204.0/22', 'Freenet Ltd (IP4S-FREENETLTD-182). ');
+$ax += cidrblock($address, '212.22.208.0/21', 'Freenet Ltd (IP4S-FREENETLTD-183). ');
+$ax += cidrblock($address, '212.22.218.0/23', 'Freenet Ltd (IP4S-FREENETLTD-184). ');
+$ax += cidrblock($address, '212.22.221.0/24', 'Freenet Ltd (IP4S-FREENETLTD-185). ');
+$ax += cidrblock($address, '212.22.222.0/23', 'Freenet Ltd (IP4S-FREENETLTD-186). ');
 
 
 // ASN 9009 ("M247 Ltd").
@@ -8814,15 +8827,13 @@ $ax += cidrblock($address, '145.249.109.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-130)
 
 
 // ASN 36351 ("SoftLayer Technologies").
-// Ranges change frequently / Should update often.
-// Careful when updating; Signatures reflect varying block reasons, separated by different tags in different files.
-// Section is split across multiple files.
+// Careful when updating; Signatures reflect varying block reasons, split across multiple files.
 
 // SoftLayer questionable multi-play networks, spammy ISPs, etc.
 // Includes: Anything citing "Starry".
 // ^(.*(Starry).*)$
 // Excludes: Everything else.
-// Updated: 2018.06.24 / Checked: 2019.05.20
+// Updated: 2018.06.24 / Checked: 2019.08.13
 
 $ax += cidrblock($address, '103.56.216.0/24', 'SoftLayer Spam ISPs (IP4S-SOFTLAYERSPAMISPS-0). ');
 $ax += cidrblock($address, '103.56.218.0/23', 'SoftLayer Spam ISPs (IP4S-SOFTLAYERSPAMISPS-1). ');
@@ -8886,7 +8897,7 @@ $ax += cidrblock($address, '202.129.184.0/21', 'Misc. Spam (IP4S-MISCSPAM-4). ')
 // - "corporate internet gate".
 // ^.*(residential|trade center|campus connectivity|bank campus|corporate internet gate).*$
 // Everything else in the cloud services signature files.
-// Updated: 2019.03.27
+// Updated: 2019.03.27 / Checked: 2019.08.03
 
 $ax += cidrblock($address, '188.225.8.0/21', 'OOO TimeWeb (IP4S-OOOTIMEWEB-0). ');
 $ax += cidrblock($address, '188.225.40.0/21', 'OOO TimeWeb (IP4S-OOOTIMEWEB-1). ');
@@ -9081,10 +9092,9 @@ $ax += cidrblock($address, '188.130.132.0/22', 'Business Consulting LLC (IP4S-BU
 
 // ASN 137432 ("BKB Network").
 // Caught using automated hacktools to try hacking into honeypots.
-// Updated: 2019.04.03
+// Updated: 2019.08.05
 
-$ax += cidrblock($address, '103.108.88.0/24', 'BKB Network (IP4S-BKBNETWORK-0). ');
-$ax += cidrblock($address, '103.108.90.0/23', 'BKB Network (IP4S-BKBNETWORK-1). ');
+$ax += cidrblock($address, '103.108.88.0/22', 'BKB Network (IP4S-BKBNETWORK-0). ');
 
 
 // ASN 16010 ("Magticom Ltd").
