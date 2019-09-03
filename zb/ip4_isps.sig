@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.08.13
+ * This file last updated: 2019.09.03
  */
-$zbbversion .= ' / IP4S-96';
+$zbbversion .= ' / IP4S-96a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -100,7 +100,7 @@ $ax += cidrblock($address, '185.184.220.0/23', 'Sun Network HK (IP4S-SUNNETWORKH
 
 
 // ASN 26658 ("HT").
-// Updated: 2018.08.22 / Checked: 2019.02.08
+// Updated: 2018.08.22 / Checked: 2019.08.21
 
 $ax += cidrblock($address, '14.192.20.0/22', 'HT (IP4S-HT-00). ');
 $ax += cidrblock($address, '27.0.156.0/22', 'HT (IP4S-HT-01). ');
@@ -239,22 +239,23 @@ $ax += cidrblock($address, '213.159.208.0/21', 'ISPsystem (IP4S-ISPSYSTEM-32). '
 
 
 // ASN 34619 ("Çizgi Telekomünikasyon").
-// Updated: 2018.03.21 / Checked: 2019.02.18
+// Updated: 2019.08.21
 
 $ax += cidrblock($address, '37.148.208.0/21', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-00). ');
-$ax += cidrblock($address, '85.159.64.0/21', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-01). ');
-$ax += cidrblock($address, '89.19.0.0/19', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-02). ');
-$ax += cidrblock($address, '94.73.128.0/20', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-03). ');
-$ax += cidrblock($address, '94.73.144.0/21', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-04). ');
-$ax += cidrblock($address, '94.73.153.0/24', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-05). ');
-$ax += cidrblock($address, '94.73.154.0/23', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-06). ');
-$ax += cidrblock($address, '94.73.156.0/22', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-07). ');
-$ax += cidrblock($address, '94.73.160.0/19', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-08). ');
-$ax += cidrblock($address, '185.22.184.0/22', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-09). ');
+$ax += cidrblock($address, '80.253.240.0/22', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-01). ');
+$ax += cidrblock($address, '85.159.64.0/21', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-02). ');
+$ax += cidrblock($address, '89.19.0.0/19', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-03). ');
+$ax += cidrblock($address, '94.73.128.0/20', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-04). ');
+$ax += cidrblock($address, '94.73.144.0/21', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-05). ');
+$ax += cidrblock($address, '94.73.153.0/24', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-06). ');
+$ax += cidrblock($address, '94.73.154.0/23', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-07). ');
+$ax += cidrblock($address, '94.73.156.0/22', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-08). ');
+$ax += cidrblock($address, '94.73.160.0/19', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-09). ');
+$ax += cidrblock($address, '185.22.184.0/22', 'CIZGI TELEKOM (IP4S-CIZGITELEKOM-10). ');
 
 
 // ASN 25504 ("Vautron Rechenzentrum AG").
-// Updated: 2017.05.21 / Checked: 2019.02.28
+// Updated: 2017.05.21 / Checked: 2019.08.29
 
 $ax += cidrblock($address, '46.175.56.0/21', 'Vautron Rech. AG (IP4S-VAUTRONRECHAG-00). ');
 $ax += cidrblock($address, '83.243.56.0/21', 'Vautron Rech. AG (IP4S-VAUTRONRECHAG-01). ');
@@ -576,7 +577,7 @@ $ax += cidrblock($address, '188.213.192.0/21', 'Mobin Net (IP4S-MOBINNET-29). ')
 
 
 // ASN 45727 ("Hutchison CP Telecommunications, PT").
-// Updated: 2019.04.23
+// Updated: 2019.09.03
 
 $ax += cidrblock($address, '103.10.64.0/22', 'PT Hutchison (IP4S-PTHUTCHISON-00). ');
 $ax += cidrblock($address, '103.105.24.0/21', 'PT Hutchison (IP4S-PTHUTCHISON-01). ');
@@ -604,6 +605,7 @@ $ax += cidrblock($address, '23.0.166.0/23', 'PT Hutchison (IP4S-PTHUTCHISON-22).
 $ax += cidrblock($address, '23.3.76.0/22', 'PT Hutchison (IP4S-PTHUTCHISON-23). ');
 $ax += cidrblock($address, '23.5.192.0/20', 'PT Hutchison (IP4S-PTHUTCHISON-24). ');
 $ax += cidrblock($address, '23.13.0.0/20', 'PT Hutchison (IP4S-PTHUTCHISON-25). ');
+$ax += cidrblock($address, '104.81.252.0/22', 'PT Hutchison (IP4S-PTHUTCHISON-26). ');
 
 
 // ASN 24203 ("PT Excelcomindo Pratama").
@@ -1004,31 +1006,33 @@ $ax += cidrblock($address, '109.120.128.0/18', 'INFOBOX (IP4S-INFOBOX-2). ');
 
 
 // ASN 49335 ("Mir Telematiki Ltd").
-// Updated: 2019.04.14
+// Updated: 2019.08.25
 
 $ax += cidrblock($address, '86.105.227.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-00). ');
 $ax += cidrblock($address, '86.106.102.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-01). ');
 $ax += cidrblock($address, '46.243.220.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-02). ');
 $ax += cidrblock($address, '94.177.123.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-03). ');
-$ax += cidrblock($address, '2.56.228.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-04). ');
-$ax += cidrblock($address, '31.192.104.0/21', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-05). ');
-$ax += cidrblock($address, '62.76.255.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-06). ');
-$ax += cidrblock($address, '80.85.155.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-07). ');
-$ax += cidrblock($address, '91.210.104.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-08). ');
-$ax += cidrblock($address, '91.218.112.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-09). ');
-$ax += cidrblock($address, '91.218.244.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-10). ');
-$ax += cidrblock($address, '91.237.249.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-11). ');
-$ax += cidrblock($address, '141.105.64.0/21', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-12). ');
-$ax += cidrblock($address, '158.255.0.0/21', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-13). ');
-$ax += cidrblock($address, '185.70.104.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-14). ');
-$ax += cidrblock($address, '185.130.212.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-15). ');
-$ax += cidrblock($address, '194.34.236.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-16). ');
-$ax += cidrblock($address, '168.80.1.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-17). ');
-$ax += cidrblock($address, '168.81.57.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-18). ');
-$ax += cidrblock($address, '168.81.59.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-19). ');
-$ax += cidrblock($address, '196.16.122.0/23', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-20). ');
-$ax += cidrblock($address, '196.16.229.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-21). ');
-$ax += cidrblock($address, '196.16.231.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-22). ');
+$ax += cidrblock($address, '45.83.224.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-04). ');
+$ax += cidrblock($address, '2.56.228.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-05). ');
+$ax += cidrblock($address, '5.180.172.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-06). ');
+$ax += cidrblock($address, '31.192.104.0/21', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-07). ');
+$ax += cidrblock($address, '62.76.255.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-08). ');
+$ax += cidrblock($address, '80.85.155.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-09). ');
+$ax += cidrblock($address, '91.210.104.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-10). ');
+$ax += cidrblock($address, '91.218.112.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-11). ');
+$ax += cidrblock($address, '91.218.244.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-12). ');
+$ax += cidrblock($address, '91.237.249.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-13). ');
+$ax += cidrblock($address, '141.105.64.0/21', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-14). ');
+$ax += cidrblock($address, '158.255.0.0/21', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-15). ');
+$ax += cidrblock($address, '185.70.104.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-16). ');
+$ax += cidrblock($address, '185.130.212.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-17). ');
+$ax += cidrblock($address, '194.34.236.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-18). ');
+$ax += cidrblock($address, '168.80.1.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-19). ');
+$ax += cidrblock($address, '168.81.57.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-20). ');
+$ax += cidrblock($address, '168.81.59.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-21). ');
+$ax += cidrblock($address, '196.16.122.0/23', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-22). ');
+$ax += cidrblock($address, '196.16.229.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-23). ');
+$ax += cidrblock($address, '196.16.231.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-24). ');
 
 
 // ASN 45595 ("Pakistan Telecom").
@@ -1338,7 +1342,7 @@ $ax += cidrblock($address, '193.105.135.0/24', 'PIN-AS (IP4S-PINAS-189). ');
 
 // ASNs 16880, 36421 ("Trend Micro Incorporated").
 // Follows their users around and attempts to get into restricted/private parts of websites.
-// Updated: 2018.03.31 / Checked: 2019.02.27
+// Updated: 2018.03.31 / Checked: 2019.08.29
 
 $ax += cidrblock($address, '150.70.0.0/20', 'Trend Micro (IP4S-TRENDMICRO-00). ');
 $ax += cidrblock($address, '150.70.31.0/24', 'Trend Micro (IP4S-TRENDMICRO-01). ');
@@ -1471,7 +1475,7 @@ $ax += cidrblock($address, '195.210.28.0/23', 'Websupport s.r.o (IP4S-WEBSUPPORT
 
 
 // ASN 51191 ("Xirra GmbH").
-// Updated: 2016.01.21 / Checked: 2019.01.27
+// Updated: 2016.01.21 / Checked: 2019.08.18
 
 $ax += cidrblock($address, '91.232.96.0/23', 'Xirra GmbH (IP4S-XIRRAGMBH-0). ');
 $ax += cidrblock($address, '130.185.104.0/21', 'Xirra GmbH (IP4S-XIRRAGMBH-1). ');
@@ -1481,7 +1485,7 @@ $ax += cidrblock($address, '195.138.240.0/21', 'Xirra GmbH (IP4S-XIRRAGMBH-4). '
 
 
 // ASN 35804 ("PP SKS-LUGAN").
-// Updated: 2018.08.05 / Checked: 2019.01.27
+// Updated: 2018.08.05 / Checked: 2019.08.18
 
 $ax += cidrblock($address, '91.202.212.0/22', 'PP SKS-LUGAN (IP4S-PPSKSLUGAN-0). ');
 $ax += cidrblock($address, '194.79.60.0/22', 'PP SKS-LUGAN (IP4S-PPSKSLUGAN-1). ');
@@ -1684,7 +1688,7 @@ $ax += cidrblock($address, '41.221.208.0/20', 'PCCW Global (IP4S-PCCWGLOBAL-126)
 
 // ASN 47155 ("ViaEuropa i Lund AB").
 // Refer stopforumspam.com/forum/viewtopic.php?id=4676
-// Updated: 2016.04.17 / Checked: 2019.03.09
+// Updated: 2016.04.17 / Checked: 2019.09.01
 
 $ax += cidrblock($address, '93.182.128.0/18', 'ViaEuropa (IP4S-VIAEUROPA-0). ');
 $ax += cidrblock($address, '185.123.228.0/22', 'ViaEuropa (IP4S-VIAEUROPA-1). ');
@@ -1720,7 +1724,7 @@ $ax += cidrblock($address, '185.35.136.0/22', 'Zyztm (IP4S-ZYZTM-0). ');
 
 
 // ASN 197712 ("10dencehispahard, S.L").
-// Updated: 2018.08.25 / Checked: 2019.02.08
+// Updated: 2018.08.25 / Checked: 2019.08.21
 
 $ax += cidrblock($address, '46.16.56.0/21', '10dencehispahard (IP4S-10DENCEHISPAHARD-0). ');
 $ax += cidrblock($address, '134.0.8.0/21', '10dencehispahard (IP4S-10DENCEHISPAHARD-1). ');
@@ -1735,51 +1739,46 @@ $ax += cidrblock($address, '185.66.40.0/22', '10dencehispahard (IP4S-10DENCEHISP
 // ^.*(Simcentric|DATAPLUGS\.COM|Ethr\.Net|CLOUD LIMITED|NETSEC|Hosting).*$\n
 // Confirmed data hosters split to the cloud services signature files.
 // Everything else remains in the ISPs signature files.
-// Updated: 2019.04.21
+// Updated: 2019.09.03
 
 $ax += cidrblock($address, '103.42.104.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-00). ');
 $ax += cidrblock($address, '103.71.144.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-01). ');
 $ax += cidrblock($address, '103.100.140.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-02). ');
-$ax += cidrblock($address, '103.106.246.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-03). ');
-$ax += cidrblock($address, '106.3.86.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-04). ');
-$ax += cidrblock($address, '118.91.240.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-05). ');
+$ax += cidrblock($address, '106.3.86.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-03). ');
+$ax += cidrblock($address, '118.91.240.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-04). ');
+$ax += cidrblock($address, '118.193.78.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-05). ');
 $ax += cidrblock($address, '183.182.12.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-06). ');
 $ax += cidrblock($address, '52.128.255.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-07). ');
-$ax += cidrblock($address, '69.72.81.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-08). ');
-$ax += cidrblock($address, '69.72.82.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-09). ');
-$ax += cidrblock($address, '69.72.84.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-10). ');
-$ax += cidrblock($address, '103.30.24.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-11). ');
-$ax += cidrblock($address, '103.70.76.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-12). ');
-$ax += cidrblock($address, '103.84.84.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-13). ');
-$ax += cidrblock($address, '103.89.72.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-14). ');
-$ax += cidrblock($address, '103.91.8.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-15). ');
-$ax += cidrblock($address, '103.133.72.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-16). ');
-$ax += cidrblock($address, '103.133.74.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-17). ');
-$ax += cidrblock($address, '103.199.104.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-18). ');
-$ax += cidrblock($address, '103.203.48.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-19). ');
-$ax += cidrblock($address, '103.212.96.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-20). ');
-$ax += cidrblock($address, '110.173.48.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-21). ');
-$ax += cidrblock($address, '111.68.0.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-22). ');
-$ax += cidrblock($address, '116.213.36.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-23). ');
-$ax += cidrblock($address, '119.42.144.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-24). ');
-$ax += cidrblock($address, '137.59.20.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-25). ');
-$ax += cidrblock($address, '139.5.200.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-26). ');
-$ax += cidrblock($address, '141.193.152.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-27). ');
-$ax += cidrblock($address, '148.66.0.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-28). ');
-$ax += cidrblock($address, '175.41.16.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-29). ');
-$ax += cidrblock($address, '180.178.32.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-30). ');
-$ax += cidrblock($address, '182.16.126.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-31). ');
-$ax += cidrblock($address, '202.59.249.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-32). ');
-$ax += cidrblock($address, '202.61.97.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-33). ');
-$ax += cidrblock($address, '202.61.111.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-34). ');
-$ax += cidrblock($address, '63.216.57.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-35). ');
-$ax += cidrblock($address, '63.220.4.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-36). ');
-$ax += cidrblock($address, '63.220.7.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-37). ');
-$ax += cidrblock($address, '63.221.138.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-38). ');
-$ax += cidrblock($address, '69.176.88.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-39). ');
-$ax += cidrblock($address, '103.72.82.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-40). ');
-$ax += cidrblock($address, '192.253.236.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-41). ');
-$ax += cidrblock($address, '216.83.58.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-42). ');
+$ax += cidrblock($address, '69.72.87.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-08). ');
+$ax += cidrblock($address, '103.30.24.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-09). ');
+$ax += cidrblock($address, '103.70.76.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-10). ');
+$ax += cidrblock($address, '103.84.84.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-11). ');
+$ax += cidrblock($address, '103.89.72.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-12). ');
+$ax += cidrblock($address, '103.91.8.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-13). ');
+$ax += cidrblock($address, '103.133.72.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-14). ');
+$ax += cidrblock($address, '103.133.74.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-15). ');
+$ax += cidrblock($address, '103.199.104.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-16). ');
+$ax += cidrblock($address, '103.203.48.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-17). ');
+$ax += cidrblock($address, '103.212.96.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-18). ');
+$ax += cidrblock($address, '110.173.48.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-19). ');
+$ax += cidrblock($address, '111.68.0.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-20). ');
+$ax += cidrblock($address, '116.213.36.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-21). ');
+$ax += cidrblock($address, '119.42.144.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-22). ');
+$ax += cidrblock($address, '123.253.24.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-23). ');
+$ax += cidrblock($address, '137.59.20.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-24). ');
+$ax += cidrblock($address, '139.5.200.0/22', 'Unit 1205-1207 (IP4S-UNIT12051207-25). ');
+$ax += cidrblock($address, '141.193.152.0/21', 'Unit 1205-1207 (IP4S-UNIT12051207-26). ');
+$ax += cidrblock($address, '148.66.0.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-27). ');
+$ax += cidrblock($address, '175.41.16.0/20', 'Unit 1205-1207 (IP4S-UNIT12051207-28). ');
+$ax += cidrblock($address, '182.16.126.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-29). ');
+$ax += cidrblock($address, '202.59.249.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-30). ');
+$ax += cidrblock($address, '202.61.97.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-31). ');
+$ax += cidrblock($address, '202.61.111.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-32). ');
+$ax += cidrblock($address, '63.216.57.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-33). ');
+$ax += cidrblock($address, '63.220.4.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-34). ');
+$ax += cidrblock($address, '63.220.7.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-35). ');
+$ax += cidrblock($address, '63.221.138.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-36). ');
+$ax += cidrblock($address, '103.72.82.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-37). ');
 
 
 // ASN 43260 ("DGN TEKNOLOJI BILISIM YAYINCILIK SANAYI VE LIMITED SIRKETI").
@@ -1885,7 +1884,7 @@ $ax += cidrblock($address, '76.74.61.0/24', 'DGN TEKNOLOJI (IP4S-DGNTEKNOLOJI-95
 
 
 // ASN 38731 ("Vietel - CHT Compamy Ltd").
-// Updated: 2019.04.29
+// Updated: 2019.04.29 / Checked: 2019.09.03
 
 $ax += cidrblock($address, '27.71.224.0/21', 'Vietel (IP4S-VIETEL-00). ');
 $ax += cidrblock($address, '45.117.160.0/22', 'Vietel (IP4S-VIETEL-01). ');
@@ -1901,7 +1900,7 @@ $ax += cidrblock($address, '210.211.96.0/19', 'Vietel (IP4S-VIETEL-09). ');
 
 // ASN 203912 ("Sicres SRL").
 // Caught distributing ransomware (188.0.236.7:443).
-// Updated: 2019.04.18
+// Updated: 2019.04.18 / Checked: 2019.08.27
 
 $ax += cidrblock($address, '178.175.244.0/24', 'SICRES SRL (IP4S-SICRESSRL-0). ');
 $ax += cidrblock($address, '185.172.28.0/22', 'SICRES SRL (IP4S-SICRESSRL-1). ');
@@ -2322,7 +2321,7 @@ $ax += cidrblock($address, '197.255.160.0/20', 'SPECTRANET LIMITED (IP4S-SPECTRA
 
 
 // ASN 23860 ("Alliance Broadband Services Pvt. Ltd").
-// Updated: 2019.04.09
+// Updated: 2019.08.21
 
 $ax += cidrblock($address, '43.252.248.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-00). ');
 $ax += cidrblock($address, '45.64.220.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-01). ');
@@ -2336,55 +2335,53 @@ $ax += cidrblock($address, '45.249.164.0/22', 'Alliance Broadband (IP4S-ALLIANCE
 $ax += cidrblock($address, '45.249.169.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-09). ');
 $ax += cidrblock($address, '45.250.64.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-10). ');
 $ax += cidrblock($address, '45.250.244.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-11). ');
-$ax += cidrblock($address, '45.251.232.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-12). ');
-$ax += cidrblock($address, '103.2.132.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-13). ');
-$ax += cidrblock($address, '103.18.168.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-14). ');
-$ax += cidrblock($address, '103.24.84.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-15). ');
-$ax += cidrblock($address, '103.50.80.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-16). ');
-$ax += cidrblock($address, '103.51.148.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-17). ');
-$ax += cidrblock($address, '103.55.96.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-18). ');
-$ax += cidrblock($address, '103.66.8.0/23', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-19). ');
-$ax += cidrblock($address, '103.66.11.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-20). ');
-$ax += cidrblock($address, '103.70.46.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-21). ');
-$ax += cidrblock($address, '103.75.42.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-22). ');
-$ax += cidrblock($address, '103.77.44.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-23). ');
-$ax += cidrblock($address, '103.77.136.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-24). ');
-$ax += cidrblock($address, '103.78.16.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-25). ');
-$ax += cidrblock($address, '103.87.140.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-26). ');
-$ax += cidrblock($address, '103.87.142.0/23', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-27). ');
-$ax += cidrblock($address, '103.88.216.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-28). ');
-$ax += cidrblock($address, '103.94.136.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-29). ');
-$ax += cidrblock($address, '103.101.212.0/23', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-30). ');
-$ax += cidrblock($address, '103.102.116.0/23', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-31). ');
-$ax += cidrblock($address, '103.119.56.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-32). ');
-$ax += cidrblock($address, '103.129.2.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-33). ');
-$ax += cidrblock($address, '103.215.52.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-34). ');
-$ax += cidrblock($address, '103.215.224.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-35). ');
-$ax += cidrblock($address, '103.217.228.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-36). ');
-$ax += cidrblock($address, '103.217.232.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-37). ');
-$ax += cidrblock($address, '103.217.240.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-38). ');
-$ax += cidrblock($address, '103.218.168.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-39). ');
-$ax += cidrblock($address, '103.218.236.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-40). ');
-$ax += cidrblock($address, '103.220.208.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-41). ');
-$ax += cidrblock($address, '103.240.96.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-42). ');
-$ax += cidrblock($address, '103.242.188.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-43). ');
-$ax += cidrblock($address, '103.242.196.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-44). ');
-$ax += cidrblock($address, '103.249.4.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-45). ');
-$ax += cidrblock($address, '103.249.36.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-46). ');
-$ax += cidrblock($address, '103.252.164.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-47). ');
-$ax += cidrblock($address, '115.187.32.0/19', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-48). ');
-$ax += cidrblock($address, '116.193.128.0/20', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-49). ');
-$ax += cidrblock($address, '116.206.200.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-50). ');
-$ax += cidrblock($address, '116.206.220.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-51). ');
-$ax += cidrblock($address, '144.48.224.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-52). ');
-$ax += cidrblock($address, '150.107.176.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-53). ');
-$ax += cidrblock($address, '150.107.212.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-54). ');
-$ax += cidrblock($address, '150.129.64.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-55). ');
-$ax += cidrblock($address, '150.129.100.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-56). ');
-$ax += cidrblock($address, '150.242.148.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-57). ');
-$ax += cidrblock($address, '157.119.104.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-58). ');
-$ax += cidrblock($address, '202.78.232.0/21', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-59). ');
-$ax += cidrblock($address, '203.171.240.0/21', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-60). ');
+$ax += cidrblock($address, '103.2.132.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-12). ');
+$ax += cidrblock($address, '103.18.168.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-13). ');
+$ax += cidrblock($address, '103.24.84.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-14). ');
+$ax += cidrblock($address, '103.50.80.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-15). ');
+$ax += cidrblock($address, '103.51.148.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-16). ');
+$ax += cidrblock($address, '103.55.96.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-17). ');
+$ax += cidrblock($address, '103.66.8.0/23', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-18). ');
+$ax += cidrblock($address, '103.66.11.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-19). ');
+$ax += cidrblock($address, '103.70.46.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-20). ');
+$ax += cidrblock($address, '103.75.42.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-21). ');
+$ax += cidrblock($address, '103.77.44.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-22). ');
+$ax += cidrblock($address, '103.77.136.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-23). ');
+$ax += cidrblock($address, '103.78.16.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-24). ');
+$ax += cidrblock($address, '103.87.140.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-25). ');
+$ax += cidrblock($address, '103.88.216.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-26). ');
+$ax += cidrblock($address, '103.94.136.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-27). ');
+$ax += cidrblock($address, '103.101.212.0/23', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-28). ');
+$ax += cidrblock($address, '103.102.116.0/23', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-29). ');
+$ax += cidrblock($address, '103.119.56.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-30). ');
+$ax += cidrblock($address, '103.129.2.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-31). ');
+$ax += cidrblock($address, '103.215.52.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-32). ');
+$ax += cidrblock($address, '103.215.224.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-33). ');
+$ax += cidrblock($address, '103.217.228.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-34). ');
+$ax += cidrblock($address, '103.217.232.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-35). ');
+$ax += cidrblock($address, '103.217.240.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-36). ');
+$ax += cidrblock($address, '103.218.168.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-37). ');
+$ax += cidrblock($address, '103.218.236.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-38). ');
+$ax += cidrblock($address, '103.240.96.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-39). ');
+$ax += cidrblock($address, '103.242.188.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-40). ');
+$ax += cidrblock($address, '103.242.196.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-41). ');
+$ax += cidrblock($address, '103.249.4.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-42). ');
+$ax += cidrblock($address, '103.249.36.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-43). ');
+$ax += cidrblock($address, '103.252.164.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-44). ');
+$ax += cidrblock($address, '115.187.32.0/19', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-45). ');
+$ax += cidrblock($address, '116.193.128.0/20', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-46). ');
+$ax += cidrblock($address, '116.206.200.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-47). ');
+$ax += cidrblock($address, '116.206.220.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-48). ');
+$ax += cidrblock($address, '144.48.224.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-49). ');
+$ax += cidrblock($address, '150.107.176.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-50). ');
+$ax += cidrblock($address, '150.107.212.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-51). ');
+$ax += cidrblock($address, '150.129.64.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-52). ');
+$ax += cidrblock($address, '150.129.100.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-53). ');
+$ax += cidrblock($address, '150.242.148.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-54). ');
+$ax += cidrblock($address, '157.119.104.0/22', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-55). ');
+$ax += cidrblock($address, '202.8.112.0/21', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-56). ');
+$ax += cidrblock($address, '202.78.232.0/21', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-57). ');
+$ax += cidrblock($address, '203.171.240.0/21', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-58). ');
 
 
 // ASN 17747 ("SITI NETWORKS LIMITED").
@@ -2631,7 +2628,9 @@ $ax += cidrblock($address, '115.69.158.0/23', 'Idea Cellular Ltd (IP4S-IDEACELLU
 
 
 // ASNs 12530, 15895, 35081 ('"Kyivstar" PJSC').
-// Updated: 2016.09.06 / Checked: 2019.01.27
+// Absolutely **INSANE** levels of spam coming from this network!! Shouldn't
+// ever, ever let them through, if at all possible.
+// Updated: 2016.09.06 / Checked: 2019.08.18
 
 $ax += cidrblock($address, '5.248.0.0/16', 'Kyivstar (IP4S-KYIVSTAR-00). ');
 $ax += cidrblock($address, '37.115.0.0/16', 'Kyivstar (IP4S-KYIVSTAR-01). ');
@@ -2711,15 +2710,17 @@ $ax += cidrblock($address, '193.138.144.0/22', 'AS13188-CDN-LTD (IP4S-AS13188CDN
 
 
 // ASN 15377 ('ISP "Fregat" Ltd.').
-// Updated: 2016.09.06 / Checked: 2019.02.14
+// Updated: 2019.08.29
 
-$ax += cidrblock($address, '46.98.0.0/16', 'Fregat (IP4S-FREGAT-0). ');
-$ax += cidrblock($address, '185.23.164.0/22', 'Fregat (IP4S-FREGAT-1). ');
-$ax += cidrblock($address, '212.115.224.0/19', 'Fregat (IP4S-FREGAT-2). ');
+$ax += cidrblock($address, '5.252.180.0/22', 'Fregat (IP4S-FREGAT-0). ');
+$ax += cidrblock($address, '46.98.0.0/16', 'Fregat (IP4S-FREGAT-1). ');
+$ax += cidrblock($address, '94.240.160.0/19', 'Fregat (IP4S-FREGAT-2). ');
+$ax += cidrblock($address, '185.205.144.0/22', 'Fregat (IP4S-FREGAT-3). ');
+$ax += cidrblock($address, '212.115.224.0/19', 'Fregat (IP4S-FREGAT-4). ');
 
 
 // ASN 49204 ('TOV "ITT"').
-// Updated: 2016.09.06 / Checked: 2019.02.14
+// Updated: 2016.09.06 / Checked: 2019.08.29
 
 $ax += cidrblock($address, '195.238.108.0/22', 'AS49204-TOV-ITT (IP4S-AS49204TOVITT-0). ');
 
@@ -2779,90 +2780,71 @@ $ax += cidrblock($address, '213.232.116.0/22', 'MAROSNET (IP4S-MAROSNET-46). ');
 // ASNs 7552, 24086, 37620, 133606, 262210, 327799, 327885 ("Viettel Corporation").
 // Legit/real human endpoint ISP with high levels of spam/abuse reports listed at various DBs. List in the "ignore.dat"
 // file if the signature section causes any problems.
-// Updated: 2019.04.09
+// Updated: 2019.08.21
 
 $ax += cidrblock($address, '154.73.104.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-00). ');
 $ax += cidrblock($address, '154.117.192.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-01). ');
 $ax += cidrblock($address, '41.244.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-02). ');
-$ax += cidrblock($address, '131.255.136.0/23', 'Viettel Corporation (IP4S-VIETTELCORPORATION-03). ');
-$ax += cidrblock($address, '131.255.192.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-04). ');
-$ax += cidrblock($address, '179.60.204.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-05). ');
-$ax += cidrblock($address, '181.176.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-06). ');
-$ax += cidrblock($address, '181.224.202.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-07). ');
-$ax += cidrblock($address, '43.254.56.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-08). ');
-$ax += cidrblock($address, '103.238.116.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-09). ');
-$ax += cidrblock($address, '169.255.184.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-10). ');
-$ax += cidrblock($address, '196.249.64.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-11). ');
-$ax += cidrblock($address, '100.140.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-12). ');
-$ax += cidrblock($address, '100.145.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-13). ');
-$ax += cidrblock($address, '100.146.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-14). ');
-$ax += cidrblock($address, '100.148.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-15). ');
-$ax += cidrblock($address, '100.149.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-16). ');
-$ax += cidrblock($address, '100.153.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-17). ');
-$ax += cidrblock($address, '100.154.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-18). ');
-$ax += cidrblock($address, '27.64.0.0/12', 'Viettel Corporation (IP4S-VIETTELCORPORATION-19). ');
-$ax += cidrblock($address, '103.10.212.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-20). ');
-$ax += cidrblock($address, '103.84.76.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-21). ');
-$ax += cidrblock($address, '103.241.248.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-22). ');
-$ax += cidrblock($address, '113.61.109.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-23). ');
-$ax += cidrblock($address, '115.72.0.0/13', 'Viettel Corporation (IP4S-VIETTELCORPORATION-24). ');
-$ax += cidrblock($address, '116.96.0.0/14', 'Viettel Corporation (IP4S-VIETTELCORPORATION-25). ');
-$ax += cidrblock($address, '116.100.0.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-26). ');
-$ax += cidrblock($address, '116.100.72.0/21', 'Viettel Corporation (IP4S-VIETTELCORPORATION-27). ');
-$ax += cidrblock($address, '116.100.80.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-28). ');
-$ax += cidrblock($address, '116.100.96.0/19', 'Viettel Corporation (IP4S-VIETTELCORPORATION-29). ');
-$ax += cidrblock($address, '116.100.128.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-30). ');
-$ax += cidrblock($address, '116.101.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-31). ');
-$ax += cidrblock($address, '116.102.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-32). ');
-$ax += cidrblock($address, '116.104.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-33). ');
-$ax += cidrblock($address, '116.104.128.0/19', 'Viettel Corporation (IP4S-VIETTELCORPORATION-34). ');
-$ax += cidrblock($address, '116.104.160.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-35). ');
-$ax += cidrblock($address, '116.104.168.0/21', 'Viettel Corporation (IP4S-VIETTELCORPORATION-36). ');
-$ax += cidrblock($address, '116.104.176.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-37). ');
-$ax += cidrblock($address, '116.104.192.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-38). ');
-$ax += cidrblock($address, '116.105.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-39). ');
-$ax += cidrblock($address, '116.106.0.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-40). ');
-$ax += cidrblock($address, '116.106.20.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-41). ');
-$ax += cidrblock($address, '116.106.24.0/21', 'Viettel Corporation (IP4S-VIETTELCORPORATION-42). ');
-$ax += cidrblock($address, '116.106.32.0/19', 'Viettel Corporation (IP4S-VIETTELCORPORATION-43). ');
-$ax += cidrblock($address, '116.106.64.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-44). ');
-$ax += cidrblock($address, '116.106.128.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-45). ');
-$ax += cidrblock($address, '116.107.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-46). ');
-$ax += cidrblock($address, '116.108.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-47). ');
-$ax += cidrblock($address, '116.110.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-48). ');
-$ax += cidrblock($address, '116.110.128.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-49). ');
-$ax += cidrblock($address, '116.110.192.0/19', 'Viettel Corporation (IP4S-VIETTELCORPORATION-50). ');
-$ax += cidrblock($address, '116.110.232.0/21', 'Viettel Corporation (IP4S-VIETTELCORPORATION-51). ');
-$ax += cidrblock($address, '116.110.240.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-52). ');
-$ax += cidrblock($address, '116.111.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-53). ');
-$ax += cidrblock($address, '116.111.128.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-54). ');
-$ax += cidrblock($address, '116.111.192.0/19', 'Viettel Corporation (IP4S-VIETTELCORPORATION-55). ');
-$ax += cidrblock($address, '116.111.224.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-56). ');
-$ax += cidrblock($address, '116.111.240.0/23', 'Viettel Corporation (IP4S-VIETTELCORPORATION-57). ');
-$ax += cidrblock($address, '116.111.244.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-58). ');
-$ax += cidrblock($address, '116.111.248.0/21', 'Viettel Corporation (IP4S-VIETTELCORPORATION-59). ');
-$ax += cidrblock($address, '117.0.0.0/13', 'Viettel Corporation (IP4S-VIETTELCORPORATION-60). ');
-$ax += cidrblock($address, '125.212.128.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-61). ');
-$ax += cidrblock($address, '125.214.0.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-62). ');
-$ax += cidrblock($address, '125.234.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-63). ');
-$ax += cidrblock($address, '125.235.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-64). ');
-$ax += cidrblock($address, '125.235.128.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-65). ');
-$ax += cidrblock($address, '125.235.176.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-66). ');
-$ax += cidrblock($address, '125.235.192.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-67). ');
-$ax += cidrblock($address, '171.224.0.0/11', 'Viettel Corporation (IP4S-VIETTELCORPORATION-68). ');
-$ax += cidrblock($address, '202.4.168.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-69). ');
-$ax += cidrblock($address, '202.6.96.0/23', 'Viettel Corporation (IP4S-VIETTELCORPORATION-70). ');
-$ax += cidrblock($address, '203.113.128.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-71). ');
-$ax += cidrblock($address, '203.190.160.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-72). ');
-$ax += cidrblock($address, '220.231.64.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-73). ');
+$ax += cidrblock($address, '25.212.128.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-03). ');
+$ax += cidrblock($address, '25.212.133.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-04). ');
+$ax += cidrblock($address, '131.255.136.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-05). ');
+$ax += cidrblock($address, '131.255.192.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-06). ');
+$ax += cidrblock($address, '179.60.204.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-07). ');
+$ax += cidrblock($address, '181.176.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-08). ');
+$ax += cidrblock($address, '43.254.56.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-09). ');
+$ax += cidrblock($address, '103.238.116.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-10). ');
+$ax += cidrblock($address, '169.255.184.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-11). ');
+$ax += cidrblock($address, '196.249.64.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-12). ');
+$ax += cidrblock($address, '100.144.128.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-13). ');
+$ax += cidrblock($address, '100.145.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-14). ');
+$ax += cidrblock($address, '100.146.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-15). ');
+$ax += cidrblock($address, '100.148.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-16). ');
+$ax += cidrblock($address, '100.149.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-17). ');
+$ax += cidrblock($address, '100.153.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-18). ');
+$ax += cidrblock($address, '100.154.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-19). ');
+$ax += cidrblock($address, '100.156.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-20). ');
+$ax += cidrblock($address, '27.64.0.0/12', 'Viettel Corporation (IP4S-VIETTELCORPORATION-21). ');
+$ax += cidrblock($address, '103.10.212.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-22). ');
+$ax += cidrblock($address, '103.84.76.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-23). ');
+$ax += cidrblock($address, '103.241.248.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-24). ');
+$ax += cidrblock($address, '113.61.109.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-25). ');
+$ax += cidrblock($address, '115.72.0.0/13', 'Viettel Corporation (IP4S-VIETTELCORPORATION-26). ');
+$ax += cidrblock($address, '116.96.0.0/12', 'Viettel Corporation (IP4S-VIETTELCORPORATION-27). ');
+$ax += cidrblock($address, '117.0.0.0/13', 'Viettel Corporation (IP4S-VIETTELCORPORATION-28). ');
+$ax += cidrblock($address, '125.212.128.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-29). ');
+$ax += cidrblock($address, '125.214.0.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-30). ');
+$ax += cidrblock($address, '125.234.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-31). ');
+$ax += cidrblock($address, '171.224.0.0/11', 'Viettel Corporation (IP4S-VIETTELCORPORATION-32). ');
+$ax += cidrblock($address, '202.4.168.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-33). ');
+$ax += cidrblock($address, '202.6.96.0/23', 'Viettel Corporation (IP4S-VIETTELCORPORATION-34). ');
+$ax += cidrblock($address, '203.113.128.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-35). ');
+$ax += cidrblock($address, '203.190.160.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-36). ');
+$ax += cidrblock($address, '220.231.64.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-37). ');
 
 
 // ASN 200019 ("ALEXHOST SRL").
-// Updated: 2019.04.07
+// Updated: 2019.08.18
 
-$ax += cidrblock($address, '45.67.229.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-0). ');
-$ax += cidrblock($address, '176.123.0.0/19', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-1). ');
-$ax += cidrblock($address, '91.243.83.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-2). ');
+$ax += cidrblock($address, '77.83.112.0/22', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-00). ');
+$ax += cidrblock($address, '83.142.48.0/22', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-01). ');
+$ax += cidrblock($address, '77.90.155.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-02). ');
+$ax += cidrblock($address, '77.90.156.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-03). ');
+$ax += cidrblock($address, '77.90.158.0/23', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-04). ');
+$ax += cidrblock($address, '77.90.169.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-05). ');
+$ax += cidrblock($address, '77.90.170.0/23', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-06). ');
+$ax += cidrblock($address, '77.90.172.0/23', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-07). ');
+$ax += cidrblock($address, '77.90.178.0/23', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-08). ');
+$ax += cidrblock($address, '77.90.180.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-09). ');
+$ax += cidrblock($address, '185.230.12.0/22', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-10). ');
+$ax += cidrblock($address, '213.209.133.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-11). ');
+$ax += cidrblock($address, '213.209.135.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-12). ');
+$ax += cidrblock($address, '213.209.136.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-13). ');
+$ax += cidrblock($address, '45.67.229.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-14). ');
+$ax += cidrblock($address, '176.123.0.0/19', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-15). ');
+$ax += cidrblock($address, '5.182.39.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-16). ');
+$ax += cidrblock($address, '45.84.0.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-17). ');
+$ax += cidrblock($address, '91.243.83.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-18). ');
+$ax += cidrblock($address, '193.188.21.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-19). ');
 
 
 // ASNs 11572, 29656, 57872, 60558, 207134 ("PHOENIX NAP, LLC").
@@ -5556,593 +5538,637 @@ $ax += cidrblock($address, '210.245.0.0/17', 'CFPT (IP4S-CFPT-46). ');
 $ax += cidrblock($address, '218.100.10.0/24', 'CFPT (IP4S-CFPT-47). ');
 
 
-// ASNs 9498, 9730, 24560, 37140, 45514, 45517, 45609, 132045 ("Bharti Airtel").
-// Interlaces with numerous providers and contains a significant number of human endpoints in India, but is also a
-// significant source of spam. Marked for use with reCAPTCHA to reduce the risk of false positives. I strongly advise
-// any CIDRAM users that expect traffic from India to list this section in their "ignore.dat" file.
-// - When updating, before aggregating, remove these (they don't belong to Bharti and shouldn't be being announced)!
-//   - 155.144.144.0/24 (AU), anything from Singapore (SG), Ireland (IE), United States (US).
-// Updated: 2019.04.14
+// ASNs 9498, 9730, 24560, 37140, 45517, 45609, 132045 ("Bharti Airtel").
+// Interlaces with numerous providers and contains a significant number of human
+// endpoints in India, but is also a significant source of spam. Marked for use
+// with reCAPTCHA to reduce the risk of false positives. CIDRAM users that
+// expect traffic from India should list this section in their ignore.dat file.
+// - When updating, remove anything from Australia (AU), Singapore (SG),
+//   Ireland (IE), United States (US).
+// Updated: 2019.08.25
 
 $ax += cidrblock($address, '41.190.88.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-000). ');
 $ax += cidrblock($address, '45.208.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-001). ');
 $ax += cidrblock($address, '196.174.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-002). ');
-$ax += cidrblock($address, '196.175.224.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-003). ');
-$ax += cidrblock($address, '196.175.240.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-004). ');
-$ax += cidrblock($address, '196.175.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-005). ');
-$ax += cidrblock($address, '197.190.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-006). ');
-$ax += cidrblock($address, '27.56.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-007). ');
-$ax += cidrblock($address, '27.57.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-008). ');
-$ax += cidrblock($address, '27.57.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-009). ');
-$ax += cidrblock($address, '27.57.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-010). ');
-$ax += cidrblock($address, '27.57.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-011). ');
-$ax += cidrblock($address, '27.57.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-012). ');
-$ax += cidrblock($address, '27.59.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-013). ');
-$ax += cidrblock($address, '27.59.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-014). ');
-$ax += cidrblock($address, '27.59.192.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-015). ');
-$ax += cidrblock($address, '27.60.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-016). ');
-$ax += cidrblock($address, '27.60.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-017). ');
-$ax += cidrblock($address, '27.60.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-018). ');
-$ax += cidrblock($address, '27.60.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-019). ');
-$ax += cidrblock($address, '27.60.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-020). ');
-$ax += cidrblock($address, '27.60.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-021). ');
-$ax += cidrblock($address, '27.60.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-022). ');
-$ax += cidrblock($address, '27.60.236.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-023). ');
-$ax += cidrblock($address, '27.61.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-024). ');
-$ax += cidrblock($address, '27.61.64.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-025). ');
-$ax += cidrblock($address, '27.61.76.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-026). ');
-$ax += cidrblock($address, '27.61.80.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-027). ');
-$ax += cidrblock($address, '27.61.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-028). ');
-$ax += cidrblock($address, '27.61.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-029). ');
-$ax += cidrblock($address, '27.62.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-030). ');
-$ax += cidrblock($address, '27.63.0.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-031). ');
-$ax += cidrblock($address, '27.63.8.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-032). ');
-$ax += cidrblock($address, '27.63.32.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-033). ');
-$ax += cidrblock($address, '27.63.40.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-034). ');
-$ax += cidrblock($address, '27.63.60.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-035). ');
-$ax += cidrblock($address, '27.63.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-036). ');
-$ax += cidrblock($address, '27.63.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-037). ');
-$ax += cidrblock($address, '58.2.236.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-038). ');
-$ax += cidrblock($address, '59.144.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-039). ');
-$ax += cidrblock($address, '61.95.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-040). ');
-$ax += cidrblock($address, '61.246.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-041). ');
-$ax += cidrblock($address, '61.247.224.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-042). ');
-$ax += cidrblock($address, '103.8.215.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-043). ');
-$ax += cidrblock($address, '103.97.231.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-044). ');
-$ax += cidrblock($address, '103.106.148.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-045). ');
-$ax += cidrblock($address, '103.209.96.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-046). ');
-$ax += cidrblock($address, '103.246.85.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-047). ');
-$ax += cidrblock($address, '106.192.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-048). ');
-$ax += cidrblock($address, '106.193.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-049). ');
-$ax += cidrblock($address, '106.193.64.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-050). ');
-$ax += cidrblock($address, '106.193.128.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-051). ');
-$ax += cidrblock($address, '106.193.136.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-052). ');
-$ax += cidrblock($address, '106.193.144.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-053). ');
-$ax += cidrblock($address, '106.193.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-054). ');
-$ax += cidrblock($address, '106.193.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-055). ');
-$ax += cidrblock($address, '106.193.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-056). ');
-$ax += cidrblock($address, '106.193.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-057). ');
-$ax += cidrblock($address, '106.193.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-058). ');
-$ax += cidrblock($address, '106.193.192.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-059). ');
-$ax += cidrblock($address, '106.193.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-060). ');
-$ax += cidrblock($address, '106.193.208.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-061). ');
-$ax += cidrblock($address, '106.193.216.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-062). ');
-$ax += cidrblock($address, '106.193.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-063). ');
-$ax += cidrblock($address, '106.193.232.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-064). ');
-$ax += cidrblock($address, '106.193.240.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-065). ');
-$ax += cidrblock($address, '106.193.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-066). ');
-$ax += cidrblock($address, '106.195.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-067). ');
-$ax += cidrblock($address, '106.196.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-068). ');
-$ax += cidrblock($address, '106.197.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-069). ');
-$ax += cidrblock($address, '106.197.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-070). ');
-$ax += cidrblock($address, '106.198.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-071). ');
-$ax += cidrblock($address, '106.198.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-072). ');
-$ax += cidrblock($address, '106.198.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-073). ');
-$ax += cidrblock($address, '106.199.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-074). ');
-$ax += cidrblock($address, '106.200.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-075). ');
-$ax += cidrblock($address, '106.200.64.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-076). ');
-$ax += cidrblock($address, '106.200.66.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-077). ');
-$ax += cidrblock($address, '106.200.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-078). ');
-$ax += cidrblock($address, '106.200.112.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-079). ');
-$ax += cidrblock($address, '106.200.140.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-080). ');
-$ax += cidrblock($address, '106.200.144.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-081). ');
-$ax += cidrblock($address, '106.200.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-082). ');
-$ax += cidrblock($address, '106.200.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-083). ');
-$ax += cidrblock($address, '106.201.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-084). ');
-$ax += cidrblock($address, '106.202.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-085). ');
-$ax += cidrblock($address, '106.203.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-086). ');
-$ax += cidrblock($address, '106.203.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-087). ');
-$ax += cidrblock($address, '106.204.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-088). ');
-$ax += cidrblock($address, '106.205.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-089). ');
-$ax += cidrblock($address, '106.205.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-090). ');
-$ax += cidrblock($address, '106.206.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-091). ');
-$ax += cidrblock($address, '106.206.64.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-092). ');
-$ax += cidrblock($address, '106.207.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-093). ');
-$ax += cidrblock($address, '106.208.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-094). ');
-$ax += cidrblock($address, '106.208.128.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-095). ');
-$ax += cidrblock($address, '106.208.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-096). ');
-$ax += cidrblock($address, '106.208.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-097). ');
-$ax += cidrblock($address, '106.208.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-098). ');
-$ax += cidrblock($address, '106.208.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-099). ');
-$ax += cidrblock($address, '106.209.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-100). ');
-$ax += cidrblock($address, '106.209.128.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-101). ');
-$ax += cidrblock($address, '106.209.136.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-102). ');
-$ax += cidrblock($address, '106.209.144.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-103). ');
-$ax += cidrblock($address, '106.209.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-104). ');
-$ax += cidrblock($address, '106.209.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-105). ');
-$ax += cidrblock($address, '106.209.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-106). ');
-$ax += cidrblock($address, '106.209.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-107). ');
-$ax += cidrblock($address, '106.209.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-108). ');
-$ax += cidrblock($address, '106.209.192.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-109). ');
-$ax += cidrblock($address, '106.209.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-110). ');
-$ax += cidrblock($address, '106.209.208.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-111). ');
-$ax += cidrblock($address, '106.209.216.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-112). ');
-$ax += cidrblock($address, '106.209.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-113). ');
-$ax += cidrblock($address, '106.209.232.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-114). ');
-$ax += cidrblock($address, '106.209.240.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-115). ');
-$ax += cidrblock($address, '106.209.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-116). ');
-$ax += cidrblock($address, '106.210.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-117). ');
-$ax += cidrblock($address, '106.210.128.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-118). ');
-$ax += cidrblock($address, '106.210.136.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-119). ');
-$ax += cidrblock($address, '106.210.144.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-120). ');
-$ax += cidrblock($address, '106.210.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-121). ');
-$ax += cidrblock($address, '106.210.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-122). ');
-$ax += cidrblock($address, '106.210.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-123). ');
-$ax += cidrblock($address, '106.210.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-124). ');
-$ax += cidrblock($address, '106.210.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-125). ');
-$ax += cidrblock($address, '106.210.192.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-126). ');
-$ax += cidrblock($address, '106.210.199.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-127). ');
-$ax += cidrblock($address, '106.210.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-128). ');
-$ax += cidrblock($address, '106.210.208.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-129). ');
-$ax += cidrblock($address, '106.210.216.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-130). ');
-$ax += cidrblock($address, '106.210.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-131). ');
-$ax += cidrblock($address, '106.210.232.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-132). ');
-$ax += cidrblock($address, '106.210.240.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-133). ');
-$ax += cidrblock($address, '106.210.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-134). ');
-$ax += cidrblock($address, '106.211.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-135). ');
-$ax += cidrblock($address, '106.211.184.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-136). ');
-$ax += cidrblock($address, '106.212.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-137). ');
-$ax += cidrblock($address, '106.213.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-138). ');
-$ax += cidrblock($address, '106.213.192.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-139). ');
-$ax += cidrblock($address, '106.215.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-140). ');
-$ax += cidrblock($address, '106.216.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-141). ');
-$ax += cidrblock($address, '106.218.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-142). ');
-$ax += cidrblock($address, '106.220.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-143). ');
-$ax += cidrblock($address, '106.220.32.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-144). ');
-$ax += cidrblock($address, '106.220.48.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-145). ');
-$ax += cidrblock($address, '106.220.112.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-146). ');
-$ax += cidrblock($address, '106.220.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-147). ');
-$ax += cidrblock($address, '106.220.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-148). ');
-$ax += cidrblock($address, '106.220.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-149). ');
-$ax += cidrblock($address, '106.222.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-150). ');
-$ax += cidrblock($address, '106.222.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-151). ');
-$ax += cidrblock($address, '106.222.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-152). ');
-$ax += cidrblock($address, '106.223.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-153). ');
-$ax += cidrblock($address, '110.224.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-154). ');
-$ax += cidrblock($address, '110.224.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-155). ');
-$ax += cidrblock($address, '110.224.40.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-156). ');
-$ax += cidrblock($address, '110.224.48.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-157). ');
-$ax += cidrblock($address, '110.224.56.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-158). ');
-$ax += cidrblock($address, '110.224.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-159). ');
-$ax += cidrblock($address, '110.224.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-160). ');
-$ax += cidrblock($address, '110.225.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-161). ');
-$ax += cidrblock($address, '110.225.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-162). ');
-$ax += cidrblock($address, '110.225.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-163). ');
-$ax += cidrblock($address, '110.226.224.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-164). ');
-$ax += cidrblock($address, '110.227.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-165). ');
-$ax += cidrblock($address, '110.227.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-166). ');
-$ax += cidrblock($address, '116.90.241.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-167). ');
-$ax += cidrblock($address, '116.119.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-168). ');
-$ax += cidrblock($address, '117.96.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-169). ');
-$ax += cidrblock($address, '117.96.28.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-170). ');
-$ax += cidrblock($address, '117.96.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-171). ');
-$ax += cidrblock($address, '117.96.64.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-172). ');
-$ax += cidrblock($address, '117.96.80.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-173). ');
-$ax += cidrblock($address, '117.96.88.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-174). ');
-$ax += cidrblock($address, '117.96.90.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-175). ');
-$ax += cidrblock($address, '117.96.93.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-176). ');
-$ax += cidrblock($address, '117.96.94.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-177). ');
-$ax += cidrblock($address, '117.96.96.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-178). ');
-$ax += cidrblock($address, '117.96.104.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-179). ');
-$ax += cidrblock($address, '117.96.120.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-180). ');
-$ax += cidrblock($address, '117.96.152.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-181). ');
-$ax += cidrblock($address, '117.96.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-182). ');
-$ax += cidrblock($address, '117.97.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-183). ');
-$ax += cidrblock($address, '117.97.80.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-184). ');
-$ax += cidrblock($address, '117.97.93.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-185). ');
-$ax += cidrblock($address, '117.97.94.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-186). ');
-$ax += cidrblock($address, '117.97.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-187). ');
-$ax += cidrblock($address, '117.97.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-188). ');
-$ax += cidrblock($address, '117.97.208.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-189). ');
-$ax += cidrblock($address, '117.97.221.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-190). ');
-$ax += cidrblock($address, '117.97.222.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-191). ');
-$ax += cidrblock($address, '117.97.224.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-192). ');
-$ax += cidrblock($address, '117.98.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-193). ');
-$ax += cidrblock($address, '117.98.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-194). ');
-$ax += cidrblock($address, '117.98.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-195). ');
-$ax += cidrblock($address, '117.98.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-196). ');
-$ax += cidrblock($address, '117.98.254.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-197). ');
-$ax += cidrblock($address, '117.99.34.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-198). ');
-$ax += cidrblock($address, '117.99.36.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-199). ');
-$ax += cidrblock($address, '117.99.40.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-200). ');
-$ax += cidrblock($address, '117.99.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-201). ');
-$ax += cidrblock($address, '117.99.112.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-202). ');
-$ax += cidrblock($address, '117.99.128.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-203). ');
-$ax += cidrblock($address, '117.99.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-204). ');
-$ax += cidrblock($address, '122.160.0.0/14', 'Bharti Airtel (IP4S-BHARTIAIRTEL-205). ');
-$ax += cidrblock($address, '122.164.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-206). ');
-$ax += cidrblock($address, '122.164.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-207). ');
-$ax += cidrblock($address, '122.164.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-208). ');
-$ax += cidrblock($address, '122.164.112.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-209). ');
-$ax += cidrblock($address, '122.164.124.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-210). ');
-$ax += cidrblock($address, '122.164.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-211). ');
-$ax += cidrblock($address, '122.164.192.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-212). ');
-$ax += cidrblock($address, '122.164.195.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-213). ');
-$ax += cidrblock($address, '122.164.196.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-214). ');
-$ax += cidrblock($address, '122.164.200.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-215). ');
-$ax += cidrblock($address, '122.164.208.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-216). ');
-$ax += cidrblock($address, '122.164.224.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-217). ');
-$ax += cidrblock($address, '122.165.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-218). ');
-$ax += cidrblock($address, '122.165.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-219). ');
-$ax += cidrblock($address, '122.165.48.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-220). ');
-$ax += cidrblock($address, '122.165.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-221). ');
-$ax += cidrblock($address, '122.165.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-222). ');
-$ax += cidrblock($address, '122.166.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-223). ');
-$ax += cidrblock($address, '122.166.16.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-224). ');
-$ax += cidrblock($address, '122.166.24.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-225). ');
-$ax += cidrblock($address, '122.166.26.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-226). ');
-$ax += cidrblock($address, '122.166.29.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-227). ');
-$ax += cidrblock($address, '122.166.30.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-228). ');
-$ax += cidrblock($address, '122.166.32.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-229). ');
-$ax += cidrblock($address, '122.166.40.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-230). ');
-$ax += cidrblock($address, '122.166.42.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-231). ');
-$ax += cidrblock($address, '122.166.44.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-232). ');
-$ax += cidrblock($address, '122.166.48.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-233). ');
-$ax += cidrblock($address, '122.166.64.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-234). ');
-$ax += cidrblock($address, '122.166.80.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-235). ');
-$ax += cidrblock($address, '122.166.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-236). ');
-$ax += cidrblock($address, '122.166.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-237). ');
-$ax += cidrblock($address, '122.166.192.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-238). ');
-$ax += cidrblock($address, '122.166.201.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-239). ');
-$ax += cidrblock($address, '122.166.202.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-240). ');
-$ax += cidrblock($address, '122.166.204.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-241). ');
-$ax += cidrblock($address, '122.166.208.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-242). ');
-$ax += cidrblock($address, '122.166.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-243). ');
-$ax += cidrblock($address, '122.166.240.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-244). ');
-$ax += cidrblock($address, '122.166.244.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-245). ');
-$ax += cidrblock($address, '122.167.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-246). ');
-$ax += cidrblock($address, '122.167.32.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-247). ');
-$ax += cidrblock($address, '122.167.52.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-248). ');
-$ax += cidrblock($address, '122.167.56.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-249). ');
-$ax += cidrblock($address, '122.167.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-250). ');
-$ax += cidrblock($address, '122.167.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-251). ');
-$ax += cidrblock($address, '122.167.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-252). ');
-$ax += cidrblock($address, '122.167.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-253). ');
-$ax += cidrblock($address, '122.167.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-254). ');
-$ax += cidrblock($address, '122.167.192.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-255). ');
-$ax += cidrblock($address, '122.167.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-256). ');
-$ax += cidrblock($address, '122.167.208.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-257). ');
-$ax += cidrblock($address, '122.167.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-258). ');
-$ax += cidrblock($address, '122.168.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-259). ');
-$ax += cidrblock($address, '122.168.128.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-260). ');
-$ax += cidrblock($address, '122.168.136.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-261). ');
-$ax += cidrblock($address, '122.168.138.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-262). ');
-$ax += cidrblock($address, '122.168.140.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-263). ');
-$ax += cidrblock($address, '122.168.144.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-264). ');
-$ax += cidrblock($address, '122.168.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-265). ');
-$ax += cidrblock($address, '122.168.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-266). ');
-$ax += cidrblock($address, '122.169.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-267). ');
-$ax += cidrblock($address, '122.169.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-268). ');
-$ax += cidrblock($address, '122.169.40.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-269). ');
-$ax += cidrblock($address, '122.169.48.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-270). ');
-$ax += cidrblock($address, '122.169.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-271). ');
-$ax += cidrblock($address, '122.169.128.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-272). ');
-$ax += cidrblock($address, '122.169.144.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-273). ');
-$ax += cidrblock($address, '122.169.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-274). ');
-$ax += cidrblock($address, '122.169.190.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-275). ');
-$ax += cidrblock($address, '122.169.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-276). ');
-$ax += cidrblock($address, '122.170.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-277). ');
-$ax += cidrblock($address, '122.171.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-278). ');
-$ax += cidrblock($address, '122.171.17.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-279). ');
-$ax += cidrblock($address, '122.171.20.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-280). ');
-$ax += cidrblock($address, '122.171.22.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-281). ');
-$ax += cidrblock($address, '122.171.24.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-282). ');
-$ax += cidrblock($address, '122.171.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-283). ');
-$ax += cidrblock($address, '122.171.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-284). ');
-$ax += cidrblock($address, '122.171.144.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-285). ');
-$ax += cidrblock($address, '122.171.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-286). ');
-$ax += cidrblock($address, '122.171.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-287). ');
-$ax += cidrblock($address, '122.171.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-288). ');
-$ax += cidrblock($address, '122.172.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-289). ');
-$ax += cidrblock($address, '122.172.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-290). ');
-$ax += cidrblock($address, '122.172.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-291). ');
-$ax += cidrblock($address, '122.172.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-292). ');
-$ax += cidrblock($address, '122.172.208.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-293). ');
-$ax += cidrblock($address, '122.172.248.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-294). ');
-$ax += cidrblock($address, '122.173.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-295). ');
-$ax += cidrblock($address, '122.174.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-296). ');
-$ax += cidrblock($address, '122.175.1.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-297). ');
-$ax += cidrblock($address, '122.175.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-298). ');
-$ax += cidrblock($address, '122.175.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-299). ');
-$ax += cidrblock($address, '122.175.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-300). ');
-$ax += cidrblock($address, '122.175.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-301). ');
-$ax += cidrblock($address, '122.175.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-302). ');
-$ax += cidrblock($address, '122.175.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-303). ');
-$ax += cidrblock($address, '122.175.240.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-304). ');
-$ax += cidrblock($address, '122.175.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-305). ');
-$ax += cidrblock($address, '122.175.255.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-306). ');
-$ax += cidrblock($address, '122.176.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-307). ');
-$ax += cidrblock($address, '122.176.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-308). ');
-$ax += cidrblock($address, '122.176.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-309). ');
-$ax += cidrblock($address, '122.176.112.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-310). ');
-$ax += cidrblock($address, '122.176.120.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-311). ');
-$ax += cidrblock($address, '122.176.126.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-312). ');
-$ax += cidrblock($address, '122.176.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-313). ');
-$ax += cidrblock($address, '122.177.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-314). ');
-$ax += cidrblock($address, '122.178.8.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-315). ');
-$ax += cidrblock($address, '122.178.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-316). ');
-$ax += cidrblock($address, '122.178.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-317). ');
-$ax += cidrblock($address, '122.178.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-318). ');
-$ax += cidrblock($address, '122.178.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-319). ');
-$ax += cidrblock($address, '122.179.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-320). ');
-$ax += cidrblock($address, '122.179.128.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-321). ');
-$ax += cidrblock($address, '122.179.144.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-322). ');
-$ax += cidrblock($address, '122.179.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-323). ');
-$ax += cidrblock($address, '122.179.156.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-324). ');
-$ax += cidrblock($address, '122.179.158.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-325). ');
-$ax += cidrblock($address, '122.179.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-326). ');
-$ax += cidrblock($address, '122.179.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-327). ');
-$ax += cidrblock($address, '122.179.190.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-328). ');
-$ax += cidrblock($address, '122.180.0.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-329). ');
-$ax += cidrblock($address, '122.180.9.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-330). ');
-$ax += cidrblock($address, '122.180.10.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-331). ');
-$ax += cidrblock($address, '122.180.12.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-332). ');
-$ax += cidrblock($address, '122.180.16.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-333). ');
-$ax += cidrblock($address, '122.180.20.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-334). ');
-$ax += cidrblock($address, '122.180.22.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-335). ');
-$ax += cidrblock($address, '122.180.24.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-336). ');
-$ax += cidrblock($address, '122.180.32.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-337). ');
-$ax += cidrblock($address, '122.180.41.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-338). ');
-$ax += cidrblock($address, '122.180.48.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-339). ');
-$ax += cidrblock($address, '122.180.50.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-340). ');
-$ax += cidrblock($address, '122.180.52.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-341). ');
-$ax += cidrblock($address, '122.180.56.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-342). ');
-$ax += cidrblock($address, '122.180.64.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-343). ');
-$ax += cidrblock($address, '122.180.80.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-344). ');
-$ax += cidrblock($address, '122.180.84.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-345). ');
-$ax += cidrblock($address, '122.180.88.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-346). ');
-$ax += cidrblock($address, '122.180.92.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-347). ');
-$ax += cidrblock($address, '122.180.96.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-348). ');
-$ax += cidrblock($address, '122.180.101.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-349). ');
-$ax += cidrblock($address, '122.180.102.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-350). ');
-$ax += cidrblock($address, '122.180.104.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-351). ');
-$ax += cidrblock($address, '122.180.108.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-352). ');
-$ax += cidrblock($address, '122.180.112.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-353). ');
-$ax += cidrblock($address, '122.180.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-354). ');
-$ax += cidrblock($address, '122.181.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-355). ');
-$ax += cidrblock($address, '122.182.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-356). ');
-$ax += cidrblock($address, '122.184.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-357). ');
-$ax += cidrblock($address, '125.16.0.0/13', 'Bharti Airtel (IP4S-BHARTIAIRTEL-358). ');
-$ax += cidrblock($address, '125.62.150.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-359). ');
-$ax += cidrblock($address, '125.62.167.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-360). ');
-$ax += cidrblock($address, '125.62.179.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-361). ');
-$ax += cidrblock($address, '125.62.187.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-362). ');
-$ax += cidrblock($address, '125.62.190.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-363). ');
-$ax += cidrblock($address, '164.164.121.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-364). ');
-$ax += cidrblock($address, '171.48.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-365). ');
-$ax += cidrblock($address, '171.49.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-366). ');
-$ax += cidrblock($address, '171.49.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-367). ');
-$ax += cidrblock($address, '171.49.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-368). ');
-$ax += cidrblock($address, '171.49.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-369). ');
-$ax += cidrblock($address, '171.49.240.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-370). ');
-$ax += cidrblock($address, '171.49.248.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-371). ');
-$ax += cidrblock($address, '171.50.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-372). ');
-$ax += cidrblock($address, '171.51.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-373). ');
-$ax += cidrblock($address, '171.51.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-374). ');
-$ax += cidrblock($address, '171.51.196.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-375). ');
-$ax += cidrblock($address, '171.51.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-376). ');
-$ax += cidrblock($address, '171.51.208.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-377). ');
-$ax += cidrblock($address, '171.51.220.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-378). ');
-$ax += cidrblock($address, '171.51.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-379). ');
-$ax += cidrblock($address, '171.51.232.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-380). ');
-$ax += cidrblock($address, '171.51.244.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-381). ');
-$ax += cidrblock($address, '171.60.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-382). ');
-$ax += cidrblock($address, '171.76.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-383). ');
-$ax += cidrblock($address, '171.76.64.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-384). ');
-$ax += cidrblock($address, '171.76.68.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-385). ');
-$ax += cidrblock($address, '171.76.72.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-386). ');
-$ax += cidrblock($address, '171.76.80.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-387). ');
-$ax += cidrblock($address, '171.76.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-388). ');
-$ax += cidrblock($address, '171.76.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-389). ');
-$ax += cidrblock($address, '171.77.128.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-390). ');
-$ax += cidrblock($address, '171.77.136.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-391). ');
-$ax += cidrblock($address, '171.77.144.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-392). ');
-$ax += cidrblock($address, '171.77.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-393). ');
-$ax += cidrblock($address, '171.78.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-394). ');
-$ax += cidrblock($address, '182.64.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-395). ');
-$ax += cidrblock($address, '182.64.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-396). ');
-$ax += cidrblock($address, '182.64.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-397). ');
-$ax += cidrblock($address, '182.64.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-398). ');
-$ax += cidrblock($address, '182.64.228.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-399). ');
-$ax += cidrblock($address, '182.64.230.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-400). ');
-$ax += cidrblock($address, '182.64.236.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-401). ');
-$ax += cidrblock($address, '182.64.240.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-402). ');
-$ax += cidrblock($address, '182.65.0.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-403). ');
-$ax += cidrblock($address, '182.65.8.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-404). ');
-$ax += cidrblock($address, '182.65.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-405). ');
-$ax += cidrblock($address, '182.65.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-406). ');
-$ax += cidrblock($address, '182.65.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-407). ');
-$ax += cidrblock($address, '182.65.168.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-408). ');
-$ax += cidrblock($address, '182.65.176.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-409). ');
-$ax += cidrblock($address, '182.65.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-410). ');
-$ax += cidrblock($address, '182.66.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-411). ');
-$ax += cidrblock($address, '182.66.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-412). ');
-$ax += cidrblock($address, '182.67.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-413). ');
-$ax += cidrblock($address, '182.68.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-414). ');
-$ax += cidrblock($address, '182.69.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-415). ');
-$ax += cidrblock($address, '182.69.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-416). ');
-$ax += cidrblock($address, '182.69.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-417). ');
-$ax += cidrblock($address, '182.69.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-418). ');
-$ax += cidrblock($address, '182.69.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-419). ');
-$ax += cidrblock($address, '182.69.188.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-420). ');
-$ax += cidrblock($address, '182.69.191.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-421). ');
-$ax += cidrblock($address, '182.69.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-422). ');
-$ax += cidrblock($address, '182.70.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-423). ');
-$ax += cidrblock($address, '182.72.0.0/14', 'Bharti Airtel (IP4S-BHARTIAIRTEL-424). ');
-$ax += cidrblock($address, '182.76.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-425). ');
-$ax += cidrblock($address, '182.77.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-426). ');
-$ax += cidrblock($address, '182.78.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-427). ');
-$ax += cidrblock($address, '182.79.134.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-428). ');
-$ax += cidrblock($address, '182.79.138.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-429). ');
-$ax += cidrblock($address, '182.79.143.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-430). ');
-$ax += cidrblock($address, '182.79.144.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-431). ');
-$ax += cidrblock($address, '182.79.147.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-432). ');
-$ax += cidrblock($address, '182.79.148.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-433). ');
-$ax += cidrblock($address, '182.79.155.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-434). ');
-$ax += cidrblock($address, '182.79.156.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-435). ');
-$ax += cidrblock($address, '182.79.161.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-436). ');
-$ax += cidrblock($address, '182.79.163.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-437). ');
-$ax += cidrblock($address, '182.79.164.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-438). ');
-$ax += cidrblock($address, '182.79.167.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-439). ');
-$ax += cidrblock($address, '182.79.173.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-440). ');
-$ax += cidrblock($address, '182.79.174.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-441). ');
-$ax += cidrblock($address, '182.79.176.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-442). ');
-$ax += cidrblock($address, '182.79.179.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-443). ');
-$ax += cidrblock($address, '182.79.186.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-444). ');
-$ax += cidrblock($address, '182.79.194.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-445). ');
-$ax += cidrblock($address, '182.79.209.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-446). ');
-$ax += cidrblock($address, '182.79.212.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-447). ');
-$ax += cidrblock($address, '182.79.217.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-448). ');
-$ax += cidrblock($address, '182.79.218.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-449). ');
-$ax += cidrblock($address, '182.79.220.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-450). ');
-$ax += cidrblock($address, '182.79.224.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-451). ');
-$ax += cidrblock($address, '182.79.230.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-452). ');
-$ax += cidrblock($address, '182.79.235.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-453). ');
-$ax += cidrblock($address, '182.79.237.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-454). ');
-$ax += cidrblock($address, '182.79.238.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-455). ');
-$ax += cidrblock($address, '182.79.240.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-456). ');
-$ax += cidrblock($address, '182.79.244.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-457). ');
-$ax += cidrblock($address, '182.79.248.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-458). ');
-$ax += cidrblock($address, '182.79.251.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-459). ');
-$ax += cidrblock($address, '182.79.252.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-460). ');
-$ax += cidrblock($address, '202.56.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-461). ');
-$ax += cidrblock($address, '202.92.233.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-462). ');
-$ax += cidrblock($address, '202.92.238.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-463). ');
-$ax += cidrblock($address, '202.123.34.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-464). ');
-$ax += cidrblock($address, '202.123.37.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-465). ');
-$ax += cidrblock($address, '202.123.39.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-466). ');
-$ax += cidrblock($address, '202.123.42.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-467). ');
-$ax += cidrblock($address, '202.123.44.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-468). ');
-$ax += cidrblock($address, '202.123.47.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-469). ');
-$ax += cidrblock($address, '202.140.63.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-470). ');
-$ax += cidrblock($address, '203.16.165.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-471). ');
-$ax += cidrblock($address, '203.101.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-472). ');
-$ax += cidrblock($address, '203.132.139.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-473). ');
-$ax += cidrblock($address, '203.132.152.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-474). ');
-$ax += cidrblock($address, '203.132.156.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-475). ');
-$ax += cidrblock($address, '203.132.158.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-476). ');
-$ax += cidrblock($address, '203.145.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-477). ');
-$ax += cidrblock($address, '203.190.144.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-478). ');
-$ax += cidrblock($address, '203.192.227.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-479). ');
-$ax += cidrblock($address, '203.193.178.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-480). ');
-$ax += cidrblock($address, '223.176.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-481). ');
-$ax += cidrblock($address, '223.178.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-482). ');
-$ax += cidrblock($address, '223.178.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-483). ');
-$ax += cidrblock($address, '223.179.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-484). ');
-$ax += cidrblock($address, '223.179.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-485). ');
-$ax += cidrblock($address, '223.179.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-486). ');
-$ax += cidrblock($address, '223.180.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-487). ');
-$ax += cidrblock($address, '223.181.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-488). ');
-$ax += cidrblock($address, '223.181.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-489). ');
-$ax += cidrblock($address, '223.181.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-490). ');
-$ax += cidrblock($address, '223.181.240.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-491). ');
-$ax += cidrblock($address, '223.182.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-492). ');
-$ax += cidrblock($address, '223.182.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-493). ');
-$ax += cidrblock($address, '223.182.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-494). ');
-$ax += cidrblock($address, '223.182.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-495). ');
-$ax += cidrblock($address, '223.182.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-496). ');
-$ax += cidrblock($address, '223.182.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-497). ');
-$ax += cidrblock($address, '223.182.192.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-498). ');
-$ax += cidrblock($address, '223.183.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-499). ');
-$ax += cidrblock($address, '223.184.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-500). ');
-$ax += cidrblock($address, '223.185.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-501). ');
-$ax += cidrblock($address, '223.185.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-502). ');
-$ax += cidrblock($address, '223.186.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-503). ');
-$ax += cidrblock($address, '223.186.128.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-504). ');
-$ax += cidrblock($address, '223.186.144.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-505). ');
-$ax += cidrblock($address, '223.186.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-506). ');
-$ax += cidrblock($address, '223.186.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-507). ');
-$ax += cidrblock($address, '223.187.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-508). ');
-$ax += cidrblock($address, '223.188.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-509). ');
-$ax += cidrblock($address, '223.189.0.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-510). ');
-$ax += cidrblock($address, '223.189.8.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-511). ');
-$ax += cidrblock($address, '223.189.20.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-512). ');
-$ax += cidrblock($address, '223.189.24.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-513). ');
-$ax += cidrblock($address, '223.189.32.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-514). ');
-$ax += cidrblock($address, '223.189.44.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-515). ');
-$ax += cidrblock($address, '223.189.48.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-516). ');
-$ax += cidrblock($address, '223.189.56.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-517). ');
-$ax += cidrblock($address, '223.189.64.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-518). ');
-$ax += cidrblock($address, '223.189.80.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-519). ');
-$ax += cidrblock($address, '223.189.88.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-520). ');
-$ax += cidrblock($address, '223.189.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-521). ');
-$ax += cidrblock($address, '223.190.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-522). ');
-$ax += cidrblock($address, '223.191.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-523). ');
-$ax += cidrblock($address, '223.191.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-524). ');
-$ax += cidrblock($address, '223.224.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-525). ');
-$ax += cidrblock($address, '223.225.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-526). ');
-$ax += cidrblock($address, '223.225.32.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-527). ');
-$ax += cidrblock($address, '223.225.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-528). ');
-$ax += cidrblock($address, '223.225.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-529). ');
-$ax += cidrblock($address, '223.225.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-530). ');
-$ax += cidrblock($address, '223.226.32.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-531). ');
-$ax += cidrblock($address, '223.226.52.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-532). ');
-$ax += cidrblock($address, '223.226.56.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-533). ');
-$ax += cidrblock($address, '223.226.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-534). ');
-$ax += cidrblock($address, '223.227.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-535). ');
-$ax += cidrblock($address, '223.227.16.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-536). ');
-$ax += cidrblock($address, '223.227.24.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-537). ');
-$ax += cidrblock($address, '223.227.28.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-538). ');
-$ax += cidrblock($address, '223.227.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-539). ');
-$ax += cidrblock($address, '223.228.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-540). ');
-$ax += cidrblock($address, '223.228.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-541). ');
-$ax += cidrblock($address, '223.229.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-542). ');
-$ax += cidrblock($address, '223.230.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-543). ');
-$ax += cidrblock($address, '223.230.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-544). ');
-$ax += cidrblock($address, '223.230.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-545). ');
-$ax += cidrblock($address, '223.231.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-546). ');
-$ax += cidrblock($address, '223.233.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-547). ');
-$ax += cidrblock($address, '223.233.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-548). ');
-$ax += cidrblock($address, '223.233.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-549). ');
-$ax += cidrblock($address, '223.237.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-550). ');
-$ax += cidrblock($address, '223.237.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-551). ');
-$ax += cidrblock($address, '223.238.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-552). ');
-$ax += cidrblock($address, '223.238.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-553). ');
-$ax += cidrblock($address, '223.238.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-554). ');
-$ax += cidrblock($address, '223.239.0.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-555). ');
-$ax += cidrblock($address, '223.239.8.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-556). ');
-$ax += cidrblock($address, '223.239.10.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-557). ');
-$ax += cidrblock($address, '223.239.12.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-558). ');
-$ax += cidrblock($address, '223.239.14.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-559). ');
-$ax += cidrblock($address, '223.239.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-560). ');
-$ax += cidrblock($address, '223.239.40.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-561). ');
-$ax += cidrblock($address, '223.239.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-562). ');
-$ax += cidrblock($address, '223.239.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-563). ');
-$ax += cidrblock($address, '223.239.240.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-564). ');
-$ax += cidrblock($address, '43.228.108.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-565). ');
-$ax += cidrblock($address, '101.2.176.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-566). ');
-$ax += cidrblock($address, '103.227.244.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-567). ');
-$ax += cidrblock($address, '203.153.220.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-568). ');
+$ax += cidrblock($address, '196.175.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-003). ');
+$ax += cidrblock($address, '196.175.224.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-004). ');
+$ax += cidrblock($address, '196.175.240.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-005). ');
+$ax += cidrblock($address, '196.175.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-006). ');
+$ax += cidrblock($address, '197.190.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-007). ');
+$ax += cidrblock($address, '27.56.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-008). ');
+$ax += cidrblock($address, '27.57.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-009). ');
+$ax += cidrblock($address, '27.57.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-010). ');
+$ax += cidrblock($address, '27.57.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-011). ');
+$ax += cidrblock($address, '27.57.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-012). ');
+$ax += cidrblock($address, '27.57.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-013). ');
+$ax += cidrblock($address, '27.59.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-014). ');
+$ax += cidrblock($address, '27.59.16.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-015). ');
+$ax += cidrblock($address, '27.59.24.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-016). ');
+$ax += cidrblock($address, '27.59.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-017). ');
+$ax += cidrblock($address, '27.59.40.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-018). ');
+$ax += cidrblock($address, '27.59.48.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-019). ');
+$ax += cidrblock($address, '27.59.56.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-020). ');
+$ax += cidrblock($address, '27.59.64.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-021). ');
+$ax += cidrblock($address, '27.59.72.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-022). ');
+$ax += cidrblock($address, '27.59.80.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-023). ');
+$ax += cidrblock($address, '27.59.88.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-024). ');
+$ax += cidrblock($address, '27.59.96.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-025). ');
+$ax += cidrblock($address, '27.59.104.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-026). ');
+$ax += cidrblock($address, '27.59.112.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-027). ');
+$ax += cidrblock($address, '27.59.120.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-028). ');
+$ax += cidrblock($address, '27.59.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-029). ');
+$ax += cidrblock($address, '27.59.192.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-030). ');
+$ax += cidrblock($address, '27.59.208.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-031). ');
+$ax += cidrblock($address, '27.59.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-032). ');
+$ax += cidrblock($address, '27.60.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-033). ');
+$ax += cidrblock($address, '27.60.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-034). ');
+$ax += cidrblock($address, '27.60.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-035). ');
+$ax += cidrblock($address, '27.60.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-036). ');
+$ax += cidrblock($address, '27.60.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-037). ');
+$ax += cidrblock($address, '27.60.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-038). ');
+$ax += cidrblock($address, '27.60.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-039). ');
+$ax += cidrblock($address, '27.60.236.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-040). ');
+$ax += cidrblock($address, '27.61.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-041). ');
+$ax += cidrblock($address, '27.61.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-042). ');
+$ax += cidrblock($address, '27.61.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-043). ');
+$ax += cidrblock($address, '27.61.224.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-044). ');
+$ax += cidrblock($address, '27.62.0.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-045). ');
+$ax += cidrblock($address, '27.62.8.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-046). ');
+$ax += cidrblock($address, '27.62.16.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-047). ');
+$ax += cidrblock($address, '27.62.24.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-048). ');
+$ax += cidrblock($address, '27.62.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-049). ');
+$ax += cidrblock($address, '27.62.40.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-050). ');
+$ax += cidrblock($address, '27.62.48.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-051). ');
+$ax += cidrblock($address, '27.62.56.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-052). ');
+$ax += cidrblock($address, '27.62.64.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-053). ');
+$ax += cidrblock($address, '27.62.72.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-054). ');
+$ax += cidrblock($address, '27.62.80.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-055). ');
+$ax += cidrblock($address, '27.62.88.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-056). ');
+$ax += cidrblock($address, '27.62.96.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-057). ');
+$ax += cidrblock($address, '27.62.104.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-058). ');
+$ax += cidrblock($address, '27.62.112.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-059). ');
+$ax += cidrblock($address, '27.62.120.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-060). ');
+$ax += cidrblock($address, '27.62.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-061). ');
+$ax += cidrblock($address, '27.63.32.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-062). ');
+$ax += cidrblock($address, '27.63.40.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-063). ');
+$ax += cidrblock($address, '27.63.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-064). ');
+$ax += cidrblock($address, '27.63.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-065). ');
+$ax += cidrblock($address, '58.2.236.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-066). ');
+$ax += cidrblock($address, '59.144.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-067). ');
+$ax += cidrblock($address, '61.95.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-068). ');
+$ax += cidrblock($address, '61.246.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-069). ');
+$ax += cidrblock($address, '61.247.224.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-070). ');
+$ax += cidrblock($address, '103.8.215.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-071). ');
+$ax += cidrblock($address, '103.106.148.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-072). ');
+$ax += cidrblock($address, '103.209.96.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-073). ');
+$ax += cidrblock($address, '106.192.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-074). ');
+$ax += cidrblock($address, '106.193.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-075). ');
+$ax += cidrblock($address, '106.193.128.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-076). ');
+$ax += cidrblock($address, '106.193.136.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-077). ');
+$ax += cidrblock($address, '106.193.144.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-078). ');
+$ax += cidrblock($address, '106.193.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-079). ');
+$ax += cidrblock($address, '106.193.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-080). ');
+$ax += cidrblock($address, '106.193.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-081). ');
+$ax += cidrblock($address, '106.193.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-082). ');
+$ax += cidrblock($address, '106.193.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-083). ');
+$ax += cidrblock($address, '106.193.192.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-084). ');
+$ax += cidrblock($address, '106.193.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-085). ');
+$ax += cidrblock($address, '106.193.208.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-086). ');
+$ax += cidrblock($address, '106.193.216.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-087). ');
+$ax += cidrblock($address, '106.193.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-088). ');
+$ax += cidrblock($address, '106.193.232.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-089). ');
+$ax += cidrblock($address, '106.193.240.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-090). ');
+$ax += cidrblock($address, '106.193.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-091). ');
+$ax += cidrblock($address, '106.195.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-092). ');
+$ax += cidrblock($address, '106.196.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-093). ');
+$ax += cidrblock($address, '106.197.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-094). ');
+$ax += cidrblock($address, '106.197.32.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-095). ');
+$ax += cidrblock($address, '106.197.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-096). ');
+$ax += cidrblock($address, '106.198.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-097). ');
+$ax += cidrblock($address, '106.198.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-098). ');
+$ax += cidrblock($address, '106.198.108.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-099). ');
+$ax += cidrblock($address, '106.198.116.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-100). ');
+$ax += cidrblock($address, '106.198.120.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-101). ');
+$ax += cidrblock($address, '106.198.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-102). ');
+$ax += cidrblock($address, '106.199.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-103). ');
+$ax += cidrblock($address, '106.200.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-104). ');
+$ax += cidrblock($address, '106.200.64.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-105). ');
+$ax += cidrblock($address, '106.200.72.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-106). ');
+$ax += cidrblock($address, '106.200.80.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-107). ');
+$ax += cidrblock($address, '106.200.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-108). ');
+$ax += cidrblock($address, '106.200.140.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-109). ');
+$ax += cidrblock($address, '106.200.144.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-110). ');
+$ax += cidrblock($address, '106.200.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-111). ');
+$ax += cidrblock($address, '106.200.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-112). ');
+$ax += cidrblock($address, '106.201.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-113). ');
+$ax += cidrblock($address, '106.202.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-114). ');
+$ax += cidrblock($address, '106.203.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-115). ');
+$ax += cidrblock($address, '106.203.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-116). ');
+$ax += cidrblock($address, '106.204.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-117). ');
+$ax += cidrblock($address, '106.205.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-118). ');
+$ax += cidrblock($address, '106.205.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-119). ');
+$ax += cidrblock($address, '106.206.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-120). ');
+$ax += cidrblock($address, '106.206.64.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-121). ');
+$ax += cidrblock($address, '106.206.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-122). ');
+$ax += cidrblock($address, '106.207.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-123). ');
+$ax += cidrblock($address, '106.208.0.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-124). ');
+$ax += cidrblock($address, '106.208.8.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-125). ');
+$ax += cidrblock($address, '106.208.16.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-126). ');
+$ax += cidrblock($address, '106.208.24.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-127). ');
+$ax += cidrblock($address, '106.208.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-128). ');
+$ax += cidrblock($address, '106.208.40.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-129). ');
+$ax += cidrblock($address, '106.208.48.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-130). ');
+$ax += cidrblock($address, '106.208.56.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-131). ');
+$ax += cidrblock($address, '106.208.64.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-132). ');
+$ax += cidrblock($address, '106.208.72.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-133). ');
+$ax += cidrblock($address, '106.208.80.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-134). ');
+$ax += cidrblock($address, '106.208.88.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-135). ');
+$ax += cidrblock($address, '106.208.96.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-136). ');
+$ax += cidrblock($address, '106.208.104.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-137). ');
+$ax += cidrblock($address, '106.208.112.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-138). ');
+$ax += cidrblock($address, '106.208.120.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-139). ');
+$ax += cidrblock($address, '106.208.128.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-140). ');
+$ax += cidrblock($address, '106.208.168.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-141). ');
+$ax += cidrblock($address, '106.208.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-142). ');
+$ax += cidrblock($address, '106.208.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-143). ');
+$ax += cidrblock($address, '106.209.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-144). ');
+$ax += cidrblock($address, '106.209.128.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-145). ');
+$ax += cidrblock($address, '106.209.136.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-146). ');
+$ax += cidrblock($address, '106.209.144.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-147). ');
+$ax += cidrblock($address, '106.209.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-148). ');
+$ax += cidrblock($address, '106.209.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-149). ');
+$ax += cidrblock($address, '106.209.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-150). ');
+$ax += cidrblock($address, '106.209.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-151). ');
+$ax += cidrblock($address, '106.209.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-152). ');
+$ax += cidrblock($address, '106.209.192.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-153). ');
+$ax += cidrblock($address, '106.209.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-154). ');
+$ax += cidrblock($address, '106.209.208.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-155). ');
+$ax += cidrblock($address, '106.209.216.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-156). ');
+$ax += cidrblock($address, '106.209.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-157). ');
+$ax += cidrblock($address, '106.209.232.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-158). ');
+$ax += cidrblock($address, '106.209.240.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-159). ');
+$ax += cidrblock($address, '106.209.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-160). ');
+$ax += cidrblock($address, '106.210.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-161). ');
+$ax += cidrblock($address, '106.210.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-162). ');
+$ax += cidrblock($address, '106.210.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-163). ');
+$ax += cidrblock($address, '106.210.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-164). ');
+$ax += cidrblock($address, '106.210.240.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-165). ');
+$ax += cidrblock($address, '106.210.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-166). ');
+$ax += cidrblock($address, '106.211.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-167). ');
+$ax += cidrblock($address, '106.211.184.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-168). ');
+$ax += cidrblock($address, '106.211.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-169). ');
+$ax += cidrblock($address, '106.212.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-170). ');
+$ax += cidrblock($address, '106.213.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-171). ');
+$ax += cidrblock($address, '106.213.192.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-172). ');
+$ax += cidrblock($address, '106.215.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-173). ');
+$ax += cidrblock($address, '106.216.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-174). ');
+$ax += cidrblock($address, '106.216.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-175). ');
+$ax += cidrblock($address, '106.217.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-176). ');
+$ax += cidrblock($address, '106.217.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-177). ');
+$ax += cidrblock($address, '106.217.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-178). ');
+$ax += cidrblock($address, '106.218.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-179). ');
+$ax += cidrblock($address, '106.220.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-180). ');
+$ax += cidrblock($address, '106.220.32.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-181). ');
+$ax += cidrblock($address, '106.220.48.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-182). ');
+$ax += cidrblock($address, '106.220.64.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-183). ');
+$ax += cidrblock($address, '106.220.112.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-184). ');
+$ax += cidrblock($address, '106.220.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-185). ');
+$ax += cidrblock($address, '106.220.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-186). ');
+$ax += cidrblock($address, '106.220.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-187). ');
+$ax += cidrblock($address, '106.222.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-188). ');
+$ax += cidrblock($address, '106.222.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-189). ');
+$ax += cidrblock($address, '106.222.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-190). ');
+$ax += cidrblock($address, '106.223.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-191). ');
+$ax += cidrblock($address, '110.224.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-192). ');
+$ax += cidrblock($address, '110.224.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-193). ');
+$ax += cidrblock($address, '110.224.40.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-194). ');
+$ax += cidrblock($address, '110.224.48.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-195). ');
+$ax += cidrblock($address, '110.224.56.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-196). ');
+$ax += cidrblock($address, '110.224.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-197). ');
+$ax += cidrblock($address, '110.224.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-198). ');
+$ax += cidrblock($address, '110.225.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-199). ');
+$ax += cidrblock($address, '110.225.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-200). ');
+$ax += cidrblock($address, '110.225.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-201). ');
+$ax += cidrblock($address, '110.226.224.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-202). ');
+$ax += cidrblock($address, '110.227.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-203). ');
+$ax += cidrblock($address, '110.227.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-204). ');
+$ax += cidrblock($address, '116.90.241.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-205). ');
+$ax += cidrblock($address, '116.119.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-206). ');
+$ax += cidrblock($address, '117.96.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-207). ');
+$ax += cidrblock($address, '117.96.28.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-208). ');
+$ax += cidrblock($address, '117.96.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-209). ');
+$ax += cidrblock($address, '117.96.64.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-210). ');
+$ax += cidrblock($address, '117.96.80.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-211). ');
+$ax += cidrblock($address, '117.96.88.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-212). ');
+$ax += cidrblock($address, '117.96.90.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-213). ');
+$ax += cidrblock($address, '117.96.93.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-214). ');
+$ax += cidrblock($address, '117.96.94.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-215). ');
+$ax += cidrblock($address, '117.96.96.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-216). ');
+$ax += cidrblock($address, '117.96.104.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-217). ');
+$ax += cidrblock($address, '117.96.120.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-218). ');
+$ax += cidrblock($address, '117.96.123.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-219). ');
+$ax += cidrblock($address, '117.96.152.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-220). ');
+$ax += cidrblock($address, '117.96.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-221). ');
+$ax += cidrblock($address, '117.97.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-222). ');
+$ax += cidrblock($address, '117.97.80.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-223). ');
+$ax += cidrblock($address, '117.97.93.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-224). ');
+$ax += cidrblock($address, '117.97.94.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-225). ');
+$ax += cidrblock($address, '117.97.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-226). ');
+$ax += cidrblock($address, '117.97.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-227). ');
+$ax += cidrblock($address, '117.97.221.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-228). ');
+$ax += cidrblock($address, '117.97.222.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-229). ');
+$ax += cidrblock($address, '117.97.224.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-230). ');
+$ax += cidrblock($address, '117.98.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-231). ');
+$ax += cidrblock($address, '117.98.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-232). ');
+$ax += cidrblock($address, '117.98.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-233). ');
+$ax += cidrblock($address, '117.98.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-234). ');
+$ax += cidrblock($address, '117.98.254.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-235). ');
+$ax += cidrblock($address, '117.99.34.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-236). ');
+$ax += cidrblock($address, '117.99.36.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-237). ');
+$ax += cidrblock($address, '117.99.40.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-238). ');
+$ax += cidrblock($address, '117.99.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-239). ');
+$ax += cidrblock($address, '117.99.128.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-240). ');
+$ax += cidrblock($address, '117.99.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-241). ');
+$ax += cidrblock($address, '122.160.0.0/14', 'Bharti Airtel (IP4S-BHARTIAIRTEL-242). ');
+$ax += cidrblock($address, '122.164.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-243). ');
+$ax += cidrblock($address, '122.164.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-244). ');
+$ax += cidrblock($address, '122.164.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-245). ');
+$ax += cidrblock($address, '122.164.112.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-246). ');
+$ax += cidrblock($address, '122.164.124.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-247). ');
+$ax += cidrblock($address, '122.164.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-248). ');
+$ax += cidrblock($address, '122.164.192.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-249). ');
+$ax += cidrblock($address, '122.164.195.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-250). ');
+$ax += cidrblock($address, '122.164.196.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-251). ');
+$ax += cidrblock($address, '122.164.200.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-252). ');
+$ax += cidrblock($address, '122.164.208.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-253). ');
+$ax += cidrblock($address, '122.164.224.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-254). ');
+$ax += cidrblock($address, '122.165.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-255). ');
+$ax += cidrblock($address, '122.165.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-256). ');
+$ax += cidrblock($address, '122.165.48.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-257). ');
+$ax += cidrblock($address, '122.165.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-258). ');
+$ax += cidrblock($address, '122.165.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-259). ');
+$ax += cidrblock($address, '122.166.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-260). ');
+$ax += cidrblock($address, '122.166.16.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-261). ');
+$ax += cidrblock($address, '122.166.24.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-262). ');
+$ax += cidrblock($address, '122.166.26.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-263). ');
+$ax += cidrblock($address, '122.166.29.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-264). ');
+$ax += cidrblock($address, '122.166.30.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-265). ');
+$ax += cidrblock($address, '122.166.32.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-266). ');
+$ax += cidrblock($address, '122.166.40.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-267). ');
+$ax += cidrblock($address, '122.166.42.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-268). ');
+$ax += cidrblock($address, '122.166.44.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-269). ');
+$ax += cidrblock($address, '122.166.48.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-270). ');
+$ax += cidrblock($address, '122.166.64.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-271). ');
+$ax += cidrblock($address, '122.166.80.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-272). ');
+$ax += cidrblock($address, '122.166.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-273). ');
+$ax += cidrblock($address, '122.166.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-274). ');
+$ax += cidrblock($address, '122.166.192.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-275). ');
+$ax += cidrblock($address, '122.166.201.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-276). ');
+$ax += cidrblock($address, '122.166.202.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-277). ');
+$ax += cidrblock($address, '122.166.204.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-278). ');
+$ax += cidrblock($address, '122.166.208.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-279). ');
+$ax += cidrblock($address, '122.166.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-280). ');
+$ax += cidrblock($address, '122.166.240.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-281). ');
+$ax += cidrblock($address, '122.166.244.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-282). ');
+$ax += cidrblock($address, '122.167.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-283). ');
+$ax += cidrblock($address, '122.167.32.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-284). ');
+$ax += cidrblock($address, '122.167.52.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-285). ');
+$ax += cidrblock($address, '122.167.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-286). ');
+$ax += cidrblock($address, '122.167.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-287). ');
+$ax += cidrblock($address, '122.167.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-288). ');
+$ax += cidrblock($address, '122.167.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-289). ');
+$ax += cidrblock($address, '122.167.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-290). ');
+$ax += cidrblock($address, '122.167.192.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-291). ');
+$ax += cidrblock($address, '122.167.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-292). ');
+$ax += cidrblock($address, '122.167.208.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-293). ');
+$ax += cidrblock($address, '122.167.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-294). ');
+$ax += cidrblock($address, '122.168.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-295). ');
+$ax += cidrblock($address, '122.168.128.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-296). ');
+$ax += cidrblock($address, '122.168.136.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-297). ');
+$ax += cidrblock($address, '122.168.138.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-298). ');
+$ax += cidrblock($address, '122.168.140.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-299). ');
+$ax += cidrblock($address, '122.168.144.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-300). ');
+$ax += cidrblock($address, '122.168.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-301). ');
+$ax += cidrblock($address, '122.168.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-302). ');
+$ax += cidrblock($address, '122.169.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-303). ');
+$ax += cidrblock($address, '122.169.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-304). ');
+$ax += cidrblock($address, '122.169.40.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-305). ');
+$ax += cidrblock($address, '122.169.48.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-306). ');
+$ax += cidrblock($address, '122.169.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-307). ');
+$ax += cidrblock($address, '122.169.128.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-308). ');
+$ax += cidrblock($address, '122.169.144.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-309). ');
+$ax += cidrblock($address, '122.169.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-310). ');
+$ax += cidrblock($address, '122.169.190.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-311). ');
+$ax += cidrblock($address, '122.169.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-312). ');
+$ax += cidrblock($address, '122.170.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-313). ');
+$ax += cidrblock($address, '122.171.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-314). ');
+$ax += cidrblock($address, '122.171.17.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-315). ');
+$ax += cidrblock($address, '122.171.20.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-316). ');
+$ax += cidrblock($address, '122.171.22.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-317). ');
+$ax += cidrblock($address, '122.171.24.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-318). ');
+$ax += cidrblock($address, '122.171.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-319). ');
+$ax += cidrblock($address, '122.171.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-320). ');
+$ax += cidrblock($address, '122.171.144.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-321). ');
+$ax += cidrblock($address, '122.171.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-322). ');
+$ax += cidrblock($address, '122.171.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-323). ');
+$ax += cidrblock($address, '122.171.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-324). ');
+$ax += cidrblock($address, '122.172.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-325). ');
+$ax += cidrblock($address, '122.172.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-326). ');
+$ax += cidrblock($address, '122.172.208.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-327). ');
+$ax += cidrblock($address, '122.172.248.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-328). ');
+$ax += cidrblock($address, '122.173.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-329). ');
+$ax += cidrblock($address, '122.174.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-330). ');
+$ax += cidrblock($address, '122.175.1.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-331). ');
+$ax += cidrblock($address, '122.175.12.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-332). ');
+$ax += cidrblock($address, '122.175.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-333). ');
+$ax += cidrblock($address, '122.175.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-334). ');
+$ax += cidrblock($address, '122.175.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-335). ');
+$ax += cidrblock($address, '122.175.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-336). ');
+$ax += cidrblock($address, '122.175.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-337). ');
+$ax += cidrblock($address, '122.175.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-338). ');
+$ax += cidrblock($address, '122.175.240.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-339). ');
+$ax += cidrblock($address, '122.175.248.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-340). ');
+$ax += cidrblock($address, '122.175.255.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-341). ');
+$ax += cidrblock($address, '122.176.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-342). ');
+$ax += cidrblock($address, '122.176.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-343). ');
+$ax += cidrblock($address, '122.176.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-344). ');
+$ax += cidrblock($address, '122.176.112.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-345). ');
+$ax += cidrblock($address, '122.176.120.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-346). ');
+$ax += cidrblock($address, '122.176.126.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-347). ');
+$ax += cidrblock($address, '122.176.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-348). ');
+$ax += cidrblock($address, '122.177.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-349). ');
+$ax += cidrblock($address, '122.178.8.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-350). ');
+$ax += cidrblock($address, '122.178.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-351). ');
+$ax += cidrblock($address, '122.178.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-352). ');
+$ax += cidrblock($address, '122.178.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-353). ');
+$ax += cidrblock($address, '122.178.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-354). ');
+$ax += cidrblock($address, '122.179.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-355). ');
+$ax += cidrblock($address, '122.179.64.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-356). ');
+$ax += cidrblock($address, '122.179.128.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-357). ');
+$ax += cidrblock($address, '122.179.144.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-358). ');
+$ax += cidrblock($address, '122.179.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-359). ');
+$ax += cidrblock($address, '122.179.156.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-360). ');
+$ax += cidrblock($address, '122.179.158.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-361). ');
+$ax += cidrblock($address, '122.179.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-362). ');
+$ax += cidrblock($address, '122.179.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-363). ');
+$ax += cidrblock($address, '122.179.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-364). ');
+$ax += cidrblock($address, '122.179.190.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-365). ');
+$ax += cidrblock($address, '122.179.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-366). ');
+$ax += cidrblock($address, '122.180.0.0/14', 'Bharti Airtel (IP4S-BHARTIAIRTEL-367). ');
+$ax += cidrblock($address, '122.184.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-368). ');
+$ax += cidrblock($address, '125.16.0.0/13', 'Bharti Airtel (IP4S-BHARTIAIRTEL-369). ');
+$ax += cidrblock($address, '125.62.150.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-370). ');
+$ax += cidrblock($address, '125.62.167.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-371). ');
+$ax += cidrblock($address, '125.62.179.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-372). ');
+$ax += cidrblock($address, '125.62.187.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-373). ');
+$ax += cidrblock($address, '125.62.190.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-374). ');
+$ax += cidrblock($address, '164.164.121.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-375). ');
+$ax += cidrblock($address, '171.48.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-376). ');
+$ax += cidrblock($address, '171.49.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-377). ');
+$ax += cidrblock($address, '171.49.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-378). ');
+$ax += cidrblock($address, '171.49.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-379). ');
+$ax += cidrblock($address, '171.49.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-380). ');
+$ax += cidrblock($address, '171.49.240.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-381). ');
+$ax += cidrblock($address, '171.49.248.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-382). ');
+$ax += cidrblock($address, '171.50.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-383). ');
+$ax += cidrblock($address, '171.51.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-384). ');
+$ax += cidrblock($address, '171.51.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-385). ');
+$ax += cidrblock($address, '171.51.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-386). ');
+$ax += cidrblock($address, '171.51.180.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-387). ');
+$ax += cidrblock($address, '171.51.184.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-388). ');
+$ax += cidrblock($address, '171.51.196.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-389). ');
+$ax += cidrblock($address, '171.51.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-390). ');
+$ax += cidrblock($address, '171.51.208.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-391). ');
+$ax += cidrblock($address, '171.51.220.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-392). ');
+$ax += cidrblock($address, '171.51.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-393). ');
+$ax += cidrblock($address, '171.51.232.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-394). ');
+$ax += cidrblock($address, '171.51.244.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-395). ');
+$ax += cidrblock($address, '171.60.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-396). ');
+$ax += cidrblock($address, '171.76.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-397). ');
+$ax += cidrblock($address, '171.76.64.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-398). ');
+$ax += cidrblock($address, '171.76.68.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-399). ');
+$ax += cidrblock($address, '171.76.72.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-400). ');
+$ax += cidrblock($address, '171.76.80.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-401). ');
+$ax += cidrblock($address, '171.76.96.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-402). ');
+$ax += cidrblock($address, '171.76.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-403). ');
+$ax += cidrblock($address, '171.77.128.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-404). ');
+$ax += cidrblock($address, '171.77.136.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-405). ');
+$ax += cidrblock($address, '171.77.144.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-406). ');
+$ax += cidrblock($address, '171.77.152.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-407). ');
+$ax += cidrblock($address, '171.78.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-408). ');
+$ax += cidrblock($address, '171.79.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-409). ');
+$ax += cidrblock($address, '171.79.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-410). ');
+$ax += cidrblock($address, '182.64.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-411). ');
+$ax += cidrblock($address, '182.64.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-412). ');
+$ax += cidrblock($address, '182.64.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-413). ');
+$ax += cidrblock($address, '182.64.224.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-414). ');
+$ax += cidrblock($address, '182.64.228.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-415). ');
+$ax += cidrblock($address, '182.64.230.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-416). ');
+$ax += cidrblock($address, '182.64.236.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-417). ');
+$ax += cidrblock($address, '182.64.240.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-418). ');
+$ax += cidrblock($address, '182.65.0.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-419). ');
+$ax += cidrblock($address, '182.65.4.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-420). ');
+$ax += cidrblock($address, '182.65.8.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-421). ');
+$ax += cidrblock($address, '182.65.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-422). ');
+$ax += cidrblock($address, '182.65.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-423). ');
+$ax += cidrblock($address, '182.65.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-424). ');
+$ax += cidrblock($address, '182.65.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-425). ');
+$ax += cidrblock($address, '182.65.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-426). ');
+$ax += cidrblock($address, '182.66.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-427). ');
+$ax += cidrblock($address, '182.66.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-428). ');
+$ax += cidrblock($address, '182.67.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-429). ');
+$ax += cidrblock($address, '182.68.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-430). ');
+$ax += cidrblock($address, '182.68.128.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-431). ');
+$ax += cidrblock($address, '182.68.152.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-432). ');
+$ax += cidrblock($address, '182.68.160.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-433). ');
+$ax += cidrblock($address, '182.68.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-434). ');
+$ax += cidrblock($address, '182.69.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-435). ');
+$ax += cidrblock($address, '182.69.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-436). ');
+$ax += cidrblock($address, '182.69.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-437). ');
+$ax += cidrblock($address, '182.69.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-438). ');
+$ax += cidrblock($address, '182.69.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-439). ');
+$ax += cidrblock($address, '182.69.188.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-440). ');
+$ax += cidrblock($address, '182.69.191.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-441). ');
+$ax += cidrblock($address, '182.69.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-442). ');
+$ax += cidrblock($address, '182.70.0.0/15', 'Bharti Airtel (IP4S-BHARTIAIRTEL-443). ');
+$ax += cidrblock($address, '182.72.0.0/14', 'Bharti Airtel (IP4S-BHARTIAIRTEL-444). ');
+$ax += cidrblock($address, '182.76.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-445). ');
+$ax += cidrblock($address, '182.77.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-446). ');
+$ax += cidrblock($address, '182.78.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-447). ');
+$ax += cidrblock($address, '182.79.128.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-448). ');
+$ax += cidrblock($address, '182.79.132.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-449). ');
+$ax += cidrblock($address, '182.79.134.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-450). ');
+$ax += cidrblock($address, '182.79.138.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-451). ');
+$ax += cidrblock($address, '182.79.143.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-452). ');
+$ax += cidrblock($address, '182.79.144.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-453). ');
+$ax += cidrblock($address, '182.79.147.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-454). ');
+$ax += cidrblock($address, '182.79.148.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-455). ');
+$ax += cidrblock($address, '182.79.155.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-456). ');
+$ax += cidrblock($address, '182.79.156.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-457). ');
+$ax += cidrblock($address, '182.79.161.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-458). ');
+$ax += cidrblock($address, '182.79.163.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-459). ');
+$ax += cidrblock($address, '182.79.164.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-460). ');
+$ax += cidrblock($address, '182.79.167.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-461). ');
+$ax += cidrblock($address, '182.79.173.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-462). ');
+$ax += cidrblock($address, '182.79.174.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-463). ');
+$ax += cidrblock($address, '182.79.176.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-464). ');
+$ax += cidrblock($address, '182.79.179.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-465). ');
+$ax += cidrblock($address, '182.79.186.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-466). ');
+$ax += cidrblock($address, '182.79.194.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-467). ');
+$ax += cidrblock($address, '182.79.209.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-468). ');
+$ax += cidrblock($address, '182.79.212.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-469). ');
+$ax += cidrblock($address, '182.79.217.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-470). ');
+$ax += cidrblock($address, '182.79.218.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-471). ');
+$ax += cidrblock($address, '182.79.220.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-472). ');
+$ax += cidrblock($address, '182.79.224.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-473). ');
+$ax += cidrblock($address, '182.79.230.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-474). ');
+$ax += cidrblock($address, '182.79.235.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-475). ');
+$ax += cidrblock($address, '182.79.237.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-476). ');
+$ax += cidrblock($address, '182.79.238.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-477). ');
+$ax += cidrblock($address, '182.79.240.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-478). ');
+$ax += cidrblock($address, '182.79.244.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-479). ');
+$ax += cidrblock($address, '182.79.248.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-480). ');
+$ax += cidrblock($address, '182.79.251.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-481). ');
+$ax += cidrblock($address, '182.79.252.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-482). ');
+$ax += cidrblock($address, '192.12.109.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-483). ');
+$ax += cidrblock($address, '202.56.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-484). ');
+$ax += cidrblock($address, '202.92.233.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-485). ');
+$ax += cidrblock($address, '202.123.34.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-486). ');
+$ax += cidrblock($address, '202.123.37.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-487). ');
+$ax += cidrblock($address, '202.123.39.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-488). ');
+$ax += cidrblock($address, '202.123.42.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-489). ');
+$ax += cidrblock($address, '202.123.44.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-490). ');
+$ax += cidrblock($address, '202.123.47.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-491). ');
+$ax += cidrblock($address, '202.140.63.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-492). ');
+$ax += cidrblock($address, '203.16.165.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-493). ');
+$ax += cidrblock($address, '203.101.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-494). ');
+$ax += cidrblock($address, '203.132.139.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-495). ');
+$ax += cidrblock($address, '203.132.152.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-496). ');
+$ax += cidrblock($address, '203.132.156.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-497). ');
+$ax += cidrblock($address, '203.132.158.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-498). ');
+$ax += cidrblock($address, '203.145.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-499). ');
+$ax += cidrblock($address, '203.190.144.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-500). ');
+$ax += cidrblock($address, '203.192.227.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-501). ');
+$ax += cidrblock($address, '203.193.178.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-502). ');
+$ax += cidrblock($address, '223.176.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-503). ');
+$ax += cidrblock($address, '223.178.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-504). ');
+$ax += cidrblock($address, '223.178.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-505). ');
+$ax += cidrblock($address, '223.179.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-506). ');
+$ax += cidrblock($address, '223.179.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-507). ');
+$ax += cidrblock($address, '223.179.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-508). ');
+$ax += cidrblock($address, '223.180.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-509). ');
+$ax += cidrblock($address, '223.180.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-510). ');
+$ax += cidrblock($address, '223.180.224.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-511). ');
+$ax += cidrblock($address, '223.181.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-512). ');
+$ax += cidrblock($address, '223.181.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-513). ');
+$ax += cidrblock($address, '223.181.224.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-514). ');
+$ax += cidrblock($address, '223.181.240.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-515). ');
+$ax += cidrblock($address, '223.182.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-516). ');
+$ax += cidrblock($address, '223.182.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-517). ');
+$ax += cidrblock($address, '223.182.160.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-518). ');
+$ax += cidrblock($address, '223.182.168.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-519). ');
+$ax += cidrblock($address, '223.182.176.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-520). ');
+$ax += cidrblock($address, '223.182.184.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-521). ');
+$ax += cidrblock($address, '223.182.192.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-522). ');
+$ax += cidrblock($address, '223.182.208.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-523). ');
+$ax += cidrblock($address, '223.183.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-524). ');
+$ax += cidrblock($address, '223.184.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-525). ');
+$ax += cidrblock($address, '223.185.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-526). ');
+$ax += cidrblock($address, '223.185.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-527). ');
+$ax += cidrblock($address, '223.186.0.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-528). ');
+$ax += cidrblock($address, '223.186.8.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-529). ');
+$ax += cidrblock($address, '223.186.16.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-530). ');
+$ax += cidrblock($address, '223.186.24.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-531). ');
+$ax += cidrblock($address, '223.186.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-532). ');
+$ax += cidrblock($address, '223.186.40.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-533). ');
+$ax += cidrblock($address, '223.186.48.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-534). ');
+$ax += cidrblock($address, '223.186.56.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-535). ');
+$ax += cidrblock($address, '223.186.64.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-536). ');
+$ax += cidrblock($address, '223.186.72.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-537). ');
+$ax += cidrblock($address, '223.186.80.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-538). ');
+$ax += cidrblock($address, '223.186.88.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-539). ');
+$ax += cidrblock($address, '223.186.96.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-540). ');
+$ax += cidrblock($address, '223.186.104.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-541). ');
+$ax += cidrblock($address, '223.186.112.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-542). ');
+$ax += cidrblock($address, '223.186.120.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-543). ');
+$ax += cidrblock($address, '223.186.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-544). ');
+$ax += cidrblock($address, '223.186.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-545). ');
+$ax += cidrblock($address, '223.186.176.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-546). ');
+$ax += cidrblock($address, '223.186.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-547). ');
+$ax += cidrblock($address, '223.187.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-548). ');
+$ax += cidrblock($address, '223.187.192.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-549). ');
+$ax += cidrblock($address, '223.188.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-550). ');
+$ax += cidrblock($address, '223.188.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-551). ');
+$ax += cidrblock($address, '223.189.0.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-552). ');
+$ax += cidrblock($address, '223.189.8.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-553). ');
+$ax += cidrblock($address, '223.189.20.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-554). ');
+$ax += cidrblock($address, '223.189.24.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-555). ');
+$ax += cidrblock($address, '223.189.32.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-556). ');
+$ax += cidrblock($address, '223.189.44.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-557). ');
+$ax += cidrblock($address, '223.189.48.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-558). ');
+$ax += cidrblock($address, '223.189.56.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-559). ');
+$ax += cidrblock($address, '223.189.76.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-560). ');
+$ax += cidrblock($address, '223.189.80.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-561). ');
+$ax += cidrblock($address, '223.189.88.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-562). ');
+$ax += cidrblock($address, '223.189.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-563). ');
+$ax += cidrblock($address, '223.190.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-564). ');
+$ax += cidrblock($address, '223.191.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-565). ');
+$ax += cidrblock($address, '223.191.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-566). ');
+$ax += cidrblock($address, '223.224.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-567). ');
+$ax += cidrblock($address, '223.225.0.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-568). ');
+$ax += cidrblock($address, '223.225.32.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-569). ');
+$ax += cidrblock($address, '223.225.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-570). ');
+$ax += cidrblock($address, '223.225.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-571). ');
+$ax += cidrblock($address, '223.225.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-572). ');
+$ax += cidrblock($address, '223.225.192.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-573). ');
+$ax += cidrblock($address, '223.226.12.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-574). ');
+$ax += cidrblock($address, '223.226.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-575). ');
+$ax += cidrblock($address, '223.226.32.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-576). ');
+$ax += cidrblock($address, '223.226.64.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-577). ');
+$ax += cidrblock($address, '223.227.0.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-578). ');
+$ax += cidrblock($address, '223.227.16.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-579). ');
+$ax += cidrblock($address, '223.227.24.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-580). ');
+$ax += cidrblock($address, '223.227.28.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-581). ');
+$ax += cidrblock($address, '223.227.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-582). ');
+$ax += cidrblock($address, '223.227.48.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-583). ');
+$ax += cidrblock($address, '223.227.112.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-584). ');
+$ax += cidrblock($address, '223.228.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-585). ');
+$ax += cidrblock($address, '223.228.128.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-586). ');
+$ax += cidrblock($address, '223.229.0.0/16', 'Bharti Airtel (IP4S-BHARTIAIRTEL-587). ');
+$ax += cidrblock($address, '223.230.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-588). ');
+$ax += cidrblock($address, '223.230.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-589). ');
+$ax += cidrblock($address, '223.230.160.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-590). ');
+$ax += cidrblock($address, '223.231.0.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-591). ');
+$ax += cidrblock($address, '223.233.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-592). ');
+$ax += cidrblock($address, '223.233.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-593). ');
+$ax += cidrblock($address, '223.233.96.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-594). ');
+$ax += cidrblock($address, '223.237.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-595). ');
+$ax += cidrblock($address, '223.237.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-596). ');
+$ax += cidrblock($address, '223.238.0.0/18', 'Bharti Airtel (IP4S-BHARTIAIRTEL-597). ');
+$ax += cidrblock($address, '223.238.64.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-598). ');
+$ax += cidrblock($address, '223.238.128.0/17', 'Bharti Airtel (IP4S-BHARTIAIRTEL-599). ');
+$ax += cidrblock($address, '223.239.0.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-600). ');
+$ax += cidrblock($address, '223.239.8.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-601). ');
+$ax += cidrblock($address, '223.239.10.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-602). ');
+$ax += cidrblock($address, '223.239.12.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-603). ');
+$ax += cidrblock($address, '223.239.14.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-604). ');
+$ax += cidrblock($address, '223.239.16.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-605). ');
+$ax += cidrblock($address, '223.239.40.0/21', 'Bharti Airtel (IP4S-BHARTIAIRTEL-606). ');
+$ax += cidrblock($address, '223.239.128.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-607). ');
+$ax += cidrblock($address, '223.239.192.0/19', 'Bharti Airtel (IP4S-BHARTIAIRTEL-608). ');
+$ax += cidrblock($address, '223.239.240.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-609). ');
+$ax += cidrblock($address, '61.248.120.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-610). ');
+$ax += cidrblock($address, '43.228.108.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-611). ');
+$ax += cidrblock($address, '101.2.176.0/20', 'Bharti Airtel (IP4S-BHARTIAIRTEL-612). ');
+$ax += cidrblock($address, '103.227.244.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-613). ');
+$ax += cidrblock($address, '203.153.220.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-614). ');
 
 
 // ASN 23944 ("SKYBroadband SKYCable Corporation").
 // ( CIDRs that we haven't yet seen any problems from have been omitted. I hope to eventually remove this section entirely. )
-// Updated: 2019.04.16
+// Updated: 2019.08.27
 
-$ax += cidrblock($address, '114.108.192.0/18', 'SKYBROADBAND (IP4S-SKYBROADBAND-0). ');
-$ax += cidrblock($address, '130.105.0.0/16', 'SKYBROADBAND (IP4S-SKYBROADBAND-1). ');
-$ax += cidrblock($address, '182.18.192.0/18', 'SKYBROADBAND (IP4S-SKYBROADBAND-2). ');
-$ax += cidrblock($address, '202.128.52.0/22', 'SKYBROADBAND (IP4S-SKYBROADBAND-3). ');
+$ax += cidrblock($address, '130.105.0.0/16', 'SKYBROADBAND (IP4S-SKYBROADBAND-0). ');
 
 
 // ASN 9808 ("Guangdong Mobile Communication Co.Ltd").
@@ -7305,7 +7331,7 @@ $ax += cidrblock($address, '217.65.248.0/21', 'UARNet (IP4S-UARNET-85). ');
 
 
 // ASN 44493 ("Chelyabinsk-Signal").
-// Updated: 2018.03.23 / Checked: 2019.02.27
+// Updated: 2018.03.23 / Checked: 2019.08.29
 
 $ax += cidrblock($address, '80.85.152.0/23', 'Chelyabinsk-Signal (IP4S-CHELYABINSKSIGNAL-0). ');
 $ax += cidrblock($address, '80.85.154.0/24', 'Chelyabinsk-Signal (IP4S-CHELYABINSKSIGNAL-1). ');
@@ -7655,14 +7681,14 @@ $ax += cidrblock($address, '82.129.6.0/23', 'IGNACIO SANCHEZ RUIZ (IP4S-IGNACIOS
 // ASN 133610 ("BRAC").
 // An NGO charity whose IPs were caught being used in attempts to hack into WordPress installations.
 // Refer abuseipdb.com/check/103.43.93.26 for example.
-// Updated: 2017.10.20 / Checked: 2019.01.27
+// Updated: 2017.10.20 / Checked: 2019.08.18
 
 $ax += cidrblock($address, '103.43.93.0/24', 'BRAC (IP4S-BRAC-0). ');
 $ax += cidrblock($address, '103.238.63.0/24', 'BRAC (IP4S-BRAC-1). ');
 
 
 // ASN 41109 ("Center of Children Telemedicin and new information technologis").
-// Updated: 2017.10.23 / Checked: 2019.02.14
+// Updated: 2017.10.23 / Checked: 2019.08.29
 
 $ax += cidrblock($address, '81.200.80.0/20', 'Children Telemedicin (IP4S-CHILDRENTELEMEDICIN-0). ');
 
@@ -8691,64 +8717,64 @@ $ax += cidrblock($address, '223.72.0.0/16', 'China Mobile (IP4S-CHINAMOBILE-3). 
 
 
 // ASN 8708 ("RCS & RDS SA").
-// Updated: 2019.04.14
+// Updated: 2019.08.22
 
 $ax += cidrblock($address, '2.16.166.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-000). ');
 $ax += cidrblock($address, '2.17.116.0/22', 'RCS & RDS SA (IP4S-RCSRDSSA-001). ');
 $ax += cidrblock($address, '2.20.96.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-002). ');
 $ax += cidrblock($address, '128.0.60.0/22', 'RCS & RDS SA (IP4S-RCSRDSSA-003). ');
-$ax += cidrblock($address, '5.2.128.0/17', 'RCS & RDS SA (IP4S-RCSRDSSA-004). ');
-$ax += cidrblock($address, '5.12.0.0/14', 'RCS & RDS SA (IP4S-RCSRDSSA-005). ');
-$ax += cidrblock($address, '62.231.64.0/18', 'RCS & RDS SA (IP4S-RCSRDSSA-006). ');
-$ax += cidrblock($address, '79.112.0.0/13', 'RCS & RDS SA (IP4S-RCSRDSSA-007). ');
-$ax += cidrblock($address, '80.96.32.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-008). ');
-$ax += cidrblock($address, '80.96.64.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-009). ');
-$ax += cidrblock($address, '80.96.219.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-010). ');
-$ax += cidrblock($address, '80.97.128.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-011). ');
-$ax += cidrblock($address, '80.97.160.0/20', 'RCS & RDS SA (IP4S-RCSRDSSA-012). ');
-$ax += cidrblock($address, '81.18.64.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-013). ');
-$ax += cidrblock($address, '81.180.32.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-014). ');
-$ax += cidrblock($address, '81.180.128.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-015). ');
-$ax += cidrblock($address, '81.181.74.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-016). ');
-$ax += cidrblock($address, '81.181.112.0/20', 'RCS & RDS SA (IP4S-RCSRDSSA-017). ');
-$ax += cidrblock($address, '81.181.128.0/22', 'RCS & RDS SA (IP4S-RCSRDSSA-018). ');
-$ax += cidrblock($address, '81.181.136.0/21', 'RCS & RDS SA (IP4S-RCSRDSSA-019). ');
-$ax += cidrblock($address, '81.181.160.0/20', 'RCS & RDS SA (IP4S-RCSRDSSA-020). ');
-$ax += cidrblock($address, '81.196.0.0/16', 'RCS & RDS SA (IP4S-RCSRDSSA-021). ');
-$ax += cidrblock($address, '82.76.0.0/14', 'RCS & RDS SA (IP4S-RCSRDSSA-022). ');
-$ax += cidrblock($address, '82.137.0.0/18', 'RCS & RDS SA (IP4S-RCSRDSSA-023). ');
-$ax += cidrblock($address, '84.232.128.0/17', 'RCS & RDS SA (IP4S-RCSRDSSA-024). ');
-$ax += cidrblock($address, '85.120.0.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-025). ');
-$ax += cidrblock($address, '85.120.96.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-026). ');
-$ax += cidrblock($address, '85.204.241.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-027). ');
-$ax += cidrblock($address, '85.204.242.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-028). ');
-$ax += cidrblock($address, '86.105.27.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-029). ');
-$ax += cidrblock($address, '86.105.233.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-030). ');
-$ax += cidrblock($address, '86.106.113.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-031). ');
-$ax += cidrblock($address, '86.120.0.0/13', 'RCS & RDS SA (IP4S-RCSRDSSA-032). ');
-$ax += cidrblock($address, '89.34.100.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-033). ');
-$ax += cidrblock($address, '89.34.170.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-034). ');
-$ax += cidrblock($address, '89.34.178.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-035). ');
-$ax += cidrblock($address, '89.36.137.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-036). ');
-$ax += cidrblock($address, '89.37.135.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-037). ');
-$ax += cidrblock($address, '89.38.236.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-038). ');
-$ax += cidrblock($address, '89.40.65.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-039). ');
-$ax += cidrblock($address, '89.43.33.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-040). ');
-$ax += cidrblock($address, '89.43.34.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-041). ');
-$ax += cidrblock($address, '89.43.52.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-042). ');
-$ax += cidrblock($address, '89.43.55.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-043). ');
-$ax += cidrblock($address, '89.43.63.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-044). ');
-$ax += cidrblock($address, '89.44.124.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-045). ');
-$ax += cidrblock($address, '89.46.93.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-046). ');
-$ax += cidrblock($address, '93.114.57.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-047). ');
-$ax += cidrblock($address, '94.176.212.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-048). ');
-$ax += cidrblock($address, '94.177.119.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-049). ');
-$ax += cidrblock($address, '185.178.228.0/22', 'RCS & RDS SA (IP4S-RCSRDSSA-050). ');
-$ax += cidrblock($address, '185.240.253.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-051). ');
-$ax += cidrblock($address, '188.24.0.0/15', 'RCS & RDS SA (IP4S-RCSRDSSA-052). ');
-$ax += cidrblock($address, '188.26.0.0/17', 'RCS & RDS SA (IP4S-RCSRDSSA-053). ');
-$ax += cidrblock($address, '188.26.128.0/18', 'RCS & RDS SA (IP4S-RCSRDSSA-054). ');
-$ax += cidrblock($address, '188.26.192.0/20', 'RCS & RDS SA (IP4S-RCSRDSSA-055). ');
+$ax += cidrblock($address, '92.114.16.0/20', 'RCS & RDS SA (IP4S-RCSRDSSA-004). ');
+$ax += cidrblock($address, '5.2.128.0/17', 'RCS & RDS SA (IP4S-RCSRDSSA-005). ');
+$ax += cidrblock($address, '5.12.0.0/14', 'RCS & RDS SA (IP4S-RCSRDSSA-006). ');
+$ax += cidrblock($address, '62.231.64.0/18', 'RCS & RDS SA (IP4S-RCSRDSSA-007). ');
+$ax += cidrblock($address, '79.112.0.0/13', 'RCS & RDS SA (IP4S-RCSRDSSA-008). ');
+$ax += cidrblock($address, '80.96.32.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-009). ');
+$ax += cidrblock($address, '80.96.64.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-010). ');
+$ax += cidrblock($address, '80.96.219.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-011). ');
+$ax += cidrblock($address, '80.97.128.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-012). ');
+$ax += cidrblock($address, '80.97.160.0/20', 'RCS & RDS SA (IP4S-RCSRDSSA-013). ');
+$ax += cidrblock($address, '81.18.64.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-014). ');
+$ax += cidrblock($address, '81.180.32.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-015). ');
+$ax += cidrblock($address, '81.180.128.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-016). ');
+$ax += cidrblock($address, '81.181.74.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-017). ');
+$ax += cidrblock($address, '81.181.112.0/20', 'RCS & RDS SA (IP4S-RCSRDSSA-018). ');
+$ax += cidrblock($address, '81.181.128.0/22', 'RCS & RDS SA (IP4S-RCSRDSSA-019). ');
+$ax += cidrblock($address, '81.181.136.0/21', 'RCS & RDS SA (IP4S-RCSRDSSA-020). ');
+$ax += cidrblock($address, '81.181.160.0/20', 'RCS & RDS SA (IP4S-RCSRDSSA-021). ');
+$ax += cidrblock($address, '81.196.0.0/16', 'RCS & RDS SA (IP4S-RCSRDSSA-022). ');
+$ax += cidrblock($address, '82.76.0.0/14', 'RCS & RDS SA (IP4S-RCSRDSSA-023). ');
+$ax += cidrblock($address, '82.137.0.0/18', 'RCS & RDS SA (IP4S-RCSRDSSA-024). ');
+$ax += cidrblock($address, '84.232.128.0/17', 'RCS & RDS SA (IP4S-RCSRDSSA-025). ');
+$ax += cidrblock($address, '85.120.0.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-026). ');
+$ax += cidrblock($address, '85.120.96.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-027). ');
+$ax += cidrblock($address, '85.204.241.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-028). ');
+$ax += cidrblock($address, '85.204.242.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-029). ');
+$ax += cidrblock($address, '86.105.27.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-030). ');
+$ax += cidrblock($address, '86.105.233.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-031). ');
+$ax += cidrblock($address, '86.106.113.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-032). ');
+$ax += cidrblock($address, '86.120.0.0/13', 'RCS & RDS SA (IP4S-RCSRDSSA-033). ');
+$ax += cidrblock($address, '89.34.100.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-034). ');
+$ax += cidrblock($address, '89.34.170.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-035). ');
+$ax += cidrblock($address, '89.34.178.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-036). ');
+$ax += cidrblock($address, '89.36.137.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-037). ');
+$ax += cidrblock($address, '89.37.135.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-038). ');
+$ax += cidrblock($address, '89.38.236.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-039). ');
+$ax += cidrblock($address, '89.40.65.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-040). ');
+$ax += cidrblock($address, '89.43.33.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-041). ');
+$ax += cidrblock($address, '89.43.34.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-042). ');
+$ax += cidrblock($address, '89.43.52.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-043). ');
+$ax += cidrblock($address, '89.43.55.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-044). ');
+$ax += cidrblock($address, '89.43.63.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-045). ');
+$ax += cidrblock($address, '89.44.124.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-046). ');
+$ax += cidrblock($address, '89.46.93.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-047). ');
+$ax += cidrblock($address, '93.114.57.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-048). ');
+$ax += cidrblock($address, '94.176.212.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-049). ');
+$ax += cidrblock($address, '94.177.119.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-050). ');
+$ax += cidrblock($address, '185.178.228.0/22', 'RCS & RDS SA (IP4S-RCSRDSSA-051). ');
+$ax += cidrblock($address, '185.248.137.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-052). ');
+$ax += cidrblock($address, '188.24.0.0/15', 'RCS & RDS SA (IP4S-RCSRDSSA-053). ');
+$ax += cidrblock($address, '188.26.0.0/17', 'RCS & RDS SA (IP4S-RCSRDSSA-054). ');
+$ax += cidrblock($address, '188.26.128.0/18', 'RCS & RDS SA (IP4S-RCSRDSSA-055). ');
 $ax += cidrblock($address, '188.26.224.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-056). ');
 $ax += cidrblock($address, '188.27.0.0/16', 'RCS & RDS SA (IP4S-RCSRDSSA-057). ');
 $ax += cidrblock($address, '188.241.15.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-058). ');
@@ -8794,36 +8820,37 @@ $ax += cidrblock($address, '194.102.190.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-097)
 $ax += cidrblock($address, '194.102.229.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-098). ');
 $ax += cidrblock($address, '194.102.244.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-099). ');
 $ax += cidrblock($address, '194.102.247.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-100). ');
-$ax += cidrblock($address, '194.105.19.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-101). ');
-$ax += cidrblock($address, '194.153.224.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-102). ');
-$ax += cidrblock($address, '194.153.226.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-103). ');
-$ax += cidrblock($address, '194.153.230.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-104). ');
-$ax += cidrblock($address, '194.153.239.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-105). ');
-$ax += cidrblock($address, '194.153.242.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-106). ');
-$ax += cidrblock($address, '194.153.245.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-107). ');
-$ax += cidrblock($address, '194.153.248.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-108). ');
-$ax += cidrblock($address, '194.176.173.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-109). ');
-$ax += cidrblock($address, '212.54.96.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-110). ');
-$ax += cidrblock($address, '212.93.128.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-111). ');
-$ax += cidrblock($address, '213.157.160.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-112). ');
-$ax += cidrblock($address, '217.156.7.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-113). ');
-$ax += cidrblock($address, '217.156.9.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-114). ');
-$ax += cidrblock($address, '217.156.13.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-115). ');
-$ax += cidrblock($address, '217.156.14.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-116). ');
-$ax += cidrblock($address, '217.156.19.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-117). ');
-$ax += cidrblock($address, '217.156.32.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-118). ');
-$ax += cidrblock($address, '217.156.41.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-119). ');
-$ax += cidrblock($address, '217.156.47.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-120). ');
-$ax += cidrblock($address, '217.156.59.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-121). ');
-$ax += cidrblock($address, '217.156.71.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-122). ');
-$ax += cidrblock($address, '217.156.90.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-123). ');
-$ax += cidrblock($address, '217.156.92.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-124). ');
-$ax += cidrblock($address, '217.156.94.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-125). ');
-$ax += cidrblock($address, '217.156.96.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-126). ');
-$ax += cidrblock($address, '217.156.101.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-127). ');
-$ax += cidrblock($address, '217.156.106.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-128). ');
-$ax += cidrblock($address, '217.156.122.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-129). ');
-$ax += cidrblock($address, '145.249.109.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-130). ');
+$ax += cidrblock($address, '194.105.3.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-101). ');
+$ax += cidrblock($address, '194.105.19.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-102). ');
+$ax += cidrblock($address, '194.153.224.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-103). ');
+$ax += cidrblock($address, '194.153.226.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-104). ');
+$ax += cidrblock($address, '194.153.230.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-105). ');
+$ax += cidrblock($address, '194.153.239.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-106). ');
+$ax += cidrblock($address, '194.153.242.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-107). ');
+$ax += cidrblock($address, '194.153.245.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-108). ');
+$ax += cidrblock($address, '194.153.248.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-109). ');
+$ax += cidrblock($address, '194.176.173.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-110). ');
+$ax += cidrblock($address, '212.54.96.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-111). ');
+$ax += cidrblock($address, '212.93.128.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-112). ');
+$ax += cidrblock($address, '213.157.160.0/19', 'RCS & RDS SA (IP4S-RCSRDSSA-113). ');
+$ax += cidrblock($address, '217.156.7.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-114). ');
+$ax += cidrblock($address, '217.156.9.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-115). ');
+$ax += cidrblock($address, '217.156.13.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-116). ');
+$ax += cidrblock($address, '217.156.14.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-117). ');
+$ax += cidrblock($address, '217.156.19.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-118). ');
+$ax += cidrblock($address, '217.156.32.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-119). ');
+$ax += cidrblock($address, '217.156.41.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-120). ');
+$ax += cidrblock($address, '217.156.47.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-121). ');
+$ax += cidrblock($address, '217.156.59.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-122). ');
+$ax += cidrblock($address, '217.156.71.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-123). ');
+$ax += cidrblock($address, '217.156.90.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-124). ');
+$ax += cidrblock($address, '217.156.92.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-125). ');
+$ax += cidrblock($address, '217.156.94.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-126). ');
+$ax += cidrblock($address, '217.156.96.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-127). ');
+$ax += cidrblock($address, '217.156.101.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-128). ');
+$ax += cidrblock($address, '217.156.106.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-129). ');
+$ax += cidrblock($address, '217.156.122.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-130). ');
+$ax += cidrblock($address, '145.249.109.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-131). ');
 
 
 // ASN 36351 ("SoftLayer Technologies").
@@ -9098,25 +9125,56 @@ $ax += cidrblock($address, '103.108.88.0/22', 'BKB Network (IP4S-BKBNETWORK-0). 
 
 
 // ASN 16010 ("Magticom Ltd").
-// A ridiculously huge amount spam originating from some very specific IPs within this network, without which the
-// network otherwise appears reasonably clean and safe. Blocking the affected ranges until the situation improves.
-// Updated: 2019.04.03
+// Spam events originating from this network slowly becoming worse over time.
+// Updated: 2019.08.18
 
-$ax += cidrblock($address, '109.172.128.0/17', 'Magticom Ltd (IP4S-MAGTICOMLTD-0). ');
+$ax += cidrblock($address, '5.178.128.0/17', 'Magticom Ltd (IP4S-MAGTICOMLTD-00). ');
+$ax += cidrblock($address, '46.49.0.0/17', 'Magticom Ltd (IP4S-MAGTICOMLTD-01). ');
+$ax += cidrblock($address, '62.168.160.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-02). ');
+$ax += cidrblock($address, '77.74.40.0/21', 'Magticom Ltd (IP4S-MAGTICOMLTD-03). ');
+$ax += cidrblock($address, '80.241.240.0/22', 'Magticom Ltd (IP4S-MAGTICOMLTD-04). ');
+$ax += cidrblock($address, '80.241.248.0/22', 'Magticom Ltd (IP4S-MAGTICOMLTD-05). ');
+$ax += cidrblock($address, '80.241.253.0/24', 'Magticom Ltd (IP4S-MAGTICOMLTD-06). ');
+$ax += cidrblock($address, '80.241.254.0/23', 'Magticom Ltd (IP4S-MAGTICOMLTD-07). ');
+$ax += cidrblock($address, '82.211.128.0/18', 'Magticom Ltd (IP4S-MAGTICOMLTD-08). ');
+$ax += cidrblock($address, '85.114.224.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-09). ');
+$ax += cidrblock($address, '89.232.32.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-10). ');
+$ax += cidrblock($address, '93.177.128.0/18', 'Magticom Ltd (IP4S-MAGTICOMLTD-11). ');
+$ax += cidrblock($address, '94.137.160.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-12). ');
+$ax += cidrblock($address, '94.240.192.0/18', 'Magticom Ltd (IP4S-MAGTICOMLTD-13). ');
+$ax += cidrblock($address, '95.104.0.0/17', 'Magticom Ltd (IP4S-MAGTICOMLTD-14). ');
+$ax += cidrblock($address, '109.172.128.0/17', 'Magticom Ltd (IP4S-MAGTICOMLTD-15). ');
+$ax += cidrblock($address, '134.19.224.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-16). ');
+$ax += cidrblock($address, '188.121.192.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-17). ');
+$ax += cidrblock($address, '188.129.128.0/17', 'Magticom Ltd (IP4S-MAGTICOMLTD-18). ');
+$ax += cidrblock($address, '212.58.96.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-19). ');
+$ax += cidrblock($address, '212.72.128.0/23', 'Magticom Ltd (IP4S-MAGTICOMLTD-20). ');
+$ax += cidrblock($address, '212.72.131.0/24', 'Magticom Ltd (IP4S-MAGTICOMLTD-21). ');
+$ax += cidrblock($address, '212.72.132.0/22', 'Magticom Ltd (IP4S-MAGTICOMLTD-22). ');
+$ax += cidrblock($address, '212.72.136.0/21', 'Magticom Ltd (IP4S-MAGTICOMLTD-23). ');
+$ax += cidrblock($address, '212.72.144.0/21', 'Magticom Ltd (IP4S-MAGTICOMLTD-24). ');
+$ax += cidrblock($address, '212.72.152.0/23', 'Magticom Ltd (IP4S-MAGTICOMLTD-25). ');
+$ax += cidrblock($address, '212.72.154.0/24', 'Magticom Ltd (IP4S-MAGTICOMLTD-26). ');
+$ax += cidrblock($address, '212.72.156.0/22', 'Magticom Ltd (IP4S-MAGTICOMLTD-27). ');
+$ax += cidrblock($address, '213.157.192.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-28). ');
+$ax += cidrblock($address, '213.200.0.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-29). ');
 
 
 // ASN 7642 ("Dhivehi Raajjeyge Gulhun Plc (Dhiraagu)").
-// Legit ISP with human endpoints originating from the Maldives. Had never previously encountered until recently, seeing
-// both attempts to spam community forums from some specific ranges, and attempts to spread malware onto WordPress sites
-// from some others. Blocking the affected ranges, but not the entire ASN, due to human endpoints, and that it doesn't
-// seem necessary yet (but we'll see what happens anyway).
-// Updated: 2019.04.29
+// ISP from the Maldives with human endpoints, but also a source of spam.
+// Updated: 2019.09.03
 
-$ax += cidrblock($address, '27.114.150.0/23', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-0). ');
-$ax += cidrblock($address, '27.114.152.0/23', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-1). ');
-$ax += cidrblock($address, '27.114.158.0/23', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-2). ');
-$ax += cidrblock($address, '124.195.192.0/23', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-3). ');
-$ax += cidrblock($address, '202.1.196.0/23', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-4). ');
+$ax += cidrblock($address, '27.114.128.0/18', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-00). ');
+$ax += cidrblock($address, '43.226.220.0/22', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-01). ');
+$ax += cidrblock($address, '69.94.32.0/20', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-02). ');
+$ax += cidrblock($address, '69.94.80.0/20', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-03). ');
+$ax += cidrblock($address, '103.31.84.0/22', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-04). ');
+$ax += cidrblock($address, '103.87.188.0/24', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-05). ');
+$ax += cidrblock($address, '123.176.0.0/19', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-06). ');
+$ax += cidrblock($address, '124.195.192.0/19', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-07). ');
+$ax += cidrblock($address, '202.1.192.0/20', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-08). ');
+$ax += cidrblock($address, '203.104.24.0/21', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-09). ');
+$ax += cidrblock($address, '209.212.192.0/19', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-10). ');
 
 
 // ASN 50310 ("FOP Goncharov Vyacheslav Grigorovich").
