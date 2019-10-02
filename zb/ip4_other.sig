@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.09.18
+ * This file last updated: 2019.10.02
  */
-$zbbversion .= ' / IP4X-96b';
+$zbbversion .= ' / IP4X-97';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1392,6 +1392,16 @@ $ax += cidrblock($address, '95.154.96.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN
 $ax += cidrblock($address, '100.42.17.0/24', 'Castle VPN (IP4X-CASTLEVPN-0). ');
 $ax += cidrblock($address, '209.222.242.0/23', 'Castle VPN (IP4X-CASTLEVPN-1). ');
 $ax += cidrblock($address, '209.222.248.0/21', 'Castle VPN (IP4X-CASTLEVPN-2). ');
+
+
+// ASN 208323 ("Foundation for Applied Privacy").
+// Provides tor endpoints. No listings at any DBs/RBLs anywhere AFAICT, but have
+// had a few reports of suspect activity from some users; adding for the moment
+// on proviso that there aren't any complaints about false positives or similar
+// such problems, and we'll see how it goes.
+// Updated: 2019.10.02
+
+$ax += cidrblock($address, '109.70.100.0/24', 'Applied Privacy (IP4X-APPLIEDPRIVACY-0). ');
 
 // IP4X Test Trigger
 $ax += inmatch($query, 'xip4xx', 'IP4X Test Trigger. ');
