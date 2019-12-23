@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2019.12.18
+ * This file last updated: 2019.12.23
  */
-$zbbversion .= ' / IP4S-99b';
+$zbbversion .= ' / IP4S-99c';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -6085,7 +6085,7 @@ $ax += cidrblock($address, '185.215.32.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-
 
 // ASN 23944 ("SKYBroadband SKYCable Corporation").
 // ( CIDRs that we haven't yet seen any problems from have been omitted. I hope to eventually remove this section entirely. )
-// Updated: 2019.08.27
+// Updated: 2019.08.27 / Checked: 2019.12.22
 
 $ax += cidrblock($address, '130.105.0.0/16', 'SKYBROADBAND (IP4S-SKYBROADBAND-0). ');
 
@@ -9605,7 +9605,7 @@ $ax += cidrblock($address, '213.200.0.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-30)
 
 // ASN 7642 ("Dhivehi Raajjeyge Gulhun Plc (Dhiraagu)").
 // ISP from the Maldives with human endpoints, but also a source of spam.
-// Updated: 2019.09.03
+// Updated: 2019.12.23
 
 $ax += cidrblock($address, '27.114.128.0/18', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-00). ');
 $ax += cidrblock($address, '43.226.220.0/22', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-01). ');
@@ -9615,9 +9615,10 @@ $ax += cidrblock($address, '103.31.84.0/22', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAA
 $ax += cidrblock($address, '103.87.188.0/24', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-05). ');
 $ax += cidrblock($address, '123.176.0.0/19', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-06). ');
 $ax += cidrblock($address, '124.195.192.0/19', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-07). ');
-$ax += cidrblock($address, '202.1.192.0/20', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-08). ');
-$ax += cidrblock($address, '203.104.24.0/21', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-09). ');
-$ax += cidrblock($address, '209.212.192.0/19', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-10). ');
+$ax += cidrblock($address, '185.215.32.0/22', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-08). ');
+$ax += cidrblock($address, '202.1.192.0/20', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-09). ');
+$ax += cidrblock($address, '203.104.24.0/21', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-10). ');
+$ax += cidrblock($address, '209.212.192.0/19', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-11). ');
 
 
 // ASN 50310 ("FOP Goncharov Vyacheslav Grigorovich").

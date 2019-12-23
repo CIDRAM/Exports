@@ -24,13 +24,6 @@ if (inmatch($whyblockout, '(IP4H-HURRICANEELECTRIC-', '') && $ax > 0) {
     }
 }
 
-// Rackspace Hosting bypasses.
-if (inmatch($whyblockout, '(IP4H-RACKSPACEHOSTING-', '') && $ax > 0) {
-    $ax -= ($address === '162.13.83.46' && (
-        $whyblockout = $whyblockout . 'Google Alert bypass. '
-    )); //78a
-}
-
 // IP4H Test Trigger
 $ax += inmatch($query, 'xip4hx', 'IP4H Test Trigger. ');
 
