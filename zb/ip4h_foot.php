@@ -1,11 +1,7 @@
 // SoftLayer bypasses.
 if (inmatch($whyblockout, '(IP4H-SOFTLAYER-', '') && $ax > 0) {
     $zbamz = 0;
-    $zbamz += inmatch($lcuseragent, 'showyoubot', 'ShowyouBot bypass. '); //72b
     $zbamz += inmatch($lcuseragent, 'disqus', 'Disqus bypass. '); //74a
-    $zbamz += inmatch($useragent, 'Feedspot http://www.feedspot.com', 'Feedspot bypass. '); //74c
-    $zbamz += inmatch($useragent, 'Superfeedr bot/2.0', 'Superfeedr bypass. '); //74c
-    $zbamz += inmatch($useragent, 'Feedbot', 'Feedbot bypass. '); //74c
     if ($zbamz > 0) {
         $ax -= 1;
     }
@@ -14,11 +10,31 @@ if (inmatch($whyblockout, '(IP4H-SOFTLAYER-', '') && $ax > 0) {
 // Hurricane Electric bypasses.
 if (inmatch($whyblockout, '(IP4H-HURRICANEELECTRIC-', '') && $ax > 0) {
     $zbamz = 0;
-    $zbamz += cidrblock($address, '65.49.67.0/24', 'Access provider block bypass (BYP-IP4H-HURRICANEELECTRIC-0). '); //78a mod 80a
     $zbamz += rmatch($lcuseragent, '.getpebble.com', 'Nice enough to ask bypass. '); //74e
-    $zbamz += inmatch($useragent, 'Feedspot http://www.feedspot.com', 'Feedspot bypass. '); //74c
     $zbamz += inmatch($useragent, 'Feedly', 'Feedly bypass. '); //74c
     $zbamz += cidrblock($address, '45.33.128.0/20', '') && inmatch($useragent, 'Puffin', 'Puffin browser bypass. '); // 2019.04.30
+    if ($zbamz > 0) {
+        $ax -= 1;
+    }
+}
+
+// Amazon AWS bypasses.
+if (inmatch($whyblockout, '(IP4H-AMAZONCOMINC-', '') && $ax > 0) {
+    // Feedspot bypass (2020.01.01)
+    // See: https://udger.com/resources/ua-list/bot-detail?bot=Feedspotbot
+    if (
+        ($address === '54.186.248.49' || $address === '54.245.252.119') &&
+        inmatch($useragent, '+https://www.feedspot.com/fs/fetcher', 'Feedspot bypass. ')
+    ) {
+        $ax -= 1;
+    }
+}
+
+// Automattic bypasses.
+if (inmatch($whyblockout, '(IP4H-AUTOMATTIC-', '') && $ax > 0) {
+    $zbamz = 0;
+    $zbamz += inmatch($lcuseragent, 'wp.com feedbot/1.0 (+https://wp.com)', 'Feedbot bypass. '); // 2020.01.01
+    $zbamz += inmatch($lcuseragent, 'jetpack', 'Jetpack bypass. '); // 2020.01.01
     if ($zbamz > 0) {
         $ax -= 1;
     }
