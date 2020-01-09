@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.01.01
+ * This file last updated: 2020.01.09
  */
-$zbbversion .= ' / IP4X-100';
+$zbbversion .= ' / IP4X-100a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -39,189 +39,212 @@ $ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
 // ---
 // ASN 174 ("Cogent Communications").
 
-// Myself and others have seen and experienced a significant amount of unwanted traffic from their ASN in the past (hack
-// attempts, spamming, scraping, etc), and generally, this type of traffic should be blocked, but unfortunately, their
-// ASN encompasses and interlaces significantly with with a number of benign, innocent ISPs, human endpoint, backbone
-// architecture, etc that we don't want to block. Therefore, I'm splitting this up into multiple sections across
-// multiple signature files accordingly.
+// We've experienced a significant amount of unwanted traffic from their ASN in
+// the past (hack attempts, spamming, scraping, etc), and this type of traffic
+// should generally be blocked, but their ASN unfortunately encompasses and
+// interlaces with a significant number of benign human endpoints, ISPs,
+// backbone architecture, etc that we don't want to block, so I'm not outright
+// listing the ASN in entirety. Listings have also been split across different
+// signature files as to list at the signature files where best suited.
 
-// Wikipedia page about Cogent Communications: en.wikipedia.org/wiki/Cogent_Communications
-// Refer bgpmon.net/large-scale-bgp-hijack-out-of-india/
-// Refer forums.spybot.info/showthread.php?23632-SPAM-frauds-fakes-and-other-MALWARE-deliveries/page37
-// Refer dyn.com/blog/mitm-internet-hijacking/
-
-// When updating: Remove invalids to reduce false positive risk.
+// Cogent Communications' Wikipedia page:
+// - en.wikipedia.org/wiki/Cogent_Communications
+// See also:
+// - bgpmon.net/large-scale-bgp-hijack-out-of-india/
+// - forums.spybot.info/showthread.php?23632-SPAM-frauds-fakes-and-other-MALWARE-deliveries/page37
+// - dyn.com/blog/mitm-internet-hijacking/
 
 // Cogent VPNs+Proxies (AzireVPN, OVPN, BeeVPN ApS, Windscribe, etc; "^.*(?:Prox|Windscribe|VPN).*$").
-// Updated: 2019.07.02 / Checked: 2019.11.02
-$ax += cidrblock($address, '23.154.160.0/24', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-000). ');
-$ax += cidrblock($address, '185.157.163.0/24', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-001). ');
+// Exclude invalids to reduce the false positive risk.
 
-// No announce description (frequent source of spam in some cases, general unwanted activity in others, etc).
-// Updated: 2019.11.02
-$ax += cidrblock($address, '185.171.66.0/24', 'Cogent Other (IP4X-COGENTOTHER-002). ');
-$ax += cidrblock($address, '198.176.232.0/24', 'Cogent Other (IP4X-COGENTOTHER-003). ');
-$ax += cidrblock($address, '179.51.192.0/20', 'Cogent Other (IP4X-COGENTOTHER-004). ');
-$ax += cidrblock($address, '45.89.124.0/22', 'Cogent Other (IP4X-COGENTOTHER-005). ');
-$ax += cidrblock($address, '45.92.216.0/22', 'Cogent Other (IP4X-COGENTOTHER-006). ');
-$ax += cidrblock($address, '45.95.172.0/22', 'Cogent Other (IP4X-COGENTOTHER-007). ');
-$ax += cidrblock($address, '45.138.48.0/22', 'Cogent Other (IP4X-COGENTOTHER-008). ');
-$ax += cidrblock($address, '45.147.7.0/24', 'Cogent Other (IP4X-COGENTOTHER-009). ');
-$ax += cidrblock($address, '141.98.173.0/24', 'Cogent Other (IP4X-COGENTOTHER-010). ');
-$ax += cidrblock($address, '193.57.102.0/24', 'Cogent Other (IP4X-COGENTOTHER-011). ');
-$ax += cidrblock($address, '45.87.131.0/24', 'Cogent Other (IP4X-COGENTOTHER-012). ');
-$ax += cidrblock($address, '45.91.72.0/24', 'Cogent Other (IP4X-COGENTOTHER-013). ');
-$ax += cidrblock($address, '87.239.254.0/24', 'Cogent Other (IP4X-COGENTOTHER-014). ');
-$ax += cidrblock($address, '213.146.170.0/24', 'Cogent Other (IP4X-COGENTOTHER-015). ');
-$ax += cidrblock($address, '213.146.175.0/24', 'Cogent Other (IP4X-COGENTOTHER-016). ');
-$ax += cidrblock($address, '185.170.142.0/24', 'Cogent Other (IP4X-COGENTOTHER-017). ');
-$ax += cidrblock($address, '85.116.148.0/22', 'Cogent Other (IP4X-COGENTOTHER-018). ');
-$ax += cidrblock($address, '91.103.82.0/24', 'Cogent Other (IP4X-COGENTOTHER-019). ');
-$ax += cidrblock($address, '185.30.233.0/24', 'Cogent Other (IP4X-COGENTOTHER-020). ');
-$ax += cidrblock($address, '45.145.128.0/23', 'Cogent Other (IP4X-COGENTOTHER-021). ');
-$ax += cidrblock($address, '23.237.114.0/23', 'Cogent Other (IP4X-COGENTOTHER-022). ');
-$ax += cidrblock($address, '23.237.128.0/23', 'Cogent Other (IP4X-COGENTOTHER-023). ');
-$ax += cidrblock($address, '23.237.134.0/23', 'Cogent Other (IP4X-COGENTOTHER-024). ');
-$ax += cidrblock($address, '23.237.136.0/22', 'Cogent Other (IP4X-COGENTOTHER-025). ');
-$ax += cidrblock($address, '23.237.147.0/24', 'Cogent Other (IP4X-COGENTOTHER-026). ');
-$ax += cidrblock($address, '23.237.148.0/22', 'Cogent Other (IP4X-COGENTOTHER-027). ');
-$ax += cidrblock($address, '23.237.154.0/23', 'Cogent Other (IP4X-COGENTOTHER-028). ');
-$ax += cidrblock($address, '23.237.158.0/23', 'Cogent Other (IP4X-COGENTOTHER-029). ');
-$ax += cidrblock($address, '23.237.160.0/23', 'Cogent Other (IP4X-COGENTOTHER-030). ');
-$ax += cidrblock($address, '23.237.164.0/22', 'Cogent Other (IP4X-COGENTOTHER-031). ');
-$ax += cidrblock($address, '23.237.168.0/22', 'Cogent Other (IP4X-COGENTOTHER-032). ');
-$ax += cidrblock($address, '23.237.172.0/24', 'Cogent Other (IP4X-COGENTOTHER-033). ');
-$ax += cidrblock($address, '23.237.174.0/23', 'Cogent Other (IP4X-COGENTOTHER-034). ');
-$ax += cidrblock($address, '23.237.178.0/23', 'Cogent Other (IP4X-COGENTOTHER-035). ');
-$ax += cidrblock($address, '23.237.180.0/24', 'Cogent Other (IP4X-COGENTOTHER-036). ');
-$ax += cidrblock($address, '23.237.188.0/23', 'Cogent Other (IP4X-COGENTOTHER-037). ');
-$ax += cidrblock($address, '23.237.246.0/23', 'Cogent Other (IP4X-COGENTOTHER-038). ');
-$ax += cidrblock($address, '23.237.248.0/23', 'Cogent Other (IP4X-COGENTOTHER-039). ');
-$ax += cidrblock($address, '23.237.250.0/24', 'Cogent Other (IP4X-COGENTOTHER-040). ');
-$ax += cidrblock($address, '38.18.128.0/21', 'Cogent Other (IP4X-COGENTOTHER-041). ');
-$ax += cidrblock($address, '38.18.152.0/21', 'Cogent Other (IP4X-COGENTOTHER-042). ');
-$ax += cidrblock($address, '38.20.144.0/22', 'Cogent Other (IP4X-COGENTOTHER-043). ');
-$ax += cidrblock($address, '38.20.156.0/22', 'Cogent Other (IP4X-COGENTOTHER-044). ');
-$ax += cidrblock($address, '38.22.8.0/24', 'Cogent Other (IP4X-COGENTOTHER-045). ');
-$ax += cidrblock($address, '38.27.104.0/24', 'Cogent Other (IP4X-COGENTOTHER-046). ');
-$ax += cidrblock($address, '38.69.144.0/24', 'Cogent Other (IP4X-COGENTOTHER-047). ');
-$ax += cidrblock($address, '38.69.183.0/24', 'Cogent Other (IP4X-COGENTOTHER-048). ');
-$ax += cidrblock($address, '38.70.219.0/24', 'Cogent Other (IP4X-COGENTOTHER-049). ');
-$ax += cidrblock($address, '38.74.67.0/24', 'Cogent Other (IP4X-COGENTOTHER-050). ');
-$ax += cidrblock($address, '38.81.197.0/24', 'Cogent Other (IP4X-COGENTOTHER-051). ');
-$ax += cidrblock($address, '38.83.75.0/24', 'Cogent Other (IP4X-COGENTOTHER-052). ');
-$ax += cidrblock($address, '38.87.45.0/24', 'Cogent Other (IP4X-COGENTOTHER-053). ');
-$ax += cidrblock($address, '38.88.84.0/24', 'Cogent Other (IP4X-COGENTOTHER-054). ');
-$ax += cidrblock($address, '38.88.86.0/24', 'Cogent Other (IP4X-COGENTOTHER-055). ');
-$ax += cidrblock($address, '38.94.2.0/24', 'Cogent Other (IP4X-COGENTOTHER-056). ');
-$ax += cidrblock($address, '38.94.129.0/24', 'Cogent Other (IP4X-COGENTOTHER-057). ');
-$ax += cidrblock($address, '38.94.137.0/24', 'Cogent Other (IP4X-COGENTOTHER-058). ');
-$ax += cidrblock($address, '38.95.3.0/24', 'Cogent Other (IP4X-COGENTOTHER-059). ');
-$ax += cidrblock($address, '38.96.136.0/23', 'Cogent Other (IP4X-COGENTOTHER-060). ');
-$ax += cidrblock($address, '38.97.17.0/24', 'Cogent Other (IP4X-COGENTOTHER-061). ');
-$ax += cidrblock($address, '38.98.98.0/24', 'Cogent Other (IP4X-COGENTOTHER-062). ');
-$ax += cidrblock($address, '38.98.250.0/24', 'Cogent Other (IP4X-COGENTOTHER-063). ');
-$ax += cidrblock($address, '38.99.120.0/23', 'Cogent Other (IP4X-COGENTOTHER-064). ');
-$ax += cidrblock($address, '38.99.154.0/24', 'Cogent Other (IP4X-COGENTOTHER-065). ');
-$ax += cidrblock($address, '38.100.87.0/24', 'Cogent Other (IP4X-COGENTOTHER-066). ');
-$ax += cidrblock($address, '38.101.73.0/24', 'Cogent Other (IP4X-COGENTOTHER-067). ');
-$ax += cidrblock($address, '38.101.189.0/24', 'Cogent Other (IP4X-COGENTOTHER-068). ');
-$ax += cidrblock($address, '38.101.191.0/24', 'Cogent Other (IP4X-COGENTOTHER-069). ');
-$ax += cidrblock($address, '38.101.218.0/24', 'Cogent Other (IP4X-COGENTOTHER-070). ');
-$ax += cidrblock($address, '38.102.101.0/24', 'Cogent Other (IP4X-COGENTOTHER-071). ');
-$ax += cidrblock($address, '38.102.104.0/21', 'Cogent Other (IP4X-COGENTOTHER-072). ');
-$ax += cidrblock($address, '38.102.146.0/24', 'Cogent Other (IP4X-COGENTOTHER-073). ');
-$ax += cidrblock($address, '38.105.94.0/24', 'Cogent Other (IP4X-COGENTOTHER-074). ');
-$ax += cidrblock($address, '38.105.134.0/24', 'Cogent Other (IP4X-COGENTOTHER-075). ');
-$ax += cidrblock($address, '38.105.162.0/24', 'Cogent Other (IP4X-COGENTOTHER-076). ');
-$ax += cidrblock($address, '38.106.72.0/22', 'Cogent Other (IP4X-COGENTOTHER-077). ');
-$ax += cidrblock($address, '38.106.94.0/23', 'Cogent Other (IP4X-COGENTOTHER-078). ');
-$ax += cidrblock($address, '38.106.142.0/24', 'Cogent Other (IP4X-COGENTOTHER-079). ');
-$ax += cidrblock($address, '38.107.102.0/23', 'Cogent Other (IP4X-COGENTOTHER-080). ');
-$ax += cidrblock($address, '38.108.15.0/24', 'Cogent Other (IP4X-COGENTOTHER-081). ');
-$ax += cidrblock($address, '38.108.128.0/23', 'Cogent Other (IP4X-COGENTOTHER-082). ');
-$ax += cidrblock($address, '38.109.224.0/24', 'Cogent Other (IP4X-COGENTOTHER-083). ');
-$ax += cidrblock($address, '38.109.250.0/23', 'Cogent Other (IP4X-COGENTOTHER-084). ');
-$ax += cidrblock($address, '38.110.58.0/24', 'Cogent Other (IP4X-COGENTOTHER-085). ');
-$ax += cidrblock($address, '38.110.240.0/20', 'Cogent Other (IP4X-COGENTOTHER-086). ');
-$ax += cidrblock($address, '38.111.96.0/23', 'Cogent Other (IP4X-COGENTOTHER-087). ');
-$ax += cidrblock($address, '38.111.124.0/23', 'Cogent Other (IP4X-COGENTOTHER-088). ');
-$ax += cidrblock($address, '38.111.161.0/24', 'Cogent Other (IP4X-COGENTOTHER-089). ');
-$ax += cidrblock($address, '38.117.203.0/24', 'Cogent Other (IP4X-COGENTOTHER-090). ');
-$ax += cidrblock($address, '38.121.17.0/24', 'Cogent Other (IP4X-COGENTOTHER-091). ');
-$ax += cidrblock($address, '38.121.88.0/21', 'Cogent Other (IP4X-COGENTOTHER-092). ');
-$ax += cidrblock($address, '38.121.101.0/24', 'Cogent Other (IP4X-COGENTOTHER-093). ');
-$ax += cidrblock($address, '38.123.207.0/24', 'Cogent Other (IP4X-COGENTOTHER-094). ');
-$ax += cidrblock($address, '38.124.147.0/24', 'Cogent Other (IP4X-COGENTOTHER-095). ');
-$ax += cidrblock($address, '38.125.84.0/24', 'Cogent Other (IP4X-COGENTOTHER-096). ');
-$ax += cidrblock($address, '38.125.94.0/24', 'Cogent Other (IP4X-COGENTOTHER-097). ');
-$ax += cidrblock($address, '38.125.97.0/24', 'Cogent Other (IP4X-COGENTOTHER-098). ');
-$ax += cidrblock($address, '38.125.100.0/24', 'Cogent Other (IP4X-COGENTOTHER-099). ');
-$ax += cidrblock($address, '38.125.102.0/24', 'Cogent Other (IP4X-COGENTOTHER-100). ');
-$ax += cidrblock($address, '38.125.105.0/24', 'Cogent Other (IP4X-COGENTOTHER-101). ');
-$ax += cidrblock($address, '38.125.108.0/24', 'Cogent Other (IP4X-COGENTOTHER-102). ');
-$ax += cidrblock($address, '38.125.161.0/24', 'Cogent Other (IP4X-COGENTOTHER-103). ');
-$ax += cidrblock($address, '38.126.14.0/24', 'Cogent Other (IP4X-COGENTOTHER-104). ');
-$ax += cidrblock($address, '38.126.238.0/23', 'Cogent Other (IP4X-COGENTOTHER-105). ');
-$ax += cidrblock($address, '38.126.245.0/24', 'Cogent Other (IP4X-COGENTOTHER-106). ');
-$ax += cidrblock($address, '38.127.199.0/24', 'Cogent Other (IP4X-COGENTOTHER-107). ');
-$ax += cidrblock($address, '38.127.237.0/24', 'Cogent Other (IP4X-COGENTOTHER-108). ');
-$ax += cidrblock($address, '38.128.107.0/24', 'Cogent Other (IP4X-COGENTOTHER-109). ');
-$ax += cidrblock($address, '38.130.135.0/24', 'Cogent Other (IP4X-COGENTOTHER-110). ');
-$ax += cidrblock($address, '38.130.255.0/24', 'Cogent Other (IP4X-COGENTOTHER-111). ');
-$ax += cidrblock($address, '38.131.48.0/24', 'Cogent Other (IP4X-COGENTOTHER-112). ');
-$ax += cidrblock($address, '38.131.229.0/24', 'Cogent Other (IP4X-COGENTOTHER-113). ');
-$ax += cidrblock($address, '38.133.164.0/23', 'Cogent Other (IP4X-COGENTOTHER-114). ');
-$ax += cidrblock($address, '38.133.178.0/24', 'Cogent Other (IP4X-COGENTOTHER-115). ');
-$ax += cidrblock($address, '38.133.182.0/23', 'Cogent Other (IP4X-COGENTOTHER-116). ');
-$ax += cidrblock($address, '38.133.214.0/24', 'Cogent Other (IP4X-COGENTOTHER-117). ');
-$ax += cidrblock($address, '38.135.38.0/24', 'Cogent Other (IP4X-COGENTOTHER-118). ');
-$ax += cidrblock($address, '38.135.85.0/24', 'Cogent Other (IP4X-COGENTOTHER-119). ');
-$ax += cidrblock($address, '38.135.120.0/24', 'Cogent Other (IP4X-COGENTOTHER-120). ');
-$ax += cidrblock($address, '38.135.124.0/22', 'Cogent Other (IP4X-COGENTOTHER-121). ');
-$ax += cidrblock($address, '38.143.16.0/23', 'Cogent Other (IP4X-COGENTOTHER-122). ');
-$ax += cidrblock($address, '38.143.25.0/24', 'Cogent Other (IP4X-COGENTOTHER-123). ');
-$ax += cidrblock($address, '38.143.176.0/22', 'Cogent Other (IP4X-COGENTOTHER-124). ');
-$ax += cidrblock($address, '38.146.51.0/24', 'Cogent Other (IP4X-COGENTOTHER-125). ');
-$ax += cidrblock($address, '38.146.52.0/24', 'Cogent Other (IP4X-COGENTOTHER-126). ');
-$ax += cidrblock($address, '38.146.57.0/24', 'Cogent Other (IP4X-COGENTOTHER-127). ');
-$ax += cidrblock($address, '38.146.141.0/24', 'Cogent Other (IP4X-COGENTOTHER-128). ');
-$ax += cidrblock($address, '38.146.142.0/24', 'Cogent Other (IP4X-COGENTOTHER-129). ');
-$ax += cidrblock($address, '38.146.148.0/22', 'Cogent Other (IP4X-COGENTOTHER-130). ');
-$ax += cidrblock($address, '38.146.152.0/22', 'Cogent Other (IP4X-COGENTOTHER-131). ');
-$ax += cidrblock($address, '38.146.224.0/24', 'Cogent Other (IP4X-COGENTOTHER-132). ');
-$ax += cidrblock($address, '38.240.96.0/19', 'Cogent Other (IP4X-COGENTOTHER-133). ');
-$ax += cidrblock($address, '38.240.192.0/19', 'Cogent Other (IP4X-COGENTOTHER-134). ');
-$ax += cidrblock($address, '50.7.101.0/24', 'Cogent Other (IP4X-COGENTOTHER-135). ');
-$ax += cidrblock($address, '50.7.110.0/24', 'Cogent Other (IP4X-COGENTOTHER-136). ');
-$ax += cidrblock($address, '50.7.238.0/23', 'Cogent Other (IP4X-COGENTOTHER-137). ');
-$ax += cidrblock($address, '50.7.240.0/22', 'Cogent Other (IP4X-COGENTOTHER-138). ');
-$ax += cidrblock($address, '149.12.214.0/24', 'Cogent Other (IP4X-COGENTOTHER-139). ');
-$ax += cidrblock($address, '154.3.0.0/16', 'Cogent Other (IP4X-COGENTOTHER-140). ');
-$ax += cidrblock($address, '154.6.0.0/15', 'Cogent Other (IP4X-COGENTOTHER-141). ');
-$ax += cidrblock($address, '154.9.0.0/16', 'Cogent Other (IP4X-COGENTOTHER-142). ');
-$ax += cidrblock($address, '154.12.0.0/15', 'Cogent Other (IP4X-COGENTOTHER-143). ');
-$ax += cidrblock($address, '154.17.208.0/22', 'Cogent Other (IP4X-COGENTOTHER-144). ');
-$ax += cidrblock($address, '154.17.212.0/24', 'Cogent Other (IP4X-COGENTOTHER-145). ');
-$ax += cidrblock($address, '154.17.214.0/23', 'Cogent Other (IP4X-COGENTOTHER-146). ');
-$ax += cidrblock($address, '154.17.216.0/21', 'Cogent Other (IP4X-COGENTOTHER-147). ');
-$ax += cidrblock($address, '154.17.224.0/20', 'Cogent Other (IP4X-COGENTOTHER-148). ');
-$ax += cidrblock($address, '154.17.248.0/22', 'Cogent Other (IP4X-COGENTOTHER-149). ');
-$ax += cidrblock($address, '154.18.0.0/15', 'Cogent Other (IP4X-COGENTOTHER-150). ');
-$ax += cidrblock($address, '154.21.0.0/16', 'Cogent Other (IP4X-COGENTOTHER-151). ');
-$ax += cidrblock($address, '154.22.0.0/23', 'Cogent Other (IP4X-COGENTOTHER-152). ');
-$ax += cidrblock($address, '154.22.128.0/23', 'Cogent Other (IP4X-COGENTOTHER-153). ');
-$ax += cidrblock($address, '154.24.0.0/13', 'Cogent Other (IP4X-COGENTOTHER-154). ');
-$ax += cidrblock($address, '154.36.0.0/14', 'Cogent Other (IP4X-COGENTOTHER-155). ');
-$ax += cidrblock($address, '154.40.0.0/13', 'Cogent Other (IP4X-COGENTOTHER-156). ');
-$ax += cidrblock($address, '154.48.0.0/12', 'Cogent Other (IP4X-COGENTOTHER-157). ');
-$ax += cidrblock($address, '154.64.0.0/16', 'Cogent Other (IP4X-COGENTOTHER-158). ');
-$ax += cidrblock($address, '162.221.136.0/23', 'Cogent Other (IP4X-COGENTOTHER-159). ');
-$ax += cidrblock($address, '198.16.117.0/24', 'Cogent Other (IP4X-COGENTOTHER-160). ');
-$ax += cidrblock($address, '204.6.144.0/24', 'Cogent Other (IP4X-COGENTOTHER-161). ');
-$ax += cidrblock($address, '205.254.192.0/19', 'Cogent Other (IP4X-COGENTOTHER-162). ');
-$ax += cidrblock($address, '209.146.48.0/21', 'Cogent Other (IP4X-COGENTOTHER-163). ');
-$ax += cidrblock($address, '216.152.18.0/24', 'Cogent Other (IP4X-COGENTOTHER-164). ');
+// Updated: 2020.01.03
+$ax += cidrblock($address, '23.154.160.0/24', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-0). ');
+
+// No announce description (a frequent source of spam + other generally
+// unwanted; exclude invalids to reduce the false positive risk).
+
+// Updated: 2020.01.03
+$ax += cidrblock($address, '185.171.66.0/24', 'Cogent Other (IP4X-COGENTOTHER-000). ');
+$ax += cidrblock($address, '142.202.138.0/23', 'Cogent Other (IP4X-COGENTOTHER-001). ');
+$ax += cidrblock($address, '198.176.232.0/24', 'Cogent Other (IP4X-COGENTOTHER-002). ');
+$ax += cidrblock($address, '45.89.124.0/22', 'Cogent Other (IP4X-COGENTOTHER-003). ');
+$ax += cidrblock($address, '45.92.216.0/22', 'Cogent Other (IP4X-COGENTOTHER-004). ');
+$ax += cidrblock($address, '45.95.172.0/22', 'Cogent Other (IP4X-COGENTOTHER-005). ');
+$ax += cidrblock($address, '45.138.48.0/22', 'Cogent Other (IP4X-COGENTOTHER-006). ');
+$ax += cidrblock($address, '81.2.149.0/24', 'Cogent Other (IP4X-COGENTOTHER-007). ');
+$ax += cidrblock($address, '141.98.173.0/24', 'Cogent Other (IP4X-COGENTOTHER-008). ');
+$ax += cidrblock($address, '193.57.102.0/24', 'Cogent Other (IP4X-COGENTOTHER-009). ');
+$ax += cidrblock($address, '45.87.131.0/24', 'Cogent Other (IP4X-COGENTOTHER-010). ');
+$ax += cidrblock($address, '178.21.32.0/24', 'Cogent Other (IP4X-COGENTOTHER-011). ');
+$ax += cidrblock($address, '194.76.192.0/24', 'Cogent Other (IP4X-COGENTOTHER-012). ');
+$ax += cidrblock($address, '194.76.217.0/24', 'Cogent Other (IP4X-COGENTOTHER-013). ');
+$ax += cidrblock($address, '194.76.218.0/24', 'Cogent Other (IP4X-COGENTOTHER-014). ');
+$ax += cidrblock($address, '194.76.238.0/24', 'Cogent Other (IP4X-COGENTOTHER-015). ');
+$ax += cidrblock($address, '213.146.170.0/24', 'Cogent Other (IP4X-COGENTOTHER-016). ');
+$ax += cidrblock($address, '213.146.175.0/24', 'Cogent Other (IP4X-COGENTOTHER-017). ');
+$ax += cidrblock($address, '185.170.142.0/24', 'Cogent Other (IP4X-COGENTOTHER-018). ');
+$ax += cidrblock($address, '85.116.148.0/22', 'Cogent Other (IP4X-COGENTOTHER-019). ');
+$ax += cidrblock($address, '45.176.188.0/22', 'Cogent Other (IP4X-COGENTOTHER-020). ');
+$ax += cidrblock($address, '91.103.82.0/24', 'Cogent Other (IP4X-COGENTOTHER-021). ');
+$ax += cidrblock($address, '185.30.233.0/24', 'Cogent Other (IP4X-COGENTOTHER-022). ');
+$ax += cidrblock($address, '45.145.128.0/23', 'Cogent Other (IP4X-COGENTOTHER-023). ');
+$ax += cidrblock($address, '77.243.88.0/22', 'Cogent Other (IP4X-COGENTOTHER-024). ');
+$ax += cidrblock($address, '23.237.25.0/24', 'Cogent Other (IP4X-COGENTOTHER-025). ');
+$ax += cidrblock($address, '23.237.114.0/23', 'Cogent Other (IP4X-COGENTOTHER-026). ');
+$ax += cidrblock($address, '23.237.128.0/23', 'Cogent Other (IP4X-COGENTOTHER-027). ');
+$ax += cidrblock($address, '23.237.134.0/23', 'Cogent Other (IP4X-COGENTOTHER-028). ');
+$ax += cidrblock($address, '23.237.136.0/22', 'Cogent Other (IP4X-COGENTOTHER-029). ');
+$ax += cidrblock($address, '23.237.147.0/24', 'Cogent Other (IP4X-COGENTOTHER-030). ');
+$ax += cidrblock($address, '23.237.148.0/22', 'Cogent Other (IP4X-COGENTOTHER-031). ');
+$ax += cidrblock($address, '23.237.154.0/23', 'Cogent Other (IP4X-COGENTOTHER-032). ');
+$ax += cidrblock($address, '23.237.158.0/23', 'Cogent Other (IP4X-COGENTOTHER-033). ');
+$ax += cidrblock($address, '23.237.160.0/23', 'Cogent Other (IP4X-COGENTOTHER-034). ');
+$ax += cidrblock($address, '23.237.164.0/22', 'Cogent Other (IP4X-COGENTOTHER-035). ');
+$ax += cidrblock($address, '23.237.168.0/22', 'Cogent Other (IP4X-COGENTOTHER-036). ');
+$ax += cidrblock($address, '23.237.172.0/24', 'Cogent Other (IP4X-COGENTOTHER-037). ');
+$ax += cidrblock($address, '23.237.174.0/23', 'Cogent Other (IP4X-COGENTOTHER-038). ');
+$ax += cidrblock($address, '23.237.178.0/23', 'Cogent Other (IP4X-COGENTOTHER-039). ');
+$ax += cidrblock($address, '23.237.180.0/24', 'Cogent Other (IP4X-COGENTOTHER-040). ');
+$ax += cidrblock($address, '23.237.188.0/23', 'Cogent Other (IP4X-COGENTOTHER-041). ');
+$ax += cidrblock($address, '23.237.192.0/23', 'Cogent Other (IP4X-COGENTOTHER-042). ');
+$ax += cidrblock($address, '23.237.246.0/23', 'Cogent Other (IP4X-COGENTOTHER-043). ');
+$ax += cidrblock($address, '23.237.248.0/23', 'Cogent Other (IP4X-COGENTOTHER-044). ');
+$ax += cidrblock($address, '23.237.250.0/24', 'Cogent Other (IP4X-COGENTOTHER-045). ');
+$ax += cidrblock($address, '38.18.128.0/21', 'Cogent Other (IP4X-COGENTOTHER-046). ');
+$ax += cidrblock($address, '38.18.152.0/21', 'Cogent Other (IP4X-COGENTOTHER-047). ');
+$ax += cidrblock($address, '38.20.144.0/22', 'Cogent Other (IP4X-COGENTOTHER-048). ');
+$ax += cidrblock($address, '38.20.156.0/22', 'Cogent Other (IP4X-COGENTOTHER-049). ');
+$ax += cidrblock($address, '38.27.104.0/24', 'Cogent Other (IP4X-COGENTOTHER-050). ');
+$ax += cidrblock($address, '38.64.208.0/22', 'Cogent Other (IP4X-COGENTOTHER-051). ');
+$ax += cidrblock($address, '38.68.65.0/24', 'Cogent Other (IP4X-COGENTOTHER-052). ');
+$ax += cidrblock($address, '38.69.144.0/24', 'Cogent Other (IP4X-COGENTOTHER-053). ');
+$ax += cidrblock($address, '38.69.183.0/24', 'Cogent Other (IP4X-COGENTOTHER-054). ');
+$ax += cidrblock($address, '38.70.219.0/24', 'Cogent Other (IP4X-COGENTOTHER-055). ');
+$ax += cidrblock($address, '38.74.67.0/24', 'Cogent Other (IP4X-COGENTOTHER-056). ');
+$ax += cidrblock($address, '38.78.200.0/24', 'Cogent Other (IP4X-COGENTOTHER-057). ');
+$ax += cidrblock($address, '38.86.33.0/24', 'Cogent Other (IP4X-COGENTOTHER-058). ');
+$ax += cidrblock($address, '38.86.37.0/24', 'Cogent Other (IP4X-COGENTOTHER-059). ');
+$ax += cidrblock($address, '38.86.38.0/23', 'Cogent Other (IP4X-COGENTOTHER-060). ');
+$ax += cidrblock($address, '38.87.45.0/24', 'Cogent Other (IP4X-COGENTOTHER-061). ');
+$ax += cidrblock($address, '38.88.74.0/24', 'Cogent Other (IP4X-COGENTOTHER-062). ');
+$ax += cidrblock($address, '38.88.86.0/24', 'Cogent Other (IP4X-COGENTOTHER-063). ');
+$ax += cidrblock($address, '38.92.149.0/24', 'Cogent Other (IP4X-COGENTOTHER-064). ');
+$ax += cidrblock($address, '38.93.229.0/24', 'Cogent Other (IP4X-COGENTOTHER-065). ');
+$ax += cidrblock($address, '38.94.137.0/24', 'Cogent Other (IP4X-COGENTOTHER-066). ');
+$ax += cidrblock($address, '38.95.3.0/24', 'Cogent Other (IP4X-COGENTOTHER-067). ');
+$ax += cidrblock($address, '38.96.11.0/24', 'Cogent Other (IP4X-COGENTOTHER-068). ');
+$ax += cidrblock($address, '38.96.136.0/23', 'Cogent Other (IP4X-COGENTOTHER-069). ');
+$ax += cidrblock($address, '38.98.250.0/24', 'Cogent Other (IP4X-COGENTOTHER-070). ');
+$ax += cidrblock($address, '38.99.69.0/24', 'Cogent Other (IP4X-COGENTOTHER-071). ');
+$ax += cidrblock($address, '38.99.120.0/23', 'Cogent Other (IP4X-COGENTOTHER-072). ');
+$ax += cidrblock($address, '38.99.154.0/24', 'Cogent Other (IP4X-COGENTOTHER-073). ');
+$ax += cidrblock($address, '38.100.87.0/24', 'Cogent Other (IP4X-COGENTOTHER-074). ');
+$ax += cidrblock($address, '38.100.215.0/24', 'Cogent Other (IP4X-COGENTOTHER-075). ');
+$ax += cidrblock($address, '38.101.46.0/23', 'Cogent Other (IP4X-COGENTOTHER-076). ');
+$ax += cidrblock($address, '38.101.73.0/24', 'Cogent Other (IP4X-COGENTOTHER-077). ');
+$ax += cidrblock($address, '38.101.189.0/24', 'Cogent Other (IP4X-COGENTOTHER-078). ');
+$ax += cidrblock($address, '38.101.218.0/24', 'Cogent Other (IP4X-COGENTOTHER-079). ');
+$ax += cidrblock($address, '38.102.97.0/24', 'Cogent Other (IP4X-COGENTOTHER-080). ');
+$ax += cidrblock($address, '38.102.101.0/24', 'Cogent Other (IP4X-COGENTOTHER-081). ');
+$ax += cidrblock($address, '38.102.104.0/21', 'Cogent Other (IP4X-COGENTOTHER-082). ');
+$ax += cidrblock($address, '38.102.146.0/24', 'Cogent Other (IP4X-COGENTOTHER-083). ');
+$ax += cidrblock($address, '38.102.164.0/24', 'Cogent Other (IP4X-COGENTOTHER-084). ');
+$ax += cidrblock($address, '38.105.94.0/24', 'Cogent Other (IP4X-COGENTOTHER-085). ');
+$ax += cidrblock($address, '38.105.134.0/24', 'Cogent Other (IP4X-COGENTOTHER-086). ');
+$ax += cidrblock($address, '38.105.162.0/24', 'Cogent Other (IP4X-COGENTOTHER-087). ');
+$ax += cidrblock($address, '38.106.72.0/22', 'Cogent Other (IP4X-COGENTOTHER-088). ');
+$ax += cidrblock($address, '38.106.94.0/23', 'Cogent Other (IP4X-COGENTOTHER-089). ');
+$ax += cidrblock($address, '38.106.190.0/24', 'Cogent Other (IP4X-COGENTOTHER-090). ');
+$ax += cidrblock($address, '38.108.15.0/24', 'Cogent Other (IP4X-COGENTOTHER-091). ');
+$ax += cidrblock($address, '38.108.74.0/24', 'Cogent Other (IP4X-COGENTOTHER-092). ');
+$ax += cidrblock($address, '38.108.128.0/23', 'Cogent Other (IP4X-COGENTOTHER-093). ');
+$ax += cidrblock($address, '38.109.224.0/24', 'Cogent Other (IP4X-COGENTOTHER-094). ');
+$ax += cidrblock($address, '38.109.250.0/23', 'Cogent Other (IP4X-COGENTOTHER-095). ');
+$ax += cidrblock($address, '38.110.58.0/24', 'Cogent Other (IP4X-COGENTOTHER-096). ');
+$ax += cidrblock($address, '38.110.240.0/20', 'Cogent Other (IP4X-COGENTOTHER-097). ');
+$ax += cidrblock($address, '38.111.16.0/24', 'Cogent Other (IP4X-COGENTOTHER-098). ');
+$ax += cidrblock($address, '38.111.96.0/23', 'Cogent Other (IP4X-COGENTOTHER-099). ');
+$ax += cidrblock($address, '38.111.124.0/23', 'Cogent Other (IP4X-COGENTOTHER-100). ');
+$ax += cidrblock($address, '38.111.161.0/24', 'Cogent Other (IP4X-COGENTOTHER-101). ');
+$ax += cidrblock($address, '38.117.203.0/24', 'Cogent Other (IP4X-COGENTOTHER-102). ');
+$ax += cidrblock($address, '38.121.17.0/24', 'Cogent Other (IP4X-COGENTOTHER-103). ');
+$ax += cidrblock($address, '38.121.88.0/21', 'Cogent Other (IP4X-COGENTOTHER-104). ');
+$ax += cidrblock($address, '38.123.65.0/24', 'Cogent Other (IP4X-COGENTOTHER-105). ');
+$ax += cidrblock($address, '38.123.207.0/24', 'Cogent Other (IP4X-COGENTOTHER-106). ');
+$ax += cidrblock($address, '38.124.205.0/24', 'Cogent Other (IP4X-COGENTOTHER-107). ');
+$ax += cidrblock($address, '38.125.94.0/24', 'Cogent Other (IP4X-COGENTOTHER-108). ');
+$ax += cidrblock($address, '38.125.97.0/24', 'Cogent Other (IP4X-COGENTOTHER-109). ');
+$ax += cidrblock($address, '38.125.100.0/24', 'Cogent Other (IP4X-COGENTOTHER-110). ');
+$ax += cidrblock($address, '38.125.102.0/24', 'Cogent Other (IP4X-COGENTOTHER-111). ');
+$ax += cidrblock($address, '38.125.105.0/24', 'Cogent Other (IP4X-COGENTOTHER-112). ');
+$ax += cidrblock($address, '38.126.14.0/24', 'Cogent Other (IP4X-COGENTOTHER-113). ');
+$ax += cidrblock($address, '38.126.238.0/23', 'Cogent Other (IP4X-COGENTOTHER-114). ');
+$ax += cidrblock($address, '38.126.245.0/24', 'Cogent Other (IP4X-COGENTOTHER-115). ');
+$ax += cidrblock($address, '38.127.237.0/24', 'Cogent Other (IP4X-COGENTOTHER-116). ');
+$ax += cidrblock($address, '38.127.238.0/24', 'Cogent Other (IP4X-COGENTOTHER-117). ');
+$ax += cidrblock($address, '38.128.107.0/24', 'Cogent Other (IP4X-COGENTOTHER-118). ');
+$ax += cidrblock($address, '38.129.0.0/20', 'Cogent Other (IP4X-COGENTOTHER-119). ');
+$ax += cidrblock($address, '38.130.74.0/24', 'Cogent Other (IP4X-COGENTOTHER-120). ');
+$ax += cidrblock($address, '38.130.78.0/24', 'Cogent Other (IP4X-COGENTOTHER-121). ');
+$ax += cidrblock($address, '38.130.135.0/24', 'Cogent Other (IP4X-COGENTOTHER-122). ');
+$ax += cidrblock($address, '38.130.255.0/24', 'Cogent Other (IP4X-COGENTOTHER-123). ');
+$ax += cidrblock($address, '38.131.49.0/24', 'Cogent Other (IP4X-COGENTOTHER-124). ');
+$ax += cidrblock($address, '38.131.182.0/23', 'Cogent Other (IP4X-COGENTOTHER-125). ');
+$ax += cidrblock($address, '38.133.164.0/23', 'Cogent Other (IP4X-COGENTOTHER-126). ');
+$ax += cidrblock($address, '38.133.178.0/24', 'Cogent Other (IP4X-COGENTOTHER-127). ');
+$ax += cidrblock($address, '38.133.182.0/23', 'Cogent Other (IP4X-COGENTOTHER-128). ');
+$ax += cidrblock($address, '38.133.214.0/24', 'Cogent Other (IP4X-COGENTOTHER-129). ');
+$ax += cidrblock($address, '38.135.38.0/24', 'Cogent Other (IP4X-COGENTOTHER-130). ');
+$ax += cidrblock($address, '38.135.85.0/24', 'Cogent Other (IP4X-COGENTOTHER-131). ');
+$ax += cidrblock($address, '38.135.101.0/24', 'Cogent Other (IP4X-COGENTOTHER-132). ');
+$ax += cidrblock($address, '38.143.16.0/23', 'Cogent Other (IP4X-COGENTOTHER-133). ');
+$ax += cidrblock($address, '38.143.176.0/22', 'Cogent Other (IP4X-COGENTOTHER-134). ');
+$ax += cidrblock($address, '38.146.51.0/24', 'Cogent Other (IP4X-COGENTOTHER-135). ');
+$ax += cidrblock($address, '38.146.52.0/24', 'Cogent Other (IP4X-COGENTOTHER-136). ');
+$ax += cidrblock($address, '38.146.57.0/24', 'Cogent Other (IP4X-COGENTOTHER-137). ');
+$ax += cidrblock($address, '38.146.141.0/24', 'Cogent Other (IP4X-COGENTOTHER-138). ');
+$ax += cidrblock($address, '38.146.142.0/24', 'Cogent Other (IP4X-COGENTOTHER-139). ');
+$ax += cidrblock($address, '38.146.224.0/24', 'Cogent Other (IP4X-COGENTOTHER-140). ');
+$ax += cidrblock($address, '38.147.132.0/24', 'Cogent Other (IP4X-COGENTOTHER-141). ');
+$ax += cidrblock($address, '38.240.96.0/19', 'Cogent Other (IP4X-COGENTOTHER-142). ');
+$ax += cidrblock($address, '38.240.192.0/19', 'Cogent Other (IP4X-COGENTOTHER-143). ');
+$ax += cidrblock($address, '50.7.28.0/23', 'Cogent Other (IP4X-COGENTOTHER-144). ');
+$ax += cidrblock($address, '50.7.63.0/24', 'Cogent Other (IP4X-COGENTOTHER-145). ');
+$ax += cidrblock($address, '50.7.103.0/24', 'Cogent Other (IP4X-COGENTOTHER-146). ');
+$ax += cidrblock($address, '50.7.109.0/24', 'Cogent Other (IP4X-COGENTOTHER-147). ');
+$ax += cidrblock($address, '50.7.238.0/23', 'Cogent Other (IP4X-COGENTOTHER-148). ');
+$ax += cidrblock($address, '50.7.240.0/23', 'Cogent Other (IP4X-COGENTOTHER-149). ');
+$ax += cidrblock($address, '130.117.178.0/24', 'Cogent Other (IP4X-COGENTOTHER-150). ');
+$ax += cidrblock($address, '130.117.233.0/24', 'Cogent Other (IP4X-COGENTOTHER-151). ');
+$ax += cidrblock($address, '141.193.250.0/24', 'Cogent Other (IP4X-COGENTOTHER-152). ');
+$ax += cidrblock($address, '149.5.225.0/24', 'Cogent Other (IP4X-COGENTOTHER-153). ');
+$ax += cidrblock($address, '149.12.214.0/24', 'Cogent Other (IP4X-COGENTOTHER-154). ');
+$ax += cidrblock($address, '154.3.0.0/16', 'Cogent Other (IP4X-COGENTOTHER-155). ');
+$ax += cidrblock($address, '154.6.0.0/15', 'Cogent Other (IP4X-COGENTOTHER-156). ');
+$ax += cidrblock($address, '154.9.0.0/16', 'Cogent Other (IP4X-COGENTOTHER-157). ');
+$ax += cidrblock($address, '154.12.0.0/15', 'Cogent Other (IP4X-COGENTOTHER-158). ');
+$ax += cidrblock($address, '154.17.208.0/20', 'Cogent Other (IP4X-COGENTOTHER-159). ');
+$ax += cidrblock($address, '154.17.224.0/20', 'Cogent Other (IP4X-COGENTOTHER-160). ');
+$ax += cidrblock($address, '154.17.248.0/22', 'Cogent Other (IP4X-COGENTOTHER-161). ');
+$ax += cidrblock($address, '154.17.252.0/24', 'Cogent Other (IP4X-COGENTOTHER-162). ');
+$ax += cidrblock($address, '154.17.254.0/23', 'Cogent Other (IP4X-COGENTOTHER-163). ');
+$ax += cidrblock($address, '154.18.0.0/15', 'Cogent Other (IP4X-COGENTOTHER-164). ');
+$ax += cidrblock($address, '154.21.0.0/16', 'Cogent Other (IP4X-COGENTOTHER-165). ');
+$ax += cidrblock($address, '154.22.0.0/23', 'Cogent Other (IP4X-COGENTOTHER-166). ');
+$ax += cidrblock($address, '154.22.128.0/23', 'Cogent Other (IP4X-COGENTOTHER-167). ');
+$ax += cidrblock($address, '154.24.0.0/13', 'Cogent Other (IP4X-COGENTOTHER-168). ');
+$ax += cidrblock($address, '154.36.0.0/14', 'Cogent Other (IP4X-COGENTOTHER-169). ');
+$ax += cidrblock($address, '154.40.0.0/13', 'Cogent Other (IP4X-COGENTOTHER-170). ');
+$ax += cidrblock($address, '154.48.0.0/12', 'Cogent Other (IP4X-COGENTOTHER-171). ');
+$ax += cidrblock($address, '154.64.0.0/16', 'Cogent Other (IP4X-COGENTOTHER-172). ');
+$ax += cidrblock($address, '162.221.136.0/23', 'Cogent Other (IP4X-COGENTOTHER-173). ');
+$ax += cidrblock($address, '162.244.112.0/21', 'Cogent Other (IP4X-COGENTOTHER-174). ');
+$ax += cidrblock($address, '198.16.117.0/24', 'Cogent Other (IP4X-COGENTOTHER-175). ');
+$ax += cidrblock($address, '198.153.70.0/24', 'Cogent Other (IP4X-COGENTOTHER-176). ');
+$ax += cidrblock($address, '205.254.192.0/19', 'Cogent Other (IP4X-COGENTOTHER-177). ');
+$ax += cidrblock($address, '206.197.34.0/24', 'Cogent Other (IP4X-COGENTOTHER-178). ');
+$ax += cidrblock($address, '209.146.48.0/21', 'Cogent Other (IP4X-COGENTOTHER-179). ');
+$ax += cidrblock($address, '216.152.18.0/24', 'Cogent Other (IP4X-COGENTOTHER-180). ');
 
 
 // ASN 36351 ("SoftLayer Technologies").
@@ -298,25 +321,19 @@ $ax += cidrblock($address, '196.52.96.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS
 
 
 // ASN 59898 ("AllSafe Sarl").
-// Related to "ProtonVPN", "ProtonMail", and "Proton Technologies". Provides VPNs and proxies, both public and private.
-// Updated: 2019.03.26 / Checked: 2019.08.13
+// Related to "ProtonVPN", "ProtonMail", and "Proton Technologies". Provides
+// VPNs and proxies, both public and private.
+// Updated: 2020.01.02
 
 $ax += cidrblock($address, '185.159.157.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-0). ');
 $ax += cidrblock($address, '185.167.4.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-1). ');
-$ax += cidrblock($address, '185.167.6.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-2). ');
-$ax += cidrblock($address, '185.196.136.0/23', 'AllSafe Sarl (IP4X-ALLSAFESARL-3). ');
-
-
-// proXPN Direct LLC (1 CIDR; no ASN).
-// Anonymous proxy service; Potential source of SPAM and hacking attacks.
-// Updated: 2016.05.26 / Checked: 2019.08.13
-
-$ax += cidrblock($address, '173.0.0.0/20', 'proXPN Direct LLC (IP4X-PROXPNDIRECTLLC-0). ');
+$ax += cidrblock($address, '185.167.6.0/23', 'AllSafe Sarl (IP4X-ALLSAFESARL-2). ');
+$ax += cidrblock($address, '185.196.137.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-3). ');
 
 
 // ASN 205100 ("F3 Netze e.V").
 // Provides TOR exit nodes.
-// Updated: 2018.04.23 / Checked: 2019.08.13
+// Updated: 2018.04.23 / Checked: 2020.01.02
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
 
@@ -418,7 +435,7 @@ $ax += cidrblock($address, '185.5.44.0/24', 'Portlane Networks AB (IP4X-PORTLANE
 
 // ASN 396507 ("Emerald Onion").
 // Anonymous tor endpoint; Significant source of spam.
-// Updated: 2019.05.03 / Checked: 2019.08.13
+// Updated: 2019.05.03 / Checked: 2020.01.02
 
 $ax += cidrblock($address, '23.129.64.0/24', 'Emerald Onion (IP4X-EMERALDONION-0). ');
 
