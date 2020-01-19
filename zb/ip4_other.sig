@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.01.09
+ * This file last updated: 2020.01.19
  */
-$zbbversion .= ' / IP4X-100a';
+$zbbversion .= ' / IP4X-100b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -26,7 +26,7 @@ global $whyblockout, $ax;
 
 // ---
 // IPv4 Bogons List.
-// Updated: 2018.03.29 / Checked: 2019.09.18
+// Updated: 2018.03.29 / Checked: 2020.01.11
 // Refer https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
 
 $ax += cidrblock($address, '0.0.0.0/8', 'IPv4 Bogons (IP4X-IPV4BOGONS-0). ');
@@ -1440,11 +1440,10 @@ $ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-
 
 
 // ASN 208323 ("Foundation for Applied Privacy").
-// Provides tor endpoints. No listings at any DBs/RBLs anywhere AFAICT, but have
-// had a few reports of suspect activity from some users; adding for the moment
-// on proviso that there aren't any complaints about false positives or similar
-// such problems, and we'll see how it goes.
-// Updated: 2019.10.02
+// A *huge* source of spam! Went from zero reports at SFS to 38,300+ reports in
+// the course of less than three months; Should be cautious about removal, even
+// if the reports subside in the future.
+// Updated: 2019.10.02 / Checked: 2020.01.15
 
 $ax += cidrblock($address, '109.70.100.0/24', 'Applied Privacy (IP4X-APPLIEDPRIVACY-0). ');
 
