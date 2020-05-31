@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.05.21
+ * This file last updated: 2020.05.31
  */
-$zbbversion .= ' / IP4X-104a';
+$zbbversion .= ' / IP4X-104b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -321,17 +321,17 @@ $ax += cidrblock($address, '192.253.242.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVP
 // ASN 59898 ("AllSafe Sarl").
 // Related to "ProtonVPN", "ProtonMail", and "Proton Technologies". Provides
 // VPNs and proxies, both public and private.
-// Updated: 2020.01.02
+// Updated: 2020.05.24
 
 $ax += cidrblock($address, '185.159.157.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-0). ');
-$ax += cidrblock($address, '185.167.4.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-1). ');
-$ax += cidrblock($address, '185.167.6.0/23', 'AllSafe Sarl (IP4X-ALLSAFESARL-2). ');
+$ax += cidrblock($address, '185.165.209.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-1). ');
+$ax += cidrblock($address, '185.167.4.0/22', 'AllSafe Sarl (IP4X-ALLSAFESARL-2). ');
 $ax += cidrblock($address, '185.196.137.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-3). ');
 
 
 // ASN 205100 ("F3 Netze e.V").
 // Provides TOR exit nodes.
-// Updated: 2018.04.23 / Checked: 2020.01.02
+// Updated: 2018.04.23 / Checked: 2020.05.26
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
 
