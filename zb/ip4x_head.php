@@ -16,7 +16,7 @@
  * See: http://zb-block.net/zbf/showthread.php?t=20
  * This file last updated: 2020.08.11
  */
-$zbbversion .= ' / IP4X-106d';
+$zbbversion .= ' / IP4X-106d.1';
 
 // *php 5 fix
 global $whyblockout, $ax;
