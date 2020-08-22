@@ -126,7 +126,7 @@ function build($Files, $Ident, $HeadFile, $FootFile, $OutFile) {
     fclose($Handle);
 }
 
-$Path = __DIR__ . '/../CIDRAM-v1/vault/';
+$Path = 'C:/Projects/html/CIDRAM-v2/vault/';
 
 build([$Path . 'ipv4.dat'], 'IP4H', 'ip4h_head.php', 'ip4h_foot.php', 'ip4_hosts.sig');
 build([$Path . 'ipv4_isps.dat'], 'IP4S', 'ip4s_head.php', 'ip4s_foot.php', 'ip4_isps.sig');
