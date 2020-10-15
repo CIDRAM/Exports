@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.10.05
+ * This file last updated: 2020.10.15
  */
-$zbbversion .= ' / IP4X-108';
+$zbbversion .= ' / IP4X-108a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1310,51 +1310,62 @@ $ax += cidrblock($address, '167.160.60.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTS
 
 // ASN 9009 ("M247 Ltd").
 // Multiplay network providing broadband connectivity, server leasing, line rental, webhosting services and others.
-// Marked as "Server" or "Host" to go to the cloud/hosting signatures ^(.*(?:Host|Server).*)\x01$
+// Marked as "Server", "Host", "Datacenter" to go to the cloud/hosting signatures ^(.*(?:Host|Server|Data ?cent(?:er|re)).*)\x01$
 // Marked as "Secure Internet LLC" to go to the proxy/other signatures ^(.*(?:Secure Internet LLC).*)\x01$
 // Everything else to go to the ISPs signatures. When updating, remove all subordinates of 38.0.0.0/8 from final
 // aggregate (already blocked elsewhere and don't want duplicates).
-// Updated: 2020.04.13
+// Updated: 2020.10.10
 
-$ax += cidrblock($address, '45.74.38.0/24', 'M247 Ltd (IP4X-M247LTD-00). ');
-$ax += cidrblock($address, '45.74.45.0/24', 'M247 Ltd (IP4X-M247LTD-01). ');
-$ax += cidrblock($address, '104.37.6.0/24', 'M247 Ltd (IP4X-M247LTD-02). ');
-$ax += cidrblock($address, '104.243.240.0/24', 'M247 Ltd (IP4X-M247LTD-03). ');
-$ax += cidrblock($address, '104.243.250.0/24', 'M247 Ltd (IP4X-M247LTD-04). ');
-$ax += cidrblock($address, '104.243.252.0/24', 'M247 Ltd (IP4X-M247LTD-05). ');
-$ax += cidrblock($address, '104.250.164.0/23', 'M247 Ltd (IP4X-M247LTD-06). ');
-$ax += cidrblock($address, '104.250.169.0/24', 'M247 Ltd (IP4X-M247LTD-07). ');
-$ax += cidrblock($address, '104.250.170.0/24', 'M247 Ltd (IP4X-M247LTD-08). ');
-$ax += cidrblock($address, '104.250.176.0/23', 'M247 Ltd (IP4X-M247LTD-09). ');
-$ax += cidrblock($address, '104.250.180.0/24', 'M247 Ltd (IP4X-M247LTD-10). ');
-$ax += cidrblock($address, '104.250.182.0/24', 'M247 Ltd (IP4X-M247LTD-11). ');
-$ax += cidrblock($address, '104.250.185.0/24', 'M247 Ltd (IP4X-M247LTD-12). ');
-$ax += cidrblock($address, '104.250.186.0/24', 'M247 Ltd (IP4X-M247LTD-13). ');
-$ax += cidrblock($address, '162.246.184.0/24', 'M247 Ltd (IP4X-M247LTD-14). ');
-$ax += cidrblock($address, '172.94.71.0/24', 'M247 Ltd (IP4X-M247LTD-15). ');
-$ax += cidrblock($address, '172.94.74.0/24', 'M247 Ltd (IP4X-M247LTD-16). ');
-$ax += cidrblock($address, '172.94.90.0/24', 'M247 Ltd (IP4X-M247LTD-17). ');
-$ax += cidrblock($address, '172.94.108.0/23', 'M247 Ltd (IP4X-M247LTD-18). ');
-$ax += cidrblock($address, '172.94.110.0/24', 'M247 Ltd (IP4X-M247LTD-19). ');
-$ax += cidrblock($address, '172.94.125.0/24', 'M247 Ltd (IP4X-M247LTD-20). ');
-$ax += cidrblock($address, '172.111.147.0/24', 'M247 Ltd (IP4X-M247LTD-21). ');
-$ax += cidrblock($address, '172.111.148.0/23', 'M247 Ltd (IP4X-M247LTD-22). ');
-$ax += cidrblock($address, '172.111.154.0/24', 'M247 Ltd (IP4X-M247LTD-23). ');
-$ax += cidrblock($address, '172.111.171.0/24', 'M247 Ltd (IP4X-M247LTD-24). ');
-$ax += cidrblock($address, '172.111.186.0/24', 'M247 Ltd (IP4X-M247LTD-25). ');
-$ax += cidrblock($address, '172.111.190.0/24', 'M247 Ltd (IP4X-M247LTD-26). ');
-$ax += cidrblock($address, '172.111.197.0/24', 'M247 Ltd (IP4X-M247LTD-27). ');
-$ax += cidrblock($address, '172.111.205.0/24', 'M247 Ltd (IP4X-M247LTD-28). ');
-$ax += cidrblock($address, '172.111.211.0/24', 'M247 Ltd (IP4X-M247LTD-29). ');
-$ax += cidrblock($address, '172.111.214.0/24', 'M247 Ltd (IP4X-M247LTD-30). ');
-$ax += cidrblock($address, '172.111.216.0/23', 'M247 Ltd (IP4X-M247LTD-31). ');
-$ax += cidrblock($address, '172.111.219.0/24', 'M247 Ltd (IP4X-M247LTD-32). ');
-$ax += cidrblock($address, '172.111.220.0/24', 'M247 Ltd (IP4X-M247LTD-33). ');
-$ax += cidrblock($address, '172.111.233.0/24', 'M247 Ltd (IP4X-M247LTD-34). ');
-$ax += cidrblock($address, '172.111.242.0/24', 'M247 Ltd (IP4X-M247LTD-35). ');
-$ax += cidrblock($address, '172.111.244.0/23', 'M247 Ltd (IP4X-M247LTD-36). ');
-$ax += cidrblock($address, '172.111.250.0/24', 'M247 Ltd (IP4X-M247LTD-37). ');
-$ax += cidrblock($address, '172.111.253.0/24', 'M247 Ltd (IP4X-M247LTD-38). ');
+$ax += cidrblock($address, '45.74.16.0/24', 'M247 Ltd (IP4X-M247LTD-00). ');
+$ax += cidrblock($address, '45.74.27.0/24', 'M247 Ltd (IP4X-M247LTD-01). ');
+$ax += cidrblock($address, '45.74.38.0/23', 'M247 Ltd (IP4X-M247LTD-02). ');
+$ax += cidrblock($address, '45.74.45.0/24', 'M247 Ltd (IP4X-M247LTD-03). ');
+$ax += cidrblock($address, '104.37.6.0/24', 'M247 Ltd (IP4X-M247LTD-04). ');
+$ax += cidrblock($address, '104.243.240.0/24', 'M247 Ltd (IP4X-M247LTD-05). ');
+$ax += cidrblock($address, '104.243.250.0/23', 'M247 Ltd (IP4X-M247LTD-06). ');
+$ax += cidrblock($address, '104.243.252.0/24', 'M247 Ltd (IP4X-M247LTD-07). ');
+$ax += cidrblock($address, '104.250.164.0/23', 'M247 Ltd (IP4X-M247LTD-08). ');
+$ax += cidrblock($address, '104.250.169.0/24', 'M247 Ltd (IP4X-M247LTD-09). ');
+$ax += cidrblock($address, '104.250.170.0/24', 'M247 Ltd (IP4X-M247LTD-10). ');
+$ax += cidrblock($address, '104.250.174.0/24', 'M247 Ltd (IP4X-M247LTD-11). ');
+$ax += cidrblock($address, '104.250.176.0/23', 'M247 Ltd (IP4X-M247LTD-12). ');
+$ax += cidrblock($address, '104.250.180.0/24', 'M247 Ltd (IP4X-M247LTD-13). ');
+$ax += cidrblock($address, '104.250.182.0/24', 'M247 Ltd (IP4X-M247LTD-14). ');
+$ax += cidrblock($address, '104.250.185.0/24', 'M247 Ltd (IP4X-M247LTD-15). ');
+$ax += cidrblock($address, '104.250.186.0/24', 'M247 Ltd (IP4X-M247LTD-16). ');
+$ax += cidrblock($address, '162.246.184.0/23', 'M247 Ltd (IP4X-M247LTD-17). ');
+$ax += cidrblock($address, '172.94.67.0/24', 'M247 Ltd (IP4X-M247LTD-18). ');
+$ax += cidrblock($address, '172.94.71.0/24', 'M247 Ltd (IP4X-M247LTD-19). ');
+$ax += cidrblock($address, '172.94.74.0/24', 'M247 Ltd (IP4X-M247LTD-20). ');
+$ax += cidrblock($address, '172.94.90.0/24', 'M247 Ltd (IP4X-M247LTD-21). ');
+$ax += cidrblock($address, '172.94.108.0/23', 'M247 Ltd (IP4X-M247LTD-22). ');
+$ax += cidrblock($address, '172.94.110.0/24', 'M247 Ltd (IP4X-M247LTD-23). ');
+$ax += cidrblock($address, '172.94.119.0/24', 'M247 Ltd (IP4X-M247LTD-24). ');
+$ax += cidrblock($address, '172.94.120.0/24', 'M247 Ltd (IP4X-M247LTD-25). ');
+$ax += cidrblock($address, '172.94.125.0/24', 'M247 Ltd (IP4X-M247LTD-26). ');
+$ax += cidrblock($address, '172.111.147.0/24', 'M247 Ltd (IP4X-M247LTD-27). ');
+$ax += cidrblock($address, '172.111.148.0/23', 'M247 Ltd (IP4X-M247LTD-28). ');
+$ax += cidrblock($address, '172.111.151.0/24', 'M247 Ltd (IP4X-M247LTD-29). ');
+$ax += cidrblock($address, '172.111.154.0/24', 'M247 Ltd (IP4X-M247LTD-30). ');
+$ax += cidrblock($address, '172.111.171.0/24', 'M247 Ltd (IP4X-M247LTD-31). ');
+$ax += cidrblock($address, '172.111.183.0/24', 'M247 Ltd (IP4X-M247LTD-32). ');
+$ax += cidrblock($address, '172.111.186.0/24', 'M247 Ltd (IP4X-M247LTD-33). ');
+$ax += cidrblock($address, '172.111.190.0/24', 'M247 Ltd (IP4X-M247LTD-34). ');
+$ax += cidrblock($address, '172.111.197.0/24', 'M247 Ltd (IP4X-M247LTD-35). ');
+$ax += cidrblock($address, '172.111.205.0/24', 'M247 Ltd (IP4X-M247LTD-36). ');
+$ax += cidrblock($address, '172.111.210.0/23', 'M247 Ltd (IP4X-M247LTD-37). ');
+$ax += cidrblock($address, '172.111.214.0/24', 'M247 Ltd (IP4X-M247LTD-38). ');
+$ax += cidrblock($address, '172.111.216.0/23', 'M247 Ltd (IP4X-M247LTD-39). ');
+$ax += cidrblock($address, '172.111.219.0/24', 'M247 Ltd (IP4X-M247LTD-40). ');
+$ax += cidrblock($address, '172.111.220.0/24', 'M247 Ltd (IP4X-M247LTD-41). ');
+$ax += cidrblock($address, '172.111.227.0/24', 'M247 Ltd (IP4X-M247LTD-42). ');
+$ax += cidrblock($address, '172.111.230.0/24', 'M247 Ltd (IP4X-M247LTD-43). ');
+$ax += cidrblock($address, '172.111.233.0/24', 'M247 Ltd (IP4X-M247LTD-44). ');
+$ax += cidrblock($address, '172.111.242.0/24', 'M247 Ltd (IP4X-M247LTD-45). ');
+$ax += cidrblock($address, '172.111.244.0/23', 'M247 Ltd (IP4X-M247LTD-46). ');
+$ax += cidrblock($address, '172.111.246.0/24', 'M247 Ltd (IP4X-M247LTD-47). ');
+$ax += cidrblock($address, '172.111.250.0/24', 'M247 Ltd (IP4X-M247LTD-48). ');
+$ax += cidrblock($address, '172.111.253.0/24', 'M247 Ltd (IP4X-M247LTD-49). ');
 
 // IP4X Test Trigger
 $ax += inmatch($query, 'xip4xx', 'IP4X Test Trigger. ');
