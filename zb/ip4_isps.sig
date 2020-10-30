@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.10.23
+ * This file last updated: 2020.10.30
  */
-$zbbversion .= ' / IP4S-108b';
+$zbbversion .= ' / IP4S-108c';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -2613,41 +2613,30 @@ $ax += cidrblock($address, '195.47.250.0/24', 'MAROSNET (IP4S-MAROSNET-23). ');
 $ax += cidrblock($address, '195.66.87.0/24', 'MAROSNET (IP4S-MAROSNET-24). ');
 
 
-// ASNs 7552, 24086, 37620, 133606, 262210 ("Viettel Corporation").
+// ASNs 7552, 24086, 37620, 262210 ("Viettel Corporation").
 // A HUGE source of forum spam, but also a legit ISP with human endpoints.
 // Serves mostly Vietnam, but also several African countries. Including only the
 // specific affected ASNs (several clean ASNs have been intentionally omitted).
-// Updated: 2020.05.06
+// Updated: 2020.10.30
 
 $ax += cidrblock($address, '41.244.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-00). ');
 $ax += cidrblock($address, '131.255.192.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-01). ');
 $ax += cidrblock($address, '181.176.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-02). ');
-$ax += cidrblock($address, '43.254.56.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-03). ');
-$ax += cidrblock($address, '103.238.116.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-04). ');
-$ax += cidrblock($address, '100.144.128.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-05). ');
-$ax += cidrblock($address, '100.145.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-06). ');
-$ax += cidrblock($address, '100.146.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-07). ');
-$ax += cidrblock($address, '100.148.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-08). ');
-$ax += cidrblock($address, '100.149.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-09). ');
-$ax += cidrblock($address, '100.153.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-10). ');
-$ax += cidrblock($address, '100.154.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-11). ');
-$ax += cidrblock($address, '100.155.0.0/16', 'Viettel Corporation (IP4S-VIETTELCORPORATION-12). ');
-$ax += cidrblock($address, '100.156.0.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-13). ');
-$ax += cidrblock($address, '27.64.0.0/12', 'Viettel Corporation (IP4S-VIETTELCORPORATION-14). ');
-$ax += cidrblock($address, '103.84.76.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-15). ');
-$ax += cidrblock($address, '103.241.248.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-16). ');
-$ax += cidrblock($address, '113.61.109.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-17). ');
-$ax += cidrblock($address, '115.72.0.0/13', 'Viettel Corporation (IP4S-VIETTELCORPORATION-18). ');
-$ax += cidrblock($address, '116.96.0.0/12', 'Viettel Corporation (IP4S-VIETTELCORPORATION-19). ');
-$ax += cidrblock($address, '117.0.0.0/13', 'Viettel Corporation (IP4S-VIETTELCORPORATION-20). ');
-$ax += cidrblock($address, '125.212.128.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-21). ');
-$ax += cidrblock($address, '125.214.0.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-22). ');
-$ax += cidrblock($address, '125.234.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-23). ');
-$ax += cidrblock($address, '171.224.0.0/11', 'Viettel Corporation (IP4S-VIETTELCORPORATION-24). ');
-$ax += cidrblock($address, '202.6.96.0/23', 'Viettel Corporation (IP4S-VIETTELCORPORATION-25). ');
-$ax += cidrblock($address, '203.113.128.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-26). ');
-$ax += cidrblock($address, '203.190.160.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-27). ');
-$ax += cidrblock($address, '220.231.64.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-28). ');
+$ax += cidrblock($address, '27.64.0.0/12', 'Viettel Corporation (IP4S-VIETTELCORPORATION-03). ');
+$ax += cidrblock($address, '103.84.76.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-04). ');
+$ax += cidrblock($address, '103.241.248.0/22', 'Viettel Corporation (IP4S-VIETTELCORPORATION-05). ');
+$ax += cidrblock($address, '113.61.109.0/24', 'Viettel Corporation (IP4S-VIETTELCORPORATION-06). ');
+$ax += cidrblock($address, '115.72.0.0/13', 'Viettel Corporation (IP4S-VIETTELCORPORATION-07). ');
+$ax += cidrblock($address, '116.96.0.0/12', 'Viettel Corporation (IP4S-VIETTELCORPORATION-08). ');
+$ax += cidrblock($address, '117.0.0.0/13', 'Viettel Corporation (IP4S-VIETTELCORPORATION-09). ');
+$ax += cidrblock($address, '125.212.128.0/17', 'Viettel Corporation (IP4S-VIETTELCORPORATION-10). ');
+$ax += cidrblock($address, '125.214.0.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-11). ');
+$ax += cidrblock($address, '125.234.0.0/15', 'Viettel Corporation (IP4S-VIETTELCORPORATION-12). ');
+$ax += cidrblock($address, '171.224.0.0/11', 'Viettel Corporation (IP4S-VIETTELCORPORATION-13). ');
+$ax += cidrblock($address, '202.6.96.0/23', 'Viettel Corporation (IP4S-VIETTELCORPORATION-14). ');
+$ax += cidrblock($address, '203.113.128.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-15). ');
+$ax += cidrblock($address, '203.190.160.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-16). ');
+$ax += cidrblock($address, '220.231.64.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-17). ');
 
 
 // ASNs 200019, 207636 ("ALEXHOST SRL").
@@ -9378,7 +9367,7 @@ $ax += cidrblock($address, '213.200.0.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-31)
 
 // ASN 7642 ("Dhivehi Raajjeyge Gulhun Plc (Dhiraagu)").
 // ISP from the Maldives with human endpoints, but also a source of spam.
-// Updated: 2020.05.06
+// Updated: 2020.05.06 / Checked: 2020.10.30
 
 $ax += cidrblock($address, '27.114.128.0/18', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-00). ');
 $ax += cidrblock($address, '43.226.220.0/22', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-01). ');
@@ -10550,31 +10539,39 @@ $ax += cidrblock($address, '188.223.213.156/32', 'Sky UK Limited (IP4S-SKYUKLIMI
 // A domestic ISP from the UK, but forum spam incidents detected from some
 // specific addresses, plus Mirai detected at some specific addresses. Listing
 // just the specific offending addresses here (not the whole network).
-// Updated: 2020.05.06
+// Updated: 2020.10.30
 
-$ax += cidrblock($address, '31.52.15.126/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-00). ');
+$ax += cidrblock($address, '31.49.232.180/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-00). ');
 $ax += cidrblock($address, '31.52.157.0/24', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-01). ');
-$ax += cidrblock($address, '31.53.200.4/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-02). ');
-$ax += cidrblock($address, '31.53.208.233/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-03). ');
-$ax += cidrblock($address, '62.6.237.182/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-04). ');
-$ax += cidrblock($address, '81.133.122.122/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-05). ');
-$ax += cidrblock($address, '86.128.6.98/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-06). ');
-$ax += cidrblock($address, '86.136.167.103/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-07). ');
-$ax += cidrblock($address, '86.138.41.144/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-08). ');
-$ax += cidrblock($address, '86.142.163.165/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-09). ');
-$ax += cidrblock($address, '86.147.14.158/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-10). ');
-$ax += cidrblock($address, '86.154.217.118/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-11). ');
-$ax += cidrblock($address, '86.154.250.54/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-12). ');
-$ax += cidrblock($address, '86.155.12.184/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-13). ');
-$ax += cidrblock($address, '86.155.34.187/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-14). ');
-$ax += cidrblock($address, '86.160.241.82/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-15). ');
-$ax += cidrblock($address, '86.161.197.6/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-16). ');
-$ax += cidrblock($address, '86.168.137.25/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-17). ');
-$ax += cidrblock($address, '86.177.79.192/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-18). ');
-$ax += cidrblock($address, '86.184.98.208/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-19). ');
-$ax += cidrblock($address, '86.185.8.144/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-20). ');
-$ax += cidrblock($address, '109.152.105.222/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-21). ');
-$ax += cidrblock($address, '109.156.50.188/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-22). ');
+$ax += cidrblock($address, '31.54.231.106/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-02). ');
+$ax += cidrblock($address, '81.136.112.129/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-03). ');
+$ax += cidrblock($address, '86.130.179.88/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-04). ');
+$ax += cidrblock($address, '86.131.148.251/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-05). ');
+$ax += cidrblock($address, '86.132.58.156/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-06). ');
+$ax += cidrblock($address, '86.133.96.114/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-07). ');
+$ax += cidrblock($address, '86.137.188.145/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-08). ');
+$ax += cidrblock($address, '86.138.64.105/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-09). ');
+$ax += cidrblock($address, '86.146.175.210/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-10). ');
+$ax += cidrblock($address, '86.146.212.157/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-11). ');
+$ax += cidrblock($address, '86.148.176.218/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-12). ');
+$ax += cidrblock($address, '86.150.233.79/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-13). ');
+$ax += cidrblock($address, '86.150.255.19/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-14). ');
+$ax += cidrblock($address, '86.156.233.98/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-15). ');
+$ax += cidrblock($address, '86.159.78.88/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-16). ');
+$ax += cidrblock($address, '86.165.21.212/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-17). ');
+$ax += cidrblock($address, '86.167.26.98/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-18). ');
+$ax += cidrblock($address, '86.168.187.32/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-19). ');
+$ax += cidrblock($address, '86.174.91.191/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-20). ');
+$ax += cidrblock($address, '86.180.118.128/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-21). ');
+$ax += cidrblock($address, '86.187.174.104/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-22). ');
+$ax += cidrblock($address, '86.188.14.25/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-23). ');
+$ax += cidrblock($address, '86.190.170.185/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-24). ');
+$ax += cidrblock($address, '86.191.117.18/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-25). ');
+$ax += cidrblock($address, '109.144.23.34/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-26). ');
+$ax += cidrblock($address, '109.147.229.138/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-27). ');
+$ax += cidrblock($address, '109.156.41.77/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-28). ');
+$ax += cidrblock($address, '147.148.49.89/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-29). ');
+$ax += cidrblock($address, '213.120.213.251/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-30). ');
 
 
 // ASN 52465 ("WNet Internet y Hosting").

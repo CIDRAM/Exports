@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.10.23
+ * This file last updated: 2020.10.30
  */
-$zbbversion .= ' / IP4X-108b';
+$zbbversion .= ' / IP4X-108c';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1351,6 +1351,13 @@ $ax += cidrblock($address, '172.111.244.0/23', 'M247 Ltd (IP4X-M247LTD-46). ');
 $ax += cidrblock($address, '172.111.246.0/24', 'M247 Ltd (IP4X-M247LTD-47). ');
 $ax += cidrblock($address, '172.111.250.0/24', 'M247 Ltd (IP4X-M247LTD-48). ');
 $ax += cidrblock($address, '172.111.253.0/24', 'M247 Ltd (IP4X-M247LTD-49). ');
+
+
+// ASN 197640 ("OverPlay.Net LP").
+// A paid VPN provider and a source of spam.
+// Updated: 2020.10.30
+
+$ax += cidrblock($address, '185.147.213.0/24', 'OverPlay.Net LP (IP4X-OVERPLAYNETLP-0). ');
 
 // IP4X Test Trigger
 $ax += inmatch($query, 'xip4xx', 'IP4X Test Trigger. ');
