@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.11.09
+ * This file last updated: 2020.11.25
  */
-$zbbversion .= ' / IP4X-109';
+$zbbversion .= ' / IP4X-109a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -70,67 +70,51 @@ $ax += cidrblock($address, '204.56.124.0/22', 'Cogent VPNs+Proxies (IP4X-COGENTV
 // Careful when updating; Signatures reflect varying block reasons, split across multiple files.
 
 // SoftLayer VPNs and proxies.
-// Includes: Anything citing "TEFINCOM", "Packet Flip", "VPN", "proxy", "Privat Kommunikation", "Secure Internet".
-// ^(.*(TEFINCOM|Packet Flip|VPN|Proxy|Privat Kommunikation|Secure Internet).*)$
+// Includes: Anything citing "TEFINCOM", "Packet Flip", "VPN", "proxy", "Secure Internet".
+// ^(.*(TEFINCOM|Packet Flip|VPN|Proxy|Secure Internet).*)$
 // Excludes: Everything else.
-// Updated: 2020.05.21
+// Updated: 2020.11.21
 
 $ax += cidrblock($address, '185.99.135.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-00). ');
 $ax += cidrblock($address, '93.114.92.0/22', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-01). ');
 $ax += cidrblock($address, '185.153.176.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-02). ');
 $ax += cidrblock($address, '185.203.122.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-03). ');
-$ax += cidrblock($address, '46.244.28.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-04). ');
-$ax += cidrblock($address, '85.203.23.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-05). ');
-$ax += cidrblock($address, '103.86.97.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-06). ');
-$ax += cidrblock($address, '103.86.98.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-07). ');
-$ax += cidrblock($address, '193.183.216.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-08). ');
-$ax += cidrblock($address, '194.132.123.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-09). ');
-$ax += cidrblock($address, '45.56.149.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-10). ');
-$ax += cidrblock($address, '45.56.151.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-11). ');
-$ax += cidrblock($address, '45.56.152.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-12). ');
-$ax += cidrblock($address, '45.56.154.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-13). ');
-$ax += cidrblock($address, '45.56.157.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-14). ');
-$ax += cidrblock($address, '45.56.158.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-15). ');
-$ax += cidrblock($address, '45.74.31.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-16). ');
-$ax += cidrblock($address, '45.74.39.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-17). ');
-$ax += cidrblock($address, '45.74.41.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-18). ');
-$ax += cidrblock($address, '45.74.43.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-19). ');
-$ax += cidrblock($address, '64.64.108.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-20). ');
-$ax += cidrblock($address, '104.37.1.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-21). ');
-$ax += cidrblock($address, '104.37.3.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-22). ');
-$ax += cidrblock($address, '104.37.5.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-23). ');
-$ax += cidrblock($address, '104.143.92.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-24). ');
-$ax += cidrblock($address, '104.143.95.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-25). ');
-$ax += cidrblock($address, '104.194.203.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-26). ');
-$ax += cidrblock($address, '104.194.218.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-27). ');
-$ax += cidrblock($address, '104.238.32.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-28). ');
-$ax += cidrblock($address, '104.238.45.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-29). ');
-$ax += cidrblock($address, '104.238.51.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-30). ');
-$ax += cidrblock($address, '104.238.62.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-31). ');
-$ax += cidrblock($address, '104.243.245.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-32). ');
-$ax += cidrblock($address, '104.243.253.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-33). ');
-$ax += cidrblock($address, '104.243.255.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-34). ');
-$ax += cidrblock($address, '104.250.160.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-35). ');
-$ax += cidrblock($address, '104.250.167.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-36). ');
-$ax += cidrblock($address, '104.250.172.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-37). ');
-$ax += cidrblock($address, '104.250.179.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-38). ');
-$ax += cidrblock($address, '104.250.183.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-39). ');
-$ax += cidrblock($address, '172.94.47.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-40). ');
-$ax += cidrblock($address, '172.94.98.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-41). ');
-$ax += cidrblock($address, '172.94.100.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-42). ');
-$ax += cidrblock($address, '172.111.169.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-43). ');
-$ax += cidrblock($address, '172.111.173.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-44). ');
-$ax += cidrblock($address, '172.111.175.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-45). ');
-$ax += cidrblock($address, '172.111.178.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-46). ');
-$ax += cidrblock($address, '172.111.187.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-47). ');
-$ax += cidrblock($address, '172.111.192.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-48). ');
-$ax += cidrblock($address, '172.111.199.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-49). ');
-$ax += cidrblock($address, '173.239.195.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-50). ');
-$ax += cidrblock($address, '173.239.197.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-51). ');
-$ax += cidrblock($address, '173.239.198.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-52). ');
-$ax += cidrblock($address, '173.239.207.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-53). ');
-$ax += cidrblock($address, '173.244.55.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-54). ');
-$ax += cidrblock($address, '192.253.242.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-55). ');
+$ax += cidrblock($address, '85.203.23.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-04). ');
+$ax += cidrblock($address, '103.86.97.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-05). ');
+$ax += cidrblock($address, '103.86.98.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-06). ');
+$ax += cidrblock($address, '45.56.149.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-07). ');
+$ax += cidrblock($address, '45.56.152.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-08). ');
+$ax += cidrblock($address, '45.56.157.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-09). ');
+$ax += cidrblock($address, '45.74.41.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-10). ');
+$ax += cidrblock($address, '45.74.43.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-11). ');
+$ax += cidrblock($address, '98.159.233.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-12). ');
+$ax += cidrblock($address, '104.37.1.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-13). ');
+$ax += cidrblock($address, '104.37.3.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-14). ');
+$ax += cidrblock($address, '104.37.5.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-15). ');
+$ax += cidrblock($address, '104.143.92.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-16). ');
+$ax += cidrblock($address, '104.238.45.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-17). ');
+$ax += cidrblock($address, '104.243.245.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-18). ');
+$ax += cidrblock($address, '104.243.253.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-19). ');
+$ax += cidrblock($address, '104.243.255.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-20). ');
+$ax += cidrblock($address, '104.250.160.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-21). ');
+$ax += cidrblock($address, '104.250.167.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-22). ');
+$ax += cidrblock($address, '104.250.172.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-23). ');
+$ax += cidrblock($address, '104.250.179.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-24). ');
+$ax += cidrblock($address, '104.250.183.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-25). ');
+$ax += cidrblock($address, '172.94.47.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-26). ');
+$ax += cidrblock($address, '172.94.98.0/23', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-27). ');
+$ax += cidrblock($address, '172.94.100.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-28). ');
+$ax += cidrblock($address, '172.111.169.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-29). ');
+$ax += cidrblock($address, '172.111.173.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-30). ');
+$ax += cidrblock($address, '172.111.175.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-31). ');
+$ax += cidrblock($address, '172.111.187.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-32). ');
+$ax += cidrblock($address, '172.111.192.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-33). ');
+$ax += cidrblock($address, '172.111.199.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-34). ');
+$ax += cidrblock($address, '172.111.218.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-35). ');
+$ax += cidrblock($address, '173.239.198.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-36). ');
+$ax += cidrblock($address, '173.239.207.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-37). ');
+$ax += cidrblock($address, '192.253.242.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-38). ');
+$ax += cidrblock($address, '196.52.38.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-39). ');
 
 
 // ASN 59898 ("AllSafe Sarl").
@@ -1293,64 +1277,68 @@ $ax += cidrblock($address, '167.160.48.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTS
 $ax += cidrblock($address, '167.160.60.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-34). ');
 
 
-// ASN 9009 ("M247 Ltd").
+// ASNs 9009, 16247 ("M247 Ltd").
 // Multiplay network providing broadband connectivity, server leasing, line rental, webhosting services and others.
-// Marked as "Server", "Host", "Datacenter" to go to the cloud/hosting signatures ^(.*(?:Host|Server|Data ?cent(?:er|re)).*)\x01$
-// Marked as "Secure Internet LLC" to go to the proxy/other signatures ^(.*(?:Secure Internet LLC).*)\x01$
+// "BraveWay", "Server", "Host", "Datacenter", "Virtual" as cloud ^(.*(?:BraveWay|Host|Virtual|Server|Data ?cent(?:er|re)).*)\x01$
+// "VPN", "Secure Internet LLC" as proxy/other ^(.*(?:VPN|Secure Internet LLC).*)\x01$
 // Everything else to go to the ISPs signatures. When updating, remove all subordinates of 38.0.0.0/8 from final
-// aggregate (already blocked elsewhere and don't want duplicates).
-// Updated: 2020.10.10
+// aggregate to avoid duplicity (already blocked elsewhere).
+// Updated: 2020.11.12
 
-$ax += cidrblock($address, '45.74.16.0/24', 'M247 Ltd (IP4X-M247LTD-00). ');
-$ax += cidrblock($address, '45.74.27.0/24', 'M247 Ltd (IP4X-M247LTD-01). ');
-$ax += cidrblock($address, '45.74.38.0/23', 'M247 Ltd (IP4X-M247LTD-02). ');
-$ax += cidrblock($address, '45.74.45.0/24', 'M247 Ltd (IP4X-M247LTD-03). ');
-$ax += cidrblock($address, '104.37.6.0/24', 'M247 Ltd (IP4X-M247LTD-04). ');
-$ax += cidrblock($address, '104.243.240.0/24', 'M247 Ltd (IP4X-M247LTD-05). ');
-$ax += cidrblock($address, '104.243.250.0/23', 'M247 Ltd (IP4X-M247LTD-06). ');
-$ax += cidrblock($address, '104.243.252.0/24', 'M247 Ltd (IP4X-M247LTD-07). ');
-$ax += cidrblock($address, '104.250.164.0/23', 'M247 Ltd (IP4X-M247LTD-08). ');
-$ax += cidrblock($address, '104.250.169.0/24', 'M247 Ltd (IP4X-M247LTD-09). ');
-$ax += cidrblock($address, '104.250.170.0/24', 'M247 Ltd (IP4X-M247LTD-10). ');
-$ax += cidrblock($address, '104.250.174.0/24', 'M247 Ltd (IP4X-M247LTD-11). ');
-$ax += cidrblock($address, '104.250.176.0/23', 'M247 Ltd (IP4X-M247LTD-12). ');
-$ax += cidrblock($address, '104.250.180.0/24', 'M247 Ltd (IP4X-M247LTD-13). ');
-$ax += cidrblock($address, '104.250.182.0/24', 'M247 Ltd (IP4X-M247LTD-14). ');
-$ax += cidrblock($address, '104.250.185.0/24', 'M247 Ltd (IP4X-M247LTD-15). ');
-$ax += cidrblock($address, '104.250.186.0/24', 'M247 Ltd (IP4X-M247LTD-16). ');
-$ax += cidrblock($address, '162.246.184.0/23', 'M247 Ltd (IP4X-M247LTD-17). ');
-$ax += cidrblock($address, '172.94.67.0/24', 'M247 Ltd (IP4X-M247LTD-18). ');
-$ax += cidrblock($address, '172.94.71.0/24', 'M247 Ltd (IP4X-M247LTD-19). ');
-$ax += cidrblock($address, '172.94.74.0/24', 'M247 Ltd (IP4X-M247LTD-20). ');
-$ax += cidrblock($address, '172.94.90.0/24', 'M247 Ltd (IP4X-M247LTD-21). ');
-$ax += cidrblock($address, '172.94.108.0/23', 'M247 Ltd (IP4X-M247LTD-22). ');
-$ax += cidrblock($address, '172.94.110.0/24', 'M247 Ltd (IP4X-M247LTD-23). ');
-$ax += cidrblock($address, '172.94.119.0/24', 'M247 Ltd (IP4X-M247LTD-24). ');
-$ax += cidrblock($address, '172.94.120.0/24', 'M247 Ltd (IP4X-M247LTD-25). ');
-$ax += cidrblock($address, '172.94.125.0/24', 'M247 Ltd (IP4X-M247LTD-26). ');
-$ax += cidrblock($address, '172.111.147.0/24', 'M247 Ltd (IP4X-M247LTD-27). ');
-$ax += cidrblock($address, '172.111.148.0/23', 'M247 Ltd (IP4X-M247LTD-28). ');
-$ax += cidrblock($address, '172.111.151.0/24', 'M247 Ltd (IP4X-M247LTD-29). ');
-$ax += cidrblock($address, '172.111.154.0/24', 'M247 Ltd (IP4X-M247LTD-30). ');
-$ax += cidrblock($address, '172.111.171.0/24', 'M247 Ltd (IP4X-M247LTD-31). ');
-$ax += cidrblock($address, '172.111.183.0/24', 'M247 Ltd (IP4X-M247LTD-32). ');
-$ax += cidrblock($address, '172.111.186.0/24', 'M247 Ltd (IP4X-M247LTD-33). ');
-$ax += cidrblock($address, '172.111.190.0/24', 'M247 Ltd (IP4X-M247LTD-34). ');
-$ax += cidrblock($address, '172.111.197.0/24', 'M247 Ltd (IP4X-M247LTD-35). ');
-$ax += cidrblock($address, '172.111.205.0/24', 'M247 Ltd (IP4X-M247LTD-36). ');
-$ax += cidrblock($address, '172.111.210.0/23', 'M247 Ltd (IP4X-M247LTD-37). ');
-$ax += cidrblock($address, '172.111.214.0/24', 'M247 Ltd (IP4X-M247LTD-38). ');
-$ax += cidrblock($address, '172.111.216.0/23', 'M247 Ltd (IP4X-M247LTD-39). ');
-$ax += cidrblock($address, '172.111.219.0/24', 'M247 Ltd (IP4X-M247LTD-40). ');
-$ax += cidrblock($address, '172.111.220.0/24', 'M247 Ltd (IP4X-M247LTD-41). ');
-$ax += cidrblock($address, '172.111.227.0/24', 'M247 Ltd (IP4X-M247LTD-42). ');
-$ax += cidrblock($address, '172.111.230.0/24', 'M247 Ltd (IP4X-M247LTD-43). ');
-$ax += cidrblock($address, '172.111.233.0/24', 'M247 Ltd (IP4X-M247LTD-44). ');
-$ax += cidrblock($address, '172.111.242.0/24', 'M247 Ltd (IP4X-M247LTD-45). ');
-$ax += cidrblock($address, '172.111.244.0/23', 'M247 Ltd (IP4X-M247LTD-46). ');
-$ax += cidrblock($address, '172.111.246.0/24', 'M247 Ltd (IP4X-M247LTD-47). ');
-$ax += cidrblock($address, '172.111.250.0/24', 'M247 Ltd (IP4X-M247LTD-48). ');
-$ax += cidrblock($address, '172.111.253.0/24', 'M247 Ltd (IP4X-M247LTD-49). ');
+$ax += cidrblock($address, '37.139.70.0/24', 'M247 Ltd (IP4X-M247LTD-00). ');
+$ax += cidrblock($address, '45.56.143.0/24', 'M247 Ltd (IP4X-M247LTD-01). ');
+$ax += cidrblock($address, '45.74.16.0/24', 'M247 Ltd (IP4X-M247LTD-02). ');
+$ax += cidrblock($address, '45.74.27.0/24', 'M247 Ltd (IP4X-M247LTD-03). ');
+$ax += cidrblock($address, '45.74.29.0/24', 'M247 Ltd (IP4X-M247LTD-04). ');
+$ax += cidrblock($address, '45.74.38.0/23', 'M247 Ltd (IP4X-M247LTD-05). ');
+$ax += cidrblock($address, '45.74.45.0/24', 'M247 Ltd (IP4X-M247LTD-06). ');
+$ax += cidrblock($address, '104.37.6.0/24', 'M247 Ltd (IP4X-M247LTD-07). ');
+$ax += cidrblock($address, '104.243.240.0/24', 'M247 Ltd (IP4X-M247LTD-08). ');
+$ax += cidrblock($address, '104.243.250.0/23', 'M247 Ltd (IP4X-M247LTD-09). ');
+$ax += cidrblock($address, '104.243.252.0/24', 'M247 Ltd (IP4X-M247LTD-10). ');
+$ax += cidrblock($address, '104.250.164.0/23', 'M247 Ltd (IP4X-M247LTD-11). ');
+$ax += cidrblock($address, '104.250.169.0/24', 'M247 Ltd (IP4X-M247LTD-12). ');
+$ax += cidrblock($address, '104.250.170.0/24', 'M247 Ltd (IP4X-M247LTD-13). ');
+$ax += cidrblock($address, '104.250.174.0/24', 'M247 Ltd (IP4X-M247LTD-14). ');
+$ax += cidrblock($address, '104.250.176.0/23', 'M247 Ltd (IP4X-M247LTD-15). ');
+$ax += cidrblock($address, '104.250.180.0/24', 'M247 Ltd (IP4X-M247LTD-16). ');
+$ax += cidrblock($address, '104.250.182.0/24', 'M247 Ltd (IP4X-M247LTD-17). ');
+$ax += cidrblock($address, '104.250.185.0/24', 'M247 Ltd (IP4X-M247LTD-18). ');
+$ax += cidrblock($address, '104.250.186.0/24', 'M247 Ltd (IP4X-M247LTD-19). ');
+$ax += cidrblock($address, '162.246.184.0/23', 'M247 Ltd (IP4X-M247LTD-20). ');
+$ax += cidrblock($address, '172.94.67.0/24', 'M247 Ltd (IP4X-M247LTD-21). ');
+$ax += cidrblock($address, '172.94.71.0/24', 'M247 Ltd (IP4X-M247LTD-22). ');
+$ax += cidrblock($address, '172.94.74.0/24', 'M247 Ltd (IP4X-M247LTD-23). ');
+$ax += cidrblock($address, '172.94.90.0/24', 'M247 Ltd (IP4X-M247LTD-24). ');
+$ax += cidrblock($address, '172.94.108.0/23', 'M247 Ltd (IP4X-M247LTD-25). ');
+$ax += cidrblock($address, '172.94.110.0/24', 'M247 Ltd (IP4X-M247LTD-26). ');
+$ax += cidrblock($address, '172.94.119.0/24', 'M247 Ltd (IP4X-M247LTD-27). ');
+$ax += cidrblock($address, '172.94.120.0/24', 'M247 Ltd (IP4X-M247LTD-28). ');
+$ax += cidrblock($address, '172.94.125.0/24', 'M247 Ltd (IP4X-M247LTD-29). ');
+$ax += cidrblock($address, '172.111.147.0/24', 'M247 Ltd (IP4X-M247LTD-30). ');
+$ax += cidrblock($address, '172.111.148.0/23', 'M247 Ltd (IP4X-M247LTD-31). ');
+$ax += cidrblock($address, '172.111.151.0/24', 'M247 Ltd (IP4X-M247LTD-32). ');
+$ax += cidrblock($address, '172.111.154.0/24', 'M247 Ltd (IP4X-M247LTD-33). ');
+$ax += cidrblock($address, '172.111.171.0/24', 'M247 Ltd (IP4X-M247LTD-34). ');
+$ax += cidrblock($address, '172.111.183.0/24', 'M247 Ltd (IP4X-M247LTD-35). ');
+$ax += cidrblock($address, '172.111.186.0/24', 'M247 Ltd (IP4X-M247LTD-36). ');
+$ax += cidrblock($address, '172.111.190.0/24', 'M247 Ltd (IP4X-M247LTD-37). ');
+$ax += cidrblock($address, '172.111.197.0/24', 'M247 Ltd (IP4X-M247LTD-38). ');
+$ax += cidrblock($address, '172.111.205.0/24', 'M247 Ltd (IP4X-M247LTD-39). ');
+$ax += cidrblock($address, '172.111.210.0/23', 'M247 Ltd (IP4X-M247LTD-40). ');
+$ax += cidrblock($address, '172.111.214.0/24', 'M247 Ltd (IP4X-M247LTD-41). ');
+$ax += cidrblock($address, '172.111.216.0/23', 'M247 Ltd (IP4X-M247LTD-42). ');
+$ax += cidrblock($address, '172.111.219.0/24', 'M247 Ltd (IP4X-M247LTD-43). ');
+$ax += cidrblock($address, '172.111.220.0/24', 'M247 Ltd (IP4X-M247LTD-44). ');
+$ax += cidrblock($address, '172.111.227.0/24', 'M247 Ltd (IP4X-M247LTD-45). ');
+$ax += cidrblock($address, '172.111.230.0/24', 'M247 Ltd (IP4X-M247LTD-46). ');
+$ax += cidrblock($address, '172.111.233.0/24', 'M247 Ltd (IP4X-M247LTD-47). ');
+$ax += cidrblock($address, '172.111.242.0/24', 'M247 Ltd (IP4X-M247LTD-48). ');
+$ax += cidrblock($address, '172.111.244.0/23', 'M247 Ltd (IP4X-M247LTD-49). ');
+$ax += cidrblock($address, '172.111.246.0/24', 'M247 Ltd (IP4X-M247LTD-50). ');
+$ax += cidrblock($address, '172.111.250.0/24', 'M247 Ltd (IP4X-M247LTD-51). ');
+$ax += cidrblock($address, '172.111.253.0/24', 'M247 Ltd (IP4X-M247LTD-52). ');
+$ax += cidrblock($address, '196.53.108.0/24', 'M247 Ltd (IP4X-M247LTD-53). ');
 
 
 // ASN 197640 ("OverPlay.Net LP").
