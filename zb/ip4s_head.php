@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.12.18
+ * This file last updated: 2020.12.29
  */
-$zbbversion .= ' / IP4S-110a';
+$zbbversion .= ' / IP4S-110b';
 
 // *php 5 fix
 global $whyblockout, $ax;
