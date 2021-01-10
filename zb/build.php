@@ -121,6 +121,7 @@ function build($Files, $Ident, $HeadFile, $FootFile, $OutFile) {
     }
 
     $Output .= fetch(__DIR__ . '/' . $FootFile);
+    $Output = preg_replace(['~\r~', '~\n{3,}~'], ['', "\n\n"], $Output);
     $Handle = fopen(__DIR__ . '/' . $OutFile, 'wb');
     fwrite($Handle, $Output);
     fclose($Handle);

@@ -14,16 +14,12 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.12.29
+ * This file last updated: 2021.01.10
  */
-$zbbversion .= ' / IP4S-110b';
+$zbbversion .= ' / IP4S-111';
 
 // *php 5 fix
 global $whyblockout, $ax;
-
-
-
-
 
 // ---
 // ASN 38197 ("Sun Network (Hong Kong) Limited").
@@ -88,7 +84,6 @@ $ax += cidrblock($address, '137.220.130.0/24', 'Sun Network HK (IP4S-SUNNETWORKH
 $ax += cidrblock($address, '202.36.49.0/24', 'Sun Network HK (IP4S-SUNNETWORKHK-56). ');
 $ax += cidrblock($address, '185.184.220.0/23', 'Sun Network HK (IP4S-SUNNETWORKHK-57). ');
 $ax += cidrblock($address, '165.3.114.0/24', 'Sun Network HK (IP4S-SUNNETWORKHK-58). ');
-
 
 // ASN 26658 ("HT").
 // Updated: 2020.08.05
@@ -184,7 +179,6 @@ $ax += cidrblock($address, '192.119.136.0/22', 'HT (IP4S-HT-87). ');
 $ax += cidrblock($address, '198.180.198.0/24', 'HT (IP4S-HT-88). ');
 $ax += cidrblock($address, '216.12.160.0/20', 'HT (IP4S-HT-89). ');
 
-
 // ASN 29182 ("ISPsystem").
 // Updated: 2020.08.17
 
@@ -230,7 +224,6 @@ $ax += cidrblock($address, '212.109.216.0/21', 'ISPsystem (IP4S-ISPSYSTEM-38). '
 $ax += cidrblock($address, '213.159.208.0/21', 'ISPsystem (IP4S-ISPSYSTEM-39). ');
 $ax += cidrblock($address, '185.233.152.0/23', 'ISPsystem (IP4S-ISPSYSTEM-40). ');
 
-
 // ASN 38955 ("World4You Internet Services").
 // Updated: 2020.03.22 / Checked: 2020.09.01
 
@@ -238,7 +231,6 @@ $ax += cidrblock($address, '81.19.144.0/20', 'World4You (IP4S-WORLD4YOU-0). ');
 $ax += cidrblock($address, '178.23.80.0/21', 'World4You (IP4S-WORLD4YOU-1). ');
 $ax += cidrblock($address, '185.16.190.0/23', 'World4You (IP4S-WORLD4YOU-2). ');
 $ax += cidrblock($address, '185.164.4.0/22', 'World4You (IP4S-WORLD4YOU-3). ');
-
 
 // ASN 202425 ("IP Volume inc").
 // Updated: 2020.12.20
@@ -260,7 +252,6 @@ $ax += cidrblock($address, '145.249.104.0/22', 'IP Volume inc (IP4S-IPVOLUMEINC-
 $ax += cidrblock($address, '196.16.0.0/14', 'IP Volume inc (IP4S-IPVOLUMEINC-14). ');
 $ax += cidrblock($address, '41.216.186.0/24', 'IP Volume inc (IP4S-IPVOLUMEINC-15). ');
 
-
 // ASN 48159 ("Telecommunication Infrastructure Company").
 // Significant source of I.P. thieves, email harvesters, and unauthorised scrapers.
 // Updated: 2020.08.17
@@ -269,7 +260,6 @@ $ax += cidrblock($address, '2.188.28.0/24', 'AS48159 (IP4S-AS48159-0). ');
 $ax += cidrblock($address, '178.251.212.0/22', 'AS48159 (IP4S-AS48159-1). ');
 $ax += cidrblock($address, '185.11.88.0/23', 'AS48159 (IP4S-AS48159-2). ');
 $ax += cidrblock($address, '185.11.90.0/24', 'AS48159 (IP4S-AS48159-3). ');
-
 
 // ASN 12880 ("Information Technology Company (ITC)").
 // Significant source of email harvesters and unauthorised scrapers.
@@ -354,7 +344,6 @@ $ax += cidrblock($address, '195.146.32.0/19', 'AS12880 (IP4S-AS12880-75). ');
 $ax += cidrblock($address, '195.181.0.0/19', 'AS12880 (IP4S-AS12880-76). ');
 $ax += cidrblock($address, '212.33.208.0/20', 'AS12880 (IP4S-AS12880-77). ');
 $ax += cidrblock($address, '217.218.0.0/15', 'AS12880 (IP4S-AS12880-78). ');
-
 
 // ASNs 24940, 37153 ("Hetzner Online GmbH").
 // Ranges change frequently / Should update often.
@@ -454,7 +443,6 @@ $ax += cidrblock($address, '197.189.192.0/18', 'Hetzner Online GmbH (IP4S-HETZNE
 $ax += cidrblock($address, '197.221.0.0/18', 'Hetzner Online GmbH (IP4S-HETZNERONLINEGMBH-91). ');
 $ax += cidrblock($address, '197.242.64.0/19', 'Hetzner Online GmbH (IP4S-HETZNERONLINEGMBH-92). ');
 
-
 // ASN 51559 ("Server Internet Bilisim ve Bilgisayar Hizmetleri").
 // (Mark any LV announces as "Cloud" when updating).
 // Updated: 2020.11.27
@@ -546,7 +534,6 @@ $ax += cidrblock($address, '205.234.161.0/24', 'AS51559 (IP4S-AS51559-83). ');
 $ax += cidrblock($address, '205.234.171.0/24', 'AS51559 (IP4S-AS51559-84). ');
 $ax += cidrblock($address, '205.234.189.0/24', 'AS51559 (IP4S-AS51559-85). ');
 
-
 // ASN 50810 ("Mobin Net Communication Company (Private Joint Stock)").
 // Iranian ISP and mobile provider, and a source of email, forum, and blog spam.
 // Also caught attacking honeypots.
@@ -585,7 +572,6 @@ $ax += cidrblock($address, '188.211.0.0/20', 'Mobin Net (IP4S-MOBINNET-29). ');
 $ax += cidrblock($address, '188.212.240.0/21', 'Mobin Net (IP4S-MOBINNET-30). ');
 $ax += cidrblock($address, '188.213.64.0/20', 'Mobin Net (IP4S-MOBINNET-31). ');
 $ax += cidrblock($address, '188.213.192.0/21', 'Mobin Net (IP4S-MOBINNET-32). ');
-
 
 // ASN 45727 ("Hutchison CP Telecommunications, PT").
 // Major domestic Indonesian ISP, but also a source of spam. Listed in the
@@ -627,7 +613,6 @@ $ax += cidrblock($address, '23.3.76.0/22', 'PT Hutchison (IP4S-PTHUTCHISON-28). 
 $ax += cidrblock($address, '23.5.192.0/20', 'PT Hutchison (IP4S-PTHUTCHISON-29). ');
 $ax += cidrblock($address, '23.13.0.0/20', 'PT Hutchison (IP4S-PTHUTCHISON-30). ');
 $ax += cidrblock($address, '104.81.252.0/22', 'PT Hutchison (IP4S-PTHUTCHISON-31). ');
-
 
 // ASN 24203 ("PT Excelcomindo Pratama").
 // (Mark US as cloud).
@@ -726,7 +711,6 @@ $ax += cidrblock($address, '104.118.108.0/22', 'PT Excelcomindo (IP4S-PTEXCELCOM
 $ax += cidrblock($address, '104.118.144.0/20', 'PT Excelcomindo (IP4S-PTEXCELCOMINDO-90). ');
 $ax += cidrblock($address, '104.118.160.0/20', 'PT Excelcomindo (IP4S-PTEXCELCOMINDO-91). ');
 
-
 // ASN 48359 ("Hesabgar Pardaz Gharb Company").
 // Updated: 2020.12.13
 
@@ -758,7 +742,6 @@ $ax += cidrblock($address, '195.230.105.0/24', 'AS48359 (IP4S-AS48359-24). ');
 $ax += cidrblock($address, '195.230.107.0/24', 'AS48359 (IP4S-AS48359-25). ');
 $ax += cidrblock($address, '195.230.124.0/24', 'AS48359 (IP4S-AS48359-26). ');
 $ax += cidrblock($address, '45.155.192.0/22', 'AS48359 (IP4S-AS48359-27). ');
-
 
 // ASN 22368 ("TELEBUCARAMANGA S.A. E.S.P").
 // Updated: 2020.12.07
@@ -808,7 +791,6 @@ $ax += cidrblock($address, '201.221.148.0/23', 'TELEBUCARAMANGA (IP4S-TELEBUCARA
 $ax += cidrblock($address, '201.221.151.0/24', 'TELEBUCARAMANGA (IP4S-TELEBUCARAMANGA-42). ');
 $ax += cidrblock($address, '201.221.152.0/21', 'TELEBUCARAMANGA (IP4S-TELEBUCARAMANGA-43). ');
 
-
 // ASN 16322 ("Pars Online PJS").
 // Updated: 2020.07.12
 
@@ -854,7 +836,6 @@ $ax += cidrblock($address, '178.169.0.0/19', 'Pars Online PJS (IP4S-PARSONLINEPJ
 $ax += cidrblock($address, '185.10.71.0/24', 'Pars Online PJS (IP4S-PARSONLINEPJS-39). ');
 $ax += cidrblock($address, '188.245.0.0/16', 'Pars Online PJS (IP4S-PARSONLINEPJS-40). ');
 $ax += cidrblock($address, '213.217.32.0/19', 'Pars Online PJS (IP4S-PARSONLINEPJS-41). ');
-
 
 // ASN 3223 ("Voxility LLC").
 // Updated: 2020.09.30
@@ -983,7 +964,6 @@ $ax += cidrblock($address, '192.253.245.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-1
 $ax += cidrblock($address, '206.123.129.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-121). ');
 $ax += cidrblock($address, '206.123.143.0/24', 'Voxility LLC (IP4S-VOXILITYLLC-122). ');
 
-
 // ASN 41665 ("Tehnologii Budushego LLC").
 // Updated: 2017.08.25 / Checked: 2020.12.15
 
@@ -992,14 +972,12 @@ $ax += cidrblock($address, '185.207.136.0/22', 'Tehnologii Budushego (IP4S-TEHNO
 $ax += cidrblock($address, '194.54.88.0/22', 'Tehnologii Budushego (IP4S-TEHNOLOGIIBUDUSHEGO-2). ');
 $ax += cidrblock($address, '213.155.0.0/19', 'Tehnologii Budushego (IP4S-TEHNOLOGIIBUDUSHEGO-3). ');
 
-
 // ASN 30968 ("INFOBOX").
 // Updated: 2016.01.18 / Checked: 2020.10.10
 
 $ax += cidrblock($address, '77.221.128.0/19', 'INFOBOX (IP4S-INFOBOX-0). ');
 $ax += cidrblock($address, '92.243.64.0/19', 'INFOBOX (IP4S-INFOBOX-1). ');
 $ax += cidrblock($address, '109.120.128.0/18', 'INFOBOX (IP4S-INFOBOX-2). ');
-
 
 // ASN 49335 ("Mir Telematiki Ltd").
 // An ongoing source of all kinds of spam.
@@ -1036,7 +1014,6 @@ $ax += cidrblock($address, '196.16.231.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEM
 $ax += cidrblock($address, '184.174.56.0/22', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-28). ');
 $ax += cidrblock($address, '206.123.139.0/24', 'Mir Telematiki Ltd (IP4S-MIRTELEMATIKILTD-29). ');
 
-
 // ASN 45595 ("Pakistan Telecom").
 // *Extreme*, unrepentant, unending source of spam over the course of many,
 // many years. XRumer plus others operating on their network. Highly unlikely to
@@ -1057,7 +1034,6 @@ $ax += cidrblock($address, '203.135.0.0/18', 'Pakistan Telecom (IP4S-PAKISTANTEL
 $ax += cidrblock($address, '104.99.130.0/23', 'Pakistan Telecom (IP4S-PAKISTANTELECOM-11). ');
 $ax += cidrblock($address, '104.99.132.0/22', 'Pakistan Telecom (IP4S-PAKISTANTELECOM-12). ');
 
-
 // ASN 41011 ("CH-NET S.R.L").
 // Updated: 2020.12.13
 
@@ -1075,7 +1051,6 @@ $ax += cidrblock($address, '188.214.159.0/24', 'CH-NET S.R.L (IP4S-CHNETSRL-10).
 $ax += cidrblock($address, '188.214.192.0/24', 'CH-NET S.R.L (IP4S-CHNETSRL-11). ');
 $ax += cidrblock($address, '193.238.244.0/22', 'CH-NET S.R.L (IP4S-CHNETSRL-12). ');
 
-
 // ASN 7743 ("JPMorgan Chase & Co").
 // Updated: 2018.03.31 / Checked: 2020.12.26
 
@@ -1084,7 +1059,6 @@ $ax += cidrblock($address, '198.27.1.0/24', 'JPMorgan Chase & Co (IP4S-JPMORGANC
 $ax += cidrblock($address, '199.253.243.0/24', 'JPMorgan Chase & Co (IP4S-JPMORGANCHASECO-2). ');
 $ax += cidrblock($address, '199.253.244.0/23', 'JPMorgan Chase & Co (IP4S-JPMORGANCHASECO-3). ');
 $ax += cidrblock($address, '209.211.208.0/22', 'JPMorgan Chase & Co (IP4S-JPMORGANCHASECO-4). ');
-
 
 // ASNs 42708, 43948 ("GleSYS AB"; formerly "Portlane AB").
 // Exclude (carries human endpoints and seems clean *at the moment*):
@@ -1149,7 +1123,6 @@ $ax += cidrblock($address, '194.132.53.0/24', 'Portlane Networks AB (IP4S-PORTLA
 $ax += cidrblock($address, '194.132.64.0/24', 'Portlane Networks AB (IP4S-PORTLANENETWORKSAB-50). ');
 $ax += cidrblock($address, '194.132.215.0/24', 'Portlane Networks AB (IP4S-PORTLANENETWORKSAB-51). ');
 $ax += cidrblock($address, '195.190.192.0/19', 'Portlane Networks AB (IP4S-PORTLANENETWORKSAB-52). ');
-
 
 // ASNs 34665, 44050 ("Petersburg Internet Network ltd").
 // Major domestic ISP from Russia, but also a significant, long-term source of
@@ -1318,7 +1291,6 @@ $ax += cidrblock($address, '31.42.191.0/24', 'PIN-AS (IP4S-PINAS-157). ');
 $ax += cidrblock($address, '185.181.164.0/24', 'PIN-AS (IP4S-PINAS-158). ');
 $ax += cidrblock($address, '185.253.217.0/24', 'PIN-AS (IP4S-PINAS-159). ');
 
-
 // ASNs 16880, 36421 ("Trend Micro Incorporated").
 // Follows their users around and attempts to get into restricted/private parts
 // of websites.
@@ -1335,7 +1307,6 @@ $ax += cidrblock($address, '202.3.185.0/24', 'Trend Micro (IP4S-TRENDMICRO-07). 
 $ax += cidrblock($address, '66.180.80.0/20', 'Trend Micro (IP4S-TRENDMICRO-08). ');
 $ax += cidrblock($address, '216.99.128.0/20', 'Trend Micro (IP4S-TRENDMICRO-09). ');
 $ax += cidrblock($address, '216.104.16.0/20', 'Trend Micro (IP4S-TRENDMICRO-10). ');
-
 
 // ASN 8551 ("Bezeq International-Ltd").
 // Domestic Israeli ISP with human endpoints, but has some bad actors (spambots,
@@ -1390,7 +1361,6 @@ $ax += cidrblock($address, '104.79.224.0/20', 'Bezeq International (IP4S-BEZEQIN
 $ax += cidrblock($address, '184.27.128.0/23', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-44). ');
 $ax += cidrblock($address, '206.82.140.0/24', 'Bezeq International (IP4S-BEZEQINTERNATIONAL-45). ');
 
-
 // ASNs 5486, 9116 ("012 Smile Communications LTD").
 // Subsidiary of Bezeq International. Domestic Israeli ISP with human endpoints,
 // but also a source of forum/blog spam. Marked for use with reCAPTCHA to reduce
@@ -1428,15 +1398,13 @@ $ax += cidrblock($address, '212.199.0.0/16', '012 Smile (IP4S-012SMILE-25). ');
 $ax += cidrblock($address, '213.8.0.0/16', '012 Smile (IP4S-012SMILE-26). ');
 $ax += cidrblock($address, '17.235.247.0/24', '012 Smile (IP4S-012SMILE-27). ');
 
-
 // ASN 36923 ("Swift Networks Limited").
 // Network is slowly improving. Redacting listings down to just 41.58.*, as the
 // only incidents since the last few checks seemed to have originated from that
 // pariticular range. May be able to eventually delist this section, hopefully.
-// Updated: 2019.12.12 / Checked: 2020.04.27
+// Updated: 2019.12.12 / Checked: 2021.01.10
 
 $ax += cidrblock($address, '41.58.0.0/16', 'Swift Networks (IP4S-SWIFTNETWORKS-0). ');
-
 
 // ASN 51013 ("Websupport s.r.o").
 // Updated: 2020.12.03
@@ -1448,7 +1416,6 @@ $ax += cidrblock($address, '45.138.184.0/24', 'Websupport s.r.o (IP4S-WEBSUPPORT
 $ax += cidrblock($address, '185.87.12.0/22', 'Websupport s.r.o (IP4S-WEBSUPPORTSRO-4). ');
 $ax += cidrblock($address, '195.210.28.0/23', 'Websupport s.r.o (IP4S-WEBSUPPORTSRO-5). ');
 
-
 // ASN 51191 ("Xirra GmbH").
 // German multiplay provider including both webhosting and backbone services.
 // Currently listing only the currently known affected ranges/addresses.
@@ -1457,14 +1424,12 @@ $ax += cidrblock($address, '195.210.28.0/23', 'Websupport s.r.o (IP4S-WEBSUPPORT
 $ax += cidrblock($address, '91.232.96.0/23', 'Xirra GmbH (IP4S-XIRRAGMBH-0). ');
 $ax += cidrblock($address, '185.108.216.0/24', 'Xirra GmbH (IP4S-XIRRAGMBH-1). ');
 
-
 // ASN 35804 ("PP SKS-LUGAN").
 // Updated: 2018.08.05 / Checked: 2020.07.22
 
 $ax += cidrblock($address, '91.202.212.0/22', 'PP SKS-LUGAN (IP4S-PPSKSLUGAN-0). ');
 $ax += cidrblock($address, '194.79.60.0/22', 'PP SKS-LUGAN (IP4S-PPSKSLUGAN-1). ');
 $ax += cidrblock($address, '213.111.128.0/18', 'PP SKS-LUGAN (IP4S-PPSKSLUGAN-2). ');
-
 
 // ASNs 3491, 4760 ("PCCW Global" / "Beyond The Network America, Inc").
 // Mirai formerly detected on this network. Currently an ongoing source of forum
@@ -1506,7 +1471,6 @@ $ax += cidrblock($address, '220.246.66.166/32', 'PCCW Global (IP4S-PCCWGLOBAL-28
 $ax += cidrblock($address, '223.197.186.194/32', 'PCCW Global (IP4S-PCCWGLOBAL-29). ');
 $ax += cidrblock($address, '223.197.223.55/32', 'PCCW Global (IP4S-PCCWGLOBAL-30). ');
 
-
 // ASN 197712 ("10dencehispahard, S.L").
 // SQL injection attempts detected originating from this network.
 // Updated: 2018.08.25 / Checked: 2020.09.08
@@ -1517,7 +1481,6 @@ $ax += cidrblock($address, '185.22.200.0/22', '10dencehispahard (IP4S-10DENCEHIS
 $ax += cidrblock($address, '185.34.192.0/22', '10dencehispahard (IP4S-10DENCEHISPAHARD-3). ');
 $ax += cidrblock($address, '185.42.104.0/22', '10dencehispahard (IP4S-10DENCEHISPAHARD-4). ');
 $ax += cidrblock($address, '185.66.40.0/22', '10dencehispahard (IP4S-10DENCEHISPAHARD-5). ');
-
 
 // ASN 45753 ("Unit 1205-1207").
 // Anything suggestive of potentially being residential or containing human
@@ -1543,7 +1506,6 @@ $ax += cidrblock($address, '63.220.4.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-1
 $ax += cidrblock($address, '63.220.7.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-14). ');
 $ax += cidrblock($address, '63.221.138.0/24', 'Unit 1205-1207 (IP4S-UNIT12051207-15). ');
 $ax += cidrblock($address, '103.72.82.0/23', 'Unit 1205-1207 (IP4S-UNIT12051207-16). ');
-
 
 // ASN 43260 ("DGN TEKNOLOJI BILISIM YAYINCILIK SANAYI VE LIMITED SIRKETI").
 // Caught trying to DDoS SFS.
@@ -1659,7 +1621,6 @@ $ax += cidrblock($address, '212.111.216.0/22', 'DGN TEKNOLOJI (IP4S-DGNTEKNOLOJI
 $ax += cidrblock($address, '74.199.143.0/24', 'DGN TEKNOLOJI (IP4S-DGNTEKNOLOJI-107). ');
 $ax += cidrblock($address, '76.74.61.0/24', 'DGN TEKNOLOJI (IP4S-DGNTEKNOLOJI-108). ');
 
-
 // ASN 38731 ("Vietel - CHT Compamy Ltd").
 // One of Vietnam's largest domestic ISPs, but also a source of forum and blog
 // spam, and occasionally sometimes other kinds of unwanted traffic. Their
@@ -1677,7 +1638,6 @@ $ax += cidrblock($address, '171.244.33.0/24', 'Vietel (IP4S-VIETEL-5). ');
 $ax += cidrblock($address, '171.244.34.38/32', 'Vietel (IP4S-VIETEL-6). ');
 $ax += cidrblock($address, '210.211.122.217/32', 'Vietel (IP4S-VIETEL-7). ');
 
-
 // ASN 7602 ("Saigon Postel Corporation").
 // A major Vietnamese domestic ISP, but also an occasional source various kinds
 // of unwanted traffic. Only blocking the specific affected IPs/ranges; not the
@@ -1688,7 +1648,6 @@ $ax += cidrblock($address, '116.118.112.70/32', 'Saigon Postel Corporation (IP4S
 $ax += cidrblock($address, '221.121.12.238/32', 'Saigon Postel Corporation (IP4S-SAIGONPOSTELCORPORATION-1). ');
 $ax += cidrblock($address, '221.133.2.26/32', 'Saigon Postel Corporation (IP4S-SAIGONPOSTELCORPORATION-2). ');
 
-
 // ASN 203912 ("Sicres SRL").
 // Caught distributing ransomware (188.0.236.7:443).
 // Updated: 2019.04.18 / Modified: 2020.01.28 / Checked: 2020.09.08
@@ -1696,7 +1655,6 @@ $ax += cidrblock($address, '221.133.2.26/32', 'Saigon Postel Corporation (IP4S-S
 $ax += cidrblock($address, '178.175.244.0/24', 'SICRES SRL (IP4S-SICRESSRL-0). ');
 $ax += cidrblock($address, '185.172.28.0/22', 'SICRES SRL (IP4S-SICRESSRL-1). ');
 $ax += cidrblock($address, '188.0.224.0/20', 'SICRES SRL (IP4S-SICRESSRL-2). ');
-
 
 // ASN 6876 ("TeNeT Scientific Production Enterprise LLC").
 // Source of forum spam and other unwanted traffic.
@@ -1731,7 +1689,6 @@ $ax += cidrblock($address, '195.138.64.0/19', 'TeNeT (IP4S-TENET-25). ');
 $ax += cidrblock($address, '212.90.124.0/22', 'TeNeT (IP4S-TENET-26). ');
 $ax += cidrblock($address, '212.178.0.0/19', 'TeNeT (IP4S-TENET-27). ');
 
-
 // ASN 31252 ("Starnet Servicii SRL").
 // Updated: 2017.09.19 / Modified: 2019.11.02 / Checked: 2020.12.15
 
@@ -1748,7 +1705,6 @@ $ax += cidrblock($address, '188.138.128.0/17', 'STARNET S.R.L (IP4S-STARNETSRL-0
 $ax += cidrblock($address, '188.244.16.0/20', 'STARNET S.R.L (IP4S-STARNETSRL-10). ');
 $ax += cidrblock($address, '194.28.76.0/22', 'STARNET S.R.L (IP4S-STARNETSRL-11). ');
 $ax += cidrblock($address, '195.93.218.0/23', 'STARNET S.R.L (IP4S-STARNETSRL-12). ');
-
 
 // ASN 58224 ("Iran Telecommunication Company PJS").
 // Source of forum/blog spam. Also an ISP with human endpoints in Iran. Websites
@@ -2191,7 +2147,6 @@ $ax += cidrblock($address, '194.26.20.0/23', 'Iran TCPJS (IP4S-IRANTCPJS-431). '
 $ax += cidrblock($address, '109.201.232.0/21', 'Iran TCPJS (IP4S-IRANTCPJS-432). ');
 $ax += cidrblock($address, '109.201.240.0/21', 'Iran TCPJS (IP4S-IRANTCPJS-433). ');
 
-
 // ASN 37340 ("SPECTRANET LIMITED").
 // Updated: 2020.12.15
 
@@ -2209,7 +2164,6 @@ $ax += cidrblock($address, '154.120.118.0/23', 'SPECTRANET LIMITED (IP4S-SPECTRA
 $ax += cidrblock($address, '154.120.120.0/21', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-11). ');
 $ax += cidrblock($address, '197.242.96.0/19', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-12). ');
 $ax += cidrblock($address, '197.255.160.0/20', 'SPECTRANET LIMITED (IP4S-SPECTRANETLIMITED-13). ');
-
 
 // ASN 17747 ("SITI NETWORKS LIMITED").
 // Updated: 2020.11.25
@@ -2244,7 +2198,6 @@ $ax += cidrblock($address, '202.142.95.0/24', 'SITI NETWORKS LTD (IP4S-SITINETWO
 $ax += cidrblock($address, '202.142.96.0/19', 'SITI NETWORKS LTD (IP4S-SITINETWORKSLTD-27). ');
 $ax += cidrblock($address, '203.81.240.0/22', 'SITI NETWORKS LTD (IP4S-SITINETWORKSLTD-28). ');
 
-
 // ASN 45775 ("WISH NET PRIVATE LIMITED").
 // Updated: 2018.11.04 / Checked: 2020.10.10
 
@@ -2272,7 +2225,6 @@ $ax += cidrblock($address, '113.21.64.0/20', 'WISH NET (IP4S-WISHNET-20). ');
 $ax += cidrblock($address, '139.5.228.0/22', 'WISH NET (IP4S-WISHNET-21). ');
 $ax += cidrblock($address, '223.223.128.0/19', 'WISH NET (IP4S-WISHNET-22). ');
 
-
 // ASN 23888 ("National Telecommunication Corporation HQ").
 // A domestic ISP from Pakistan caught spamming, hacking, port scanning,
 // brute-forcing, etc; currently only listing 175.107.* addresses, as the
@@ -2287,7 +2239,6 @@ $ax += cidrblock($address, '175.107.40.0/21', 'AS23888 (IP4S-AS23888-4). ');
 $ax += cidrblock($address, '175.107.48.0/21', 'AS23888 (IP4S-AS23888-5). ');
 $ax += cidrblock($address, '175.107.56.0/24', 'AS23888 (IP4S-AS23888-6). ');
 $ax += cidrblock($address, '175.107.60.0/22', 'AS23888 (IP4S-AS23888-7). ');
-
 
 // ASN 45804 ("MEGHBELA BROADBAND").
 // Domestic Indian ISP. Also a source of forum/blog spam, brute-force, and SSH
@@ -2330,7 +2281,6 @@ $ax += cidrblock($address, '180.188.241.0/24', 'MEGHBELA BROADBAND (IP4S-MEGHBEL
 $ax += cidrblock($address, '203.115.87.0/24', 'MEGHBELA BROADBAND (IP4S-MEGHBELABROADBAND-31). ');
 $ax += cidrblock($address, '203.147.88.0/22', 'MEGHBELA BROADBAND (IP4S-MEGHBELABROADBAND-32). ');
 $ax += cidrblock($address, '223.29.192.0/20', 'MEGHBELA BROADBAND (IP4S-MEGHBELABROADBAND-33). ');
-
 
 // ASN 45271 ("Idea Cellular Limited").
 // Significant source of forum/blog spam. Also a legit Indian ISP with human
@@ -2486,7 +2436,6 @@ $ax += cidrblock($address, '112.110.252.0/23', 'Idea Cellular Ltd (IP4S-IDEACELL
 $ax += cidrblock($address, '115.69.157.0/24', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-145). ');
 $ax += cidrblock($address, '115.69.159.0/24', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-146). ');
 
-
 // ASNs 12530, 15895, 35081 ('"Kyivstar" PJSC').
 // Absolutely **INSANE** levels of spam coming from this network!! Shouldn't
 // ever, ever let them through, if at all possible.
@@ -2515,7 +2464,6 @@ $ax += cidrblock($address, '193.41.60.0/22', 'Kyivstar (IP4S-KYIVSTAR-19). ');
 $ax += cidrblock($address, '193.239.128.0/23', 'Kyivstar (IP4S-KYIVSTAR-20). ');
 $ax += cidrblock($address, '212.82.192.0/19', 'Kyivstar (IP4S-KYIVSTAR-21). ');
 $ax += cidrblock($address, '212.109.32.0/19', 'Kyivstar (IP4S-KYIVSTAR-22). ');
-
 
 // ASN 13188 ("CONTENT DELIVERY NETWORK LTD", A.K.A. "TRIOLAN, UA").
 // Significant source of spam, hack attempts, scraping, etc.
@@ -2548,7 +2496,6 @@ $ax += cidrblock($address, '185.19.4.0/22', 'AS13188-CDN-LTD (IP4S-AS13188CDNLTD
 $ax += cidrblock($address, '185.38.216.0/22', 'AS13188-CDN-LTD (IP4S-AS13188CDNLTD-24). ');
 $ax += cidrblock($address, '193.138.144.0/22', 'AS13188-CDN-LTD (IP4S-AS13188CDNLTD-25). ');
 
-
 // ASN 15377 ('ISP "Fregat" Ltd.').
 // Updated: 2019.08.29 / Checked: 2020.05.06
 
@@ -2558,12 +2505,10 @@ $ax += cidrblock($address, '94.240.160.0/19', 'Fregat (IP4S-FREGAT-2). ');
 $ax += cidrblock($address, '185.205.144.0/22', 'Fregat (IP4S-FREGAT-3). ');
 $ax += cidrblock($address, '212.115.224.0/19', 'Fregat (IP4S-FREGAT-4). ');
 
-
 // ASN 49204 ('TOV "ITT"').
 // Updated: 2016.09.06 / Checked: 2020.09.09
 
 $ax += cidrblock($address, '195.238.108.0/22', 'AS49204-TOV-ITT (IP4S-AS49204TOVITT-0). ');
-
 
 // ASNs 35196, 48666 ("MAROSNET Telecommunication Company LLC").
 // Updated: 2020.08.22
@@ -2594,7 +2539,6 @@ $ax += cidrblock($address, '194.67.192.0/19', 'MAROSNET (IP4S-MAROSNET-22). ');
 $ax += cidrblock($address, '195.47.250.0/24', 'MAROSNET (IP4S-MAROSNET-23). ');
 $ax += cidrblock($address, '195.66.87.0/24', 'MAROSNET (IP4S-MAROSNET-24). ');
 
-
 // ASNs 7552, 24086, 37620, 262210 ("Viettel Corporation").
 // A HUGE source of forum spam, but also a legit ISP with human endpoints.
 // Serves mostly Vietnam, but also several African countries. Including only the
@@ -2619,7 +2563,6 @@ $ax += cidrblock($address, '202.6.96.0/23', 'Viettel Corporation (IP4S-VIETTELCO
 $ax += cidrblock($address, '203.113.128.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-15). ');
 $ax += cidrblock($address, '203.190.160.0/20', 'Viettel Corporation (IP4S-VIETTELCORPORATION-16). ');
 $ax += cidrblock($address, '220.231.64.0/18', 'Viettel Corporation (IP4S-VIETTELCORPORATION-17). ');
-
 
 // ASNs 200019, 207636 ("ALEXHOST SRL").
 // A significant source of spam, hacking, and other nefarious activity.
@@ -2659,7 +2602,6 @@ $ax += cidrblock($address, '45.145.0.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-29).
 $ax += cidrblock($address, '91.239.190.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-30). ');
 $ax += cidrblock($address, '193.135.12.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-31). ');
 $ax += cidrblock($address, '213.226.100.0/24', 'ALEXHOST SRL (IP4S-ALEXHOSTSRL-32). ');
-
 
 // ASNs 11572, 29656, 39239, 50389, 57872, 60558, 207134, 210266 ("PHOENIX NAP, LLC").
 // VPN/VPS/Proxy services + dedicated servers/cloud provider; Multiplay; A
@@ -2716,7 +2658,6 @@ $ax += cidrblock($address, '184.174.94.0/24', 'PHOENIX NAP, LLC (IP4S-PHOENIXNAP
 $ax += cidrblock($address, '185.145.45.0/24', 'PHOENIX NAP, LLC (IP4S-PHOENIXNAPLLC-45). ');
 $ax += cidrblock($address, '209.182.105.0/24', 'PHOENIX NAP, LLC (IP4S-PHOENIXNAPLLC-46). ');
 
-
 // ASN 34300 ("JSC Internet-Cosmos").
 // Updated: 2019.02.14 / Checked: 2020.05.21
 
@@ -2725,7 +2666,6 @@ $ax += cidrblock($address, '85.93.128.0/19', 'JSC Internet-Cosmos (IP4S-JSCINTER
 $ax += cidrblock($address, '176.120.64.0/19', 'JSC Internet-Cosmos (IP4S-JSCINTERNETCOSMOS-2). ');
 $ax += cidrblock($address, '185.31.160.0/22', 'JSC Internet-Cosmos (IP4S-JSCINTERNETCOSMOS-3). ');
 $ax += cidrblock($address, '185.113.108.0/22', 'JSC Internet-Cosmos (IP4S-JSCINTERNETCOSMOS-4). ');
-
 
 // ASNs 24955, 41704 ("Orenburgskaya Gorodskaya Set, ZAO").
 // Caught spamming while pretending to be Google.
@@ -2756,7 +2696,6 @@ $ax += cidrblock($address, '136.169.224.0/19', 'Ufanet (IP4S-UFANET-21). ');
 $ax += cidrblock($address, '145.255.0.0/19', 'Ufanet (IP4S-UFANET-22). ');
 $ax += cidrblock($address, '178.214.224.0/19', 'Ufanet (IP4S-UFANET-23). ');
 $ax += cidrblock($address, '213.5.108.0/22', 'Ufanet (IP4S-UFANET-24). ');
-
 
 // ASN 9829 ("BSNL (Bharat Sanchar Nigam Ltd)").
 // A large network with significant human endpoints, but the infection rate
@@ -2867,7 +2806,6 @@ $ax += cidrblock($address, '184.51.64.0/22', 'BSNL (IP4S-BSNL-096). ');
 $ax += cidrblock($address, '184.51.92.0/22', 'BSNL (IP4S-BSNL-097). ');
 $ax += cidrblock($address, '184.51.158.0/24', 'BSNL (IP4S-BSNL-098). ');
 $ax += cidrblock($address, '184.84.167.0/24', 'BSNL (IP4S-BSNL-099). ');
-
 
 // ASN 4134 ("China Telecom Backbone").
 // Interlaces with numerous providers and contains a large portion of Chinese
@@ -3347,7 +3285,6 @@ $ax += cidrblock($address, '146.222.81.0/24', 'China Backbone 4134 (IP4S-CHINABA
 $ax += cidrblock($address, '146.222.94.0/24', 'China Backbone 4134 (IP4S-CHINABACKBONE4134-466). ');
 $ax += cidrblock($address, '154.72.44.0/24', 'China Backbone 4134 (IP4S-CHINABACKBONE4134-467). ');
 
-
 // ASN 4812 ("China Telecom (Group)").
 // Interlaces with numerous providers and contains a large portion of Chinese
 // human access endpoints. Can't easily ignore the unwanted traffic coming from
@@ -3559,7 +3496,6 @@ $ax += cidrblock($address, '192.163.11.0/24', 'China Telecom 4812 (IP4S-CHINATEL
 $ax += cidrblock($address, '192.232.97.0/24', 'China Telecom 4812 (IP4S-CHINATELECOM4812-199). ');
 $ax += cidrblock($address, '198.208.17.0/24', 'China Telecom 4812 (IP4S-CHINATELECOM4812-200). ');
 $ax += cidrblock($address, '198.208.19.0/24', 'China Telecom 4812 (IP4S-CHINATELECOM4812-201). ');
-
 
 // ASN 4837 ("China Unicom Backbone").
 // Interlaces with numerous providers and contains a large portion of Chinese
@@ -4207,7 +4143,6 @@ $ax += cidrblock($address, '222.132.0.0/14', 'China Backbone 4837 (IP4S-CHINABAC
 $ax += cidrblock($address, '222.136.0.0/13', 'China Backbone 4837 (IP4S-CHINABACKBONE4837-634). ');
 $ax += cidrblock($address, '222.160.0.0/14', 'China Backbone 4837 (IP4S-CHINABACKBONE4837-635). ');
 
-
 // ASN 3462 ("Data Communication Business Group").
 // Would prefer to not include this ASN in this file due to the high risk of
 // false positives, but the amount of spam events seen from this ASN isn't
@@ -4300,7 +4235,6 @@ $ax += cidrblock($address, '184.28.66.0/23', 'DCBG (IP4S-DCBG-79). ');
 $ax += cidrblock($address, '184.29.38.0/24', 'DCBG (IP4S-DCBG-80). ');
 $ax += cidrblock($address, '184.86.232.0/22', 'DCBG (IP4S-DCBG-81). ');
 $ax += cidrblock($address, '192.254.86.0/24', 'DCBG (IP4S-DCBG-82). ');
-
 
 // ASNs 4808, 23724 ("China Unicom Beijing Province Network").
 // Major ISP in China, but also a major source of spam and other unwanted
@@ -4975,7 +4909,6 @@ $ax += cidrblock($address, '140.242.224.0/24', 'China Unicom 4808 (IP4S-CHINAUNI
 $ax += cidrblock($address, '204.55.160.0/24', 'China Unicom 4808 (IP4S-CHINAUNICOM4808-662). ');
 $ax += cidrblock($address, '202.94.1.0/24', 'China Unicom 4808 (IP4S-CHINAUNICOM4808-663). ');
 
-
 // ASNs 7643, 45899, 135905 ("VietNam Post and Telecom Corporation").
 // A *major* Vietnamese domestic ISP, but also a significant source of spam,
 // hack attempts, probing, etc. Marked for use with reCAPTCHA and also listed
@@ -5096,7 +5029,6 @@ $ax += cidrblock($address, '221.132.47.0/24', 'VNPT Corp (IP4S-VNPTCORP-107). ')
 $ax += cidrblock($address, '221.132.48.0/21', 'VNPT Corp (IP4S-VNPTCORP-108). ');
 $ax += cidrblock($address, '222.252.0.0/14', 'VNPT Corp (IP4S-VNPTCORP-109). ');
 
-
 // ASN 18403 ("The Corporation for Financing & Promoting Technology").
 // Interlaces with human endpoints in Vietnam, but also a significant source of
 // spam, hacks, brute-forcing, probing, etc.
@@ -5141,7 +5073,6 @@ $ax += cidrblock($address, '183.80.0.0/16', 'CFPT (IP4S-CFPT-35). ');
 $ax += cidrblock($address, '183.81.0.0/17', 'CFPT (IP4S-CFPT-36). ');
 $ax += cidrblock($address, '203.191.8.0/21', 'CFPT (IP4S-CFPT-37). ');
 $ax += cidrblock($address, '210.245.0.0/17', 'CFPT (IP4S-CFPT-38). ');
-
 
 // ASNs 9498, 9730, 24560, 37140, 45609, 132045 ("Bharti Airtel").
 // Interlaces with numerous providers and contains a significant number of human
@@ -5838,7 +5769,6 @@ $ax += cidrblock($address, '184.84.200.0/22', 'Bharti Airtel (IP4S-BHARTIAIRTEL-
 $ax += cidrblock($address, '184.85.232.0/23', 'Bharti Airtel (IP4S-BHARTIAIRTEL-684). ');
 $ax += cidrblock($address, '192.6.125.0/24', 'Bharti Airtel (IP4S-BHARTIAIRTEL-685). ');
 
-
 // ASN 23944 ("SKYBroadband SKYCable Corporation").
 // ( CIDRs that we haven't yet seen any problems from have been omitted. I hope to eventually remove this section entirely. )
 // Updated: 2020.11.25
@@ -5870,7 +5800,6 @@ $ax += cidrblock($address, '130.105.168.202/32', 'SKYBROADBAND (IP4S-SKYBROADBAN
 $ax += cidrblock($address, '130.105.208.227/32', 'SKYBROADBAND (IP4S-SKYBROADBAND-24). ');
 $ax += cidrblock($address, '130.105.216.215/32', 'SKYBROADBAND (IP4S-SKYBROADBAND-25). ');
 
-
 // ASN 9808 ("Guangdong Mobile Communication Co.Ltd").
 // Chinese mobile phone and data carrier. Numerous spam events from here plus
 // some occasional brute-force attempts. Listing just the currently affected
@@ -5886,7 +5815,6 @@ $ax += cidrblock($address, '183.192.238.64/32', 'Guangdong Mobile (IP4S-GUANGDON
 $ax += cidrblock($address, '218.200.61.170/32', 'Guangdong Mobile (IP4S-GUANGDONGMOBILE-6). ');
 $ax += cidrblock($address, '218.204.138.137/32', 'Guangdong Mobile (IP4S-GUANGDONGMOBILE-7). ');
 $ax += cidrblock($address, '223.68.190.130/32', 'Guangdong Mobile (IP4S-GUANGDONGMOBILE-8). ');
-
 
 // ASN 132742 ("Guochao Group limited").
 // Updated: 2018.03.31 / Checked: 2020.09.20
@@ -5928,7 +5856,6 @@ $ax += cidrblock($address, '103.63.0.0/21', 'Guochao Group (IP4S-GUOCHAOGROUP-33
 $ax += cidrblock($address, '103.80.144.0/22', 'Guochao Group (IP4S-GUOCHAOGROUP-34). ');
 $ax += cidrblock($address, '103.192.40.0/22', 'Guochao Group (IP4S-GUOCHAOGROUP-35). ');
 
-
 // ASNs 15378, 41330, 42437, 48092, 48190 ("T2 Mobile LLC").
 // T2 Mobile LLC owns about ~36 different ASNs, but we're only tracking these
 // 5 specific ASNs at the moment. Numbers may change in the future as
@@ -5953,7 +5880,6 @@ $ax += cidrblock($address, '217.169.82.0/23', 'T2 Mobile LLC (IP4S-T2MOBILELLC-1
 $ax += cidrblock($address, '217.169.84.0/22', 'T2 Mobile LLC (IP4S-T2MOBILELLC-14). ');
 $ax += cidrblock($address, '217.169.88.0/21', 'T2 Mobile LLC (IP4S-T2MOBILELLC-15). ');
 
-
 // ASN 44725 ("Sinam").
 // Updated: 2020.03.13 / Checked: 2020.08.27
 
@@ -5963,7 +5889,6 @@ $ax += cidrblock($address, '37.114.128.0/18', 'Sinam (IP4S-SINAM-2). ');
 $ax += cidrblock($address, '92.39.80.0/20', 'Sinam (IP4S-SINAM-3). ');
 $ax += cidrblock($address, '94.20.120.0/24', 'Sinam (IP4S-SINAM-4). ');
 $ax += cidrblock($address, '185.91.208.0/22', 'Sinam (IP4S-SINAM-5). ');
-
 
 // ASN 9387 ("AUGERE-Pakistan").
 // Listed due to spam incidence. Reduced reports this past year; maybe I could
@@ -5986,12 +5911,10 @@ $ax += cidrblock($address, '180.178.185.0/24', 'AUGERE-Pakistan (IP4S-AUGEREPAKI
 $ax += cidrblock($address, '180.178.186.0/24', 'AUGERE-Pakistan (IP4S-AUGEREPAKISTAN-13). ');
 $ax += cidrblock($address, '223.29.224.0/22', 'AUGERE-Pakistan (IP4S-AUGEREPAKISTAN-14). ');
 
-
 // ASN 24812 ("NPK Home-Net Ltd").
 // Updated: 2019.03.20 / Checked: 2020.05.26
 
 $ax += cidrblock($address, '176.105.192.0/19', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-0). ');
-
 
 // "PJSC Rostelecom".
 // Known ASNs: 3239, 5573, 6828, 6863, 8382, 8443, 8557, 8568, 8570, 8594, 8675, 8828, 8997, 12332, 12380, 12389,
@@ -6881,7 +6804,6 @@ $ax += cidrblock($address, '217.168.68.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELE
 $ax += cidrblock($address, '217.168.70.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-862). ');
 $ax += cidrblock($address, '217.168.73.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-863). ');
 
-
 // ASNs 3216, 8402 ("PJSC Vimpelcom", "OJSC Vimpelcom").
 // Similarly to with the Rostelecom CIDRs, blocking the entirety of all
 // "Vimpelcom" ASNs could be problematic. Instead, we'll try to limit
@@ -6988,22 +6910,21 @@ $ax += cidrblock($address, '217.195.212.0/23', 'PJSC Vimpelcom (IP4S-PJSCVIMPELC
 $ax += cidrblock($address, '217.195.216.0/23', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-97). ');
 $ax += cidrblock($address, '217.195.219.0/24', 'PJSC Vimpelcom (IP4S-PJSCVIMPELCOM-98). ');
 
-
 // ASN 31200 ("Novotelecom Ltd").
 // When updating ASNs, only block the problematic ASNs (those with known cases
 // of hacking events, spamming, etc); don't block the entire network.
-// Updated: 2019.05.02 / Checked: 2020.04.19
+// Updated: 2021.01.02
 
-$ax += cidrblock($address, '5.128.0.0/16', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-0). ');
-$ax += cidrblock($address, '5.129.0.0/17', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-1). ');
-$ax += cidrblock($address, '5.129.128.0/19', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-2). ');
-$ax += cidrblock($address, '5.129.181.0/24', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-3). ');
-$ax += cidrblock($address, '5.129.184.0/23', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-4). ');
-$ax += cidrblock($address, '5.129.186.0/24', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-5). ');
-$ax += cidrblock($address, '5.130.0.0/15', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-6). ');
-$ax += cidrblock($address, '37.192.0.0/14', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-7). ');
-$ax += cidrblock($address, '178.49.0.0/16', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-8). ');
-
+$ax += cidrblock($address, '5.128.0.0/16', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-00). ');
+$ax += cidrblock($address, '5.129.0.0/17', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-01). ');
+$ax += cidrblock($address, '5.129.128.0/19', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-02). ');
+$ax += cidrblock($address, '5.129.181.0/24', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-03). ');
+$ax += cidrblock($address, '5.129.184.0/23', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-04). ');
+$ax += cidrblock($address, '5.129.186.0/24', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-05). ');
+$ax += cidrblock($address, '5.130.0.0/16', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-06). ');
+$ax += cidrblock($address, '5.131.240.0/20', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-07). ');
+$ax += cidrblock($address, '37.192.0.0/14', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-08). ');
+$ax += cidrblock($address, '178.49.0.0/16', 'Novotelecom Ltd (IP4S-NOVOTELECOMLTD-09). ');
 
 // ASN 3255 (State Enterprise Scientific and Telecommunication Centre "Ukrainian
 // Academic and Research Network" of the Institute for Condensed Matter Physics
@@ -7103,9 +7024,8 @@ $ax += cidrblock($address, '213.174.22.0/24', 'UARNet (IP4S-UARNET-89). ');
 $ax += cidrblock($address, '213.174.30.0/23', 'UARNet (IP4S-UARNET-90). ');
 $ax += cidrblock($address, '217.65.248.0/21', 'UARNet (IP4S-UARNET-91). ');
 
-
 // ASN 44493 ("Chelyabinsk-Signal").
-// Updated: 2018.03.23 / Checked: 2020.04.19
+// Updated: 2018.03.23 / Checked: 2021.01.02
 
 $ax += cidrblock($address, '80.85.152.0/23', 'Chelyabinsk-Signal (IP4S-CHELYABINSKSIGNAL-0). ');
 $ax += cidrblock($address, '80.85.154.0/24', 'Chelyabinsk-Signal (IP4S-CHELYABINSKSIGNAL-1). ');
@@ -7114,7 +7034,6 @@ $ax += cidrblock($address, '91.202.12.0/22', 'Chelyabinsk-Signal (IP4S-CHELYABIN
 $ax += cidrblock($address, '185.118.164.0/22', 'Chelyabinsk-Signal (IP4S-CHELYABINSKSIGNAL-4). ');
 $ax += cidrblock($address, '185.144.28.0/22', 'Chelyabinsk-Signal (IP4S-CHELYABINSKSIGNAL-5). ');
 $ax += cidrblock($address, '185.203.236.0/22', 'Chelyabinsk-Signal (IP4S-CHELYABINSKSIGNAL-6). ');
-
 
 // ASN 15774 ("Closed Joint Stock Company TransTeleCom").
 // Updated: 2020.08.17
@@ -7227,7 +7146,6 @@ $ax += cidrblock($address, '188.244.128.0/17', 'TransTeleCom (IP4S-TRANSTELECOM-
 $ax += cidrblock($address, '213.129.96.0/19', 'TransTeleCom (IP4S-TRANSTELECOM-105). ');
 $ax += cidrblock($address, '213.137.229.0/24', 'TransTeleCom (IP4S-TRANSTELECOM-106). ');
 $ax += cidrblock($address, '213.138.64.0/19', 'TransTeleCom (IP4S-TRANSTELECOM-107). ');
-
 
 // ASNs 9049, 12768, 12772, 16179, 20807, 21311, 21335, 21353, 21442, 24588,
 // 25408, 25446, 30868, 31363, 31483, 31484, 31494, 31585, 31692, 34145, 34150,
@@ -7532,7 +7450,6 @@ $ax += cidrblock($address, '213.109.6.85/32', 'ER-Telecom Holding (IP4S-ERTELECO
 $ax += cidrblock($address, '217.12.72.145/32', 'ER-Telecom Holding (IP4S-ERTELECOMHOLDING-284). ');
 $ax += cidrblock($address, '217.12.75.0/24', 'ER-Telecom Holding (IP4S-ERTELECOMHOLDING-285). ');
 
-
 // ASNs 8369, 198675, 199619 ("Intersvyaz-2 JSC").
 // Caught trying to hack into WordPress sites.
 // Updated: 2020.10.15
@@ -7559,14 +7476,12 @@ $ax += cidrblock($address, '185.12.228.0/22', 'is74.ru (IP4S-IS74RU-18). ');
 $ax += cidrblock($address, '193.33.26.0/23', 'is74.ru (IP4S-IS74RU-19). ');
 $ax += cidrblock($address, '193.105.156.0/24', 'is74.ru (IP4S-IS74RU-20). ');
 
-
 // ASNs 49775, 59665 ("Ultra-Telecom LLC").
 // Known C&Cs operating from this network and also a source of forum spam.
 // Updated: 2017.07.12 / Checked: 2020.11.21
 
 $ax += cidrblock($address, '176.124.144.0/22', 'Ultra-Telecom LLC (IP4S-ULTRATELECOMLLC-0). ');
 $ax += cidrblock($address, '195.160.164.0/23', 'Ultra-Telecom LLC (IP4S-ULTRATELECOMLLC-1). ');
-
 
 // ASN 174 ("Cogent Communications").
 
@@ -7577,7 +7492,6 @@ $ax += cidrblock($address, '195.160.164.0/23', 'Ultra-Telecom LLC (IP4S-ULTRATEL
 // backbone architecture, etc that we don't want to block, so I'm not outright
 // listing the ASN in entirety. Listings have also been split across different
 // signature files as to list at the signature files where best suited.
-
 
 // See:
 // - en.wikipedia.org/wiki/Cogent_Communications
@@ -7590,7 +7504,6 @@ $ax += cidrblock($address, '195.160.164.0/23', 'Ultra-Telecom LLC (IP4S-ULTRATEL
 
 // Updated: 2020.12.18
 $ax += cidrblock($address, '82.129.6.0/23', 'IGNACIO SANCHEZ RUIZ (IP4S-IGNACIOSANCHEZRUIZ-0). ');
-
 
 // ASN 54133 ("UnmeteredInternet.com").
 // North American ISP which is also a source of spam. When updating, also check
@@ -7620,7 +7533,6 @@ $ax += cidrblock($address, '196.52.249.0/24', 'UnmeteredInternet.com (IP4S-UNMET
 $ax += cidrblock($address, '196.54.0.0/24', 'UnmeteredInternet.com (IP4S-UNMETEREDINTERNETCOM-19). ');
 $ax += cidrblock($address, '196.54.82.0/23', 'UnmeteredInternet.com (IP4S-UNMETEREDINTERNETCOM-20). ');
 
-
 // ASN 133610 ("BRAC").
 // An NGO charity whose IPs were caught being used in attempts to hack into WordPress installations.
 // Refer abuseipdb.com/check/103.43.93.26 for example.
@@ -7629,12 +7541,10 @@ $ax += cidrblock($address, '196.54.82.0/23', 'UnmeteredInternet.com (IP4S-UNMETE
 $ax += cidrblock($address, '103.43.93.0/24', 'BRAC (IP4S-BRAC-0). ');
 $ax += cidrblock($address, '103.238.63.0/24', 'BRAC (IP4S-BRAC-1). ');
 
-
 // ASN 41109 ("Center of Children Telemedicin and new information technologis").
 // Updated: 2017.10.23 / Checked: 2020.09.09
 
 $ax += cidrblock($address, '81.200.80.0/20', 'Children Telemedicin (IP4S-CHILDRENTELEMEDICIN-0). ');
-
 
 // ASN 198093 ("Foreningen for digitala fri- och rattigheter").
 // Dead homepage and high levels of automated spam from this ASN.
@@ -7642,7 +7552,6 @@ $ax += cidrblock($address, '81.200.80.0/20', 'Children Telemedicin (IP4S-CHILDRE
 
 $ax += cidrblock($address, '171.25.193.0/24', 'Foreningen (IP4S-FORENINGEN-0). ');
 $ax += cidrblock($address, '194.0.61.0/24', 'Foreningen (IP4S-FORENINGEN-1). ');
-
 
 // ASN 31148 ("Freenet Ltd").
 // Ukrainian ISP with human endpoints, but also a frequent source of spam and
@@ -7846,7 +7755,6 @@ $ax += cidrblock($address, '212.22.208.0/21', 'Freenet Ltd (IP4S-FREENETLTD-193)
 $ax += cidrblock($address, '212.22.218.0/23', 'Freenet Ltd (IP4S-FREENETLTD-194). ');
 $ax += cidrblock($address, '212.22.221.0/24', 'Freenet Ltd (IP4S-FREENETLTD-195). ');
 $ax += cidrblock($address, '212.22.222.0/23', 'Freenet Ltd (IP4S-FREENETLTD-196). ');
-
 
 // ASNs 9009, 16247 ("M247 Ltd").
 // Multiplay network providing broadband connectivity, server leasing, line rental, webhosting services and others.
@@ -8983,7 +8891,6 @@ $ax += cidrblock($address, '161.123.244.0/22', 'M247 Ltd (IP4S-M247LTD-1123). ')
 $ax += cidrblock($address, '163.198.212.0/22', 'M247 Ltd (IP4S-M247LTD-1124). ');
 $ax += cidrblock($address, '196.53.108.0/24', 'M247 Ltd (IP4S-M247LTD-1125). ');
 
-
 // ASN 8708 ("RCS & RDS SA").
 // Romanian domestic ISP; Also a frequent source of spam, hack attempts, and
 // other unwanted traffic.
@@ -9120,7 +9027,6 @@ $ax += cidrblock($address, '217.156.106.0/23', 'RCS & RDS SA (IP4S-RCSRDSSA-127)
 $ax += cidrblock($address, '217.156.122.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-128). ');
 $ax += cidrblock($address, '145.249.109.0/24', 'RCS & RDS SA (IP4S-RCSRDSSA-129). ');
 
-
 // ASN 36351 ("SoftLayer Technologies").
 // Careful when updating; Signatures reflect varying block reasons, split across multiple files.
 
@@ -9143,7 +9049,6 @@ $ax += cidrblock($address, '103.200.98.0/23', 'SoftLayer Spam ISPs (IP4S-SOFTLAY
 $ax += cidrblock($address, '103.204.174.0/24', 'SoftLayer Spam ISPs (IP4S-SOFTLAYERSPAMISPS-10). ');
 $ax += cidrblock($address, '122.128.96.0/23', 'SoftLayer Spam ISPs (IP4S-SOFTLAYERSPAMISPS-11). ');
 $ax += cidrblock($address, '196.52.38.0/24', 'SoftLayer Spam ISPs (IP4S-SOFTLAYERSPAMISPS-12). ');
-
 
 // ASNs 12322, 12876 ("ONLINE S.A.S").
 // A multiplay network (French domestic ISP, cloud provider, etc), caught trying
@@ -9175,16 +9080,14 @@ $ax += cidrblock($address, '213.228.0.0/18', 'ONLINE S.A.S (IP4S-ONLINESAS-21). 
 $ax += cidrblock($address, '151.115.0.0/18', 'ONLINE S.A.S (IP4S-ONLINESAS-22). ');
 $ax += cidrblock($address, '163.172.0.0/16', 'ONLINE S.A.S (IP4S-ONLINESAS-23). ');
 
-
 // ASN 13249 ("IT Systems LLC").
 // Caught trying to hack into WordPress sites.
-// Updated: 2018.07.28 / Checked: 2020.04.19
+// Updated: 2018.07.28 / Checked: 2021.01.02
 
 $ax += cidrblock($address, '185.183.108.0/22', 'IT Systems LLC (IP4S-ITSYSTEMSLLC-0). ');
 $ax += cidrblock($address, '193.16.105.0/24', 'IT Systems LLC (IP4S-ITSYSTEMSLLC-1). ');
 $ax += cidrblock($address, '193.109.241.0/24', 'IT Systems LLC (IP4S-ITSYSTEMSLLC-2). ');
 $ax += cidrblock($address, '213.133.160.0/19', 'IT Systems LLC (IP4S-ITSYSTEMSLLC-3). ');
-
 
 // ASNs 31343, 38978, 43656 ("Intertelecom Ltd").
 // Caught trying to hack into WordPress sites.
@@ -9202,7 +9105,6 @@ $ax += cidrblock($address, '95.111.128.0/19', 'Intertelecom Ltd (IP4S-INTERTELEC
 $ax += cidrblock($address, '130.180.208.0/20', 'Intertelecom Ltd (IP4S-INTERTELECOMLTD-09). ');
 $ax += cidrblock($address, '194.28.4.0/22', 'Intertelecom Ltd (IP4S-INTERTELECOMLTD-10). ');
 $ax += cidrblock($address, '195.128.182.0/23', 'Intertelecom Ltd (IP4S-INTERTELECOMLTD-11). ');
-
 
 // ASNs 9198, 50482 ("JSC Kazakhtelecom").
 // Legit ISP in Kazakhstan carrying human endpoints, but also a significant
@@ -9240,7 +9142,6 @@ $ax += cidrblock($address, '212.13.128.0/18', 'JSC Kazakhtelecom (IP4S-JSCKAZAKH
 $ax += cidrblock($address, '212.19.128.0/19', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-28). ');
 $ax += cidrblock($address, '212.154.128.0/17', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-29). ');
 $ax += cidrblock($address, '213.211.64.0/18', 'JSC Kazakhtelecom (IP4S-JSCKAZAKHTELECOM-30). ');
-
 
 // ASN 8359 ("MTS PJSC").
 // Caught trying to hack WordPress sites, a significant amount of other
@@ -9306,7 +9207,6 @@ $ax += cidrblock($address, '89.209.0.0/16', 'MTS PJSC (IP4S-MTSPJSC-55). ');
 $ax += cidrblock($address, '212.40.32.0/19', 'MTS PJSC (IP4S-MTSPJSC-56). ');
 $ax += cidrblock($address, '23.199.88.0/22', 'MTS PJSC (IP4S-MTSPJSC-57). ');
 
-
 // ASNs 15640, 21365, 25086, 28884, 29190, 29497, 30881, 30922, 31286,
 // 31558, 39001, 39858, 41209, 41771, 41822, 42087, 43038, 43318, 44677, 44895,
 // 48000, 48212, 48612, 49350, 60496, 197023, 197070 ("MTS PJSC").
@@ -9361,7 +9261,6 @@ $ax += cidrblock($address, '212.74.202.253/32', 'MTS PJSC Supplemental (IP4S-MTS
 $ax += cidrblock($address, '212.74.203.1/32', 'MTS PJSC Supplemental (IP4S-MTSPJSCSUPPLEMENTAL-41). ');
 $ax += cidrblock($address, '213.27.0.200/32', 'MTS PJSC Supplemental (IP4S-MTSPJSCSUPPLEMENTAL-42). ');
 
-
 // ASN 6849 ("Ukrtelecom").
 // Updated: 2020.12.06
 
@@ -9388,14 +9287,12 @@ $ax += cidrblock($address, '212.113.32.0/19', 'Ukrtelecom (IP4S-UKRTELECOM-19). 
 $ax += cidrblock($address, '213.179.224.0/19', 'Ukrtelecom (IP4S-UKRTELECOM-20). ');
 $ax += cidrblock($address, '213.186.96.0/19', 'Ukrtelecom (IP4S-UKRTELECOM-21). ');
 
-
 // ASN 137432 ("BKB Network").
 // Caught using automated hacktools to try hacking into honeypots.
 // Updated: 2020.04.09 / Checked: 2020.10.05
 
 $ax += cidrblock($address, '103.108.88.0/22', 'BKB Network (IP4S-BKBNETWORK-0). ');
 $ax += cidrblock($address, '103.145.132.0/24', 'BKB Network (IP4S-BKBNETWORK-1). ');
-
 
 // ASN 16010 ("Magticom Ltd").
 // Spam events originating from this network slowly becoming worse over time.
@@ -9434,7 +9331,6 @@ $ax += cidrblock($address, '212.72.156.0/22', 'Magticom Ltd (IP4S-MAGTICOMLTD-29
 $ax += cidrblock($address, '213.157.192.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-30). ');
 $ax += cidrblock($address, '213.200.0.0/19', 'Magticom Ltd (IP4S-MAGTICOMLTD-31). ');
 
-
 // ASN 7642 ("Dhivehi Raajjeyge Gulhun Plc (Dhiraagu)").
 // ISP from the Maldives with human endpoints, but also a source of spam.
 // Updated: 2020.05.06 / Checked: 2020.10.30
@@ -9453,7 +9349,6 @@ $ax += cidrblock($address, '202.1.192.0/20', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAA
 $ax += cidrblock($address, '203.104.24.0/21', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-11). ');
 $ax += cidrblock($address, '209.212.192.0/19', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-12). ');
 
-
 // ASN 196777 ("SKORUK ANDRIY OLEKSANDROVYCH").
 // Spambots hosted by this network caught by honeypots.
 // Updated: 2020.02.21 / Checked: 2020.07.22
@@ -9464,7 +9359,6 @@ $ax += cidrblock($address, '176.126.60.0/22', 'SKORUK ANDRIY OLEKSANDROVYCH (IP4
 $ax += cidrblock($address, '178.213.184.0/21', 'SKORUK ANDRIY OLEKSANDROVYCH (IP4S-SKORUKANDRIYOLEKSANDROVYCH-3). ');
 $ax += cidrblock($address, '194.60.254.0/23', 'SKORUK ANDRIY OLEKSANDROVYCH (IP4S-SKORUKANDRIYOLEKSANDROVYCH-4). ');
 $ax += cidrblock($address, '195.191.12.0/23', 'SKORUK ANDRIY OLEKSANDROVYCH (IP4S-SKORUKANDRIYOLEKSANDROVYCH-5). ');
-
 
 // ASN 12578 ("SIA Tet").
 // Caught XRumer operating on this network. A Latvian mobile operator with human
@@ -9486,7 +9380,6 @@ $ax += cidrblock($address, '91.105.54.221/32', 'SIA Tet (IP4S-SIATET-10). ');
 $ax += cidrblock($address, '91.105.95.202/32', 'SIA Tet (IP4S-SIATET-11). ');
 $ax += cidrblock($address, '95.68.114.194/32', 'SIA Tet (IP4S-SIATET-12). ');
 
-
 // ASN 9873 ("Lao Telecom Communication, LTC").
 // Legit ISP in Laos (i.e., has human endpoints). Listing here the specific
 // CIDRs where there's evidence of unwanted traffic, but leaving out the rest.
@@ -9500,7 +9393,6 @@ $ax += cidrblock($address, '202.137.131.155/32', 'Lao Telecom (IP4S-LAOTELECOM-4
 $ax += cidrblock($address, '202.137.134.0/24', 'Lao Telecom (IP4S-LAOTELECOM-5). ');
 $ax += cidrblock($address, '202.137.141.0/24', 'Lao Telecom (IP4S-LAOTELECOM-6). ');
 $ax += cidrblock($address, '202.137.154.0/23', 'Lao Telecom (IP4S-LAOTELECOM-7). ');
-
 
 // ASNs 20850, 25229, 39049 ("Kyivski Telekomunikatsiyni Merezhi LLC").
 // Huge source of spam and also caught attempting to hack WordPress sites.
@@ -9595,7 +9487,6 @@ $ax += cidrblock($address, '194.143.146.0/24', 'Kyivski Merezhi (IP4S-KYIVSKIMER
 $ax += cidrblock($address, '195.42.126.0/23', 'Kyivski Merezhi (IP4S-KYIVSKIMEREZHI-86). ');
 $ax += cidrblock($address, '195.66.136.0/23', 'Kyivski Merezhi (IP4S-KYIVSKIMEREZHI-87). ');
 
-
 // ASN 41435 ("UnderNet LLC").
 // Caught attempting to hack WordPress sites.
 // Updated: 2019.10.01 / Checked: 2020.05.30
@@ -9605,7 +9496,6 @@ $ax += cidrblock($address, '91.193.32.0/22', 'UnderNet LLC (IP4S-UNDERNETLLC-1).
 $ax += cidrblock($address, '176.104.0.0/18', 'UnderNet LLC (IP4S-UNDERNETLLC-2). ');
 $ax += cidrblock($address, '194.9.36.0/23', 'UnderNet LLC (IP4S-UNDERNETLLC-3). ');
 $ax += cidrblock($address, '213.109.80.0/20', 'UnderNet LLC (IP4S-UNDERNETLLC-4). ');
-
 
 // ASN 18101 ("Reliance Communications Ltd").
 // Caught spamming and occasionally attempting to hack WordPress sites. Also a
@@ -9644,13 +9534,11 @@ $ax += cidrblock($address, '184.29.76.0/23', 'Reliance Communications (IP4S-RELI
 $ax += cidrblock($address, '184.51.5.0/24', 'Reliance Communications (IP4S-RELIANCECOMMUNICATIONS-27). ');
 $ax += cidrblock($address, '184.51.6.0/24', 'Reliance Communications (IP4S-RELIANCECOMMUNICATIONS-28). ');
 
-
 // ASN 263500 ("Star Telecom S/A").
 // Source of forum spam and some email harvestors.
 // Updated: 2019.10.24 / Checked: 2020.10.10
 
 $ax += cidrblock($address, '177.223.48.0/20', 'Star Telecom S/A (IP4S-STARTELECOMSA-0). ');
-
 
 // ASN 47117 ("Sibline Ltd").
 // Source of forum spam and some email harvestors.
@@ -9658,7 +9546,6 @@ $ax += cidrblock($address, '177.223.48.0/20', 'Star Telecom S/A (IP4S-STARTELECO
 
 $ax += cidrblock($address, '194.8.136.0/22', 'Sibline Ltd (IP4S-SIBLINELTD-0). ');
 $ax += cidrblock($address, '195.158.250.0/23', 'Sibline Ltd (IP4S-SIBLINELTD-1). ');
-
 
 // ASN 59498 ("Teraline Telecom Svyaz LLC").
 // Source of forum spam and some email harvestors.
@@ -9673,7 +9560,6 @@ $ax += cidrblock($address, '185.46.153.0/24', 'Teraline Telecom (IP4S-TERALINETE
 $ax += cidrblock($address, '185.46.154.0/23', 'Teraline Telecom (IP4S-TERALINETELECOM-6). ');
 $ax += cidrblock($address, '188.130.130.0/24', 'Teraline Telecom (IP4S-TERALINETELECOM-7). ');
 
-
 // ASN 48574 ("Planet A, a.s").
 // Source of forum spam and some email harvestors.
 // Updated: 2019.10.24 / Checked: 2020.11.15
@@ -9681,7 +9567,6 @@ $ax += cidrblock($address, '188.130.130.0/24', 'Teraline Telecom (IP4S-TERALINET
 $ax += cidrblock($address, '109.238.208.0/20', 'Planet A (IP4S-PLANETA-0). ');
 $ax += cidrblock($address, '185.248.176.0/22', 'Planet A (IP4S-PLANETA-1). ');
 $ax += cidrblock($address, '217.30.64.0/20', 'Planet A (IP4S-PLANETA-2). ');
-
 
 // ASN 25513 ("PJSC Moscow city telephone network").
 // A Russian domestic ISP and a significant source of forum and blog spam.
@@ -9728,7 +9613,6 @@ $ax += cidrblock($address, '213.79.86.0/24', 'PJSC Moscow city (IP4S-PJSCMOSCOWC
 $ax += cidrblock($address, '217.26.0.0/20', 'PJSC Moscow city (IP4S-PJSCMOSCOWCITY-38). ');
 $ax += cidrblock($address, '217.112.16.0/20', 'PJSC Moscow city (IP4S-PJSCMOSCOWCITY-39). ');
 
-
 // ASN 8220 ("COLT Technology Services Group Limited").
 // Major multiplay network with multiple ASNs. Spam, malware, and other unwanted
 // traffic seen from this network. Listing only the specific known affected
@@ -9743,7 +9627,6 @@ $ax += cidrblock($address, '213.61.215.0/24', 'COLT Technology SGL (IP4S-COLTTEC
 $ax += cidrblock($address, '213.61.254.68/32', 'COLT Technology SGL (IP4S-COLTTECHNOLOGYSGL-5). ');
 $ax += cidrblock($address, '213.215.181.66/32', 'COLT Technology SGL (IP4S-COLTTECHNOLOGYSGL-6). ');
 
-
 // ASN 36445 ("Coextro").
 // A multiplay network providing primarily broadband internet solutions (i.e.,
 // human endpoints). Including here *only* the interlaced LogicWeb ranges (which
@@ -9751,7 +9634,6 @@ $ax += cidrblock($address, '213.215.181.66/32', 'COLT Technology SGL (IP4S-COLTT
 // Updated: 2020.01.26 / Checked: 2020.06.17
 
 $ax += cidrblock($address, '45.88.228.0/22', 'Coextro (IP4S-COEXTRO-0). ');
-
 
 // ASN 37187 ("Skyband Corporation Ltd").
 // A domestic ISP from Malawi. Mostly benign, but some specific IPs/ranges at
@@ -9766,7 +9648,6 @@ $ax += cidrblock($address, '41.190.93.0/24', 'Skyband Corporation Ltd (IP4S-SKYB
 $ax += cidrblock($address, '41.190.95.0/24', 'Skyband Corporation Ltd (IP4S-SKYBANDCORPORATIONLTD-3). ');
 $ax += cidrblock($address, '41.217.216.0/22', 'Skyband Corporation Ltd (IP4S-SKYBANDCORPORATIONLTD-4). ');
 
-
 // ASN 24532 ("PT. Inet Global Indo").
 // Domestic ISP from Indonesia; Also a source of spam (just blocking some
 // specific spammy ranges; not the whole network; marked as "spam"). Also some
@@ -9778,7 +9659,6 @@ $ax += cidrblock($address, '43.229.206.215/32', 'PT. Inet Global Indo (IP4S-PTIN
 $ax += cidrblock($address, '202.129.189.58/32', 'PT. Inet Global Indo (IP4S-PTINETGLOBALINDO-2). ');
 $ax += cidrblock($address, '202.129.191.170/32', 'PT. Inet Global Indo (IP4S-PTINETGLOBALINDO-3). ');
 
-
 // ASN 13030 ("Init7"). Swiss multiplay network (domestic ISP, webhosting, etc).
 // Listed due to hacking and brute-force attempts detected. Listing only
 // the specific addresses known to be recently/currently affected.
@@ -9787,7 +9667,6 @@ $ax += cidrblock($address, '202.129.191.170/32', 'PT. Inet Global Indo (IP4S-PTI
 $ax += cidrblock($address, '77.109.172.189/32', 'Init7 (IP4S-INIT7-0). ');
 $ax += cidrblock($address, '77.109.173.12/32', 'Init7 (IP4S-INIT7-1). ');
 $ax += cidrblock($address, '77.109.191.140/32', 'Init7 (IP4S-INIT7-2). ');
-
 
 // ASN 51815 ("IP-Only Networks AB"). Multiplay network. **HUGE** amounts of
 // spam coming from some specific ranges, plus some other activity seen from
@@ -9798,7 +9677,6 @@ $ax += cidrblock($address, '62.102.148.0/24', 'Temp/AS51815 (IP4S-TEMPAS51815-0)
 $ax += cidrblock($address, '65.99.161.0/24', 'Temp/AS51815 (IP4S-TEMPAS51815-1). ');
 $ax += cidrblock($address, '65.99.165.179/32', 'Temp/AS51815 (IP4S-TEMPAS51815-2). ');
 $ax += cidrblock($address, '65.99.167.132/32', 'Temp/AS51815 (IP4S-TEMPAS51815-3). ');
-
 
 // ASN 4788 ("TM Net, Internet Service Provider"). A major Malaysian domestic
 // ISP, but also a notable source of spam and webapp attacks (spam/malware).
@@ -9849,7 +9727,6 @@ $ax += cidrblock($address, '219.92.205.0/24', 'TM Net (IP4S-TMNET-41). ');
 $ax += cidrblock($address, '219.93.121.0/24', 'TM Net (IP4S-TMNET-42). ');
 $ax += cidrblock($address, '219.95.141.49/32', 'TM Net (IP4S-TMNET-43). ');
 
-
 // ASN 9930 ("TIME dotCom Berhad"). A major Malaysian domestic ISP, but also
 // most recently a notable source of forum spam.
 // Updated: 2020.09.01
@@ -9865,14 +9742,12 @@ $ax += cidrblock($address, '211.24.105.19/32', 'TIME dotCom Berhad (IP4S-TIMEDOT
 $ax += cidrblock($address, '211.24.110.192/32', 'TIME dotCom Berhad (IP4S-TIMEDOTCOMBERHAD-08). ');
 $ax += cidrblock($address, '211.25.118.18/32', 'TIME dotCom Berhad (IP4S-TIMEDOTCOMBERHAD-09). ');
 
-
 // ASN 38031 ("OptiMax Communication Ltd").
 // Source of forum spam and some email harvestors.
 // Updated: 2020.09.25
 
 $ax += cidrblock($address, '114.134.93.177/32', 'OptiMax (IP4S-OPTIMAX-0). ');
 $ax += cidrblock($address, '114.134.94.44/32', 'OptiMax (IP4S-OPTIMAX-1). ');
-
 
 // ASN 6830 ("Liberty Global B.V").
 // Source of forum spam and some email harvestors.
@@ -9932,7 +9807,6 @@ $ax += cidrblock($address, '95.77.103.0/24', 'Liberty Global (IP4S-LIBERTYGLOBAL
 $ax += cidrblock($address, '95.77.175.0/24', 'Liberty Global (IP4S-LIBERTYGLOBAL-49). ');
 $ax += cidrblock($address, '95.77.197.0/24', 'Liberty Global (IP4S-LIBERTYGLOBAL-50). ');
 
-
 // ASN 58689 ("ICC Communication").
 // Source of forum spam and some email harvestors.
 // Updated: 2020.09.25
@@ -9946,13 +9820,11 @@ $ax += cidrblock($address, '144.48.109.0/24', 'ICC Communication (IP4S-ICCCOMMUN
 $ax += cidrblock($address, '220.152.112.0/24', 'ICC Communication (IP4S-ICCCOMMUNICATION-6). ');
 $ax += cidrblock($address, '220.152.113.71/32', 'ICC Communication (IP4S-ICCCOMMUNICATION-7). ');
 
-
 // ASN 58889 ("Zx Online Ltd").
 // Source of forum spam and some email harvestors.
 // Updated: 2020.09.25
 
 $ax += cidrblock($address, '103.19.252.199/32', 'Zx Online Ltd (IP4S-ZXONLINELTD-0). ');
-
 
 // ASN 21127 ("Zap-Sib TransTeleCom").
 // Source of forum spam and some email harvestors.
@@ -9962,13 +9834,11 @@ $ax += cidrblock($address, '80.89.137.0/24', 'Zap-Sib TransTeleCom (IP4S-ZAPSIBT
 $ax += cidrblock($address, '91.238.137.108/32', 'Zap-Sib TransTeleCom (IP4S-ZAPSIBTRANSTELECOM-1). ');
 $ax += cidrblock($address, '94.251.6.201/32', 'Zap-Sib TransTeleCom (IP4S-ZAPSIBTRANSTELECOM-2). ');
 
-
 // ASN 33871 ("Norilsk-Telecom JSC").
 // Source of forum spam and some email harvestors.
 // Updated: 2020.12.15
 
 $ax += cidrblock($address, '95.138.228.28/32', 'Norilsk-Telecom JSC (IP4S-NORILSKTELECOMJSC-0). ');
-
 
 // ASN 9441 ("Next Online Limited").
 // Source of forum spam and some email harvestors.
@@ -9980,7 +9850,6 @@ $ax += cidrblock($address, '103.245.204.42/32', 'Next Online Limited (IP4S-NEXTO
 $ax += cidrblock($address, '103.245.205.0/24', 'Next Online Limited (IP4S-NEXTONLINELIMITED-3). ');
 $ax += cidrblock($address, '103.250.68.0/24', 'Next Online Limited (IP4S-NEXTONLINELIMITED-4). ');
 $ax += cidrblock($address, '103.250.69.70/32', 'Next Online Limited (IP4S-NEXTONLINELIMITED-5). ');
-
 
 // ASN 133469 ("Multinet (Udaipur) Private Limited").
 // Source of forum spam and some email harvestors.
@@ -9997,7 +9866,6 @@ $ax += cidrblock($address, '103.233.122.0/23', 'Temp/AS133469 (IP4S-TEMPAS133469
 $ax += cidrblock($address, '123.253.127.224/32', 'Temp/AS133469 (IP4S-TEMPAS133469-08). ');
 $ax += cidrblock($address, '150.242.254.52/32', 'Temp/AS133469 (IP4S-TEMPAS133469-09). ');
 $ax += cidrblock($address, '150.242.255.0/24', 'Temp/AS133469 (IP4S-TEMPAS133469-10). ');
-
 
 // ASN 6147 ("Telefonica del Peru S.A.A").
 // Source of forum spam and some email harvestors.
@@ -10034,7 +9902,6 @@ $ax += cidrblock($address, '200.121.151.106/32', 'Telefonica del Peru (IP4S-TELE
 $ax += cidrblock($address, '200.121.232.142/32', 'Telefonica del Peru (IP4S-TELEFONICADELPERU-28). ');
 $ax += cidrblock($address, '201.240.147.0/24', 'Telefonica del Peru (IP4S-TELEFONICADELPERU-29). ');
 
-
 // ASN 18059 ("DTPNET NAP").
 // Source of forum spam and some email harvestors.
 // Updated: 2020.09.22
@@ -10042,7 +9909,6 @@ $ax += cidrblock($address, '201.240.147.0/24', 'Telefonica del Peru (IP4S-TELEFO
 $ax += cidrblock($address, '116.90.165.26/32', 'DTPNET NAP (IP4S-DTPNETNAP-0). ');
 $ax += cidrblock($address, '203.173.92.250/32', 'DTPNET NAP (IP4S-DTPNETNAP-1). ');
 $ax += cidrblock($address, '203.173.93.0/24', 'DTPNET NAP (IP4S-DTPNETNAP-2). ');
-
 
 // ASN 17552 ("True Internet Co.,Ltd").
 // A major domestic ISP in Thailand, but also a notable source of forum spam and
@@ -10085,7 +9951,6 @@ $ax += cidrblock($address, '171.97.168.215/32', 'True Internet Co (IP4S-TRUEINTE
 $ax += cidrblock($address, '171.97.217.0/24', 'True Internet Co (IP4S-TRUEINTERNETCO-33). ');
 $ax += cidrblock($address, '171.103.9.22/32', 'True Internet Co (IP4S-TRUEINTERNETCO-34). ');
 
-
 // ASN 45287 ("Varnion Technology Semesta, PT").
 // Source of forum spam and some email harvestors.
 // Updated: 2020.09.22
@@ -10093,7 +9958,6 @@ $ax += cidrblock($address, '171.103.9.22/32', 'True Internet Co (IP4S-TRUEINTERN
 $ax += cidrblock($address, '150.129.57.147/32', 'Varnion Technology (IP4S-VARNIONTECHNOLOGY-0). ');
 $ax += cidrblock($address, '150.129.57.154/32', 'Varnion Technology (IP4S-VARNIONTECHNOLOGY-1). ');
 $ax += cidrblock($address, '203.99.131.218/32', 'Varnion Technology (IP4S-VARNIONTECHNOLOGY-2). ');
-
 
 // ASN 12714 ("Net By Net Holding LLC").
 // Source of forum spam and some email harvestors.
@@ -10143,7 +10007,6 @@ $ax += cidrblock($address, '176.193.250.0/24', 'Net By Net Holding LLC (IP4S-NET
 $ax += cidrblock($address, '176.195.44.222/32', 'Net By Net Holding LLC (IP4S-NETBYNETHOLDINGLLC-41). ');
 $ax += cidrblock($address, '213.141.153.146/32', 'Net By Net Holding LLC (IP4S-NETBYNETHOLDINGLLC-42). ');
 
-
 // ASN 13489 ("EPM Telecomunicaciones S.A. E.S.P").
 // Source of forum spam and some email harvestors.
 // (Mark EU and US CIDRs as cloud; the rest as spam).
@@ -10190,14 +10053,12 @@ $ax += cidrblock($address, '104.77.198.0/24', 'EPM Telecomunicaciones (IP4S-EPMT
 $ax += cidrblock($address, '104.118.24.0/24', 'EPM Telecomunicaciones (IP4S-EPMTELECOMUNICACIONES-38). ');
 $ax += cidrblock($address, '192.56.46.0/24', 'EPM Telecomunicaciones (IP4S-EPMTELECOMUNICACIONES-39). ');
 
-
 // ASN 27932 ("Redes y Telecomunicaciones").
 // Source of forum spam and some email harvestors.
 // Updated: 2020.09.22
 
 $ax += cidrblock($address, '200.52.144.170/32', 'Redes y Telecomunicaciones (IP4S-REDESYTELECOMUNICACIONES-0). ');
 $ax += cidrblock($address, '200.52.149.123/32', 'Redes y Telecomunicaciones (IP4S-REDESYTELECOMUNICACIONES-1). ');
-
 
 // ASN 11888 ("Television Internacional, S.A. de C.V.").
 // Multiplay network. Difficult to get proper, reliable information about them,
@@ -10211,7 +10072,6 @@ $ax += cidrblock($address, '187.160.10.49/32', 'TV Internacional (IP4S-TVINTERNA
 $ax += cidrblock($address, '187.161.106.113/32', 'TV Internacional (IP4S-TVINTERNACIONAL-1). ');
 $ax += cidrblock($address, '200.188.154.9/32', 'TV Internacional (IP4S-TVINTERNACIONAL-2). ');
 $ax += cidrblock($address, '207.248.62.98/32', 'TV Internacional (IP4S-TVINTERNACIONAL-3). ');
-
 
 // ASN 23969 ("TOT Public Company Limited").
 // A major domestic ISP in Thailand, but also a notable source of forum spam.
@@ -10274,7 +10134,6 @@ $ax += cidrblock($address, '182.52.238.0/24', 'TOT Public (IP4S-TOTPUBLIC-52). '
 $ax += cidrblock($address, '182.53.197.0/24', 'TOT Public (IP4S-TOTPUBLIC-53). ');
 $ax += cidrblock($address, '182.53.206.0/24', 'TOT Public (IP4S-TOTPUBLIC-54). ');
 
-
 // ASN 45758 ("Triple T Internet/Triple T Broadband").
 // A major domestic ISP in Thailand, but also a notable source of forum spam.
 // Listing here just the worst of the worst at the network (not the whole lot).
@@ -10332,7 +10191,6 @@ $ax += cidrblock($address, '223.206.238.0/23', 'Triple T (IP4S-TRIPLET-48). ');
 $ax += cidrblock($address, '223.206.240.0/23', 'Triple T (IP4S-TRIPLET-49). ');
 $ax += cidrblock($address, '223.206.244.0/23', 'Triple T (IP4S-TRIPLET-50). ');
 
-
 // ASN 55410 ("Vodafone India Limited").
 // A major Indian mobile phone provider, but also have seen some spam from some
 // specific IPs. Just blocking those (not the whole network).
@@ -10343,7 +10201,6 @@ $ax += cidrblock($address, '122.15.71.33/32', 'Vodafone India (IP4S-VODAFONEINDI
 $ax += cidrblock($address, '182.19.35.193/32', 'Vodafone India (IP4S-VODAFONEINDIA-2). ');
 $ax += cidrblock($address, '182.19.41.145/32', 'Vodafone India (IP4S-VODAFONEINDIA-3). ');
 
-
 // ASN 48161 ("NEXTGEN COMMUNICATIONS SRL").
 // A domestic Romanian ISP, but also a source of forum spam. Listing here just
 // the worst ranges at the network at the moment (not the whole network).
@@ -10353,7 +10210,6 @@ $ax += cidrblock($address, '46.214.154.51/32', 'NEXTGEN COMMUNICATIONS (IP4S-NEX
 $ax += cidrblock($address, '188.173.14.99/32', 'NEXTGEN COMMUNICATIONS (IP4S-NEXTGENCOMMUNICATIONS-1). ');
 $ax += cidrblock($address, '188.173.20.68/32', 'NEXTGEN COMMUNICATIONS (IP4S-NEXTGENCOMMUNICATIONS-2). ');
 $ax += cidrblock($address, '188.173.225.165/32', 'NEXTGEN COMMUNICATIONS (IP4S-NEXTGENCOMMUNICATIONS-3). ');
-
 
 // ASN 131207 ("SINET, Cambodia's specialist Internet and Telecom Service Provider").
 // A major domestic Cambodian ISP, but also a notable source of forum spam.
@@ -10382,7 +10238,6 @@ $ax += cidrblock($address, '136.228.142.0/24', 'SINET (IP4S-SINET-18). ');
 $ax += cidrblock($address, '136.228.150.0/24', 'SINET (IP4S-SINET-19). ');
 $ax += cidrblock($address, '203.217.169.0/24', 'SINET (IP4S-SINET-20). ');
 
-
 // ASN 20771 ("Caucasus Online Ltd").
 // A domestic ISP from Georgia, but also a notable source of forum spam. Listing
 // here just the worst of the worst at the network (not the whole lot).
@@ -10394,7 +10249,6 @@ $ax += cidrblock($address, '85.117.60.0/24', 'Caucasus Online Ltd (IP4S-CAUCASUS
 $ax += cidrblock($address, '85.117.61.186/32', 'Caucasus Online Ltd (IP4S-CAUCASUSONLINELTD-3). ');
 $ax += cidrblock($address, '85.117.62.202/32', 'Caucasus Online Ltd (IP4S-CAUCASUSONLINELTD-4). ');
 $ax += cidrblock($address, '85.117.63.98/32', 'Caucasus Online Ltd (IP4S-CAUCASUSONLINELTD-5). ');
-
 
 // ASN 1221 ("Telstra Corporation Ltd").
 // Australia's largest domestic ISP. Mostly benign, but malware and spambots
@@ -10421,7 +10275,6 @@ $ax += cidrblock($address, '139.130.228.72/32', 'Telstra Corporation (IP4S-TELST
 $ax += cidrblock($address, '144.139.35.94/32', 'Telstra Corporation (IP4S-TELSTRACORPORATION-17). ');
 $ax += cidrblock($address, '144.139.47.206/32', 'Telstra Corporation (IP4S-TELSTRACORPORATION-18). ');
 
-
 // ASN 8866 ("Bulgarian Telecommunications Company Plc").
 // A Bulgarian domestic ISP. Mostly benign, but some ranges caught spamming.
 // Listing just the worst of those (not the whole network).
@@ -10445,7 +10298,6 @@ $ax += cidrblock($address, '95.42.91.100/32', 'Bulgarian Telecom (IP4S-BULGARIAN
 $ax += cidrblock($address, '95.43.42.100/32', 'Bulgarian Telecom (IP4S-BULGARIANTELECOM-15). ');
 $ax += cidrblock($address, '212.5.158.99/32', 'Bulgarian Telecom (IP4S-BULGARIANTELECOM-16). ');
 
-
 // ASN 15964 ("CAMTEL").
 // A domestic ISP from Cameroon. Mostly benign, but some ranges caught spamming.
 // Listing just the worst of those (not the whole network).
@@ -10462,7 +10314,6 @@ $ax += cidrblock($address, '154.72.188.190/32', 'CAMTEL (IP4S-CAMTEL-07). ');
 $ax += cidrblock($address, '197.159.0.214/32', 'CAMTEL (IP4S-CAMTEL-08). ');
 $ax += cidrblock($address, '197.159.12.167/32', 'CAMTEL (IP4S-CAMTEL-09). ');
 $ax += cidrblock($address, '197.159.23.174/32', 'CAMTEL (IP4S-CAMTEL-10). ');
-
 
 // ASN 23860 ("Alliance Broadband Services Pvt. Ltd").
 // An Indian domestic ISP, but also a notable source of forum spam. Listing just
@@ -10487,7 +10338,6 @@ $ax += cidrblock($address, '150.107.177.10/32', 'Alliance Broadband (IP4S-ALLIAN
 $ax += cidrblock($address, '150.107.178.159/32', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-15). ');
 $ax += cidrblock($address, '202.8.113.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-16). ');
 $ax += cidrblock($address, '202.8.116.0/24', 'Alliance Broadband (IP4S-ALLIANCEBROADBAND-17). ');
-
 
 // ASN 5607 ("Sky UK Limited").
 // A domestic ISP from the UK, but forum spam incidents detected from some
@@ -10533,7 +10383,6 @@ $ax += cidrblock($address, '188.221.76.3/32', 'Sky UK Limited (IP4S-SKYUKLIMITED
 $ax += cidrblock($address, '188.223.10.248/32', 'Sky UK Limited (IP4S-SKYUKLIMITED-35). ');
 $ax += cidrblock($address, '188.223.213.156/32', 'Sky UK Limited (IP4S-SKYUKLIMITED-36). ');
 
-
 // ASN 2856 ("British Telecommunications PLC").
 // A domestic ISP from the UK, but forum spam incidents detected from some
 // specific addresses, plus Mirai detected at some specific addresses. Listing
@@ -10572,14 +10421,12 @@ $ax += cidrblock($address, '109.156.41.77/32', 'British Telecom PLC (IP4S-BRITIS
 $ax += cidrblock($address, '147.148.49.89/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-29). ');
 $ax += cidrblock($address, '213.120.213.251/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-30). ');
 
-
 // ASN 52465 ("WNet Internet y Hosting").
 // Argentine multiplay network (domestic ISP, webhosting, etc) caught spamming and attacking honeypots.
 // Updated: 2020.11.09
 
 $ax += cidrblock($address, '161.0.72.11/32', 'WNet Internet y Hosting (IP4S-WNETINTERNETYHOSTING-0). ');
 $ax += cidrblock($address, '161.0.72.47/32', 'WNet Internet y Hosting (IP4S-WNETINTERNETYHOSTING-1). ');
-
 
 // ASNs 7725, 7922, 33668 ("Comcast Cable Communications, LLC").
 // Major domestic ISP in the United States; Should NEVER be blocked in entirety.
@@ -10646,7 +10493,6 @@ $ax += cidrblock($address, '98.255.110.127/32', 'Comcast Spam IPs (IP4S-COMCASTS
 $ax += cidrblock($address, '162.17.134.125/32', 'Comcast Spam IPs (IP4S-COMCASTSPAMIPS-56). ');
 $ax += cidrblock($address, '174.62.110.126/32', 'Comcast Spam IPs (IP4S-COMCASTSPAMIPS-57). ');
 
-
 // ASN 22773 ("Cox Communications Inc").
 // Peering exchange provider in the United States; Should NEVER be blocked in
 // entirety. Listed here are some specific CIDRs/IPs on their network that pose
@@ -10673,7 +10519,6 @@ $ax += cidrblock($address, '98.161.153.210/32', 'Cox Spam IPs (IP4S-COXSPAMIPS-1
 $ax += cidrblock($address, '98.162.25.0/24', 'Cox Spam IPs (IP4S-COXSPAMIPS-17). ');
 $ax += cidrblock($address, '98.162.96.0/24', 'Cox Spam IPs (IP4S-COXSPAMIPS-18). ');
 $ax += cidrblock($address, '204.62.102.131/32', 'Cox Spam IPs (IP4S-COXSPAMIPS-19). ');
-
 
 // ASN 23693 ("PT. Telekomunikasi Selular").
 // Indonesian domestic ISP and a source of spam. Just listing the specific
@@ -10711,7 +10556,6 @@ $ax += cidrblock($address, '23.195.56.0/22', 'Telekomunikasi Selular (IP4S-TELEK
 $ax += cidrblock($address, '23.209.192.0/19', 'Telekomunikasi Selular (IP4S-TELEKOMUNIKASISELULAR-28). ');
 $ax += cidrblock($address, '23.219.186.0/23', 'Telekomunikasi Selular (IP4S-TELEKOMUNIKASISELULAR-29). ');
 $ax += cidrblock($address, '23.219.188.0/22', 'Telekomunikasi Selular (IP4S-TELEKOMUNIKASISELULAR-30). ');
-
 
 // ASN 27699 ("TELEFNICA BRASIL S.A").
 // Brazilian domestic ISP and a source of spam. Just listing the specific
@@ -10758,42 +10602,54 @@ $ax += cidrblock($address, '201.68.17.222/32', 'TELEFNICA BRASIL S.A (IP4S-TELEF
 $ax += cidrblock($address, '201.68.181.173/32', 'TELEFNICA BRASIL S.A (IP4S-TELEFNICABRASILSA-37). ');
 $ax += cidrblock($address, '201.93.234.114/32', 'TELEFNICA BRASIL S.A (IP4S-TELEFNICABRASILSA-38). ');
 
-
-// ASN 36903 ("Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM").
+// ASNs 6713, 36903 ("Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM").
 // Moroccan domestic ISP and a source of spam. Just listing the specific spammy
-// IPs (not the entire network).
-// Updated: 2020.08.17
+// IPs (not the entire network) + some malware affected ranges.
+// Updated: 2021.01.05
 
-$ax += cidrblock($address, '41.141.42.48/32', 'Maroc Telecom (IP4S-MAROCTELECOM-00). ');
-$ax += cidrblock($address, '41.143.10.78/32', 'Maroc Telecom (IP4S-MAROCTELECOM-01). ');
-$ax += cidrblock($address, '41.143.142.52/32', 'Maroc Telecom (IP4S-MAROCTELECOM-02). ');
-$ax += cidrblock($address, '41.143.244.41/32', 'Maroc Telecom (IP4S-MAROCTELECOM-03). ');
-$ax += cidrblock($address, '41.250.85.119/32', 'Maroc Telecom (IP4S-MAROCTELECOM-04). ');
-$ax += cidrblock($address, '41.251.67.53/32', 'Maroc Telecom (IP4S-MAROCTELECOM-05). ');
-$ax += cidrblock($address, '105.155.58.29/32', 'Maroc Telecom (IP4S-MAROCTELECOM-06). ');
-$ax += cidrblock($address, '105.155.162.253/32', 'Maroc Telecom (IP4S-MAROCTELECOM-07). ');
-$ax += cidrblock($address, '105.156.13.83/32', 'Maroc Telecom (IP4S-MAROCTELECOM-08). ');
-$ax += cidrblock($address, '105.156.118.85/32', 'Maroc Telecom (IP4S-MAROCTELECOM-09). ');
-$ax += cidrblock($address, '105.157.221.240/32', 'Maroc Telecom (IP4S-MAROCTELECOM-10). ');
-$ax += cidrblock($address, '105.157.252.187/32', 'Maroc Telecom (IP4S-MAROCTELECOM-11). ');
-$ax += cidrblock($address, '105.158.179.35/32', 'Maroc Telecom (IP4S-MAROCTELECOM-12). ');
-$ax += cidrblock($address, '105.158.211.198/32', 'Maroc Telecom (IP4S-MAROCTELECOM-13). ');
-$ax += cidrblock($address, '105.159.132.196/32', 'Maroc Telecom (IP4S-MAROCTELECOM-14). ');
-$ax += cidrblock($address, '160.176.6.213/32', 'Maroc Telecom (IP4S-MAROCTELECOM-15). ');
-$ax += cidrblock($address, '160.178.157.128/32', 'Maroc Telecom (IP4S-MAROCTELECOM-16). ');
-$ax += cidrblock($address, '160.179.243.178/32', 'Maroc Telecom (IP4S-MAROCTELECOM-17). ');
-$ax += cidrblock($address, '196.64.119.142/32', 'Maroc Telecom (IP4S-MAROCTELECOM-18). ');
-$ax += cidrblock($address, '196.65.37.22/32', 'Maroc Telecom (IP4S-MAROCTELECOM-19). ');
-$ax += cidrblock($address, '196.65.62.148/32', 'Maroc Telecom (IP4S-MAROCTELECOM-20). ');
-$ax += cidrblock($address, '196.65.88.92/32', 'Maroc Telecom (IP4S-MAROCTELECOM-21). ');
-$ax += cidrblock($address, '196.65.163.126/32', 'Maroc Telecom (IP4S-MAROCTELECOM-22). ');
-$ax += cidrblock($address, '196.65.242.236/32', 'Maroc Telecom (IP4S-MAROCTELECOM-23). ');
-$ax += cidrblock($address, '196.70.53.248/32', 'Maroc Telecom (IP4S-MAROCTELECOM-24). ');
-$ax += cidrblock($address, '196.74.56.31/32', 'Maroc Telecom (IP4S-MAROCTELECOM-25). ');
-$ax += cidrblock($address, '196.75.16.15/32', 'Maroc Telecom (IP4S-MAROCTELECOM-26). ');
-$ax += cidrblock($address, '196.75.30.81/32', 'Maroc Telecom (IP4S-MAROCTELECOM-27). ');
-$ax += cidrblock($address, '196.77.9.40/32', 'Maroc Telecom (IP4S-MAROCTELECOM-28). ');
-
+$ax += cidrblock($address, '41.140.47.224/32', 'Maroc Telecom (IP4S-MAROCTELECOM-00). ');
+$ax += cidrblock($address, '41.140.161.210/32', 'Maroc Telecom (IP4S-MAROCTELECOM-01). ');
+$ax += cidrblock($address, '41.141.228.233/32', 'Maroc Telecom (IP4S-MAROCTELECOM-02). ');
+$ax += cidrblock($address, '41.143.203.153/32', 'Maroc Telecom (IP4S-MAROCTELECOM-03). ');
+$ax += cidrblock($address, '41.249.46.13/32', 'Maroc Telecom (IP4S-MAROCTELECOM-04). ');
+$ax += cidrblock($address, '41.249.175.1/32', 'Maroc Telecom (IP4S-MAROCTELECOM-05). ');
+$ax += cidrblock($address, '41.249.198.108/32', 'Maroc Telecom (IP4S-MAROCTELECOM-06). ');
+$ax += cidrblock($address, '41.250.130.129/32', 'Maroc Telecom (IP4S-MAROCTELECOM-07). ');
+$ax += cidrblock($address, '41.250.151.221/32', 'Maroc Telecom (IP4S-MAROCTELECOM-08). ');
+$ax += cidrblock($address, '41.251.18.110/32', 'Maroc Telecom (IP4S-MAROCTELECOM-09). ');
+$ax += cidrblock($address, '102.78.145.240/32', 'Maroc Telecom (IP4S-MAROCTELECOM-10). ');
+$ax += cidrblock($address, '102.78.159.117/32', 'Maroc Telecom (IP4S-MAROCTELECOM-11). ');
+$ax += cidrblock($address, '105.154.140.102/32', 'Maroc Telecom (IP4S-MAROCTELECOM-12). ');
+$ax += cidrblock($address, '105.154.200.149/32', 'Maroc Telecom (IP4S-MAROCTELECOM-13). ');
+$ax += cidrblock($address, '105.155.169.112/32', 'Maroc Telecom (IP4S-MAROCTELECOM-14). ');
+$ax += cidrblock($address, '105.155.181.234/32', 'Maroc Telecom (IP4S-MAROCTELECOM-15). ');
+$ax += cidrblock($address, '105.156.78.61/32', 'Maroc Telecom (IP4S-MAROCTELECOM-16). ');
+$ax += cidrblock($address, '105.156.117.31/32', 'Maroc Telecom (IP4S-MAROCTELECOM-17). ');
+$ax += cidrblock($address, '105.156.159.151/32', 'Maroc Telecom (IP4S-MAROCTELECOM-18). ');
+$ax += cidrblock($address, '105.156.238.199/32', 'Maroc Telecom (IP4S-MAROCTELECOM-19). ');
+$ax += cidrblock($address, '105.157.34.13/32', 'Maroc Telecom (IP4S-MAROCTELECOM-20). ');
+$ax += cidrblock($address, '105.157.92.42/32', 'Maroc Telecom (IP4S-MAROCTELECOM-21). ');
+$ax += cidrblock($address, '105.158.74.0/24', 'Maroc Telecom (IP4S-MAROCTELECOM-22). ');
+$ax += cidrblock($address, '105.158.131.244/32', 'Maroc Telecom (IP4S-MAROCTELECOM-23). ');
+$ax += cidrblock($address, '105.159.25.10/32', 'Maroc Telecom (IP4S-MAROCTELECOM-24). ');
+$ax += cidrblock($address, '105.159.94.70/32', 'Maroc Telecom (IP4S-MAROCTELECOM-25). ');
+$ax += cidrblock($address, '105.159.241.183/32', 'Maroc Telecom (IP4S-MAROCTELECOM-26). ');
+$ax += cidrblock($address, '160.176.163.41/32', 'Maroc Telecom (IP4S-MAROCTELECOM-27). ');
+$ax += cidrblock($address, '160.177.69.95/32', 'Maroc Telecom (IP4S-MAROCTELECOM-28). ');
+$ax += cidrblock($address, '160.178.98.248/32', 'Maroc Telecom (IP4S-MAROCTELECOM-29). ');
+$ax += cidrblock($address, '160.178.164.212/32', 'Maroc Telecom (IP4S-MAROCTELECOM-30). ');
+$ax += cidrblock($address, '160.178.200.40/32', 'Maroc Telecom (IP4S-MAROCTELECOM-31). ');
+$ax += cidrblock($address, '160.179.248.111/32', 'Maroc Telecom (IP4S-MAROCTELECOM-32). ');
+$ax += cidrblock($address, '196.64.6.122/32', 'Maroc Telecom (IP4S-MAROCTELECOM-33). ');
+$ax += cidrblock($address, '196.64.124.200/32', 'Maroc Telecom (IP4S-MAROCTELECOM-34). ');
+$ax += cidrblock($address, '196.65.62.113/32', 'Maroc Telecom (IP4S-MAROCTELECOM-35). ');
+$ax += cidrblock($address, '196.65.74.0/32', 'Maroc Telecom (IP4S-MAROCTELECOM-36). ');
+$ax += cidrblock($address, '196.65.165.98/32', 'Maroc Telecom (IP4S-MAROCTELECOM-37). ');
+$ax += cidrblock($address, '196.70.45.0/24', 'Maroc Telecom (IP4S-MAROCTELECOM-38). ');
+$ax += cidrblock($address, '196.70.49.208/32', 'Maroc Telecom (IP4S-MAROCTELECOM-39). ');
+$ax += cidrblock($address, '196.70.86.245/32', 'Maroc Telecom (IP4S-MAROCTELECOM-40). ');
+$ax += cidrblock($address, '196.75.225.49/32', 'Maroc Telecom (IP4S-MAROCTELECOM-41). ');
+$ax += cidrblock($address, '196.217.20.60/32', 'Maroc Telecom (IP4S-MAROCTELECOM-42). ');
 
 // ASNs 9121, 47331 ("TTNet A.S").
 // Turkish domestic ISP.  Spam events, brute-force, SSH, and hack attempts,
@@ -10885,7 +10741,6 @@ $ax += cidrblock($address, '212.156.86.0/24', 'TTNet A.S (IP4S-TTNETAS-81). ');
 $ax += cidrblock($address, '212.156.146.50/32', 'TTNet A.S (IP4S-TTNETAS-82). ');
 $ax += cidrblock($address, '212.156.149.38/32', 'TTNet A.S (IP4S-TTNETAS-83). ');
 
-
 // ASN 4766 ("Korea Telecom").
 // Korean domestic ISP. Caught by honeypots spamming and probing for
 // vulnerabilities. Just listing the affected address/ranges (spam/malware).
@@ -10916,7 +10771,6 @@ $ax += cidrblock($address, '220.71.52.229/32', 'Korea Telecom (IP4S-KOREATELECOM
 $ax += cidrblock($address, '221.146.132.137/32', 'Korea Telecom (IP4S-KOREATELECOM-22). ');
 $ax += cidrblock($address, '222.96.237.2/32', 'Korea Telecom (IP4S-KOREATELECOM-23). ');
 $ax += cidrblock($address, '222.121.59.89/32', 'Korea Telecom (IP4S-KOREATELECOM-24). ');
-
 
 // ASN 8048 ("CANTV Servicios, Venezuela").
 // Venezuelan domestic ISP and a source of spam. Just listing the specific
@@ -10961,7 +10815,6 @@ $ax += cidrblock($address, '201.243.170.221/32', 'CANTV Servicios (IP4S-CANTVSER
 $ax += cidrblock($address, '201.248.219.61/32', 'CANTV Servicios (IP4S-CANTVSERVICIOS-35). ');
 $ax += cidrblock($address, '201.249.117.196/32', 'CANTV Servicios (IP4S-CANTVSERVICIOS-36). ');
 $ax += cidrblock($address, '201.249.190.235/32', 'CANTV Servicios (IP4S-CANTVSERVICIOS-37). ');
-
 
 // ASN 8151 ("Uninet S.A. de C.V").
 // Mexican domestic ISP and a source of spam. Just listing the specific spammy
@@ -11011,7 +10864,6 @@ $ax += cidrblock($address, '158.122.96.0/19', 'Uninet (IP4S-UNINET-39). ');
 $ax += cidrblock($address, '204.250.155.0/24', 'Uninet (IP4S-UNINET-40). ');
 $ax += cidrblock($address, '216.245.25.0/24', 'Uninet (IP4S-UNINET-41). ');
 $ax += cidrblock($address, '216.245.29.0/24', 'Uninet (IP4S-UNINET-42). ');
-
 
 // ASN 9299 ("Philippine Long Distance Telephone Company").
 // Philippines domestic ISP. XRumer, attempted hack attempts, brute-force and
@@ -11100,7 +10952,6 @@ $ax += cidrblock($address, '184.29.72.0/23', 'Philippine Long Distance (IP4S-PHI
 $ax += cidrblock($address, '184.84.188.0/22', 'Philippine Long Distance (IP4S-PHILIPPINELONGDISTANCE-77). ');
 $ax += cidrblock($address, '184.85.218.0/24', 'Philippine Long Distance (IP4S-PHILIPPINELONGDISTANCE-78). ');
 
-
 // ASN 41164 ("Telia Norge AS").
 // Domestic ISP from Norway with some limited amount of spamming (marked as
 // "Spam") + caught by security honeypots (marked as "Malware"). Mark US
@@ -11128,7 +10979,6 @@ $ax += cidrblock($address, '23.5.48.0/20', 'Telia Norge AS (IP4S-TELIANORGEAS-17
 $ax += cidrblock($address, '96.6.144.0/20', 'Telia Norge AS (IP4S-TELIANORGEAS-18). ');
 $ax += cidrblock($address, '173.222.240.0/22', 'Telia Norge AS (IP4S-TELIANORGEAS-19). ');
 $ax += cidrblock($address, '184.28.232.0/23', 'Telia Norge AS (IP4S-TELIANORGEAS-20). ');
-
 
 // ASN 20115 ("Charter Communications").
 // Domestic ISP from the United States with some limited amount of spamming
@@ -11171,7 +11021,6 @@ $ax += cidrblock($address, '172.221.14.27/32', 'Charter Communications (IP4S-CHA
 $ax += cidrblock($address, '172.221.131.155/32', 'Charter Communications (IP4S-CHARTERCOMMUNICATIONS-33). ');
 $ax += cidrblock($address, '174.85.88.21/32', 'Charter Communications (IP4S-CHARTERCOMMUNICATIONS-34). ');
 
-
 // ASNs 3356, 3549 ("Level 3 Parent, LLC").
 // Major United States infrastructure provider; should *never* list any
 // significant portions of it. However, it's also an occasional source of spam
@@ -11190,7 +11039,6 @@ $ax += cidrblock($address, '186.250.53.221/32', 'Level 3 (IP4S-LEVEL3-6). ');
 $ax += cidrblock($address, '199.76.13.235/32', 'Level 3 (IP4S-LEVEL3-7). ');
 $ax += cidrblock($address, '212.72.47.218/32', 'Level 3 (IP4S-LEVEL3-8). ');
 
-
 // ASN 17511 ("OPTAGE Inc").
 // Japanese broadband provider. Listing **only specific spammy addresses**.
 // Updated: 2020.12.13
@@ -11199,7 +11047,6 @@ $ax += cidrblock($address, '58.70.30.228/32', 'OPTAGE Inc (IP4S-OPTAGEINC-0). ')
 $ax += cidrblock($address, '119.231.138.62/32', 'OPTAGE Inc (IP4S-OPTAGEINC-1). ');
 $ax += cidrblock($address, '150.66.44.63/32', 'OPTAGE Inc (IP4S-OPTAGEINC-2). ');
 $ax += cidrblock($address, '219.122.166.253/32', 'OPTAGE Inc (IP4S-OPTAGEINC-3). ');
-
 
 // ASN 36947 ("Telecom Algeria"). A major Algerian domestic ISP, but also most
 // recently a notable source of forum spam.
@@ -11213,7 +11060,6 @@ $ax += cidrblock($address, '41.104.26.163/32', 'Telecom Algeria (IP4S-TELECOMALG
 $ax += cidrblock($address, '105.96.26.29/32', 'Telecom Algeria (IP4S-TELECOMALGERIA-5). ');
 $ax += cidrblock($address, '105.101.220.22/32', 'Telecom Algeria (IP4S-TELECOMALGERIA-6). ');
 $ax += cidrblock($address, '105.106.33.127/32', 'Telecom Algeria (IP4S-TELECOMALGERIA-7). ');
-
 
 // ASN 8452 ("TE-AS").
 // A major Egyptian domestic ISP, but also a notable source of forum and blog
@@ -11270,7 +11116,6 @@ $ax += cidrblock($address, '95.101.100.0/22', 'TE-AS (IP4S-TEAS-46). ');
 $ax += cidrblock($address, '23.50.192.0/20', 'TE-AS (IP4S-TEAS-47). ');
 $ax += cidrblock($address, '184.29.4.0/23', 'TE-AS (IP4S-TEAS-48). ');
 
-
 // ASNs 17072, 22884 ("TOTAL PLAY TELECOMUNICACIONES SA DE CV").
 // Mexican domestic ISP; also a notable source of forum and blog spam. Listing
 // just the currently affected ranges (not the entire network).
@@ -11307,13 +11152,11 @@ $ax += cidrblock($address, '189.203.163.0/24', 'TOTAL PLAY TELECOMUNICACIONES (I
 $ax += cidrblock($address, '189.203.164.0/24', 'TOTAL PLAY TELECOMUNICACIONES (IP4S-TOTALPLAYTELECOMUNICACIONES-28). ');
 $ax += cidrblock($address, '189.203.194.2/32', 'TOTAL PLAY TELECOMUNICACIONES (IP4S-TOTALPLAYTELECOMUNICACIONES-29). ');
 
-
 // ASN 135763 ("GAYATRI COMMUNICATIONS"). A small Indian domestic ISP caught
 // spamming. Listing just the affected ranges.
 // Updated: 2020.07.12
 
 $ax += cidrblock($address, '103.70.153.0/24', 'GAYATRI COMMUNICATIONS (IP4S-GAYATRICOMMUNICATIONS-0). ');
-
 
 // ASN 24309 ("Atria Convergence Technologies Pvt. Ltd. Broadband Internet
 // Service Provider INDIA"). An Indian domestic ISP caught spamming. Listing
@@ -11360,7 +11203,6 @@ $ax += cidrblock($address, '23.59.180.0/23', 'Atria Convergence (IP4S-ATRIACONVE
 $ax += cidrblock($address, '23.62.12.0/23', 'Atria Convergence (IP4S-ATRIACONVERGENCE-37). ');
 $ax += cidrblock($address, '23.62.48.0/23', 'Atria Convergence (IP4S-ATRIACONVERGENCE-38). ');
 
-
 // ASN 9050 ("TELEKOM ROMANIA COMMUNICATION S.A"). Romanian multiplay network
 // and a source of forum and blog spam, plus some other unwanted traffic.
 // Listing just the affected ranges.
@@ -11391,26 +11233,16 @@ $ax += cidrblock($address, '109.101.139.106/32', 'TELEKOM ROMANIA (IP4S-TELEKOMR
 $ax += cidrblock($address, '109.101.196.50/32', 'TELEKOM ROMANIA (IP4S-TELEKOMROMANIA-22). ');
 $ax += cidrblock($address, '109.102.254.170/32', 'TELEKOM ROMANIA (IP4S-TELEKOMROMANIA-23). ');
 
-
 // ASN 8585 ("Crnogorski Telekom a.d.Podgorica"). A Montenegrin domestic ISP
 // caught spamming. Listing just the affected ranges (not the whole network).
-// Updated: 2020.07.12
+// Updated: 2021.01.03
 
-$ax += cidrblock($address, '37.122.161.5/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-00). ');
-$ax += cidrblock($address, '46.161.70.131/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-01). ');
-$ax += cidrblock($address, '46.161.117.253/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-02). ');
-$ax += cidrblock($address, '78.155.38.17/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-03). ');
-$ax += cidrblock($address, '85.94.126.71/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-04). ');
-$ax += cidrblock($address, '95.155.15.0/24', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-05). ');
-$ax += cidrblock($address, '95.155.27.165/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-06). ');
-$ax += cidrblock($address, '95.155.28.255/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-07). ');
-$ax += cidrblock($address, '95.155.46.151/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-08). ');
-$ax += cidrblock($address, '109.228.66.112/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-09). ');
-$ax += cidrblock($address, '109.228.70.21/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-10). ');
-$ax += cidrblock($address, '109.228.71.0/24', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-11). ');
-$ax += cidrblock($address, '109.228.75.0/24', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-12). ');
-$ax += cidrblock($address, '109.228.109.122/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-13). ');
-
+$ax += cidrblock($address, '46.161.119.94/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-0). ');
+$ax += cidrblock($address, '78.155.47.142/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-1). ');
+$ax += cidrblock($address, '85.94.100.153/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-2). ');
+$ax += cidrblock($address, '85.94.101.205/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-3). ');
+$ax += cidrblock($address, '85.94.106.217/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-4). ');
+$ax += cidrblock($address, '95.155.44.9/32', 'Crnogorski Telekom (IP4S-CRNOGORSKITELEKOM-5). ');
 
 // ASN 12741 ("Netia SA"). A Polish multiplay network caught spamming. Listing
 // just the worst affected ranges (not the whole network). Also listing some IPs
@@ -11436,11 +11268,10 @@ $ax += cidrblock($address, '213.17.155.106/32', 'Netia SA (IP4S-NETIASA-15). ');
 $ax += cidrblock($address, '213.238.67.121/32', 'Netia SA (IP4S-NETIASA-16). ');
 $ax += cidrblock($address, '213.241.10.15/32', 'Netia SA (IP4S-NETIASA-17). ');
 
-
 // ASN 43110 ("Joint Ukrainian-American enterprise Ewropol with legal form
 // Ltd"). A small Ukrainian network (it isn't yet clear whether it's an ISP or
 // something else) caught spamming.
-// Updated: 2020.07.12
+// Updated: 2020.07.12 / Checked: 2021.01.03
 
 $ax += cidrblock($address, '46.172.64.0/23', 'Ewropol (IP4S-EWROPOL-0). ');
 $ax += cidrblock($address, '46.172.66.0/24', 'Ewropol (IP4S-EWROPOL-1). ');
@@ -11450,27 +11281,35 @@ $ax += cidrblock($address, '46.172.78.0/24', 'Ewropol (IP4S-EWROPOL-4). ');
 $ax += cidrblock($address, '46.172.92.0/24', 'Ewropol (IP4S-EWROPOL-5). ');
 $ax += cidrblock($address, '91.194.56.0/23', 'Ewropol (IP4S-EWROPOL-6). ');
 
-
 // ASN 5610 ("O2 Czech Republic, a.s"). A Czech domestic ISP caught spamming.
 // Listing just the affected ranges (not the whole network).
-// Updated: 2020.07.12
+// Updated: 2021.01.03
 
 $ax += cidrblock($address, '80.188.204.250/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-00). ');
 $ax += cidrblock($address, '80.188.239.106/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-01). ');
-$ax += cidrblock($address, '85.160.68.50/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-02). ');
-$ax += cidrblock($address, '88.100.162.153/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-03). ');
-$ax += cidrblock($address, '90.181.57.146/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-04). ');
-$ax += cidrblock($address, '90.181.150.210/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-05). ');
-$ax += cidrblock($address, '90.183.101.238/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-06). ');
-$ax += cidrblock($address, '90.183.152.178/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-07). ');
-$ax += cidrblock($address, '90.183.158.50/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-08). ');
-$ax += cidrblock($address, '194.228.84.10/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-09). ');
-$ax += cidrblock($address, '194.228.129.189/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-10). ');
-
+$ax += cidrblock($address, '85.71.87.115/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-02). ');
+$ax += cidrblock($address, '85.160.10.20/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-03). ');
+$ax += cidrblock($address, '85.160.11.166/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-04). ');
+$ax += cidrblock($address, '85.160.13.183/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-05). ');
+$ax += cidrblock($address, '85.160.68.0/24', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-06). ');
+$ax += cidrblock($address, '88.100.162.0/24', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-07). ');
+$ax += cidrblock($address, '90.177.213.190/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-08). ');
+$ax += cidrblock($address, '90.178.53.32/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-09). ');
+$ax += cidrblock($address, '90.178.98.173/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-10). ');
+$ax += cidrblock($address, '90.181.150.210/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-11). ');
+$ax += cidrblock($address, '90.183.101.0/24', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-12). ');
+$ax += cidrblock($address, '90.183.152.178/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-13). ');
+$ax += cidrblock($address, '90.183.158.0/24', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-14). ');
+$ax += cidrblock($address, '109.80.35.175/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-15). ');
+$ax += cidrblock($address, '109.80.153.250/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-16). ');
+$ax += cidrblock($address, '109.81.209.55/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-17). ');
+$ax += cidrblock($address, '109.81.215.194/32', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-18). ');
+$ax += cidrblock($address, '194.228.84.0/24', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-19). ');
+$ax += cidrblock($address, '194.228.129.0/24', 'O2 Czech Republic (IP4S-O2CZECHREPUBLIC-20). ');
 
 // ASN 39608 ("Lanet Network Ltd").
 // A Ukrainian domestic ISP and a significant source of spam.
-// Updated: 2020.02.14 / Checked: 2020.07.12
+// Updated: 2020.02.14 / Checked: 2021.01.03
 
 $ax += cidrblock($address, '86.111.64.0/19', 'Lanet Network Ltd (IP4S-LANETNETWORKLTD-0). ');
 $ax += cidrblock($address, '91.216.165.0/24', 'Lanet Network Ltd (IP4S-LANETNETWORKLTD-1). ');
@@ -11480,66 +11319,68 @@ $ax += cidrblock($address, '194.33.189.0/24', 'Lanet Network Ltd (IP4S-LANETNETW
 $ax += cidrblock($address, '194.50.85.0/24', 'Lanet Network Ltd (IP4S-LANETNETWORKLTD-5). ');
 $ax += cidrblock($address, '194.60.69.0/24', 'Lanet Network Ltd (IP4S-LANETNETWORKLTD-6). ');
 
-
 // ASN 8374 ("Polkomtel Sp. z o.o"). A Polish domestic ISP caught spamming.
 // Listing just the affected ranges (not the whole network).
-// Updated: 2020.07.12
+// Updated: 2021.01.03
 
-$ax += cidrblock($address, '5.60.177.91/32', 'Polkomtel (IP4S-POLKOMTEL-00). ');
-$ax += cidrblock($address, '31.0.124.77/32', 'Polkomtel (IP4S-POLKOMTEL-01). ');
-$ax += cidrblock($address, '31.1.58.235/32', 'Polkomtel (IP4S-POLKOMTEL-02). ');
-$ax += cidrblock($address, '31.1.210.29/32', 'Polkomtel (IP4S-POLKOMTEL-03). ');
-$ax += cidrblock($address, '37.7.53.227/32', 'Polkomtel (IP4S-POLKOMTEL-04). ');
-$ax += cidrblock($address, '37.7.255.157/32', 'Polkomtel (IP4S-POLKOMTEL-05). ');
-$ax += cidrblock($address, '46.169.54.45/32', 'Polkomtel (IP4S-POLKOMTEL-06). ');
-$ax += cidrblock($address, '46.215.171.60/32', 'Polkomtel (IP4S-POLKOMTEL-07). ');
-$ax += cidrblock($address, '77.114.35.135/32', 'Polkomtel (IP4S-POLKOMTEL-08). ');
-$ax += cidrblock($address, '77.115.44.238/32', 'Polkomtel (IP4S-POLKOMTEL-09). ');
-$ax += cidrblock($address, '77.115.169.170/32', 'Polkomtel (IP4S-POLKOMTEL-10). ');
-$ax += cidrblock($address, '87.251.228.114/32', 'Polkomtel (IP4S-POLKOMTEL-11). ');
-$ax += cidrblock($address, '87.251.238.156/32', 'Polkomtel (IP4S-POLKOMTEL-12). ');
-
+$ax += cidrblock($address, '5.172.232.227/32', 'Polkomtel (IP4S-POLKOMTEL-00). ');
+$ax += cidrblock($address, '31.0.1.3/32', 'Polkomtel (IP4S-POLKOMTEL-01). ');
+$ax += cidrblock($address, '31.0.87.34/32', 'Polkomtel (IP4S-POLKOMTEL-02). ');
+$ax += cidrblock($address, '31.0.176.5/32', 'Polkomtel (IP4S-POLKOMTEL-03). ');
+$ax += cidrblock($address, '31.0.177.0/24', 'Polkomtel (IP4S-POLKOMTEL-04). ');
+$ax += cidrblock($address, '31.0.238.6/32', 'Polkomtel (IP4S-POLKOMTEL-05). ');
+$ax += cidrblock($address, '31.1.74.120/32', 'Polkomtel (IP4S-POLKOMTEL-06). ');
+$ax += cidrblock($address, '37.7.53.227/32', 'Polkomtel (IP4S-POLKOMTEL-07). ');
+$ax += cidrblock($address, '37.7.255.157/32', 'Polkomtel (IP4S-POLKOMTEL-08). ');
+$ax += cidrblock($address, '37.247.231.90/32', 'Polkomtel (IP4S-POLKOMTEL-09). ');
+$ax += cidrblock($address, '46.169.147.36/32', 'Polkomtel (IP4S-POLKOMTEL-10). ');
+$ax += cidrblock($address, '77.115.70.39/32', 'Polkomtel (IP4S-POLKOMTEL-11). ');
+$ax += cidrblock($address, '87.251.228.114/32', 'Polkomtel (IP4S-POLKOMTEL-12). ');
 
 // ASN 20845 ("DIGI Tavkozlesi es Szolgaltato Kft"). A Hungarian domestic ISP
 // caught spamming. Listing just the affected ranges (not the whole network).
-// Updated: 2020.07.12
+// Updated: 2021.01.03
 
 $ax += cidrblock($address, '62.165.251.180/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-00). ');
-$ax += cidrblock($address, '78.131.58.83/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-01). ');
-$ax += cidrblock($address, '78.131.113.161/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-02). ');
-$ax += cidrblock($address, '79.120.163.42/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-03). ');
-$ax += cidrblock($address, '82.131.138.32/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-04). ');
-$ax += cidrblock($address, '82.131.145.16/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-05). ');
-$ax += cidrblock($address, '82.131.227.216/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-06). ');
-$ax += cidrblock($address, '84.236.101.84/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-07). ');
-$ax += cidrblock($address, '85.67.241.46/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-08). ');
-$ax += cidrblock($address, '87.97.112.176/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-09). ');
-$ax += cidrblock($address, '92.249.134.7/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-10). ');
-$ax += cidrblock($address, '92.249.138.228/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-11). ');
-$ax += cidrblock($address, '92.249.219.47/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-12). ');
-$ax += cidrblock($address, '94.21.32.107/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-13). ');
-$ax += cidrblock($address, '94.21.118.140/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-14). ');
-$ax += cidrblock($address, '94.21.136.202/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-15). ');
-$ax += cidrblock($address, '94.21.177.228/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-16). ');
-$ax += cidrblock($address, '94.21.216.200/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-17). ');
-$ax += cidrblock($address, '94.21.226.45/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-18). ');
-$ax += cidrblock($address, '176.241.20.35/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-19). ');
-$ax += cidrblock($address, '178.164.152.173/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-20). ');
-$ax += cidrblock($address, '178.164.173.68/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-21). ');
-$ax += cidrblock($address, '178.164.184.174/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-22). ');
-$ax += cidrblock($address, '178.164.226.212/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-23). ');
-$ax += cidrblock($address, '185.79.94.53/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-24). ');
-$ax += cidrblock($address, '188.143.71.201/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-25). ');
-$ax += cidrblock($address, '193.226.213.248/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-26). ');
-$ax += cidrblock($address, '212.40.68.124/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-27). ');
-$ax += cidrblock($address, '212.40.85.46/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-28). ');
-$ax += cidrblock($address, '212.40.95.251/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-29). ');
-$ax += cidrblock($address, '213.197.76.70/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-30). ');
-
+$ax += cidrblock($address, '78.131.70.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-01). ');
+$ax += cidrblock($address, '78.131.113.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-02). ');
+$ax += cidrblock($address, '79.120.175.103/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-03). ');
+$ax += cidrblock($address, '82.131.156.40/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-04). ');
+$ax += cidrblock($address, '84.236.1.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-05). ');
+$ax += cidrblock($address, '84.236.10.188/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-06). ');
+$ax += cidrblock($address, '84.236.35.185/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-07). ');
+$ax += cidrblock($address, '84.236.36.47/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-08). ');
+$ax += cidrblock($address, '84.236.122.160/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-09). ');
+$ax += cidrblock($address, '85.66.116.215/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-10). ');
+$ax += cidrblock($address, '85.66.163.182/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-11). ');
+$ax += cidrblock($address, '85.66.215.194/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-12). ');
+$ax += cidrblock($address, '85.67.241.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-13). ');
+$ax += cidrblock($address, '87.97.53.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-14). ');
+$ax += cidrblock($address, '87.97.83.124/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-15). ');
+$ax += cidrblock($address, '89.186.126.28/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-16). ');
+$ax += cidrblock($address, '91.82.178.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-17). ');
+$ax += cidrblock($address, '91.82.179.37/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-18). ');
+$ax += cidrblock($address, '91.82.183.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-19). ');
+$ax += cidrblock($address, '92.249.134.7/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-20). ');
+$ax += cidrblock($address, '92.249.219.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-21). ');
+$ax += cidrblock($address, '94.21.5.139/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-22). ');
+$ax += cidrblock($address, '94.21.5.176/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-23). ');
+$ax += cidrblock($address, '94.21.53.10/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-24). ');
+$ax += cidrblock($address, '94.21.53.200/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-25). ');
+$ax += cidrblock($address, '94.21.118.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-26). ');
+$ax += cidrblock($address, '94.21.147.56/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-27). ');
+$ax += cidrblock($address, '94.21.176.222/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-28). ');
+$ax += cidrblock($address, '94.21.177.228/31', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-29). ');
+$ax += cidrblock($address, '178.164.226.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-30). ');
+$ax += cidrblock($address, '188.143.39.217/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-31). ');
+$ax += cidrblock($address, '193.226.214.119/32', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-32). ');
+$ax += cidrblock($address, '193.226.245.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-33). ');
+$ax += cidrblock($address, '212.40.78.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-34). ');
+$ax += cidrblock($address, '212.40.85.0/24', 'DIGI Tavkozlesi (IP4S-DIGITAVKOZLESI-35). ');
 
 // ASN 25159 ("PJSC MegaFon").
 // A Russian domestic ISP and a significant source of spam.
-// Updated: 2020.07.12
+// Updated: 2021.01.03
 
 $ax += cidrblock($address, '31.173.0.0/18', 'PJSC MegaFon (IP4S-PJSCMEGAFON-00). ');
 $ax += cidrblock($address, '31.173.64.0/19', 'PJSC MegaFon (IP4S-PJSCMEGAFON-01). ');
@@ -11548,24 +11389,24 @@ $ax += cidrblock($address, '37.29.32.0/21', 'PJSC MegaFon (IP4S-PJSCMEGAFON-03).
 $ax += cidrblock($address, '46.229.128.0/22', 'PJSC MegaFon (IP4S-PJSCMEGAFON-04). ');
 $ax += cidrblock($address, '62.64.0.0/20', 'PJSC MegaFon (IP4S-PJSCMEGAFON-05). ');
 $ax += cidrblock($address, '78.25.112.0/21', 'PJSC MegaFon (IP4S-PJSCMEGAFON-06). ');
-$ax += cidrblock($address, '83.149.8.0/23', 'PJSC MegaFon (IP4S-PJSCMEGAFON-07). ');
-$ax += cidrblock($address, '83.222.212.0/22', 'PJSC MegaFon (IP4S-PJSCMEGAFON-08). ');
-$ax += cidrblock($address, '83.222.216.0/21', 'PJSC MegaFon (IP4S-PJSCMEGAFON-09). ');
-$ax += cidrblock($address, '83.229.185.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-10). ');
-$ax += cidrblock($address, '83.229.211.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-11). ');
-$ax += cidrblock($address, '83.229.254.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-12). ');
-$ax += cidrblock($address, '85.26.144.0/20', 'PJSC MegaFon (IP4S-PJSCMEGAFON-13). ');
-$ax += cidrblock($address, '91.205.168.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-14). ');
-$ax += cidrblock($address, '94.25.144.0/20', 'PJSC MegaFon (IP4S-PJSCMEGAFON-15). ');
-$ax += cidrblock($address, '94.25.160.0/19', 'PJSC MegaFon (IP4S-PJSCMEGAFON-16). ');
-$ax += cidrblock($address, '109.188.64.0/19', 'PJSC MegaFon (IP4S-PJSCMEGAFON-17). ');
-$ax += cidrblock($address, '109.188.96.0/21', 'PJSC MegaFon (IP4S-PJSCMEGAFON-18). ');
-$ax += cidrblock($address, '109.188.112.0/23', 'PJSC MegaFon (IP4S-PJSCMEGAFON-19). ');
-$ax += cidrblock($address, '109.188.114.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-20). ');
-$ax += cidrblock($address, '128.204.76.0/22', 'PJSC MegaFon (IP4S-PJSCMEGAFON-21). ');
-$ax += cidrblock($address, '178.176.0.0/19', 'PJSC MegaFon (IP4S-PJSCMEGAFON-22). ');
-$ax += cidrblock($address, '178.176.32.0/20', 'PJSC MegaFon (IP4S-PJSCMEGAFON-23). ');
-$ax += cidrblock($address, '178.176.72.0/21', 'PJSC MegaFon (IP4S-PJSCMEGAFON-24). ');
+$ax += cidrblock($address, '83.222.212.0/22', 'PJSC MegaFon (IP4S-PJSCMEGAFON-07). ');
+$ax += cidrblock($address, '83.222.216.0/21', 'PJSC MegaFon (IP4S-PJSCMEGAFON-08). ');
+$ax += cidrblock($address, '83.229.185.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-09). ');
+$ax += cidrblock($address, '83.229.211.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-10). ');
+$ax += cidrblock($address, '83.229.254.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-11). ');
+$ax += cidrblock($address, '85.26.144.0/20', 'PJSC MegaFon (IP4S-PJSCMEGAFON-12). ');
+$ax += cidrblock($address, '91.205.168.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-13). ');
+$ax += cidrblock($address, '94.25.144.0/20', 'PJSC MegaFon (IP4S-PJSCMEGAFON-14). ');
+$ax += cidrblock($address, '94.25.160.0/19', 'PJSC MegaFon (IP4S-PJSCMEGAFON-15). ');
+$ax += cidrblock($address, '109.188.64.0/19', 'PJSC MegaFon (IP4S-PJSCMEGAFON-16). ');
+$ax += cidrblock($address, '109.188.96.0/21', 'PJSC MegaFon (IP4S-PJSCMEGAFON-17). ');
+$ax += cidrblock($address, '109.188.112.0/23', 'PJSC MegaFon (IP4S-PJSCMEGAFON-18). ');
+$ax += cidrblock($address, '109.188.114.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-19). ');
+$ax += cidrblock($address, '128.204.76.0/22', 'PJSC MegaFon (IP4S-PJSCMEGAFON-20). ');
+$ax += cidrblock($address, '178.176.0.0/19', 'PJSC MegaFon (IP4S-PJSCMEGAFON-21). ');
+$ax += cidrblock($address, '178.176.32.0/20', 'PJSC MegaFon (IP4S-PJSCMEGAFON-22). ');
+$ax += cidrblock($address, '178.176.72.0/21', 'PJSC MegaFon (IP4S-PJSCMEGAFON-23). ');
+$ax += cidrblock($address, '178.177.0.0/18', 'PJSC MegaFon (IP4S-PJSCMEGAFON-24). ');
 $ax += cidrblock($address, '188.170.0.0/19', 'PJSC MegaFon (IP4S-PJSCMEGAFON-25). ');
 $ax += cidrblock($address, '188.170.32.0/20', 'PJSC MegaFon (IP4S-PJSCMEGAFON-26). ');
 $ax += cidrblock($address, '193.201.228.0/22', 'PJSC MegaFon (IP4S-PJSCMEGAFON-27). ');
@@ -11581,7 +11422,6 @@ $ax += cidrblock($address, '212.69.125.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-36
 $ax += cidrblock($address, '213.243.109.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-37). ');
 $ax += cidrblock($address, '213.243.116.0/24', 'PJSC MegaFon (IP4S-PJSCMEGAFON-38). ');
 
-
 // ASN 34700 ("MAXNET TELECOM, LTD").
 // A Ukrainian domestic ISP and a significant source of spam.
 // Updated: 2020.02.17 / Checked: 2020.07.23
@@ -11594,14 +11434,12 @@ $ax += cidrblock($address, '79.171.120.0/21', 'MAXNET TELECOM (IP4S-MAXNETTELECO
 $ax += cidrblock($address, '178.165.0.0/17', 'MAXNET TELECOM (IP4S-MAXNETTELECOM-5). ');
 $ax += cidrblock($address, '185.147.96.0/22', 'MAXNET TELECOM (IP4S-MAXNETTELECOM-6). ');
 
-
 // ASN 29582 ("Optisprint OOD").
 // A Bulgarian domestic ISP with some instances of spam detected.
 // Updated: 2020.07.30
 
 $ax += cidrblock($address, '212.233.130.198/32', 'Optisprint OOD (IP4S-OPTISPRINTOOD-0). ');
 $ax += cidrblock($address, '212.233.213.29/32', 'Optisprint OOD (IP4S-OPTISPRINTOOD-1). ');
-
 
 // ASN 41313 ('"NOVATEL" EOOD').
 // A Bulgarian domestic ISP with some instances of spam detected.
@@ -11611,7 +11449,6 @@ $ax += cidrblock($address, '89.25.21.54/32', 'NOVATEL EOOD (IP4S-NOVATELEOOD-0).
 $ax += cidrblock($address, '95.158.128.154/32', 'NOVATEL EOOD (IP4S-NOVATELEOOD-1). ');
 $ax += cidrblock($address, '109.121.166.4/32', 'NOVATEL EOOD (IP4S-NOVATELEOOD-2). ');
 
-
 // ASN 58079 ("Skynet Ltd").
 // A Bulgarian domestic ISP with some instances of spam detected.
 // Updated: 2020.02.22 / Checked: 2020.07.30
@@ -11619,7 +11456,6 @@ $ax += cidrblock($address, '109.121.166.4/32', 'NOVATEL EOOD (IP4S-NOVATELEOOD-2
 $ax += cidrblock($address, '46.35.184.187/32', 'Skynet Ltd (IP4S-SKYNETLTD-0). ');
 $ax += cidrblock($address, '95.158.153.67/32', 'Skynet Ltd (IP4S-SKYNETLTD-1). ');
 $ax += cidrblock($address, '95.158.153.69/32', 'Skynet Ltd (IP4S-SKYNETLTD-2). ');
-
 
 // ASN 6799 ("Ote SA (Hellenic Telecommunications Organisation)").
 // A Greek domestic ISP and a source of spam. Listing just the affected
@@ -11666,7 +11502,6 @@ $ax += cidrblock($address, '94.69.25.188/32', 'Ote SA (IP4S-OTESA-36). ');
 $ax += cidrblock($address, '94.69.63.194/32', 'Ote SA (IP4S-OTESA-37). ');
 $ax += cidrblock($address, '195.170.15.66/32', 'Ote SA (IP4S-OTESA-38). ');
 $ax += cidrblock($address, '212.205.112.162/32', 'Ote SA (IP4S-OTESA-39). ');
-
 
 // ASN 28573 ("CLARO S.A"). A Brazilian domestic ISP caught spamming. Listing
 // just the affected ranges, plus all US ranges (interlaced cloud ranges).
@@ -11746,7 +11581,6 @@ $ax += cidrblock($address, '104.125.96.0/19', 'CLARO S.A (IP4S-CLAROSA-70). ');
 $ax += cidrblock($address, '104.125.128.0/19', 'CLARO S.A (IP4S-CLAROSA-71). ');
 $ax += cidrblock($address, '104.125.160.0/20', 'CLARO S.A (IP4S-CLAROSA-72). ');
 
-
 // ASN 28202 ("Rede Brasileira de Comunicacao Ltda"). A Brazilian domestic ISP
 // caught spamming and scanning for vulnerabilities. Listing the affected ranges.
 // Updated: 2020.08.17
@@ -11767,7 +11601,6 @@ $ax += cidrblock($address, '187.44.58.3/32', 'Rede Brasileira (IP4S-REDEBRASILEI
 $ax += cidrblock($address, '191.53.112.170/32', 'Rede Brasileira (IP4S-REDEBRASILEIRA-13). ');
 $ax += cidrblock($address, '191.240.28.0/24', 'Rede Brasileira (IP4S-REDEBRASILEIRA-14). ');
 
-
 // ASN 6681 ("Private Person Lemets Vitaliy Volodimirovich").
 // Synflood / Slowloris / Ping of Death detected originating from this network.
 // Updated: 2020.08.22
@@ -11775,7 +11608,6 @@ $ax += cidrblock($address, '191.240.28.0/24', 'Rede Brasileira (IP4S-REDEBRASILE
 $ax += cidrblock($address, '45.128.219.0/24', 'Volodimirovich (IP4S-VOLODIMIROVICH-0). ');
 $ax += cidrblock($address, '193.200.64.0/23', 'Volodimirovich (IP4S-VOLODIMIROVICH-1). ');
 $ax += cidrblock($address, '195.191.234.0/24', 'Volodimirovich (IP4S-VOLODIMIROVICH-2). ');
-
 
 // ASN 6697 ("Republican Unitary Telecommunication Enterprise Beltelecom").
 // A Belarusian domestic ISP and a significant source of spam. Will attempt to
@@ -11818,7 +11650,6 @@ $ax += cidrblock($address, '178.127.64.0/18', 'Beltelecom (IP4S-BELTELECOM-29). 
 $ax += cidrblock($address, '178.127.176.0/20', 'Beltelecom (IP4S-BELTELECOM-30). ');
 $ax += cidrblock($address, '178.127.192.0/18', 'Beltelecom (IP4S-BELTELECOM-31). ');
 
-
 // ASN 47610 ("RWTH Aachen University").
 // Temporary listing due to port scans and other suspicious traffic originating
 // from the specific listed ranges. (At last check: Still looks really bad. Might
@@ -11826,7 +11657,6 @@ $ax += cidrblock($address, '178.127.192.0/18', 'Beltelecom (IP4S-BELTELECOM-31).
 // Updated: 2020.03.11 / Checked: 2020.12.20
 
 $ax += cidrblock($address, '137.226.113.0/24', 'RWTH Aachen University (IP4S-RWTHAACHENUNIVERSITY-0). ');
-
 
 // ASN 1680 ("Cellcom Fixed Line Communication L.P").
 // Israeli domestic ISP and a source of spam. Just listing the specific
@@ -11856,7 +11686,6 @@ $ax += cidrblock($address, '184.29.70.0/23', 'Cellcom Fixed (IP4S-CELLCOMFIXED-1
 $ax += cidrblock($address, '199.203.0.0/16', 'Cellcom Fixed (IP4S-CELLCOMFIXED-20). ');
 $ax += cidrblock($address, '207.232.0.0/18', 'Cellcom Fixed (IP4S-CELLCOMFIXED-21). ');
 
-
 // ASN 12849 ("Hot-Net internet services Ltd").
 // Israeli domestic ISP and a source of spam. Just listing the specific
 // spammy IPs (i.e., not the entire network).
@@ -11880,7 +11709,6 @@ $ax += cidrblock($address, '77.137.90.69/32', 'Hot-Net internet (IP4S-HOTNETINTE
 $ax += cidrblock($address, '77.137.94.90/32', 'Hot-Net internet (IP4S-HOTNETINTERNET-15). ');
 $ax += cidrblock($address, '77.137.117.95/32', 'Hot-Net internet (IP4S-HOTNETINTERNET-16). ');
 $ax += cidrblock($address, '77.137.118.208/32', 'Hot-Net internet (IP4S-HOTNETINTERNET-17). ');
-
 
 // ASN 131090 ("CAT TELECOM Public Company Ltd,CAT").
 // Thai domestic ISP and a source of spam. Just listing the specific
@@ -11922,7 +11750,6 @@ $ax += cidrblock($address, '134.236.245.35/32', 'CAT TELECOM (IP4S-CATTELECOM-31
 $ax += cidrblock($address, '134.236.247.106/32', 'CAT TELECOM (IP4S-CATTELECOM-32). ');
 $ax += cidrblock($address, '159.192.227.0/24', 'CAT TELECOM (IP4S-CATTELECOM-33). ');
 
-
 // ASN 58055 ("Extratel Ltd").
 // Domestic Ukrainian ISP; IPs from this ASN caught attempting automated attacks
 // against honeypots and login pages, with some evidence of some IPs being used
@@ -11935,7 +11762,6 @@ $ax += cidrblock($address, '176.113.208.0/20', 'Extratel Ltd (IP4S-EXTRATELLTD-0
 $ax += cidrblock($address, '194.31.68.0/23', 'Extratel Ltd (IP4S-EXTRATELLTD-1). ');
 $ax += cidrblock($address, '194.31.84.0/23', 'Extratel Ltd (IP4S-EXTRATELLTD-2). ');
 
-
 // ASN 12334 ("R Cable y Telecable Telecomunicaciones, S.A.U").
 // Spanish domestic ISP and cable provider. Just listing some specific spammy
 // IPs (i.e., not the entire network). Hopefully will be a temporary listing.
@@ -11945,7 +11771,6 @@ $ax += cidrblock($address, '91.117.206.88/32', 'R Cable y Telecable (IP4S-RCABLE
 $ax += cidrblock($address, '213.60.19.13/32', 'R Cable y Telecable (IP4S-RCABLEYTELECABLE-1). ');
 $ax += cidrblock($address, '213.60.34.211/32', 'R Cable y Telecable (IP4S-RCABLEYTELECABLE-2). ');
 $ax += cidrblock($address, '213.60.135.210/32', 'R Cable y Telecable (IP4S-RCABLEYTELECABLE-3). ');
-
 
 // ASN 30722 ("Vodafone Italia S.p.A").
 // Italian domestic ISP and mobile provider and a source of spam.
@@ -11982,7 +11807,6 @@ $ax += cidrblock($address, '93.151.208.18/32', 'Vodafone Italia (IP4S-VODAFONEIT
 $ax += cidrblock($address, '109.114.104.5/32', 'Vodafone Italia (IP4S-VODAFONEITALIA-28). ');
 $ax += cidrblock($address, '109.118.253.148/32', 'Vodafone Italia (IP4S-VODAFONEITALIA-29). ');
 $ax += cidrblock($address, '188.152.202.58/32', 'Vodafone Italia (IP4S-VODAFONEITALIA-30). ');
-
 
 // ASN 3269 ("Telecom Italia S.p.A").
 // Italian domestic ISP. SSH and brute-force attacks detected originating from
@@ -12034,7 +11858,6 @@ $ax += cidrblock($address, '95.251.216.41/32', 'Telecom Italia (IP4S-TELECOMITAL
 $ax += cidrblock($address, '156.54.127.0/24', 'Telecom Italia (IP4S-TELECOMITALIA-41). ');
 $ax += cidrblock($address, '188.9.242.243/32', 'Telecom Italia (IP4S-TELECOMITALIA-42). ');
 
-
 // ASN 37172 ("Mitsol (Pty) Ltd").
 // South African domestic ISP; mostly clean, but brute-force attempts and other
 // suspicious activity detected from some specific cluster of addresses within
@@ -12044,7 +11867,6 @@ $ax += cidrblock($address, '188.9.242.243/32', 'Telecom Italia (IP4S-TELECOMITAL
 $ax += cidrblock($address, '41.76.115.0/24', 'Mitsol (IP4S-MITSOL-0). ');
 $ax += cidrblock($address, '41.76.117.194/32', 'Mitsol (IP4S-MITSOL-1). ');
 
-
 // ASN 51155 ("TB Telecom Sp. z o. o").
 // Polish domestic ISP. Also a source of spam and brute-force attacks.
 // For now, listing just the affected ranges/addresses; not the entire network.
@@ -12053,7 +11875,6 @@ $ax += cidrblock($address, '41.76.117.194/32', 'Mitsol (IP4S-MITSOL-1). ');
 $ax += cidrblock($address, '46.227.39.0/24', 'TB Telecom (IP4S-TBTELECOM-0). ');
 $ax += cidrblock($address, '178.19.179.241/32', 'TB Telecom (IP4S-TBTELECOM-1). ');
 $ax += cidrblock($address, '178.19.187.84/32', 'TB Telecom (IP4S-TBTELECOM-2). ');
-
 
 // ASN 38732 ("CMC Telecom Infrastructure Company").
 // Vietnamese domestic ISP; Huge source of spam, malware, attacks, etc.
@@ -12069,20 +11890,17 @@ $ax += cidrblock($address, '115.146.120.0/21', 'CMC Telecom (IP4S-CMCTELECOM-6).
 $ax += cidrblock($address, '124.158.0.0/21', 'CMC Telecom (IP4S-CMCTELECOM-7). ');
 $ax += cidrblock($address, '183.91.14.0/24', 'CMC Telecom (IP4S-CMCTELECOM-8). ');
 
-
 // ASN 206358 ('N.P.SH "ISP - Broadcast"').
 // Albanian domestic ISP; Caught trying to hack phpMyAdmin.
 // Updated: 2020.05.21 / Checked: 2020.11.21
 
 $ax += cidrblock($address, '185.188.216.0/22', 'N.P.SH (IP4S-NPSH-0). ');
 
-
 // ASN 203028 ("PRYMAS INWESTYCJE SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPOLKA KOMANDYTOWA").
 // Polish ISP caught spamming and port scanning.
 // Updated: 2020.05.21 / Checked: 2020.11.21
 
 $ax += cidrblock($address, '185.147.68.0/22', 'PRYMAS INWESTYCJE (IP4S-PRYMASINWESTYCJE-0). ');
-
 
 // ASN 51747 ("Internet Vikings International AB").
 // Cloud/Gaming/Webhosting provider and a significant source of forum spam and
@@ -12181,13 +11999,11 @@ $ax += cidrblock($address, '194.103.136.0/22', 'Internet Vikings (IP4S-INTERNETV
 $ax += cidrblock($address, '194.103.141.0/24', 'Internet Vikings (IP4S-INTERNETVIKINGS-88). ');
 $ax += cidrblock($address, '194.103.222.0/24', 'Internet Vikings (IP4S-INTERNETVIKINGS-89). ');
 
-
 // ASN 9416 ("Hoshin Multimedia Center Inc").
 // Taiwanese ISP. Some IPs here caught attacking honeypots.
 // Updated: 2020.05.29 / Checked: 2020.11.27
 
 $ax += cidrblock($address, '111.185.171.0/24', 'Hoshin Multimedia (IP4S-HOSHINMULTIMEDIA-0). ');
-
 
 // ASN 132116 ("Ani Network Pvt Ltd").
 // Indian multiplay network. Spam campaigns, SSH and brute-force attacks. For
@@ -12213,7 +12029,6 @@ $ax += cidrblock($address, '103.216.143.0/24', 'Ani Network Pvt Ltd (IP4S-ANINET
 $ax += cidrblock($address, '103.248.94.0/24', 'Ani Network Pvt Ltd (IP4S-ANINETWORKPVTLTD-15). ');
 $ax += cidrblock($address, '119.42.59.0/24', 'Ani Network Pvt Ltd (IP4S-ANINETWORKPVTLTD-16). ');
 
-
 // ASN 39087 ("P.A.K.T LLC").
 // Russian domestic ISP. Some IPs here caught spamming; Some IPs here caught
 // attacking WordPress websites. Just listing those (not the whole network).
@@ -12221,7 +12036,6 @@ $ax += cidrblock($address, '119.42.59.0/24', 'Ani Network Pvt Ltd (IP4S-ANINETWO
 
 $ax += cidrblock($address, '185.97.201.0/24', 'P.A.K.T LLC (IP4S-PAKTLLC-0). ');
 $ax += cidrblock($address, '185.97.203.226/32', 'P.A.K.T LLC (IP4S-PAKTLLC-1). ');
-
 
 // ASNs 6739, 12357 ("VODAFONE ESPANA S.A.U").
 // Spanish domestic ISP. Some IPs here caught spamming by honeypots.
@@ -12246,7 +12060,6 @@ $ax += cidrblock($address, '85.155.145.11/32', 'VODAFONE ESPANA (IP4S-VODAFONEES
 $ax += cidrblock($address, '194.140.140.34/32', 'VODAFONE ESPANA (IP4S-VODAFONEESPANA-16). ');
 $ax += cidrblock($address, '217.217.92.5/32', 'VODAFONE ESPANA (IP4S-VODAFONEESPANA-17). ');
 
-
 // ASN 35612 ("EOLO S.p.A").
 // Italian domestic ISP. Some IPs here caught spamming by honeypots.
 // Updated: 2020.12.13
@@ -12257,7 +12070,6 @@ $ax += cidrblock($address, '88.149.150.0/32', 'EOLO (IP4S-EOLO-2). ');
 $ax += cidrblock($address, '88.149.176.75/32', 'EOLO (IP4S-EOLO-3). ');
 $ax += cidrblock($address, '88.149.180.139/32', 'EOLO (IP4S-EOLO-4). ');
 $ax += cidrblock($address, '88.149.223.65/32', 'EOLO (IP4S-EOLO-5). ');
-
 
 // ASN 5650 ("Frontier Communications of America, Inc").
 // U.S. domestic ISP. Some IPs here caught spamming by honeypots.
@@ -12273,7 +12085,6 @@ $ax += cidrblock($address, '47.198.64.129/32', 'Frontier (IP4S-FRONTIER-6). ');
 $ax += cidrblock($address, '47.198.66.44/32', 'Frontier (IP4S-FRONTIER-7). ');
 $ax += cidrblock($address, '71.122.164.51/32', 'Frontier (IP4S-FRONTIER-8). ');
 
-
 // ASN 53022 ("BROSEGHINI LTDA EPP").
 // Brazilian domestic ISP. DDoS, SSH and brute-force attacks detected
 // originating from this network.
@@ -12282,7 +12093,6 @@ $ax += cidrblock($address, '71.122.164.51/32', 'Frontier (IP4S-FRONTIER-8). ');
 $ax += cidrblock($address, '170.231.84.0/22', 'BROSEGHINI LTDA EPP (IP4S-BROSEGHINILTDAEPP-0). ');
 $ax += cidrblock($address, '177.71.32.0/20', 'BROSEGHINI LTDA EPP (IP4S-BROSEGHINILTDAEPP-1). ');
 $ax += cidrblock($address, '177.221.224.0/20', 'BROSEGHINI LTDA EPP (IP4S-BROSEGHINILTDAEPP-2). ');
-
 
 // ASN 48573 ("NFS Telecom").
 // Russian domestic ISP. DDoS, SSH and brute-force attacks detected originating
@@ -12294,7 +12104,6 @@ $ax += cidrblock($address, '94.143.40.0/21', 'NFS Telecom (IP4S-NFSTELECOM-1). '
 $ax += cidrblock($address, '185.43.8.0/22', 'NFS Telecom (IP4S-NFSTELECOM-2). ');
 $ax += cidrblock($address, '193.29.230.0/23', 'NFS Telecom (IP4S-NFSTELECOM-3). ');
 
-
 // ASN 4847 ("China Networks Inter-Exchange").
 // Chinese domestic ISP and interchange backbone. DDoS, SSH and brute-force
 // attacks detected originating from *some parts* of this network, as well as
@@ -12304,7 +12113,6 @@ $ax += cidrblock($address, '193.29.230.0/23', 'NFS Telecom (IP4S-NFSTELECOM-3). 
 $ax += cidrblock($address, '1.119.166.2/32', 'China Networks (IP4S-CHINANETWORKS-0). ');
 $ax += cidrblock($address, '36.110.44.0/24', 'China Networks (IP4S-CHINANETWORKS-1). ');
 $ax += cidrblock($address, '219.234.88.34/32', 'China Networks (IP4S-CHINANETWORKS-2). ');
-
 
 // ASN 12297 ("Veon-Armenia").
 // Armenian domestic ISP. SSH and brute-force attacks detected originating from
@@ -12316,7 +12124,6 @@ $ax += cidrblock($address, '46.71.236.169/32', 'Veon-Armenia (IP4S-VEONARMENIA-0
 $ax += cidrblock($address, '212.73.69.0/24', 'Veon-Armenia (IP4S-VEONARMENIA-1). ');
 $ax += cidrblock($address, '212.73.81.226/32', 'Veon-Armenia (IP4S-VEONARMENIA-2). ');
 $ax += cidrblock($address, '212.73.81.229/32', 'Veon-Armenia (IP4S-VEONARMENIA-3). ');
-
 
 // ASN 701 ("Verizon Business/UUnet").
 // Major domestic ISP in the United States; Should NEVER be blocked in entirety.
@@ -12372,7 +12179,6 @@ $ax += cidrblock($address, '173.61.29.130/32', 'Verizon Business/UUnet (IP4S-VER
 $ax += cidrblock($address, '173.68.1.147/32', 'Verizon Business/UUnet (IP4S-VERIZONBUSINESSUUNET-45). ');
 $ax += cidrblock($address, '173.71.157.240/32', 'Verizon Business/UUnet (IP4S-VERIZONBUSINESSUUNET-46). ');
 
-
 // ASN 12297 ("Vodafone Libertel B.V").
 // Dutch mobile internet provider. SSH and brute-force attacks detected
 // originating from *some parts* of this network, as well as spam campaigns
@@ -12384,14 +12190,12 @@ $ax += cidrblock($address, '212.73.69.0/24', 'Vodafone Libertel (IP4S-VODAFONELI
 $ax += cidrblock($address, '212.73.81.226/32', 'Vodafone Libertel (IP4S-VODAFONELIBERTEL-2). ');
 $ax += cidrblock($address, '212.73.81.229/32', 'Vodafone Libertel (IP4S-VODAFONELIBERTEL-3). ');
 
-
 // ASN 45011 ("A3 Sverige AB").
 // Swedish domestic ISP. Some specific IP addresses here caught spamming and/or
 // performing SSH and brute-force attacks.
 // Updated: 2020.12.22
 
 $ax += cidrblock($address, '87.253.81.220/32', 'A3 Sverige AB (IP4S-A3SVERIGEAB-0). ');
-
 
 // ASN 3329 ("VODAFONE-PANAFON HELLENIC TELECOMMUNICATIONS COMPANY SA").
 // Greek domestic ISP. Spam detected from some specific addresses here.
@@ -12408,14 +12212,12 @@ $ax += cidrblock($address, '141.237.181.206/32', 'PANAFON HELLENIC (IP4S-PANAFON
 $ax += cidrblock($address, '176.92.85.77/32', 'PANAFON HELLENIC (IP4S-PANAFONHELLENIC-08). ');
 $ax += cidrblock($address, '178.59.88.248/32', 'PANAFON HELLENIC (IP4S-PANAFONHELLENIC-09). ');
 
-
 // ASN 42864 ("Giganet Internet Szolgaltato Kft").
 // Hungarian domestic ISP. Brute-force attempts and sniffing for vulnerabilities
 // detected from some specific ranges here.
 // Updated: 2020.12.22
 
 $ax += cidrblock($address, '45.95.168.0/22', 'Szolgaltato Kft (IP4S-SZOLGALTATOKFT-0). ');
-
 
 // ASN 2860 ("NOS COMUNICACOES, S.A").
 // Portuguese domestic ISP. Some small amounts of spam encountered from here.
@@ -12438,7 +12240,6 @@ $ax += cidrblock($address, '109.49.199.217/32', 'NOS COMUNICACOES (IP4S-NOSCOMUN
 $ax += cidrblock($address, '109.49.242.20/32', 'NOS COMUNICACOES (IP4S-NOSCOMUNICACOES-14). ');
 $ax += cidrblock($address, '109.51.35.93/32', 'NOS COMUNICACOES (IP4S-NOSCOMUNICACOES-15). ');
 $ax += cidrblock($address, '109.51.201.0/24', 'NOS COMUNICACOES (IP4S-NOSCOMUNICACOES-16). ');
-
 
 // ASN 7018 ("AT&T Services, Inc").
 // Major domestic ISP in the United States; Should NEVER be blocked in entirety.
@@ -12482,7 +12283,6 @@ $ax += cidrblock($address, '108.74.113.0/24', 'AT&T Services, Inc (IP4S-ATTSERVI
 $ax += cidrblock($address, '108.192.184.113/32', 'AT&T Services, Inc (IP4S-ATTSERVICESINC-33). ');
 $ax += cidrblock($address, '162.234.175.94/32', 'AT&T Services, Inc (IP4S-ATTSERVICESINC-34). ');
 
-
 // ASN 224 ("UNINETT AS").
 // Norwegian educational infrastructure provider. Marked for use with reCAPTCHA
 // due to moderate risk of human endpoints being present. Hack, SSH, and
@@ -12502,7 +12302,6 @@ $ax += cidrblock($address, '158.36.0.0/14', 'UNINETT AS (IP4S-UNINETTAS-09). ');
 $ax += cidrblock($address, '185.76.84.0/22', 'UNINETT AS (IP4S-UNINETTAS-10). ');
 $ax += cidrblock($address, '192.146.238.0/23', 'UNINETT AS (IP4S-UNINETTAS-11). ');
 $ax += cidrblock($address, '193.156.0.0/15', 'UNINETT AS (IP4S-UNINETTAS-12). ');
-
 
 // ASN 21928 ("T-Mobile USA, Inc").
 // U.S. mobile provider; SSH and brute-force attacks detected originating from
@@ -12538,7 +12337,6 @@ $ax += cidrblock($address, '172.58.203.0/24', 'T-Mobile USA, Inc (IP4S-TMOBILEUS
 $ax += cidrblock($address, '172.58.204.194/32', 'T-Mobile USA, Inc (IP4S-TMOBILEUSAINC-25). ');
 $ax += cidrblock($address, '172.58.230.0/24', 'T-Mobile USA, Inc (IP4S-TMOBILEUSAINC-26). ');
 
-
 // ASN 197275 ("Link Telecom NN Ltd").
 // Russian domestic ISP; IoT attacks and hack attempts detected originating from
 // this network. Marked for use with reCAPTCHA.
@@ -12547,7 +12345,6 @@ $ax += cidrblock($address, '172.58.230.0/24', 'T-Mobile USA, Inc (IP4S-TMOBILEUS
 $ax += cidrblock($address, '91.219.56.0/22', 'Link Telecom NN Ltd (IP4S-LINKTELECOMNNLTD-0). ');
 $ax += cidrblock($address, '176.115.144.0/21', 'Link Telecom NN Ltd (IP4S-LINKTELECOMNNLTD-1). ');
 
-
 // ASN 136618 ("Bangladesh University of Engineering and Technology").
 // XMLRPC, brute-force, and SSH attacks reported originating from this ASN. Risk
 // of human endpoints, but so far, have only seen unwanted traffic from them.
@@ -12555,7 +12352,6 @@ $ax += cidrblock($address, '176.115.144.0/21', 'Link Telecom NN Ltd (IP4S-LINKTE
 // Updated: 2020.06.23 / Checked: 2020.12.28
 
 $ax += cidrblock($address, '103.94.135.0/24', 'Bangladesh University AS136618 (IP4S-BANGLADESHUNIVERSITYAS136618-0). ');
-
 
 // ASN 6503 ("Axtel, S.A.B. de C.V").
 // Mexican domestic ISP; SSH and brute-force attacks detected originating from
@@ -12590,7 +12386,6 @@ $ax += cidrblock($address, '63.96.221.0/24', 'Axtel (IP4S-AXTEL-22). ');
 $ax += cidrblock($address, '129.192.192.0/24', 'Axtel (IP4S-AXTEL-23). ');
 $ax += cidrblock($address, '136.238.220.0/24', 'Axtel (IP4S-AXTEL-24). ');
 
-
 // ASN 237 ("Merit Network Inc").
 // U.S. educational infrastructure provider. Marked for use with reCAPTCHA due
 // to moderate risk of human endpoints being present. Hack, SSH, brute-force,
@@ -12605,7 +12400,6 @@ $ax += cidrblock($address, '35.0.127.52/32', 'Merit Network Inc (IP4S-MERITNETWO
 $ax += cidrblock($address, '192.35.168.0/23', 'Merit Network Inc (IP4S-MERITNETWORKINC-4). ');
 $ax += cidrblock($address, '198.108.66.0/24', 'Merit Network Inc (IP4S-MERITNETWORKINC-5). ');
 
-
 // ASN 23772 ("M/s Ortel Communications Ltd").
 // Indian domestic ISP; Brute-force attacks detected originating from *some
 // specific IPs* here.
@@ -12613,7 +12407,6 @@ $ax += cidrblock($address, '198.108.66.0/24', 'Merit Network Inc (IP4S-MERITNETW
 
 $ax += cidrblock($address, '202.62.227.168/32', 'M/s Ortel (IP4S-MSORTEL-0). ');
 $ax += cidrblock($address, '203.98.96.0/24', 'M/s Ortel (IP4S-MSORTEL-1). ');
-
 
 // ASN 5617 ("Orange Polska Spolka Akcyjna).
 // Major Polish domestic ISP; Also a *HUGE* source of forum+blog spam! Listing
@@ -12649,7 +12442,6 @@ $ax += cidrblock($address, '213.25.0.0/16', 'Orange Polska Spolka Akcyjna (IP4S-
 $ax += cidrblock($address, '213.76.0.0/15', 'Orange Polska Spolka Akcyjna (IP4S-ORANGEPOLSKASPOLKAAKCYJNA-26). ');
 $ax += cidrblock($address, '217.96.0.0/14', 'Orange Polska Spolka Akcyjna (IP4S-ORANGEPOLSKASPOLKAAKCYJNA-27). ');
 $ax += cidrblock($address, '217.116.100.0/22', 'Orange Polska Spolka Akcyjna (IP4S-ORANGEPOLSKASPOLKAAKCYJNA-28). ');
-
 
 // ASN 4761 ("INDOSAT Internet Network Provider).
 // Indonesian domestic ISP; Also a source of spam. Also SSH, brute-force, and
@@ -12705,7 +12497,6 @@ $ax += cidrblock($address, '104.106.202.0/23', 'INDOSAT (IP4S-INDOSAT-44). ');
 $ax += cidrblock($address, '104.106.204.0/22', 'INDOSAT (IP4S-INDOSAT-45). ');
 $ax += cidrblock($address, '138.32.236.0/23', 'INDOSAT (IP4S-INDOSAT-46). ');
 $ax += cidrblock($address, '199.47.80.0/21', 'INDOSAT (IP4S-INDOSAT-47). ');
-
 
 // ASNs 7713, 17974 ("PT Telekomunikasi Indonesia).
 // Indonesian domestic ISP; Also a source of spam. Also SSH, brute-force, and
@@ -12846,7 +12637,6 @@ $ax += cidrblock($address, '206.197.187.0/24', 'PT Telekomunikasi Indonesia (IP4
 $ax += cidrblock($address, '206.223.118.0/24', 'PT Telekomunikasi Indonesia (IP4S-PTTELEKOMUNIKASIINDONESIA-130). ');
 $ax += cidrblock($address, '206.223.123.0/24', 'PT Telekomunikasi Indonesia (IP4S-PTTELEKOMUNIKASIINDONESIA-131). ');
 
-
 // ASNs 34180, 198367 ("INKO-Telecom, LLC").
 // Russian ISP; Compromised hosts here; A regular visitor to my honeypots;
 // Constant IoT-based hack attempts, probing for vulnerabilities, and other
@@ -12856,7 +12646,6 @@ $ax += cidrblock($address, '206.223.123.0/24', 'PT Telekomunikasi Indonesia (IP4
 $ax += cidrblock($address, '91.234.60.0/22', 'INKO-Telecom, LLC (IP4S-INKOTELECOMLLC-0). ');
 $ax += cidrblock($address, '193.23.122.0/24', 'INKO-Telecom, LLC (IP4S-INKOTELECOMLLC-1). ');
 $ax += cidrblock($address, '195.5.108.0/23', 'INKO-Telecom, LLC (IP4S-INKOTELECOMLLC-2). ');
-
 
 // ASN 3352 ("TELEFONICA DE ESPANA).
 // Spanish domestic ISP and phone provider; Spam campaigns and probing detected
@@ -12920,7 +12709,6 @@ $ax += cidrblock($address, '213.96.240.156/32', 'TELEFONICA DE ESPANA (IP4S-TELE
 $ax += cidrblock($address, '213.98.67.40/32', 'TELEFONICA DE ESPANA (IP4S-TELEFONICADEESPANA-53). ');
 $ax += cidrblock($address, '213.98.185.68/32', 'TELEFONICA DE ESPANA (IP4S-TELEFONICADEESPANA-54). ');
 
-
 // ASN 201011 ("Netzbetrieb GmbH").
 // Backbone infrastructure provider in Germany. Should NOT block the entire ASN.
 // However, large amounts of spam has been detected originating from some
@@ -12935,7 +12723,6 @@ $ax += cidrblock($address, '80.255.13.0/24', 'Netzbetrieb GmbH (IP4S-NETZBETRIEB
 $ax += cidrblock($address, '92.118.12.53/32', 'Netzbetrieb GmbH (IP4S-NETZBETRIEBGMBH-4). ');
 $ax += cidrblock($address, '185.89.36.0/24', 'Netzbetrieb GmbH (IP4S-NETZBETRIEBGMBH-5). ');
 
-
 // ASN 201435 ("RUSCABLE S. L").
 // Apparently a Russian cable internet provider (although BGP says these ranges
 // resolve back to Spain)..? Drive-by WordPress attacks and XMLRPC attacks
@@ -12944,7 +12731,6 @@ $ax += cidrblock($address, '185.89.36.0/24', 'Netzbetrieb GmbH (IP4S-NETZBETRIEB
 
 $ax += cidrblock($address, '185.72.52.0/22', 'RUSCABLE (IP4S-RUSCABLE-0). ');
 $ax += cidrblock($address, '193.39.216.0/22', 'RUSCABLE (IP4S-RUSCABLE-1). ');
-
 
 // ASNs 12400 ("Partner Communications Ltd").
 // Israeli multiplay network with indirect connections to Bezeq. Also a source
@@ -12976,7 +12762,6 @@ $ax += cidrblock($address, '23.221.128.0/19', 'Partner Communications Ltd (IP4S-
 $ax += cidrblock($address, '104.76.183.0/24', 'Partner Communications Ltd (IP4S-PARTNERCOMMUNICATIONSLTD-18). ');
 $ax += cidrblock($address, '184.26.88.0/24', 'Partner Communications Ltd (IP4S-PARTNERCOMMUNICATIONSLTD-19). ');
 
-
 // ASN 11594 ("APUA").
 // An ISP serving Antigua and Barbuda. Also some occasional unwanted traffic
 // seen from here. Just listing the affected addresses/ranges.
@@ -12985,7 +12770,6 @@ $ax += cidrblock($address, '184.26.88.0/24', 'Partner Communications Ltd (IP4S-P
 $ax += cidrblock($address, '208.83.80.0/21', 'APUA (IP4S-APUA-0). ');
 $ax += cidrblock($address, '216.48.96.0/22', 'APUA (IP4S-APUA-1). ');
 $ax += cidrblock($address, '38.131.19.135/32', 'APUA (IP4S-APUA-2). ');
-
 
 // ASNs 2905, 16637 ("MTN SA").
 // South African domestic ISP. Forum spam and other strange traffic sometimes
@@ -13002,7 +12786,6 @@ $ax += cidrblock($address, '41.115.81.228/32', 'MTN SA (IP4S-MTNSA-06). ');
 $ax += cidrblock($address, '41.115.105.63/32', 'MTN SA (IP4S-MTNSA-07). ');
 $ax += cidrblock($address, '105.208.44.183/32', 'MTN SA (IP4S-MTNSA-08). ');
 $ax += cidrblock($address, '105.212.59.7/32', 'MTN SA (IP4S-MTNSA-09). ');
-
 
 // ASN 12302 ("Vodafone Romania S.A").
 // Romanian mobile provider. Forum spam and other strange traffic sometimes seen
@@ -13023,7 +12806,6 @@ $ax += cidrblock($address, '81.12.215.178/32', 'Vodafone Romania (IP4S-VODAFONER
 $ax += cidrblock($address, '136.255.164.170/32', 'Vodafone Romania (IP4S-VODAFONEROMANIA-11). ');
 $ax += cidrblock($address, '213.233.85.120/32', 'Vodafone Romania (IP4S-VODAFONEROMANIA-12). ');
 
-
 // ASN 12978 ("DEMIROREN TV DIGITAL PLATFORM ISLETMECILIGI A.S").
 // Turkish multiplay network. Forum spam sometimes seen from here. Just listing
 // the affected addresses/ranges.
@@ -13037,7 +12819,6 @@ $ax += cidrblock($address, '94.122.31.117/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIR
 $ax += cidrblock($address, '94.123.177.65/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-5). ');
 $ax += cidrblock($address, '94.123.199.7/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-6). ');
 $ax += cidrblock($address, '94.123.206.31/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-7). ');
-
 
 // ASN 12978 ("XTRA TELECOM S.A").
 // Spanish mobile provider. Forum spam, regular brute-force attacks, and other
@@ -13067,7 +12848,6 @@ $ax += cidrblock($address, '213.177.199.217/32', 'XTRA TELECOM S.A (IP4S-XTRATEL
 $ax += cidrblock($address, '213.177.220.148/32', 'XTRA TELECOM S.A (IP4S-XTRATELECOMSA-19). ');
 $ax += cidrblock($address, '213.195.98.143/32', 'XTRA TELECOM S.A (IP4S-XTRATELECOMSA-20). ');
 
-
 // ASN 131596 ("TBC").
 // Taiwanese ISP. Forum spam and other unwanted traffic sometimes seen from
 // here. Just listing the affected addresses/ranges.
@@ -13076,7 +12856,6 @@ $ax += cidrblock($address, '213.195.98.143/32', 'XTRA TELECOM S.A (IP4S-XTRATELE
 $ax += cidrblock($address, '123.0.217.171/32', 'TBC (IP4S-TBC-0). ');
 $ax += cidrblock($address, '123.110.11.185/32', 'TBC (IP4S-TBC-1). ');
 $ax += cidrblock($address, '123.110.200.98/32', 'TBC (IP4S-TBC-2). ');
-
 
 // ASN 4780 ("Digital United Inc").
 // Taiwanese ISP. Forum spam and other unwanted traffic sometimes seen from
@@ -13100,7 +12879,6 @@ $ax += cidrblock($address, '104.124.48.0/23', 'Digital United Inc (IP4S-DIGITALU
 $ax += cidrblock($address, '184.26.170.0/23', 'Digital United Inc (IP4S-DIGITALUNITEDINC-13). ');
 $ax += cidrblock($address, '184.50.176.0/20', 'Digital United Inc (IP4S-DIGITALUNITEDINC-14). ');
 $ax += cidrblock($address, '184.84.196.0/22', 'Digital United Inc (IP4S-DIGITALUNITEDINC-15). ');
-
 
 // ASN 204353 ("Global Offshore Limited").
 // Not entirely what this network is for, whether an ISP, a server farm, etc (not
@@ -13127,7 +12905,6 @@ $ax += cidrblock($address, '196.245.161.0/24', 'Global Offshore Limited (IP4S-GL
 $ax += cidrblock($address, '196.245.244.0/22', 'Global Offshore Limited (IP4S-GLOBALOFFSHORELIMITED-15). ');
 $ax += cidrblock($address, '196.245.248.0/21', 'Global Offshore Limited (IP4S-GLOBALOFFSHORELIMITED-16). ');
 
-
 // ASN 5511 ("Orange S.A").
 // Spam originating from some specific, narrow ranges at this network. Just
 // blocking the currently affected ranges only ("ZSCALER, INC") and any residual
@@ -13137,7 +12914,6 @@ $ax += cidrblock($address, '196.245.248.0/21', 'Global Offshore Limited (IP4S-GL
 // Updated: 2020.08.27
 
 $ax += cidrblock($address, '165.225.204.0/23', 'Orange S.A (IP4S-ORANGESA-0). ');
-
 
 // ASN 45429 ("CAMBODIAN SINGMENG TELEMEDIA CO., LTD").
 // Cambodian domestic ISP. Spam, brute-force attacks, and SSH attacks detected
@@ -13149,7 +12925,6 @@ $ax += cidrblock($address, '103.23.132.0/22', 'CAMBODIAN SINGMENG TELEMEDIA (IP4
 $ax += cidrblock($address, '111.92.240.0/22', 'CAMBODIAN SINGMENG TELEMEDIA (IP4S-CAMBODIANSINGMENGTELEMEDIA-2). ');
 $ax += cidrblock($address, '114.134.184.0/21', 'CAMBODIAN SINGMENG TELEMEDIA (IP4S-CAMBODIANSINGMENGTELEMEDIA-3). ');
 $ax += cidrblock($address, '115.178.24.0/22', 'CAMBODIAN SINGMENG TELEMEDIA (IP4S-CAMBODIANSINGMENGTELEMEDIA-4). ');
-
 
 // ASN 34224 ("Neterra Ltd").
 // Major Bulgarian complex ISP and routing provider. Also a source of spam and
@@ -13163,7 +12938,6 @@ $ax += cidrblock($address, '87.121.0.199/32', 'Neterra Ltd (IP4S-NETERRALTD-3). 
 $ax += cidrblock($address, '87.121.52.41/32', 'Neterra Ltd (IP4S-NETERRALTD-4). ');
 $ax += cidrblock($address, '91.92.109.43/32', 'Neterra Ltd (IP4S-NETERRALTD-5). ');
 $ax += cidrblock($address, '212.73.131.30/32', 'Neterra Ltd (IP4S-NETERRALTD-6). ');
-
 
 // ASN 43754 ("Asiatech Data Transmission company").
 // Iranian transit network. Also a source of spam. Listing just the known
@@ -13184,7 +12958,6 @@ $ax += cidrblock($address, '95.82.12.29/32', 'Asiatech (IP4S-ASIATECH-10). ');
 $ax += cidrblock($address, '176.65.241.140/32', 'Asiatech (IP4S-ASIATECH-11). ');
 $ax += cidrblock($address, '178.22.121.69/32', 'Asiatech (IP4S-ASIATECH-12). ');
 $ax += cidrblock($address, '185.112.35.27/32', 'Asiatech (IP4S-ASIATECH-13). ');
-
 
 // ASN 680 ("Verein zur Foerderung eines Deutschen Forschungsnetzes e.V").
 // Scientific research and education organisation. A very large number of
@@ -13209,7 +12982,6 @@ $ax += cidrblock($address, '195.37.142.70/32', 'DFN (IP4S-DFN-11). ');
 $ax += cidrblock($address, '195.37.166.236/32', 'DFN (IP4S-DFN-12). ');
 $ax += cidrblock($address, '195.37.209.9/32', 'DFN (IP4S-DFN-13). ');
 
-
 // ASN 8280 ("SYNAPSECOM S.A. Provider of Telecommunications and Internet Services").
 // Mixed network (webhosting + domestic ISP). A notable source of spam. From GR
 // ranges, listing only the affected/ranges addresses; marked as spam. The rest,
@@ -13220,7 +12992,6 @@ $ax += cidrblock($address, '78.108.38.0/24', 'Rackspot/SYNAPSECOM (IP4S-RACKSPOT
 $ax += cidrblock($address, '45.80.116.0/22', 'Rackspot/SYNAPSECOM (IP4S-RACKSPOTSYNAPSECOM-1). ');
 $ax += cidrblock($address, '192.71.166.0/24', 'Rackspot/SYNAPSECOM (IP4S-RACKSPOTSYNAPSECOM-2). ');
 
-
 // ASN 4181 ("TDS TELECOM").
 // US domestic ISP; Temporary listing.
 // Updated: 2020.09.30
@@ -13228,13 +12999,11 @@ $ax += cidrblock($address, '192.71.166.0/24', 'Rackspot/SYNAPSECOM (IP4S-RACKSPO
 $ax += cidrblock($address, '64.35.207.20/32', 'TDS TELECOM (IP4S-TDSTELECOM-0). ');
 $ax += cidrblock($address, '216.170.240.98/32', 'TDS TELECOM (IP4S-TDSTELECOM-1). ');
 
-
 // ASN 138606 ("Suga Pte. Ltd").
 // A small umbrella for range of different ventures. Also a source of spam.
 // Updated: 2020.10.09
 
 $ax += cidrblock($address, '103.134.92.0/22', 'Suga Pte. Ltd (IP4S-SUGAPTELTD-0). ');
-
 
 // ASN 35393 ("CTS Computers and Telecommunications Systems SAS").
 // French multiplay network (fibreoptic networks, server farms,
@@ -13246,7 +13015,6 @@ $ax += cidrblock($address, '103.134.92.0/22', 'Suga Pte. Ltd (IP4S-SUGAPTELTD-0)
 
 $ax += cidrblock($address, '46.21.198.0/24', 'CTS SAS (IP4S-CTSSAS-0). ');
 
-
 // ASN 17809 ("VEE TIME CORP").
 // Taiwanese domestic ISP, and also a source of brute-force, honeypot, and SSH
 // attacks. Listing just the affected ranges/addresses only.
@@ -13254,7 +13022,6 @@ $ax += cidrblock($address, '46.21.198.0/24', 'CTS SAS (IP4S-CTSSAS-0). ');
 
 $ax += cidrblock($address, '203.217.101.237/32', 'VEE TIME CORP (IP4S-VEETIMECORP-0). ');
 $ax += cidrblock($address, '203.217.113.163/32', 'VEE TIME CORP (IP4S-VEETIMECORP-1). ');
-
 
 // ASN 17882 ("The first E-commerce and TriplePlay Service ISP in Mongolia").
 // Mongolian tripleplay network, and also a source of spam and other unwanted
@@ -13269,7 +13036,6 @@ $ax += cidrblock($address, '202.70.34.82/32', 'Unitel LLC (IP4S-UNITELLLC-3). ')
 $ax += cidrblock($address, '202.70.47.162/32', 'Unitel LLC (IP4S-UNITELLLC-4). ');
 $ax += cidrblock($address, '122.201.16.0/24', 'Unitel LLC (IP4S-UNITELLLC-5). ');
 
-
 // ASN 33788 ("Kanar Telecommunication (Canar Telecom Co.Ltd)").
 // Sudanese domestic ISP. Brute-force and hack attempts detected from some
 // specific addresses at this network.
@@ -13277,14 +13043,12 @@ $ax += cidrblock($address, '122.201.16.0/24', 'Unitel LLC (IP4S-UNITELLLC-5). ')
 
 $ax += cidrblock($address, '196.29.164.164/32', 'Canar Telecom (IP4S-CANARTELECOM-0). ');
 
-
 // ASN 34400 ("Etihad Etisalat, a joint stock company").
 // Saudi mobile provider. An *occasional* source of spam.
 // Updated: 2020.10.23
 
 $ax += cidrblock($address, '178.80.22.27/32', 'Etihad Etisalat (IP4S-ETIHADETISALAT-0). ');
 $ax += cidrblock($address, '178.80.45.151/32', 'Etihad Etisalat (IP4S-ETIHADETISALAT-1). ');
-
 
 // ASN 39351 ("31173 Services AB").
 // Webhosting and colocation provider, and also a source of spam and other
@@ -13305,7 +13069,6 @@ $ax += cidrblock($address, '185.213.152.0/22', '31173 Services AB (IP4S-31173SER
 $ax += cidrblock($address, '193.32.126.0/23', '31173 Services AB (IP4S-31173SERVICESAB-09). ');
 $ax += cidrblock($address, '193.32.248.0/23', '31173 Services AB (IP4S-31173SERVICESAB-10). ');
 $ax += cidrblock($address, '193.138.216.0/22', '31173 Services AB (IP4S-31173SERVICESAB-11). ');
-
 
 // ASN 209 ("CenturyLink Communications, LLC").
 // Major domestic ISP from the United States. Some instances of spamming and
@@ -13340,7 +13103,6 @@ $ax += cidrblock($address, '184.99.23.43/32', 'CenturyLink Communications, LLC (
 $ax += cidrblock($address, '184.103.134.129/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-24). ');
 $ax += cidrblock($address, '205.169.39.0/24', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-25). ');
 
-
 // ASN 30779 ("TRK Cable TV LLC").
 // Ukrainian cable TV provider and a source of forum and blog spam.
 // Updated: 2020.11.15
@@ -13349,7 +13111,6 @@ $ax += cidrblock($address, '88.135.224.0/19', 'TRK Cable TV LLC (IP4S-TRKCABLETV
 $ax += cidrblock($address, '176.100.160.0/19', 'TRK Cable TV LLC (IP4S-TRKCABLETVLLC-1). ');
 $ax += cidrblock($address, '193.19.74.0/23', 'TRK Cable TV LLC (IP4S-TRKCABLETVLLC-2). ');
 $ax += cidrblock($address, '193.34.20.0/22', 'TRK Cable TV LLC (IP4S-TRKCABLETVLLC-3). ');
-
 
 // ASN 43966 ("IT REGION LTD").
 // Russian domestic ISP and a source of scammers, and forum and blog spam.
@@ -13362,7 +13123,6 @@ $ax += cidrblock($address, '94.243.192.0/20', 'IT REGION LTD (IP4S-ITREGIONLTD-3
 $ax += cidrblock($address, '94.243.224.0/20', 'IT REGION LTD (IP4S-ITREGIONLTD-4). ');
 $ax += cidrblock($address, '193.111.252.0/22', 'IT REGION LTD (IP4S-ITREGIONLTD-5). ');
 
-
 // ASNs 31593, 34187 ("LLC Renome-Service").
 // Ukrainian TV cable provider and a significant source of spam.
 // Updated: 2020.11.21
@@ -13374,7 +13134,6 @@ $ax += cidrblock($address, '78.26.128.0/17', 'LLC Renome-Service (IP4S-LLCRENOME
 $ax += cidrblock($address, '185.70.108.0/22', 'LLC Renome-Service (IP4S-LLCRENOMESERVICE-4). ');
 $ax += cidrblock($address, '193.22.84.0/24', 'LLC Renome-Service (IP4S-LLCRENOMESERVICE-5). ');
 $ax += cidrblock($address, '195.245.118.0/23', 'LLC Renome-Service (IP4S-LLCRENOMESERVICE-6). ');
-
 
 // ASN 21021 ("Multimedia Polska Sp. z o.o.").
 // Polish multiplay network and a source of spam. Listing just the specific
@@ -13408,7 +13167,6 @@ $ax += cidrblock($address, '176.221.121.0/24', 'Multimedia Polska (IP4S-MULTIMED
 $ax += cidrblock($address, '176.221.122.213/32', 'Multimedia Polska (IP4S-MULTIMEDIAPOLSKA-24). ');
 $ax += cidrblock($address, '176.221.123.159/32', 'Multimedia Polska (IP4S-MULTIMEDIAPOLSKA-25). ');
 
-
 // ASN 133480 ("Intergrid Group Pty Ltd").
 // Australian multiplay network and a source of spam. Listing just the specific
 // offending ranges/addresses only.
@@ -13424,7 +13182,6 @@ $ax += cidrblock($address, '185.54.228.0/24', 'Intergrid Group Pty Ltd (IP4S-INT
 $ax += cidrblock($address, '5.62.23.0/24', 'Intergrid Group Pty Ltd (IP4S-INTERGRIDGROUPPTYLTD-07). ');
 $ax += cidrblock($address, '103.108.92.190/32', 'Intergrid Group Pty Ltd (IP4S-INTERGRIDGROUPPTYLTD-08). ');
 $ax += cidrblock($address, '103.108.94.0/24', 'Intergrid Group Pty Ltd (IP4S-INTERGRIDGROUPPTYLTD-09). ');
-
 
 // ASN 45916 ("Gujarat Telelink Pvt Ltd").
 // Indian domestic ISP and a significant source of spam. Listing just the
@@ -13470,7 +13227,6 @@ $ax += cidrblock($address, '157.119.207.0/24', 'Gujarat Telelink Pvt Ltd (IP4S-G
 $ax += cidrblock($address, '163.53.209.0/24', 'Gujarat Telelink Pvt Ltd (IP4S-GUJARATTELELINKPVTLTD-35). ');
 $ax += cidrblock($address, '182.237.11.90/32', 'Gujarat Telelink Pvt Ltd (IP4S-GUJARATTELELINKPVTLTD-36). ');
 
-
 // ASN 26599 ("Telefonica Brasil").
 // Brazilian domestic ISP and an occasional source of spam, SSH and brute-force
 // attacks. Listing just the affected ranges/addresses only.
@@ -13494,7 +13250,6 @@ $ax += cidrblock($address, '189.97.44.0/24', 'Telefonica Brasil (IP4S-TELEFONICA
 $ax += cidrblock($address, '191.8.0.246/32', 'Telefonica Brasil (IP4S-TELEFONICABRASIL-15). ');
 $ax += cidrblock($address, '191.18.11.0/24', 'Telefonica Brasil (IP4S-TELEFONICABRASIL-16). ');
 
-
 // ASN 9927 ("A Multihomed ISP Company").
 // Filipino domestic ISP and an occasional source of spam, SSH and brute-force
 // attacks. Listing just the affected ranges/addresses only.
@@ -13508,7 +13263,6 @@ $ax += cidrblock($address, '202.57.36.110/32', 'A Multihomed ISP Company (IP4S-A
 $ax += cidrblock($address, '202.57.37.197/32', 'A Multihomed ISP Company (IP4S-AMULTIHOMEDISPCOMPANY-5). ');
 $ax += cidrblock($address, '202.57.49.0/24', 'A Multihomed ISP Company (IP4S-AMULTIHOMEDISPCOMPANY-6). ');
 $ax += cidrblock($address, '202.57.52.18/32', 'A Multihomed ISP Company (IP4S-AMULTIHOMEDISPCOMPANY-7). ');
-
 
 // ASN 24499 ("Telenor Pakistan").
 // Pakistan domestic ISP and an occasional source of spam.
@@ -13524,7 +13278,6 @@ $ax += cidrblock($address, '37.111.139.0/24', 'Telenor Pakistan (IP4S-TELENORPAK
 $ax += cidrblock($address, '103.7.79.0/24', 'Telenor Pakistan (IP4S-TELENORPAKISTAN-6). ');
 $ax += cidrblock($address, '202.69.11.225/32', 'Telenor Pakistan (IP4S-TELENORPAKISTAN-7). ');
 $ax += cidrblock($address, '202.69.15.0/24', 'Telenor Pakistan (IP4S-TELENORPAKISTAN-8). ');
-
 
 // ASN 30986 ("Scancom Limited").
 // Ghanian domestic ISP and an occasional source of spam.
@@ -13546,7 +13299,6 @@ $ax += cidrblock($address, '154.160.25.92/32', 'Scancom Limited (IP4S-SCANCOMLIM
 $ax += cidrblock($address, '154.160.27.13/32', 'Scancom Limited (IP4S-SCANCOMLIMITED-12). ');
 $ax += cidrblock($address, '154.160.30.156/32', 'Scancom Limited (IP4S-SCANCOMLIMITED-13). ');
 
-
 // ASN 197595 ("Obenetwork AB").
 // Swedish multiplay network (broadband and webhosting services) and also a
 // source of spam. Listing just the affected ranges/addresses only.
@@ -13554,6 +13306,16 @@ $ax += cidrblock($address, '154.160.30.156/32', 'Scancom Limited (IP4S-SCANCOMLI
 
 $ax += cidrblock($address, '45.15.16.0/24', 'Obenetwork AB (IP4S-OBENETWORKAB-0). ');
 $ax += cidrblock($address, '193.180.164.0/24', 'Obenetwork AB (IP4S-OBENETWORKAB-1). ');
+
+// ASN 25521 ("Industrial Media Network").
+// Ukrainian domestic ISP. Spam, DDoS attacks, brute-force attacks, and port
+// scanning detected from some specific addresses at this network.
+// Updated: 2021.01.10
+
+$ax += cidrblock($address, '46.30.165.148/32', 'IPnet (IP4S-IPNET-0). ');
+$ax += cidrblock($address, '82.193.104.168/32', 'IPnet (IP4S-IPNET-1). ');
+$ax += cidrblock($address, '93.188.35.125/32', 'IPnet (IP4S-IPNET-2). ');
+$ax += cidrblock($address, '93.188.39.14/32', 'IPnet (IP4S-IPNET-3). ');
 
 // IP4S Test Trigger
 $ax += inmatch($query, 'xip4sx', 'IP4S Test Trigger. ');

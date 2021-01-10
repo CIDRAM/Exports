@@ -14,16 +14,12 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2020.12.29
+ * This file last updated: 2021.01.10
  */
-$zbbversion .= ' / IP4X-110b';
+$zbbversion .= ' / IP4X-111';
 
 // *php 5 fix
 global $whyblockout, $ax;
-
-
-
-
 
 // ---
 // IPv4 Bogons List.
@@ -32,11 +28,6 @@ global $whyblockout, $ax;
 
 $ax += cidrblock($address, '0.0.0.0/8', 'IPv4 Bogons (IP4X-IPV4BOGONS-0). ');
 $ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
-
-
-
-
-
 
 // ---
 // ASN 174 ("Cogent Communications").
@@ -48,7 +39,6 @@ $ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
 // backbone architecture, etc that we don't want to block, so I'm not outright
 // listing the ASN in entirety. Listings have also been split across different
 // signature files as to list at the signature files where best suited.
-
 
 // See:
 // - en.wikipedia.org/wiki/Cogent_Communications
@@ -64,7 +54,6 @@ $ax += cidrblock($address, '23.154.160.0/24', 'Cogent VPNs+Proxies (IP4X-COGENTV
 $ax += cidrblock($address, '204.56.112.0/21', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-1). ');
 $ax += cidrblock($address, '204.56.122.0/23', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-2). ');
 $ax += cidrblock($address, '204.56.124.0/22', 'Cogent VPNs+Proxies (IP4X-COGENTVPNSPROXIES-3). ');
-
 
 // ASN 36351 ("SoftLayer Technologies").
 // Careful when updating; Signatures reflect varying block reasons, split across multiple files.
@@ -116,7 +105,6 @@ $ax += cidrblock($address, '173.239.207.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVP
 $ax += cidrblock($address, '192.253.242.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-38). ');
 $ax += cidrblock($address, '196.52.38.0/24', 'SoftLayer VPNs (IP4X-SOFTLAYERVPNS-39). ');
 
-
 // ASN 59898 ("AllSafe Sarl").
 // Related to "ProtonVPN", "ProtonMail", and "Proton Technologies". Provides
 // VPNs and proxies, both public and private.
@@ -127,13 +115,11 @@ $ax += cidrblock($address, '185.165.209.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-1
 $ax += cidrblock($address, '185.167.4.0/22', 'AllSafe Sarl (IP4X-ALLSAFESARL-2). ');
 $ax += cidrblock($address, '185.196.137.0/24', 'AllSafe Sarl (IP4X-ALLSAFESARL-3). ');
 
-
 // ASN 205100 ("F3 Netze e.V").
 // Provides TOR exit nodes.
 // Updated: 2018.04.23 / Checked: 2020.08.05
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
-
 
 // ASN 209519 ("Packet Flip, LLC").
 // Proxy service sometimes used by spammmers and other nefarious entities.
@@ -186,7 +172,6 @@ $ax += cidrblock($address, '195.189.132.0/23', 'Packet Flip (IP4X-PACKETFLIP-43)
 $ax += cidrblock($address, '74.91.32.0/20', 'Packet Flip (IP4X-PACKETFLIP-44). ');
 $ax += cidrblock($address, '104.255.230.0/24', 'Packet Flip (IP4X-PACKETFLIP-45). ');
 
-
 // ASNs 42708, 43948 ("GleSYS AB"; formerly "Portlane AB").
 // Exclude (carries human endpoints and seems clean *at the moment*):
 // - "^.*Internetbolaget.*$\n"
@@ -208,14 +193,12 @@ $ax += cidrblock($address, '5.254.148.0/22', 'Portlane Networks AB (IP4X-PORTLAN
 $ax += cidrblock($address, '5.254.152.0/21', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-08). ');
 $ax += cidrblock($address, '185.5.44.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-09). ');
 
-
 // ASN 396507 ("Emerald Onion").
 // Anonymous tor endpoint; Significant source of spam.
 // Updated: 2020.08.05 / Checked: 2020.12.29
 
 $ax += cidrblock($address, '23.129.64.0/24', 'Emerald Onion (IP4X-EMERALDONION-0). ');
 $ax += cidrblock($address, '103.232.206.0/23', 'Emerald Onion (IP4X-EMERALDONION-1). ');
-
 
 // Adapted from Spamhaus DROP/EDROP text lists.
 // The DROP/EDROP text lists are copyrighted to Spamhaus.org; Spamhaus DROP/EDROP as plain text lists are free for
@@ -1246,7 +1229,6 @@ $ax += cidrblock($address, '223.169.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUS
 $ax += cidrblock($address, '223.173.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUSDROPEDROP-1018). ');
 $ax += cidrblock($address, '223.254.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUSDROPEDROP-1019). ');
 
-
 // Split from SFS toxic CIDRs to separate sections for stronger capturing.
 // Duplicates, bogons, etc removed.
 // Refer stopforumspam.com/downloads/toxic_ip_cidr.txt
@@ -1254,7 +1236,6 @@ $ax += cidrblock($address, '223.254.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUS
 // "Beliefnet". Updated: 2019.10.23 / Checked: 2020.09.09
 $ax += cidrblock($address, '174.76.30.0/24', 'Beliefnet (IP4X-BELIEFNET-0). ');
 $ax += cidrblock($address, '174.77.145.0/24', 'Beliefnet (IP4X-BELIEFNET-1). ');
-
 
 // Octopusnet VPN (mostly from AS44724, but we'll update via announces instead,
 // because we don't need to block the entire ASN, and there could be stray CIDRs
@@ -1274,7 +1255,6 @@ $ax += cidrblock($address, '95.154.120.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVP
 $ax += cidrblock($address, '185.57.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-10). ');
 $ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-11). ');
 
-
 // ASN 208323 ("Foundation for Applied Privacy").
 // A *huge* source of spam! Went from zero reports at SFS to 38,300+ reports in
 // the course of less than three months; Should be cautious about removal, even
@@ -1282,7 +1262,6 @@ $ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-
 // Updated: 2019.10.02 / Checked: 2020.06.08
 
 $ax += cidrblock($address, '109.70.100.0/24', 'Applied Privacy (IP4X-APPLIEDPRIVACY-0). ');
-
 
 // ASNs 22400, 50495, 62874, 199438, 204646 ("Web2Objects LLC").
 // Primarily provides anonymous proxy services. Under investigation for fraud.
@@ -1332,7 +1311,6 @@ $ax += cidrblock($address, '162.249.164.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECT
 $ax += cidrblock($address, '167.160.32.0/20', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-39). ');
 $ax += cidrblock($address, '167.160.48.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-40). ');
 $ax += cidrblock($address, '167.160.60.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-41). ');
-
 
 // ASNs 9009, 16247 ("M247 Ltd").
 // Multiplay network providing broadband connectivity, server leasing, line rental, webhosting services and others.
@@ -1396,7 +1374,6 @@ $ax += cidrblock($address, '172.111.246.0/24', 'M247 Ltd (IP4X-M247LTD-50). ');
 $ax += cidrblock($address, '172.111.250.0/24', 'M247 Ltd (IP4X-M247LTD-51). ');
 $ax += cidrblock($address, '172.111.253.0/24', 'M247 Ltd (IP4X-M247LTD-52). ');
 $ax += cidrblock($address, '196.53.108.0/24', 'M247 Ltd (IP4X-M247LTD-53). ');
-
 
 // ASN 197640 ("OverPlay.Net LP").
 // A paid VPN provider and a source of spam.
