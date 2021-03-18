@@ -14,16 +14,16 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.03.06
+ * This file last updated: 2021.03.18
  */
-$zbbversion .= ' / IP4X-113';
+$zbbversion .= ' / IP4X-113a';
 
 // *php 5 fix
 global $whyblockout, $ax;
 
 // ---
 // IPv4 Bogons List.
-// Updated: 2018.03.29 / Checked: 2020.06.08
+// Updated: 2018.03.29 / Checked: 2021.03.18
 // Refer https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
 
 $ax += cidrblock($address, '0.0.0.0/8', 'IPv4 Bogons (IP4X-IPV4BOGONS-0). ');
@@ -170,7 +170,7 @@ $ax += cidrblock($address, '5.254.152.0/21', 'Portlane Networks AB (IP4X-PORTLAN
 $ax += cidrblock($address, '185.5.44.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-09). ');
 
 // ASN 396507 ("Emerald Onion").
-// Anonymous tor endpoint; Significant source of spam.
+// Anonymous Tor endpoints here; Significant source of spam.
 // Updated: 2020.08.05 / Checked: 2020.12.29
 
 $ax += cidrblock($address, '23.129.64.0/24', 'Emerald Onion (IP4X-EMERALDONION-0). ');
@@ -180,9 +180,9 @@ $ax += cidrblock($address, '103.232.206.0/23', 'Emerald Onion (IP4X-EMERALDONION
 // The DROP/EDROP text lists are copyrighted to Spamhaus.org; Spamhaus DROP/EDROP as plain text lists are free for
 // commercial and non-commercial usage. If you want to redistribute one of the plain text feeds please ensure that you
 // name Spamhaus as source of the data. (For example, include the copyright statement at the top of the list).
-// Updated: 2021.03.03
 // Refer spamhaus.org/drop/drop.txt
 // Refer spamhaus.org/drop/edrop.txt
+// Updated: 2021.03.03
 
 $ax += cidrblock($address, '1.10.16.0/20', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUSDROPEDROP-0000). ');
 $ax += cidrblock($address, '1.19.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUSDROPEDROP-0001). ');
