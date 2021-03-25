@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.03.18
+ * This file last updated: 2021.03.25
  */
-$zbbversion .= ' / IP4X-113a';
+$zbbversion .= ' / IP4X-113b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -170,8 +170,8 @@ $ax += cidrblock($address, '5.254.152.0/21', 'Portlane Networks AB (IP4X-PORTLAN
 $ax += cidrblock($address, '185.5.44.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-09). ');
 
 // ASN 396507 ("Emerald Onion").
-// Anonymous Tor endpoints here; Significant source of spam.
-// Updated: 2020.08.05 / Checked: 2020.12.29
+// Anonymous tor endpoints here; Significant source of spam.
+// Updated: 2020.08.05 / Checked: 2021.03.21
 
 $ax += cidrblock($address, '23.129.64.0/24', 'Emerald Onion (IP4X-EMERALDONION-0). ');
 $ax += cidrblock($address, '103.232.206.0/23', 'Emerald Onion (IP4X-EMERALDONION-1). ');
@@ -1197,7 +1197,7 @@ $ax += cidrblock($address, '174.77.145.0/24', 'Beliefnet (IP4X-BELIEFNET-1). ');
 // Octopusnet VPN (mostly from AS44724, but we'll update via announces instead,
 // because we don't need to block the entire ASN, and there could be stray CIDRs
 // too). Proxy service with a history of spam events.
-// Updated: 2020.12.29
+// Updated: 2021.03.21
 
 $ax += cidrblock($address, '46.46.17.0/24', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-00). ');
 $ax += cidrblock($address, '46.46.24.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-01). ');
@@ -1205,12 +1205,11 @@ $ax += cidrblock($address, '46.46.40.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-
 $ax += cidrblock($address, '46.46.48.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-03). ');
 $ax += cidrblock($address, '83.217.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-04). ');
 $ax += cidrblock($address, '95.154.64.0/19', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-05). ');
-$ax += cidrblock($address, '95.154.96.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-06). ');
+$ax += cidrblock($address, '95.154.96.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-06). ');
 $ax += cidrblock($address, '95.154.112.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-07). ');
 $ax += cidrblock($address, '95.154.116.0/23', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-08). ');
 $ax += cidrblock($address, '95.154.120.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-09). ');
 $ax += cidrblock($address, '185.57.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-10). ');
-$ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-11). ');
 
 // ASN 208323 ("Foundation for Applied Privacy").
 // A *huge* source of spam! Went from zero reports at SFS to 38,300+ reports in
