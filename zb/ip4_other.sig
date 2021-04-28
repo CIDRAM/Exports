@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.04.11
+ * This file last updated: 2021.04.28
  */
-$zbbversion .= ' / IP4X-114';
+$zbbversion .= ' / IP4X-114a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1273,6 +1273,26 @@ $ax += cidrblock($address, '167.160.60.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTS
 // Updated: 2021.02.07
 
 $ax += cidrblock($address, '185.147.213.0/24', 'OverPlay.Net LP (IP4X-OVERPLAYNETLP-0). ');
+
+// ASN 209854 ("Surfshark Ltd").
+// A paid VPN provider. Brute-force and SSH attacks detected from here.
+// Updated: 2021.04.16
+
+$ax += cidrblock($address, '31.169.120.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-00). ');
+$ax += cidrblock($address, '45.129.32.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-01). ');
+$ax += cidrblock($address, '45.134.224.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-02). ');
+$ax += cidrblock($address, '83.97.112.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-03). ');
+$ax += cidrblock($address, '176.227.240.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-04). ');
+$ax += cidrblock($address, '194.41.112.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-05). ');
+$ax += cidrblock($address, '194.41.114.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-06). ');
+$ax += cidrblock($address, '45.130.137.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-07). ');
+$ax += cidrblock($address, '45.130.139.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-08). ');
+$ax += cidrblock($address, '45.149.3.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-09). ');
+$ax += cidrblock($address, '91.190.100.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-10). ');
+$ax += cidrblock($address, '91.206.168.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-11). ');
+$ax += cidrblock($address, '185.244.139.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-12). ');
+$ax += cidrblock($address, '193.218.35.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-13). ');
+$ax += cidrblock($address, '92.249.36.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-14). ');
 
 // IP4X Test Trigger
 $ax += inmatch($query, 'xip4xx', 'IP4X Test Trigger. ');
