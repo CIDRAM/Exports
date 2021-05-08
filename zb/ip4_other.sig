@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.04.28
+ * This file last updated: 2021.05.08
  */
-$zbbversion .= ' / IP4X-114a';
+$zbbversion .= ' / IP4X-115';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -147,27 +147,6 @@ $ax += cidrblock($address, '194.58.216.0/22', 'Packet Flip (IP4X-PACKETFLIP-41).
 $ax += cidrblock($address, '194.135.48.0/22', 'Packet Flip (IP4X-PACKETFLIP-42). ');
 $ax += cidrblock($address, '195.189.36.0/22', 'Packet Flip (IP4X-PACKETFLIP-43). ');
 $ax += cidrblock($address, '195.189.132.0/23', 'Packet Flip (IP4X-PACKETFLIP-44). ');
-
-// ASNs 42708, 43948 ("GleSYS AB"; formerly "Portlane AB").
-// Exclude (carries human endpoints and seems clean *at the moment*):
-// - "^.*Internetbolaget.*$\n"
-// Mark as proxy:
-// - "^(.*(?:Tunnel|Anonine|Edelino).*)$"
-// Mark as cloud:
-// - "^(.*(?:Host|HZ|Netelia|Sveaab|GleSYS|Servinga|Webbplatsen|InfoGuard).*)$"
-// Everything else mark as spam.
-// Updated: 2020.06.11 / Checked: 2020.12.15
-
-$ax += cidrblock($address, '5.249.160.0/21', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-00). ');
-$ax += cidrblock($address, '5.254.133.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-01). ');
-$ax += cidrblock($address, '5.254.134.0/23', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-02). ');
-$ax += cidrblock($address, '5.254.139.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-03). ');
-$ax += cidrblock($address, '5.254.140.0/22', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-04). ');
-$ax += cidrblock($address, '5.254.144.0/23', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-05). ');
-$ax += cidrblock($address, '5.254.146.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-06). ');
-$ax += cidrblock($address, '5.254.148.0/22', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-07). ');
-$ax += cidrblock($address, '5.254.152.0/21', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-08). ');
-$ax += cidrblock($address, '185.5.44.0/24', 'Portlane Networks AB (IP4X-PORTLANENETWORKSAB-09). ');
 
 // ASN 396507 ("Emerald Onion").
 // Anonymous tor endpoints here; Significant source of spam.
