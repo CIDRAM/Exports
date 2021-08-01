@@ -1,12 +1,3 @@
-// SoftLayer bypasses.
-if (inmatch($whyblockout, '(IP4H-SOFTLAYER-', '') && $ax > 0) {
-    $zbamz = 0;
-    $zbamz += inmatch($lcuseragent, 'disqus', 'Disqus bypass. '); //74a
-    if ($zbamz > 0) {
-        $ax -= 1;
-    }
-}
-
 // Hurricane Electric bypasses.
 if (inmatch($whyblockout, '(IP4H-HURRICANEELECTRIC-', '') && $ax > 0) {
     $zbamz = 0;
@@ -20,10 +11,9 @@ if (inmatch($whyblockout, '(IP4H-HURRICANEELECTRIC-', '') && $ax > 0) {
 
 // Amazon AWS bypasses.
 if (inmatch($whyblockout, '(IP4H-AMAZONCOMINC-', '') && $ax > 0) {
-    // Feedspot bypass (2020.01.01)
+    // Feedspot bypass (2021.08.01)
     // See: https://udger.com/resources/ua-list/bot-detail?bot=Feedspotbot
     if (
-        ($address === '54.186.248.49' || $address === '54.245.252.119') &&
         inmatch($useragent, '+https://www.feedspot.com/fs/fetcher', 'Feedspot bypass. ')
     ) {
         $ax -= 1;

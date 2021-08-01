@@ -103,7 +103,7 @@ function build($Files, $Ident, $HeadFile, $FootFile, $OutFile) {
                 $Section .= "\n";
             } elseif ($Switch) {
                 if (substr($Line, 0, 2) === '# ') {
-                    if (substr($Line, 0, 9) === '# %Listed' || substr($Line, 0, 6) === '# Stop') {
+                    if (substr($Line, 0, 6) === '# Stop') {
                         continue;
                     }
                     $Section .= "\n" . '// ' . substr($Line, 2);
