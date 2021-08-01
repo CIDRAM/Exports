@@ -2,6 +2,7 @@
 # Source: https://github.com/CIDRAM/Exports/tree/master/htaccess
 # This file last updated: 2021.08.01
 #
+Order Allow,Deny
 Deny from 0.0.0.0/8
 Deny from 1.0.133.0/24
 Deny from 1.0.144.15/32
