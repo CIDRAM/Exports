@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.08.23
+ * This file last updated: 2021.08.31
  */
-$zbbversion .= ' / IP4X-118b';
+$zbbversion .= ' / IP4X-118c';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -54,8 +54,9 @@ $ax += cidrblock($address, '204.56.122.0/23', 'Cogent Proxies (IP4X-COGENTPROXIE
 $ax += cidrblock($address, '204.56.124.0/22', 'Cogent Proxies (IP4X-COGENTPROXIES-2). ');
 
 // ASN 205100 ("F3 Netze e.V").
-// Provides TOR exit nodes. A significant source of spam.
-// Updated: 2018.04.23 / Checked: 2021.02.02
+// Provides tor exit nodes. A significant source of spam.
+// Caught masquerading as Baidu while sniffing for vulnerabilities.
+// Updated: 2018.04.23 / Checked: 2021.08.26
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
 
@@ -111,7 +112,8 @@ $ax += cidrblock($address, '195.189.132.0/23', 'Packet Flip (IP4X-PACKETFLIP-44)
 
 // ASN 396507 ("Emerald Onion").
 // Anonymous tor endpoints here; Significant source of spam.
-// Updated: 2020.08.05 / Checked: 2021.03.21
+// Caught masquerading as Baidu while sniffing for vulnerabilities.
+// Updated: 2020.08.05 / Checked: 2021.08.26
 
 $ax += cidrblock($address, '23.129.64.0/24', 'Emerald Onion (IP4X-EMERALDONION-0). ');
 $ax += cidrblock($address, '103.232.206.0/23', 'Emerald Onion (IP4X-EMERALDONION-1). ');
