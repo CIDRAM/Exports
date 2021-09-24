@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.09.16
+ * This file last updated: 2021.09.24
  */
-$zbbversion .= ' / IP4X-119';
+$zbbversion .= ' / IP4X-119a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -62,7 +62,7 @@ $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0).
 
 // ASN 209519 ("Packet Flip, LLC").
 // Proxy service sometimes used by spammmers and other nefarious entities.
-// Updated: 2021.02.02
+// Updated: 2021.02.02 / Checked: 2021.09.22
 
 $ax += cidrblock($address, '31.207.8.0/21', 'Packet Flip (IP4X-PACKETFLIP-00). ');
 $ax += cidrblock($address, '31.207.16.0/20', 'Packet Flip (IP4X-PACKETFLIP-01). ');
@@ -1259,7 +1259,7 @@ $ax += cidrblock($address, '167.160.60.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTS
 
 // ASN 197640 ("OverPlay.Net LP").
 // A paid VPN provider and a source of spam.
-// Updated: 2021.02.07
+// Updated: 2021.02.07 / Checked: 2021.09.24
 
 $ax += cidrblock($address, '185.147.213.0/24', 'OverPlay.Net LP (IP4X-OVERPLAYNETLP-0). ');
 
