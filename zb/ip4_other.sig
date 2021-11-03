@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.10.22
+ * This file last updated: 2021.11.03
  */
-$zbbversion .= ' / IP4X-120b';
+$zbbversion .= ' / IP4X-121';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1187,19 +1187,22 @@ $ax += cidrblock($address, '174.77.145.0/24', 'Beliefnet (IP4X-BELIEFNET-1). ');
 // Octopusnet VPN (mostly from AS44724, but we'll update via announces instead,
 // because we don't need to block the entire ASN, and there could be stray CIDRs
 // too). Proxy service with a history of spam events.
-// Updated: 2021.03.21
+// Updated: 2021.11.03
 
-$ax += cidrblock($address, '46.46.17.0/24', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-00). ');
-$ax += cidrblock($address, '46.46.24.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-01). ');
-$ax += cidrblock($address, '46.46.40.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-02). ');
-$ax += cidrblock($address, '46.46.48.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-03). ');
+$ax += cidrblock($address, '46.46.0.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-00). ');
+$ax += cidrblock($address, '46.46.17.0/24', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-01). ');
+$ax += cidrblock($address, '46.46.24.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-02). ');
+$ax += cidrblock($address, '46.46.32.0/19', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-03). ');
 $ax += cidrblock($address, '83.217.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-04). ');
 $ax += cidrblock($address, '95.154.64.0/19', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-05). ');
 $ax += cidrblock($address, '95.154.96.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-06). ');
 $ax += cidrblock($address, '95.154.112.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-07). ');
 $ax += cidrblock($address, '95.154.116.0/23', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-08). ');
-$ax += cidrblock($address, '95.154.120.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-09). ');
-$ax += cidrblock($address, '185.57.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-10). ');
+$ax += cidrblock($address, '95.154.119.0/24', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-09). ');
+$ax += cidrblock($address, '95.154.120.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-10). ');
+$ax += cidrblock($address, '185.57.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-11). ');
+$ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-12). ');
+$ax += cidrblock($address, '2a04:db80::/32', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-13). ');
 
 // ASN 208323 ("Foundation for Applied Privacy").
 // A *huge* source of spam! Went from zero reports at SFS to 38,300+ reports in
@@ -1265,7 +1268,7 @@ $ax += cidrblock($address, '185.147.213.0/24', 'OverPlay.Net LP (IP4X-OVERPLAYNE
 
 // ASN 209854 ("Surfshark Ltd").
 // A paid VPN provider. Brute-force and SSH attacks detected from here.
-// Updated: 2021.04.16
+// Updated: 2021.11.03
 
 $ax += cidrblock($address, '31.169.120.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-00). ');
 $ax += cidrblock($address, '45.129.32.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-01). ');
@@ -1274,14 +1277,22 @@ $ax += cidrblock($address, '83.97.112.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-0
 $ax += cidrblock($address, '176.227.240.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-04). ');
 $ax += cidrblock($address, '194.41.112.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-05). ');
 $ax += cidrblock($address, '194.41.114.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-06). ');
-$ax += cidrblock($address, '45.130.137.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-07). ');
-$ax += cidrblock($address, '45.130.139.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-08). ');
-$ax += cidrblock($address, '45.149.3.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-09). ');
-$ax += cidrblock($address, '91.190.100.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-10). ');
-$ax += cidrblock($address, '91.206.168.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-11). ');
-$ax += cidrblock($address, '185.244.139.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-12). ');
-$ax += cidrblock($address, '193.218.35.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-13). ');
-$ax += cidrblock($address, '92.249.36.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-14). ');
+$ax += cidrblock($address, '45.95.242.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-07). ');
+$ax += cidrblock($address, '45.130.137.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-08). ');
+$ax += cidrblock($address, '45.130.139.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-09). ');
+$ax += cidrblock($address, '45.149.3.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-10). ');
+$ax += cidrblock($address, '62.197.144.0/20', 'Surfshark Ltd (IP4X-SURFSHARKLTD-11). ');
+$ax += cidrblock($address, '91.190.100.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-12). ');
+$ax += cidrblock($address, '91.190.102.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-13). ');
+$ax += cidrblock($address, '91.206.168.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-14). ');
+$ax += cidrblock($address, '92.62.120.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-15). ');
+$ax += cidrblock($address, '94.154.124.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-16). ');
+$ax += cidrblock($address, '185.244.139.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-17). ');
+$ax += cidrblock($address, '193.218.35.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-18). ');
+$ax += cidrblock($address, '194.26.131.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-19). ');
+$ax += cidrblock($address, '194.169.168.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-20). ');
+$ax += cidrblock($address, '212.119.32.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-21). ');
+$ax += cidrblock($address, '92.249.36.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-22). ');
 
 // IP4X Test Trigger
 $ax += inmatch($query, 'xip4xx', 'IP4X Test Trigger. ');
