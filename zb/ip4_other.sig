@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.12.16
+ * This file last updated: 2021.12.24
  */
-$zbbversion .= ' / IP4X-122a';
+$zbbversion .= ' / IP4X-122b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1183,22 +1183,16 @@ $ax += cidrblock($address, '174.77.145.0/24', 'Beliefnet (IP4X-BELIEFNET-1). ');
 // Octopusnet VPN (mostly from AS44724, but we'll update via announces instead,
 // because we don't need to block the entire ASN, and there could be stray CIDRs
 // too). Proxy service with a history of spam events.
-// Updated: 2021.11.03
+// Updated: 2021.12.23
 
-$ax += cidrblock($address, '46.46.0.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-00). ');
-$ax += cidrblock($address, '46.46.17.0/24', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-01). ');
-$ax += cidrblock($address, '46.46.24.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-02). ');
-$ax += cidrblock($address, '46.46.32.0/19', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-03). ');
-$ax += cidrblock($address, '83.217.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-04). ');
-$ax += cidrblock($address, '95.154.64.0/19', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-05). ');
-$ax += cidrblock($address, '95.154.96.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-06). ');
-$ax += cidrblock($address, '95.154.112.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-07). ');
-$ax += cidrblock($address, '95.154.116.0/23', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-08). ');
-$ax += cidrblock($address, '95.154.119.0/24', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-09). ');
-$ax += cidrblock($address, '95.154.120.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-10). ');
-$ax += cidrblock($address, '185.57.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-11). ');
-$ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-12). ');
-$ax += cidrblock($address, '2a04:db80::/32', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-13). ');
+$ax += cidrblock($address, '46.46.0.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-0). ');
+$ax += cidrblock($address, '46.46.17.0/24', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-1). ');
+$ax += cidrblock($address, '46.46.24.0/21', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-2). ');
+$ax += cidrblock($address, '46.46.32.0/19', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-3). ');
+$ax += cidrblock($address, '83.217.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-4). ');
+$ax += cidrblock($address, '95.154.64.0/18', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-5). ');
+$ax += cidrblock($address, '185.57.28.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-6). ');
+$ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-7). ');
 
 // ASN 208323 ("Foundation for Applied Privacy").
 // Updated: 2019.10.02 / Checked: 2021.11.11
