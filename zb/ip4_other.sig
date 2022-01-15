@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2021.12.31
+ * This file last updated: 2022.01.15
  */
-$zbbversion .= ' / IP4X-122c';
+$zbbversion .= ' / IP4X-123';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1199,11 +1199,10 @@ $ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-
 
 $ax += cidrblock($address, '109.70.100.0/24', 'Applied Privacy (IP4X-APPLIEDPRIVACY-0). ');
 
-// ASNs 22400, 50495, 62874, 199438, 204646 ("Web2Objects LLC").
-// Primarily provides anonymous proxy services. Under investigation for fraud.
-// Spam, hacking attempts, vulnerability probes, and other kinds of nefarious
-// and unwanted activity originating from their network. Regarded as high risk.
-// Updated: 2021.06.16
+// ASNs 50495, 62874, 199438, 204646 ("Web2Objects LLC").
+// Provides anonymous proxy services. Spam, hacking, probing for
+// vulnerabilities, and other kinds of unwanted traffic detected from here.
+// Updated: 2022.01.07
 
 $ax += cidrblock($address, '77.83.232.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-00). ');
 $ax += cidrblock($address, '83.136.221.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-01). ');
@@ -1212,40 +1211,40 @@ $ax += cidrblock($address, '91.223.102.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTS
 $ax += cidrblock($address, '91.223.126.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-04). ');
 $ax += cidrblock($address, '91.223.163.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-05). ');
 $ax += cidrblock($address, '91.239.64.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-06). ');
-$ax += cidrblock($address, '194.39.32.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-07). ');
-$ax += cidrblock($address, '195.234.99.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-08). ');
-$ax += cidrblock($address, '204.225.218.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-09). ');
-$ax += cidrblock($address, '194.14.219.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-10). ');
-$ax += cidrblock($address, '45.41.128.0/18', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-11). ');
-$ax += cidrblock($address, '45.56.131.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-12). ');
-$ax += cidrblock($address, '45.56.132.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-13). ');
-$ax += cidrblock($address, '45.56.144.0/23', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-14). ');
-$ax += cidrblock($address, '45.56.147.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-15). ');
-$ax += cidrblock($address, '45.56.168.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-16). ');
+$ax += cidrblock($address, '176.119.202.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-07). ');
+$ax += cidrblock($address, '194.39.32.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-08). ');
+$ax += cidrblock($address, '195.234.99.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-09). ');
+$ax += cidrblock($address, '204.225.218.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-10). ');
+$ax += cidrblock($address, '194.14.219.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-11). ');
+$ax += cidrblock($address, '45.41.128.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-12). ');
+$ax += cidrblock($address, '45.41.140.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-13). ');
+$ax += cidrblock($address, '45.56.132.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-14). ');
+$ax += cidrblock($address, '45.56.144.0/23', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-15). ');
+$ax += cidrblock($address, '45.56.147.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-16). ');
 $ax += cidrblock($address, '45.56.184.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-17). ');
 $ax += cidrblock($address, '45.61.88.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-18). ');
 $ax += cidrblock($address, '45.61.104.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-19). ');
-$ax += cidrblock($address, '45.61.115.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-20). ');
-$ax += cidrblock($address, '45.61.124.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-21). ');
-$ax += cidrblock($address, '64.57.136.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-22). ');
-$ax += cidrblock($address, '104.37.24.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-23). ');
-$ax += cidrblock($address, '104.143.80.0/20', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-24). ');
-$ax += cidrblock($address, '104.194.192.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-25). ');
-$ax += cidrblock($address, '104.194.204.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-26). ');
-$ax += cidrblock($address, '104.194.208.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-27). ');
-$ax += cidrblock($address, '104.194.223.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-28). ');
-$ax += cidrblock($address, '104.200.68.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-29). ');
-$ax += cidrblock($address, '104.200.76.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-30). ');
-$ax += cidrblock($address, '104.232.196.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-31). ');
-$ax += cidrblock($address, '104.232.208.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-32). ');
-$ax += cidrblock($address, '104.238.33.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-33). ');
-$ax += cidrblock($address, '104.238.40.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-34). ');
-$ax += cidrblock($address, '104.238.52.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-35). ');
-$ax += cidrblock($address, '142.147.128.0/17', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-36). ');
-$ax += cidrblock($address, '162.249.164.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-37). ');
-$ax += cidrblock($address, '167.160.32.0/20', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-38). ');
-$ax += cidrblock($address, '167.160.48.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-39). ');
-$ax += cidrblock($address, '167.160.60.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-40). ');
+$ax += cidrblock($address, '45.61.124.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-20). ');
+$ax += cidrblock($address, '64.57.136.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-21). ');
+$ax += cidrblock($address, '104.37.24.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-22). ');
+$ax += cidrblock($address, '104.37.28.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-23). ');
+$ax += cidrblock($address, '104.143.82.0/23', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-24). ');
+$ax += cidrblock($address, '104.143.88.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-25). ');
+$ax += cidrblock($address, '104.143.93.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-26). ');
+$ax += cidrblock($address, '104.194.192.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-27). ');
+$ax += cidrblock($address, '104.194.204.0/23', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-28). ');
+$ax += cidrblock($address, '104.194.208.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-29). ');
+$ax += cidrblock($address, '104.194.223.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-30). ');
+$ax += cidrblock($address, '104.200.76.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-31). ');
+$ax += cidrblock($address, '104.232.196.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-32). ');
+$ax += cidrblock($address, '104.232.212.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-33). ');
+$ax += cidrblock($address, '104.238.33.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-34). ');
+$ax += cidrblock($address, '104.238.40.0/24', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-35). ');
+$ax += cidrblock($address, '104.238.52.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-36). ');
+$ax += cidrblock($address, '142.147.128.0/17', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-37). ');
+$ax += cidrblock($address, '162.249.164.0/22', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-38). ');
+$ax += cidrblock($address, '167.160.32.0/20', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-39). ');
+$ax += cidrblock($address, '167.160.48.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-40). ');
 
 // ASN 197640 ("OverPlay.Net LP").
 // A paid VPN provider and a source of spam.
