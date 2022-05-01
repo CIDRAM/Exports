@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2022.04.25
+ * This file last updated: 2022.05.01
  */
-$zbbversion .= ' / IP4H-126b';
+$zbbversion .= ' / IP4H-127';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -30477,25 +30477,30 @@ $ax += cidrblock($address, '199.4.152.0/24', 'AxcelX Technologies LLC (IP4H-AXCE
 $ax += cidrblock($address, '199.217.104.0/22', 'AxcelX Technologies LLC (IP4H-AXCELXTECHNOLOGIESLLC-11). ');
 $ax += cidrblock($address, '208.89.60.0/22', 'AxcelX Technologies LLC (IP4H-AXCELXTECHNOLOGIESLLC-12). ');
 
-// ASN 44477 ("IP Oleinichenko Denis").
+// ASN 44477 ("STARK INDUSTRIES SOLUTIONS LTD").
 // Webhosting provider and server farm. Caught repeatedly trying to hack into
 // RDP. Caught trying to hack into honeypots.
-// Updated: 2021.07.22
+// Updated: 2022.05.01
 
-$ax += cidrblock($address, '80.66.76.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-0). ');
-$ax += cidrblock($address, '80.66.88.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-1). ');
-$ax += cidrblock($address, '87.251.67.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-2). ');
-$ax += cidrblock($address, '87.251.75.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-3). ');
-$ax += cidrblock($address, '94.232.40.0/22', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-4). ');
-$ax += cidrblock($address, '94.232.44.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-5). ');
-$ax += cidrblock($address, '185.202.1.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-6). ');
-$ax += cidrblock($address, '185.202.2.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-7). ');
-$ax += cidrblock($address, '193.106.99.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-8). ');
+$ax += cidrblock($address, '5.182.39.0/24', 'IP Oleinichenko Denis (IP4H-IPOLEINICHENKODENIS-0). ');
+
+// ASN 208091 ("XHOST INTERNET SOLUTIONS LP").
+// Webhosting provider and server farm. Caught repeatedly trying to hack into
+// RDP. Caught trying to hack into honeypots.
+// Updated: 2022.05.01
+
+$ax += cidrblock($address, '185.73.124.0/23', 'XHOST (IP4H-XHOST-0). ');
+$ax += cidrblock($address, '80.66.76.0/24', 'XHOST (IP4H-XHOST-1). ');
+$ax += cidrblock($address, '80.66.88.0/24', 'XHOST (IP4H-XHOST-2). ');
+$ax += cidrblock($address, '87.251.67.0/24', 'XHOST (IP4H-XHOST-3). ');
+$ax += cidrblock($address, '87.251.75.0/24', 'XHOST (IP4H-XHOST-4). ');
+$ax += cidrblock($address, '94.232.40.0/22', 'XHOST (IP4H-XHOST-5). ');
+$ax += cidrblock($address, '94.232.44.0/24', 'XHOST (IP4H-XHOST-6). ');
 
 // ASN 213186 ("Yanoor Islam Khan").
 // FTP brute-force, brute-force, webapp, and XMLRPC attacks, hacking, port
 // scans, bot spoofing, and spam detected from here.
-// Updated: 2021.07.28
+// Updated: 2021.07.28 / Checked: 2022.05.01
 
 $ax += cidrblock($address, '23.154.80.0/24', 'Yanoor Islam Khan (IP4H-YANOORISLAMKHAN-0). ');
 $ax += cidrblock($address, '45.61.146.0/24', 'Yanoor Islam Khan (IP4H-YANOORISLAMKHAN-1). ');
@@ -30503,37 +30508,40 @@ $ax += cidrblock($address, '45.61.146.0/24', 'Yanoor Islam Khan (IP4H-YANOORISLA
 // ASN 63730 ("VNSO TECHNOLOGY COMPANY").
 // Caught hacking WordPress websites, brute-force, SSH, SMB, RDP, XMLRPC, and
 // webapp attacks, hacking, port scans, and spam detected from here.
-// Updated: 2021.07.28
+// Updated: 2022.05.01
 
 $ax += cidrblock($address, '103.9.156.0/22', 'VNSO TECHNOLOGY COMPANY (IP4H-VNSOTECHNOLOGYCOMPANY-0). ');
 $ax += cidrblock($address, '103.161.174.0/23', 'VNSO TECHNOLOGY COMPANY (IP4H-VNSOTECHNOLOGYCOMPANY-1). ');
+$ax += cidrblock($address, '103.168.36.0/23', 'VNSO TECHNOLOGY COMPANY (IP4H-VNSOTECHNOLOGYCOMPANY-2). ');
 
-// ASN 56694 ("LLC Smart Ape").
+// ASNs 56694, 62212 ("LLC Smart Ape", "SmartApe OU").
 // Russian server farm. Brute-force, XMLRPC, and webapp attacks, hacking, port
 // scans, and spam detected from here.
-// Updated: 2021.07.28
+// Updated: 2022.05.01
 
-$ax += cidrblock($address, '91.199.137.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-00). ');
-$ax += cidrblock($address, '91.199.147.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-01). ');
-$ax += cidrblock($address, '91.199.154.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-02). ');
-$ax += cidrblock($address, '91.199.160.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-03). ');
-$ax += cidrblock($address, '94.198.50.0/23', 'LLC Smart Ape (IP4H-LLCSMARTAPE-04). ');
-$ax += cidrblock($address, '94.198.52.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-05). ');
-$ax += cidrblock($address, '138.124.186.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-06). ');
-$ax += cidrblock($address, '152.89.216.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-07). ');
-$ax += cidrblock($address, '185.9.144.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-08). ');
-$ax += cidrblock($address, '185.130.248.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-09). ');
-$ax += cidrblock($address, '188.127.224.0/20', 'LLC Smart Ape (IP4H-LLCSMARTAPE-10). ');
-$ax += cidrblock($address, '188.127.240.0/21', 'LLC Smart Ape (IP4H-LLCSMARTAPE-11). ');
-$ax += cidrblock($address, '188.127.248.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-12). ');
-$ax += cidrblock($address, '188.127.253.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-13). ');
-$ax += cidrblock($address, '188.127.254.0/23', 'LLC Smart Ape (IP4H-LLCSMARTAPE-14). ');
+$ax += cidrblock($address, '87.236.146.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-00). ');
+$ax += cidrblock($address, '94.198.50.0/23', 'LLC Smart Ape (IP4H-LLCSMARTAPE-01). ');
+$ax += cidrblock($address, '94.198.52.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-02). ');
+$ax += cidrblock($address, '152.89.216.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-03). ');
+$ax += cidrblock($address, '185.9.144.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-04). ');
+$ax += cidrblock($address, '185.130.248.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-05). ');
+$ax += cidrblock($address, '188.127.224.0/20', 'LLC Smart Ape (IP4H-LLCSMARTAPE-06). ');
+$ax += cidrblock($address, '188.127.240.0/21', 'LLC Smart Ape (IP4H-LLCSMARTAPE-07). ');
+$ax += cidrblock($address, '188.127.248.0/22', 'LLC Smart Ape (IP4H-LLCSMARTAPE-08). ');
+$ax += cidrblock($address, '188.127.253.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-09). ');
+$ax += cidrblock($address, '188.127.254.0/23', 'LLC Smart Ape (IP4H-LLCSMARTAPE-10). ');
+$ax += cidrblock($address, '62.76.141.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-11). ');
+$ax += cidrblock($address, '91.199.137.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-12). ');
+$ax += cidrblock($address, '91.199.147.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-13). ');
+$ax += cidrblock($address, '91.199.154.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-14). ');
+$ax += cidrblock($address, '91.199.160.0/24', 'LLC Smart Ape (IP4H-LLCSMARTAPE-15). ');
+$ax += cidrblock($address, '185.108.222.0/23', 'LLC Smart Ape (IP4H-LLCSMARTAPE-16). ');
 
 // ASN 211680 ("NSEC - Sistemas Informaticos, S.A").
-// "93 reported IPs from this subnet for a total of 51,032 reports" (at the time
-// when checked, 2021.07.28). See: abuseipdb.com/check-block/185.180.143.0/24
+// "124 reported IPs from this subnet for a total of 288,593 reports" (as of
+// 2022.05.01). See: abuseipdb.com/check-block/185.180.143.0/24
 // Flooding, DDoS, brute-force attacks, constant port scans, hack attempts, etc.
-// Updated: 2021.07.28
+// Updated: 2021.07.28 / Checked: 2022.05.01
 
 $ax += cidrblock($address, '185.180.143.0/24', 'Sistemas Informaticos, S.A (IP4H-SISTEMASINFORMATICOSSA-0). ');
 
