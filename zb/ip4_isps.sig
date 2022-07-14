@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2022.07.06
+ * This file last updated: 2022.07.14
  */
-$zbbversion .= ' / IP4S-129';
+$zbbversion .= ' / IP4S-129a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1663,7 +1663,7 @@ $ax += cidrblock($address, '210.212.226.0/24', 'BSNL (IP4S-BSNL-71). ');
 // human access endpoints. Spam, hacking, brute-force attacks, port scans,
 // probing, etc detected from here. Mozi botnets detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2022.05.15 / Modified: 2022.06.24
+// Updated: 2022.05.15 / Modified: 2022.07.12
 
 $ax += cidrblock($address, '1.68.195.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-000). ');
 $ax += cidrblock($address, '1.80.151.21/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-001). ');
@@ -1805,102 +1805,106 @@ $ax += cidrblock($address, '115.153.12.0/24', 'China Telecom Backbone (IP4S-CHIN
 $ax += cidrblock($address, '115.197.103.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-137). ');
 $ax += cidrblock($address, '115.208.3.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-138). ');
 $ax += cidrblock($address, '115.210.178.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-139). ');
-$ax += cidrblock($address, '115.211.198.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-140). ');
-$ax += cidrblock($address, '115.216.7.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-141). ');
-$ax += cidrblock($address, '116.21.13.13/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-142). ');
-$ax += cidrblock($address, '116.26.10.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-143). ');
-$ax += cidrblock($address, '117.32.216.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-144). ');
-$ax += cidrblock($address, '117.32.218.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-145). ');
-$ax += cidrblock($address, '117.60.60.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-146). ');
-$ax += cidrblock($address, '117.60.78.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-147). ');
-$ax += cidrblock($address, '117.80.32.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-148). ');
-$ax += cidrblock($address, '118.181.226.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-149). ');
-$ax += cidrblock($address, '119.41.169.82/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-150). ');
-$ax += cidrblock($address, '119.41.203.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-151). ');
-$ax += cidrblock($address, '119.96.223.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-152). ');
-$ax += cidrblock($address, '120.32.92.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-153). ');
-$ax += cidrblock($address, '121.13.251.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-154). ');
-$ax += cidrblock($address, '121.33.201.158/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-155). ');
-$ax += cidrblock($address, '121.224.77.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-156). ');
-$ax += cidrblock($address, '121.226.3.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-157). ');
-$ax += cidrblock($address, '122.4.29.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-158). ');
-$ax += cidrblock($address, '123.171.236.126/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-159). ');
-$ax += cidrblock($address, '123.171.237.143/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-160). ');
-$ax += cidrblock($address, '123.171.240.0/20', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-161). ');
-$ax += cidrblock($address, '125.84.224.31/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-162). ');
-$ax += cidrblock($address, '125.84.236.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-163). ');
-$ax += cidrblock($address, '125.90.228.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-164). ');
-$ax += cidrblock($address, '125.90.230.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-165). ');
-$ax += cidrblock($address, '125.106.128.106/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-166). ');
-$ax += cidrblock($address, '125.112.85.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-167). ');
-$ax += cidrblock($address, '125.112.168.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-168). ');
-$ax += cidrblock($address, '140.255.40.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-169). ');
-$ax += cidrblock($address, '182.34.16.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-170). ');
-$ax += cidrblock($address, '182.34.18.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-171). ');
-$ax += cidrblock($address, '182.34.23.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-172). ');
-$ax += cidrblock($address, '182.34.26.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-173). ');
-$ax += cidrblock($address, '182.34.32.229/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-174). ');
-$ax += cidrblock($address, '182.34.35.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-175). ');
-$ax += cidrblock($address, '182.34.37.95/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-176). ');
-$ax += cidrblock($address, '182.34.195.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-177). ');
-$ax += cidrblock($address, '182.34.196.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-178). ');
-$ax += cidrblock($address, '182.38.124.108/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-179). ');
-$ax += cidrblock($address, '182.96.244.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-180). ');
-$ax += cidrblock($address, '182.101.207.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-181). ');
-$ax += cidrblock($address, '182.245.44.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-182). ');
-$ax += cidrblock($address, '183.3.149.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-183). ');
-$ax += cidrblock($address, '183.11.28.0/22', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-184). ');
-$ax += cidrblock($address, '183.22.246.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-185). ');
-$ax += cidrblock($address, '183.23.73.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-186). ');
-$ax += cidrblock($address, '183.23.75.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-187). ');
-$ax += cidrblock($address, '183.27.248.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-188). ');
-$ax += cidrblock($address, '183.47.10.3/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-189). ');
-$ax += cidrblock($address, '183.128.83.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-190). ');
-$ax += cidrblock($address, '183.128.109.2/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-191). ');
-$ax += cidrblock($address, '183.128.109.109/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-192). ');
-$ax += cidrblock($address, '183.128.109.153/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-193). ');
-$ax += cidrblock($address, '183.128.131.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-194). ');
-$ax += cidrblock($address, '183.136.225.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-195). ');
-$ax += cidrblock($address, '218.22.190.133/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-196). ');
-$ax += cidrblock($address, '218.23.216.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-197). ');
-$ax += cidrblock($address, '218.89.220.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-198). ');
-$ax += cidrblock($address, '218.89.221.76/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-199). ');
-$ax += cidrblock($address, '218.89.222.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-200). ');
-$ax += cidrblock($address, '218.92.0.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-201). ');
-$ax += cidrblock($address, '219.128.37.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-202). ');
-$ax += cidrblock($address, '219.137.25.25/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-203). ');
-$ax += cidrblock($address, '220.161.187.242/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-204). ');
-$ax += cidrblock($address, '222.74.73.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-205). ');
-$ax += cidrblock($address, '222.74.202.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-206). ');
-$ax += cidrblock($address, '222.75.179.106/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-207). ');
-$ax += cidrblock($address, '222.75.208.18/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-208). ');
-$ax += cidrblock($address, '222.75.208.54/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-209). ');
-$ax += cidrblock($address, '222.90.60.0/22', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-210). ');
-$ax += cidrblock($address, '222.90.64.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-211). ');
-$ax += cidrblock($address, '222.90.66.4/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-212). ');
-$ax += cidrblock($address, '222.90.67.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-213). ');
-$ax += cidrblock($address, '222.94.162.23/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-214). ');
-$ax += cidrblock($address, '222.94.162.98/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-215). ');
-$ax += cidrblock($address, '222.94.162.217/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-216). ');
-$ax += cidrblock($address, '222.94.162.222/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-217). ');
-$ax += cidrblock($address, '222.94.163.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-218). ');
-$ax += cidrblock($address, '222.94.212.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-219). ');
-$ax += cidrblock($address, '222.181.8.0/22', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-220). ');
-$ax += cidrblock($address, '222.186.19.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-221). ');
-$ax += cidrblock($address, '222.186.46.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-222). ');
-$ax += cidrblock($address, '222.186.56.73/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-223). ');
-$ax += cidrblock($address, '222.186.56.141/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-224). ');
-$ax += cidrblock($address, '222.186.56.157/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-225). ');
-$ax += cidrblock($address, '222.186.57.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-226). ');
-$ax += cidrblock($address, '222.186.58.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-227). ');
-$ax += cidrblock($address, '222.216.97.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-228). ');
-$ax += cidrblock($address, '222.222.122.25/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-229). ');
-$ax += cidrblock($address, '222.222.122.87/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-230). ');
-$ax += cidrblock($address, '222.222.122.237/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-231). ');
-$ax += cidrblock($address, '222.241.154.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-232). ');
-$ax += cidrblock($address, '222.245.214.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-233). ');
-$ax += cidrblock($address, '223.155.54.225/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-234). ');
-$ax += cidrblock($address, '223.199.18.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-235). ');
+$ax += cidrblock($address, '115.210.180.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-140). ');
+$ax += cidrblock($address, '115.210.182.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-141). ');
+$ax += cidrblock($address, '115.210.183.32/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-142). ');
+$ax += cidrblock($address, '115.210.183.116/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-143). ');
+$ax += cidrblock($address, '115.211.198.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-144). ');
+$ax += cidrblock($address, '115.216.7.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-145). ');
+$ax += cidrblock($address, '116.21.13.13/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-146). ');
+$ax += cidrblock($address, '116.26.10.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-147). ');
+$ax += cidrblock($address, '117.32.216.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-148). ');
+$ax += cidrblock($address, '117.32.218.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-149). ');
+$ax += cidrblock($address, '117.60.60.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-150). ');
+$ax += cidrblock($address, '117.60.78.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-151). ');
+$ax += cidrblock($address, '117.80.32.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-152). ');
+$ax += cidrblock($address, '118.181.226.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-153). ');
+$ax += cidrblock($address, '119.41.169.82/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-154). ');
+$ax += cidrblock($address, '119.41.203.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-155). ');
+$ax += cidrblock($address, '119.96.223.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-156). ');
+$ax += cidrblock($address, '120.32.92.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-157). ');
+$ax += cidrblock($address, '121.13.251.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-158). ');
+$ax += cidrblock($address, '121.33.201.158/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-159). ');
+$ax += cidrblock($address, '121.224.77.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-160). ');
+$ax += cidrblock($address, '121.226.3.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-161). ');
+$ax += cidrblock($address, '122.4.29.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-162). ');
+$ax += cidrblock($address, '123.171.236.126/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-163). ');
+$ax += cidrblock($address, '123.171.237.143/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-164). ');
+$ax += cidrblock($address, '123.171.240.0/20', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-165). ');
+$ax += cidrblock($address, '125.84.224.31/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-166). ');
+$ax += cidrblock($address, '125.84.236.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-167). ');
+$ax += cidrblock($address, '125.90.228.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-168). ');
+$ax += cidrblock($address, '125.90.230.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-169). ');
+$ax += cidrblock($address, '125.106.128.106/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-170). ');
+$ax += cidrblock($address, '125.112.85.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-171). ');
+$ax += cidrblock($address, '125.112.168.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-172). ');
+$ax += cidrblock($address, '140.255.40.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-173). ');
+$ax += cidrblock($address, '182.34.16.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-174). ');
+$ax += cidrblock($address, '182.34.18.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-175). ');
+$ax += cidrblock($address, '182.34.23.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-176). ');
+$ax += cidrblock($address, '182.34.26.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-177). ');
+$ax += cidrblock($address, '182.34.32.229/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-178). ');
+$ax += cidrblock($address, '182.34.35.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-179). ');
+$ax += cidrblock($address, '182.34.37.95/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-180). ');
+$ax += cidrblock($address, '182.34.195.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-181). ');
+$ax += cidrblock($address, '182.34.196.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-182). ');
+$ax += cidrblock($address, '182.38.124.108/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-183). ');
+$ax += cidrblock($address, '182.96.244.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-184). ');
+$ax += cidrblock($address, '182.101.207.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-185). ');
+$ax += cidrblock($address, '182.245.44.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-186). ');
+$ax += cidrblock($address, '183.3.149.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-187). ');
+$ax += cidrblock($address, '183.11.28.0/22', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-188). ');
+$ax += cidrblock($address, '183.22.246.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-189). ');
+$ax += cidrblock($address, '183.23.73.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-190). ');
+$ax += cidrblock($address, '183.23.75.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-191). ');
+$ax += cidrblock($address, '183.27.248.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-192). ');
+$ax += cidrblock($address, '183.47.10.3/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-193). ');
+$ax += cidrblock($address, '183.128.83.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-194). ');
+$ax += cidrblock($address, '183.128.109.2/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-195). ');
+$ax += cidrblock($address, '183.128.109.109/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-196). ');
+$ax += cidrblock($address, '183.128.109.153/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-197). ');
+$ax += cidrblock($address, '183.128.131.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-198). ');
+$ax += cidrblock($address, '183.136.225.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-199). ');
+$ax += cidrblock($address, '218.22.190.133/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-200). ');
+$ax += cidrblock($address, '218.23.216.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-201). ');
+$ax += cidrblock($address, '218.89.220.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-202). ');
+$ax += cidrblock($address, '218.89.221.76/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-203). ');
+$ax += cidrblock($address, '218.89.222.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-204). ');
+$ax += cidrblock($address, '218.92.0.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-205). ');
+$ax += cidrblock($address, '219.128.37.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-206). ');
+$ax += cidrblock($address, '219.137.25.25/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-207). ');
+$ax += cidrblock($address, '220.161.187.242/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-208). ');
+$ax += cidrblock($address, '222.74.73.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-209). ');
+$ax += cidrblock($address, '222.74.202.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-210). ');
+$ax += cidrblock($address, '222.75.179.106/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-211). ');
+$ax += cidrblock($address, '222.75.208.18/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-212). ');
+$ax += cidrblock($address, '222.75.208.54/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-213). ');
+$ax += cidrblock($address, '222.90.60.0/22', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-214). ');
+$ax += cidrblock($address, '222.90.64.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-215). ');
+$ax += cidrblock($address, '222.90.66.4/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-216). ');
+$ax += cidrblock($address, '222.90.67.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-217). ');
+$ax += cidrblock($address, '222.94.162.23/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-218). ');
+$ax += cidrblock($address, '222.94.162.98/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-219). ');
+$ax += cidrblock($address, '222.94.162.217/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-220). ');
+$ax += cidrblock($address, '222.94.162.222/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-221). ');
+$ax += cidrblock($address, '222.94.163.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-222). ');
+$ax += cidrblock($address, '222.94.212.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-223). ');
+$ax += cidrblock($address, '222.181.8.0/22', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-224). ');
+$ax += cidrblock($address, '222.186.19.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-225). ');
+$ax += cidrblock($address, '222.186.46.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-226). ');
+$ax += cidrblock($address, '222.186.56.73/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-227). ');
+$ax += cidrblock($address, '222.186.56.141/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-228). ');
+$ax += cidrblock($address, '222.186.56.157/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-229). ');
+$ax += cidrblock($address, '222.186.57.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-230). ');
+$ax += cidrblock($address, '222.186.58.0/23', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-231). ');
+$ax += cidrblock($address, '222.216.97.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-232). ');
+$ax += cidrblock($address, '222.222.122.25/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-233). ');
+$ax += cidrblock($address, '222.222.122.87/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-234). ');
+$ax += cidrblock($address, '222.222.122.237/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-235). ');
+$ax += cidrblock($address, '222.241.154.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-236). ');
+$ax += cidrblock($address, '222.245.214.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-237). ');
+$ax += cidrblock($address, '223.155.54.225/32', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-238). ');
+$ax += cidrblock($address, '223.199.18.0/24', 'China Telecom Backbone (IP4S-CHINATELECOMBACKBONE-239). ');
 
 // ASNs 4811, 4812 ("China Telecom (Group)").
 // Interlaces with numerous providers and contains a large portion of Chinese
@@ -5424,7 +5428,7 @@ $ax += cidrblock($address, '213.186.119.58/32', 'Ukrtelecom (IP4S-UKRTELECOM-28)
 
 // ASN 137432 ("BKB Network").
 // Caught using automated hacktools to try hacking into honeypots.
-// Updated: 2021.04.04 / Modified: 2021.11.04 / Checked: 2021.12.31
+// Updated: 2021.04.04 / Modified: 2021.11.04 / Checked: 2022.07.14
 
 $ax += cidrblock($address, '103.108.88.0/22', 'BKB Network (IP4S-BKBNETWORK-0). ');
 
@@ -5636,13 +5640,46 @@ $ax += cidrblock($address, '195.42.126.0/23', 'Kyivski Merezhi (IP4S-KYIVSKIMERE
 $ax += cidrblock($address, '195.66.136.0/23', 'Kyivski Merezhi (IP4S-KYIVSKIMEREZHI-94). ');
 
 // ASN 41435 ("UnderNet LLC").
-// Ukrainian domestic ISP. Caught attempting to hack WordPress sites.
-// Updated: 2021.01.11 / Modified: 2021.11.04 / Checked: 2021.12.31
+// Ukrainian domestic ISP. Brute-force, WordPress/XMLRPC, and webapp attacks,
+// hacking, and spam detected from here.
+// Listing just the affected ranges/addresses only.
+// Updated: 2022.07.14
 
-$ax += cidrblock($address, '79.110.128.0/20', 'UnderNet LLC (IP4S-UNDERNETLLC-0). ');
-$ax += cidrblock($address, '91.193.32.0/22', 'UnderNet LLC (IP4S-UNDERNETLLC-1). ');
-$ax += cidrblock($address, '176.104.0.0/18', 'UnderNet LLC (IP4S-UNDERNETLLC-2). ');
-$ax += cidrblock($address, '194.9.36.0/23', 'UnderNet LLC (IP4S-UNDERNETLLC-3). ');
+$ax += cidrblock($address, '79.110.128.0/23', 'UnderNet LLC (IP4S-UNDERNETLLC-00). ');
+$ax += cidrblock($address, '79.110.130.0/24', 'UnderNet LLC (IP4S-UNDERNETLLC-01). ');
+$ax += cidrblock($address, '79.110.132.133/32', 'UnderNet LLC (IP4S-UNDERNETLLC-02). ');
+$ax += cidrblock($address, '79.110.133.157/32', 'UnderNet LLC (IP4S-UNDERNETLLC-03). ');
+$ax += cidrblock($address, '79.110.134.0/24', 'UnderNet LLC (IP4S-UNDERNETLLC-04). ');
+$ax += cidrblock($address, '176.104.0.74/32', 'UnderNet LLC (IP4S-UNDERNETLLC-05). ');
+$ax += cidrblock($address, '176.104.2.75/32', 'UnderNet LLC (IP4S-UNDERNETLLC-06). ');
+$ax += cidrblock($address, '176.104.2.194/32', 'UnderNet LLC (IP4S-UNDERNETLLC-07). ');
+$ax += cidrblock($address, '176.104.2.205/32', 'UnderNet LLC (IP4S-UNDERNETLLC-08). ');
+$ax += cidrblock($address, '176.104.3.35/32', 'UnderNet LLC (IP4S-UNDERNETLLC-09). ');
+$ax += cidrblock($address, '176.104.3.100/32', 'UnderNet LLC (IP4S-UNDERNETLLC-10). ');
+$ax += cidrblock($address, '176.104.3.166/32', 'UnderNet LLC (IP4S-UNDERNETLLC-11). ');
+$ax += cidrblock($address, '176.104.4.18/32', 'UnderNet LLC (IP4S-UNDERNETLLC-12). ');
+$ax += cidrblock($address, '176.104.5.116/32', 'UnderNet LLC (IP4S-UNDERNETLLC-13). ');
+$ax += cidrblock($address, '176.104.6.1/32', 'UnderNet LLC (IP4S-UNDERNETLLC-14). ');
+$ax += cidrblock($address, '176.104.6.10/32', 'UnderNet LLC (IP4S-UNDERNETLLC-15). ');
+$ax += cidrblock($address, '176.104.6.254/31', 'UnderNet LLC (IP4S-UNDERNETLLC-16). ');
+$ax += cidrblock($address, '176.104.8.98/32', 'UnderNet LLC (IP4S-UNDERNETLLC-17). ');
+$ax += cidrblock($address, '176.104.9.0/24', 'UnderNet LLC (IP4S-UNDERNETLLC-18). ');
+$ax += cidrblock($address, '176.104.10.172/32', 'UnderNet LLC (IP4S-UNDERNETLLC-19). ');
+$ax += cidrblock($address, '176.104.12.77/32', 'UnderNet LLC (IP4S-UNDERNETLLC-20). ');
+$ax += cidrblock($address, '176.104.12.170/32', 'UnderNet LLC (IP4S-UNDERNETLLC-21). ');
+$ax += cidrblock($address, '176.104.18.104/32', 'UnderNet LLC (IP4S-UNDERNETLLC-22). ');
+$ax += cidrblock($address, '176.104.22.34/32', 'UnderNet LLC (IP4S-UNDERNETLLC-23). ');
+$ax += cidrblock($address, '176.104.33.39/32', 'UnderNet LLC (IP4S-UNDERNETLLC-24). ');
+$ax += cidrblock($address, '176.104.39.126/32', 'UnderNet LLC (IP4S-UNDERNETLLC-25). ');
+$ax += cidrblock($address, '176.104.48.0/24', 'UnderNet LLC (IP4S-UNDERNETLLC-26). ');
+$ax += cidrblock($address, '176.104.52.86/32', 'UnderNet LLC (IP4S-UNDERNETLLC-27). ');
+$ax += cidrblock($address, '176.104.52.111/32', 'UnderNet LLC (IP4S-UNDERNETLLC-28). ');
+$ax += cidrblock($address, '176.104.53.0/24', 'UnderNet LLC (IP4S-UNDERNETLLC-29). ');
+$ax += cidrblock($address, '176.104.58.213/32', 'UnderNet LLC (IP4S-UNDERNETLLC-30). ');
+$ax += cidrblock($address, '176.104.59.148/32', 'UnderNet LLC (IP4S-UNDERNETLLC-31). ');
+$ax += cidrblock($address, '176.104.60.59/32', 'UnderNet LLC (IP4S-UNDERNETLLC-32). ');
+$ax += cidrblock($address, '194.9.36.51/32', 'UnderNet LLC (IP4S-UNDERNETLLC-33). ');
+$ax += cidrblock($address, '194.9.36.53/32', 'UnderNet LLC (IP4S-UNDERNETLLC-34). ');
 
 // ASNs 18101, 55836 ("Reliance Communications Ltd").
 // Indian domestic ISP. Brute-force, SSH, and webapp attacks, WordPress hack
@@ -8396,30 +8433,21 @@ $ax += cidrblock($address, '137.226.113.0/24', 'RWTH Aachen University (IP4S-RWT
 // ASN 1680 ("Cellcom Fixed Line Communication L.P").
 // Israeli domestic ISP and a source of spam.
 // Listing just the affected ranges/addresses only.
-// Updated: 2021.10.12
+// Updated: 2022.07.12
 
-$ax += cidrblock($address, '46.116.34.64/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-00). ');
-$ax += cidrblock($address, '46.116.179.254/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-01). ');
-$ax += cidrblock($address, '46.116.245.192/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-02). ');
-$ax += cidrblock($address, '46.117.43.247/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-03). ');
-$ax += cidrblock($address, '46.117.131.0/24', 'Cellcom Fixed (IP4S-CELLCOMFIXED-04). ');
-$ax += cidrblock($address, '46.210.98.112/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-05). ');
-$ax += cidrblock($address, '62.90.10.186/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-06). ');
-$ax += cidrblock($address, '82.166.247.131/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-07). ');
-$ax += cidrblock($address, '85.65.197.97/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-08). ');
-$ax += cidrblock($address, '85.250.20.253/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-09). ');
-$ax += cidrblock($address, '89.138.239.99/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-10). ');
-$ax += cidrblock($address, '89.139.4.174/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-11). ');
-$ax += cidrblock($address, '89.139.8.175/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-12). ');
-$ax += cidrblock($address, '89.139.16.0/24', 'Cellcom Fixed (IP4S-CELLCOMFIXED-13). ');
-$ax += cidrblock($address, '89.139.21.0/24', 'Cellcom Fixed (IP4S-CELLCOMFIXED-14). ');
-$ax += cidrblock($address, '89.139.23.0/24', 'Cellcom Fixed (IP4S-CELLCOMFIXED-15). ');
-$ax += cidrblock($address, '89.139.28.0/24', 'Cellcom Fixed (IP4S-CELLCOMFIXED-16). ');
-$ax += cidrblock($address, '93.172.242.188/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-17). ');
-$ax += cidrblock($address, '93.173.82.116/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-18). ');
-$ax += cidrblock($address, '199.203.170.69/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-19). ');
-$ax += cidrblock($address, '199.203.247.18/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-20). ');
-$ax += cidrblock($address, '45.93.82.0/24', 'Cellcom Fixed (IP4S-CELLCOMFIXED-21). ');
+$ax += cidrblock($address, '46.116.41.181/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-00). ');
+$ax += cidrblock($address, '46.116.41.224/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-01). ');
+$ax += cidrblock($address, '46.116.186.50/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-02). ');
+$ax += cidrblock($address, '46.116.245.192/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-03). ');
+$ax += cidrblock($address, '46.117.131.61/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-04). ');
+$ax += cidrblock($address, '85.65.197.0/24', 'Cellcom Fixed (IP4S-CELLCOMFIXED-05). ');
+$ax += cidrblock($address, '85.250.20.253/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-06). ');
+$ax += cidrblock($address, '89.139.4.174/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-07). ');
+$ax += cidrblock($address, '89.139.8.175/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-08). ');
+$ax += cidrblock($address, '93.172.167.214/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-09). ');
+$ax += cidrblock($address, '212.143.41.123/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-10). ');
+$ax += cidrblock($address, '212.143.41.203/32', 'Cellcom Fixed (IP4S-CELLCOMFIXED-11). ');
+$ax += cidrblock($address, '45.93.82.148/31', 'Cellcom Fixed (IP4S-CELLCOMFIXED-12). ');
 
 // ASN 12849 ("Hot-Net internet services Ltd").
 // Israeli domestic ISP. Port scans, hacking, and spam detected from here.
@@ -9710,15 +9738,34 @@ $ax += cidrblock($address, '95.77.104.79/32', 'Vodafone Romania (IP4S-VODAFONERO
 $ax += cidrblock($address, '95.77.104.104/32', 'Vodafone Romania (IP4S-VODAFONEROMANIA-22). ');
 $ax += cidrblock($address, '213.233.109.82/32', 'Vodafone Romania (IP4S-VODAFONEROMANIA-23). ');
 
-// ASN 12978 ("DEMIROREN TV DIGITAL PLATFORM ISLETMECILIGI A.S").
-// Turkish multiplay network. Forum spam sometimes seen from here. Just listing
-// the affected addresses/ranges.
-// Updated: 2021.09.22
+// ASN 12978 ("ANDROMEDA TV DIGITAL PLATFORM ISLETMECILIGI A.S").
+// Turkish multiplay network. Brute-force and SSH attacks, port scans, hacking,
+// and spam detected from here. Listing just the affected ranges/addresses only.
+// Updated: 2022.07.11
 
-$ax += cidrblock($address, '31.200.12.30/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-0). ');
-$ax += cidrblock($address, '94.120.225.77/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-1). ');
-$ax += cidrblock($address, '94.122.243.110/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-2). ');
-$ax += cidrblock($address, '94.123.8.187/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-3). ');
+$ax += cidrblock($address, '31.200.115.95/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-00). ');
+$ax += cidrblock($address, '31.200.115.102/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-01). ');
+$ax += cidrblock($address, '31.200.115.150/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-02). ');
+$ax += cidrblock($address, '31.200.115.228/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-03). ');
+$ax += cidrblock($address, '94.121.159.55/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-04). ');
+$ax += cidrblock($address, '94.121.159.78/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-05). ');
+$ax += cidrblock($address, '94.121.159.177/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-06). ');
+$ax += cidrblock($address, '94.121.159.195/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-07). ');
+$ax += cidrblock($address, '94.122.32.155/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-08). ');
+$ax += cidrblock($address, '94.122.33.59/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-09). ');
+$ax += cidrblock($address, '94.122.33.96/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-10). ');
+$ax += cidrblock($address, '94.122.140.0/24', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-11). ');
+$ax += cidrblock($address, '94.122.141.51/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-12). ');
+$ax += cidrblock($address, '94.122.141.61/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-13). ');
+$ax += cidrblock($address, '94.122.141.214/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-14). ');
+$ax += cidrblock($address, '94.122.143.105/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-15). ');
+$ax += cidrblock($address, '94.122.143.123/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-16). ');
+$ax += cidrblock($address, '94.122.143.152/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-17). ');
+$ax += cidrblock($address, '94.123.221.117/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-18). ');
+$ax += cidrblock($address, '94.123.252.143/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-19). ');
+$ax += cidrblock($address, '94.123.252.180/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-20). ');
+$ax += cidrblock($address, '94.123.252.184/32', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-21). ');
+$ax += cidrblock($address, '94.123.255.0/24', 'DEMIROREN TV DIGITAL (IP4S-DEMIRORENTVDIGITAL-22). ');
 
 // ASN 15704 ("XTRA TELECOM S.A").
 // Spanish mobile provider. Brute-force attacks and spam detected from here.
@@ -10020,37 +10067,55 @@ $ax += cidrblock($address, '193.138.218.0/24', '31173 Services AB (IP4S-31173SER
 // Major domestic ISP from the United States. Some instances of spamming and
 // WordPress hack attempts detected from this network. Listing just the
 // affected addresses/ranges only.
-// Updated: 2022.05.01
+// Updated: 2022.07.12
 
 $ax += cidrblock($address, '65.155.30.101/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-00). ');
-$ax += cidrblock($address, '71.34.162.40/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-01). ');
-$ax += cidrblock($address, '71.34.185.113/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-02). ');
-$ax += cidrblock($address, '71.38.143.152/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-03). ');
-$ax += cidrblock($address, '71.209.77.160/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-04). ');
-$ax += cidrblock($address, '71.209.220.221/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-05). ');
-$ax += cidrblock($address, '71.214.217.169/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-06). ');
-$ax += cidrblock($address, '71.218.68.191/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-07). ');
-$ax += cidrblock($address, '71.218.72.131/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-08). ');
-$ax += cidrblock($address, '71.218.72.247/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-09). ');
-$ax += cidrblock($address, '71.218.87.47/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-10). ');
-$ax += cidrblock($address, '71.218.87.71/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-11). ');
-$ax += cidrblock($address, '71.218.87.91/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-12). ');
-$ax += cidrblock($address, '71.218.87.219/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-13). ');
-$ax += cidrblock($address, '71.218.89.6/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-14). ');
-$ax += cidrblock($address, '71.219.12.63/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-15). ');
-$ax += cidrblock($address, '71.219.53.252/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-16). ');
-$ax += cidrblock($address, '75.166.66.120/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-17). ');
-$ax += cidrblock($address, '75.166.79.141/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-18). ');
-$ax += cidrblock($address, '75.172.126.83/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-19). ');
-$ax += cidrblock($address, '75.174.63.35/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-20). ');
-$ax += cidrblock($address, '97.115.143.169/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-21). ');
-$ax += cidrblock($address, '97.118.39.32/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-22). ');
-$ax += cidrblock($address, '174.20.173.185/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-23). ');
-$ax += cidrblock($address, '174.27.10.150/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-24). ');
-$ax += cidrblock($address, '174.27.87.174/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-25). ');
-$ax += cidrblock($address, '174.27.211.106/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-26). ');
-$ax += cidrblock($address, '184.97.88.54/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-27). ');
-$ax += cidrblock($address, '204.98.164.243/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-28). ');
+$ax += cidrblock($address, '67.40.192.0/24', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-01). ');
+$ax += cidrblock($address, '67.40.193.133/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-02). ');
+$ax += cidrblock($address, '67.40.193.141/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-03). ');
+$ax += cidrblock($address, '67.40.193.173/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-04). ');
+$ax += cidrblock($address, '67.40.194.0/24', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-05). ');
+$ax += cidrblock($address, '67.40.195.78/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-06). ');
+$ax += cidrblock($address, '67.40.196.0/23', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-07). ');
+$ax += cidrblock($address, '67.40.199.70/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-08). ');
+$ax += cidrblock($address, '67.40.199.222/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-09). ');
+$ax += cidrblock($address, '70.58.247.39/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-10). ');
+$ax += cidrblock($address, '71.38.143.152/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-11). ');
+$ax += cidrblock($address, '71.210.69.99/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-12). ');
+$ax += cidrblock($address, '71.218.68.53/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-13). ');
+$ax += cidrblock($address, '71.218.68.112/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-14). ');
+$ax += cidrblock($address, '71.218.68.191/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-15). ');
+$ax += cidrblock($address, '71.218.72.18/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-16). ');
+$ax += cidrblock($address, '71.218.72.128/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-17). ');
+$ax += cidrblock($address, '71.218.72.131/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-18). ');
+$ax += cidrblock($address, '71.218.72.247/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-19). ');
+$ax += cidrblock($address, '71.218.87.71/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-20). ');
+$ax += cidrblock($address, '71.218.87.99/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-21). ');
+$ax += cidrblock($address, '71.218.87.219/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-22). ');
+$ax += cidrblock($address, '71.218.89.6/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-23). ');
+$ax += cidrblock($address, '71.218.89.21/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-24). ');
+$ax += cidrblock($address, '71.218.89.100/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-25). ');
+$ax += cidrblock($address, '71.219.12.63/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-26). ');
+$ax += cidrblock($address, '71.219.178.187/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-27). ');
+$ax += cidrblock($address, '75.166.66.120/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-28). ');
+$ax += cidrblock($address, '75.166.79.131/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-29). ');
+$ax += cidrblock($address, '75.166.79.141/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-30). ');
+$ax += cidrblock($address, '75.166.79.189/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-31). ');
+$ax += cidrblock($address, '75.166.185.183/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-32). ');
+$ax += cidrblock($address, '75.167.169.250/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-33). ');
+$ax += cidrblock($address, '75.167.203.193/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-34). ');
+$ax += cidrblock($address, '75.174.63.35/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-35). ');
+$ax += cidrblock($address, '97.114.165.80/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-36). ');
+$ax += cidrblock($address, '97.115.143.169/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-37). ');
+$ax += cidrblock($address, '97.116.66.149/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-38). ');
+$ax += cidrblock($address, '97.125.63.115/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-39). ');
+$ax += cidrblock($address, '174.21.138.168/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-40). ');
+$ax += cidrblock($address, '174.26.9.224/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-41). ');
+$ax += cidrblock($address, '174.27.10.150/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-42). ');
+$ax += cidrblock($address, '174.27.87.174/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-43). ');
+$ax += cidrblock($address, '174.28.250.61/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-44). ');
+$ax += cidrblock($address, '204.26.122.53/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-45). ');
+$ax += cidrblock($address, '204.98.164.243/32', 'CenturyLink Communications, LLC (IP4S-CENTURYLINKCOMMUNICATIONSLLC-46). ');
 
 // ASN 30779 ("TRK Cable TV LLC").
 // Ukrainian domestic ISP and cable TV provider. Port scans, hacking, and spam detected from here.
@@ -15255,18 +15320,21 @@ $ax += cidrblock($address, '89.206.46.169/32', 'Limes sp. z o.o (IP4S-LIMESSPZOO
 // Hungarian multiplay ISP. Brute-force, WordPress, and webapp attacks,
 // credential stuffing, port scans, hacking, and spam detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2022.03.16
+// Updated: 2022.07.11
 
-$ax += cidrblock($address, '37.76.4.20/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-00). ');
+$ax += cidrblock($address, '46.183.186.33/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-00). ');
 $ax += cidrblock($address, '46.107.10.233/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-01). ');
-$ax += cidrblock($address, '81.182.90.0/24', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-02). ');
-$ax += cidrblock($address, '81.183.253.34/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-03). ');
-$ax += cidrblock($address, '84.0.89.219/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-04). ');
-$ax += cidrblock($address, '91.147.235.58/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-05). ');
-$ax += cidrblock($address, '91.147.235.65/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-06). ');
+$ax += cidrblock($address, '62.201.91.132/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-02). ');
+$ax += cidrblock($address, '81.182.90.0/24', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-03). ');
+$ax += cidrblock($address, '81.183.253.34/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-04). ');
+$ax += cidrblock($address, '84.0.89.219/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-05). ');
+$ax += cidrblock($address, '86.59.141.227/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-06). ');
 $ax += cidrblock($address, '91.147.235.99/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-07). ');
-$ax += cidrblock($address, '188.157.89.19/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-08). ');
-$ax += cidrblock($address, '194.71.130.0/24', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-09). ');
+$ax += cidrblock($address, '91.147.235.186/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-08). ');
+$ax += cidrblock($address, '134.255.2.236/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-09). ');
+$ax += cidrblock($address, '194.71.130.93/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-10). ');
+$ax += cidrblock($address, '194.71.130.131/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-11). ');
+$ax += cidrblock($address, '194.71.130.151/32', 'Magyar Telekom plc (IP4S-MAGYARTELEKOMPLC-12). ');
 
 // ASN 6461 ("Zayo Bandwidth").
 // US fibre provider. Brute-force and webapp attacks, port scans, hacking, and
@@ -16240,6 +16308,21 @@ $ax += cidrblock($address, '94.231.237.96/32', 'TVK ZJAWIONA ELZBIETA (IP4S-TVKZ
 // Updated: 2022.07.04
 
 $ax += cidrblock($address, '45.233.104.0/22', 'MOTTANET SCM (IP4S-MOTTANETSCM-0). ');
+
+// ASN 13999 ("Mega Cable, S.A. de C.V").
+// Suspected Mexican domestic ISP (but homepage isn't available to confirm).
+// Port scans, hacking, and spam detected from here.
+// Listing just the affected ranges/addresses only.
+// Updated: 2022.07.11
+
+$ax += cidrblock($address, '177.228.53.169/32', 'Mega Cable (IP4S-MEGACABLE-0). ');
+$ax += cidrblock($address, '177.228.87.196/32', 'Mega Cable (IP4S-MEGACABLE-1). ');
+$ax += cidrblock($address, '177.240.219.155/32', 'Mega Cable (IP4S-MEGACABLE-2). ');
+$ax += cidrblock($address, '177.242.43.97/32', 'Mega Cable (IP4S-MEGACABLE-3). ');
+$ax += cidrblock($address, '187.243.253.182/32', 'Mega Cable (IP4S-MEGACABLE-4). ');
+$ax += cidrblock($address, '189.193.225.6/32', 'Mega Cable (IP4S-MEGACABLE-5). ');
+$ax += cidrblock($address, '189.199.126.86/32', 'Mega Cable (IP4S-MEGACABLE-6). ');
+$ax += cidrblock($address, '189.199.126.106/32', 'Mega Cable (IP4S-MEGACABLE-7). ');
 
 // IP4S Test Trigger
 $ax += inmatch($query, 'xip4sx', 'IP4S Test Trigger. ');
