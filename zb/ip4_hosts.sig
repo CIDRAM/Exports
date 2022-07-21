@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2022.07.14
+ * This file last updated: 2022.07.21
  */
-$zbbversion .= ' / IP4H-129a';
+$zbbversion .= ' / IP4H-129b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -18919,7 +18919,7 @@ $ax += cidrblock($address, '103.149.85.0/24', 'Selectel Ltd (IP4H-SELECTELLTD-49
 
 // ASN 42868 ("Niobe Bilisim Teknolojileri Yazilim San. Tic. Ltd. Sti").
 // Caught trying to DDoS SFS.
-// Updated: 2018.06.30 / Checked: 2021.09.09
+// Updated: 2018.06.30 / Checked: 2022.07.17
 
 $ax += cidrblock($address, '77.245.144.0/20', 'Niobe Bilisim (IP4H-NIOBEBILISIM-0). ');
 $ax += cidrblock($address, '185.87.252.0/22', 'Niobe Bilisim (IP4H-NIOBEBILISIM-1). ');
@@ -23564,7 +23564,7 @@ $ax += cidrblock($address, '199.249.230.0/23', 'Quintex (IP4H-QUINTEX-2). ');
 
 // ASN 29889 ("Fast Serv Networks, LLC").
 // Dedicated host; evidence of unauthorised access attempts; spam events.
-// Updated: 2019.06.10 / Checked: 2021.09.09
+// Updated: 2019.06.10 / Checked: 2022.07.17
 
 $ax += cidrblock($address, '74.115.208.0/21', 'Fast Serv Networks (IP4H-FASTSERVNETWORKS-0). ');
 $ax += cidrblock($address, '74.116.40.0/22', 'Fast Serv Networks (IP4H-FASTSERVNETWORKS-1). ');
@@ -26132,7 +26132,7 @@ $ax += cidrblock($address, '185.254.44.0/22', 'UAB CONSILIUM OPTIMUM (IP4H-UABCO
 
 // ASN 20052 ("Arbor Networks, Inc").
 // Vulnerability scanner + unwanted traffic.
-// Updated: 2020.06.22 / Checked: 2021.09.09
+// Updated: 2020.06.22 / Checked: 2022.07.17
 
 $ax += cidrblock($address, '146.88.240.0/24', 'Arbor Networks, Inc (IP4H-ARBORNETWORKSINC-0). ');
 $ax += cidrblock($address, '216.130.192.0/21', 'Arbor Networks, Inc (IP4H-ARBORNETWORKSINC-1). ');
@@ -28323,7 +28323,7 @@ $ax += cidrblock($address, '161.123.246.0/24', 'Des Capital B.V (IP4H-DESCAPITAL
 
 // ASN 58294 ("CloudWall Ltd").
 // FTP brute-force attacks, RDP attacks, port scans, etc detected from here.
-// Updated: 2021.01.05 / Checked: 2021.09.09
+// Updated: 2021.01.05 / Checked: 2022.07.17
 
 $ax += cidrblock($address, '195.230.23.0/24', 'CloudWall Ltd (IP4H-CLOUDWALLLTD-0). ');
 
@@ -28337,19 +28337,18 @@ $ax += cidrblock($address, '194.8.28.0/24', 'Vhost Meremeta Ltd (IP4H-VHOSTMEREM
 // ASNs 16880, 36421 ("Trend Micro Incorporated").
 // Follows their users around, attempting to access restricted/private areas of
 // websites.
-// Updated: 2021.01.11 / Checked: 2021.09.09
+// Updated: 2022.07.17
 
 $ax += cidrblock($address, '150.70.0.0/20', 'Trend Micro (IP4H-TRENDMICRO-00). ');
 $ax += cidrblock($address, '150.70.31.0/24', 'Trend Micro (IP4H-TRENDMICRO-01). ');
 $ax += cidrblock($address, '150.70.48.0/20', 'Trend Micro (IP4H-TRENDMICRO-02). ');
 $ax += cidrblock($address, '150.70.80.0/20', 'Trend Micro (IP4H-TRENDMICRO-03). ');
 $ax += cidrblock($address, '150.70.160.0/19', 'Trend Micro (IP4H-TRENDMICRO-04). ');
-$ax += cidrblock($address, '150.70.192.0/21', 'Trend Micro (IP4H-TRENDMICRO-05). ');
-$ax += cidrblock($address, '150.70.224.0/20', 'Trend Micro (IP4H-TRENDMICRO-06). ');
-$ax += cidrblock($address, '202.3.185.0/24', 'Trend Micro (IP4H-TRENDMICRO-07). ');
-$ax += cidrblock($address, '66.180.80.0/20', 'Trend Micro (IP4H-TRENDMICRO-08). ');
-$ax += cidrblock($address, '216.99.128.0/20', 'Trend Micro (IP4H-TRENDMICRO-09). ');
-$ax += cidrblock($address, '216.104.16.0/20', 'Trend Micro (IP4H-TRENDMICRO-10). ');
+$ax += cidrblock($address, '150.70.224.0/20', 'Trend Micro (IP4H-TRENDMICRO-05). ');
+$ax += cidrblock($address, '202.3.185.0/24', 'Trend Micro (IP4H-TRENDMICRO-06). ');
+$ax += cidrblock($address, '66.180.80.0/20', 'Trend Micro (IP4H-TRENDMICRO-07). ');
+$ax += cidrblock($address, '216.99.128.0/20', 'Trend Micro (IP4H-TRENDMICRO-08). ');
+$ax += cidrblock($address, '216.104.16.0/20', 'Trend Micro (IP4H-TRENDMICRO-09). ');
 
 // ASN 209181 ("Zenex 5ive Limited").
 // Constant port scanning and occasional spam detected from this network.
@@ -33303,7 +33302,7 @@ $ax += cidrblock($address, '46.151.80.0/21', 'Z.P.Vladimirovich (IP4H-ZPVLADIMIR
 // end, and particularly to avoid the risk of accidentally blocking Googlebot,
 // AdSense, or Google Fibre, only the ranges/addresses known to be affected will
 // be listed here.
-// Updated: 2022.06.22
+// Updated: 2022.06.22 / Modified: 2022.07.21
 
 $ax += cidrblock($address, '34.3.0.0/23', 'Google LLC (IP4H-GOOGLELLC-00). ');
 $ax += cidrblock($address, '34.3.4.0/24', 'Google LLC (IP4H-GOOGLELLC-01). ');
@@ -33399,8 +33398,9 @@ $ax += cidrblock($address, '108.177.16.0/24', 'Google LLC (IP4H-GOOGLELLC-90). '
 $ax += cidrblock($address, '130.41.85.0/24', 'Google LLC (IP4H-GOOGLELLC-91). ');
 $ax += cidrblock($address, '142.250.141.0/24', 'Google LLC (IP4H-GOOGLELLC-92). ');
 $ax += cidrblock($address, '198.235.24.0/24', 'Google LLC (IP4H-GOOGLELLC-93). ');
-$ax += cidrblock($address, '208.127.91.0/24', 'Google LLC (IP4H-GOOGLELLC-94). ');
-$ax += cidrblock($address, '209.85.214.0/24', 'Google LLC (IP4H-GOOGLELLC-95). ');
+$ax += cidrblock($address, '205.210.31.0/24', 'Google LLC (IP4H-GOOGLELLC-94). ');
+$ax += cidrblock($address, '208.127.91.0/24', 'Google LLC (IP4H-GOOGLELLC-95). ');
+$ax += cidrblock($address, '209.85.214.0/24', 'Google LLC (IP4H-GOOGLELLC-96). ');
 
 // ASN 35042 ("Layer7 Networks GmbH").
 // Webapp attacks, port scans, and hacking detected from here.
@@ -33522,6 +33522,37 @@ $ax += cidrblock($address, '149.127.218.0/23', 'High Family Technology (IP4H-HIG
 $ax += cidrblock($address, '149.127.232.0/24', 'High Family Technology (IP4H-HIGHFAMILYTECHNOLOGY-13). ');
 $ax += cidrblock($address, '198.44.160.0/24', 'High Family Technology (IP4H-HIGHFAMILYTECHNOLOGY-14). ');
 $ax += cidrblock($address, '198.44.165.0/24', 'High Family Technology (IP4H-HIGHFAMILYTECHNOLOGY-15). ');
+
+// ASN 55688 ("PT. Beon Intermedia").
+// Indonesian dedicated webhosting provider. Brute-force and SSH attacks, web
+// scraping, port scans, and hacking detected from here.
+// Updated: 2022.07.17
+
+$ax += cidrblock($address, '101.50.0.0/22', 'Beon Intermedia (IP4H-BEONINTERMEDIA-0). ');
+$ax += cidrblock($address, '103.27.206.0/23', 'Beon Intermedia (IP4H-BEONINTERMEDIA-1). ');
+$ax += cidrblock($address, '103.56.148.0/23', 'Beon Intermedia (IP4H-BEONINTERMEDIA-2). ');
+$ax += cidrblock($address, '103.157.96.0/23', 'Beon Intermedia (IP4H-BEONINTERMEDIA-3). ');
+$ax += cidrblock($address, '103.163.138.0/23', 'Beon Intermedia (IP4H-BEONINTERMEDIA-4). ');
+$ax += cidrblock($address, '103.166.156.0/23', 'Beon Intermedia (IP4H-BEONINTERMEDIA-5). ');
+
+// ASN 13706 ("CompleteWeb.Net LLC").
+// Brute-force and webapp attacks, hacking, port scans, and spam detected here.
+// Updated: 2022.07.21
+
+$ax += cidrblock($address, '147.124.194.0/24', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-00). ');
+$ax += cidrblock($address, '199.101.199.0/24', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-01). ');
+$ax += cidrblock($address, '204.235.60.0/22', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-02). ');
+$ax += cidrblock($address, '216.226.128.0/23', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-03). ');
+$ax += cidrblock($address, '216.226.131.0/24', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-04). ');
+$ax += cidrblock($address, '216.226.132.0/23', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-05). ');
+$ax += cidrblock($address, '216.226.134.0/24', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-06). ');
+$ax += cidrblock($address, '216.226.136.0/24', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-07). ');
+$ax += cidrblock($address, '216.226.139.0/24', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-08). ');
+$ax += cidrblock($address, '216.226.142.0/23', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-09). ');
+$ax += cidrblock($address, '216.226.144.0/21', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-10). ');
+$ax += cidrblock($address, '216.226.152.0/22', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-11). ');
+$ax += cidrblock($address, '216.226.156.0/23', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-12). ');
+$ax += cidrblock($address, '216.226.158.0/24', 'CompleteWeb.Net LLC (IP4H-COMPLETEWEBNETLLC-13). ');
 
 // Hurricane Electric bypasses.
 if (inmatch($whyblockout, '(IP4H-HURRICANEELECTRIC-', '') && $ax > 0) {
