@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2022.07.21
+ * This file last updated: 2022.08.05
  */
-$zbbversion .= ' / IP4X-129b';
+$zbbversion .= ' / IP4X-130';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -31,9 +31,11 @@ $ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
 
 // ---
 // ASN 205100 ("F3 Netze e.V").
-// Provides tor exit nodes. A significant source of spam.
+// Tor provider. Huge amounts of brute-force, SSH, webapp, WordPress/XMLRPC,
+// DDoS, and phishing attacks, hacking, port scans, sniffing for
+// vulnerabilities, IMAP flooding, and spam detected from here.
 // Caught masquerading as Baidu while sniffing for vulnerabilities.
-// Updated: 2018.04.23 / Checked: 2022.02.26
+// Updated: 2018.04.23 / Modified: 2022.07.22
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
 
@@ -88,9 +90,9 @@ $ax += cidrblock($address, '195.189.36.0/22', 'Packet Flip (IP4X-PACKETFLIP-43).
 $ax += cidrblock($address, '195.189.132.0/23', 'Packet Flip (IP4X-PACKETFLIP-44). ');
 
 // ASN 396507 ("Emerald Onion").
-// Anonymous tor endpoints here; Significant source of spam.
+// Tor provider. Significant source of spam.
 // Caught masquerading as Baidu while sniffing for vulnerabilities.
-// Updated: 2022.02.26
+// Updated: 2022.02.26 / Checked: 2022.07.22
 
 $ax += cidrblock($address, '23.129.64.0/24', 'Emerald Onion (IP4X-EMERALDONION-0). ');
 $ax += cidrblock($address, '23.190.144.0/24', 'Emerald Onion (IP4X-EMERALDONION-1). ');
@@ -1092,7 +1094,7 @@ $ax += cidrblock($address, '174.77.145.0/24', 'Beliefnet (IP4X-BELIEFNET-1). ');
 // Octopusnet VPN (mostly from AS44724, but we'll update via announces instead,
 // because we don't need to block the entire ASN, and there could be stray CIDRs
 // too). Proxy service with a history of spam events.
-// Updated: 2021.12.23
+// Updated: 2021.12.23 / Checked: 2022.07.22
 
 $ax += cidrblock($address, '46.46.0.0/20', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-0). ');
 $ax += cidrblock($address, '46.46.17.0/24', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-1). ');
@@ -1156,29 +1158,30 @@ $ax += cidrblock($address, '167.160.32.0/20', 'Web2Objects LLC (IP4X-WEB2OBJECTS
 $ax += cidrblock($address, '167.160.48.0/21', 'Web2Objects LLC (IP4X-WEB2OBJECTSLLC-40). ');
 
 // ASN 197640 ("OverPlay.Net LP").
-// A paid VPN provider and a source of spam.
-// Updated: 2021.02.07 / Checked: 2021.09.24
+// A paid VPN provider. Brute-force and SQLi attacks, port scans, hacking, and
+// spam detected from here.
+// Updated: 2022.08.05
 
 $ax += cidrblock($address, '185.147.213.0/24', 'OverPlay.Net LP (IP4X-OVERPLAYNETLP-0). ');
 
 // ASN 209854 ("Surfshark Ltd").
 // A paid VPN provider. Brute-force and SSH attacks detected from here.
-// Updated: 2021.11.03
+// Updated: 2022.08.05
 
 $ax += cidrblock($address, '31.169.120.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-00). ');
 $ax += cidrblock($address, '45.129.32.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-01). ');
 $ax += cidrblock($address, '45.134.224.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-02). ');
 $ax += cidrblock($address, '83.97.112.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-03). ');
 $ax += cidrblock($address, '176.227.240.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-04). ');
-$ax += cidrblock($address, '194.41.112.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-05). ');
-$ax += cidrblock($address, '194.41.114.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-06). ');
-$ax += cidrblock($address, '45.95.242.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-07). ');
-$ax += cidrblock($address, '45.130.137.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-08). ');
-$ax += cidrblock($address, '45.130.139.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-09). ');
-$ax += cidrblock($address, '45.149.3.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-10). ');
-$ax += cidrblock($address, '62.197.144.0/20', 'Surfshark Ltd (IP4X-SURFSHARKLTD-11). ');
-$ax += cidrblock($address, '91.190.100.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-12). ');
-$ax += cidrblock($address, '91.190.102.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-13). ');
+$ax += cidrblock($address, '196.44.118.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-05). ');
+$ax += cidrblock($address, '194.41.112.0/23', 'Surfshark Ltd (IP4X-SURFSHARKLTD-06). ');
+$ax += cidrblock($address, '194.41.114.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-07). ');
+$ax += cidrblock($address, '45.95.242.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-08). ');
+$ax += cidrblock($address, '45.130.137.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-09). ');
+$ax += cidrblock($address, '45.135.184.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-10). ');
+$ax += cidrblock($address, '45.149.3.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-11). ');
+$ax += cidrblock($address, '62.197.144.0/20', 'Surfshark Ltd (IP4X-SURFSHARKLTD-12). ');
+$ax += cidrblock($address, '91.190.100.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-13). ');
 $ax += cidrblock($address, '91.206.168.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-14). ');
 $ax += cidrblock($address, '92.62.120.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-15). ');
 $ax += cidrblock($address, '94.154.124.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-16). ');
@@ -1187,7 +1190,29 @@ $ax += cidrblock($address, '193.218.35.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-
 $ax += cidrblock($address, '194.26.131.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-19). ');
 $ax += cidrblock($address, '194.169.168.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-20). ');
 $ax += cidrblock($address, '212.119.32.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-21). ');
-$ax += cidrblock($address, '92.249.36.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-22). ');
+$ax += cidrblock($address, '213.109.151.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-22). ');
+$ax += cidrblock($address, '113.203.221.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-23). ');
+$ax += cidrblock($address, '92.249.36.0/22', 'Surfshark Ltd (IP4X-SURFSHARKLTD-24). ');
+
+// ASN 212200 ("ONION NETWORKS LTD").
+// Tor provider. Huge number of brute-force, SSH, webapp, and DDoS attacks,
+// hacking, port scans, and spam detected from here.
+// Updated: 2022.07.22
+
+$ax += cidrblock($address, '83.137.158.0/24', 'ONION NETWORKS LTD (IP4X-ONIONNETWORKSLTD-0). ');
+
+// ASN 398355 ("Data Ideas llc").
+// Tor provider. Brute-force and webapp attacks, port scans, hacking, and spam
+// detected from here.
+// Updated: 2022.08.05
+
+$ax += cidrblock($address, '23.128.248.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-0). ');
+$ax += cidrblock($address, '38.81.163.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-1). ');
+$ax += cidrblock($address, '38.87.162.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-2). ');
+$ax += cidrblock($address, '64.112.124.0/22', 'Data Ideas llc (IP4X-DATAIDEASLLC-3). ');
+$ax += cidrblock($address, '104.167.240.0/22', 'Data Ideas llc (IP4X-DATAIDEASLLC-4). ');
+$ax += cidrblock($address, '144.172.118.0/23', 'Data Ideas llc (IP4X-DATAIDEASLLC-5). ');
+$ax += cidrblock($address, '207.2.120.0/22', 'Data Ideas llc (IP4X-DATAIDEASLLC-6). ');
 
 // IP4X Test Trigger
 $ax += inmatch($query, 'xip4xx', 'IP4X Test Trigger. ');
