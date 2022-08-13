@@ -51,20 +51,7 @@ function fetch($File) {
     if (!is_file($File) || !is_readable($File)) {
         return false;
     }
-    static $Blocksize = 131072;
-    $Filesize = filesize($File);
-    $Size = ($Filesize && $Blocksize) ? ceil($Filesize / $Blocksize) : 0;
-    $Data = '';
-    if ($Size > 0) {
-        $Handle = fopen($File, 'rb');
-        $r = 0;
-        while ($r < $Size) {
-            $Data .= fread($Handle, $Blocksize);
-            $r++;
-        }
-        fclose($Handle);
-    }
-    return $Data ?: false;
+    return file_get_contents($File) ?: '';
 }
 
 function build($Files, $Ident, $HeadFile, $FootFile, $OutFile) {
@@ -126,7 +113,7 @@ function build($Files, $Ident, $HeadFile, $FootFile, $OutFile) {
     fclose($Handle);
 }
 
-$Path = 'C:/Projects/html/CIDRAM-v2/vault/';
+$Path = 'C:/Projects/html/CIDRAM-v3/vault/signatures/';
 
 build([$Path . 'ipv4.dat'], 'IP4H', 'ip4h_head.php', 'ip4h_foot.php', 'ip4_hosts.sig');
 build([$Path . 'ipv4_isps.dat'], 'IP4S', 'ip4s_head.php', 'ip4s_foot.php', 'ip4_isps.sig');

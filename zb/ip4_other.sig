@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2022.08.05
+ * This file last updated: 2022.08.13
  */
-$zbbversion .= ' / IP4X-130';
+$zbbversion .= ' / IP4X-130a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -35,7 +35,7 @@ $ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
 // DDoS, and phishing attacks, hacking, port scans, sniffing for
 // vulnerabilities, IMAP flooding, and spam detected from here.
 // Caught masquerading as Baidu while sniffing for vulnerabilities.
-// Updated: 2018.04.23 / Modified: 2022.07.22
+// Updated: 2018.04.23 / Modified: 2022.07.22 / Checked: 2022.08.13
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
 
