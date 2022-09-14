@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2022.09.04
+ * This file last updated: 2022.09.14
  */
-$zbbversion .= ' / IP4H-131';
+$zbbversion .= ' / IP4H-131a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -26618,7 +26618,7 @@ $ax += cidrblock($address, '217.170.192.0/20', 'ServeTheWorld AS (IP4H-SERVETHEW
 
 // ASN 43700 ("UAB CONSILIUM OPTIMUM").
 // Vulnerability scanner + unwanted traffic.
-// Updated: 2020.04.27 / Modified: 2021.02.02 / Checked: 2021.10.13
+// Updated: 2020.04.27 / Modified: 2021.02.02 / Checked: 2022.09.14
 
 $ax += cidrblock($address, '31.172.224.0/22', 'UAB CONSILIUM OPTIMUM (IP4H-UABCONSILIUMOPTIMUM-0). ');
 $ax += cidrblock($address, '45.84.244.0/22', 'UAB CONSILIUM OPTIMUM (IP4H-UABCONSILIUMOPTIMUM-1). ');
@@ -29577,7 +29577,7 @@ $ax += cidrblock($address, '172.94.92.0/24', 'Inios Oy (IP4H-INIOSOY-3). ');
 
 // ASN 42331 ("PE Freehost").
 // Webhosting provider caught hacking and performing webapp attacks.
-// Updated: 2021.03.02 / Checked: 2021.10.18
+// Updated: 2021.03.02 / Checked: 2022.09.14
 
 $ax += cidrblock($address, '91.206.30.0/23', 'PE Freehost (IP4H-PEFREEHOST-0). ');
 $ax += cidrblock($address, '178.20.152.0/21', 'PE Freehost (IP4H-PEFREEHOST-1). ');
@@ -29589,7 +29589,7 @@ $ax += cidrblock($address, '194.0.200.0/24', 'PE Freehost (IP4H-PEFREEHOST-5). '
 // ASN 396882 ("N3XTWORK LLC").
 // Webhosting provider. Weird requests encountered from here with unknown purpose.
 // No homepage available; No reports anywhere; No additional information found.
-// Updated: 2021.03.02 / Checked: 2021.10.18
+// Updated: 2021.03.02 / Checked: 2022.09.14
 
 $ax += cidrblock($address, '206.166.228.0/24', 'N3XTWORK LLC (IP4H-N3XTWORKLLC-0). ');
 $ax += cidrblock($address, '206.166.232.0/23', 'N3XTWORK LLC (IP4H-N3XTWORKLLC-1). ');
@@ -29706,16 +29706,18 @@ $ax += cidrblock($address, '134.239.192.0/22', 'ARABIAN INTERNET CO.LTD (IP4H-AR
 
 // ASNs 61003, 62563 ("GLOBALTELEHOST Corp").
 // Dedicated webhosting provider; Spam and port scans detected from here.
-// Updated: 2021.03.10 / Checked: 2021.11.03
+// Updated: 2022.09.12
 
-$ax += cidrblock($address, '134.195.196.0/22', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-0). ');
-$ax += cidrblock($address, '158.51.120.0/22', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-1). ');
-$ax += cidrblock($address, '198.57.26.0/23', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-2). ');
-$ax += cidrblock($address, '193.108.116.0/23', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-3). ');
-$ax += cidrblock($address, '193.108.118.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-4). ');
-$ax += cidrblock($address, '194.26.27.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-5). ');
-$ax += cidrblock($address, '38.111.114.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-6). ');
-$ax += cidrblock($address, '185.177.229.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-7). ');
+$ax += cidrblock($address, '134.195.196.0/22', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-00). ');
+$ax += cidrblock($address, '158.51.120.0/22', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-01). ');
+$ax += cidrblock($address, '198.57.26.0/23', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-02). ');
+$ax += cidrblock($address, '193.108.116.0/23', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-03). ');
+$ax += cidrblock($address, '193.108.118.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-04). ');
+$ax += cidrblock($address, '192.166.226.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-05). ');
+$ax += cidrblock($address, '45.135.12.0/22', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-06). ');
+$ax += cidrblock($address, '193.106.249.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-07). ');
+$ax += cidrblock($address, '38.111.114.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-08). ');
+$ax += cidrblock($address, '185.177.229.0/24', 'GLOBALTELEHOST Corp (IP4H-GLOBALTELEHOSTCORP-09). ');
 
 // ASN 53244 ("PRIMEHOST DO BRASIL LTDA").
 // Caught port scanning.
@@ -31018,17 +31020,27 @@ $ax += cidrblock($address, '213.142.159.0/24', 'Talha Bogaz (IP4H-TALHABOGAZ-12)
 $ax += cidrblock($address, '176.110.108.0/24', 'Logitel Ltd (IP4H-LOGITELLTD-0). ');
 $ax += cidrblock($address, '195.88.192.0/23', 'Logitel Ltd (IP4H-LOGITELLTD-1). ');
 
-// ASNs 209132, 209272 ("Alviva Holding Limited").
-// Commercial network. Port scans, hacking, brute-force, and webapp attacks
-// detected from here.
-// Updated: 2021.08.07 / Checked: 2022.05.09
+// ASNs 48721, 209132, 209272, 209588, 267784 ("Alviva Holding Limited",
+// "Flyservers S.A"). Commercial network. Port scans, hacking, brute-force, and
+// webapp attacks detected from here.
+// 1,581 (AS209588), 135 (AS267784).
+// Updated: 2022.09.12
 
-$ax += cidrblock($address, '88.214.26.0/23', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-0). ');
-$ax += cidrblock($address, '45.129.137.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-1). ');
-$ax += cidrblock($address, '45.227.252.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-2). ');
-$ax += cidrblock($address, '92.118.36.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-3). ');
-$ax += cidrblock($address, '185.232.67.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-4). ');
-$ax += cidrblock($address, '46.161.40.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-5). ');
+$ax += cidrblock($address, '179.60.147.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-00). ');
+$ax += cidrblock($address, '88.214.26.0/23', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-01). ');
+$ax += cidrblock($address, '45.129.137.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-02). ');
+$ax += cidrblock($address, '147.78.47.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-03). ');
+$ax += cidrblock($address, '141.98.9.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-04). ');
+$ax += cidrblock($address, '45.227.254.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-05). ');
+$ax += cidrblock($address, '141.98.81.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-06). ');
+$ax += cidrblock($address, '141.98.82.0/23', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-07). ');
+$ax += cidrblock($address, '194.165.16.0/23', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-08). ');
+$ax += cidrblock($address, '92.118.36.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-09). ');
+$ax += cidrblock($address, '185.232.67.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-10). ');
+$ax += cidrblock($address, '46.161.40.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-11). ');
+$ax += cidrblock($address, '81.19.135.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-12). ');
+$ax += cidrblock($address, '81.19.136.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-13). ');
+$ax += cidrblock($address, '193.57.40.0/24', 'Alviva Holding Limited (IP4H-ALVIVAHOLDINGLIMITED-14). ');
 
 // ASN 45045 ("FOP Kazakov Oleksandr Oleksandrovich").
 // Hacking, brute-force, webapp attacks, and spam detected from here.
@@ -34572,6 +34584,22 @@ $ax += cidrblock($address, '193.162.129.0/24', 'HostIran (IP4H-HOSTIRAN-16). ');
 $ax += cidrblock($address, '83.136.237.0/24', 'Star Network (IP4H-STARNETWORK-0). ');
 $ax += cidrblock($address, '185.131.176.0/22', 'Star Network (IP4H-STARNETWORK-1). ');
 $ax += cidrblock($address, '185.151.199.0/24', 'Star Network (IP4H-STARNETWORK-2). ');
+
+// ASN 211298 ("Constantine Cybersecurity Ltd").
+// Conducts "internet research". More than 500,000+ reported instances of port
+// scans from here. Heavy hitter, floods of useless traffic, and reports of
+// hacking and other unwanted traffic detected from here.
+// Updated: 2022.09.12
+
+$ax += cidrblock($address, '87.236.176.0/24', 'cyber.casa (IP4H-CYBERCASA-0). ');
+$ax += cidrblock($address, '193.163.125.0/24', 'cyber.casa (IP4H-CYBERCASA-1). ');
+
+// ASN 198718 ("AO SEVERSVJAZ").
+// Russian server farm. Brute-force, SSH, and telnet attacks, port scans, and
+// hacking detected from here.
+// Updated: 2022.09.12
+
+$ax += cidrblock($address, '176.121.208.0/20', 'AO SEVERSVJAZ (IP4H-AOSEVERSVJAZ-0). ');
 
 // Hurricane Electric bypasses.
 if (inmatch($whyblockout, '(IP4H-HURRICANEELECTRIC-', '') && $ax > 0) {
