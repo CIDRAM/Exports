@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2023.02.11
+ * This file last updated: 2023.02.21
  */
-$zbbversion .= ' / IP4X-136a';
+$zbbversion .= ' / IP4X-136b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1117,15 +1117,6 @@ $ax += cidrblock($address, '220.154.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUS
 $ax += cidrblock($address, '223.169.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUSDROPEDROP-1008). ');
 $ax += cidrblock($address, '223.173.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUSDROPEDROP-1009). ');
 $ax += cidrblock($address, '223.254.0.0/16', 'Spamhaus DROP/EDROP (IP4X-SPAMHAUSDROPEDROP-1010). ');
-
-// Split from SFS toxic CIDRs to separate sections for stronger capturing.
-// Duplicates, bogons, etc removed.
-// Refer stopforumspam.com/downloads/toxic_ip_cidr.txt
-// Updated: 2019.10.23 / Checked: 2022.02.25
-
-// "Beliefnet".
-$ax += cidrblock($address, '174.76.30.0/24', 'Beliefnet (IP4X-BELIEFNET-0). ');
-$ax += cidrblock($address, '174.77.145.0/24', 'Beliefnet (IP4X-BELIEFNET-1). ');
 
 // Octopusnet VPN (mostly from AS44724, but we'll update via announces instead,
 // because we don't need to block the entire ASN, and there could be stray CIDRs
