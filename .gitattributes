@@ -2,11 +2,16 @@
 # https://help.github.com/articles/dealing-with-line-endings/
 
 * text eol=lf
-*.dat binary
 *.png binary
-*.sig binary
 
 # Refer to:
 # https://github.com/github/linguist
 
-zb/*.sig linguist-language=PHP
+*.md linguist-documentation
+
+# Going to be a bit more explicit about languages in order to ensure that files
+# are detected and identified *correctly*. Refer to:
+# https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml
+
+*.htaccess linguist-language=ApacheConf
+*.sig linguist-language=PHP
