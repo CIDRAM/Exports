@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2023.08.01
+ * This file last updated: 2023.08.10
  */
-$zbbversion .= ' / IP4X-142';
+$zbbversion .= ' / IP4X-142a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1565,6 +1565,24 @@ $ax += cidrblock($address, '216.82.192.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGY
 // Updated: 2023.07.15
 
 $ax += cidrblock($address, '2.56.164.0/24', 'Ambyre LLC (IP4X-AMBYRELLC-0). ');
+
+// ASN 16652 ("Riseup Networks").
+// Webmail and VPN provider. Port scans and other unusual traffic detected from
+// some specific addresses here. Listing just the affected addresses only.
+// Updated: 2023.08.08
+
+$ax += cidrblock($address, '198.252.153.28/32', 'Riseup Networks (IP4X-RISEUPNETWORKS-0). ');
+$ax += cidrblock($address, '198.252.153.129/32', 'Riseup Networks (IP4X-RISEUPNETWORKS-1). ');
+
+// ASN 397540 ("Windscribe").
+// Canadian VPN provider (not formally an ISP, but used for internet access by
+// some users and as a proxy nonetheless). Caught probing for "wlwmanifest.xml".
+// Brute-force, XMLRPC, and webapp attacks, hacking (particularly against
+// WordPress websites) and spam detected from here. Listing just the affected
+// ranges/addresses only.
+// Updated: 2022.08.01 / Checked: 2023.08.08
+
+$ax += cidrblock($address, '149.57.28.0/24', 'Windscribe (IP4X-WINDSCRIBE-0). ');
 
 // IP4X Test Trigger
 $ax += inmatch($query, 'xip4xx', 'IP4X Test Trigger. ');
