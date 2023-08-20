@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2023.08.10
+ * This file last updated: 2023.08.20
  */
-$zbbversion .= ' / IP4X-142a';
+$zbbversion .= ' / IP4X-142b';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1583,6 +1583,13 @@ $ax += cidrblock($address, '198.252.153.129/32', 'Riseup Networks (IP4X-RISEUPNE
 // Updated: 2022.08.01 / Checked: 2023.08.08
 
 $ax += cidrblock($address, '149.57.28.0/24', 'Windscribe (IP4X-WINDSCRIBE-0). ');
+
+// ASN 208476 ("Danilenko, Artyom").
+// VPN and tor provider. Hacking and brute-force attacks detected from here.
+// Listing just the affected ranges/addresses only.
+// Updated: 2023.08.20
+
+$ax += cidrblock($address, '194.147.140.0/24', 'privacyfirst.digital (IP4X-PRIVACYFIRSTDIGITAL-0). ');
 
 // IP4X Test Trigger
 $ax += inmatch($query, 'xip4xx', 'IP4X Test Trigger. ');
