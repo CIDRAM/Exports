@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2024.02.04
+ * This file last updated: 2024.02.21
  */
-$zbbversion .= ' / IP4X-148';
+$zbbversion .= ' / IP4X-148a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -43,56 +43,6 @@ $ax += cidrblock($address, '224.0.0.0/3', 'IPv4 Bogons (IP4X-IPV4BOGONS-1). ');
 // Updated: 2018.04.23 / Modified: 2022.07.22 / Checked: 2023.11.11
 
 $ax += cidrblock($address, '185.220.100.0/24', 'F3 Netze e.V (IP4X-F3NETZEEV-0). ');
-
-// ASN 209519 ("Packet Flip, LLC").
-// Proxy service sometimes used by spammmers and other nefarious entities.
-// Updated: 2021.02.02 / Checked: 2023.04.06
-
-$ax += cidrblock($address, '31.207.8.0/21', 'Packet Flip (IP4X-PACKETFLIP-00). ');
-$ax += cidrblock($address, '31.207.16.0/20', 'Packet Flip (IP4X-PACKETFLIP-01). ');
-$ax += cidrblock($address, '46.102.148.0/22', 'Packet Flip (IP4X-PACKETFLIP-02). ');
-$ax += cidrblock($address, '74.91.32.0/20', 'Packet Flip (IP4X-PACKETFLIP-03). ');
-$ax += cidrblock($address, '80.240.103.0/24', 'Packet Flip (IP4X-PACKETFLIP-04). ');
-$ax += cidrblock($address, '80.240.108.0/23', 'Packet Flip (IP4X-PACKETFLIP-05). ');
-$ax += cidrblock($address, '80.240.111.0/24', 'Packet Flip (IP4X-PACKETFLIP-06). ');
-$ax += cidrblock($address, '82.97.192.0/23', 'Packet Flip (IP4X-PACKETFLIP-07). ');
-$ax += cidrblock($address, '82.97.196.0/23', 'Packet Flip (IP4X-PACKETFLIP-08). ');
-$ax += cidrblock($address, '82.97.199.0/24', 'Packet Flip (IP4X-PACKETFLIP-09). ');
-$ax += cidrblock($address, '82.97.200.0/24', 'Packet Flip (IP4X-PACKETFLIP-10). ');
-$ax += cidrblock($address, '84.247.32.0/22', 'Packet Flip (IP4X-PACKETFLIP-11). ');
-$ax += cidrblock($address, '86.105.160.0/22', 'Packet Flip (IP4X-PACKETFLIP-12). ');
-$ax += cidrblock($address, '86.106.120.0/24', 'Packet Flip (IP4X-PACKETFLIP-13). ');
-$ax += cidrblock($address, '89.32.184.0/24', 'Packet Flip (IP4X-PACKETFLIP-14). ');
-$ax += cidrblock($address, '89.32.203.0/24', 'Packet Flip (IP4X-PACKETFLIP-15). ');
-$ax += cidrblock($address, '89.35.164.0/22', 'Packet Flip (IP4X-PACKETFLIP-16). ');
-$ax += cidrblock($address, '89.36.232.0/22', 'Packet Flip (IP4X-PACKETFLIP-17). ');
-$ax += cidrblock($address, '89.37.28.0/24', 'Packet Flip (IP4X-PACKETFLIP-18). ');
-$ax += cidrblock($address, '89.38.106.0/23', 'Packet Flip (IP4X-PACKETFLIP-19). ');
-$ax += cidrblock($address, '89.39.150.0/24', 'Packet Flip (IP4X-PACKETFLIP-20). ');
-$ax += cidrblock($address, '89.40.108.0/23', 'Packet Flip (IP4X-PACKETFLIP-21). ');
-$ax += cidrblock($address, '89.42.48.0/23', 'Packet Flip (IP4X-PACKETFLIP-22). ');
-$ax += cidrblock($address, '89.43.51.0/24', 'Packet Flip (IP4X-PACKETFLIP-23). ');
-$ax += cidrblock($address, '89.43.68.0/23', 'Packet Flip (IP4X-PACKETFLIP-24). ');
-$ax += cidrblock($address, '89.44.213.0/24', 'Packet Flip (IP4X-PACKETFLIP-25). ');
-$ax += cidrblock($address, '89.46.132.0/22', 'Packet Flip (IP4X-PACKETFLIP-26). ');
-$ax += cidrblock($address, '89.47.63.0/24', 'Packet Flip (IP4X-PACKETFLIP-27). ');
-$ax += cidrblock($address, '93.114.92.0/22', 'Packet Flip (IP4X-PACKETFLIP-28). ');
-$ax += cidrblock($address, '93.115.48.0/22', 'Packet Flip (IP4X-PACKETFLIP-29). ');
-$ax += cidrblock($address, '93.115.102.0/23', 'Packet Flip (IP4X-PACKETFLIP-30). ');
-$ax += cidrblock($address, '93.118.40.0/22', 'Packet Flip (IP4X-PACKETFLIP-31). ');
-$ax += cidrblock($address, '185.125.64.0/22', 'Packet Flip (IP4X-PACKETFLIP-32). ');
-$ax += cidrblock($address, '188.210.94.0/23', 'Packet Flip (IP4X-PACKETFLIP-33). ');
-$ax += cidrblock($address, '188.212.120.0/24', 'Packet Flip (IP4X-PACKETFLIP-34). ');
-$ax += cidrblock($address, '188.214.40.0/21', 'Packet Flip (IP4X-PACKETFLIP-35). ');
-$ax += cidrblock($address, '188.240.32.0/22', 'Packet Flip (IP4X-PACKETFLIP-36). ');
-$ax += cidrblock($address, '193.107.245.0/24', 'Packet Flip (IP4X-PACKETFLIP-37). ');
-$ax += cidrblock($address, '193.107.246.0/23', 'Packet Flip (IP4X-PACKETFLIP-38). ');
-$ax += cidrblock($address, '193.124.240.0/22', 'Packet Flip (IP4X-PACKETFLIP-39). ');
-$ax += cidrblock($address, '194.58.24.0/22', 'Packet Flip (IP4X-PACKETFLIP-40). ');
-$ax += cidrblock($address, '194.58.216.0/22', 'Packet Flip (IP4X-PACKETFLIP-41). ');
-$ax += cidrblock($address, '194.135.48.0/22', 'Packet Flip (IP4X-PACKETFLIP-42). ');
-$ax += cidrblock($address, '195.189.36.0/22', 'Packet Flip (IP4X-PACKETFLIP-43). ');
-$ax += cidrblock($address, '195.189.132.0/23', 'Packet Flip (IP4X-PACKETFLIP-44). ');
 
 // ASN 396507 ("Emerald Onion").
 // Tor provider. Significant source of spam.
@@ -1386,7 +1336,7 @@ $ax += cidrblock($address, '213.5.16.0/22', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-
 $ax += cidrblock($address, '2a04:db80::/32', 'Octopusnet VPN (IP4X-OCTOPUSNETVPN-13). ');
 
 // ASN 208323 ("Foundation for Applied Privacy").
-// Updated: 2019.10.02 / Checked: 2023.04.06
+// Updated: 2019.10.02 / Checked: 2024.02.11
 
 $ax += cidrblock($address, '109.70.100.0/24', 'Applied Privacy (IP4X-APPLIEDPRIVACY-0). ');
 
