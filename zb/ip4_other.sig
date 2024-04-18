@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2024.04.06
+ * This file last updated: 2024.04.18
  */
-$zbbversion .= ' / IP4X-150';
+$zbbversion .= ' / IP4X-150a';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1561,24 +1561,35 @@ $ax += cidrblock($address, '192.177.44.0/24', 'Surfshark Ltd (IP4X-SURFSHARKLTD-
 // ASN 398355 ("Data Ideas llc").
 // Tor provider. Brute-force and webapp attacks, port scans, hacking, and spam
 // detected from here.
-// Updated: 2023.06.10
+// Updated: 2024.04.17
 
-$ax += cidrblock($address, '38.81.163.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-0). ');
-$ax += cidrblock($address, '38.87.162.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-1). ');
-$ax += cidrblock($address, '104.167.240.0/22', 'Data Ideas llc (IP4X-DATAIDEASLLC-2). ');
-$ax += cidrblock($address, '144.172.118.0/23', 'Data Ideas llc (IP4X-DATAIDEASLLC-3). ');
+$ax += cidrblock($address, '104.234.208.0/23', 'Data Ideas llc (IP4X-DATAIDEASLLC-00). ');
+$ax += cidrblock($address, '80.240.86.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-01). ');
+$ax += cidrblock($address, '45.146.107.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-02). ');
+$ax += cidrblock($address, '185.193.166.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-03). ');
+$ax += cidrblock($address, '23.26.251.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-04). ');
+$ax += cidrblock($address, '38.81.163.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-05). ');
+$ax += cidrblock($address, '38.87.162.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-06). ');
+$ax += cidrblock($address, '64.112.124.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-07). ');
+$ax += cidrblock($address, '104.167.240.0/22', 'Data Ideas llc (IP4X-DATAIDEASLLC-08). ');
+$ax += cidrblock($address, '140.99.209.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-09). ');
+$ax += cidrblock($address, '144.172.118.0/23', 'Data Ideas llc (IP4X-DATAIDEASLLC-10). ');
+$ax += cidrblock($address, '146.103.22.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-11). ');
+$ax += cidrblock($address, '166.0.248.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-12). ');
+$ax += cidrblock($address, '206.168.212.0/22', 'Data Ideas llc (IP4X-DATAIDEASLLC-13). ');
+$ax += cidrblock($address, '207.2.123.0/24', 'Data Ideas llc (IP4X-DATAIDEASLLC-14). ');
+$ax += cidrblock($address, '216.247.96.0/23', 'Data Ideas llc (IP4X-DATAIDEASLLC-15). ');
 
 // ASN 55103 ("Thin-nology, LLC").
 // Colo and webhosting provider which hosts Tor services.
 // Brute-force, SSH, DDoS, WordPress/XMLRPC, and webapp attacks, port scans,
 // hacking, and spam detected from here.
-// Updated: 2023.06.10
+// Updated: 2024.04.17
 
-$ax += cidrblock($address, '23.128.248.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-0). ');
-$ax += cidrblock($address, '24.155.145.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-1). ');
-$ax += cidrblock($address, '104.202.252.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-2). ');
-$ax += cidrblock($address, '205.166.246.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-3). ');
-$ax += cidrblock($address, '216.82.192.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-4). ');
+$ax += cidrblock($address, '24.155.145.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-0). ');
+$ax += cidrblock($address, '104.202.252.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-1). ');
+$ax += cidrblock($address, '205.166.246.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-2). ');
+$ax += cidrblock($address, '216.82.192.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-3). ');
 
 // ASN 1004 ("Ambyre LLC").
 // Tor provider. Brute-force, WordPress/XMLRPC, SSH, router exploit, and webapp
