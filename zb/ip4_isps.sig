@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2024.08.22
+ * This file last updated: 2024.09.01
  */
-$zbbversion .= ' / IP4S-154a';
+$zbbversion .= ' / IP4S-155';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1523,41 +1523,18 @@ $ax += cidrblock($address, '223.29.193.0/24', 'MEGHBELA BROADBAND (IP4S-MEGHBELA
 // Indian mobile and internet provider. Brute-force, SSH, and webapp attacks,
 // port scans, hacking, and spam detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2023.09.21
+// Updated: 2024.08.25
 
-$ax += cidrblock($address, '49.14.128.0/24', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-00). ');
-$ax += cidrblock($address, '49.15.240.70/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-01). ');
-$ax += cidrblock($address, '49.15.240.74/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-02). ');
-$ax += cidrblock($address, '49.15.240.200/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-03). ');
-$ax += cidrblock($address, '49.15.241.34/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-04). ');
-$ax += cidrblock($address, '49.15.241.103/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-05). ');
-$ax += cidrblock($address, '49.15.241.211/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-06). ');
-$ax += cidrblock($address, '49.15.241.222/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-07). ');
-$ax += cidrblock($address, '106.66.28.15/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-08). ');
-$ax += cidrblock($address, '106.66.28.59/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-09). ');
-$ax += cidrblock($address, '106.66.40.22/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-10). ');
-$ax += cidrblock($address, '106.66.40.140/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-11). ');
-$ax += cidrblock($address, '106.66.40.180/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-12). ');
-$ax += cidrblock($address, '106.66.40.250/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-13). ');
-$ax += cidrblock($address, '106.66.41.109/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-14). ');
-$ax += cidrblock($address, '106.66.42.241/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-15). ');
-$ax += cidrblock($address, '106.76.252.46/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-16). ');
-$ax += cidrblock($address, '106.77.78.4/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-17). ');
-$ax += cidrblock($address, '106.77.78.65/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-18). ');
-$ax += cidrblock($address, '106.77.78.152/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-19). ');
-$ax += cidrblock($address, '106.77.79.24/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-20). ');
-$ax += cidrblock($address, '106.77.79.137/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-21). ');
-$ax += cidrblock($address, '106.77.79.198/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-22). ');
-$ax += cidrblock($address, '106.77.79.205/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-23). ');
-$ax += cidrblock($address, '106.77.79.231/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-24). ');
-$ax += cidrblock($address, '106.78.51.100/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-25). ');
-$ax += cidrblock($address, '106.78.51.117/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-26). ');
-$ax += cidrblock($address, '106.78.52.187/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-27). ');
-$ax += cidrblock($address, '106.78.83.15/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-28). ');
-$ax += cidrblock($address, '106.78.83.198/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-29). ');
-$ax += cidrblock($address, '106.79.200.0/24', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-30). ');
-$ax += cidrblock($address, '106.79.201.26/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-31). ');
-$ax += cidrblock($address, '106.79.202.45/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-32). ');
+$ax += cidrblock($address, '1.187.221.253/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-00). ');
+$ax += cidrblock($address, '1.187.222.105/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-01). ');
+$ax += cidrblock($address, '49.14.128.0/24', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-02). ');
+$ax += cidrblock($address, '49.14.165.238/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-03). ');
+$ax += cidrblock($address, '49.15.240.0/23', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-04). ');
+$ax += cidrblock($address, '106.66.40.0/23', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-05). ');
+$ax += cidrblock($address, '106.76.95.166/32', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-06). ');
+$ax += cidrblock($address, '106.77.78.0/23', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-07). ');
+$ax += cidrblock($address, '106.78.83.0/24', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-08). ');
+$ax += cidrblock($address, '106.79.200.0/21', 'Idea Cellular Ltd (IP4S-IDEACELLULARLTD-09). ');
 
 // ASN 15895 ('"Kyivstar" PJSC').
 // Absolutely **INSANE** levels of spam coming from this network!! Shouldn't
@@ -5655,40 +5632,31 @@ $ax += cidrblock($address, '180.178.135.170/32', 'SHARP TELECOM (IP4S-SHARPTELEC
 // ASN 24812 ("NPK Home-Net Ltd").
 // Ukrainian domestic ISP. Port scans, hacking, and spam detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2023.09.24
+// Updated: 2024.09.01
 
 $ax += cidrblock($address, '91.225.4.0/24', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-00). ');
-$ax += cidrblock($address, '176.105.192.21/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-01). ');
-$ax += cidrblock($address, '176.105.192.116/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-02). ');
-$ax += cidrblock($address, '176.105.198.0/24', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-03). ');
-$ax += cidrblock($address, '176.105.203.35/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-04). ');
-$ax += cidrblock($address, '176.105.203.124/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-05). ');
-$ax += cidrblock($address, '176.105.203.253/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-06). ');
-$ax += cidrblock($address, '176.105.209.153/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-07). ');
-$ax += cidrblock($address, '176.105.209.169/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-08). ');
-$ax += cidrblock($address, '176.105.209.182/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-09). ');
-$ax += cidrblock($address, '176.105.210.0/24', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-10). ');
-$ax += cidrblock($address, '176.105.217.2/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-11). ');
-$ax += cidrblock($address, '176.105.217.28/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-12). ');
-$ax += cidrblock($address, '176.105.217.38/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-13). ');
-$ax += cidrblock($address, '176.105.217.61/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-14). ');
-$ax += cidrblock($address, '176.105.217.99/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-15). ');
-$ax += cidrblock($address, '176.105.217.103/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-16). ');
-$ax += cidrblock($address, '176.105.217.157/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-17). ');
-$ax += cidrblock($address, '176.105.219.73/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-18). ');
-$ax += cidrblock($address, '176.105.219.118/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-19). ');
-$ax += cidrblock($address, '176.105.219.122/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-20). ');
-$ax += cidrblock($address, '176.105.219.184/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-21). ');
-$ax += cidrblock($address, '176.105.222.200/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-22). ');
+$ax += cidrblock($address, '176.105.192.0/24', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-01). ');
+$ax += cidrblock($address, '176.105.198.0/24', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-02). ');
+$ax += cidrblock($address, '176.105.203.35/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-03). ');
+$ax += cidrblock($address, '176.105.203.170/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-04). ');
+$ax += cidrblock($address, '176.105.203.204/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-05). ');
+$ax += cidrblock($address, '176.105.209.0/24', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-06). ');
+$ax += cidrblock($address, '176.105.210.0/24', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-07). ');
+$ax += cidrblock($address, '176.105.217.0/24', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-08). ');
+$ax += cidrblock($address, '176.105.219.73/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-09). ');
+$ax += cidrblock($address, '176.105.219.87/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-10). ');
+$ax += cidrblock($address, '176.105.219.118/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-11). ');
+$ax += cidrblock($address, '176.105.219.179/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-12). ');
+$ax += cidrblock($address, '176.105.219.186/32', 'NPK Home-Net Ltd (IP4S-NPKHOMENETLTD-13). ');
 
 // ASNs 8570, 8675, 12332, 12380, 12683, 12730, 13056, 13118, 15468, 15759,
-// 16301, 21017, 21479, 21487, 24699, 25490, 25515, 29456, 33934, 34267, 34584,
-// 39407, 41134, 42610, 43574 ("PJSC Rostelecom").
+// 16301, 21017, 21378, 21479, 21487, 24699, 25490, 25515, 29456, 33934, 34267,
+// 34584, 35125, 39407, 41134, 42610, 43574 ("PJSC Rostelecom").
 // Major Russian domestic ISP. Brute-force, SSH, DDoS, SQLi, and webapp attacks,
 // port scans, hacking, and significant amounts of spam detected from here.
 // Listing just the affected ranges/addresses only. (Subtract below from this
 // section when updating to avoid duplicates via interlacing).
-// Updated: 2023.10.28
+// Updated: 2023.10.28 / Modified: 2024.09.01
 
 $ax += cidrblock($address, '5.228.168.169/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-00). ');
 $ax += cidrblock($address, '37.110.6.86/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-01). ');
@@ -5715,34 +5683,49 @@ $ax += cidrblock($address, '77.37.136.139/32', 'PJSC Rostelecom (IP4S-PJSCROSTEL
 $ax += cidrblock($address, '77.37.208.49/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-22). ');
 $ax += cidrblock($address, '77.37.208.110/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-23). ');
 $ax += cidrblock($address, '77.37.208.205/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-24). ');
-$ax += cidrblock($address, '80.248.157.242/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-25). ');
-$ax += cidrblock($address, '82.151.114.197/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-26). ');
-$ax += cidrblock($address, '82.151.114.244/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-27). ');
-$ax += cidrblock($address, '83.221.222.22/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-28). ');
-$ax += cidrblock($address, '83.221.222.62/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-29). ');
-$ax += cidrblock($address, '83.221.222.124/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-30). ');
-$ax += cidrblock($address, '83.221.222.241/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-31). ');
-$ax += cidrblock($address, '87.240.52.143/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-32). ');
-$ax += cidrblock($address, '94.233.26.134/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-33). ');
-$ax += cidrblock($address, '95.84.132.91/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-34). ');
-$ax += cidrblock($address, '95.84.132.179/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-35). ');
-$ax += cidrblock($address, '95.84.248.246/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-36). ');
-$ax += cidrblock($address, '109.173.45.221/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-37). ');
-$ax += cidrblock($address, '109.173.96.29/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-38). ');
-$ax += cidrblock($address, '178.140.136.62/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-39). ');
-$ax += cidrblock($address, '178.140.139.52/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-40). ');
-$ax += cidrblock($address, '178.140.139.142/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-41). ');
-$ax += cidrblock($address, '188.32.247.106/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-42). ');
-$ax += cidrblock($address, '188.255.25.235/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-43). ');
-$ax += cidrblock($address, '195.34.242.72/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-44). ');
-$ax += cidrblock($address, '195.34.242.172/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-45). ');
-$ax += cidrblock($address, '212.12.20.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-46). ');
-$ax += cidrblock($address, '212.58.200.126/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-47). ');
-$ax += cidrblock($address, '213.210.67.186/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-48). ');
+$ax += cidrblock($address, '80.246.81.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-25). ');
+$ax += cidrblock($address, '80.246.94.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-26). ');
+$ax += cidrblock($address, '80.248.157.242/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-27). ');
+$ax += cidrblock($address, '81.27.146.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-28). ');
+$ax += cidrblock($address, '81.27.147.35/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-29). ');
+$ax += cidrblock($address, '81.27.153.50/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-30). ');
+$ax += cidrblock($address, '81.27.153.210/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-31). ');
+$ax += cidrblock($address, '81.27.154.108/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-32). ');
+$ax += cidrblock($address, '81.27.155.65/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-33). ');
+$ax += cidrblock($address, '81.27.157.238/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-34). ');
+$ax += cidrblock($address, '82.151.114.197/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-35). ');
+$ax += cidrblock($address, '82.151.114.244/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-36). ');
+$ax += cidrblock($address, '83.221.222.22/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-37). ');
+$ax += cidrblock($address, '83.221.222.62/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-38). ');
+$ax += cidrblock($address, '83.221.222.124/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-39). ');
+$ax += cidrblock($address, '83.221.222.241/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-40). ');
+$ax += cidrblock($address, '84.53.198.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-41). ');
+$ax += cidrblock($address, '84.53.216.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-42). ');
+$ax += cidrblock($address, '84.53.229.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-43). ');
+$ax += cidrblock($address, '85.94.26.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-44). ');
+$ax += cidrblock($address, '87.240.52.143/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-45). ');
+$ax += cidrblock($address, '94.233.26.134/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-46). ');
+$ax += cidrblock($address, '95.84.132.91/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-47). ');
+$ax += cidrblock($address, '95.84.132.179/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-48). ');
+$ax += cidrblock($address, '95.84.248.246/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-49). ');
+$ax += cidrblock($address, '109.173.45.221/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-50). ');
+$ax += cidrblock($address, '109.173.96.29/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-51). ');
+$ax += cidrblock($address, '178.140.136.62/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-52). ');
+$ax += cidrblock($address, '178.140.139.52/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-53). ');
+$ax += cidrblock($address, '178.140.139.142/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-54). ');
+$ax += cidrblock($address, '188.32.247.106/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-55). ');
+$ax += cidrblock($address, '188.255.25.235/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-56). ');
+$ax += cidrblock($address, '195.34.242.72/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-57). ');
+$ax += cidrblock($address, '195.34.242.172/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-58). ');
+$ax += cidrblock($address, '212.3.142.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-59). ');
+$ax += cidrblock($address, '212.3.150.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-60). ');
+$ax += cidrblock($address, '212.12.20.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-61). ');
+$ax += cidrblock($address, '212.58.200.126/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-62). ');
+$ax += cidrblock($address, '213.210.67.186/32', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-63). ');
 
 // ASN 12389 ("PJSC Rostelecom").
 // Russian domestic ISP. Listing this particular ASN in its entirety.
-// Updated: 2023.10.15
+// Updated: 2024.09.01
 
 $ax += cidrblock($address, '95.47.152.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-000). ');
 $ax += cidrblock($address, '95.182.111.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-001). ');
@@ -5760,915 +5743,880 @@ $ax += cidrblock($address, '31.172.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELE
 $ax += cidrblock($address, '31.180.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-013). ');
 $ax += cidrblock($address, '31.192.162.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-014). ');
 $ax += cidrblock($address, '31.192.169.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-015). ');
-$ax += cidrblock($address, '31.192.171.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-016). ');
-$ax += cidrblock($address, '31.192.179.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-017). ');
-$ax += cidrblock($address, '31.192.181.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-018). ');
-$ax += cidrblock($address, '31.192.187.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-019). ');
-$ax += cidrblock($address, '31.192.188.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-020). ');
-$ax += cidrblock($address, '31.204.96.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-021). ');
-$ax += cidrblock($address, '37.1.64.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-022). ');
-$ax += cidrblock($address, '37.19.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-023). ');
-$ax += cidrblock($address, '37.19.48.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-024). ');
-$ax += cidrblock($address, '37.20.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-025). ');
-$ax += cidrblock($address, '37.72.176.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-026). ');
-$ax += cidrblock($address, '37.76.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-027). ');
-$ax += cidrblock($address, '37.78.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-028). ');
-$ax += cidrblock($address, '45.80.64.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-029). ');
-$ax += cidrblock($address, '46.41.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-030). ');
-$ax += cidrblock($address, '46.45.192.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-031). ');
-$ax += cidrblock($address, '46.45.211.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-032). ');
-$ax += cidrblock($address, '46.45.219.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-033). ');
-$ax += cidrblock($address, '46.45.221.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-034). ');
-$ax += cidrblock($address, '46.45.227.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-035). ');
-$ax += cidrblock($address, '46.45.235.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-036). ');
-$ax += cidrblock($address, '46.45.236.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-037). ');
-$ax += cidrblock($address, '46.45.238.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-038). ');
-$ax += cidrblock($address, '46.48.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-039). ');
-$ax += cidrblock($address, '46.52.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-040). ');
-$ax += cidrblock($address, '46.61.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-041). ');
-$ax += cidrblock($address, '46.63.128.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-042). ');
-$ax += cidrblock($address, '46.63.132.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-043). ');
-$ax += cidrblock($address, '46.63.134.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-044). ');
-$ax += cidrblock($address, '46.63.139.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-045). ');
-$ax += cidrblock($address, '46.63.140.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-046). ');
-$ax += cidrblock($address, '46.63.146.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-047). ');
-$ax += cidrblock($address, '46.63.148.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-048). ');
-$ax += cidrblock($address, '46.63.151.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-049). ');
-$ax += cidrblock($address, '46.63.152.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-050). ');
-$ax += cidrblock($address, '46.63.156.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-051). ');
-$ax += cidrblock($address, '46.63.163.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-052). ');
-$ax += cidrblock($address, '46.63.168.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-053). ');
-$ax += cidrblock($address, '46.63.174.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-054). ');
-$ax += cidrblock($address, '46.63.176.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-055). ');
-$ax += cidrblock($address, '46.63.179.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-056). ');
-$ax += cidrblock($address, '46.63.180.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-057). ');
-$ax += cidrblock($address, '46.63.182.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-058). ');
-$ax += cidrblock($address, '46.63.184.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-059). ');
-$ax += cidrblock($address, '46.63.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-060). ');
-$ax += cidrblock($address, '46.63.224.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-061). ');
-$ax += cidrblock($address, '46.63.230.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-062). ');
-$ax += cidrblock($address, '46.63.232.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-063). ');
-$ax += cidrblock($address, '46.63.240.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-064). ');
-$ax += cidrblock($address, '46.150.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-065). ');
-$ax += cidrblock($address, '46.158.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-066). ');
-$ax += cidrblock($address, '46.235.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-067). ');
-$ax += cidrblock($address, '46.235.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-068). ');
-$ax += cidrblock($address, '46.235.248.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-069). ');
-$ax += cidrblock($address, '46.237.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-070). ');
-$ax += cidrblock($address, '46.237.32.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-071). ');
-$ax += cidrblock($address, '46.237.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-072). ');
-$ax += cidrblock($address, '46.243.254.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-073). ');
-$ax += cidrblock($address, '62.105.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-074). ');
-$ax += cidrblock($address, '62.109.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-075). ');
-$ax += cidrblock($address, '62.148.157.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-076). ');
-$ax += cidrblock($address, '62.148.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-077). ');
-$ax += cidrblock($address, '62.165.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-078). ');
-$ax += cidrblock($address, '62.183.16.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-079). ');
-$ax += cidrblock($address, '62.183.102.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-080). ');
-$ax += cidrblock($address, '62.183.112.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-081). ');
-$ax += cidrblock($address, '62.183.115.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-082). ');
-$ax += cidrblock($address, '62.183.116.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-083). ');
-$ax += cidrblock($address, '62.183.124.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-084). ');
-$ax += cidrblock($address, '62.192.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-085). ');
-$ax += cidrblock($address, '62.213.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-086). ');
-$ax += cidrblock($address, '77.34.2.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-087). ');
-$ax += cidrblock($address, '77.34.10.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-088). ');
-$ax += cidrblock($address, '77.34.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-089). ');
-$ax += cidrblock($address, '77.34.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-090). ');
-$ax += cidrblock($address, '77.34.49.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-091). ');
-$ax += cidrblock($address, '77.34.54.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-092). ');
-$ax += cidrblock($address, '77.34.58.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-093). ');
-$ax += cidrblock($address, '77.34.61.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-094). ');
-$ax += cidrblock($address, '77.34.74.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-095). ');
-$ax += cidrblock($address, '77.34.77.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-096). ');
-$ax += cidrblock($address, '77.34.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-097). ');
-$ax += cidrblock($address, '77.34.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-098). ');
-$ax += cidrblock($address, '77.34.128.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-099). ');
-$ax += cidrblock($address, '77.34.132.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-100). ');
-$ax += cidrblock($address, '77.34.136.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-101). ');
-$ax += cidrblock($address, '77.34.150.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-102). ');
-$ax += cidrblock($address, '77.34.154.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-103). ');
-$ax += cidrblock($address, '77.34.158.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-104). ');
-$ax += cidrblock($address, '77.34.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-105). ');
-$ax += cidrblock($address, '77.34.202.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-106). ');
-$ax += cidrblock($address, '77.34.210.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-107). ');
-$ax += cidrblock($address, '77.34.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-108). ');
-$ax += cidrblock($address, '77.34.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-109). ');
-$ax += cidrblock($address, '77.34.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-110). ');
-$ax += cidrblock($address, '77.35.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-111). ');
-$ax += cidrblock($address, '77.35.65.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-112). ');
-$ax += cidrblock($address, '77.35.75.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-113). ');
-$ax += cidrblock($address, '77.35.88.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-114). ');
-$ax += cidrblock($address, '77.35.93.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-115). ');
-$ax += cidrblock($address, '77.35.94.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-116). ');
-$ax += cidrblock($address, '77.35.99.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-117). ');
-$ax += cidrblock($address, '77.35.100.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-118). ');
-$ax += cidrblock($address, '77.35.107.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-119). ');
-$ax += cidrblock($address, '77.35.108.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-120). ');
-$ax += cidrblock($address, '77.35.112.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-121). ');
-$ax += cidrblock($address, '77.35.120.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-122). ');
-$ax += cidrblock($address, '77.35.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-123). ');
-$ax += cidrblock($address, '77.39.24.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-124). ');
-$ax += cidrblock($address, '77.39.37.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-125). ');
-$ax += cidrblock($address, '77.39.44.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-126). ');
-$ax += cidrblock($address, '77.39.64.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-127). ');
-$ax += cidrblock($address, '77.39.72.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-128). ');
-$ax += cidrblock($address, '77.39.76.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-129). ');
-$ax += cidrblock($address, '77.39.101.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-130). ');
-$ax += cidrblock($address, '77.39.102.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-131). ');
-$ax += cidrblock($address, '77.39.115.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-132). ');
-$ax += cidrblock($address, '77.40.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-133). ');
-$ax += cidrblock($address, '77.45.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-134). ');
-$ax += cidrblock($address, '77.51.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-135). ');
-$ax += cidrblock($address, '77.51.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-136). ');
-$ax += cidrblock($address, '77.51.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-137). ');
-$ax += cidrblock($address, '77.72.240.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-138). ');
-$ax += cidrblock($address, '77.73.136.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-139). ');
-$ax += cidrblock($address, '77.82.1.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-140). ');
-$ax += cidrblock($address, '77.82.2.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-141). ');
-$ax += cidrblock($address, '77.82.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-142). ');
-$ax += cidrblock($address, '77.82.8.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-143). ');
-$ax += cidrblock($address, '77.82.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-144). ');
-$ax += cidrblock($address, '77.82.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-145). ');
-$ax += cidrblock($address, '77.82.48.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-146). ');
-$ax += cidrblock($address, '77.82.56.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-147). ');
-$ax += cidrblock($address, '77.82.60.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-148). ');
-$ax += cidrblock($address, '77.82.63.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-149). ');
-$ax += cidrblock($address, '77.82.64.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-150). ');
-$ax += cidrblock($address, '77.82.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-151). ');
-$ax += cidrblock($address, '77.82.76.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-152). ');
-$ax += cidrblock($address, '77.82.92.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-153). ');
-$ax += cidrblock($address, '77.82.96.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-154). ');
-$ax += cidrblock($address, '77.82.112.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-155). ');
-$ax += cidrblock($address, '77.82.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-156). ');
-$ax += cidrblock($address, '77.82.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-157). ');
-$ax += cidrblock($address, '77.87.64.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-158). ');
-$ax += cidrblock($address, '77.106.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-159). ');
-$ax += cidrblock($address, '77.234.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-160). ');
-$ax += cidrblock($address, '78.29.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-161). ');
-$ax += cidrblock($address, '78.36.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-162). ');
-$ax += cidrblock($address, '78.40.184.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-163). ');
-$ax += cidrblock($address, '78.81.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-164). ');
-$ax += cidrblock($address, '78.85.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-165). ');
-$ax += cidrblock($address, '78.132.144.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-166). ');
-$ax += cidrblock($address, '78.132.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-167). ');
-$ax += cidrblock($address, '78.132.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-168). ');
-$ax += cidrblock($address, '78.156.228.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-169). ');
-$ax += cidrblock($address, '78.156.232.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-170). ');
-$ax += cidrblock($address, '78.156.235.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-171). ');
-$ax += cidrblock($address, '79.105.0.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-172). ');
-$ax += cidrblock($address, '79.105.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-173). ');
-$ax += cidrblock($address, '79.105.8.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-174). ');
-$ax += cidrblock($address, '79.105.17.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-175). ');
-$ax += cidrblock($address, '79.105.18.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-176). ');
-$ax += cidrblock($address, '79.105.20.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-177). ');
-$ax += cidrblock($address, '79.105.24.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-178). ');
-$ax += cidrblock($address, '79.105.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-179). ');
-$ax += cidrblock($address, '79.105.64.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-180). ');
-$ax += cidrblock($address, '79.105.69.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-181). ');
-$ax += cidrblock($address, '79.105.70.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-182). ');
-$ax += cidrblock($address, '79.105.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-183). ');
-$ax += cidrblock($address, '79.105.74.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-184). ');
-$ax += cidrblock($address, '79.105.76.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-185). ');
-$ax += cidrblock($address, '79.105.79.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-186). ');
-$ax += cidrblock($address, '79.105.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-187). ');
-$ax += cidrblock($address, '79.105.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-188). ');
-$ax += cidrblock($address, '79.105.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-189). ');
-$ax += cidrblock($address, '79.105.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-190). ');
-$ax += cidrblock($address, '79.105.176.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-191). ');
-$ax += cidrblock($address, '79.105.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-192). ');
-$ax += cidrblock($address, '79.105.186.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-193). ');
-$ax += cidrblock($address, '79.105.188.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-194). ');
-$ax += cidrblock($address, '79.105.192.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-195). ');
-$ax += cidrblock($address, '79.105.194.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-196). ');
-$ax += cidrblock($address, '79.105.197.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-197). ');
-$ax += cidrblock($address, '79.105.209.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-198). ');
-$ax += cidrblock($address, '79.105.213.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-199). ');
-$ax += cidrblock($address, '79.105.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-200). ');
-$ax += cidrblock($address, '79.105.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-201). ');
-$ax += cidrblock($address, '79.105.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-202). ');
-$ax += cidrblock($address, '79.105.240.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-203). ');
-$ax += cidrblock($address, '79.105.248.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-204). ');
-$ax += cidrblock($address, '79.105.252.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-205). ');
-$ax += cidrblock($address, '79.105.255.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-206). ');
-$ax += cidrblock($address, '79.126.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-207). ');
-$ax += cidrblock($address, '79.133.64.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-208). ');
-$ax += cidrblock($address, '79.133.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-209). ');
-$ax += cidrblock($address, '80.68.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-210). ');
-$ax += cidrblock($address, '80.71.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-211). ');
-$ax += cidrblock($address, '80.72.214.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-212). ');
-$ax += cidrblock($address, '80.88.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-213). ');
-$ax += cidrblock($address, '80.95.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-214). ');
-$ax += cidrblock($address, '80.234.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-215). ');
-$ax += cidrblock($address, '80.244.34.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-216). ');
-$ax += cidrblock($address, '80.244.36.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-217). ');
-$ax += cidrblock($address, '80.246.70.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-218). ');
-$ax += cidrblock($address, '80.246.72.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-219). ');
-$ax += cidrblock($address, '80.246.74.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-220). ');
-$ax += cidrblock($address, '80.246.79.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-221). ');
-$ax += cidrblock($address, '80.246.80.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-222). ');
-$ax += cidrblock($address, '80.246.84.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-223). ');
-$ax += cidrblock($address, '80.246.86.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-224). ');
-$ax += cidrblock($address, '80.246.91.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-225). ');
-$ax += cidrblock($address, '80.246.92.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-226). ');
-$ax += cidrblock($address, '80.246.94.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-227). ');
-$ax += cidrblock($address, '81.2.0.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-228). ');
-$ax += cidrblock($address, '81.2.2.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-229). ');
-$ax += cidrblock($address, '81.2.6.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-230). ');
-$ax += cidrblock($address, '81.2.8.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-231). ');
-$ax += cidrblock($address, '81.2.10.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-232). ');
-$ax += cidrblock($address, '81.2.12.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-233). ');
-$ax += cidrblock($address, '81.2.14.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-234). ');
-$ax += cidrblock($address, '81.2.17.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-235). ');
-$ax += cidrblock($address, '81.2.26.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-236). ');
-$ax += cidrblock($address, '81.2.44.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-237). ');
-$ax += cidrblock($address, '81.2.48.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-238). ');
-$ax += cidrblock($address, '81.2.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-239). ');
-$ax += cidrblock($address, '81.20.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-240). ');
-$ax += cidrblock($address, '81.23.144.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-241). ');
-$ax += cidrblock($address, '81.27.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-242). ');
-$ax += cidrblock($address, '81.27.144.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-243). ');
-$ax += cidrblock($address, '81.89.125.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-244). ');
-$ax += cidrblock($address, '81.89.127.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-245). ');
-$ax += cidrblock($address, '81.177.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-246). ');
-$ax += cidrblock($address, '82.140.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-247). ');
-$ax += cidrblock($address, '82.151.123.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-248). ');
-$ax += cidrblock($address, '82.151.125.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-249). ');
-$ax += cidrblock($address, '82.162.0.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-250). ');
-$ax += cidrblock($address, '82.162.12.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-251). ');
-$ax += cidrblock($address, '82.162.17.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-252). ');
-$ax += cidrblock($address, '82.162.23.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-253). ');
-$ax += cidrblock($address, '82.162.24.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-254). ');
-$ax += cidrblock($address, '82.162.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-255). ');
-$ax += cidrblock($address, '82.162.120.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-256). ');
-$ax += cidrblock($address, '82.162.131.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-257). ');
-$ax += cidrblock($address, '82.162.176.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-258). ');
-$ax += cidrblock($address, '82.162.178.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-259). ');
-$ax += cidrblock($address, '82.162.180.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-260). ');
-$ax += cidrblock($address, '82.162.184.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-261). ');
-$ax += cidrblock($address, '82.162.252.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-262). ');
-$ax += cidrblock($address, '82.208.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-263). ');
-$ax += cidrblock($address, '83.136.112.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-264). ');
-$ax += cidrblock($address, '83.171.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-265). ');
-$ax += cidrblock($address, '83.217.10.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-266). ');
-$ax += cidrblock($address, '83.217.20.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-267). ');
-$ax += cidrblock($address, '83.219.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-268). ');
-$ax += cidrblock($address, '83.239.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-269). ');
-$ax += cidrblock($address, '84.42.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-270). ');
-$ax += cidrblock($address, '84.51.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-271). ');
-$ax += cidrblock($address, '84.53.194.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-272). ');
-$ax += cidrblock($address, '84.53.198.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-273). ');
-$ax += cidrblock($address, '84.53.207.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-274). ');
-$ax += cidrblock($address, '84.53.212.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-275). ');
-$ax += cidrblock($address, '84.53.216.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-276). ');
-$ax += cidrblock($address, '84.53.220.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-277). ');
-$ax += cidrblock($address, '84.53.224.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-278). ');
-$ax += cidrblock($address, '84.53.226.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-279). ');
-$ax += cidrblock($address, '84.53.229.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-280). ');
-$ax += cidrblock($address, '84.53.231.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-281). ');
-$ax += cidrblock($address, '84.53.233.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-282). ');
-$ax += cidrblock($address, '84.53.234.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-283). ');
-$ax += cidrblock($address, '84.53.248.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-284). ');
-$ax += cidrblock($address, '84.54.209.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-285). ');
-$ax += cidrblock($address, '84.54.211.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-286). ');
-$ax += cidrblock($address, '84.54.219.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-287). ');
-$ax += cidrblock($address, '84.54.248.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-288). ');
-$ax += cidrblock($address, '84.54.255.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-289). ');
-$ax += cidrblock($address, '85.15.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-290). ');
-$ax += cidrblock($address, '85.28.206.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-291). ');
-$ax += cidrblock($address, '85.28.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-292). ');
-$ax += cidrblock($address, '85.28.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-293). ');
-$ax += cidrblock($address, '85.93.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-294). ');
-$ax += cidrblock($address, '85.94.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-295). ');
-$ax += cidrblock($address, '85.94.8.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-296). ');
-$ax += cidrblock($address, '85.94.16.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-297). ');
-$ax += cidrblock($address, '85.94.26.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-298). ');
-$ax += cidrblock($address, '85.94.28.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-299). ');
-$ax += cidrblock($address, '85.95.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-300). ');
-$ax += cidrblock($address, '85.112.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-301). ');
-$ax += cidrblock($address, '85.113.193.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-302). ');
-$ax += cidrblock($address, '85.113.194.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-303). ');
-$ax += cidrblock($address, '85.113.196.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-304). ');
-$ax += cidrblock($address, '85.113.198.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-305). ');
-$ax += cidrblock($address, '85.113.201.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-306). ');
-$ax += cidrblock($address, '85.113.202.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-307). ');
-$ax += cidrblock($address, '85.113.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-308). ');
-$ax += cidrblock($address, '85.113.206.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-309). ');
-$ax += cidrblock($address, '85.113.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-310). ');
-$ax += cidrblock($address, '85.114.89.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-311). ');
-$ax += cidrblock($address, '85.116.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-312). ');
-$ax += cidrblock($address, '85.172.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-313). ');
-$ax += cidrblock($address, '85.192.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-314). ');
-$ax += cidrblock($address, '85.233.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-315). ');
-$ax += cidrblock($address, '85.237.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-316). ');
-$ax += cidrblock($address, '86.102.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-317). ');
-$ax += cidrblock($address, '86.102.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-318). ');
-$ax += cidrblock($address, '86.102.85.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-319). ');
-$ax += cidrblock($address, '86.102.91.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-320). ');
-$ax += cidrblock($address, '86.102.127.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-321). ');
-$ax += cidrblock($address, '86.102.129.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-322). ');
-$ax += cidrblock($address, '86.102.140.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-323). ');
-$ax += cidrblock($address, '86.102.143.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-324). ');
-$ax += cidrblock($address, '86.102.159.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-325). ');
-$ax += cidrblock($address, '86.102.174.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-326). ');
-$ax += cidrblock($address, '86.102.176.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-327). ');
-$ax += cidrblock($address, '86.102.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-328). ');
-$ax += cidrblock($address, '86.102.188.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-329). ');
-$ax += cidrblock($address, '86.102.204.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-330). ');
-$ax += cidrblock($address, '86.102.209.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-331). ');
-$ax += cidrblock($address, '86.102.211.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-332). ');
-$ax += cidrblock($address, '86.102.213.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-333). ');
-$ax += cidrblock($address, '86.102.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-334). ');
-$ax += cidrblock($address, '86.102.226.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-335). ');
-$ax += cidrblock($address, '86.102.233.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-336). ');
-$ax += cidrblock($address, '86.102.234.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-337). ');
-$ax += cidrblock($address, '86.102.238.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-338). ');
-$ax += cidrblock($address, '86.102.249.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-339). ');
-$ax += cidrblock($address, '86.102.251.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-340). ');
-$ax += cidrblock($address, '86.102.254.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-341). ');
-$ax += cidrblock($address, '87.103.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-342). ');
-$ax += cidrblock($address, '87.117.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-343). ');
-$ax += cidrblock($address, '87.117.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-344). ');
-$ax += cidrblock($address, '87.119.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-345). ');
-$ax += cidrblock($address, '87.224.150.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-346). ');
-$ax += cidrblock($address, '87.224.174.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-347). ');
-$ax += cidrblock($address, '87.224.177.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-348). ');
-$ax += cidrblock($address, '87.224.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-349). ');
-$ax += cidrblock($address, '87.224.186.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-350). ');
-$ax += cidrblock($address, '87.224.191.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-351). ');
-$ax += cidrblock($address, '87.224.192.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-352). ');
-$ax += cidrblock($address, '87.224.197.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-353). ');
-$ax += cidrblock($address, '87.224.198.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-354). ');
-$ax += cidrblock($address, '87.224.200.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-355). ');
-$ax += cidrblock($address, '87.224.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-356). ');
-$ax += cidrblock($address, '87.224.207.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-357). ');
-$ax += cidrblock($address, '87.224.208.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-358). ');
-$ax += cidrblock($address, '87.224.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-359). ');
-$ax += cidrblock($address, '87.224.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-360). ');
-$ax += cidrblock($address, '87.224.225.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-361). ');
-$ax += cidrblock($address, '87.224.226.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-362). ');
-$ax += cidrblock($address, '87.224.228.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-363). ');
-$ax += cidrblock($address, '87.224.234.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-364). ');
-$ax += cidrblock($address, '87.224.239.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-365). ');
-$ax += cidrblock($address, '87.224.241.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-366). ');
-$ax += cidrblock($address, '87.224.244.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-367). ');
-$ax += cidrblock($address, '87.224.249.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-368). ');
-$ax += cidrblock($address, '87.224.250.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-369). ');
-$ax += cidrblock($address, '87.224.253.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-370). ');
-$ax += cidrblock($address, '87.225.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-371). ');
-$ax += cidrblock($address, '87.225.18.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-372). ');
-$ax += cidrblock($address, '87.225.20.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-373). ');
-$ax += cidrblock($address, '87.225.24.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-374). ');
-$ax += cidrblock($address, '87.225.32.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-375). ');
-$ax += cidrblock($address, '87.225.40.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-376). ');
-$ax += cidrblock($address, '87.225.46.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-377). ');
-$ax += cidrblock($address, '87.225.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-378). ');
-$ax += cidrblock($address, '87.225.64.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-379). ');
-$ax += cidrblock($address, '87.225.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-380). ');
-$ax += cidrblock($address, '87.225.74.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-381). ');
-$ax += cidrblock($address, '87.225.78.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-382). ');
-$ax += cidrblock($address, '87.225.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-383). ');
-$ax += cidrblock($address, '87.225.98.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-384). ');
-$ax += cidrblock($address, '87.225.100.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-385). ');
-$ax += cidrblock($address, '87.225.107.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-386). ');
-$ax += cidrblock($address, '87.225.108.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-387). ');
-$ax += cidrblock($address, '87.225.112.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-388). ');
-$ax += cidrblock($address, '87.225.120.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-389). ');
-$ax += cidrblock($address, '87.225.124.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-390). ');
-$ax += cidrblock($address, '87.225.127.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-391). ');
-$ax += cidrblock($address, '87.226.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-392). ');
-$ax += cidrblock($address, '87.253.0.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-393). ');
-$ax += cidrblock($address, '87.253.8.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-394). ');
-$ax += cidrblock($address, '87.253.15.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-395). ');
-$ax += cidrblock($address, '87.253.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-396). ');
-$ax += cidrblock($address, '88.85.176.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-397). ');
-$ax += cidrblock($address, '88.147.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-398). ');
-$ax += cidrblock($address, '88.200.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-399). ');
-$ax += cidrblock($address, '88.205.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-400). ');
-$ax += cidrblock($address, '88.215.182.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-401). ');
-$ax += cidrblock($address, '88.215.186.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-402). ');
-$ax += cidrblock($address, '89.20.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-403). ');
-$ax += cidrblock($address, '89.20.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-404). ');
-$ax += cidrblock($address, '89.109.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-405). ');
-$ax += cidrblock($address, '89.109.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-406). ');
-$ax += cidrblock($address, '89.109.224.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-407). ');
-$ax += cidrblock($address, '89.110.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-408). ');
-$ax += cidrblock($address, '89.151.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-409). ');
-$ax += cidrblock($address, '89.184.248.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-410). ');
-$ax += cidrblock($address, '89.184.251.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-411). ');
-$ax += cidrblock($address, '89.190.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-412). ');
-$ax += cidrblock($address, '89.191.236.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-413). ');
-$ax += cidrblock($address, '89.204.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-414). ');
-$ax += cidrblock($address, '89.221.199.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-415). ');
-$ax += cidrblock($address, '89.221.207.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-416). ');
-$ax += cidrblock($address, '89.223.97.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-417). ');
-$ax += cidrblock($address, '89.223.101.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-418). ');
-$ax += cidrblock($address, '89.223.102.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-419). ');
-$ax += cidrblock($address, '89.223.104.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-420). ');
-$ax += cidrblock($address, '89.232.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-421). ');
-$ax += cidrblock($address, '89.239.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-422). ');
-$ax += cidrblock($address, '89.248.112.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-423). ');
-$ax += cidrblock($address, '89.250.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-424). ');
-$ax += cidrblock($address, '89.250.171.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-425). ');
-$ax += cidrblock($address, '89.250.174.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-426). ');
-$ax += cidrblock($address, '89.254.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-427). ');
-$ax += cidrblock($address, '90.150.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-428). ');
-$ax += cidrblock($address, '90.154.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-429). ');
-$ax += cidrblock($address, '90.157.1.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-430). ');
-$ax += cidrblock($address, '90.157.3.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-431). ');
-$ax += cidrblock($address, '90.157.6.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-432). ');
-$ax += cidrblock($address, '90.157.9.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-433). ');
-$ax += cidrblock($address, '90.157.10.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-434). ');
-$ax += cidrblock($address, '90.157.12.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-435). ');
-$ax += cidrblock($address, '90.157.19.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-436). ');
-$ax += cidrblock($address, '90.157.21.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-437). ');
-$ax += cidrblock($address, '90.157.22.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-438). ');
-$ax += cidrblock($address, '90.157.24.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-439). ');
-$ax += cidrblock($address, '90.157.28.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-440). ');
-$ax += cidrblock($address, '90.157.32.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-441). ');
-$ax += cidrblock($address, '90.157.34.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-442). ');
-$ax += cidrblock($address, '90.157.36.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-443). ');
-$ax += cidrblock($address, '90.157.41.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-444). ');
-$ax += cidrblock($address, '90.157.43.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-445). ');
-$ax += cidrblock($address, '90.157.44.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-446). ');
-$ax += cidrblock($address, '90.157.49.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-447). ');
-$ax += cidrblock($address, '90.157.51.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-448). ');
-$ax += cidrblock($address, '90.157.54.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-449). ');
-$ax += cidrblock($address, '90.157.56.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-450). ');
-$ax += cidrblock($address, '90.157.58.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-451). ');
-$ax += cidrblock($address, '90.157.61.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-452). ');
-$ax += cidrblock($address, '90.157.63.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-453). ');
-$ax += cidrblock($address, '90.157.64.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-454). ');
-$ax += cidrblock($address, '90.157.70.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-455). ');
-$ax += cidrblock($address, '90.157.72.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-456). ');
-$ax += cidrblock($address, '90.157.82.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-457). ');
-$ax += cidrblock($address, '90.157.84.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-458). ');
-$ax += cidrblock($address, '90.157.88.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-459). ');
-$ax += cidrblock($address, '90.157.96.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-460). ');
-$ax += cidrblock($address, '90.157.100.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-461). ');
-$ax += cidrblock($address, '90.157.103.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-462). ');
-$ax += cidrblock($address, '90.157.104.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-463). ');
-$ax += cidrblock($address, '90.157.110.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-464). ');
-$ax += cidrblock($address, '90.157.112.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-465). ');
-$ax += cidrblock($address, '90.157.115.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-466). ');
-$ax += cidrblock($address, '90.157.118.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-467). ');
-$ax += cidrblock($address, '90.157.120.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-468). ');
-$ax += cidrblock($address, '90.157.123.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-469). ');
-$ax += cidrblock($address, '90.157.124.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-470). ');
-$ax += cidrblock($address, '90.188.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-471). ');
-$ax += cidrblock($address, '91.106.232.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-472). ');
-$ax += cidrblock($address, '91.122.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-473). ');
-$ax += cidrblock($address, '91.147.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-474). ');
-$ax += cidrblock($address, '91.147.34.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-475). ');
-$ax += cidrblock($address, '91.147.40.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-476). ');
-$ax += cidrblock($address, '91.147.46.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-477). ');
-$ax += cidrblock($address, '91.147.48.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-478). ');
-$ax += cidrblock($address, '91.147.56.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-479). ');
-$ax += cidrblock($address, '91.147.60.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-480). ');
-$ax += cidrblock($address, '91.147.62.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-481). ');
-$ax += cidrblock($address, '91.208.254.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-482). ');
-$ax += cidrblock($address, '91.210.252.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-483). ');
-$ax += cidrblock($address, '91.226.92.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-484). ');
-$ax += cidrblock($address, '91.228.48.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-485). ');
-$ax += cidrblock($address, '92.37.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-486). ');
-$ax += cidrblock($address, '92.49.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-487). ');
-$ax += cidrblock($address, '92.50.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-488). ');
-$ax += cidrblock($address, '92.54.64.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-489). ');
-$ax += cidrblock($address, '92.54.68.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-490). ');
-$ax += cidrblock($address, '92.54.70.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-491). ');
-$ax += cidrblock($address, '92.54.72.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-492). ');
-$ax += cidrblock($address, '92.54.83.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-493). ');
-$ax += cidrblock($address, '92.54.90.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-494). ');
-$ax += cidrblock($address, '92.54.98.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-495). ');
-$ax += cidrblock($address, '92.54.104.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-496). ');
-$ax += cidrblock($address, '92.54.109.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-497). ');
-$ax += cidrblock($address, '92.54.111.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-498). ');
-$ax += cidrblock($address, '92.54.112.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-499). ');
-$ax += cidrblock($address, '92.54.116.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-500). ');
-$ax += cidrblock($address, '92.61.66.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-501). ');
-$ax += cidrblock($address, '92.61.68.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-502). ');
-$ax += cidrblock($address, '92.100.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-503). ');
-$ax += cidrblock($address, '92.124.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-504). ');
-$ax += cidrblock($address, '92.252.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-505). ');
-$ax += cidrblock($address, '93.120.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-506). ');
-$ax += cidrblock($address, '93.124.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-507). ');
-$ax += cidrblock($address, '93.177.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-508). ');
-$ax += cidrblock($address, '93.177.32.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-509). ');
-$ax += cidrblock($address, '93.177.40.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-510). ');
-$ax += cidrblock($address, '93.177.44.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-511). ');
-$ax += cidrblock($address, '93.177.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-512). ');
-$ax += cidrblock($address, '93.178.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-513). ');
-$ax += cidrblock($address, '93.181.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-514). ');
-$ax += cidrblock($address, '93.181.226.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-515). ');
-$ax += cidrblock($address, '93.181.228.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-516). ');
-$ax += cidrblock($address, '93.181.232.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-517). ');
-$ax += cidrblock($address, '93.181.240.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-518). ');
-$ax += cidrblock($address, '94.25.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-519). ');
-$ax += cidrblock($address, '94.28.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-520). ');
-$ax += cidrblock($address, '94.31.129.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-521). ');
-$ax += cidrblock($address, '94.31.131.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-522). ');
-$ax += cidrblock($address, '94.31.132.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-523). ');
-$ax += cidrblock($address, '94.31.137.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-524). ');
-$ax += cidrblock($address, '94.31.138.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-525). ');
-$ax += cidrblock($address, '94.31.140.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-526). ');
-$ax += cidrblock($address, '94.31.144.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-527). ');
-$ax += cidrblock($address, '94.31.148.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-528). ');
-$ax += cidrblock($address, '94.31.150.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-529). ');
-$ax += cidrblock($address, '94.31.153.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-530). ');
-$ax += cidrblock($address, '94.31.154.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-531). ');
-$ax += cidrblock($address, '94.31.156.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-532). ');
-$ax += cidrblock($address, '94.31.161.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-533). ');
-$ax += cidrblock($address, '94.31.162.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-534). ');
-$ax += cidrblock($address, '94.31.164.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-535). ');
-$ax += cidrblock($address, '94.31.168.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-536). ');
-$ax += cidrblock($address, '94.31.172.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-537). ');
-$ax += cidrblock($address, '94.31.175.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-538). ');
-$ax += cidrblock($address, '94.31.178.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-539). ');
-$ax += cidrblock($address, '94.31.180.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-540). ');
-$ax += cidrblock($address, '94.31.184.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-541). ');
-$ax += cidrblock($address, '94.31.186.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-542). ');
-$ax += cidrblock($address, '94.31.188.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-543). ');
-$ax += cidrblock($address, '94.31.190.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-544). ');
-$ax += cidrblock($address, '94.31.192.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-545). ');
-$ax += cidrblock($address, '94.31.197.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-546). ');
-$ax += cidrblock($address, '94.31.198.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-547). ');
-$ax += cidrblock($address, '94.31.202.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-548). ');
-$ax += cidrblock($address, '94.31.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-549). ');
-$ax += cidrblock($address, '94.31.208.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-550). ');
-$ax += cidrblock($address, '94.31.212.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-551). ');
-$ax += cidrblock($address, '94.31.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-552). ');
-$ax += cidrblock($address, '94.31.216.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-553). ');
-$ax += cidrblock($address, '94.31.222.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-554). ');
-$ax += cidrblock($address, '94.31.224.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-555). ');
-$ax += cidrblock($address, '94.31.226.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-556). ');
-$ax += cidrblock($address, '94.31.230.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-557). ');
-$ax += cidrblock($address, '94.31.233.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-558). ');
-$ax += cidrblock($address, '94.31.234.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-559). ');
-$ax += cidrblock($address, '94.31.236.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-560). ');
-$ax += cidrblock($address, '94.31.238.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-561). ');
-$ax += cidrblock($address, '94.31.240.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-562). ');
-$ax += cidrblock($address, '94.31.242.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-563). ');
-$ax += cidrblock($address, '94.31.244.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-564). ');
-$ax += cidrblock($address, '94.31.248.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-565). ');
-$ax += cidrblock($address, '94.31.253.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-566). ');
-$ax += cidrblock($address, '94.31.255.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-567). ');
-$ax += cidrblock($address, '94.50.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-568). ');
-$ax += cidrblock($address, '94.75.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-569). ');
-$ax += cidrblock($address, '94.78.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-570). ');
-$ax += cidrblock($address, '94.125.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-571). ');
-$ax += cidrblock($address, '94.142.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-572). ');
-$ax += cidrblock($address, '94.232.200.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-573). ');
-$ax += cidrblock($address, '94.233.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-574). ');
-$ax += cidrblock($address, '94.233.16.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-575). ');
-$ax += cidrblock($address, '94.233.40.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-576). ');
-$ax += cidrblock($address, '94.233.46.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-577). ');
-$ax += cidrblock($address, '94.233.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-578). ');
-$ax += cidrblock($address, '94.233.68.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-579). ');
-$ax += cidrblock($address, '94.233.71.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-580). ');
-$ax += cidrblock($address, '94.233.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-581). ');
-$ax += cidrblock($address, '94.233.80.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-582). ');
-$ax += cidrblock($address, '94.233.88.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-583). ');
-$ax += cidrblock($address, '94.233.96.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-584). ');
-$ax += cidrblock($address, '94.233.108.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-585). ');
-$ax += cidrblock($address, '94.233.112.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-586). ');
-$ax += cidrblock($address, '94.233.120.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-587). ');
-$ax += cidrblock($address, '94.233.144.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-588). ');
-$ax += cidrblock($address, '94.233.146.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-589). ');
-$ax += cidrblock($address, '94.233.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-590). ');
-$ax += cidrblock($address, '94.241.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-591). ');
-$ax += cidrblock($address, '94.241.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-592). ');
-$ax += cidrblock($address, '94.242.128.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-593). ');
-$ax += cidrblock($address, '94.242.152.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-594). ');
-$ax += cidrblock($address, '94.242.161.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-595). ');
-$ax += cidrblock($address, '94.242.162.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-596). ');
-$ax += cidrblock($address, '94.242.164.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-597). ');
-$ax += cidrblock($address, '94.242.171.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-598). ');
-$ax += cidrblock($address, '94.242.172.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-599). ');
-$ax += cidrblock($address, '94.242.176.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-600). ');
-$ax += cidrblock($address, '94.242.184.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-601). ');
-$ax += cidrblock($address, '94.242.188.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-602). ');
-$ax += cidrblock($address, '94.242.190.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-603). ');
-$ax += cidrblock($address, '94.245.128.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-604). ');
-$ax += cidrblock($address, '94.245.144.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-605). ');
-$ax += cidrblock($address, '94.245.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-606). ');
-$ax += cidrblock($address, '94.255.1.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-607). ');
-$ax += cidrblock($address, '94.255.4.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-608). ');
-$ax += cidrblock($address, '94.255.8.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-609). ');
-$ax += cidrblock($address, '94.255.10.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-610). ');
-$ax += cidrblock($address, '94.255.21.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-611). ');
-$ax += cidrblock($address, '94.255.22.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-612). ');
-$ax += cidrblock($address, '94.255.26.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-613). ');
-$ax += cidrblock($address, '94.255.35.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-614). ');
-$ax += cidrblock($address, '94.255.64.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-615). ');
-$ax += cidrblock($address, '94.255.67.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-616). ');
-$ax += cidrblock($address, '94.255.71.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-617). ');
-$ax += cidrblock($address, '94.255.76.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-618). ');
-$ax += cidrblock($address, '94.255.82.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-619). ');
-$ax += cidrblock($address, '94.255.94.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-620). ');
-$ax += cidrblock($address, '94.255.106.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-621). ');
-$ax += cidrblock($address, '95.32.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-622). ');
-$ax += cidrblock($address, '95.37.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-623). ');
-$ax += cidrblock($address, '95.52.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-624). ');
-$ax += cidrblock($address, '95.67.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-625). ');
-$ax += cidrblock($address, '95.68.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-626). ');
-$ax += cidrblock($address, '95.70.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-627). ');
-$ax += cidrblock($address, '95.71.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-628). ');
-$ax += cidrblock($address, '95.72.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-629). ');
-$ax += cidrblock($address, '95.73.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-630). ');
-$ax += cidrblock($address, '95.73.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-631). ');
-$ax += cidrblock($address, '95.73.48.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-632). ');
-$ax += cidrblock($address, '95.73.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-633). ');
-$ax += cidrblock($address, '95.73.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-634). ');
-$ax += cidrblock($address, '95.81.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-635). ');
-$ax += cidrblock($address, '95.83.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-636). ');
-$ax += cidrblock($address, '95.84.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-637). ');
-$ax += cidrblock($address, '95.86.192.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-638). ');
-$ax += cidrblock($address, '95.86.200.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-639). ');
-$ax += cidrblock($address, '95.86.210.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-640). ');
-$ax += cidrblock($address, '95.86.212.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-641). ');
-$ax += cidrblock($address, '95.86.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-642). ');
-$ax += cidrblock($address, '95.86.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-643). ');
-$ax += cidrblock($address, '95.106.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-644). ');
-$ax += cidrblock($address, '95.107.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-645). ');
-$ax += cidrblock($address, '95.139.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-646). ');
-$ax += cidrblock($address, '95.141.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-647). ');
-$ax += cidrblock($address, '95.152.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-648). ');
-$ax += cidrblock($address, '95.156.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-649). ');
-$ax += cidrblock($address, '95.158.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-650). ');
-$ax += cidrblock($address, '95.159.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-651). ');
-$ax += cidrblock($address, '95.159.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-652). ');
-$ax += cidrblock($address, '95.159.168.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-653). ');
-$ax += cidrblock($address, '95.159.172.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-654). ');
-$ax += cidrblock($address, '95.159.176.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-655). ');
-$ax += cidrblock($address, '95.159.180.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-656). ');
-$ax += cidrblock($address, '95.159.184.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-657). ');
-$ax += cidrblock($address, '95.167.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-658). ');
-$ax += cidrblock($address, '95.179.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-659). ');
-$ax += cidrblock($address, '95.188.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-660). ');
-$ax += cidrblock($address, '109.61.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-661). ');
-$ax += cidrblock($address, '109.62.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-662). ');
-$ax += cidrblock($address, '109.62.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-663). ');
-$ax += cidrblock($address, '109.62.172.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-664). ');
-$ax += cidrblock($address, '109.62.176.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-665). ');
-$ax += cidrblock($address, '109.62.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-666). ');
-$ax += cidrblock($address, '109.62.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-667). ');
-$ax += cidrblock($address, '109.62.240.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-668). ');
-$ax += cidrblock($address, '109.68.168.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-669). ');
-$ax += cidrblock($address, '109.108.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-670). ');
-$ax += cidrblock($address, '109.126.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-671). ');
-$ax += cidrblock($address, '109.127.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-672). ');
-$ax += cidrblock($address, '109.161.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-673). ');
-$ax += cidrblock($address, '109.161.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-674). ');
-$ax += cidrblock($address, '109.161.49.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-675). ');
-$ax += cidrblock($address, '109.161.50.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-676). ');
-$ax += cidrblock($address, '109.161.53.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-677). ');
-$ax += cidrblock($address, '109.161.54.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-678). ');
-$ax += cidrblock($address, '109.161.58.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-679). ');
-$ax += cidrblock($address, '109.161.60.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-680). ');
-$ax += cidrblock($address, '109.161.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-681). ');
-$ax += cidrblock($address, '109.165.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-682). ');
-$ax += cidrblock($address, '109.168.132.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-683). ');
-$ax += cidrblock($address, '109.168.136.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-684). ');
-$ax += cidrblock($address, '109.168.141.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-685). ');
-$ax += cidrblock($address, '109.168.142.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-686). ');
-$ax += cidrblock($address, '109.168.156.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-687). ');
-$ax += cidrblock($address, '109.168.158.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-688). ');
-$ax += cidrblock($address, '109.168.161.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-689). ');
-$ax += cidrblock($address, '109.168.163.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-690). ');
-$ax += cidrblock($address, '109.168.164.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-691). ');
-$ax += cidrblock($address, '109.168.167.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-692). ');
-$ax += cidrblock($address, '109.168.168.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-693). ');
-$ax += cidrblock($address, '109.168.170.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-694). ');
-$ax += cidrblock($address, '109.168.177.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-695). ');
-$ax += cidrblock($address, '109.168.182.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-696). ');
-$ax += cidrblock($address, '109.168.184.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-697). ');
-$ax += cidrblock($address, '109.168.186.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-698). ');
-$ax += cidrblock($address, '109.168.188.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-699). ');
-$ax += cidrblock($address, '109.168.196.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-700). ');
-$ax += cidrblock($address, '109.168.200.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-701). ');
-$ax += cidrblock($address, '109.168.204.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-702). ');
-$ax += cidrblock($address, '109.168.206.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-703). ');
-$ax += cidrblock($address, '109.168.208.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-704). ');
-$ax += cidrblock($address, '109.168.213.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-705). ');
-$ax += cidrblock($address, '109.168.215.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-706). ');
-$ax += cidrblock($address, '109.168.216.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-707). ');
-$ax += cidrblock($address, '109.168.219.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-708). ');
-$ax += cidrblock($address, '109.168.220.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-709). ');
-$ax += cidrblock($address, '109.168.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-710). ');
-$ax += cidrblock($address, '109.169.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-711). ');
-$ax += cidrblock($address, '109.172.0.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-712). ');
-$ax += cidrblock($address, '109.172.10.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-713). ');
-$ax += cidrblock($address, '109.172.12.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-714). ');
-$ax += cidrblock($address, '109.172.24.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-715). ');
-$ax += cidrblock($address, '109.172.28.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-716). ');
-$ax += cidrblock($address, '109.172.57.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-717). ');
-$ax += cidrblock($address, '109.172.60.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-718). ');
-$ax += cidrblock($address, '109.172.62.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-719). ');
-$ax += cidrblock($address, '109.172.67.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-720). ');
-$ax += cidrblock($address, '109.172.68.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-721). ');
-$ax += cidrblock($address, '109.172.77.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-722). ');
-$ax += cidrblock($address, '109.184.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-723). ');
-$ax += cidrblock($address, '109.198.196.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-724). ');
-$ax += cidrblock($address, '109.198.200.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-725). ');
-$ax += cidrblock($address, '109.198.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-726). ');
-$ax += cidrblock($address, '109.203.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-727). ');
-$ax += cidrblock($address, '109.225.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-728). ');
-$ax += cidrblock($address, '109.225.35.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-729). ');
-$ax += cidrblock($address, '109.225.36.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-730). ');
-$ax += cidrblock($address, '109.225.43.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-731). ');
-$ax += cidrblock($address, '109.225.44.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-732). ');
-$ax += cidrblock($address, '109.225.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-733). ');
-$ax += cidrblock($address, '109.236.235.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-734). ');
-$ax += cidrblock($address, '109.236.236.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-735). ');
-$ax += cidrblock($address, '134.90.208.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-736). ');
-$ax += cidrblock($address, '176.48.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-737). ');
-$ax += cidrblock($address, '176.208.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-738). ');
-$ax += cidrblock($address, '178.34.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-739). ');
-$ax += cidrblock($address, '178.34.128.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-740). ');
-$ax += cidrblock($address, '178.34.144.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-741). ');
-$ax += cidrblock($address, '178.34.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-742). ');
-$ax += cidrblock($address, '178.34.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-743). ');
-$ax += cidrblock($address, '178.35.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-744). ');
-$ax += cidrblock($address, '178.44.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-745). ');
-$ax += cidrblock($address, '178.64.0.0/13', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-746). ');
-$ax += cidrblock($address, '178.75.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-747). ');
-$ax += cidrblock($address, '178.130.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-748). ');
-$ax += cidrblock($address, '178.130.24.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-749). ');
-$ax += cidrblock($address, '178.130.32.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-750). ');
-$ax += cidrblock($address, '178.130.44.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-751). ');
-$ax += cidrblock($address, '178.166.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-752). ');
-$ax += cidrblock($address, '178.184.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-753). ');
-$ax += cidrblock($address, '178.217.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-754). ');
-$ax += cidrblock($address, '178.234.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-755). ');
-$ax += cidrblock($address, '178.234.16.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-756). ');
-$ax += cidrblock($address, '178.234.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-757). ');
-$ax += cidrblock($address, '178.234.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-758). ');
-$ax += cidrblock($address, '178.234.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-759). ');
-$ax += cidrblock($address, '178.234.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-760). ');
-$ax += cidrblock($address, '178.234.172.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-761). ');
-$ax += cidrblock($address, '178.234.176.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-762). ');
-$ax += cidrblock($address, '178.234.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-763). ');
-$ax += cidrblock($address, '178.255.234.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-764). ');
-$ax += cidrblock($address, '185.7.180.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-765). ');
-$ax += cidrblock($address, '185.17.201.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-766). ');
-$ax += cidrblock($address, '185.17.203.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-767). ');
-$ax += cidrblock($address, '185.27.148.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-768). ');
-$ax += cidrblock($address, '185.106.104.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-769). ');
-$ax += cidrblock($address, '185.134.120.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-770). ');
-$ax += cidrblock($address, '185.140.148.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-771). ');
-$ax += cidrblock($address, '185.169.100.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-772). ');
-$ax += cidrblock($address, '185.200.168.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-773). ');
-$ax += cidrblock($address, '185.205.128.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-774). ');
-$ax += cidrblock($address, '185.226.128.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-775). ');
-$ax += cidrblock($address, '188.16.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-776). ');
-$ax += cidrblock($address, '188.73.131.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-777). ');
-$ax += cidrblock($address, '188.73.132.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-778). ');
-$ax += cidrblock($address, '188.73.134.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-779). ');
-$ax += cidrblock($address, '188.73.136.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-780). ');
-$ax += cidrblock($address, '188.73.142.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-781). ');
-$ax += cidrblock($address, '188.73.146.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-782). ');
-$ax += cidrblock($address, '188.73.148.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-783). ');
-$ax += cidrblock($address, '188.73.156.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-784). ');
-$ax += cidrblock($address, '188.73.159.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-785). ');
-$ax += cidrblock($address, '188.73.160.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-786). ');
-$ax += cidrblock($address, '188.73.162.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-787). ');
-$ax += cidrblock($address, '188.73.173.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-788). ');
-$ax += cidrblock($address, '188.73.174.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-789). ');
-$ax += cidrblock($address, '188.73.181.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-790). ');
-$ax += cidrblock($address, '188.73.182.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-791). ');
-$ax += cidrblock($address, '188.73.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-792). ');
-$ax += cidrblock($address, '188.113.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-793). ');
-$ax += cidrblock($address, '188.114.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-794). ');
-$ax += cidrblock($address, '188.128.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-795). ');
-$ax += cidrblock($address, '188.133.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-796). ');
-$ax += cidrblock($address, '188.254.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-797). ');
-$ax += cidrblock($address, '193.31.0.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-798). ');
-$ax += cidrblock($address, '193.47.87.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-799). ');
-$ax += cidrblock($address, '193.228.108.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-800). ');
-$ax += cidrblock($address, '194.0.112.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-801). ');
-$ax += cidrblock($address, '194.38.9.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-802). ');
-$ax += cidrblock($address, '194.99.116.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-803). ');
-$ax += cidrblock($address, '194.135.136.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-804). ');
-$ax += cidrblock($address, '194.135.144.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-805). ');
-$ax += cidrblock($address, '194.146.240.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-806). ');
-$ax += cidrblock($address, '194.150.140.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-807). ');
-$ax += cidrblock($address, '195.19.4.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-808). ');
-$ax += cidrblock($address, '195.19.24.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-809). ');
-$ax += cidrblock($address, '195.19.79.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-810). ');
-$ax += cidrblock($address, '195.19.82.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-811). ');
-$ax += cidrblock($address, '195.19.96.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-812). ');
-$ax += cidrblock($address, '195.38.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-813). ');
-$ax += cidrblock($address, '195.46.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-814). ');
-$ax += cidrblock($address, '195.54.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-815). ');
-$ax += cidrblock($address, '195.68.252.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-816). ');
-$ax += cidrblock($address, '195.144.219.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-817). ');
-$ax += cidrblock($address, '195.160.244.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-818). ');
-$ax += cidrblock($address, '195.162.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-819). ');
-$ax += cidrblock($address, '195.245.211.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-820). ');
-$ax += cidrblock($address, '212.3.128.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-821). ');
-$ax += cidrblock($address, '212.3.130.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-822). ');
-$ax += cidrblock($address, '212.3.139.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-823). ');
-$ax += cidrblock($address, '212.3.140.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-824). ');
-$ax += cidrblock($address, '212.3.142.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-825). ');
-$ax += cidrblock($address, '212.3.144.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-826). ');
-$ax += cidrblock($address, '212.3.150.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-827). ');
-$ax += cidrblock($address, '212.3.157.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-828). ');
-$ax += cidrblock($address, '212.3.159.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-829). ');
-$ax += cidrblock($address, '212.14.198.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-830). ');
-$ax += cidrblock($address, '212.14.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-831). ');
-$ax += cidrblock($address, '212.14.206.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-832). ');
-$ax += cidrblock($address, '212.14.208.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-833). ');
-$ax += cidrblock($address, '212.14.218.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-834). ');
-$ax += cidrblock($address, '212.14.222.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-835). ');
-$ax += cidrblock($address, '212.20.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-836). ');
-$ax += cidrblock($address, '212.26.236.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-837). ');
-$ax += cidrblock($address, '212.32.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-838). ');
-$ax += cidrblock($address, '212.33.18.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-839). ');
-$ax += cidrblock($address, '212.34.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-840). ');
-$ax += cidrblock($address, '212.35.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-841). ');
-$ax += cidrblock($address, '212.48.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-842). ');
-$ax += cidrblock($address, '212.55.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-843). ');
-$ax += cidrblock($address, '212.57.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-844). ');
-$ax += cidrblock($address, '212.91.193.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-845). ');
-$ax += cidrblock($address, '212.91.194.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-846). ');
-$ax += cidrblock($address, '212.91.196.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-847). ');
-$ax += cidrblock($address, '212.91.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-848). ');
-$ax += cidrblock($address, '212.96.112.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-849). ');
-$ax += cidrblock($address, '212.96.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-850). ');
-$ax += cidrblock($address, '212.106.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-851). ');
-$ax += cidrblock($address, '212.107.195.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-852). ');
-$ax += cidrblock($address, '212.107.196.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-853). ');
-$ax += cidrblock($address, '212.107.201.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-854). ');
-$ax += cidrblock($address, '212.107.203.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-855). ');
-$ax += cidrblock($address, '212.107.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-856). ');
-$ax += cidrblock($address, '212.107.207.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-857). ');
-$ax += cidrblock($address, '212.107.222.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-858). ');
-$ax += cidrblock($address, '212.120.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-859). ');
-$ax += cidrblock($address, '212.122.7.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-860). ');
-$ax += cidrblock($address, '212.122.22.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-861). ');
-$ax += cidrblock($address, '212.124.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-862). ');
-$ax += cidrblock($address, '212.164.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-863). ');
-$ax += cidrblock($address, '212.220.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-864). ');
-$ax += cidrblock($address, '213.24.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-865). ');
-$ax += cidrblock($address, '213.24.64.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-866). ');
-$ax += cidrblock($address, '213.24.80.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-867). ');
-$ax += cidrblock($address, '213.24.96.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-868). ');
-$ax += cidrblock($address, '213.24.112.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-869). ');
-$ax += cidrblock($address, '213.24.128.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-870). ');
-$ax += cidrblock($address, '213.24.236.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-871). ');
-$ax += cidrblock($address, '213.24.238.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-872). ');
-$ax += cidrblock($address, '213.59.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-873). ');
-$ax += cidrblock($address, '213.129.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-874). ');
-$ax += cidrblock($address, '213.135.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-875). ');
-$ax += cidrblock($address, '213.135.136.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-876). ');
-$ax += cidrblock($address, '213.135.148.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-877). ');
-$ax += cidrblock($address, '213.135.154.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-878). ');
-$ax += cidrblock($address, '213.135.156.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-879). ');
-$ax += cidrblock($address, '213.142.35.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-880). ');
-$ax += cidrblock($address, '213.142.37.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-881). ');
-$ax += cidrblock($address, '213.142.41.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-882). ');
-$ax += cidrblock($address, '213.142.43.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-883). ');
-$ax += cidrblock($address, '213.142.48.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-884). ');
-$ax += cidrblock($address, '213.142.50.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-885). ');
-$ax += cidrblock($address, '213.142.52.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-886). ');
-$ax += cidrblock($address, '213.142.57.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-887). ');
-$ax += cidrblock($address, '213.142.59.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-888). ');
-$ax += cidrblock($address, '213.142.60.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-889). ');
-$ax += cidrblock($address, '213.142.63.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-890). ');
-$ax += cidrblock($address, '213.155.196.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-891). ');
-$ax += cidrblock($address, '213.155.200.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-892). ');
-$ax += cidrblock($address, '213.155.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-893). ');
-$ax += cidrblock($address, '213.158.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-894). ');
-$ax += cidrblock($address, '213.167.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-895). ');
-$ax += cidrblock($address, '213.177.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-896). ');
-$ax += cidrblock($address, '213.189.206.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-897). ');
-$ax += cidrblock($address, '213.189.210.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-898). ');
-$ax += cidrblock($address, '213.189.215.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-899). ');
-$ax += cidrblock($address, '213.210.73.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-900). ');
-$ax += cidrblock($address, '213.228.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-901). ');
-$ax += cidrblock($address, '213.242.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-902). ');
-$ax += cidrblock($address, '217.9.144.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-903). ');
-$ax += cidrblock($address, '217.15.128.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-904). ');
-$ax += cidrblock($address, '217.15.148.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-905). ');
-$ax += cidrblock($address, '217.15.152.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-906). ');
-$ax += cidrblock($address, '217.15.157.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-907). ');
-$ax += cidrblock($address, '217.15.159.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-908). ');
-$ax += cidrblock($address, '217.18.150.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-909). ');
-$ax += cidrblock($address, '217.20.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-910). ');
-$ax += cidrblock($address, '217.22.172.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-911). ');
-$ax += cidrblock($address, '217.23.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-912). ');
-$ax += cidrblock($address, '217.24.112.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-913). ');
-$ax += cidrblock($address, '217.64.133.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-914). ');
-$ax += cidrblock($address, '217.64.140.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-915). ');
-$ax += cidrblock($address, '217.65.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-916). ');
-$ax += cidrblock($address, '217.70.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-917). ');
-$ax += cidrblock($address, '217.106.32.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-918). ');
-$ax += cidrblock($address, '217.107.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-919). ');
-$ax += cidrblock($address, '217.107.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-920). ');
-$ax += cidrblock($address, '217.107.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-921). ');
-$ax += cidrblock($address, '217.116.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-922). ');
-$ax += cidrblock($address, '217.144.171.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-923). ');
-$ax += cidrblock($address, '217.168.64.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-924). ');
+$ax += cidrblock($address, '31.192.179.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-016). ');
+$ax += cidrblock($address, '31.192.188.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-017). ');
+$ax += cidrblock($address, '31.204.96.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-018). ');
+$ax += cidrblock($address, '37.1.64.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-019). ');
+$ax += cidrblock($address, '37.19.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-020). ');
+$ax += cidrblock($address, '37.19.48.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-021). ');
+$ax += cidrblock($address, '37.20.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-022). ');
+$ax += cidrblock($address, '37.76.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-023). ');
+$ax += cidrblock($address, '37.78.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-024). ');
+$ax += cidrblock($address, '45.80.64.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-025). ');
+$ax += cidrblock($address, '46.41.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-026). ');
+$ax += cidrblock($address, '46.45.192.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-027). ');
+$ax += cidrblock($address, '46.45.211.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-028). ');
+$ax += cidrblock($address, '46.45.219.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-029). ');
+$ax += cidrblock($address, '46.45.221.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-030). ');
+$ax += cidrblock($address, '46.45.227.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-031). ');
+$ax += cidrblock($address, '46.45.235.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-032). ');
+$ax += cidrblock($address, '46.45.236.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-033). ');
+$ax += cidrblock($address, '46.45.238.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-034). ');
+$ax += cidrblock($address, '46.48.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-035). ');
+$ax += cidrblock($address, '46.52.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-036). ');
+$ax += cidrblock($address, '46.61.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-037). ');
+$ax += cidrblock($address, '46.63.128.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-038). ');
+$ax += cidrblock($address, '46.63.132.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-039). ');
+$ax += cidrblock($address, '46.63.134.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-040). ');
+$ax += cidrblock($address, '46.63.139.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-041). ');
+$ax += cidrblock($address, '46.63.140.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-042). ');
+$ax += cidrblock($address, '46.63.146.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-043). ');
+$ax += cidrblock($address, '46.63.148.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-044). ');
+$ax += cidrblock($address, '46.63.151.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-045). ');
+$ax += cidrblock($address, '46.63.152.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-046). ');
+$ax += cidrblock($address, '46.63.156.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-047). ');
+$ax += cidrblock($address, '46.63.163.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-048). ');
+$ax += cidrblock($address, '46.63.168.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-049). ');
+$ax += cidrblock($address, '46.63.174.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-050). ');
+$ax += cidrblock($address, '46.63.176.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-051). ');
+$ax += cidrblock($address, '46.63.179.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-052). ');
+$ax += cidrblock($address, '46.63.180.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-053). ');
+$ax += cidrblock($address, '46.63.182.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-054). ');
+$ax += cidrblock($address, '46.63.184.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-055). ');
+$ax += cidrblock($address, '46.63.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-056). ');
+$ax += cidrblock($address, '46.63.224.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-057). ');
+$ax += cidrblock($address, '46.63.230.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-058). ');
+$ax += cidrblock($address, '46.63.232.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-059). ');
+$ax += cidrblock($address, '46.63.240.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-060). ');
+$ax += cidrblock($address, '46.150.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-061). ');
+$ax += cidrblock($address, '46.158.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-062). ');
+$ax += cidrblock($address, '46.235.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-063). ');
+$ax += cidrblock($address, '46.235.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-064). ');
+$ax += cidrblock($address, '46.237.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-065). ');
+$ax += cidrblock($address, '46.237.32.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-066). ');
+$ax += cidrblock($address, '46.237.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-067). ');
+$ax += cidrblock($address, '46.243.254.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-068). ');
+$ax += cidrblock($address, '62.105.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-069). ');
+$ax += cidrblock($address, '62.109.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-070). ');
+$ax += cidrblock($address, '62.148.157.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-071). ');
+$ax += cidrblock($address, '62.148.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-072). ');
+$ax += cidrblock($address, '62.165.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-073). ');
+$ax += cidrblock($address, '62.183.16.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-074). ');
+$ax += cidrblock($address, '62.183.102.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-075). ');
+$ax += cidrblock($address, '62.183.112.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-076). ');
+$ax += cidrblock($address, '62.183.115.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-077). ');
+$ax += cidrblock($address, '62.183.116.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-078). ');
+$ax += cidrblock($address, '62.183.124.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-079). ');
+$ax += cidrblock($address, '62.192.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-080). ');
+$ax += cidrblock($address, '62.213.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-081). ');
+$ax += cidrblock($address, '77.34.2.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-082). ');
+$ax += cidrblock($address, '77.34.10.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-083). ');
+$ax += cidrblock($address, '77.34.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-084). ');
+$ax += cidrblock($address, '77.34.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-085). ');
+$ax += cidrblock($address, '77.34.49.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-086). ');
+$ax += cidrblock($address, '77.34.54.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-087). ');
+$ax += cidrblock($address, '77.34.58.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-088). ');
+$ax += cidrblock($address, '77.34.61.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-089). ');
+$ax += cidrblock($address, '77.34.74.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-090). ');
+$ax += cidrblock($address, '77.34.77.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-091). ');
+$ax += cidrblock($address, '77.34.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-092). ');
+$ax += cidrblock($address, '77.34.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-093). ');
+$ax += cidrblock($address, '77.34.128.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-094). ');
+$ax += cidrblock($address, '77.34.131.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-095). ');
+$ax += cidrblock($address, '77.34.132.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-096). ');
+$ax += cidrblock($address, '77.34.136.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-097). ');
+$ax += cidrblock($address, '77.34.147.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-098). ');
+$ax += cidrblock($address, '77.34.150.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-099). ');
+$ax += cidrblock($address, '77.34.154.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-100). ');
+$ax += cidrblock($address, '77.34.158.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-101). ');
+$ax += cidrblock($address, '77.34.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-102). ');
+$ax += cidrblock($address, '77.34.202.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-103). ');
+$ax += cidrblock($address, '77.34.210.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-104). ');
+$ax += cidrblock($address, '77.34.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-105). ');
+$ax += cidrblock($address, '77.34.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-106). ');
+$ax += cidrblock($address, '77.34.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-107). ');
+$ax += cidrblock($address, '77.35.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-108). ');
+$ax += cidrblock($address, '77.35.65.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-109). ');
+$ax += cidrblock($address, '77.35.75.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-110). ');
+$ax += cidrblock($address, '77.35.88.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-111). ');
+$ax += cidrblock($address, '77.35.93.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-112). ');
+$ax += cidrblock($address, '77.35.94.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-113). ');
+$ax += cidrblock($address, '77.35.99.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-114). ');
+$ax += cidrblock($address, '77.35.100.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-115). ');
+$ax += cidrblock($address, '77.35.107.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-116). ');
+$ax += cidrblock($address, '77.35.108.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-117). ');
+$ax += cidrblock($address, '77.35.112.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-118). ');
+$ax += cidrblock($address, '77.35.120.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-119). ');
+$ax += cidrblock($address, '77.35.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-120). ');
+$ax += cidrblock($address, '77.39.24.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-121). ');
+$ax += cidrblock($address, '77.39.37.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-122). ');
+$ax += cidrblock($address, '77.39.44.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-123). ');
+$ax += cidrblock($address, '77.39.64.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-124). ');
+$ax += cidrblock($address, '77.39.72.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-125). ');
+$ax += cidrblock($address, '77.39.76.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-126). ');
+$ax += cidrblock($address, '77.39.101.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-127). ');
+$ax += cidrblock($address, '77.39.102.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-128). ');
+$ax += cidrblock($address, '77.39.115.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-129). ');
+$ax += cidrblock($address, '77.40.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-130). ');
+$ax += cidrblock($address, '77.45.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-131). ');
+$ax += cidrblock($address, '77.51.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-132). ');
+$ax += cidrblock($address, '77.51.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-133). ');
+$ax += cidrblock($address, '77.51.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-134). ');
+$ax += cidrblock($address, '77.72.240.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-135). ');
+$ax += cidrblock($address, '77.73.136.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-136). ');
+$ax += cidrblock($address, '77.82.1.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-137). ');
+$ax += cidrblock($address, '77.82.2.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-138). ');
+$ax += cidrblock($address, '77.82.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-139). ');
+$ax += cidrblock($address, '77.82.8.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-140). ');
+$ax += cidrblock($address, '77.82.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-141). ');
+$ax += cidrblock($address, '77.82.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-142). ');
+$ax += cidrblock($address, '77.82.48.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-143). ');
+$ax += cidrblock($address, '77.82.56.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-144). ');
+$ax += cidrblock($address, '77.82.60.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-145). ');
+$ax += cidrblock($address, '77.82.63.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-146). ');
+$ax += cidrblock($address, '77.82.64.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-147). ');
+$ax += cidrblock($address, '77.82.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-148). ');
+$ax += cidrblock($address, '77.82.76.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-149). ');
+$ax += cidrblock($address, '77.82.92.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-150). ');
+$ax += cidrblock($address, '77.82.96.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-151). ');
+$ax += cidrblock($address, '77.82.112.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-152). ');
+$ax += cidrblock($address, '77.82.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-153). ');
+$ax += cidrblock($address, '77.82.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-154). ');
+$ax += cidrblock($address, '77.87.64.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-155). ');
+$ax += cidrblock($address, '77.106.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-156). ');
+$ax += cidrblock($address, '77.234.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-157). ');
+$ax += cidrblock($address, '78.29.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-158). ');
+$ax += cidrblock($address, '78.36.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-159). ');
+$ax += cidrblock($address, '78.40.184.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-160). ');
+$ax += cidrblock($address, '78.81.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-161). ');
+$ax += cidrblock($address, '78.85.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-162). ');
+$ax += cidrblock($address, '78.132.144.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-163). ');
+$ax += cidrblock($address, '78.132.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-164). ');
+$ax += cidrblock($address, '78.132.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-165). ');
+$ax += cidrblock($address, '78.156.228.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-166). ');
+$ax += cidrblock($address, '78.156.232.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-167). ');
+$ax += cidrblock($address, '78.156.235.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-168). ');
+$ax += cidrblock($address, '79.105.0.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-169). ');
+$ax += cidrblock($address, '79.105.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-170). ');
+$ax += cidrblock($address, '79.105.8.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-171). ');
+$ax += cidrblock($address, '79.105.17.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-172). ');
+$ax += cidrblock($address, '79.105.18.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-173). ');
+$ax += cidrblock($address, '79.105.20.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-174). ');
+$ax += cidrblock($address, '79.105.24.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-175). ');
+$ax += cidrblock($address, '79.105.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-176). ');
+$ax += cidrblock($address, '79.105.64.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-177). ');
+$ax += cidrblock($address, '79.105.69.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-178). ');
+$ax += cidrblock($address, '79.105.70.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-179). ');
+$ax += cidrblock($address, '79.105.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-180). ');
+$ax += cidrblock($address, '79.105.74.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-181). ');
+$ax += cidrblock($address, '79.105.76.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-182). ');
+$ax += cidrblock($address, '79.105.79.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-183). ');
+$ax += cidrblock($address, '79.105.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-184). ');
+$ax += cidrblock($address, '79.105.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-185). ');
+$ax += cidrblock($address, '79.105.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-186). ');
+$ax += cidrblock($address, '79.105.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-187). ');
+$ax += cidrblock($address, '79.105.176.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-188). ');
+$ax += cidrblock($address, '79.105.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-189). ');
+$ax += cidrblock($address, '79.105.186.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-190). ');
+$ax += cidrblock($address, '79.105.188.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-191). ');
+$ax += cidrblock($address, '79.105.192.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-192). ');
+$ax += cidrblock($address, '79.105.194.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-193). ');
+$ax += cidrblock($address, '79.105.197.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-194). ');
+$ax += cidrblock($address, '79.105.209.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-195). ');
+$ax += cidrblock($address, '79.105.213.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-196). ');
+$ax += cidrblock($address, '79.105.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-197). ');
+$ax += cidrblock($address, '79.105.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-198). ');
+$ax += cidrblock($address, '79.105.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-199). ');
+$ax += cidrblock($address, '79.105.240.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-200). ');
+$ax += cidrblock($address, '79.105.248.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-201). ');
+$ax += cidrblock($address, '79.105.252.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-202). ');
+$ax += cidrblock($address, '79.105.255.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-203). ');
+$ax += cidrblock($address, '79.126.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-204). ');
+$ax += cidrblock($address, '79.133.64.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-205). ');
+$ax += cidrblock($address, '79.133.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-206). ');
+$ax += cidrblock($address, '80.68.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-207). ');
+$ax += cidrblock($address, '80.71.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-208). ');
+$ax += cidrblock($address, '80.72.214.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-209). ');
+$ax += cidrblock($address, '80.88.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-210). ');
+$ax += cidrblock($address, '80.95.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-211). ');
+$ax += cidrblock($address, '80.234.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-212). ');
+$ax += cidrblock($address, '80.244.34.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-213). ');
+$ax += cidrblock($address, '80.244.36.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-214). ');
+$ax += cidrblock($address, '80.246.70.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-215). ');
+$ax += cidrblock($address, '80.246.72.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-216). ');
+$ax += cidrblock($address, '80.246.74.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-217). ');
+$ax += cidrblock($address, '80.246.79.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-218). ');
+$ax += cidrblock($address, '80.246.80.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-219). ');
+$ax += cidrblock($address, '80.246.84.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-220). ');
+$ax += cidrblock($address, '80.246.86.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-221). ');
+$ax += cidrblock($address, '80.246.91.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-222). ');
+$ax += cidrblock($address, '80.246.92.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-223). ');
+$ax += cidrblock($address, '81.2.0.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-224). ');
+$ax += cidrblock($address, '81.2.2.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-225). ');
+$ax += cidrblock($address, '81.2.6.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-226). ');
+$ax += cidrblock($address, '81.2.8.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-227). ');
+$ax += cidrblock($address, '81.2.10.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-228). ');
+$ax += cidrblock($address, '81.2.12.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-229). ');
+$ax += cidrblock($address, '81.2.14.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-230). ');
+$ax += cidrblock($address, '81.2.17.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-231). ');
+$ax += cidrblock($address, '81.2.26.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-232). ');
+$ax += cidrblock($address, '81.2.44.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-233). ');
+$ax += cidrblock($address, '81.2.48.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-234). ');
+$ax += cidrblock($address, '81.2.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-235). ');
+$ax += cidrblock($address, '81.9.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-236). ');
+$ax += cidrblock($address, '81.20.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-237). ');
+$ax += cidrblock($address, '81.23.144.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-238). ');
+$ax += cidrblock($address, '81.27.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-239). ');
+$ax += cidrblock($address, '81.89.125.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-240). ');
+$ax += cidrblock($address, '81.89.127.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-241). ');
+$ax += cidrblock($address, '81.177.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-242). ');
+$ax += cidrblock($address, '82.140.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-243). ');
+$ax += cidrblock($address, '82.151.123.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-244). ');
+$ax += cidrblock($address, '82.151.125.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-245). ');
+$ax += cidrblock($address, '82.162.0.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-246). ');
+$ax += cidrblock($address, '82.162.12.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-247). ');
+$ax += cidrblock($address, '82.162.17.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-248). ');
+$ax += cidrblock($address, '82.162.23.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-249). ');
+$ax += cidrblock($address, '82.162.24.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-250). ');
+$ax += cidrblock($address, '82.162.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-251). ');
+$ax += cidrblock($address, '82.162.120.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-252). ');
+$ax += cidrblock($address, '82.162.131.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-253). ');
+$ax += cidrblock($address, '82.162.176.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-254). ');
+$ax += cidrblock($address, '82.162.178.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-255). ');
+$ax += cidrblock($address, '82.162.180.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-256). ');
+$ax += cidrblock($address, '82.162.184.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-257). ');
+$ax += cidrblock($address, '82.162.252.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-258). ');
+$ax += cidrblock($address, '82.208.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-259). ');
+$ax += cidrblock($address, '83.136.112.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-260). ');
+$ax += cidrblock($address, '83.171.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-261). ');
+$ax += cidrblock($address, '83.217.10.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-262). ');
+$ax += cidrblock($address, '83.217.20.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-263). ');
+$ax += cidrblock($address, '83.219.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-264). ');
+$ax += cidrblock($address, '83.239.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-265). ');
+$ax += cidrblock($address, '84.42.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-266). ');
+$ax += cidrblock($address, '84.51.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-267). ');
+$ax += cidrblock($address, '84.53.194.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-268). ');
+$ax += cidrblock($address, '84.53.207.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-269). ');
+$ax += cidrblock($address, '84.53.212.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-270). ');
+$ax += cidrblock($address, '84.53.220.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-271). ');
+$ax += cidrblock($address, '84.53.224.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-272). ');
+$ax += cidrblock($address, '84.53.226.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-273). ');
+$ax += cidrblock($address, '84.53.231.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-274). ');
+$ax += cidrblock($address, '84.53.233.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-275). ');
+$ax += cidrblock($address, '84.53.234.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-276). ');
+$ax += cidrblock($address, '84.53.248.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-277). ');
+$ax += cidrblock($address, '84.54.209.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-278). ');
+$ax += cidrblock($address, '84.54.211.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-279). ');
+$ax += cidrblock($address, '84.54.219.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-280). ');
+$ax += cidrblock($address, '84.54.248.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-281). ');
+$ax += cidrblock($address, '84.54.255.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-282). ');
+$ax += cidrblock($address, '85.15.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-283). ');
+$ax += cidrblock($address, '85.28.206.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-284). ');
+$ax += cidrblock($address, '85.28.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-285). ');
+$ax += cidrblock($address, '85.28.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-286). ');
+$ax += cidrblock($address, '85.93.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-287). ');
+$ax += cidrblock($address, '85.94.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-288). ');
+$ax += cidrblock($address, '85.94.8.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-289). ');
+$ax += cidrblock($address, '85.94.16.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-290). ');
+$ax += cidrblock($address, '85.94.28.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-291). ');
+$ax += cidrblock($address, '85.95.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-292). ');
+$ax += cidrblock($address, '85.112.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-293). ');
+$ax += cidrblock($address, '85.113.193.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-294). ');
+$ax += cidrblock($address, '85.113.194.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-295). ');
+$ax += cidrblock($address, '85.113.196.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-296). ');
+$ax += cidrblock($address, '85.113.198.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-297). ');
+$ax += cidrblock($address, '85.113.201.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-298). ');
+$ax += cidrblock($address, '85.113.202.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-299). ');
+$ax += cidrblock($address, '85.113.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-300). ');
+$ax += cidrblock($address, '85.113.206.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-301). ');
+$ax += cidrblock($address, '85.113.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-302). ');
+$ax += cidrblock($address, '85.114.89.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-303). ');
+$ax += cidrblock($address, '85.116.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-304). ');
+$ax += cidrblock($address, '85.172.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-305). ');
+$ax += cidrblock($address, '85.192.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-306). ');
+$ax += cidrblock($address, '85.233.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-307). ');
+$ax += cidrblock($address, '85.237.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-308). ');
+$ax += cidrblock($address, '86.102.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-309). ');
+$ax += cidrblock($address, '86.102.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-310). ');
+$ax += cidrblock($address, '86.102.85.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-311). ');
+$ax += cidrblock($address, '86.102.91.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-312). ');
+$ax += cidrblock($address, '86.102.127.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-313). ');
+$ax += cidrblock($address, '86.102.129.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-314). ');
+$ax += cidrblock($address, '86.102.140.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-315). ');
+$ax += cidrblock($address, '86.102.143.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-316). ');
+$ax += cidrblock($address, '86.102.159.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-317). ');
+$ax += cidrblock($address, '86.102.174.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-318). ');
+$ax += cidrblock($address, '86.102.176.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-319). ');
+$ax += cidrblock($address, '86.102.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-320). ');
+$ax += cidrblock($address, '86.102.188.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-321). ');
+$ax += cidrblock($address, '86.102.204.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-322). ');
+$ax += cidrblock($address, '86.102.209.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-323). ');
+$ax += cidrblock($address, '86.102.211.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-324). ');
+$ax += cidrblock($address, '86.102.213.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-325). ');
+$ax += cidrblock($address, '86.102.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-326). ');
+$ax += cidrblock($address, '86.102.226.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-327). ');
+$ax += cidrblock($address, '86.102.233.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-328). ');
+$ax += cidrblock($address, '86.102.234.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-329). ');
+$ax += cidrblock($address, '86.102.238.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-330). ');
+$ax += cidrblock($address, '86.102.249.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-331). ');
+$ax += cidrblock($address, '86.102.251.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-332). ');
+$ax += cidrblock($address, '86.102.254.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-333). ');
+$ax += cidrblock($address, '87.103.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-334). ');
+$ax += cidrblock($address, '87.117.32.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-335). ');
+$ax += cidrblock($address, '87.117.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-336). ');
+$ax += cidrblock($address, '87.117.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-337). ');
+$ax += cidrblock($address, '87.119.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-338). ');
+$ax += cidrblock($address, '87.224.150.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-339). ');
+$ax += cidrblock($address, '87.224.174.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-340). ');
+$ax += cidrblock($address, '87.224.177.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-341). ');
+$ax += cidrblock($address, '87.224.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-342). ');
+$ax += cidrblock($address, '87.224.186.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-343). ');
+$ax += cidrblock($address, '87.224.191.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-344). ');
+$ax += cidrblock($address, '87.224.192.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-345). ');
+$ax += cidrblock($address, '87.224.197.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-346). ');
+$ax += cidrblock($address, '87.224.198.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-347). ');
+$ax += cidrblock($address, '87.224.200.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-348). ');
+$ax += cidrblock($address, '87.224.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-349). ');
+$ax += cidrblock($address, '87.224.207.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-350). ');
+$ax += cidrblock($address, '87.224.208.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-351). ');
+$ax += cidrblock($address, '87.224.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-352). ');
+$ax += cidrblock($address, '87.224.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-353). ');
+$ax += cidrblock($address, '87.224.225.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-354). ');
+$ax += cidrblock($address, '87.224.226.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-355). ');
+$ax += cidrblock($address, '87.224.228.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-356). ');
+$ax += cidrblock($address, '87.224.234.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-357). ');
+$ax += cidrblock($address, '87.224.239.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-358). ');
+$ax += cidrblock($address, '87.224.241.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-359). ');
+$ax += cidrblock($address, '87.224.244.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-360). ');
+$ax += cidrblock($address, '87.224.249.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-361). ');
+$ax += cidrblock($address, '87.224.250.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-362). ');
+$ax += cidrblock($address, '87.224.253.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-363). ');
+$ax += cidrblock($address, '87.225.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-364). ');
+$ax += cidrblock($address, '87.225.18.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-365). ');
+$ax += cidrblock($address, '87.225.20.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-366). ');
+$ax += cidrblock($address, '87.225.24.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-367). ');
+$ax += cidrblock($address, '87.225.32.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-368). ');
+$ax += cidrblock($address, '87.225.40.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-369). ');
+$ax += cidrblock($address, '87.225.46.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-370). ');
+$ax += cidrblock($address, '87.225.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-371). ');
+$ax += cidrblock($address, '87.225.64.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-372). ');
+$ax += cidrblock($address, '87.225.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-373). ');
+$ax += cidrblock($address, '87.225.74.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-374). ');
+$ax += cidrblock($address, '87.225.78.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-375). ');
+$ax += cidrblock($address, '87.225.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-376). ');
+$ax += cidrblock($address, '87.225.96.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-377). ');
+$ax += cidrblock($address, '87.225.100.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-378). ');
+$ax += cidrblock($address, '87.225.104.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-379). ');
+$ax += cidrblock($address, '87.225.112.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-380). ');
+$ax += cidrblock($address, '87.225.120.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-381). ');
+$ax += cidrblock($address, '87.225.124.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-382). ');
+$ax += cidrblock($address, '87.225.127.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-383). ');
+$ax += cidrblock($address, '87.226.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-384). ');
+$ax += cidrblock($address, '87.251.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-385). ');
+$ax += cidrblock($address, '87.253.0.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-386). ');
+$ax += cidrblock($address, '87.253.8.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-387). ');
+$ax += cidrblock($address, '87.253.15.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-388). ');
+$ax += cidrblock($address, '87.253.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-389). ');
+$ax += cidrblock($address, '87.253.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-390). ');
+$ax += cidrblock($address, '88.85.176.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-391). ');
+$ax += cidrblock($address, '88.147.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-392). ');
+$ax += cidrblock($address, '88.200.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-393). ');
+$ax += cidrblock($address, '88.205.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-394). ');
+$ax += cidrblock($address, '88.215.182.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-395). ');
+$ax += cidrblock($address, '88.215.186.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-396). ');
+$ax += cidrblock($address, '89.20.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-397). ');
+$ax += cidrblock($address, '89.20.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-398). ');
+$ax += cidrblock($address, '89.109.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-399). ');
+$ax += cidrblock($address, '89.109.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-400). ');
+$ax += cidrblock($address, '89.109.224.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-401). ');
+$ax += cidrblock($address, '89.110.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-402). ');
+$ax += cidrblock($address, '89.151.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-403). ');
+$ax += cidrblock($address, '89.184.224.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-404). ');
+$ax += cidrblock($address, '89.184.232.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-405). ');
+$ax += cidrblock($address, '89.184.240.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-406). ');
+$ax += cidrblock($address, '89.190.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-407). ');
+$ax += cidrblock($address, '89.191.236.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-408). ');
+$ax += cidrblock($address, '89.204.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-409). ');
+$ax += cidrblock($address, '89.221.199.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-410). ');
+$ax += cidrblock($address, '89.221.207.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-411). ');
+$ax += cidrblock($address, '89.223.97.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-412). ');
+$ax += cidrblock($address, '89.223.101.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-413). ');
+$ax += cidrblock($address, '89.223.102.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-414). ');
+$ax += cidrblock($address, '89.223.104.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-415). ');
+$ax += cidrblock($address, '89.232.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-416). ');
+$ax += cidrblock($address, '89.239.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-417). ');
+$ax += cidrblock($address, '89.248.112.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-418). ');
+$ax += cidrblock($address, '89.250.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-419). ');
+$ax += cidrblock($address, '89.254.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-420). ');
+$ax += cidrblock($address, '90.150.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-421). ');
+$ax += cidrblock($address, '90.154.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-422). ');
+$ax += cidrblock($address, '90.157.1.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-423). ');
+$ax += cidrblock($address, '90.157.3.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-424). ');
+$ax += cidrblock($address, '90.157.6.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-425). ');
+$ax += cidrblock($address, '90.157.9.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-426). ');
+$ax += cidrblock($address, '90.157.10.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-427). ');
+$ax += cidrblock($address, '90.157.12.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-428). ');
+$ax += cidrblock($address, '90.157.19.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-429). ');
+$ax += cidrblock($address, '90.157.21.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-430). ');
+$ax += cidrblock($address, '90.157.22.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-431). ');
+$ax += cidrblock($address, '90.157.25.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-432). ');
+$ax += cidrblock($address, '90.157.26.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-433). ');
+$ax += cidrblock($address, '90.157.28.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-434). ');
+$ax += cidrblock($address, '90.157.32.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-435). ');
+$ax += cidrblock($address, '90.157.36.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-436). ');
+$ax += cidrblock($address, '90.157.41.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-437). ');
+$ax += cidrblock($address, '90.157.43.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-438). ');
+$ax += cidrblock($address, '90.157.44.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-439). ');
+$ax += cidrblock($address, '90.157.49.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-440). ');
+$ax += cidrblock($address, '90.157.51.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-441). ');
+$ax += cidrblock($address, '90.157.54.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-442). ');
+$ax += cidrblock($address, '90.157.56.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-443). ');
+$ax += cidrblock($address, '90.157.61.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-444). ');
+$ax += cidrblock($address, '90.157.63.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-445). ');
+$ax += cidrblock($address, '90.157.64.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-446). ');
+$ax += cidrblock($address, '90.157.72.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-447). ');
+$ax += cidrblock($address, '90.157.76.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-448). ');
+$ax += cidrblock($address, '90.157.84.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-449). ');
+$ax += cidrblock($address, '90.157.88.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-450). ');
+$ax += cidrblock($address, '90.157.96.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-451). ');
+$ax += cidrblock($address, '90.157.100.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-452). ');
+$ax += cidrblock($address, '90.157.103.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-453). ');
+$ax += cidrblock($address, '90.157.104.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-454). ');
+$ax += cidrblock($address, '90.157.111.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-455). ');
+$ax += cidrblock($address, '90.157.112.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-456). ');
+$ax += cidrblock($address, '90.157.118.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-457). ');
+$ax += cidrblock($address, '90.157.120.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-458). ');
+$ax += cidrblock($address, '90.157.123.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-459). ');
+$ax += cidrblock($address, '90.157.124.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-460). ');
+$ax += cidrblock($address, '90.188.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-461). ');
+$ax += cidrblock($address, '91.106.232.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-462). ');
+$ax += cidrblock($address, '91.122.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-463). ');
+$ax += cidrblock($address, '91.147.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-464). ');
+$ax += cidrblock($address, '91.185.232.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-465). ');
+$ax += cidrblock($address, '91.210.252.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-466). ');
+$ax += cidrblock($address, '91.226.92.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-467). ');
+$ax += cidrblock($address, '91.228.48.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-468). ');
+$ax += cidrblock($address, '92.37.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-469). ');
+$ax += cidrblock($address, '92.49.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-470). ');
+$ax += cidrblock($address, '92.50.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-471). ');
+$ax += cidrblock($address, '92.54.64.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-472). ');
+$ax += cidrblock($address, '92.54.68.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-473). ');
+$ax += cidrblock($address, '92.54.70.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-474). ');
+$ax += cidrblock($address, '92.54.72.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-475). ');
+$ax += cidrblock($address, '92.54.83.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-476). ');
+$ax += cidrblock($address, '92.54.98.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-477). ');
+$ax += cidrblock($address, '92.54.104.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-478). ');
+$ax += cidrblock($address, '92.54.109.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-479). ');
+$ax += cidrblock($address, '92.54.111.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-480). ');
+$ax += cidrblock($address, '92.54.112.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-481). ');
+$ax += cidrblock($address, '92.54.116.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-482). ');
+$ax += cidrblock($address, '92.61.66.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-483). ');
+$ax += cidrblock($address, '92.61.68.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-484). ');
+$ax += cidrblock($address, '92.100.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-485). ');
+$ax += cidrblock($address, '92.124.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-486). ');
+$ax += cidrblock($address, '92.252.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-487). ');
+$ax += cidrblock($address, '93.90.240.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-488). ');
+$ax += cidrblock($address, '93.120.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-489). ');
+$ax += cidrblock($address, '93.124.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-490). ');
+$ax += cidrblock($address, '93.177.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-491). ');
+$ax += cidrblock($address, '93.178.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-492). ');
+$ax += cidrblock($address, '93.181.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-493). ');
+$ax += cidrblock($address, '93.181.226.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-494). ');
+$ax += cidrblock($address, '93.181.228.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-495). ');
+$ax += cidrblock($address, '93.181.232.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-496). ');
+$ax += cidrblock($address, '93.181.240.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-497). ');
+$ax += cidrblock($address, '93.185.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-498). ');
+$ax += cidrblock($address, '94.25.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-499). ');
+$ax += cidrblock($address, '94.28.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-500). ');
+$ax += cidrblock($address, '94.31.129.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-501). ');
+$ax += cidrblock($address, '94.31.131.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-502). ');
+$ax += cidrblock($address, '94.31.132.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-503). ');
+$ax += cidrblock($address, '94.31.137.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-504). ');
+$ax += cidrblock($address, '94.31.138.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-505). ');
+$ax += cidrblock($address, '94.31.140.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-506). ');
+$ax += cidrblock($address, '94.31.144.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-507). ');
+$ax += cidrblock($address, '94.31.146.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-508). ');
+$ax += cidrblock($address, '94.31.148.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-509). ');
+$ax += cidrblock($address, '94.31.150.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-510). ');
+$ax += cidrblock($address, '94.31.153.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-511). ');
+$ax += cidrblock($address, '94.31.154.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-512). ');
+$ax += cidrblock($address, '94.31.156.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-513). ');
+$ax += cidrblock($address, '94.31.161.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-514). ');
+$ax += cidrblock($address, '94.31.162.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-515). ');
+$ax += cidrblock($address, '94.31.164.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-516). ');
+$ax += cidrblock($address, '94.31.168.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-517). ');
+$ax += cidrblock($address, '94.31.172.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-518). ');
+$ax += cidrblock($address, '94.31.175.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-519). ');
+$ax += cidrblock($address, '94.31.180.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-520). ');
+$ax += cidrblock($address, '94.31.186.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-521). ');
+$ax += cidrblock($address, '94.31.188.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-522). ');
+$ax += cidrblock($address, '94.31.190.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-523). ');
+$ax += cidrblock($address, '94.31.192.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-524). ');
+$ax += cidrblock($address, '94.31.197.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-525). ');
+$ax += cidrblock($address, '94.31.198.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-526). ');
+$ax += cidrblock($address, '94.31.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-527). ');
+$ax += cidrblock($address, '94.31.208.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-528). ');
+$ax += cidrblock($address, '94.31.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-529). ');
+$ax += cidrblock($address, '94.31.216.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-530). ');
+$ax += cidrblock($address, '94.31.222.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-531). ');
+$ax += cidrblock($address, '94.31.224.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-532). ');
+$ax += cidrblock($address, '94.31.227.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-533). ');
+$ax += cidrblock($address, '94.31.230.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-534). ');
+$ax += cidrblock($address, '94.31.234.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-535). ');
+$ax += cidrblock($address, '94.31.236.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-536). ');
+$ax += cidrblock($address, '94.31.238.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-537). ');
+$ax += cidrblock($address, '94.31.242.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-538). ');
+$ax += cidrblock($address, '94.31.244.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-539). ');
+$ax += cidrblock($address, '94.31.248.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-540). ');
+$ax += cidrblock($address, '94.31.251.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-541). ');
+$ax += cidrblock($address, '94.50.0.0/15', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-542). ');
+$ax += cidrblock($address, '94.75.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-543). ');
+$ax += cidrblock($address, '94.78.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-544). ');
+$ax += cidrblock($address, '94.125.185.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-545). ');
+$ax += cidrblock($address, '94.142.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-546). ');
+$ax += cidrblock($address, '94.232.200.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-547). ');
+$ax += cidrblock($address, '94.233.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-548). ');
+$ax += cidrblock($address, '94.233.16.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-549). ');
+$ax += cidrblock($address, '94.233.40.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-550). ');
+$ax += cidrblock($address, '94.233.46.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-551). ');
+$ax += cidrblock($address, '94.233.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-552). ');
+$ax += cidrblock($address, '94.233.68.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-553). ');
+$ax += cidrblock($address, '94.233.71.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-554). ');
+$ax += cidrblock($address, '94.233.72.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-555). ');
+$ax += cidrblock($address, '94.233.80.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-556). ');
+$ax += cidrblock($address, '94.233.88.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-557). ');
+$ax += cidrblock($address, '94.233.96.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-558). ');
+$ax += cidrblock($address, '94.233.108.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-559). ');
+$ax += cidrblock($address, '94.233.112.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-560). ');
+$ax += cidrblock($address, '94.233.120.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-561). ');
+$ax += cidrblock($address, '94.233.144.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-562). ');
+$ax += cidrblock($address, '94.233.146.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-563). ');
+$ax += cidrblock($address, '94.233.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-564). ');
+$ax += cidrblock($address, '94.241.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-565). ');
+$ax += cidrblock($address, '94.241.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-566). ');
+$ax += cidrblock($address, '94.242.128.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-567). ');
+$ax += cidrblock($address, '94.242.152.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-568). ');
+$ax += cidrblock($address, '94.242.161.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-569). ');
+$ax += cidrblock($address, '94.242.162.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-570). ');
+$ax += cidrblock($address, '94.242.164.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-571). ');
+$ax += cidrblock($address, '94.242.171.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-572). ');
+$ax += cidrblock($address, '94.242.172.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-573). ');
+$ax += cidrblock($address, '94.242.176.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-574). ');
+$ax += cidrblock($address, '94.242.184.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-575). ');
+$ax += cidrblock($address, '94.242.188.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-576). ');
+$ax += cidrblock($address, '94.242.190.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-577). ');
+$ax += cidrblock($address, '94.245.128.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-578). ');
+$ax += cidrblock($address, '94.245.144.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-579). ');
+$ax += cidrblock($address, '94.245.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-580). ');
+$ax += cidrblock($address, '94.255.1.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-581). ');
+$ax += cidrblock($address, '94.255.4.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-582). ');
+$ax += cidrblock($address, '94.255.8.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-583). ');
+$ax += cidrblock($address, '94.255.10.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-584). ');
+$ax += cidrblock($address, '94.255.21.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-585). ');
+$ax += cidrblock($address, '94.255.22.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-586). ');
+$ax += cidrblock($address, '94.255.26.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-587). ');
+$ax += cidrblock($address, '94.255.35.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-588). ');
+$ax += cidrblock($address, '94.255.64.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-589). ');
+$ax += cidrblock($address, '94.255.67.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-590). ');
+$ax += cidrblock($address, '94.255.71.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-591). ');
+$ax += cidrblock($address, '94.255.76.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-592). ');
+$ax += cidrblock($address, '94.255.82.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-593). ');
+$ax += cidrblock($address, '94.255.94.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-594). ');
+$ax += cidrblock($address, '94.255.106.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-595). ');
+$ax += cidrblock($address, '95.32.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-596). ');
+$ax += cidrblock($address, '95.37.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-597). ');
+$ax += cidrblock($address, '95.52.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-598). ');
+$ax += cidrblock($address, '95.67.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-599). ');
+$ax += cidrblock($address, '95.68.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-600). ');
+$ax += cidrblock($address, '95.70.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-601). ');
+$ax += cidrblock($address, '95.71.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-602). ');
+$ax += cidrblock($address, '95.72.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-603). ');
+$ax += cidrblock($address, '95.73.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-604). ');
+$ax += cidrblock($address, '95.73.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-605). ');
+$ax += cidrblock($address, '95.73.48.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-606). ');
+$ax += cidrblock($address, '95.73.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-607). ');
+$ax += cidrblock($address, '95.73.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-608). ');
+$ax += cidrblock($address, '95.81.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-609). ');
+$ax += cidrblock($address, '95.83.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-610). ');
+$ax += cidrblock($address, '95.84.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-611). ');
+$ax += cidrblock($address, '95.86.192.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-612). ');
+$ax += cidrblock($address, '95.86.200.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-613). ');
+$ax += cidrblock($address, '95.86.210.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-614). ');
+$ax += cidrblock($address, '95.86.212.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-615). ');
+$ax += cidrblock($address, '95.86.216.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-616). ');
+$ax += cidrblock($address, '95.86.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-617). ');
+$ax += cidrblock($address, '95.106.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-618). ');
+$ax += cidrblock($address, '95.107.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-619). ');
+$ax += cidrblock($address, '95.139.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-620). ');
+$ax += cidrblock($address, '95.141.0.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-621). ');
+$ax += cidrblock($address, '95.152.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-622). ');
+$ax += cidrblock($address, '95.156.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-623). ');
+$ax += cidrblock($address, '95.158.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-624). ');
+$ax += cidrblock($address, '95.159.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-625). ');
+$ax += cidrblock($address, '95.159.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-626). ');
+$ax += cidrblock($address, '95.159.168.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-627). ');
+$ax += cidrblock($address, '95.159.172.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-628). ');
+$ax += cidrblock($address, '95.159.176.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-629). ');
+$ax += cidrblock($address, '95.159.180.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-630). ');
+$ax += cidrblock($address, '95.159.184.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-631). ');
+$ax += cidrblock($address, '95.167.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-632). ');
+$ax += cidrblock($address, '95.179.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-633). ');
+$ax += cidrblock($address, '95.188.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-634). ');
+$ax += cidrblock($address, '109.61.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-635). ');
+$ax += cidrblock($address, '109.62.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-636). ');
+$ax += cidrblock($address, '109.62.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-637). ');
+$ax += cidrblock($address, '109.62.172.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-638). ');
+$ax += cidrblock($address, '109.62.176.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-639). ');
+$ax += cidrblock($address, '109.62.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-640). ');
+$ax += cidrblock($address, '109.62.224.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-641). ');
+$ax += cidrblock($address, '109.62.240.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-642). ');
+$ax += cidrblock($address, '109.68.168.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-643). ');
+$ax += cidrblock($address, '109.108.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-644). ');
+$ax += cidrblock($address, '109.126.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-645). ');
+$ax += cidrblock($address, '109.127.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-646). ');
+$ax += cidrblock($address, '109.161.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-647). ');
+$ax += cidrblock($address, '109.161.32.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-648). ');
+$ax += cidrblock($address, '109.161.49.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-649). ');
+$ax += cidrblock($address, '109.161.50.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-650). ');
+$ax += cidrblock($address, '109.161.53.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-651). ');
+$ax += cidrblock($address, '109.161.54.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-652). ');
+$ax += cidrblock($address, '109.161.58.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-653). ');
+$ax += cidrblock($address, '109.161.60.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-654). ');
+$ax += cidrblock($address, '109.161.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-655). ');
+$ax += cidrblock($address, '109.165.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-656). ');
+$ax += cidrblock($address, '109.168.132.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-657). ');
+$ax += cidrblock($address, '109.168.136.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-658). ');
+$ax += cidrblock($address, '109.168.141.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-659). ');
+$ax += cidrblock($address, '109.168.142.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-660). ');
+$ax += cidrblock($address, '109.168.156.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-661). ');
+$ax += cidrblock($address, '109.168.158.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-662). ');
+$ax += cidrblock($address, '109.168.161.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-663). ');
+$ax += cidrblock($address, '109.168.163.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-664). ');
+$ax += cidrblock($address, '109.168.164.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-665). ');
+$ax += cidrblock($address, '109.168.167.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-666). ');
+$ax += cidrblock($address, '109.168.168.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-667). ');
+$ax += cidrblock($address, '109.168.170.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-668). ');
+$ax += cidrblock($address, '109.168.177.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-669). ');
+$ax += cidrblock($address, '109.168.182.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-670). ');
+$ax += cidrblock($address, '109.168.184.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-671). ');
+$ax += cidrblock($address, '109.168.186.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-672). ');
+$ax += cidrblock($address, '109.168.188.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-673). ');
+$ax += cidrblock($address, '109.168.196.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-674). ');
+$ax += cidrblock($address, '109.168.200.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-675). ');
+$ax += cidrblock($address, '109.168.204.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-676). ');
+$ax += cidrblock($address, '109.168.206.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-677). ');
+$ax += cidrblock($address, '109.168.208.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-678). ');
+$ax += cidrblock($address, '109.168.213.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-679). ');
+$ax += cidrblock($address, '109.168.215.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-680). ');
+$ax += cidrblock($address, '109.168.216.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-681). ');
+$ax += cidrblock($address, '109.168.219.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-682). ');
+$ax += cidrblock($address, '109.168.220.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-683). ');
+$ax += cidrblock($address, '109.168.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-684). ');
+$ax += cidrblock($address, '109.169.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-685). ');
+$ax += cidrblock($address, '109.172.0.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-686). ');
+$ax += cidrblock($address, '109.172.10.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-687). ');
+$ax += cidrblock($address, '109.172.12.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-688). ');
+$ax += cidrblock($address, '109.172.24.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-689). ');
+$ax += cidrblock($address, '109.172.28.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-690). ');
+$ax += cidrblock($address, '109.172.57.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-691). ');
+$ax += cidrblock($address, '109.172.60.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-692). ');
+$ax += cidrblock($address, '109.172.62.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-693). ');
+$ax += cidrblock($address, '109.172.67.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-694). ');
+$ax += cidrblock($address, '109.172.68.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-695). ');
+$ax += cidrblock($address, '109.172.77.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-696). ');
+$ax += cidrblock($address, '109.184.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-697). ');
+$ax += cidrblock($address, '109.198.196.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-698). ');
+$ax += cidrblock($address, '109.198.200.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-699). ');
+$ax += cidrblock($address, '109.198.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-700). ');
+$ax += cidrblock($address, '109.203.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-701). ');
+$ax += cidrblock($address, '109.225.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-702). ');
+$ax += cidrblock($address, '109.225.35.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-703). ');
+$ax += cidrblock($address, '109.225.36.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-704). ');
+$ax += cidrblock($address, '109.225.43.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-705). ');
+$ax += cidrblock($address, '109.225.44.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-706). ');
+$ax += cidrblock($address, '109.225.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-707). ');
+$ax += cidrblock($address, '109.236.235.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-708). ');
+$ax += cidrblock($address, '109.236.236.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-709). ');
+$ax += cidrblock($address, '134.90.208.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-710). ');
+$ax += cidrblock($address, '176.48.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-711). ');
+$ax += cidrblock($address, '176.208.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-712). ');
+$ax += cidrblock($address, '178.34.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-713). ');
+$ax += cidrblock($address, '178.34.128.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-714). ');
+$ax += cidrblock($address, '178.34.144.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-715). ');
+$ax += cidrblock($address, '178.34.160.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-716). ');
+$ax += cidrblock($address, '178.34.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-717). ');
+$ax += cidrblock($address, '178.35.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-718). ');
+$ax += cidrblock($address, '178.44.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-719). ');
+$ax += cidrblock($address, '178.64.0.0/13', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-720). ');
+$ax += cidrblock($address, '178.75.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-721). ');
+$ax += cidrblock($address, '178.130.24.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-722). ');
+$ax += cidrblock($address, '178.130.32.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-723). ');
+$ax += cidrblock($address, '178.130.44.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-724). ');
+$ax += cidrblock($address, '178.166.128.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-725). ');
+$ax += cidrblock($address, '178.184.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-726). ');
+$ax += cidrblock($address, '178.217.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-727). ');
+$ax += cidrblock($address, '178.234.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-728). ');
+$ax += cidrblock($address, '178.234.16.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-729). ');
+$ax += cidrblock($address, '178.234.48.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-730). ');
+$ax += cidrblock($address, '178.234.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-731). ');
+$ax += cidrblock($address, '178.234.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-732). ');
+$ax += cidrblock($address, '178.234.160.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-733). ');
+$ax += cidrblock($address, '178.234.172.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-734). ');
+$ax += cidrblock($address, '178.234.176.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-735). ');
+$ax += cidrblock($address, '178.234.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-736). ');
+$ax += cidrblock($address, '178.255.234.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-737). ');
+$ax += cidrblock($address, '185.17.201.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-738). ');
+$ax += cidrblock($address, '185.17.203.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-739). ');
+$ax += cidrblock($address, '185.27.148.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-740). ');
+$ax += cidrblock($address, '185.106.104.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-741). ');
+$ax += cidrblock($address, '185.134.120.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-742). ');
+$ax += cidrblock($address, '185.140.148.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-743). ');
+$ax += cidrblock($address, '185.169.100.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-744). ');
+$ax += cidrblock($address, '185.199.4.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-745). ');
+$ax += cidrblock($address, '185.200.168.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-746). ');
+$ax += cidrblock($address, '185.205.128.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-747). ');
+$ax += cidrblock($address, '185.226.128.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-748). ');
+$ax += cidrblock($address, '188.16.0.0/14', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-749). ');
+$ax += cidrblock($address, '188.73.131.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-750). ');
+$ax += cidrblock($address, '188.73.132.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-751). ');
+$ax += cidrblock($address, '188.73.134.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-752). ');
+$ax += cidrblock($address, '188.73.136.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-753). ');
+$ax += cidrblock($address, '188.73.142.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-754). ');
+$ax += cidrblock($address, '188.73.146.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-755). ');
+$ax += cidrblock($address, '188.73.148.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-756). ');
+$ax += cidrblock($address, '188.73.150.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-757). ');
+$ax += cidrblock($address, '188.73.159.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-758). ');
+$ax += cidrblock($address, '188.73.160.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-759). ');
+$ax += cidrblock($address, '188.73.162.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-760). ');
+$ax += cidrblock($address, '188.73.173.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-761). ');
+$ax += cidrblock($address, '188.73.174.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-762). ');
+$ax += cidrblock($address, '188.73.181.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-763). ');
+$ax += cidrblock($address, '188.73.182.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-764). ');
+$ax += cidrblock($address, '188.113.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-765). ');
+$ax += cidrblock($address, '188.114.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-766). ');
+$ax += cidrblock($address, '188.128.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-767). ');
+$ax += cidrblock($address, '188.133.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-768). ');
+$ax += cidrblock($address, '188.254.0.0/17', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-769). ');
+$ax += cidrblock($address, '193.31.0.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-770). ');
+$ax += cidrblock($address, '193.47.87.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-771). ');
+$ax += cidrblock($address, '193.228.108.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-772). ');
+$ax += cidrblock($address, '194.0.112.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-773). ');
+$ax += cidrblock($address, '194.38.9.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-774). ');
+$ax += cidrblock($address, '194.99.116.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-775). ');
+$ax += cidrblock($address, '194.146.240.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-776). ');
+$ax += cidrblock($address, '194.150.140.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-777). ');
+$ax += cidrblock($address, '194.165.22.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-778). ');
+$ax += cidrblock($address, '195.19.4.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-779). ');
+$ax += cidrblock($address, '195.19.24.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-780). ');
+$ax += cidrblock($address, '195.19.79.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-781). ');
+$ax += cidrblock($address, '195.19.82.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-782). ');
+$ax += cidrblock($address, '195.19.96.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-783). ');
+$ax += cidrblock($address, '195.38.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-784). ');
+$ax += cidrblock($address, '195.46.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-785). ');
+$ax += cidrblock($address, '195.54.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-786). ');
+$ax += cidrblock($address, '195.68.252.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-787). ');
+$ax += cidrblock($address, '195.144.219.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-788). ');
+$ax += cidrblock($address, '195.160.244.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-789). ');
+$ax += cidrblock($address, '195.162.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-790). ');
+$ax += cidrblock($address, '195.245.211.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-791). ');
+$ax += cidrblock($address, '212.3.128.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-792). ');
+$ax += cidrblock($address, '212.3.130.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-793). ');
+$ax += cidrblock($address, '212.3.139.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-794). ');
+$ax += cidrblock($address, '212.3.140.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-795). ');
+$ax += cidrblock($address, '212.3.144.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-796). ');
+$ax += cidrblock($address, '212.3.157.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-797). ');
+$ax += cidrblock($address, '212.3.159.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-798). ');
+$ax += cidrblock($address, '212.14.198.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-799). ');
+$ax += cidrblock($address, '212.14.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-800). ');
+$ax += cidrblock($address, '212.14.206.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-801). ');
+$ax += cidrblock($address, '212.14.208.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-802). ');
+$ax += cidrblock($address, '212.14.218.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-803). ');
+$ax += cidrblock($address, '212.14.222.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-804). ');
+$ax += cidrblock($address, '212.20.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-805). ');
+$ax += cidrblock($address, '212.26.236.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-806). ');
+$ax += cidrblock($address, '212.32.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-807). ');
+$ax += cidrblock($address, '212.33.18.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-808). ');
+$ax += cidrblock($address, '212.34.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-809). ');
+$ax += cidrblock($address, '212.35.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-810). ');
+$ax += cidrblock($address, '212.48.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-811). ');
+$ax += cidrblock($address, '212.55.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-812). ');
+$ax += cidrblock($address, '212.57.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-813). ');
+$ax += cidrblock($address, '212.91.193.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-814). ');
+$ax += cidrblock($address, '212.91.194.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-815). ');
+$ax += cidrblock($address, '212.91.196.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-816). ');
+$ax += cidrblock($address, '212.91.214.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-817). ');
+$ax += cidrblock($address, '212.96.112.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-818). ');
+$ax += cidrblock($address, '212.96.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-819). ');
+$ax += cidrblock($address, '212.106.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-820). ');
+$ax += cidrblock($address, '212.107.195.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-821). ');
+$ax += cidrblock($address, '212.107.196.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-822). ');
+$ax += cidrblock($address, '212.107.201.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-823). ');
+$ax += cidrblock($address, '212.107.203.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-824). ');
+$ax += cidrblock($address, '212.107.205.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-825). ');
+$ax += cidrblock($address, '212.107.207.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-826). ');
+$ax += cidrblock($address, '212.107.222.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-827). ');
+$ax += cidrblock($address, '212.120.160.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-828). ');
+$ax += cidrblock($address, '212.122.7.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-829). ');
+$ax += cidrblock($address, '212.122.22.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-830). ');
+$ax += cidrblock($address, '212.124.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-831). ');
+$ax += cidrblock($address, '212.164.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-832). ');
+$ax += cidrblock($address, '212.220.0.0/16', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-833). ');
+$ax += cidrblock($address, '213.24.56.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-834). ');
+$ax += cidrblock($address, '213.24.64.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-835). ');
+$ax += cidrblock($address, '213.24.80.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-836). ');
+$ax += cidrblock($address, '213.24.96.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-837). ');
+$ax += cidrblock($address, '213.24.112.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-838). ');
+$ax += cidrblock($address, '213.24.128.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-839). ');
+$ax += cidrblock($address, '213.24.236.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-840). ');
+$ax += cidrblock($address, '213.24.238.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-841). ');
+$ax += cidrblock($address, '213.59.192.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-842). ');
+$ax += cidrblock($address, '213.129.32.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-843). ');
+$ax += cidrblock($address, '213.135.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-844). ');
+$ax += cidrblock($address, '213.135.136.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-845). ');
+$ax += cidrblock($address, '213.135.148.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-846). ');
+$ax += cidrblock($address, '213.135.154.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-847). ');
+$ax += cidrblock($address, '213.135.156.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-848). ');
+$ax += cidrblock($address, '213.142.37.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-849). ');
+$ax += cidrblock($address, '213.142.41.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-850). ');
+$ax += cidrblock($address, '213.142.43.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-851). ');
+$ax += cidrblock($address, '213.142.48.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-852). ');
+$ax += cidrblock($address, '213.142.50.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-853). ');
+$ax += cidrblock($address, '213.142.52.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-854). ');
+$ax += cidrblock($address, '213.142.59.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-855). ');
+$ax += cidrblock($address, '213.142.60.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-856). ');
+$ax += cidrblock($address, '213.142.63.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-857). ');
+$ax += cidrblock($address, '213.155.196.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-858). ');
+$ax += cidrblock($address, '213.155.200.0/21', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-859). ');
+$ax += cidrblock($address, '213.155.208.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-860). ');
+$ax += cidrblock($address, '213.158.0.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-861). ');
+$ax += cidrblock($address, '213.167.192.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-862). ');
+$ax += cidrblock($address, '213.177.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-863). ');
+$ax += cidrblock($address, '213.189.206.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-864). ');
+$ax += cidrblock($address, '213.189.210.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-865). ');
+$ax += cidrblock($address, '213.189.215.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-866). ');
+$ax += cidrblock($address, '213.210.73.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-867). ');
+$ax += cidrblock($address, '213.210.112.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-868). ');
+$ax += cidrblock($address, '213.228.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-869). ');
+$ax += cidrblock($address, '213.242.0.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-870). ');
+$ax += cidrblock($address, '217.9.144.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-871). ');
+$ax += cidrblock($address, '217.15.128.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-872). ');
+$ax += cidrblock($address, '217.15.148.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-873). ');
+$ax += cidrblock($address, '217.15.152.0/22', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-874). ');
+$ax += cidrblock($address, '217.15.157.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-875). ');
+$ax += cidrblock($address, '217.15.159.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-876). ');
+$ax += cidrblock($address, '217.18.150.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-877). ');
+$ax += cidrblock($address, '217.20.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-878). ');
+$ax += cidrblock($address, '217.22.172.0/23', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-879). ');
+$ax += cidrblock($address, '217.23.16.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-880). ');
+$ax += cidrblock($address, '217.65.80.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-881). ');
+$ax += cidrblock($address, '217.70.96.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-882). ');
+$ax += cidrblock($address, '217.106.32.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-883). ');
+$ax += cidrblock($address, '217.107.64.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-884). ');
+$ax += cidrblock($address, '217.107.128.0/18', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-885). ');
+$ax += cidrblock($address, '217.107.224.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-886). ');
+$ax += cidrblock($address, '217.116.128.0/19', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-887). ');
+$ax += cidrblock($address, '217.144.171.0/24', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-888). ');
+$ax += cidrblock($address, '217.168.64.0/20', 'PJSC Rostelecom (IP4S-PJSCROSTELECOM-889). ');
 
 // ASNs 3216, 8402, 16345 ("PJSC Vimpelcom", "OJSC Vimpelcom").
 // Russian domestic ISP. Brute-force, SSH, SQLi, and webapp attacks, hacking,
@@ -7322,7 +7270,7 @@ $ax += cidrblock($address, '176.124.147.236/32', 'Ultra-Telecom LLC (IP4S-ULTRAT
 // - bgpmon.net/large-scale-bgp-hijack-out-of-india/
 // - forums.spybot.info/showthread.php?23632-SPAM-frauds-fakes-and-other-MALWARE-deliveries/page37
 // - dyn.com/blog/mitm-internet-hijacking/
-// Updated: 2024.03.14 / Modified: 2024.08.15
+// Updated: 2024.03.14 / Modified: 2024.08.25
 
 $ax += cidrblock($address, '5.182.110.0/24', 'Cogent (IP4S-COGENT-00). ');
 $ax += cidrblock($address, '45.88.97.0/24', 'Cogent (IP4S-COGENT-01). ');
@@ -7375,34 +7323,36 @@ $ax += cidrblock($address, '154.17.1.69/32', 'Cogent (IP4S-COGENT-47). ');
 $ax += cidrblock($address, '154.17.2.95/32', 'Cogent (IP4S-COGENT-48). ');
 $ax += cidrblock($address, '154.17.8.128/32', 'Cogent (IP4S-COGENT-49). ');
 $ax += cidrblock($address, '154.17.8.148/32', 'Cogent (IP4S-COGENT-50). ');
-$ax += cidrblock($address, '195.78.54.0/24', 'Cogent (IP4S-COGENT-51). ');
-$ax += cidrblock($address, '198.16.66.0/24', 'Cogent (IP4S-COGENT-52). ');
-$ax += cidrblock($address, '198.16.74.203/32', 'Cogent (IP4S-COGENT-53). ');
-$ax += cidrblock($address, '198.16.74.204/31', 'Cogent (IP4S-COGENT-54). ');
-$ax += cidrblock($address, '198.16.76.27/32', 'Cogent (IP4S-COGENT-55). ');
-$ax += cidrblock($address, '198.16.76.28/31', 'Cogent (IP4S-COGENT-56). ');
-$ax += cidrblock($address, '198.16.76.68/31', 'Cogent (IP4S-COGENT-57). ');
-$ax += cidrblock($address, '198.16.78.43/32', 'Cogent (IP4S-COGENT-58). ');
-$ax += cidrblock($address, '198.16.78.44/32', 'Cogent (IP4S-COGENT-59). ');
-$ax += cidrblock($address, '204.93.149.0/24', 'Cogent (IP4S-COGENT-60). ');
-$ax += cidrblock($address, '206.42.50.0/24', 'Cogent (IP4S-COGENT-61). ');
-$ax += cidrblock($address, '206.42.55.25/32', 'Cogent (IP4S-COGENT-62). ');
-$ax += cidrblock($address, '206.42.55.193/32', 'Cogent (IP4S-COGENT-63). ');
-$ax += cidrblock($address, '206.42.56.143/32', 'Cogent (IP4S-COGENT-64). ');
-$ax += cidrblock($address, '206.42.56.228/32', 'Cogent (IP4S-COGENT-65). ');
-$ax += cidrblock($address, '207.90.244.0/24', 'Cogent (IP4S-COGENT-66). ');
-$ax += cidrblock($address, '216.24.213.0/24', 'Cogent (IP4S-COGENT-67). ');
-$ax += cidrblock($address, '216.24.216.0/24', 'Cogent (IP4S-COGENT-68). ');
-$ax += cidrblock($address, '216.131.104.0/24', 'Cogent (IP4S-COGENT-69). ');
-$ax += cidrblock($address, '216.131.106.0/23', 'Cogent (IP4S-COGENT-70). ');
-$ax += cidrblock($address, '102.129.145.0/24', 'Cogent (IP4S-COGENT-71). ');
-$ax += cidrblock($address, '102.129.152.0/23', 'Cogent (IP4S-COGENT-72). ');
-$ax += cidrblock($address, '102.165.16.0/24', 'Cogent (IP4S-COGENT-73). ');
-$ax += cidrblock($address, '102.165.48.0/24', 'Cogent (IP4S-COGENT-74). ');
-$ax += cidrblock($address, '154.16.49.0/24', 'Cogent (IP4S-COGENT-75). ');
-$ax += cidrblock($address, '154.16.105.0/24', 'Cogent (IP4S-COGENT-76). ');
-$ax += cidrblock($address, '154.16.192.0/24', 'Cogent (IP4S-COGENT-77). ');
-$ax += cidrblock($address, '163.5.175.0/24', 'Cogent (IP4S-COGENT-78). ');
+$ax += cidrblock($address, '154.64.232.0/24', 'Cogent (IP4S-COGENT-51). ');
+$ax += cidrblock($address, '154.64.240.0/20', 'Cogent (IP4S-COGENT-52). ');
+$ax += cidrblock($address, '195.78.54.0/24', 'Cogent (IP4S-COGENT-53). ');
+$ax += cidrblock($address, '198.16.66.0/24', 'Cogent (IP4S-COGENT-54). ');
+$ax += cidrblock($address, '198.16.74.203/32', 'Cogent (IP4S-COGENT-55). ');
+$ax += cidrblock($address, '198.16.74.204/31', 'Cogent (IP4S-COGENT-56). ');
+$ax += cidrblock($address, '198.16.76.27/32', 'Cogent (IP4S-COGENT-57). ');
+$ax += cidrblock($address, '198.16.76.28/31', 'Cogent (IP4S-COGENT-58). ');
+$ax += cidrblock($address, '198.16.76.68/31', 'Cogent (IP4S-COGENT-59). ');
+$ax += cidrblock($address, '198.16.78.43/32', 'Cogent (IP4S-COGENT-60). ');
+$ax += cidrblock($address, '198.16.78.44/32', 'Cogent (IP4S-COGENT-61). ');
+$ax += cidrblock($address, '204.93.149.0/24', 'Cogent (IP4S-COGENT-62). ');
+$ax += cidrblock($address, '206.42.50.0/24', 'Cogent (IP4S-COGENT-63). ');
+$ax += cidrblock($address, '206.42.55.25/32', 'Cogent (IP4S-COGENT-64). ');
+$ax += cidrblock($address, '206.42.55.193/32', 'Cogent (IP4S-COGENT-65). ');
+$ax += cidrblock($address, '206.42.56.143/32', 'Cogent (IP4S-COGENT-66). ');
+$ax += cidrblock($address, '206.42.56.228/32', 'Cogent (IP4S-COGENT-67). ');
+$ax += cidrblock($address, '207.90.244.0/24', 'Cogent (IP4S-COGENT-68). ');
+$ax += cidrblock($address, '216.24.213.0/24', 'Cogent (IP4S-COGENT-69). ');
+$ax += cidrblock($address, '216.24.216.0/24', 'Cogent (IP4S-COGENT-70). ');
+$ax += cidrblock($address, '216.131.104.0/24', 'Cogent (IP4S-COGENT-71). ');
+$ax += cidrblock($address, '216.131.106.0/23', 'Cogent (IP4S-COGENT-72). ');
+$ax += cidrblock($address, '102.129.145.0/24', 'Cogent (IP4S-COGENT-73). ');
+$ax += cidrblock($address, '102.129.152.0/23', 'Cogent (IP4S-COGENT-74). ');
+$ax += cidrblock($address, '102.165.16.0/24', 'Cogent (IP4S-COGENT-75). ');
+$ax += cidrblock($address, '102.165.48.0/24', 'Cogent (IP4S-COGENT-76). ');
+$ax += cidrblock($address, '154.16.49.0/24', 'Cogent (IP4S-COGENT-77). ');
+$ax += cidrblock($address, '154.16.105.0/24', 'Cogent (IP4S-COGENT-78). ');
+$ax += cidrblock($address, '154.16.192.0/24', 'Cogent (IP4S-COGENT-79). ');
+$ax += cidrblock($address, '163.5.175.0/24', 'Cogent (IP4S-COGENT-80). ');
 
 // ASN 54133 ("UnmeteredInternet.com").
 // North American ISP. XMLRPC, webapp, honeypot, WordPress website, and Drupal
@@ -7416,7 +7366,7 @@ $ax += cidrblock($address, '104.218.61.252/31', 'UnmeteredInternet.com (IP4S-UNM
 // ASN 133610 ("BRAC").
 // An NGO charity whose IPs were caught being used in attempts to hack into
 // WordPress installations. See abuseipdb.com/check/103.43.93.26 for example.
-// Updated: 2017.10.20 / Modified: 2021.02.23 / Checked: 2023.09.07
+// Updated: 2017.10.20 / Modified: 2021.02.23 / Checked: 2024.08.28
 
 $ax += cidrblock($address, '103.43.93.0/24', 'BRAC (IP4S-BRAC-0). ');
 $ax += cidrblock($address, '103.238.63.0/24', 'BRAC (IP4S-BRAC-1). ');
@@ -8774,12 +8724,12 @@ $ax += cidrblock($address, '213.200.31.0/24', 'Magticom Ltd (IP4S-MAGTICOMLTD-15
 // Maldives domestic ISP. Brute-force, SSH, DDoS, and webapp attacks, port
 // scans, and spam detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2023.09.26
+// Updated: 2024.09.01
 
-$ax += cidrblock($address, '27.114.134.66/32', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-0). ');
-$ax += cidrblock($address, '124.195.199.0/24', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-1). ');
-$ax += cidrblock($address, '202.1.197.114/32', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-2). ');
-$ax += cidrblock($address, '202.1.197.117/32', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-3). ');
+$ax += cidrblock($address, '27.114.134.17/32', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-0). ');
+$ax += cidrblock($address, '27.114.134.76/32', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-1). ');
+$ax += cidrblock($address, '27.114.134.251/32', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-2). ');
+$ax += cidrblock($address, '124.195.199.0/24', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-3). ');
 $ax += cidrblock($address, '202.1.197.140/32', 'Dhivehi Raajjeyge (IP4S-DHIVEHIRAAJJEYGE-4). ');
 
 // ASN 196777 ("SKORUK ANDRIY OLEKSANDROVYCH").
@@ -9039,10 +8989,10 @@ $ax += cidrblock($address, '193.179.9.46/32', 'Planet A (IP4S-PLANETA-3). ');
 
 // ASN 25513 ("PJSC Moscow city telephone network").
 // Russian domestic ISP and a significant source of forum and blog spam.
-// Updated: 2023.09.15
+// Updated: 2024.08.28
 
 $ax += cidrblock($address, '37.230.157.0/24', 'PJSC Moscow city (IP4S-PJSCMOSCOWCITY-00). ');
-$ax += cidrblock($address, '178.170.246.0/23', 'PJSC Moscow city (IP4S-PJSCMOSCOWCITY-01). ');
+$ax += cidrblock($address, '178.170.246.0/24', 'PJSC Moscow city (IP4S-PJSCMOSCOWCITY-01). ');
 $ax += cidrblock($address, '37.190.0.0/17', 'PJSC Moscow city (IP4S-PJSCMOSCOWCITY-02). ');
 $ax += cidrblock($address, '46.138.0.0/16', 'PJSC Moscow city (IP4S-PJSCMOSCOWCITY-03). ');
 $ax += cidrblock($address, '46.175.200.0/22', 'PJSC Moscow city (IP4S-PJSCMOSCOWCITY-04). ');
@@ -9321,13 +9271,6 @@ $ax += cidrblock($address, '203.153.62.109/32', 'ICC Communication (IP4S-ICCCOMM
 $ax += cidrblock($address, '45.64.138.210/32', 'Zx Online Ltd (IP4S-ZXONLINELTD-0). ');
 $ax += cidrblock($address, '45.64.138.213/32', 'Zx Online Ltd (IP4S-ZXONLINELTD-1). ');
 $ax += cidrblock($address, '45.64.138.214/32', 'Zx Online Ltd (IP4S-ZXONLINELTD-2). ');
-
-// ASN 21127 ("Zap-Sib TransTeleCom").
-// Russian domestic ISP. Brute-force and SSH attacks, spam, and email harvestors
-// detected from here. Listing just the affected ranges/addresses only.
-// Updated: 2023.09.28
-
-$ax += cidrblock($address, '80.89.137.142/32', 'Zap-Sib TransTeleCom (IP4S-ZAPSIBTRANSTELECOM-0). ');
 
 // ASN 9441 ("Next Online Limited").
 // Bangladesh domestic ISP. Brute-force attacks, malware, port scans, hacking,
@@ -10231,80 +10174,80 @@ $ax += cidrblock($address, '109.151.163.236/32', 'British Telecom PLC (IP4S-BRIT
 $ax += cidrblock($address, '109.159.52.112/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-15). ');
 $ax += cidrblock($address, '194.72.183.146/32', 'British Telecom PLC (IP4S-BRITISHTELECOMPLC-16). ');
 
-// ASNs 7015, 7725, 7922, 33661, 33652, 33668 ("Comcast Cable Communications, LLC").
+// ASNs 7015, 7725, 7922, 33661, 33651, 33652, 33668 ("Comcast Cable Communications, LLC").
 // Major domestic ISP in the United States; Should NEVER be blocked in entirety.
 // Listed here are some specific CIDRs/IPs on their network that pose a major
 // spam risk and/or are known sources of spam and/or other undesirable traffic.
 // Mozi botnet detected from here.
-// Updated: 2024.02.04 / Modified: 2024.07.02
+// Updated: 2024.08.31
 
-$ax += cidrblock($address, '23.24.138.134/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-00). ');
-$ax += cidrblock($address, '24.15.228.123/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-01). ');
-$ax += cidrblock($address, '24.128.118.105/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-02). ');
-$ax += cidrblock($address, '50.192.49.5/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-03). ');
-$ax += cidrblock($address, '50.192.49.195/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-04). ');
+$ax += cidrblock($address, '24.128.118.105/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-00). ');
+$ax += cidrblock($address, '24.147.160.144/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-01). ');
+$ax += cidrblock($address, '24.218.247.74/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-02). ');
+$ax += cidrblock($address, '50.192.49.195/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-03). ');
+$ax += cidrblock($address, '50.197.210.20/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-04). ');
 $ax += cidrblock($address, '50.197.210.138/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-05). ');
 $ax += cidrblock($address, '50.199.46.20/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-06). ');
 $ax += cidrblock($address, '50.209.208.17/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-07). ');
-$ax += cidrblock($address, '50.225.176.54/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-08). ');
-$ax += cidrblock($address, '50.225.176.238/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-09). ');
-$ax += cidrblock($address, '64.139.79.35/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-10). ');
-$ax += cidrblock($address, '67.160.12.73/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-11). ');
-$ax += cidrblock($address, '67.160.46.64/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-12). ');
-$ax += cidrblock($address, '67.171.77.127/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-13). ');
-$ax += cidrblock($address, '67.172.15.154/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-14). ');
-$ax += cidrblock($address, '67.172.174.180/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-15). ');
-$ax += cidrblock($address, '67.185.67.122/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-16). ');
-$ax += cidrblock($address, '68.51.138.138/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-17). ');
-$ax += cidrblock($address, '68.55.247.141/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-18). ');
-$ax += cidrblock($address, '69.245.188.134/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-19). ');
-$ax += cidrblock($address, '69.255.78.243/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-20). ');
-$ax += cidrblock($address, '70.88.133.222/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-21). ');
-$ax += cidrblock($address, '71.26.37.234/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-22). ');
-$ax += cidrblock($address, '71.237.44.87/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-23). ');
-$ax += cidrblock($address, '73.1.136.88/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-24). ');
-$ax += cidrblock($address, '73.2.122.103/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-25). ');
+$ax += cidrblock($address, '50.225.176.238/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-08). ');
+$ax += cidrblock($address, '64.139.79.35/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-09). ');
+$ax += cidrblock($address, '67.160.46.64/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-10). ');
+$ax += cidrblock($address, '67.168.134.140/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-11). ');
+$ax += cidrblock($address, '68.51.138.138/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-12). ');
+$ax += cidrblock($address, '68.53.73.73/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-13). ');
+$ax += cidrblock($address, '68.55.207.245/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-14). ');
+$ax += cidrblock($address, '68.57.230.106/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-15). ');
+$ax += cidrblock($address, '68.83.66.114/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-16). ');
+$ax += cidrblock($address, '69.141.179.52/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-17). ');
+$ax += cidrblock($address, '69.141.179.69/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-18). ');
+$ax += cidrblock($address, '69.246.139.249/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-19). ');
+$ax += cidrblock($address, '71.206.158.117/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-20). ');
+$ax += cidrblock($address, '73.0.165.44/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-21). ');
+$ax += cidrblock($address, '73.1.136.88/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-22). ');
+$ax += cidrblock($address, '73.14.112.3/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-23). ');
+$ax += cidrblock($address, '73.27.219.178/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-24). ');
+$ax += cidrblock($address, '73.53.47.237/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-25). ');
 $ax += cidrblock($address, '73.56.81.5/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-26). ');
-$ax += cidrblock($address, '73.86.5.187/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-27). ');
-$ax += cidrblock($address, '73.97.80.207/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-28). ');
-$ax += cidrblock($address, '73.99.118.193/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-29). ');
-$ax += cidrblock($address, '73.119.89.86/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-30). ');
-$ax += cidrblock($address, '73.124.107.27/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-31). ');
-$ax += cidrblock($address, '73.139.105.129/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-32). ');
-$ax += cidrblock($address, '73.191.26.15/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-33). ');
-$ax += cidrblock($address, '73.195.77.33/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-34). ');
-$ax += cidrblock($address, '73.196.81.231/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-35). ');
-$ax += cidrblock($address, '73.208.109.252/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-36). ');
-$ax += cidrblock($address, '73.208.202.58/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-37). ');
-$ax += cidrblock($address, '73.237.164.21/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-38). ');
-$ax += cidrblock($address, '73.253.68.194/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-39). ');
-$ax += cidrblock($address, '75.64.136.240/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-40). ');
-$ax += cidrblock($address, '75.148.14.234/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-41). ');
-$ax += cidrblock($address, '75.151.35.77/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-42). ');
-$ax += cidrblock($address, '76.108.0.152/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-43). ');
-$ax += cidrblock($address, '76.108.0.200/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-44). ');
-$ax += cidrblock($address, '76.113.176.134/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-45). ');
-$ax += cidrblock($address, '76.116.197.81/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-46). ');
-$ax += cidrblock($address, '76.133.196.247/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-47). ');
-$ax += cidrblock($address, '76.151.121.141/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-48). ');
-$ax += cidrblock($address, '76.153.53.143/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-49). ');
-$ax += cidrblock($address, '76.155.25.59/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-50). ');
-$ax += cidrblock($address, '96.66.15.152/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-51). ');
-$ax += cidrblock($address, '96.77.65.177/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-52). ');
-$ax += cidrblock($address, '96.95.217.118/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-53). ');
-$ax += cidrblock($address, '98.49.66.65/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-54). ');
-$ax += cidrblock($address, '98.49.165.2/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-55). ');
-$ax += cidrblock($address, '98.50.62.120/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-56). ');
-$ax += cidrblock($address, '98.58.154.190/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-57). ');
-$ax += cidrblock($address, '98.60.155.101/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-58). ');
-$ax += cidrblock($address, '98.228.144.131/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-59). ');
-$ax += cidrblock($address, '98.232.221.169/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-60). ');
-$ax += cidrblock($address, '98.242.12.186/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-61). ');
-$ax += cidrblock($address, '98.248.70.93/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-62). ');
-$ax += cidrblock($address, '98.249.227.71/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-63). ');
-$ax += cidrblock($address, '98.249.227.120/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-64). ');
-$ax += cidrblock($address, '174.51.103.35/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-65). ');
-$ax += cidrblock($address, '174.54.161.16/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-66). ');
+$ax += cidrblock($address, '73.97.255.110/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-27). ');
+$ax += cidrblock($address, '73.99.118.193/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-28). ');
+$ax += cidrblock($address, '73.119.89.86/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-29). ');
+$ax += cidrblock($address, '73.124.107.27/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-30). ');
+$ax += cidrblock($address, '73.155.132.117/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-31). ');
+$ax += cidrblock($address, '73.175.21.45/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-32). ');
+$ax += cidrblock($address, '73.180.191.189/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-33). ');
+$ax += cidrblock($address, '73.188.132.79/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-34). ');
+$ax += cidrblock($address, '73.191.26.15/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-35). ');
+$ax += cidrblock($address, '73.196.81.231/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-36). ');
+$ax += cidrblock($address, '73.208.109.252/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-37). ');
+$ax += cidrblock($address, '73.219.200.205/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-38). ');
+$ax += cidrblock($address, '73.229.18.242/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-39). ');
+$ax += cidrblock($address, '73.234.238.69/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-40). ');
+$ax += cidrblock($address, '73.237.164.21/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-41). ');
+$ax += cidrblock($address, '75.64.136.240/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-42). ');
+$ax += cidrblock($address, '75.68.100.57/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-43). ');
+$ax += cidrblock($address, '75.148.14.234/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-44). ');
+$ax += cidrblock($address, '75.151.35.77/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-45). ');
+$ax += cidrblock($address, '75.151.35.165/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-46). ');
+$ax += cidrblock($address, '76.112.106.60/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-47). ');
+$ax += cidrblock($address, '76.116.197.81/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-48). ');
+$ax += cidrblock($address, '76.116.197.118/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-49). ');
+$ax += cidrblock($address, '76.116.197.212/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-50). ');
+$ax += cidrblock($address, '76.138.249.182/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-51). ');
+$ax += cidrblock($address, '76.143.37.208/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-52). ');
+$ax += cidrblock($address, '76.152.185.185/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-53). ');
+$ax += cidrblock($address, '76.153.53.143/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-54). ');
+$ax += cidrblock($address, '96.66.15.152/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-55). ');
+$ax += cidrblock($address, '96.78.193.70/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-56). ');
+$ax += cidrblock($address, '98.49.165.2/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-57). ');
+$ax += cidrblock($address, '98.194.0.9/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-58). ');
+$ax += cidrblock($address, '98.207.151.97/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-59). ');
+$ax += cidrblock($address, '98.207.151.180/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-60). ');
+$ax += cidrblock($address, '98.218.114.193/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-61). ');
+$ax += cidrblock($address, '98.249.227.120/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-62). ');
+$ax += cidrblock($address, '173.8.185.250/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-63). ');
+$ax += cidrblock($address, '173.165.243.209/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-64). ');
+$ax += cidrblock($address, '174.167.44.90/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-65). ');
+$ax += cidrblock($address, '174.180.33.84/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-66). ');
 $ax += cidrblock($address, '174.180.33.225/32', 'Comcast Cable Communications (IP4S-COMCASTCABLECOMMUNICATIONS-67). ');
 
 // ASN 22773 ("Cox Communications Inc").
@@ -10768,7 +10711,7 @@ $ax += cidrblock($address, '212.156.94.194/32', 'TTNet A.S (IP4S-TTNETAS-109). '
 // Korean domestic ISP. Caught by honeypots. Brute-force, FTP, and webapp
 // attacks, port scans, spamming, and probing for vulnerabilities detected from
 // here. Listing just the affected address/ranges only.
-// Updated: 2023.12.12 / Modified: 2024.07.14
+// Updated: 2023.12.12 / Modified: 2024.08.24
 
 $ax += cidrblock($address, '202.168.152.193/32', 'Korea Telecom (IP4S-KOREATELECOM-000). ');
 $ax += cidrblock($address, '202.168.152.237/32', 'Korea Telecom (IP4S-KOREATELECOM-001). ');
@@ -10876,80 +10819,81 @@ $ax += cidrblock($address, '175.196.245.105/32', 'Korea Telecom (IP4S-KOREATELEC
 $ax += cidrblock($address, '175.205.4.218/32', 'Korea Telecom (IP4S-KOREATELECOM-103). ');
 $ax += cidrblock($address, '175.211.41.49/32', 'Korea Telecom (IP4S-KOREATELECOM-104). ');
 $ax += cidrblock($address, '183.96.236.250/32', 'Korea Telecom (IP4S-KOREATELECOM-105). ');
-$ax += cidrblock($address, '203.245.29.159/32', 'Korea Telecom (IP4S-KOREATELECOM-106). ');
-$ax += cidrblock($address, '203.245.29.220/32', 'Korea Telecom (IP4S-KOREATELECOM-107). ');
-$ax += cidrblock($address, '210.114.1.46/32', 'Korea Telecom (IP4S-KOREATELECOM-108). ');
-$ax += cidrblock($address, '210.114.18.28/32', 'Korea Telecom (IP4S-KOREATELECOM-109). ');
-$ax += cidrblock($address, '210.114.22.12/32', 'Korea Telecom (IP4S-KOREATELECOM-110). ');
-$ax += cidrblock($address, '210.114.22.29/32', 'Korea Telecom (IP4S-KOREATELECOM-111). ');
-$ax += cidrblock($address, '210.114.22.114/32', 'Korea Telecom (IP4S-KOREATELECOM-112). ');
-$ax += cidrblock($address, '210.114.22.126/32', 'Korea Telecom (IP4S-KOREATELECOM-113). ');
-$ax += cidrblock($address, '210.114.22.201/32', 'Korea Telecom (IP4S-KOREATELECOM-114). ');
-$ax += cidrblock($address, '210.223.25.129/32', 'Korea Telecom (IP4S-KOREATELECOM-115). ');
-$ax += cidrblock($address, '211.35.182.9/32', 'Korea Telecom (IP4S-KOREATELECOM-116). ');
-$ax += cidrblock($address, '211.45.175.45/32', 'Korea Telecom (IP4S-KOREATELECOM-117). ');
-$ax += cidrblock($address, '211.45.175.112/32', 'Korea Telecom (IP4S-KOREATELECOM-118). ');
-$ax += cidrblock($address, '211.45.175.118/32', 'Korea Telecom (IP4S-KOREATELECOM-119). ');
-$ax += cidrblock($address, '211.48.208.144/32', 'Korea Telecom (IP4S-KOREATELECOM-120). ');
-$ax += cidrblock($address, '211.57.175.143/32', 'Korea Telecom (IP4S-KOREATELECOM-121). ');
-$ax += cidrblock($address, '211.57.175.198/32', 'Korea Telecom (IP4S-KOREATELECOM-122). ');
-$ax += cidrblock($address, '211.174.119.151/32', 'Korea Telecom (IP4S-KOREATELECOM-123). ');
-$ax += cidrblock($address, '211.199.69.236/32', 'Korea Telecom (IP4S-KOREATELECOM-124). ');
-$ax += cidrblock($address, '211.218.245.66/32', 'Korea Telecom (IP4S-KOREATELECOM-125). ');
-$ax += cidrblock($address, '211.225.159.186/32', 'Korea Telecom (IP4S-KOREATELECOM-126). ');
-$ax += cidrblock($address, '211.225.255.223/32', 'Korea Telecom (IP4S-KOREATELECOM-127). ');
-$ax += cidrblock($address, '211.227.35.232/32', 'Korea Telecom (IP4S-KOREATELECOM-128). ');
-$ax += cidrblock($address, '211.250.243.131/32', 'Korea Telecom (IP4S-KOREATELECOM-129). ');
-$ax += cidrblock($address, '211.252.84.133/32', 'Korea Telecom (IP4S-KOREATELECOM-130). ');
-$ax += cidrblock($address, '211.252.84.147/32', 'Korea Telecom (IP4S-KOREATELECOM-131). ');
-$ax += cidrblock($address, '211.252.84.220/32', 'Korea Telecom (IP4S-KOREATELECOM-132). ');
-$ax += cidrblock($address, '211.252.84.224/32', 'Korea Telecom (IP4S-KOREATELECOM-133). ');
-$ax += cidrblock($address, '211.253.24.178/32', 'Korea Telecom (IP4S-KOREATELECOM-134). ');
-$ax += cidrblock($address, '211.253.24.250/32', 'Korea Telecom (IP4S-KOREATELECOM-135). ');
-$ax += cidrblock($address, '211.254.215.197/32', 'Korea Telecom (IP4S-KOREATELECOM-136). ');
-$ax += cidrblock($address, '220.71.14.93/32', 'Korea Telecom (IP4S-KOREATELECOM-137). ');
-$ax += cidrblock($address, '220.71.130.101/32', 'Korea Telecom (IP4S-KOREATELECOM-138). ');
-$ax += cidrblock($address, '220.71.130.147/32', 'Korea Telecom (IP4S-KOREATELECOM-139). ');
-$ax += cidrblock($address, '220.71.236.202/32', 'Korea Telecom (IP4S-KOREATELECOM-140). ');
-$ax += cidrblock($address, '220.74.55.130/32', 'Korea Telecom (IP4S-KOREATELECOM-141). ');
-$ax += cidrblock($address, '220.74.55.229/32', 'Korea Telecom (IP4S-KOREATELECOM-142). ');
-$ax += cidrblock($address, '220.74.66.4/32', 'Korea Telecom (IP4S-KOREATELECOM-143). ');
-$ax += cidrblock($address, '220.74.66.167/32', 'Korea Telecom (IP4S-KOREATELECOM-144). ');
-$ax += cidrblock($address, '220.74.100.16/32', 'Korea Telecom (IP4S-KOREATELECOM-145). ');
-$ax += cidrblock($address, '220.74.100.72/32', 'Korea Telecom (IP4S-KOREATELECOM-146). ');
-$ax += cidrblock($address, '220.80.59.85/32', 'Korea Telecom (IP4S-KOREATELECOM-147). ');
-$ax += cidrblock($address, '220.80.59.125/32', 'Korea Telecom (IP4S-KOREATELECOM-148). ');
-$ax += cidrblock($address, '220.80.59.179/32', 'Korea Telecom (IP4S-KOREATELECOM-149). ');
-$ax += cidrblock($address, '220.80.194.116/32', 'Korea Telecom (IP4S-KOREATELECOM-150). ');
-$ax += cidrblock($address, '220.80.194.194/32', 'Korea Telecom (IP4S-KOREATELECOM-151). ');
-$ax += cidrblock($address, '220.81.137.55/32', 'Korea Telecom (IP4S-KOREATELECOM-152). ');
-$ax += cidrblock($address, '220.81.137.152/32', 'Korea Telecom (IP4S-KOREATELECOM-153). ');
-$ax += cidrblock($address, '220.81.163.38/32', 'Korea Telecom (IP4S-KOREATELECOM-154). ');
-$ax += cidrblock($address, '220.86.18.30/32', 'Korea Telecom (IP4S-KOREATELECOM-155). ');
-$ax += cidrblock($address, '220.86.18.32/32', 'Korea Telecom (IP4S-KOREATELECOM-156). ');
-$ax += cidrblock($address, '220.86.18.231/32', 'Korea Telecom (IP4S-KOREATELECOM-157). ');
-$ax += cidrblock($address, '220.94.9.7/32', 'Korea Telecom (IP4S-KOREATELECOM-158). ');
-$ax += cidrblock($address, '220.119.16.143/32', 'Korea Telecom (IP4S-KOREATELECOM-159). ');
-$ax += cidrblock($address, '220.126.240.83/32', 'Korea Telecom (IP4S-KOREATELECOM-160). ');
-$ax += cidrblock($address, '220.127.101.95/32', 'Korea Telecom (IP4S-KOREATELECOM-161). ');
-$ax += cidrblock($address, '220.127.101.254/32', 'Korea Telecom (IP4S-KOREATELECOM-162). ');
-$ax += cidrblock($address, '220.127.148.8/32', 'Korea Telecom (IP4S-KOREATELECOM-163). ');
-$ax += cidrblock($address, '220.127.213.107/32', 'Korea Telecom (IP4S-KOREATELECOM-164). ');
-$ax += cidrblock($address, '221.148.45.168/32', 'Korea Telecom (IP4S-KOREATELECOM-165). ');
-$ax += cidrblock($address, '221.149.110.5/32', 'Korea Telecom (IP4S-KOREATELECOM-166). ');
-$ax += cidrblock($address, '221.149.110.170/32', 'Korea Telecom (IP4S-KOREATELECOM-167). ');
-$ax += cidrblock($address, '221.155.123.180/32', 'Korea Telecom (IP4S-KOREATELECOM-168). ');
-$ax += cidrblock($address, '221.155.123.184/32', 'Korea Telecom (IP4S-KOREATELECOM-169). ');
-$ax += cidrblock($address, '221.155.229.111/32', 'Korea Telecom (IP4S-KOREATELECOM-170). ');
-$ax += cidrblock($address, '221.166.224.60/32', 'Korea Telecom (IP4S-KOREATELECOM-171). ');
-$ax += cidrblock($address, '221.166.224.109/32', 'Korea Telecom (IP4S-KOREATELECOM-172). ');
-$ax += cidrblock($address, '222.103.60.71/32', 'Korea Telecom (IP4S-KOREATELECOM-173). ');
-$ax += cidrblock($address, '222.103.60.108/32', 'Korea Telecom (IP4S-KOREATELECOM-174). ');
-$ax += cidrblock($address, '222.103.60.127/32', 'Korea Telecom (IP4S-KOREATELECOM-175). ');
-$ax += cidrblock($address, '222.104.200.163/32', 'Korea Telecom (IP4S-KOREATELECOM-176). ');
-$ax += cidrblock($address, '222.111.51.145/32', 'Korea Telecom (IP4S-KOREATELECOM-177). ');
-$ax += cidrblock($address, '222.111.51.185/32', 'Korea Telecom (IP4S-KOREATELECOM-178). ');
-$ax += cidrblock($address, '222.119.29.51/32', 'Korea Telecom (IP4S-KOREATELECOM-179). ');
+$ax += cidrblock($address, '183.109.146.238/32', 'Korea Telecom (IP4S-KOREATELECOM-106). ');
+$ax += cidrblock($address, '203.245.29.159/32', 'Korea Telecom (IP4S-KOREATELECOM-107). ');
+$ax += cidrblock($address, '203.245.29.220/32', 'Korea Telecom (IP4S-KOREATELECOM-108). ');
+$ax += cidrblock($address, '210.114.1.46/32', 'Korea Telecom (IP4S-KOREATELECOM-109). ');
+$ax += cidrblock($address, '210.114.18.28/32', 'Korea Telecom (IP4S-KOREATELECOM-110). ');
+$ax += cidrblock($address, '210.114.22.12/32', 'Korea Telecom (IP4S-KOREATELECOM-111). ');
+$ax += cidrblock($address, '210.114.22.29/32', 'Korea Telecom (IP4S-KOREATELECOM-112). ');
+$ax += cidrblock($address, '210.114.22.114/32', 'Korea Telecom (IP4S-KOREATELECOM-113). ');
+$ax += cidrblock($address, '210.114.22.126/32', 'Korea Telecom (IP4S-KOREATELECOM-114). ');
+$ax += cidrblock($address, '210.114.22.201/32', 'Korea Telecom (IP4S-KOREATELECOM-115). ');
+$ax += cidrblock($address, '210.223.25.129/32', 'Korea Telecom (IP4S-KOREATELECOM-116). ');
+$ax += cidrblock($address, '211.35.182.9/32', 'Korea Telecom (IP4S-KOREATELECOM-117). ');
+$ax += cidrblock($address, '211.45.175.45/32', 'Korea Telecom (IP4S-KOREATELECOM-118). ');
+$ax += cidrblock($address, '211.45.175.112/32', 'Korea Telecom (IP4S-KOREATELECOM-119). ');
+$ax += cidrblock($address, '211.45.175.118/32', 'Korea Telecom (IP4S-KOREATELECOM-120). ');
+$ax += cidrblock($address, '211.48.208.144/32', 'Korea Telecom (IP4S-KOREATELECOM-121). ');
+$ax += cidrblock($address, '211.57.175.143/32', 'Korea Telecom (IP4S-KOREATELECOM-122). ');
+$ax += cidrblock($address, '211.57.175.198/32', 'Korea Telecom (IP4S-KOREATELECOM-123). ');
+$ax += cidrblock($address, '211.174.119.151/32', 'Korea Telecom (IP4S-KOREATELECOM-124). ');
+$ax += cidrblock($address, '211.199.69.236/32', 'Korea Telecom (IP4S-KOREATELECOM-125). ');
+$ax += cidrblock($address, '211.218.245.66/32', 'Korea Telecom (IP4S-KOREATELECOM-126). ');
+$ax += cidrblock($address, '211.225.159.186/32', 'Korea Telecom (IP4S-KOREATELECOM-127). ');
+$ax += cidrblock($address, '211.225.255.223/32', 'Korea Telecom (IP4S-KOREATELECOM-128). ');
+$ax += cidrblock($address, '211.227.35.232/32', 'Korea Telecom (IP4S-KOREATELECOM-129). ');
+$ax += cidrblock($address, '211.250.243.131/32', 'Korea Telecom (IP4S-KOREATELECOM-130). ');
+$ax += cidrblock($address, '211.252.84.133/32', 'Korea Telecom (IP4S-KOREATELECOM-131). ');
+$ax += cidrblock($address, '211.252.84.147/32', 'Korea Telecom (IP4S-KOREATELECOM-132). ');
+$ax += cidrblock($address, '211.252.84.220/32', 'Korea Telecom (IP4S-KOREATELECOM-133). ');
+$ax += cidrblock($address, '211.252.84.224/32', 'Korea Telecom (IP4S-KOREATELECOM-134). ');
+$ax += cidrblock($address, '211.253.24.178/32', 'Korea Telecom (IP4S-KOREATELECOM-135). ');
+$ax += cidrblock($address, '211.253.24.250/32', 'Korea Telecom (IP4S-KOREATELECOM-136). ');
+$ax += cidrblock($address, '211.254.215.197/32', 'Korea Telecom (IP4S-KOREATELECOM-137). ');
+$ax += cidrblock($address, '220.71.14.93/32', 'Korea Telecom (IP4S-KOREATELECOM-138). ');
+$ax += cidrblock($address, '220.71.130.101/32', 'Korea Telecom (IP4S-KOREATELECOM-139). ');
+$ax += cidrblock($address, '220.71.130.147/32', 'Korea Telecom (IP4S-KOREATELECOM-140). ');
+$ax += cidrblock($address, '220.71.236.202/32', 'Korea Telecom (IP4S-KOREATELECOM-141). ');
+$ax += cidrblock($address, '220.74.55.130/32', 'Korea Telecom (IP4S-KOREATELECOM-142). ');
+$ax += cidrblock($address, '220.74.55.229/32', 'Korea Telecom (IP4S-KOREATELECOM-143). ');
+$ax += cidrblock($address, '220.74.66.4/32', 'Korea Telecom (IP4S-KOREATELECOM-144). ');
+$ax += cidrblock($address, '220.74.66.167/32', 'Korea Telecom (IP4S-KOREATELECOM-145). ');
+$ax += cidrblock($address, '220.74.100.16/32', 'Korea Telecom (IP4S-KOREATELECOM-146). ');
+$ax += cidrblock($address, '220.74.100.72/32', 'Korea Telecom (IP4S-KOREATELECOM-147). ');
+$ax += cidrblock($address, '220.80.59.85/32', 'Korea Telecom (IP4S-KOREATELECOM-148). ');
+$ax += cidrblock($address, '220.80.59.125/32', 'Korea Telecom (IP4S-KOREATELECOM-149). ');
+$ax += cidrblock($address, '220.80.59.179/32', 'Korea Telecom (IP4S-KOREATELECOM-150). ');
+$ax += cidrblock($address, '220.80.194.116/32', 'Korea Telecom (IP4S-KOREATELECOM-151). ');
+$ax += cidrblock($address, '220.80.194.194/32', 'Korea Telecom (IP4S-KOREATELECOM-152). ');
+$ax += cidrblock($address, '220.81.137.55/32', 'Korea Telecom (IP4S-KOREATELECOM-153). ');
+$ax += cidrblock($address, '220.81.137.152/32', 'Korea Telecom (IP4S-KOREATELECOM-154). ');
+$ax += cidrblock($address, '220.81.163.38/32', 'Korea Telecom (IP4S-KOREATELECOM-155). ');
+$ax += cidrblock($address, '220.86.18.30/32', 'Korea Telecom (IP4S-KOREATELECOM-156). ');
+$ax += cidrblock($address, '220.86.18.32/32', 'Korea Telecom (IP4S-KOREATELECOM-157). ');
+$ax += cidrblock($address, '220.86.18.231/32', 'Korea Telecom (IP4S-KOREATELECOM-158). ');
+$ax += cidrblock($address, '220.94.9.7/32', 'Korea Telecom (IP4S-KOREATELECOM-159). ');
+$ax += cidrblock($address, '220.119.16.143/32', 'Korea Telecom (IP4S-KOREATELECOM-160). ');
+$ax += cidrblock($address, '220.126.240.83/32', 'Korea Telecom (IP4S-KOREATELECOM-161). ');
+$ax += cidrblock($address, '220.127.101.95/32', 'Korea Telecom (IP4S-KOREATELECOM-162). ');
+$ax += cidrblock($address, '220.127.101.254/32', 'Korea Telecom (IP4S-KOREATELECOM-163). ');
+$ax += cidrblock($address, '220.127.148.8/32', 'Korea Telecom (IP4S-KOREATELECOM-164). ');
+$ax += cidrblock($address, '220.127.213.107/32', 'Korea Telecom (IP4S-KOREATELECOM-165). ');
+$ax += cidrblock($address, '221.148.45.168/32', 'Korea Telecom (IP4S-KOREATELECOM-166). ');
+$ax += cidrblock($address, '221.149.110.5/32', 'Korea Telecom (IP4S-KOREATELECOM-167). ');
+$ax += cidrblock($address, '221.149.110.170/32', 'Korea Telecom (IP4S-KOREATELECOM-168). ');
+$ax += cidrblock($address, '221.155.123.180/32', 'Korea Telecom (IP4S-KOREATELECOM-169). ');
+$ax += cidrblock($address, '221.155.123.184/32', 'Korea Telecom (IP4S-KOREATELECOM-170). ');
+$ax += cidrblock($address, '221.155.229.111/32', 'Korea Telecom (IP4S-KOREATELECOM-171). ');
+$ax += cidrblock($address, '221.166.224.60/32', 'Korea Telecom (IP4S-KOREATELECOM-172). ');
+$ax += cidrblock($address, '221.166.224.109/32', 'Korea Telecom (IP4S-KOREATELECOM-173). ');
+$ax += cidrblock($address, '222.103.60.71/32', 'Korea Telecom (IP4S-KOREATELECOM-174). ');
+$ax += cidrblock($address, '222.103.60.108/32', 'Korea Telecom (IP4S-KOREATELECOM-175). ');
+$ax += cidrblock($address, '222.103.60.127/32', 'Korea Telecom (IP4S-KOREATELECOM-176). ');
+$ax += cidrblock($address, '222.104.200.163/32', 'Korea Telecom (IP4S-KOREATELECOM-177). ');
+$ax += cidrblock($address, '222.111.51.145/32', 'Korea Telecom (IP4S-KOREATELECOM-178). ');
+$ax += cidrblock($address, '222.111.51.185/32', 'Korea Telecom (IP4S-KOREATELECOM-179). ');
+$ax += cidrblock($address, '222.119.29.51/32', 'Korea Telecom (IP4S-KOREATELECOM-180). ');
 
 // ASN 8048 ("CANTV Servicios, Venezuela").
 // Venezuelan domestic ISP and TV service. Port scans, hacking, and spam
@@ -14848,7 +14792,7 @@ $ax += cidrblock($address, '194.113.238.0/24', 'Men Danil Valentinovich (IP4S-ME
 $ax += cidrblock($address, '213.170.223.0/24', 'Men Danil Valentinovich (IP4S-MENDANILVALENTINOVICH-31). ');
 
 // ASN 7303 ("Telecom Argentina S.A").
-// Argentinian domestic ISP. Brute-force and SSH attacks, hacking, and spam
+// Argentine domestic ISP. Brute-force and SSH attacks, hacking, and spam
 // detected from here. Listing just the affected ranges/addresses only.
 // Updated: 2024.06.07
 
@@ -15624,13 +15568,6 @@ $ax += cidrblock($address, '195.98.77.179/32', 'IC-VORONEZH (IP4S-ICVORONEZH-09)
 $ax += cidrblock($address, '195.98.77.224/32', 'IC-VORONEZH (IP4S-ICVORONEZH-10). ');
 $ax += cidrblock($address, '195.98.93.234/32', 'IC-VORONEZH (IP4S-ICVORONEZH-11). ');
 
-// ASN 53174 ("Pannet Servios On Line Ltda").
-// Brazilian domestic ISP. Some specific addresses caught spamming and
-// brute-forcing WordPress websites. Listing just the affected addresses only.
-// Updated: 2021.03.18 / Checked: 2023.09.07
-
-$ax += cidrblock($address, '186.225.194.78/32', 'Pannet (IP4S-PANNET-0). ');
-
 // ASN 27831 ("Colombia Movil").
 // Colombian domestic ISP. Brute-force attacks, hacking, and spam detected from
 // here. Listing just the affected ranges/addresses only.
@@ -15647,37 +15584,38 @@ $ax += cidrblock($address, '186.97.238.242/32', 'Colombia Movil (IP4S-COLOMBIAMO
 // ASN 29013 ('Telecommunication company "Link Telecom" LTD').
 // Ukrainian domestic ISP. Some specific addresses caught spamming and
 // performing webapp attacks. Listing just the affected addresses only.
-// Updated: 2023.09.18
+// Updated: 2024.08.28
 
-$ax += cidrblock($address, '188.239.72.75/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-00). ');
-$ax += cidrblock($address, '188.239.73.213/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-01). ');
-$ax += cidrblock($address, '188.239.73.254/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-02). ');
-$ax += cidrblock($address, '188.239.76.47/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-03). ');
-$ax += cidrblock($address, '188.239.78.239/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-04). ');
-$ax += cidrblock($address, '188.239.80.125/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-05). ');
-$ax += cidrblock($address, '188.239.80.151/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-06). ');
-$ax += cidrblock($address, '188.239.81.127/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-07). ');
-$ax += cidrblock($address, '188.239.82.52/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-08). ');
-$ax += cidrblock($address, '188.239.83.107/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-09). ');
-$ax += cidrblock($address, '188.239.85.87/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-10). ');
-$ax += cidrblock($address, '188.239.85.110/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-11). ');
-$ax += cidrblock($address, '188.239.85.225/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-12). ');
-$ax += cidrblock($address, '188.239.98.201/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-13). ');
-$ax += cidrblock($address, '188.239.99.37/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-14). ');
-$ax += cidrblock($address, '188.239.100.230/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-15). ');
-$ax += cidrblock($address, '188.239.102.20/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-16). ');
-$ax += cidrblock($address, '188.239.102.145/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-17). ');
-$ax += cidrblock($address, '188.239.103.68/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-18). ');
-$ax += cidrblock($address, '188.239.104.123/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-19). ');
-$ax += cidrblock($address, '188.239.118.22/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-20). ');
-$ax += cidrblock($address, '188.239.118.136/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-21). ');
-$ax += cidrblock($address, '188.239.119.148/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-22). ');
-$ax += cidrblock($address, '188.239.120.2/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-23). ');
-$ax += cidrblock($address, '188.239.121.63/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-24). ');
-$ax += cidrblock($address, '188.239.122.159/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-25). ');
-$ax += cidrblock($address, '188.239.123.31/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-26). ');
-$ax += cidrblock($address, '188.239.123.93/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-27). ');
-$ax += cidrblock($address, '188.239.123.95/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-28). ');
+$ax += cidrblock($address, '188.239.72.164/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-00). ');
+$ax += cidrblock($address, '188.239.76.123/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-01). ');
+$ax += cidrblock($address, '188.239.78.121/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-02). ');
+$ax += cidrblock($address, '188.239.78.167/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-03). ');
+$ax += cidrblock($address, '188.239.78.229/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-04). ');
+$ax += cidrblock($address, '188.239.80.192/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-05). ');
+$ax += cidrblock($address, '188.239.81.6/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-06). ');
+$ax += cidrblock($address, '188.239.81.213/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-07). ');
+$ax += cidrblock($address, '188.239.82.30/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-08). ');
+$ax += cidrblock($address, '188.239.82.107/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-09). ');
+$ax += cidrblock($address, '188.239.83.127/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-10). ');
+$ax += cidrblock($address, '188.239.83.196/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-11). ');
+$ax += cidrblock($address, '188.239.85.119/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-12). ');
+$ax += cidrblock($address, '188.239.85.134/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-13). ');
+$ax += cidrblock($address, '188.239.85.186/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-14). ');
+$ax += cidrblock($address, '188.239.85.236/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-15). ');
+$ax += cidrblock($address, '188.239.99.59/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-16). ');
+$ax += cidrblock($address, '188.239.100.67/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-17). ');
+$ax += cidrblock($address, '188.239.100.176/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-18). ');
+$ax += cidrblock($address, '188.239.100.249/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-19). ');
+$ax += cidrblock($address, '188.239.102.18/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-20). ');
+$ax += cidrblock($address, '188.239.103.68/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-21). ');
+$ax += cidrblock($address, '188.239.104.184/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-22). ');
+$ax += cidrblock($address, '188.239.118.121/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-23). ');
+$ax += cidrblock($address, '188.239.118.237/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-24). ');
+$ax += cidrblock($address, '188.239.119.14/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-25). ');
+$ax += cidrblock($address, '188.239.119.110/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-26). ');
+$ax += cidrblock($address, '188.239.120.161/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-27). ');
+$ax += cidrblock($address, '188.239.120.209/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-28). ');
+$ax += cidrblock($address, '188.239.123.93/32', 'Link Telecom AS29013 (IP4S-LINKTELECOMAS29013-29). ');
 
 // ASN 57871 ("TeleCentr Ltd").
 // Russian domestic ISP. Brute-force, SSH, and webapp attacks, hacking, and port
@@ -15714,7 +15652,7 @@ $ax += cidrblock($address, '178.149.160.51/32', 'Srpske Kablovske mreze (IP4S-SR
 // Open ports and vulnerabilities detected at a number of addresses here. Webapp
 // attacks, hacking, and spam also detected from here. For now, listing just
 // the affected ranges/addresses only.
-// Updated: 2024.08.18
+// Updated: 2024.08.18 / Modified: 2024.08.31
 
 $ax += cidrblock($address, '190.4.1.0/24', 'Navega.com S.A (IP4S-NAVEGACOMSA-00). ');
 $ax += cidrblock($address, '200.12.37.158/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-01). ');
@@ -15729,16 +15667,18 @@ $ax += cidrblock($address, '190.109.217.114/32', 'Navega.com S.A (IP4S-NAVEGACOM
 $ax += cidrblock($address, '190.109.217.165/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-10). ');
 $ax += cidrblock($address, '190.109.223.202/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-11). ');
 $ax += cidrblock($address, '190.109.223.242/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-12). ');
-$ax += cidrblock($address, '190.53.33.204/31', 'Navega.com S.A (IP4S-NAVEGACOMSA-13). ');
-$ax += cidrblock($address, '190.53.46.11/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-14). ');
-$ax += cidrblock($address, '190.53.46.62/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-15). ');
-$ax += cidrblock($address, '190.120.14.234/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-16). ');
-$ax += cidrblock($address, '190.120.15.51/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-17). ');
-$ax += cidrblock($address, '190.120.15.62/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-18). ');
-$ax += cidrblock($address, '208.96.133.4/31', 'Navega.com S.A (IP4S-NAVEGACOMSA-19). ');
-$ax += cidrblock($address, '208.96.133.166/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-20). ');
-$ax += cidrblock($address, '208.96.133.186/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-21). ');
-$ax += cidrblock($address, '209.124.107.0/24', 'Navega.com S.A (IP4S-NAVEGACOMSA-22). ');
+$ax += cidrblock($address, '191.103.87.222/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-13). ');
+$ax += cidrblock($address, '191.103.88.2/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-14). ');
+$ax += cidrblock($address, '190.53.33.204/31', 'Navega.com S.A (IP4S-NAVEGACOMSA-15). ');
+$ax += cidrblock($address, '190.53.46.11/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-16). ');
+$ax += cidrblock($address, '190.53.46.62/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-17). ');
+$ax += cidrblock($address, '190.120.14.234/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-18). ');
+$ax += cidrblock($address, '190.120.15.51/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-19). ');
+$ax += cidrblock($address, '190.120.15.62/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-20). ');
+$ax += cidrblock($address, '208.96.133.4/31', 'Navega.com S.A (IP4S-NAVEGACOMSA-21). ');
+$ax += cidrblock($address, '208.96.133.166/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-22). ');
+$ax += cidrblock($address, '208.96.133.186/32', 'Navega.com S.A (IP4S-NAVEGACOMSA-23). ');
+$ax += cidrblock($address, '209.124.107.0/24', 'Navega.com S.A (IP4S-NAVEGACOMSA-24). ');
 
 // ASN 23243 ("COMCEL GUATEMALA S.A").
 // Guatemalan domestic ISP. Webapp attacks, hacking, and spam detected from
@@ -15758,7 +15698,7 @@ $ax += cidrblock($address, '190.106.203.86/32', 'COMCEL GUATEMALA S.A (IP4S-COMC
 // ASN 52262 ("Telefonica Celular S.A").
 // Honduran mobile ISP. Brute-force attacks and spam detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2022.09.21 / Checked: 2023.09.14
+// Updated: 2022.09.21 / Checked: 2024.08.31
 
 $ax += cidrblock($address, '190.242.24.0/22', 'Telefonica Celular S.A (IP4S-TELEFONICACELULARSA-0). ');
 $ax += cidrblock($address, '191.103.86.0/24', 'Telefonica Celular S.A (IP4S-TELEFONICACELULARSA-1). ');
@@ -15887,7 +15827,7 @@ $ax += cidrblock($address, '213.55.89.138/31', 'Ethio Telecom (IP4S-ETHIOTELECOM
 $ax += cidrblock($address, '75.97.178.24/32', 'PenTeleData Inc (IP4S-PENTELEDATAINC-0). ');
 
 // ASN 27747 ("Telecentro S.A").
-// Argentinian domestic ISP. Some spam detected here. Listing just the affected
+// Argentine domestic ISP. Some spam detected here. Listing just the affected
 // ranges/addresses only.
 // Updated: 2024.08.22
 
@@ -15975,11 +15915,13 @@ $ax += cidrblock($address, '178.235.176.0/20', 'VECTRA S.A (IP4S-VECTRASA-4). ')
 // ASN 6696 ("VERIXI SA").
 // Belgian dark-fibre multiplay network. Brute-force and webapp attacks detected
 // from here. Listing just the affected ranges/addresses only.
-// Updated: 2023.09.24
+// Updated: 2024.09.01
 
-$ax += cidrblock($address, '128.127.180.30/32', 'VERIXI SA (IP4S-VERIXISA-0). ');
-$ax += cidrblock($address, '128.127.180.156/32', 'VERIXI SA (IP4S-VERIXISA-1). ');
-$ax += cidrblock($address, '193.105.73.0/24', 'VERIXI SA (IP4S-VERIXISA-2). ');
+$ax += cidrblock($address, '128.127.180.0/24', 'VERIXI SA (IP4S-VERIXISA-0). ');
+$ax += cidrblock($address, '193.105.73.21/32', 'VERIXI SA (IP4S-VERIXISA-1). ');
+$ax += cidrblock($address, '193.105.73.170/32', 'VERIXI SA (IP4S-VERIXISA-2). ');
+$ax += cidrblock($address, '193.105.73.177/32', 'VERIXI SA (IP4S-VERIXISA-3). ');
+$ax += cidrblock($address, '193.105.73.213/32', 'VERIXI SA (IP4S-VERIXISA-4). ');
 
 // ASN 59162 ("U.P. COMMUNICATION SERVICES PVT LTD").
 // Indian domestic ISP. Brute-force attacks, port scans, and attempts to hack
@@ -16203,22 +16145,30 @@ $ax += cidrblock($address, '193.200.151.158/32', 'LIMANET Ltd (IP4S-LIMANETLTD-7
 // Scandinavian multiplay network (domestic ISP, webhosting, cloud lease, etc).
 // Regular brute-force attacks and flooding/hammering encountered from this
 // network. Listing just the affected ranges/addresses only.
-// Updated: 2023.11.15
+// Updated: 2024.08.25
 
-$ax += cidrblock($address, '65.99.160.227/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-00). ');
-$ax += cidrblock($address, '65.99.167.40/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-01). ');
-$ax += cidrblock($address, '82.96.39.167/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-02). ');
-$ax += cidrblock($address, '82.96.56.36/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-03). ');
-$ax += cidrblock($address, '93.158.66.10/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-04). ');
-$ax += cidrblock($address, '93.158.90.0/23', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-05). ');
-$ax += cidrblock($address, '93.158.92.11/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-06). ');
-$ax += cidrblock($address, '93.158.92.13/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-07). ');
-$ax += cidrblock($address, '185.6.10.0/24', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-08). ');
-$ax += cidrblock($address, '185.6.11.146/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-09). ');
-$ax += cidrblock($address, '185.183.146.24/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-10). ');
-$ax += cidrblock($address, '185.183.146.190/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-11). ');
-$ax += cidrblock($address, '185.183.147.0/24', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-12). ');
-$ax += cidrblock($address, '185.205.225.24/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-13). ');
+$ax += cidrblock($address, '82.96.39.167/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-00). ');
+$ax += cidrblock($address, '82.96.39.253/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-01). ');
+$ax += cidrblock($address, '82.96.56.36/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-02). ');
+$ax += cidrblock($address, '93.158.66.19/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-03). ');
+$ax += cidrblock($address, '93.158.90.0/23', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-04). ');
+$ax += cidrblock($address, '93.158.92.11/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-05). ');
+$ax += cidrblock($address, '93.158.92.13/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-06). ');
+$ax += cidrblock($address, '130.255.160.26/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-07). ');
+$ax += cidrblock($address, '130.255.160.60/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-08). ');
+$ax += cidrblock($address, '130.255.160.135/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-09). ');
+$ax += cidrblock($address, '130.255.160.238/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-10). ');
+$ax += cidrblock($address, '130.255.162.54/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-11). ');
+$ax += cidrblock($address, '130.255.162.71/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-12). ');
+$ax += cidrblock($address, '130.255.162.199/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-13). ');
+$ax += cidrblock($address, '130.255.162.202/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-14). ');
+$ax += cidrblock($address, '130.255.162.249/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-15). ');
+$ax += cidrblock($address, '185.6.10.0/24', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-16). ');
+$ax += cidrblock($address, '185.6.11.146/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-17). ');
+$ax += cidrblock($address, '185.183.146.159/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-18). ');
+$ax += cidrblock($address, '185.183.146.176/32', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-19). ');
+$ax += cidrblock($address, '185.183.147.0/24', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-20). ');
+$ax += cidrblock($address, '185.205.225.0/24', 'Availo Networks AB (IP4S-AVAILONETWORKSAB-21). ');
 
 // ASN 15399 ("Wananchi Group (Kenya) Limited").
 // Kenyan domestic ISP. Spam, webapp and brute-force attacks detected from here.
@@ -16558,16 +16508,6 @@ $ax += cidrblock($address, '123.194.32.140/32', 'kbro CO. Ltd (IP4S-KBROCOLTD-18
 $ax += cidrblock($address, '123.195.202.7/32', 'kbro CO. Ltd (IP4S-KBROCOLTD-19). ');
 $ax += cidrblock($address, '180.176.180.12/32', 'kbro CO. Ltd (IP4S-KBROCOLTD-20). ');
 $ax += cidrblock($address, '180.176.180.176/32', 'kbro CO. Ltd (IP4S-KBROCOLTD-21). ');
-
-// ASN 57712 ("NPF SOFTVIDEO Ltd").
-// Russian domestic ISP. Relative to the size of the network, a *HUGE* amount of
-// spam has been detected from here. Port scans, and webapp, brute-force, and
-// SSH attacks also detected from here.
-// Updated: 2021.12.23 / Checked: 2023.10.29
-
-$ax += cidrblock($address, '93.171.228.0/23', 'NPF SOFTVIDEO Ltd (IP4S-NPFSOFTVIDEOLTD-0). ');
-$ax += cidrblock($address, '91.184.253.0/24', 'NPF SOFTVIDEO Ltd (IP4S-NPFSOFTVIDEOLTD-1). ');
-$ax += cidrblock($address, '176.106.240.0/20', 'NPF SOFTVIDEO Ltd (IP4S-NPFSOFTVIDEOLTD-2). ');
 
 // ASN 31272 ("WildPark Co").
 // Ukrainian domestic ISP. Brute-force, phpMyAdmin-based, SSH, and various
@@ -18909,15 +18849,14 @@ $ax += cidrblock($address, '75.89.101.61/32', 'Windstream (IP4S-WINDSTREAM-4). '
 // Indonesian domestic ISP. Brute-force, SSH, and webapp attacks, port scans,
 // hacking, and spam detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2023.09.20
+// Updated: 2024.08.28
 
-$ax += cidrblock($address, '175.106.17.22/32', 'AS131767 (IP4S-AS131767-0). ');
-$ax += cidrblock($address, '175.106.17.34/32', 'AS131767 (IP4S-AS131767-1). ');
-$ax += cidrblock($address, '175.106.17.162/32', 'AS131767 (IP4S-AS131767-2). ');
-$ax += cidrblock($address, '175.106.17.210/32', 'AS131767 (IP4S-AS131767-3). ');
-$ax += cidrblock($address, '175.106.18.242/32', 'AS131767 (IP4S-AS131767-4). ');
-$ax += cidrblock($address, '175.106.18.245/32', 'AS131767 (IP4S-AS131767-5). ');
-$ax += cidrblock($address, '175.106.19.0/24', 'AS131767 (IP4S-AS131767-6). ');
+$ax += cidrblock($address, '175.106.17.0/24', 'AS131767 (IP4S-AS131767-0). ');
+$ax += cidrblock($address, '175.106.18.218/32', 'AS131767 (IP4S-AS131767-1). ');
+$ax += cidrblock($address, '175.106.18.243/32', 'AS131767 (IP4S-AS131767-2). ');
+$ax += cidrblock($address, '175.106.18.245/32', 'AS131767 (IP4S-AS131767-3). ');
+$ax += cidrblock($address, '175.106.18.249/32', 'AS131767 (IP4S-AS131767-4). ');
+$ax += cidrblock($address, '175.106.19.0/24', 'AS131767 (IP4S-AS131767-5). ');
 
 // ASN 51407 ("Mada ALArab LTD").
 // Palestinian domestic ISP, media and streaming provider. Port scans, hacking,
@@ -20101,7 +20040,7 @@ $ax += cidrblock($address, '109.177.76.245/32', 'Emirates Telecom (IP4S-EMIRATES
 $ax += cidrblock($address, '217.165.0.0/16', 'Emirates Telecom (IP4S-EMIRATESTELECOM-34). ');
 
 // ASN 27813 ("Teledifusora S.A").
-// Argentinian domestic ISP. Port scans, hacking, webapp attacks, and spam
+// Argentine domestic ISP. Port scans, hacking, webapp attacks, and spam
 // detected from here. Listing just the affected ranges/addresses only.
 // Updated: 2023.12.01
 
@@ -20288,7 +20227,7 @@ $ax += cidrblock($address, '202.9.120.69/32', 'Nas Internet Services (IP4S-NASIN
 $ax += cidrblock($address, '202.9.122.0/23', 'Nas Internet Services (IP4S-NASINTERNETSERVICES-7). ');
 
 // ASN 198401 ("Sebastian Souto (SSSERVICIOS)").
-// Argentinian domestic ISP. Brute-force, FTP, SSH, and webapp attacks, hacking,
+// Argentine domestic ISP. Brute-force, FTP, SSH, and webapp attacks, hacking,
 // and spam detected from here. Listing just the affected ranges/addresses only.
 // Updated: 2024.01.04
 
@@ -20652,7 +20591,7 @@ $ax += cidrblock($address, '185.215.160.0/24', 'NLS ASTANA LLP (IP4S-NLSASTANALL
 $ax += cidrblock($address, '187.16.255.0/24', 'ALTA REDE (IP4S-ALTAREDE-0). ');
 
 // ASN 52504 ("Cicomsa S.A").
-// Argentinian domestic ISP. Port scans and hacking detected from here.
+// Argentine domestic ISP. Port scans and hacking detected from here.
 // Manually checked all ranges; All ranges affected.
 // Updated: 2023.05.07 / Checked: 2024.03.03
 
@@ -21040,20 +20979,22 @@ $ax += cidrblock($address, '45.250.226.174/32', 'SAMPARK ESTATES (IP4S-SAMPARKES
 // ASN 9269 ("Hong Kong Broadband Network Ltd").
 // Hong Kong domestic ISP. Port scans, hacking, and spam detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2024.07.23
+// Updated: 2024.07.23 / Modified: 2024.08.31
 
 $ax += cidrblock($address, '58.176.78.4/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-00). ');
 $ax += cidrblock($address, '58.176.78.218/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-01). ');
 $ax += cidrblock($address, '58.177.7.28/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-02). ');
 $ax += cidrblock($address, '58.177.7.179/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-03). ');
-$ax += cidrblock($address, '123.203.156.116/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-04). ');
-$ax += cidrblock($address, '123.203.156.129/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-05). ');
-$ax += cidrblock($address, '124.244.111.31/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-06). ');
-$ax += cidrblock($address, '124.244.111.36/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-07). ');
-$ax += cidrblock($address, '124.244.111.51/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-08). ');
-$ax += cidrblock($address, '203.80.119.242/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-09). ');
-$ax += cidrblock($address, '210.6.6.203/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-10). ');
-$ax += cidrblock($address, '210.6.6.226/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-11). ');
+$ax += cidrblock($address, '61.92.35.70/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-04). ');
+$ax += cidrblock($address, '61.92.35.102/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-05). ');
+$ax += cidrblock($address, '123.203.156.116/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-06). ');
+$ax += cidrblock($address, '123.203.156.129/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-07). ');
+$ax += cidrblock($address, '124.244.111.31/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-08). ');
+$ax += cidrblock($address, '124.244.111.36/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-09). ');
+$ax += cidrblock($address, '124.244.111.51/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-10). ');
+$ax += cidrblock($address, '203.80.119.242/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-11). ');
+$ax += cidrblock($address, '210.6.6.203/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-12). ');
+$ax += cidrblock($address, '210.6.6.226/32', 'Hong Kong Broadband (IP4S-HONGKONGBROADBAND-13). ');
 
 // ASN 43068 ("Pladi Computers Ltd").
 // Bulgarian multiplay ISP. Port scans, hacking, and spam detected from here.
@@ -21488,9 +21429,10 @@ $ax += cidrblock($address, '5.101.197.158/32', 'Grand Ltd (IP4S-GRANDLTD-0). ');
 // ASN 10000 ("Nagasaki Cable Media Inc").
 // Japanese cable provider. Port scans and hacking detected from here.
 // Listing just the affected ranges/addresses only.
-// Updated: 2022.10.14 / Checked: 2023.09.12
+// Updated: 2024.08.31
 
-$ax += cidrblock($address, '203.217.157.246/32', 'Nagasaki Cable Media Inc (IP4S-NAGASAKICABLEMEDIAINC-0). ');
+$ax += cidrblock($address, '203.217.157.104/32', 'Nagasaki Cable Media Inc (IP4S-NAGASAKICABLEMEDIAINC-0). ');
+$ax += cidrblock($address, '203.217.157.246/32', 'Nagasaki Cable Media Inc (IP4S-NAGASAKICABLEMEDIAINC-1). ');
 
 // ASN 328140 ("INSIST NET Limited").
 // Gambian tech firm; various mixed services. Brute-force and SSH attacks, port
@@ -21755,7 +21697,7 @@ $ax += cidrblock($address, '61.111.131.76/32', 'AgotoZ (IP4S-AGOTOZ-2). ');
 $ax += cidrblock($address, '61.111.131.142/32', 'AgotoZ (IP4S-AGOTOZ-3). ');
 
 // ASN 265725 ("COOP. DE ELECT., OBRAS, CR??DITO, VIVIENDA Y SERVICIOS P??BLICOS
-// DE LAS FLORES LTDA"). Argentinian domestic ISP. Brute-force, SSH, and webapp
+// DE LAS FLORES LTDA"). Argentine domestic ISP. Brute-force, SSH, and webapp
 // attacks, port scans, and hacking detected from here. Entire network affected.
 // Updated: 2023.11.16
 
@@ -21763,8 +21705,8 @@ $ax += cidrblock($address, '160.238.168.0/22', 'AS265725 (IP4S-AS265725-0). ');
 $ax += cidrblock($address, '200.61.29.0/24', 'AS265725 (IP4S-AS265725-1). ');
 
 // ASN 7049 ("Silica Networks Argentina S.A").
-// Argentinian multiplay network. Brute-force, DDoS, WordPress/XMLRPC, and
-// webapp attacks, port scans, hacking, and spam detected from here.
+// Argentine multiplay network. Brute-force, DDoS, WordPress/XMLRPC, and webapp
+// attacks, port scans, hacking, and spam detected from here.
 // Listing just the affected ranges/addresses only.
 // Updated: 2023.11.16
 
@@ -22939,46 +22881,37 @@ $ax += cidrblock($address, '213.208.175.0/24', 'Nauka-Svyaz (IP4S-NAUKASVYAZ-1).
 // ASN 137697 ("CHINATELECOM JiangSu YangZhou IDC networkdescr: YangZhou , Jiangsu Province, P.R.China").
 // Chinese domestic ISP. Brute-force, SSH attacks, port scans, hacking, and spam
 // detected from here. Listing just the affected ranges/addresses only.
-// Updated: 2023.09.20
+// Updated: 2024.08.28
 
-$ax += cidrblock($address, '58.220.56.29/32', 'JiangSu YangZhou (IP4S-JIANGSUYANGZHOU-0). ');
-$ax += cidrblock($address, '58.220.56.64/32', 'JiangSu YangZhou (IP4S-JIANGSUYANGZHOU-1). ');
-$ax += cidrblock($address, '58.220.56.66/32', 'JiangSu YangZhou (IP4S-JIANGSUYANGZHOU-2). ');
+$ax += cidrblock($address, '58.220.56.64/32', 'JiangSu YangZhou (IP4S-JIANGSUYANGZHOU-0). ');
+$ax += cidrblock($address, '58.220.56.66/32', 'JiangSu YangZhou (IP4S-JIANGSUYANGZHOU-1). ');
 
 // ASN 24444 ("Shandong Mobile Communication Company Limited").
 // Chinese mobile ISP. SQLi, webapp attacks, port scans, hacking, and spam
 // detected from here. Listing just the affected ranges/addresses only.
-// Updated: 2023.09.20
+// Updated: 2024.09.01
 
 $ax += cidrblock($address, '111.16.50.12/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-00). ');
-$ax += cidrblock($address, '111.16.50.172/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-01). ');
-$ax += cidrblock($address, '111.16.50.174/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-02). ');
-$ax += cidrblock($address, '111.35.78.2/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-03). ');
-$ax += cidrblock($address, '112.6.33.169/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-04). ');
-$ax += cidrblock($address, '112.6.117.178/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-05). ');
-$ax += cidrblock($address, '112.6.174.110/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-06). ');
-$ax += cidrblock($address, '112.6.178.53/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-07). ');
-$ax += cidrblock($address, '112.36.17.39/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-08). ');
-$ax += cidrblock($address, '117.91.186.55/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-09). ');
-$ax += cidrblock($address, '117.91.186.102/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-10). ');
-$ax += cidrblock($address, '117.91.186.105/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-11). ');
-$ax += cidrblock($address, '120.220.220.95/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-12). ');
-$ax += cidrblock($address, '120.224.145.187/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-13). ');
-$ax += cidrblock($address, '120.224.180.38/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-14). ');
-$ax += cidrblock($address, '120.224.180.41/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-15). ');
-$ax += cidrblock($address, '223.96.90.216/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-16). ');
-$ax += cidrblock($address, '223.96.94.87/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-17). ');
+$ax += cidrblock($address, '111.16.50.171/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-01). ');
+$ax += cidrblock($address, '111.16.50.174/31', 'Shandong Mobile (IP4S-SHANDONGMOBILE-02). ');
+$ax += cidrblock($address, '111.35.78.2/31', 'Shandong Mobile (IP4S-SHANDONGMOBILE-03). ');
+$ax += cidrblock($address, '111.35.78.245/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-04). ');
+$ax += cidrblock($address, '112.36.21.203/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-05). ');
+$ax += cidrblock($address, '117.91.186.5/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-06). ');
+$ax += cidrblock($address, '117.91.186.55/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-07). ');
+$ax += cidrblock($address, '117.91.186.105/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-08). ');
+$ax += cidrblock($address, '120.225.155.208/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-09). ');
+$ax += cidrblock($address, '223.98.104.123/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-10). ');
+$ax += cidrblock($address, '223.99.193.245/32', 'Shandong Mobile (IP4S-SHANDONGMOBILE-11). ');
 
 // ASN 3292 ("TDC Holding A/S").
 // *Possibly* only a hoster or server farm, but not 100% sure. Homepage looks
 // like it's for some kind of investment firm. Port scans, webapp attacks, and
 // spam detected from here. Listing just the affected ranges/addresses only.
-// Updated: 2023.09.20
+// Updated: 2024.08.28
 
-$ax += cidrblock($address, '87.62.99.29/32', 'TDC Holding A/S (IP4S-TDCHOLDINGAS-0). ');
-$ax += cidrblock($address, '87.62.99.122/32', 'TDC Holding A/S (IP4S-TDCHOLDINGAS-1). ');
-$ax += cidrblock($address, '188.180.107.26/32', 'TDC Holding A/S (IP4S-TDCHOLDINGAS-2). ');
-$ax += cidrblock($address, '212.130.110.226/32', 'TDC Holding A/S (IP4S-TDCHOLDINGAS-3). ');
+$ax += cidrblock($address, '87.57.247.94/32', 'TDC Holding A/S (IP4S-TDCHOLDINGAS-0). ');
+$ax += cidrblock($address, '87.62.99.56/32', 'TDC Holding A/S (IP4S-TDCHOLDINGAS-1). ');
 
 // ASN 204679 ("NAUKOWA I AKADEMICKA SIEC KOMPUTEROWA - PANSTWOWY INSTYTUT BADAWCZY").
 // Polish government network. SSH attacks, port scans, and spam detected from
@@ -23024,7 +22957,7 @@ $ax += cidrblock($address, '129.126.186.60/32', 'M1 NET LTD (IP4S-M1NETLTD-1). '
 $ax += cidrblock($address, '129.126.186.121/32', 'M1 NET LTD (IP4S-M1NETLTD-2). ');
 
 // ASNs 262607, 264748 ("COOPERATIVA ELECTRICA Y TECNIFICACION AGROPECUARIA
-// PARADA ROBLES ARROYO DE LA CRUZ LTDA"). Argentinian domestic ISP.
+// PARADA ROBLES ARROYO DE LA CRUZ LTDA"). Argentine domestic ISP.
 // Brute-force, SSH, and webapp attacks, hacking, and port scans detected from
 // here. Listing just the affected ranges/addresses only.
 // Updated: 2024.05.30
@@ -23416,7 +23349,7 @@ $ax += cidrblock($address, '88.129.241.169/32', 'Bredband2 AB (IP4S-BREDBAND2AB-
 $ax += cidrblock($address, '94.255.149.86/32', 'Bredband2 AB (IP4S-BREDBAND2AB-2). ');
 
 // ASN 22927 ("Telefonica de Argentina").
-// Argentinian domestic ISP. Brute-force attacks, port scans, hacking, and spam
+// Argentine domestic ISP. Brute-force attacks, port scans, hacking, and spam
 // detected from here. Listing just the affected ranges/addresses only.
 // Updated: 2024.05.30
 
@@ -23425,7 +23358,7 @@ $ax += cidrblock($address, '186.56.83.36/32', 'Telefonica de Argentina (IP4S-TEL
 $ax += cidrblock($address, '186.56.83.238/32', 'Telefonica de Argentina (IP4S-TELEFONICADEARGENTINA-2). ');
 
 // ASN 14232 ("Cooperativa Telefónica Pinamar Ltda").
-// Argentinian domestic ISP. Port scans detected from here.
+// Argentine domestic ISP. Port scans detected from here.
 // Listing just the affected ranges/addresses only.
 // Updated: 2024.05.30
 
@@ -23559,6 +23492,60 @@ $ax += cidrblock($address, '211.19.66.219/32', 'Xephion (IP4S-XEPHION-1). ');
 $ax += cidrblock($address, '179.61.157.0/24', 'Bunny Communications (IP4S-BUNNYCOMMUNICATIONS-0). ');
 $ax += cidrblock($address, '185.65.61.207/32', 'Bunny Communications (IP4S-BUNNYCOMMUNICATIONS-1). ');
 $ax += cidrblock($address, '202.126.111.101/32', 'Bunny Communications (IP4S-BUNNYCOMMUNICATIONS-2). ');
+
+// ASN 266702 ("MEGALINK S.R.L").
+// Argentine multiplay network. Brute-force, IoT attacks, port scans, and
+// hacking detected from here. Listing just the affected ranges/addresses only.
+// Updated: 2024.08.24
+
+$ax += cidrblock($address, '45.230.64.7/32', 'MEGALINK S.R.L (IP4S-MEGALINKSRL-0). ');
+$ax += cidrblock($address, '45.230.64.17/32', 'MEGALINK S.R.L (IP4S-MEGALINKSRL-1). ');
+$ax += cidrblock($address, '45.230.65.0/24', 'MEGALINK S.R.L (IP4S-MEGALINKSRL-2). ');
+$ax += cidrblock($address, '45.230.66.0/23', 'MEGALINK S.R.L (IP4S-MEGALINKSRL-3). ');
+$ax += cidrblock($address, '190.196.249.0/24', 'MEGALINK S.R.L (IP4S-MEGALINKSRL-4). ');
+
+// ASN 196845 ("Nordic Telecom Regional s.r.o").
+// Czech domestic ISP. Brute-force, SSH, and webapp attacks, hacking, and spam
+// detected from here. Listing just the affected ranges/addresses only.
+// Updated: 2024.08.25
+
+$ax += cidrblock($address, '31.10.62.0/23', 'Nordic Telecom (IP4S-NORDICTELECOM-0). ');
+$ax += cidrblock($address, '109.108.105.198/32', 'Nordic Telecom (IP4S-NORDICTELECOM-1). ');
+$ax += cidrblock($address, '109.108.105.235/32', 'Nordic Telecom (IP4S-NORDICTELECOM-2). ');
+
+// ASN 56962 ("RHS s.r.l").
+// Not sure what it is. Brute-force attacks and port scans detected from here.
+// Listing just the affected ranges/addresses only.
+// Updated: 2024.08.27
+
+$ax += cidrblock($address, '141.11.24.23/32', 'RHS s.r.l (IP4S-RHSSRL-0). ');
+$ax += cidrblock($address, '141.11.24.32/32', 'RHS s.r.l (IP4S-RHSSRL-1). ');
+$ax += cidrblock($address, '141.11.24.48/32', 'RHS s.r.l (IP4S-RHSSRL-2). ');
+$ax += cidrblock($address, '141.11.24.86/32', 'RHS s.r.l (IP4S-RHSSRL-3). ');
+$ax += cidrblock($address, '141.11.24.91/32', 'RHS s.r.l (IP4S-RHSSRL-4). ');
+
+// ASN 12668 ('LLC "KomTehCentr"').
+// Russian domestic ISP. Brute-force attacks and spam detected from here.
+// Listing just the affected ranges/addresses only.
+// Updated: 2024.09.01
+
+$ax += cidrblock($address, '31.192.171.40/32', 'KomTehCentr (IP4S-KOMTEHCENTR-0). ');
+$ax += cidrblock($address, '46.48.38.112/32', 'KomTehCentr (IP4S-KOMTEHCENTR-1). ');
+$ax += cidrblock($address, '92.54.90.146/32', 'KomTehCentr (IP4S-KOMTEHCENTR-2). ');
+$ax += cidrblock($address, '194.156.201.181/32', 'KomTehCentr (IP4S-KOMTEHCENTR-3). ');
+$ax += cidrblock($address, '212.49.100.90/32', 'KomTehCentr (IP4S-KOMTEHCENTR-4). ');
+$ax += cidrblock($address, '213.142.57.203/32', 'KomTehCentr (IP4S-KOMTEHCENTR-5). ');
+
+// ASN 60098 ("Filippov Aleksei Vladilenovich").
+// Russian domestic ISP. Brute-force, SSH attacks, port scans, and hacking
+// detected from here. Listing just the affected ranges/addresses only.
+// Updated: 2024.09.01
+
+$ax += cidrblock($address, '37.72.176.0/21', 'F.A.Vladilenovich (IP4S-FAVLADILENOVICH-0). ');
+$ax += cidrblock($address, '46.235.248.0/21', 'F.A.Vladilenovich (IP4S-FAVLADILENOVICH-1). ');
+$ax += cidrblock($address, '185.7.180.0/22', 'F.A.Vladilenovich (IP4S-FAVLADILENOVICH-2). ');
+$ax += cidrblock($address, '194.135.136.0/21', 'F.A.Vladilenovich (IP4S-FAVLADILENOVICH-3). ');
+$ax += cidrblock($address, '194.135.144.0/21', 'F.A.Vladilenovich (IP4S-FAVLADILENOVICH-4). ');
 
 // IP4S Test Trigger
 $ax += inmatch($query, 'xip4sx', 'IP4S Test Trigger. ');
