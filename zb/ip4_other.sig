@@ -14,16 +14,16 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2024.09.15
+ * This file last updated: 2024.10.10
  */
-$zbbversion .= ' / IP4X-155a';
+$zbbversion .= ' / IP4X-156';
 
 // *php 5 fix
 global $whyblockout, $ax;
 
 // ---
 // IPv4 Bogons List.
-// Updated: 2018.03.29 / Checked: 2023.06.10
+// Updated: 2018.03.29 / Checked: 2024.09.19
 // Refer https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
 
 // Note: 127/8 and 10/8 intentionally omitted due to the significant likelihood
