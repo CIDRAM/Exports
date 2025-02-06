@@ -14,9 +14,9 @@
 /**
  * Signature file version information.
  * See: http://zb-block.net/zbf/showthread.php?t=20
- * This file last updated: 2025.01.16
+ * This file last updated: 2025.02.06
  */
-$zbbversion .= ' / IP4X-159a';
+$zbbversion .= ' / IP4X-160';
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1723,13 +1723,6 @@ $ax += cidrblock($address, '24.155.145.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGY
 $ax += cidrblock($address, '104.202.252.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-1). ');
 $ax += cidrblock($address, '205.166.246.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-2). ');
 $ax += cidrblock($address, '216.82.192.0/24', 'Thin-nology, LLC (IP4X-THINNOLOGYLLC-3). ');
-
-// ASN 1004 ("Ambyre LLC").
-// Tor provider. Brute-force, WordPress/XMLRPC, SSH, router exploit, and webapp
-// attacks, port scans, hacking, and spam detected from here.
-// Updated: 2023.07.15 / Checked: 2024.06.07
-
-$ax += cidrblock($address, '2.56.164.0/24', 'Ambyre LLC (IP4X-AMBYRELLC-0). ');
 
 // ASN 16652 ("Riseup Networks").
 // Webmail and VPN provider. Port scans and other unusual traffic detected from
