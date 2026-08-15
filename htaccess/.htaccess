@@ -1,6 +1,6 @@
 # CIDRAM default signature files converted to htaccess format.
 # Source: https://github.com/CIDRAM/Exports/tree/master/htaccess
-# This file last updated: 2026.08.07
+# This file last updated: 2026.08.15
 #
 Order Allow,Deny
 Deny from 0.0.0.0/8
@@ -337,6 +337,7 @@ Deny from 2.27.160.0/23
 Deny from 2.27.164.0/24
 Deny from 2.27.167.0/24
 Deny from 2.27.168.0/23
+Deny from 2.27.170.0/24
 Deny from 2.27.208.0/22
 Deny from 2.27.233.0/24
 Deny from 2.27.242.0/24
@@ -4398,6 +4399,7 @@ Deny from 31.77.202.0/23
 Deny from 31.77.204.0/24
 Deny from 31.77.232.0/24
 Deny from 31.77.239.0/24
+Deny from 31.77.254.0/24
 Deny from 31.97.0.0/23
 Deny from 31.97.3.0/24
 Deny from 31.97.8.0/21
@@ -5215,8 +5217,7 @@ Deny from 37.148.176.0/21
 Deny from 37.148.200.0/21
 Deny from 37.151.32.60/32
 Deny from 37.151.152.104/32
-Deny from 37.152.72.0/22
-Deny from 37.152.76.0/24
+Deny from 37.152.72.0/21
 Deny from 37.152.173.0/24
 Deny from 37.152.174.0/23
 Deny from 37.152.176.0/20
@@ -8195,7 +8196,7 @@ Deny from 45.84.90.0/24
 Deny from 45.84.92.0/22
 Deny from 45.84.100.0/24
 Deny from 45.84.102.0/23
-Deny from 45.84.107.0/24
+Deny from 45.84.106.0/23
 Deny from 45.84.128.0/22
 Deny from 45.84.136.0/22
 Deny from 45.84.176.0/23
@@ -15345,7 +15346,9 @@ Deny from 69.12.64.0/23
 Deny from 69.12.66.0/24
 Deny from 69.12.68.0/22
 Deny from 69.12.72.0/21
-Deny from 69.12.80.0/21
+Deny from 69.12.80.0/23
+Deny from 69.12.82.0/24
+Deny from 69.12.84.0/22
 Deny from 69.12.88.0/22
 Deny from 69.12.94.0/24
 Deny from 69.13.0.0/16
@@ -15799,7 +15802,6 @@ Deny from 72.11.136.0/23
 Deny from 72.11.140.0/23
 Deny from 72.11.144.0/21
 Deny from 72.11.152.0/22
-Deny from 72.11.156.0/23
 Deny from 72.11.158.0/24
 Deny from 72.12.0.0/18
 Deny from 72.13.80.0/20
@@ -18793,6 +18795,7 @@ Deny from 82.41.212.0/22
 Deny from 82.41.224.0/21
 Deny from 82.47.17.0/24
 Deny from 82.47.19.0/24
+Deny from 82.47.22.0/24
 Deny from 82.47.29.0/24
 Deny from 82.47.36.0/23
 Deny from 82.47.63.0/24
@@ -25352,6 +25355,7 @@ Deny from 96.47.160.0/21
 Deny from 96.47.208.0/20
 Deny from 96.47.224.0/20
 Deny from 96.47.243.0/24
+Deny from 96.62.71.0/24
 Deny from 96.62.72.126/32
 Deny from 96.62.74.0/24
 Deny from 96.62.101.0/24
@@ -29493,7 +29497,13 @@ Deny from 104.222.182.0/23
 Deny from 104.222.188.0/24
 Deny from 104.222.190.0/24
 Deny from 104.222.224.0/19
-Deny from 104.223.0.0/16
+Deny from 104.223.0.0/18
+Deny from 104.223.64.0/20
+Deny from 104.223.82.0/23
+Deny from 104.223.84.0/22
+Deny from 104.223.88.0/21
+Deny from 104.223.96.0/19
+Deny from 104.223.128.0/17
 Deny from 104.224.13.0/24
 Deny from 104.224.14.0/24
 Deny from 104.224.28.0/22
@@ -54848,7 +54858,6 @@ Deny from 193.22.96.0/22
 Deny from 193.22.144.0/22
 Deny from 193.22.152.0/23
 Deny from 193.22.255.0/24
-Deny from 193.23.3.0/24
 Deny from 193.23.58.0/24
 Deny from 193.23.60.0/24
 Deny from 193.23.118.0/24
@@ -64522,7 +64531,8 @@ Deny from 216.139.208.0/20
 Deny from 216.139.224.0/19
 Deny from 216.144.224.0/24
 Deny from 216.144.226.0/23
-Deny from 216.144.228.0/22
+Deny from 216.144.228.0/23
+Deny from 216.144.230.0/24
 Deny from 216.144.232.0/21
 Deny from 216.144.240.0/20
 Deny from 216.145.216.0/23
@@ -66210,6 +66220,7 @@ Deny from 2001:748:400::/48
 Deny from 2001:7b8::/29
 Deny from 2001:7f8:1e:5::/64
 Deny from 2001:7f8:1e:d::/64
+Deny from 2001:7f8:49::/48
 Deny from 2001:7f8:b7::/48
 Deny from 2001:880::/32
 Deny from 2001:8d8::/32
@@ -74425,6 +74436,7 @@ Deny from 2a03:5640:f534::/47
 Deny from 2a03:5640:f560::/48
 Deny from 2a03:5640:f570::/48
 Deny from 2a03:5840:fc::/48
+Deny from 2a03:5840:129::/48
 Deny from 2a03:5840:130::/48
 Deny from 2a03:5a00:3e::/48
 Deny from 2a03:5d67:fe00::/41
@@ -75372,6 +75384,7 @@ Deny from 2a06:3d80::/29
 Deny from 2a06:3e80::/32
 Deny from 2a06:3e87::/32
 Deny from 2a06:4040::/29
+Deny from 2a06:4140::/29
 Deny from 2a06:4580::/29
 Deny from 2a06:46c0::/29
 Deny from 2a06:4880::/30
@@ -75720,9 +75733,7 @@ Deny from 2a09:4e00::/29
 Deny from 2a09:51c0::/29
 Deny from 2a09:5302::/32
 Deny from 2a09:54c5:1100::/48
-Deny from 2a09:54c6:a000::/48
 Deny from 2a09:54c6:a100::/48
-Deny from 2a09:54c6:a700::/48
 Deny from 2a09:5840::/29
 Deny from 2a09:6285::/32
 Deny from 2a09:6440::/29
@@ -76081,7 +76092,6 @@ Deny from 2a0a:5680::/29
 Deny from 2a0a:5980::/29
 Deny from 2a0a:5dc0::/29
 Deny from 2a0a:5e80::/48
-Deny from 2a0a:6040:1d00::/40
 Deny from 2a0a:6040:3f80::/41
 Deny from 2a0a:6040:9500::/40
 Deny from 2a0a:6040:9600::/39
@@ -76725,6 +76735,7 @@ Deny from 2a0d:7740::/29
 Deny from 2a0d:7980::/32
 Deny from 2a0d:7c40::/32
 Deny from 2a0d:7f00::/29
+Deny from 2a0d:7fc0::/29
 Deny from 2a0d:8140:1fff::/48
 Deny from 2a0d:82c3::/32
 Deny from 2a0d:82c4::/32
@@ -76762,7 +76773,7 @@ Deny from 2a0d:b9c7::/32
 Deny from 2a0d:bbc0:1::/48
 Deny from 2a0d:bbc0:2::/48
 Deny from 2a0d:bbc1::/48
-Deny from 2a0d:bbc7::/48
+Deny from 2a0d:bbc7::/47
 Deny from 2a0d:c102::/32
 Deny from 2a0d:c2c0::/29
 Deny from 2a0d:c400::/31
@@ -77284,7 +77295,10 @@ Deny from 2a0f:5f46:600::/39
 Deny from 2a0f:5f46:800::/40
 Deny from 2a0f:6280:1110::/48
 Deny from 2a0f:6282:b000::/36
+Deny from 2a0f:6282:f000::/36
+Deny from 2a0f:6283:1102::/48
 Deny from 2a0f:6284:2::/48
+Deny from 2a0f:6284:4213::/48
 Deny from 2a0f:6284:4230::/44
 Deny from 2a0f:6284:9000::/36
 Deny from 2a0f:6284:c000::/36
